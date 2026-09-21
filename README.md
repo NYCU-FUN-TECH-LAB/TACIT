@@ -13,6 +13,7 @@ not leave it.
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.txt)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![Tests](https://img.shields.io/badge/tests-20%20suites-brightgreen.svg)](#testing)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22882168.svg)](https://doi.org/10.5281/zenodo.22882168)
 
 ---
 
@@ -443,6 +444,11 @@ segmentation and is unaffected.
 If this tool contributes to published work, please cite it. See
 [CITATION.cff](CITATION.cff); machine-readable metadata is in
 [codemeta.json](codemeta.json).
+
+Every release is archived on Zenodo. Version 1.0.0 is
+[10.5281/zenodo.22882169](https://doi.org/10.5281/zenodo.22882169);
+[10.5281/zenodo.22882168](https://doi.org/10.5281/zenodo.22882168) always resolves to
+the latest version.
 
 The built-in frameworks rest on:
 

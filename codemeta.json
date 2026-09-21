@@ -3,7 +3,7 @@
   "@type": "SoftwareSourceCode",
   "name": "TACIT",
   "description": "Theory-anchored qualitative coding with interpretive transparency. A Streamlit application that codes interview transcripts against a pluggable theoretical framework, keeps interpretive authority with the researcher, and reports the agreement statistics a qualitative study is expected to report. Coding frameworks can be constructed from literature retrieved via OpenAlex, with a guard that rejects citations absent from the retrieved corpus and per-dimension researcher approval. Model coding is treated as a draft: the model's original judgement is retained alongside every researcher revision, so the correction rate is reportable. Inter-rater reliability is computed over a sampling frame that includes unmarked units, so model recall is estimable. Language models may be served locally (Ollama, LM Studio, llama.cpp, vLLM, any OpenAI-compatible endpoint) so that transcripts need not leave the researcher's machine.",
-  "identifier": "TACIT",
+  "identifier": "https://doi.org/10.5281/zenodo.22882168",
   "codeRepository": "https://github.com/NYCU-FUN-TECH-LAB/TACIT",
   "issueTracker": "https://github.com/NYCU-FUN-TECH-LAB/TACIT/issues",
   "license": "https://spdx.org/licenses/MIT",
