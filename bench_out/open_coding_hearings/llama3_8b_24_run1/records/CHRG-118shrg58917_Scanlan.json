@@ -1,0 +1,270 @@
+{
+ "respondent": "CHRG-118shrg58917_Scanlan",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "policy_maker",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Introduction and context setting",
+   "quote": "Thank you, Chairman Blumenthal and Ranking Member Hawley and Senate Members, for the invitation to be here today. Actually, Senator Padilla, it's great to see a former secretary of State here on the Committee, as well.",
+   "full_text": "Thank you, Chairman Blumenthal and Ranking Member Hawley and Senate Members, for the invitation to be here today. Actually, Senator Padilla, it's great to see a former secretary of State here on the Committee, as well. On the weekend before January 23, when New Hampshire held its first-in-the-Nation Presidential primary, everything was going very smoothly. The candidates were out doing their last- minute campaigning. All of the polling places were set up and ready to go. They had plenty of ballots and, in typical New Hampshire fashion, we were ready to conduct a really good election.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is providing background information on their expertise and experience"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Description of the robocall incident",
+   "quote": "On the weekend went fine, and all of a sudden, on Sunday, I started getting some phone calls from reporters, asking if I knew anything about a robocall that was taking place with President Biden. I went to bed that night wondering what was up. First thing in the morning, we conferred with the attorney general's office, and it was apparent that there was a robocall using AI with President Biden's voice on it, asking individuals not to vote in the election because for Democrats their vote was more important to support him in the general election.",
+   "full_text": "On the weekend went fine, and all of a sudden, on Sunday, I started getting some phone calls from reporters, asking if I knew anything about a robocall that was taking place with President Biden. I went to bed that night wondering what was up. First thing in the morning, we conferred with the attorney general's office, and it was apparent that there was a robocall using AI with President Biden's voice on it, asking individuals not to vote in the election because for Democrats their vote was more important to support him in the general election. Interestingly, the robocall was spoofed--and I understand that's a term where a call is assigned to somebody else's phone number--to a prominent Democrat in the State of New Hampshire who was a former State party chair and a former member of the Democratic National Committee. Because her phone was associated with the robocall, she's starting getting calls from acquaintances, asking her to clarify what was being asked in the robocall. She very quickly figured out what was happening and reported the incident to the attorney general's office, and they opened up an investigation.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent is discussing the potential misuse of AI technology"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Response to the robocall incident",
+   "quote": "Fortunately, when there is a major election taking place in New Hampshire, the media--both State and national media--are on top of it. They are looking for something to report, especially when things are running very, very smoothly. And so when this surfaced, they jumped all over it, which was actually an opportunity for my office, the attorney general's office, and the Governor's office to inform voters of what was occurring, let them know that what was being said on the robocall was a form of voter suppression, that it was illegal, and that in that specific instance, they should ignore it and make sure that they participate in the election.",
+   "full_text": "Fortunately, when there is a major election taking place in New Hampshire, the media--both State and national media--are on top of it. They are looking for something to report, especially when things are running very, very smoothly. And so when this surfaced, they jumped all over it, which was actually an opportunity for my office, the attorney general's office, and the Governor's office to inform voters of what was occurring, let them know that what was being said on the robocall was a form of voter suppression, that it was illegal, and that in that specific instance, they should ignore it and make sure that they participate in the election.",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The respondent is discussing the need for regulation and oversight of AI technology"
+    },
+    {
+     "code_id": "c235",
+     "label": "Media coverage of election",
+     "rationale": "The media is on top of the election, looking for something to report"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Impact of AI on elections",
+   "quote": "What was concerning was the ease of which a random member of the public that really doesn't have a lot of experience in AI and technology was able to create the call itself.",
+   "full_text": "What was concerning was the ease of which a random member of the public that really doesn't have a lot of experience in AI and technology was able to create the call itself. And I think that if you add what happened with video to go along with that--and we saw some great examples here--you could show candidates in compromising situations that never existed. It could be a State election official giving misinformation about elections, and worse. And, to me, that is incredibly problematic.",
+   "open_codes": [
+    {
+     "code_id": "c236",
+     "label": "Concerns about AI in elections",
+     "rationale": "The ease of creating AI-generated content is concerning because it could be used to manipulate elections"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Recognition and prosecution of AI-generated content",
+   "quote": "I think we have to get a handle on when an AI in elections is intentionally deceptive and malicious. We need to be able to recognize it, stop it, and prosecute it.",
+   "full_text": "Now, I know--you know, I know that there are instances where there's parody and there's humor, and I've seen AI with prominent politicians doing funny things, and it is funny, but it's also quite obvious. I think we have to get a handle on when an AI in elections is intentionally deceptive and malicious. We need to be able to recognize it, stop it, and prosecute it.",
+   "open_codes": [
+    {
+     "code_id": "c237",
+     "label": "Recognition and prosecution of AI-generated content",
+     "rationale": "We need to be able to recognize and stop AI-generated content that is malicious"
+    },
+    {
+     "code_id": "c238",
+     "label": "Concerns about AI-generated content in elections",
+     "rationale": "Concerns about AI-generated content in elections"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Uncertainty about the impact of AI-generated content",
+   "quote": "We only know that we had a good turnout, and the results were what they were.",
+   "full_text": "Mr. Chairman, I have to agree that we truly don't know what the impact was on the New Hampshire Presidential primary. We only know that we had a good turnout, and the results were what they were. And we still have an active prosecution going on.",
+   "open_codes": [
+    {
+     "code_id": "c239",
+     "label": "Uncertainty about the impact of AI-generated content",
+     "rationale": "Uncertainty about the impact of AI-generated content"
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Need for Federal involvement in regulating AI-generated content",
+   "quote": "I think that, you know, these things, in a national election, are going to be generated nationally, whether it's foreign actors or some other malicious circumstance, and I think we need uniformity and the power of the Federal Government to help put the brakes on that.",
+   "full_text": "But, yes, I think that, you know, these things, in a national election, are going to be generated nationally, whether it's foreign actors or some other malicious circumstance, and I think we need uniformity and the power of the Federal Government to help put the brakes on that. Instances that happen locally--certainly, Federal Government assistance would be helpful, but I think that should remain the prerogative of State law enforcement and the attorney general.",
+   "open_codes": [
+    {
+     "code_id": "c240",
+     "label": "Need for Federal involvement in regulating AI-generated content",
+     "rationale": "Need for Federal involvement in regulating AI-generated content"
+    },
+    {
+     "code_id": "c241",
+     "label": "Uniformity and Federal Power",
+     "rationale": "The respondent emphasizes the importance of uniformity and Federal power in addressing national election issues."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Drafting the Deepfake Bill",
+   "quote": "And I do want to note that drafting this bill, the deepfake bill, wasn't easy. We had to look at allowing satire, right, and all these kind of things, within the framework of the Constitution, and having Democratic and Republican lawyers look at this, to figure out what gave us a chance.",
+   "full_text": "And I do want to note that drafting this bill, the deepfake bill, wasn't easy. We had to look at allowing satire, right, and all these kind of things, within the framework of the Constitution, and having Democratic and Republican lawyers look at this, to figure out what gave us a chance. I just think if the platforms can point to something, as opposed to laws that aren't quite on point-- which 11 States have done for States but not for Federal--and say, we've got to take this down, we're going to be in a much better place than we are with a little label that they may not even notice. And it also--the labels--you know, I think it's important for some of this, but I don't think it can be the only answer.",
+   "open_codes": [
+    {
+     "code_id": "c242",
+     "label": "Drafting the Deepfake Bill",
+     "rationale": "The respondent discusses the difficulties of drafting the deepfake bill and the importance of considering various factors."
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Federal Support for Democracy",
+   "quote": "Could you talk about what other Federal support would be helpful in taking this on, in addition to stronger laws?",
+   "full_text": "Mr. Scanlan, you know, birthplace of democracy--no, kidding--spent a little time in your State, there. I know you cherish democracy very much. Could you talk about what other Federal support would be helpful in taking this on, in addition to stronger laws?",
+   "open_codes": [
+    {
+     "code_id": "c243",
+     "label": "Federal Support for Democracy",
+     "rationale": "The respondent emphasizes the importance of Federal support in promoting democracy."
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Misinformation and Disinformation",
+   "quote": "Secretaries of State for a good decade now have been dealing with misinformation and disinformation, generally, and that takes on many different forms.",
+   "full_text": "Secretaries of State for a good decade now have been dealing with misinformation and disinformation, generally, and that takes on many different forms. And there's no question that today, voters receive their news in different formats than they did 20 years ago. And a lot of that news is electronic. It's on their cell phone. Many voters believe exactly what they see on that format, on that media, without question. So, in addition to whatever might be appropriate to help States recognize and put brakes on malicious technology, in terms of deepfakes, I think we have to spend a real strong effort on the fundamentals of transparency and helping voters and educating voters on the election systems and how they run and what the checks and balances are that are protecting them in the polling place.",
+   "open_codes": [
+    {
+     "code_id": "c244",
+     "label": "Misinformation and Disinformation",
+     "rationale": "The respondent discusses the prevalence of misinformation and disinformation and its effects on voters."
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "Educating the Public",
+   "quote": "Maybe this is something that Secretary Scanlan can talk about. We have laws that we're contemplating passing in this Committee, as well as in the larger Committee, the full Committee. But where does educating the public come into play, to let them know that, as we are approaching or we're already in an election situation, that they should expect to experience AI-created audio, video fake stuff, that--where does educating the public to the fact that they will be subjected to all of this come into play, to inoculate them against the impact of this kind of fake, deepfake material?",
+   "full_text": "Maybe this is something that Secretary Scanlan can talk about. We have laws that we're contemplating passing in this Committee, as well as in the larger Committee, the full Committee. But where does educating the public come into play, to let them know that, as we are approaching or we're already in an election situation, that they should expect to experience AI-created audio, video fake stuff, that--where does educating the public to the fact that they will be subjected to all of this come into play, to inoculate them against the impact of this kind of fake, deepfake material?",
+   "open_codes": [
+    {
+     "code_id": "c245",
+     "label": "Educating the Public",
+     "rationale": "The respondent emphasizes the need for public education on AI-created fake material and its effects on elections."
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Public education on AI-generated content",
+   "quote": "I think the States are best suited to deliver the message----",
+   "full_text": "I think the States are best suited to deliver the message---- To their voters. I believe they are. Now, I believe that there is a role for the Federal Government to assist them in that, because elections are run differently in every State.",
+   "open_codes": [
+    {
+     "code_id": "c246",
+     "label": "Concerns about AI-generated content",
+     "rationale": "The respondent highlights the need for public awareness and education on AI-generated content."
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Role of Federal Government",
+   "quote": "But there is a--I mean, this issue with AI and the impact that it can have--it could actually bring down an election, if it's done successfully, and that's a national problem.",
+   "full_text": "But there is a--I mean, this issue with AI and the impact that it can have--it could actually bring down an election, if it's done successfully, and that's a national problem. It's not a State problem. You know, the States, I think, are prepared to help deal with it, but the narrative has to be uniform.",
+   "open_codes": [
+    {
+     "code_id": "c247",
+     "label": "Concerns about AI's impact on elections",
+     "rationale": "The respondent highlights the potential for AI-generated content to bring down an election."
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Awareness and education",
+   "quote": "In New Hampshire, we're trying to raise the level of awareness of voters so that they know what to expect during an election cycle.",
+   "full_text": "In New Hampshire, we're trying to raise the level of awareness of voters so that they know what to expect during an election cycle. I don't know that we can do any more than that. Some of these deepfakes can be incredibly real, and, you know, I don't know how we--you know, how we deal with that in real time.",
+   "open_codes": [
+    {
+     "code_id": "c248",
+     "label": "Awareness and education on AI-generated content",
+     "rationale": "The respondent highlights the need for voters to be aware of AI-generated content and its potential impact."
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "Concerns about AI's impact on election integrity",
+   "quote": "What's most important in the election process is that the voters have confidence in the outcome and the results of an election.",
+   "full_text": "What's most important in the election process is that the voters have confidence in the outcome and the results of an election. And as long as they are confident, they are going to participate. And New Hampshire and Minnesota consistently are among States where we have very high voter participation. But if voters start believing that the government is corrupt or the election outcomes are not accurate, they've been manipulated somehow, then participation is going to decline. And it only takes one really serious event where an election at least has the appearance of having a major breakdown in terms of the outcome to throw doubt in the voting population. And I think that's a really, really significant concern.",
+   "open_codes": [
+    {
+     "code_id": "c249",
+     "label": "Concerns about AI's impact on election integrity",
+     "rationale": "The respondent highlights the importance of maintaining voter confidence in the election process."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_015911",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 6,
+   "n_ok": 6
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 1
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 2
+   },
+   {
+    "reused": 0,
+    "created": 5,
+    "chunk": 3
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 4
+   },
+   {
+    "reused": 0,
+    "created": 1,
+    "chunk": 5
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg58917 — David Scanlan, Secretary Of State, State Of New Hampshire\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg58917  |  Oversight Of Ai: Election Deepfakes  |  Senate, Subcommittee On Privacy, Technology And The Law / Committee On The Judiciary  |  2024-04-16  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chair Blumenthal) Thank you, Mr. Gupta. Secretary of State Scanlan.\n[Respondent] Thank you, Chairman Blumenthal and Ranking Member Hawley and Senate Members, for the invitation to be here today. Actually, Senator Padilla, it's great to see a former secretary of State here on the Committee, as well.\nOn the weekend before January 23, when New Hampshire held its first-in-the-Nation Presidential primary, everything was going very smoothly. The candidates were out doing their last- minute campaigning. All of the polling places were set up and ready to go. They had plenty of ballots and, in typical New Hampshire fashion, we were ready to conduct a really good election.\nWeekend went fine, and all of a sudden, on Sunday, I started getting some phone calls from reporters, asking if I knew anything about a robocall that was taking place with President Biden. I went to bed that night wondering what was up. First thing in the morning, we conferred with the attorney general's office, and it was apparent that there was a robocall using AI with President Biden's voice on it, asking individuals not to vote in the election because for Democrats their vote was more important to support him in the general election.\nInterestingly, the robocall was spoofed--and I understand that's a term where a call is assigned to somebody else's phone number--to a prominent Democrat in the State of New Hampshire who was a former State party chair and a former member of the Democratic National Committee. Because her phone was associated with the robocall, she's starting getting calls from acquaintances, asking her to clarify what was being asked in the robocall. She very quickly figured out what was happening and reported the incident to the attorney general's office, and they opened up an investigation.\nFortunately, when there is a major election taking place in New Hampshire, the media--both State and national media--are on top of it. They are looking for something to report, especially when things are running very, very smoothly. And so when this surfaced, they jumped all over it, which was actually an opportunity for my office, the attorney general's office, and the Governor's office to inform voters of what was occurring, let them know that what was being said on the robocall was a form of voter suppression, that it was illegal, and that in that specific instance, they should ignore it and make sure that they participate in the election.\nAnd every indication is that they did. New Hampshire had a record turnout in both the Republican primary--but also in the Democratic primary, when you have an incumbent President running for a second term. New Hampshire broke a record in the turnout. So, it is hard to tell how much of an impact that particular robocall using AI actually had on the voting population. We estimate, or the attorney general's office estimated, through the investigation that they have done to date, that there were between 5 and 25,000 calls made in the State of New Hampshire to voters with that information.\nSo, clearly, you know, it did not seem to have an impact on that election. In hindsight, though, looking back, the call itself was kind of primitive. And, you know, it is something that could have been done with an impressionist, somebody that could--a real, live person that could imitate the voice of the President in this case and could have done the same thing with a robocall. What was concerning was the ease of which a random member of the public that really doesn't have a lot of experience in AI and technology was able to create the call itself. And I think that if you add what happened with video to go along with that--and we saw some great examples here--you could show candidates in compromising situations that never existed. It could be a State election official giving misinformation about elections, and worse. And, to me, that is incredibly problematic.\nNow, I know--you know, I know that there are instances where there's parody and there's humor, and I've seen AI with prominent politicians doing funny things, and it is funny, but it's also quite obvious. I think we have to get a handle on when an AI in elections is intentionally deceptive and malicious. We need to be able to recognize it, stop it, and prosecute it.\n[Interviewer] (Chair Blumenthal) Thank you very much. Thanks to all of our witnesses for your really excellent testimony.\nMr. Scanlan, you hypothesize--because we can't know for sure--that the Biden deepfake had minimal impact, but we can't be certain what the vote would have been, but for those calls. And I understand there is an investigation ongoing; the attorney general is conducting it. It's under New Hampshire law. I assume it's criminal law, as well as civil, but there're no Federal remedies. In your view, would it be helpful to have criminal penalties under Federal law specifically aimed at this kind of deception? And I think it was Mr. Colman suggested that criminal penalties could be an effective deterrent, but they have to be really more specific and stringent than they are now.\n[Respondent] Mr. Chairman, I have to agree that we truly don't know what the impact was on the New Hampshire Presidential primary. We only know that we had a good turnout, and the results were what they were. And we still have an active prosecution going on. The AG in New Hampshire has identified a company or companies that participated and an individual that is a suspect, and they're moving forward with that.\nAt some point, I believe that there is a Federal component to this because it's going to be a national problem. And I'd like to give a shout-out to Cait Conley, who works with Jen Easterly at CISA. Cait was in New Hampshire on the day of the Presidential primary, and she traveled around to polling places with me, to try and get a handle on, you know, how big this thing actually was, even though that was difficult to determine.\nBut, yes, I think that, you know, these things, in a national election, are going to be generated nationally, whether it's foreign actors or some other malicious circumstance, and I think we need uniformity and the power of the Federal Government to help put the brakes on that. Instances that happen locally--certainly, Federal Government assistance would be helpful, but I think that should remain the prerogative of State law enforcement and the attorney general.\n[Interviewer] (Senator Klobuchar) Right. Very good. And I do want to note that drafting this bill, the deepfake bill, wasn't easy. We had to look at allowing satire, right, and all these kind of things, within the framework of the Constitution, and having Democratic and Republican lawyers look at this, to figure out what gave us a chance. I just think if the platforms can point to something, as opposed to laws that aren't quite on point-- which 11 States have done for States but not for Federal--and say, we've got to take this down, we're going to be in a much better place than we are with a little label that they may not even notice. And it also--the labels--you know, I think it's important for some of this, but I don't think it can be the only answer.\nMr. Scanlan, you know, birthplace of democracy--no, kidding--spent a little time in your State, there. I know you cherish democracy very much. Could you talk about what other Federal support would be helpful in taking this on, in addition to stronger laws?\n[Respondent] Secretaries of State for a good decade now have been dealing with misinformation and disinformation, generally, and that takes on many different forms. And there's no question that today, voters receive their news in different formats than they did 20 years ago. And a lot of that news is electronic. It's on their cell phone. Many voters believe exactly what they see on that format, on that media, without question. So, in addition to whatever might be appropriate to help States recognize and put brakes on malicious technology, in terms of deepfakes, I think we have to spend a real strong effort on the fundamentals of transparency and helping voters and educating voters on the election systems and how they run and what the checks and balances are that are protecting them in the polling place.\n[Interviewer] (Senator Hirono) Thank you, Mr. Chairman. Maybe this is something that Secretary Scanlan can talk about. We have laws that we're contemplating passing in this Committee, as well as in the larger Committee, the full Committee. But where does educating the public come into play, to let them know that, as we are approaching or we're already in an election situation, that they should expect to experience AI-created audio, video fake stuff, that--where does educating the public to the fact that they will be subjected to all of this come into play, to inoculate them against the impact of this kind of fake, deepfake material?\n[Respondent] I think the States are best suited to deliver the message----\n[Interviewer] (Senator Hirono) Are they, though?\n[Respondent] To their voters. I believe they are. Now, I believe that there is a role for the Federal Government to assist them in that, because elections are run differently in every State.\n[Interviewer] (Senator Hirono) Yes.\n[Respondent] But there is a--I mean, this issue with AI and the impact that it can have--it could actually bring down an election, if it's done successfully, and that's a national problem. It's not a State problem. You know, the States, I think, are prepared to help deal with it, but the narrative has to be uniform.\n[Interviewer] (Senator Hirono) Well, what I'm getting at is that, you know, people in--the use of AI, I think, is going to be very prevalent in this election, upcoming election season. The voters should know that they will be subjected--they may not know it. They may not even believe that it's happening to them. Something happens, and then, after the fact, you have a press conference and you say, oh, there was a fake President Biden telling people not to vote. That's after the fact. How do you inform people that they should be aware? Are States doing this, and does that play a role? That's the question that I have, because I don't know that that is happening in the States. It's usually after the fact that they are informed.\n[Respondent] In New Hampshire, we're trying to raise the level of awareness of voters so that they know what to expect during an election cycle. I don't know that we can do any more than that. Some of these deepfakes can be incredibly real, and, you know, I don't know how we--you know, how we deal with that in real time.\n[Interviewer] (Senator Whitehouse) Mr. Secretary.\n[Respondent] Thank you, Senator. So, I believe New Hampshire is probably the first State, relative to elections, where the attorney general is investigating and hopefully prosecuting the individuals responsible for----\n[Interviewer] (Senator Whitehouse) Yes.\n[Respondent] The deepfake, and I think that it's probably going to take that exercise and that experience to figure out where the gaps are.\n[Interviewer] (Senator Whitehouse) Yes.\n[Respondent] And I'd be happy to report that to you when they complete that.\n[Interviewer] (Chair Blumenthal) Let me conclude my questions by going to Mr. Scanlan. You mentioned the possibility that AI could be used to ``bring down an election.'' Maybe you could expand on that point.\n[Respondent] What's most important in the election process is that the voters have confidence in the outcome and the results of an election. And as long as they are confident, they are going to participate. And New Hampshire and Minnesota consistently are among States where we have very high voter participation. But if voters start believing that the government is corrupt or the election outcomes are not accurate, they've been manipulated somehow, then participation is going to decline. And it only takes one really serious event where an election at least has the appearance of having a major breakdown in terms of the outcome to throw doubt in the voting population. And I think that's a really, really significant concern.\nYou know, that is probably the most fundamental, important thing that I perceive in my role as secretary of State--is to make sure that an election is not messed up; that, you know, the voters believe and know that it was run fairly and accurately, to the highest standards possible. And if we lose that, it will be very, very hard to get it back.",
+ "_bench": {
+  "seconds": 115.0,
+  "chars": 12835
+ }
+}

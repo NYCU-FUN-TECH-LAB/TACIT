@@ -1,0 +1,114 @@
+{
+ "respondent": "Ward councillor",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "policy_maker",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript header states 'Ward councillor, city council' and respondent notes 'I'm a councillor, I do this alongside a job.'"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Open ward surgeries as unmediated channels for grounded citizen feedback",
+   "quote": "Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.",
+   "full_text": "Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Open ward surgery provides an accessible, two-way channel for constituents to share unmediated system impacts."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Uncovering unexpected user uncertainty and hazardous pedestrian behavioral workarounds",
+   "quote": "The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+   "full_text": "Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Identifies unanticipated user behaviors and safety hazards resulting from automated pedestrian detection design."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Departmental deflection using technical metrics rather than addressing user concerns",
+   "quote": "The first time I got a written answer about detection accuracy, which wasn't the question I'd asked.",
+   "full_text": "Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Department deflected constituent concerns by citing irrelevant accuracy metrics instead of addressing crossing practicalities."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Committee escalation forcing data release versus public exclusion from governance",
+   "quote": "The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.",
+   "full_text": "Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Formal political intervention forced municipal action, enabling data access for university researchers."
+    },
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Ordinary citizens lack direct formal avenues to challenge or influence automated municipal infrastructure."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Epistemic humility regarding complex algorithms and constituent-led oversight",
+   "quote": "I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "full_text": "No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Councillor candidly acknowledges personal technical knowledge limits regarding trade-offs embedded in algorithmic models."
+    },
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Public interaction directly informed political oversight, as constituent experiences taught the councillor what questions to pose."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Institutional absence of independent algorithmic auditing and review mechanisms",
+   "quote": "Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+   "full_text": "Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Explicitly highlights total lack of institutionalized audit or reflective review mechanisms for automated decision systems."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits strong elements of Public Engagement (+), demonstrating how local ward surgeries provide vital qualitative evidence regarding pedestrian behavior that formal reporting misses. Epistemic humility (Reflexivity +) is prominently displayed as the councillor acknowledges technical knowledge boundaries regarding algorithmic weighting while highlighting that constituent feedback informed committee scrutiny. However, the account sharply exposes structural barriers to governance. Institutional responsiveness is initially negative (Responsiveness -), characterized by departmental deflection via irrelevant accuracy metrics, though political escalation eventually secured data release (Responsiveness +). Crucially, the respondent highlights a systemic exclusion of ordinary citizens who lack institutional channels to demand change (Engagement -). Furthermore, the complete absence of institutionalized oversight or algorithmic auditing mechanisms (Reflexivity -) reveals a critical deficit in how local authorities manage automated decision-making systems. Multi-coded segments demonstrate the interplay between citizen input and political oversight, illustrating that technical accountability currently relies on ad-hoc political intervention rather than systematic governance mechanisms.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G03 — Ward councillor, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | How does this reach you as a councillor?\nRespondent | Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.\nInterviewer | What did people describe?\nRespondent | Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.\nInterviewer | What did you do with it?\nRespondent | Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.\nInterviewer | Do you feel you understand the system well enough to scrutinise it?\nRespondent | No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.\nInterviewer | What would help?\nRespondent | Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 29.9,
+  "seconds_source": "estimated: gap between saved files",
+  "absence": null,
+  "note": "written by bench_models.py before resume support; completeness verified (no chunk_errors) and marker added afterwards"
+ }
+}

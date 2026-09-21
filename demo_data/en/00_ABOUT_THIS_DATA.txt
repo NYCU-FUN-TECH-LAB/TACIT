@@ -1,0 +1,92 @@
+ABOUT THIS DATA
+===============
+
+Every transcript in this folder is FICTIONAL. It was written by a language
+model (Claude, Anthropic) for software demonstration, teaching and
+regression testing. The reference codings in analyses/ were written by the
+same model in the same request, so agreement measured against them is an
+upper bound: the text was composed to exemplify the codes.
+
+  * The respondents, organisations, city, project and events do not exist.
+  * Nothing here corresponds to any real person or organisation.
+  * It must not be cited as a source of empirical data.
+  * It must not be used to support any empirical claim about industry,
+    academia, government or civil society.
+
+The fictional case
+------------------
+Port Calder adaptive traffic signal and pedestrian detection system
+
+Port Calder, a fictional mid-sized coastal city, has installed AI-enabled
+adaptive traffic signals with pedestrian detection at thirty intersections.
+Roadside cameras identify pedestrians and vehicles and adjust signal timing
+dynamically. These transcripts simulate semi-structured interviews with
+24 stakeholders about responsible innovation practice during the
+deployment.
+
+Why synthetic data
+------------------
+Manuals, screenshots and papers circulate publicly. Screenshots containing
+verbatim quotations from real interviews would exceed the scope of any
+realistic informed-consent agreement. Synthetic data satisfies three needs
+at once: screenshots can be published, anyone can reproduce the analysis,
+and the material can be used for teaching.
+
+Why twenty-four
+---------------
+Six transcripts are enough to walk through the interface and not enough for
+any inferential statistic to run. In a 2x4 crosstab of institution type
+against polarity, expected cell counts land around one or two, the
+chi-square assumptions fail, and the tool correctly refuses to print a
+p-value. A newcomer then opens the cross-analysis tab and sees a column of
+"insufficient data" notices.
+
+With twenty-four respondents, six in each of four institution types, most
+expected counts exceed five, and the roughly 148 coded segments give the
+theme induction enough first-order concepts to work with.
+
+What is deliberately built in
+-----------------------------
+* Polarity is deliberately unevenly distributed across institution types.
+  Industry accounts lean negative, academic accounts lean positive,
+  government is mixed, and civil society accounts pair positive engagement
+  with negative responsiveness. A crosstab can only show an association if
+  the data contains one; uniformly random demonstration data would make
+  every test non-significant and demonstrate nothing.
+* Some passages are coded on two dimensions at once, so the co-occurrence
+  matrix has something to compute.
+* Several passages are deliberately ambiguous — for example, risk foresight
+  undertaken for commercial rather than ethical reasons — so the code review
+  interface has genuine disagreements to resolve and reliability statistics
+  are not spuriously perfect.
+* Fillers, self-corrections and digressions are preserved.
+* Every file carries the same heading and synthetic-data notice, and the
+  importer reads them as part of the transcript. Raw term discovery in the
+  lexicon tab therefore surfaces "port calder adaptive traffic", "synthetic
+  data" and similar boilerplate near the top. This is left in deliberately:
+  document boilerplate really does dominate raw frequency counts, and it is
+  worth seeing that the log-odds feature induction step removes it — none of
+  those terms appear in the per-group feature lists, because a term present
+  in every document distinguishes no group from any other.
+
+File layouts
+------------
+Most files use a paragraph layout, with each turn prefixed [Interviewer] or
+[Respondent]. Four files (A03, G03, N03, P03) use a two-column table layout with
+"Speaker" and "Content" headers. Both are parsed by the importer; both are
+included so that the two parsing paths are exercised.
+
+Speaker markers are what the reliability module uses to divide the
+transcript into codeable units. Keep something similar in your own data.
+
+Reference codings
+-----------------
+The analyses/ folder contains a reference coding for every transcript here.
+These were written alongside the transcripts. They are NOT the output of any
+particular model run, and should not be read as evidence of how well any
+model performs. They exist so that every tab in the application can be
+opened and inspected without an API key or a local model.
+
+Using them as a comparison set for reliability is a legitimate use: run the
+coder yourself, then compare your run against this reference coding to see
+how closely your chosen model tracks a fixed, deliberately designed scheme.

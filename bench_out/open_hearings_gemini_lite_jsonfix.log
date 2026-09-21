@@ -1,0 +1,33 @@
+hearings：12 份，待編 12 份，端點 gemini/gemini-3.5-flash-lite
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+  ✓ CHRG-118shrg52483_Venkatasubramanian  29,530 字元  13/13 窗   58 段  碼簿  33 碼  76s
+  ✓ CHRG-118shrg52785_Ariga  13,785 字元  5/6 窗   24 段  碼簿  33 碼  35s  ! 1 窗口失敗
+  ✓ CHRG-118shrg52785_Eppink  18,011 字元  9/9 窗   39 段  碼簿  36 碼  50s
+  ✓ CHRG-118shrg53503_Bengio  23,249 字元  11/11 窗   39 段  碼簿  41 碼  56s
+  ✓ CHRG-118shrg53503_Russell  31,065 字元  14/14 窗   58 段  碼簿  48 碼  78s
+  ✓ CHRG-118shrg53879_Smith  72,374 字元  30/31 窗  137 段  碼簿  57 碼  204s  ! 1 窗口失敗
+  ✓ CHRG-118shrg59704_Espinel  38,360 字元  17/17 窗   63 段  碼簿  62 碼  98s
+  ✓ CHRG-118shrg59704_Strayer  25,169 字元  11/11 窗   42 段  碼簿  64 碼  63s
+  ✓ CHRG-118hhrg53382_Prabhakar  27,615 字元  12/12 窗   46 段  碼簿  66 碼  61s
+  ✓ CHRG-118hhrg53382_Hysen   7,417 字元  3/3 窗   15 段  碼簿  66 碼  18s
+  ✓ CHRG-118shrg54718_Pahlka  33,557 字元  14/14 窗   64 段  碼簿  85 碼  87s
+  ✓ CHRG-118hhrg55220_Chilson  17,557 字元  7/8 窗   31 段  碼簿  89 碼  44s  ! 1 窗口失敗
+
+{
+  "corpus": "hearings",
+  "model": "gemini/gemini-3.5-flash-lite",
+  "transcripts": 12,
+  "chars": 337689,
+  "windows": 149,
+  "windows_ok": 146,
+  "transcripts_with_chunk_errors": 3,
+  "coding_minutes": 14.5,
+  "open_segments": 616,
+  "codes_initial": 89,
+  "applications_initial": 756,
+  "singletons_initial": 37,
+  "merge_suggestions": 14,
+  "codes_after_merge": 77
+}
+最常用的碼：proposed requirements for high-impact AI (162); mechanisms of AI system failure (116); exemplary agency compliance with AI mand (45); international allied cooperation for AI  (40); advocating for comprehensive AI legislat (37); need for proactive rather than reactive  (33); envisioning a beneficial technological f (19); evaluating adequacy of existing laws for (19); designating federal agencies for AI over (18); need for guardrails in AI technology (16)
+已寫入 bench_out\open_coding_hearings\gemini-3.5-flash-lite_jsonfix/summary.json

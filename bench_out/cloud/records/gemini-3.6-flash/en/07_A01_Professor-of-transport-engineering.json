@@ -1,0 +1,114 @@
+{
+ "respondent": "Professor of transport engineering",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "researcher",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript header states 'Professor of transport engineering'; no years of experience are mentioned."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Establishing a baseline measurement period prior to system activation",
+   "quote": "The one I got was a baseline measurement period — six months of data before anything was switched on, at all thirty junctions and at twelve control junctions elsewhere in the city.",
+   "full_text": "Two things, and I got one of them. The one I got was a baseline measurement period — six months of data before anything was switched on, at all thirty junctions and at twelve control junctions elsewhere in the city. Without that you can never say what the system did, only what happened afterwards. Cities almost never do this because it delays the ribbon-cutting by six months, and I was quite obnoxious about it.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Upstream intervention establishing baseline evaluation before technology deployment to handle uncertainty and avoid false attribution."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Rejection of pre-registered evaluation protocol and failure conditions",
+   "quote": "I wanted us to write down, before switch-on, what would count as the system working and what would count as it failing. Including the failure conditions. That was seen as — I think the word used was 'unhelpful framing'.",
+   "full_text": "A pre-registered evaluation protocol. I wanted us to write down, before switch-on, what would count as the system working and what would count as it failing. Including the failure conditions. That was seen as — I think the word used was 'unhelpful framing'. So now the evaluation criteria are whatever the annual report says they are, which means the system has never failed and never will.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Respondent advocated defining failure criteria upstream before system switch-on to explore uncertain outcomes."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Project framed failure definition as unhelpful, reducing evaluation to self-serving compliance where failure is structurally impossible."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Self-scrutiny regarding advisory role and ethical rationalisation",
+   "quote": "So I stayed, and I'm aware that's a rationalisation as well as a reason.",
+   "full_text": "Uncomfortably. I'm in the acknowledgements of the annual report, which means my name lends the thing credibility whether or not I agree with what it says. I raised that. I was told I could ask to be removed. But if I take my name off I lose the meetings, and if I lose the meetings I can't argue for the baseline next time. So I stayed, and I'm aware that's a rationalisation as well as a reason.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Explicit second-order reflection and scrutiny of own ethical positioning, assumptions, and personal rationalisations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Walking interviews with residents revealing system legibility issues",
+   "quote": "We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them.",
+   "full_text": "We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them. It's slow and it costs almost nothing and it surfaced things no dashboard would. Two people described waiting at a junction and not knowing whether the system had seen them. That's not a detection failure, the detection was fine — it's a legibility failure, and it wasn't in anybody's requirements.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Inclusive qualitative engagement with non-experts in real-world contexts surfacing unconsidered experiential issues."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Limited institutional responsiveness to external research findings",
+   "quote": "I sent the preprint to two people in the transport department. One replied.",
+   "full_text": "It's in a paper. Whether a paper reaches a city is a separate question and the honest answer is usually no. I sent the preprint to two people in the transport department. One replied.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Absence of institutional mechanisms or organizational willingness to absorb and react to external research feedback."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Institutionalising internal critique and pre-defining failure criteria",
+   "quote": "Spend the six months. Write down what failure looks like. And budget for someone whose job is to be wrong about the thing — not a critic, a person inside the project whose performance review rewards finding problems.",
+   "full_text": "Spend the six months. Write down what failure looks like. And budget for someone whose job is to be wrong about the thing — not a critic, a person inside the project whose performance review rewards finding problems. Every project I've seen has ten people paid to make it work and nobody paid to find out whether it does.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Recommends upstream time investment and defining failure scenarios prior to full system deployment."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Advocates institutionalising epistemic humility by rewarding internal critique and questioning of project assumptions."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent strongly exhibits positive Anticipation and Reflexivity, while highlighting institutional deficiencies in Responsiveness and project-level Reflexivity. As an expert adviser, the respondent actively pushed for upstream intervention (a six-month baseline period) and pre-registered failure protocols before technology deployment, reflecting high Anticipation (+). The respondent displays remarkable second-order Reflexivity (+), openly scrutinising their own compromises and self-rationalisations regarding their continued participation in the project.\n\nIn contrast, the city/project demonstrates negative Reflexivity (−) by dismissing pre-defined failure conditions as 'unhelpful framing', resulting in tautological reporting where 'the system has never failed.' Responsiveness (−) is also notably weak on the institutional side, evidenced by minimal uptake of academic preprints detailing pedestrian legibility issues.\n\nPublic Engagement (+) appears through walking interviews that uncovered non-technical requirements ('legibility failures') missed by quantitative dashboards. Multi-coded segments reveal a structural tension: while individual academic advisers can introduce anticipatory practices and participatory methods, institutional lock-in and political pressure for success prevent these insights from driving systemic reflexivity or adaptive responsiveness.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A01 — Professor of transport engineering\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You advised the city early on. What did you push for?\n[Respondent] Two things, and I got one of them. The one I got was a baseline measurement period — six months of data before anything was switched on, at all thirty junctions and at twelve control junctions elsewhere in the city. Without that you can never say what the system did, only what happened afterwards. Cities almost never do this because it delays the ribbon-cutting by six months, and I was quite obnoxious about it.\n[Interviewer] And the one you didn't get?\n[Respondent] A pre-registered evaluation protocol. I wanted us to write down, before switch-on, what would count as the system working and what would count as it failing. Including the failure conditions. That was seen as — I think the word used was 'unhelpful framing'. So now the evaluation criteria are whatever the annual report says they are, which means the system has never failed and never will.\n[Interviewer] How do you assess your own role in this? You're an adviser but also, in a sense, part of the project.\n[Respondent] Uncomfortably. I'm in the acknowledgements of the annual report, which means my name lends the thing credibility whether or not I agree with what it says. I raised that. I was told I could ask to be removed. But if I take my name off I lose the meetings, and if I lose the meetings I can't argue for the baseline next time. So I stayed, and I'm aware that's a rationalisation as well as a reason.\n[Interviewer] Did you involve residents in your own evaluation work?\n[Respondent] We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them. It's slow and it costs almost nothing and it surfaced things no dashboard would. Two people described waiting at a junction and not knowing whether the system had seen them. That's not a detection failure, the detection was fine — it's a legibility failure, and it wasn't in anybody's requirements.\n[Interviewer] Did that reach the city?\n[Respondent] It's in a paper. Whether a paper reaches a city is a separate question and the honest answer is usually no. I sent the preprint to two people in the transport department. One replied.\n[Interviewer] What would you tell a city about to do this?\n[Respondent] Spend the six months. Write down what failure looks like. And budget for someone whose job is to be wrong about the thing — not a critic, a person inside the project whose performance review rewards finding problems. Every project I've seen has ten people paid to make it work and nobody paid to find out whether it does.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 26.7,
+  "seconds_source": "estimated: gap between saved files",
+  "absence": null,
+  "note": "written by bench_models.py before resume support; completeness verified (no chunk_errors) and marker added afterwards"
+ }
+}

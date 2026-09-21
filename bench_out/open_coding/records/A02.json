@@ -1,0 +1,96 @@
+{
+ "respondent": "A02",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "unspecified",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Embarrassing origin story",
+   "quote": "I was going to study something else entirely and then I moved to Port Calder and started noticing that the junction outside my flat behaved differently on different days.",
+   "full_text": "I was going to study something else entirely and then I moved to Port Calder and started noticing that the junction outside my flat behaved differently on different days. That's an embarrassing origin story for a research programme but it's the true one. I should say that up front because where a question comes from shapes what you look at, and I was already annoyed before I started.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The respondent's personal experience with the system's behavior"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "System optimization and bias",
+   "quote": "The system optimises flow. Flow is measured in vehicles. So when the model has a choice between holding twelve cars and holding one person with a walking frame, the arithmetic is not close.",
+   "full_text": "The thing I keep coming back to is who gets asked to adapt. The system optimises flow. Flow is measured in vehicles. So when the model has a choice between holding twelve cars and holding one person with a walking frame, the arithmetic is not close. Nobody chose that. It falls out of what got counted.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The system's bias towards vehicles over pedestrians"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Community engagement and participation",
+   "quote": "We set up a group with a disability advocacy organisation and a residents' association — eleven people, meeting monthly, and they set the agenda, not me.",
+   "full_text": "We set up a group with a disability advocacy organisation and a residents' association — eleven people, meeting monthly, and they set the agenda, not me. The first three meetings I talked too much and one of them told me so, which was the most useful supervision I've had.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "Community engagement — The efforts to inform and involve the community in the project",
+     "rationale": "The respondent's involvement in setting up a community group"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Lack of impact",
+   "quote": "No. And I want to be careful here because there's a genre of research where the conclusion is 'more participation is needed' and everyone nods and nothing happens.",
+   "full_text": "No. And I want to be careful here because there's a genre of research where the conclusion is 'more participation is needed' and everyone nods and nothing happens. The group has produced two documents. Both were received warmly. Neither changed a parameter. At some point warm reception without change is its own kind of dismissal and I don't yet know what to do about it.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The lack of impact from the community engagement efforts"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "City's responsiveness",
+   "quote": "They answer emails.",
+   "full_text": "They answer emails. I'm not being sarcastic — compared with the vendors, the department is reachable and the people in it are thoughtful and underfunded. The problem isn't that they don't care. It's that caring isn't a mechanism. There's no point in the process where what the group says has to be answered in writing before something proceeds. Without that, everything depends on whether the person in post that year happens to be receptive.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "Community engagement — The efforts to inform and involve the community in the project",
+     "rationale": "The city's responsiveness to community concerns"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260914_193235",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 1,
+   "n_ok": 1
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 0
+   }
+  ]
+ },
+ "transcript": "Interview transcript A02 — Postdoctoral researcher, science and technology studies\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How did you come to study this deployment?\n[Respondent] I was going to study something else entirely and then I moved to Port Calder and started noticing that the junction outside my flat behaved differently on different days. That's an embarrassing origin story for a research programme but it's the true one. I should say that up front because where a question comes from shapes what you look at, and I was already annoyed before I started.\n[Interviewer] What have you found?\n[Respondent] The thing I keep coming back to is who gets asked to adapt. The system optimises flow. Flow is measured in vehicles. So when the model has a choice between holding twelve cars and holding one person with a walking frame, the arithmetic is not close. Nobody chose that. It falls out of what got counted.\n[Interviewer] Have you worked with residents directly?\n[Respondent] Yes, that's most of what I do now. We set up a group with a disability advocacy organisation and a residents' association — eleven people, meeting monthly, and they set the agenda, not me. The first three meetings I talked too much and one of them told me so, which was the most useful supervision I've had.\n[Interviewer] Has any of it changed the system?\n[Respondent] No. And I want to be careful here because there's a genre of research where the conclusion is 'more participation is needed' and everyone nods and nothing happens. The group has produced two documents. Both were received warmly. Neither changed a parameter. At some point warm reception without change is its own kind of dismissal and I don't yet know what to do about it.\n[Interviewer] Is there anything the city does well here?\n[Respondent] They answer emails. I'm not being sarcastic — compared with the vendors, the department is reachable and the people in it are thoughtful and underfunded. The problem isn't that they don't care. It's that caring isn't a mechanism. There's no point in the process where what the group says has to be answered in writing before something proceeds. Without that, everything depends on whether the person in post that year happens to be receptive."
+}

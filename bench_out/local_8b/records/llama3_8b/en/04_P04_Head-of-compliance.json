@@ -1,0 +1,70 @@
+{
+ "respondent": "Head of compliance, mobility technology group",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "over_20y",
+  "descriptor_basis": "the interview transcript does not state it"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Anticipation of potential issues",
+   "quote": "What happens to footage of people who aren't the subject of any incident.",
+   "full_text": "What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipates potential issues with footage, detection performance, and switching off the system, showing a proactive approach to responsible innovation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reflexivity on own assumptions",
+   "quote": "I've made peace with being unpopular.",
+   "full_text": "I've made peace with being unpopular. The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent reflects on their own assumptions and acknowledges the limitations of their role, showing epistemic humility."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Engagement with uncertainty",
+   "quote": "I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.",
+   "full_text": "I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent acknowledges the uncertainty and potential impact of the system, but does not engage with external stakeholders or push for change."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Responsiveness to potential issues",
+   "quote": "Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more.",
+   "full_text": "Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent recognizes the potential issues with the system's adaptive timing and the consequences of not addressing them, showing a willingness to adapt and change."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits a strong sense of anticipation, recognizing potential issues with the system and its consequences. They also demonstrate reflexive thinking, acknowledging the limitations of their role and the need to be honest about the nature of their work. However, their engagement with uncertainty and potential issues is limited, and they do not push for change or external input. Finally, they show responsiveness to potential issues, recognizing the need to adapt and change the system to avoid lock-in.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P04 — Head of compliance, mobility technology group\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What does responsible deployment mean in your role?\n[Respondent] In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive. I've made peace with being unpopular. The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.\n[Interviewer] What did you ask on this project?\n[Respondent] Three things, mainly. What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong. The third one is the one nobody has a good answer to, ever.\n[Interviewer] What answer did you get on switching it off?\n[Respondent] A version of 'why would we'. Which isn't an answer. Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.\n[Interviewer] Did that get escalated?\n[Respondent] I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.\n[Interviewer] Was there any external input into these questions?\n[Respondent] No. It's me and a junior analyst. We don't have an ethics board, we don't have community input, we have me reading and worrying. For a system that watches thirty intersections that is a thin basis and I would say that on the record."
+}

@@ -1,0 +1,91 @@
+{
+  "respondent": "A05 (Chair, university research ethics committee)",
+  "descriptors": {
+    "institution_type": "academia",
+    "role_level": "policy_maker",
+    "sector": "other",
+    "experience": "over_20y",
+    "descriptor_basis": "Interview transcript: A05 (Chair, university research ethics committee)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "Names the asymmetry between research and deployment review",
+      "quote": "If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee.",
+      "full_text": "Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Critical scrutiny of the institutional arrangement the respondent himself administers."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "Refuses a proposal that ignores capacity",
+      "quote": "people propose expanding ethics review as though review were free",
+      "full_text": "Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Examines the practicality of a reform commonly proposed in the respondent's own field."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "Requires a plan for inconvenient findings",
+      "quote": "What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it.",
+      "full_text": "More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "An anticipatory requirement introduced into a standing process, aimed at a foreseeable conflict."
+        },
+        {
+          "dimension": "responsiveness",
+          "polarity": "P",
+          "rationale": "The respondent altered a standing procedure in response to a repeated observation."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "Public representation reduced to a single member",
+      "quote": "We have one lay member. One, out of twelve.",
+      "full_text": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "Structural under-representation of the affected public in a body whose function is to protect them."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "States that current practice is not defensible",
+      "quote": "When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+      "full_text": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Explicit judgement against the respondent's own committee's practice."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "An ethics chair whose central observation is an institutional asymmetry: interviewing twelve people about the cameras requires ethics review, while pointing the cameras at a hundred thousand people requires a procurement committee. He resists the easy reform — expanding review as though review were free — and has instead changed one concrete practice, asking applicants what they will do if a finding is inconvenient to the funder. He states plainly that proceeding without the single lay member is not defensible.",
+  "transcript": "Interview transcript A05 — Chair, university research ethics committee\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Did any part of this deployment come before your committee?\n[Respondent] Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.\n[Interviewer] Could your committee's remit cover deployments?\n[Respondent] Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.\n[Interviewer] What have you seen change in the studies that do come to you?\n[Respondent] More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.\n[Interviewer] Do affected communities have any voice in your process?\n[Respondent] We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+  "transcript_file": "11_A05_Chair.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

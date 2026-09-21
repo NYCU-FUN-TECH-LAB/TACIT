@@ -1,0 +1,91 @@
+{
+ "respondent": "Procurement manager, city council",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "The transcript identifies the respondent as a 'Procurement manager, city council' working on the 'Port Calder adaptive traffic signal and pedestrian detection system' and mentions attempting to change procurement templates for six years."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Marginalisation of stakeholder engagement in tender evaluation criteria",
+   "quote": "That two and a half percent is the entire weight the process placed on whether anyone would be consulted.",
+   "full_text": "Open tender, three bidders, evaluated on price at sixty percent and quality at forty. Within the quality forty there was a sustainability and social value section worth eight, and inside that there was a subsection about stakeholder engagement worth about two and a half percent overall. That two and a half percent is the entire weight the process placed on whether anyone would be consulted.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Public consultation is assigned minimal weight (2.5%) in tender scoring, treating engagement as secondary."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Prioritising legal defensibility over public value in scoring models",
+   "quote": "So we weight what we can defend, not what matters most.",
+   "full_text": "Yes, and I'd have supported it. The obstacle is that everything in the quality score has to be assessable in a way that survives a challenge. Price is easy to defend. 'This bidder's engagement plan is better' is exactly the kind of judgement a losing bidder takes to review, and a review costs us more than the contract's margin. So we weight what we can defend, not what matters most.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Acknowledges internal institutional bias and limitations where legal defensibility overrides meaningful qualitative evaluation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Structural disconnection between evaluation criteria and contract monitoring",
+   "quote": "That's a real gap and it exists on most of our contracts, not just this one.",
+   "full_text": "Contract management, in theory. In practice the contract manager checks the deliverables schedule, and the engagement plan wasn't in the deliverables schedule, it was in the quality submission. Those are different documents and only one of them is monitored. That's a real gap and it exists on most of our contracts, not just this one.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Identifies systematic blindspots and gaps in monitoring engagement commitments across council contracts."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Template modification triggered by public councillor inquiry",
+   "quote": "We now copy the top-scoring quality commitments into the deliverables schedule as contract terms. It was a two-line change to a template. I've been trying to get it done for six years and this project is what finally carried it, because a councillor asked about it in public.",
+   "full_text": "One thing. We now copy the top-scoring quality commitments into the deliverables schedule as contract terms. It was a two-line change to a template. I've been trying to get it done for six years and this project is what finally carried it, because a councillor asked about it in public.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Institutional procurement process was modified in response to external public inquiry from a local councillor."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Critical reflection on long-standing operational blindspots",
+   "quote": "Without it, I'd have said the process was fine and I'd have been wrong, which is worth noting — for six years I'd have told you our process was fine.",
+   "full_text": "With the template change, yes. Without it, I'd have said the process was fine and I'd have been wrong, which is worth noting — for six years I'd have told you our process was fine.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Displays epistemic humility by explicitly acknowledging past mistaken assumptions regarding process adequacy."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent demonstrates strong Reflexivity (P) and targeted Responsiveness (P), while highlighting structural deficits in Public Engagement (N). Reflexivity is the most dominant dimension: the procurement manager displays high epistemic humility, candidly admitting past professional blindspots (\"for six years I'd have told you our process was fine\") and acknowledging how legal defensibility forces the council to prioritise easily audited metrics over high-value qualitative outcomes (\"we weight what we can defend, not what matters most\"). Public Engagement is presented negatively (N), as institutional procurement structures relegate stakeholder consultation to a negligible 2.5% weight in tender evaluation. However, the account illustrates institutional Responsiveness (P) when external political scrutiny—a public question from a local councillor—finally acts as a catalyst to reform procurement templates, binding engagement commitments into contractually monitored deliverables. Anticipation is largely absent, as procurement mechanisms remain reactive to legal risk and immediate compliance rather than systematic long-term foresight.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G05 — Procurement manager, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Walk me through how this was bought.\n[Respondent] Open tender, three bidders, evaluated on price at sixty percent and quality at forty. Within the quality forty there was a sustainability and social value section worth eight, and inside that there was a subsection about stakeholder engagement worth about two and a half percent overall. That two and a half percent is the entire weight the process placed on whether anyone would be consulted.\n[Interviewer] Could it have been weighted differently?\n[Respondent] Yes, and I'd have supported it. The obstacle is that everything in the quality score has to be assessable in a way that survives a challenge. Price is easy to defend. 'This bidder's engagement plan is better' is exactly the kind of judgement a losing bidder takes to review, and a review costs us more than the contract's margin. So we weight what we can defend, not what matters most.\n[Interviewer] Is there any mechanism to check what was promised was delivered?\n[Respondent] Contract management, in theory. In practice the contract manager checks the deliverables schedule, and the engagement plan wasn't in the deliverables schedule, it was in the quality submission. Those are different documents and only one of them is monitored. That's a real gap and it exists on most of our contracts, not just this one.\n[Interviewer] Has anything changed as a result of this project?\n[Respondent] One thing. We now copy the top-scoring quality commitments into the deliverables schedule as contract terms. It was a two-line change to a template. I've been trying to get it done for six years and this project is what finally carried it, because a councillor asked about it in public.\n[Interviewer] Would you buy this system the same way again?\n[Respondent] With the template change, yes. Without it, I'd have said the process was fine and I'd have been wrong, which is worth noting — for six years I'd have told you our process was fine.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 24.4,
+  "seconds_source": "estimated: gap between saved files",
+  "absence": null,
+  "note": "written by bench_models.py before resume support; completeness verified (no chunk_errors) and marker added afterwards"
+ }
+}

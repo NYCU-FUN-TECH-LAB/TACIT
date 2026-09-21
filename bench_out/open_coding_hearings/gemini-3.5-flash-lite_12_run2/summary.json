@@ -1,0 +1,1051 @@
+{
+  "corpus": "hearings",
+  "model": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+    "endpoint": "gemini/gemini-3.5-flash-lite",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "base_url": null,
+    "data_locality": "remote",
+    "num_ctx": null,
+    "max_tokens": 65536,
+    "recorded_at": "2026-09-22T03:24:47",
+    "sdk": "google-genai",
+    "temperature": 0.2
+  },
+  "order": [
+    "CHRG-118shrg52483_Venkatasubramanian",
+    "CHRG-118shrg52785_Ariga",
+    "CHRG-118shrg52785_Eppink",
+    "CHRG-118shrg53503_Bengio",
+    "CHRG-118shrg53503_Russell",
+    "CHRG-118shrg53879_Smith",
+    "CHRG-118shrg59704_Espinel",
+    "CHRG-118shrg59704_Strayer",
+    "CHRG-118hhrg53382_Prabhakar",
+    "CHRG-118hhrg53382_Hysen",
+    "CHRG-118shrg54718_Pahlka",
+    "CHRG-118hhrg55220_Chilson"
+  ],
+  "transcripts": 12,
+  "chars": 337689,
+  "windows": 149,
+  "windows_ok": 146,
+  "transcripts_with_chunk_errors": 3,
+  "coding_minutes": 14.5,
+  "open_segments": 616,
+  "codes_initial": 89,
+  "applications_initial": 756,
+  "singletons_initial": 37,
+  "merge_suggestions": 14,
+  "codes_after_merge": 77,
+  "saturation": [
+    {
+      "n": 1,
+      "created": 5,
+      "reused": 0,
+      "cumulative": 5
+    },
+    {
+      "n": 2,
+      "created": 7,
+      "reused": 1,
+      "cumulative": 12
+    },
+    {
+      "n": 3,
+      "created": 6,
+      "reused": 3,
+      "cumulative": 18
+    },
+    {
+      "n": 4,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 18
+    },
+    {
+      "n": 5,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 18
+    },
+    {
+      "n": 6,
+      "created": 1,
+      "reused": 3,
+      "cumulative": 19
+    },
+    {
+      "n": 7,
+      "created": 2,
+      "reused": 5,
+      "cumulative": 21
+    },
+    {
+      "n": 8,
+      "created": 4,
+      "reused": 0,
+      "cumulative": 25
+    },
+    {
+      "n": 9,
+      "created": 1,
+      "reused": 4,
+      "cumulative": 26
+    },
+    {
+      "n": 10,
+      "created": 3,
+      "reused": 2,
+      "cumulative": 29
+    },
+    {
+      "n": 11,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 29
+    },
+    {
+      "n": 12,
+      "created": 4,
+      "reused": 0,
+      "cumulative": 33
+    },
+    {
+      "n": 13,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 33
+    },
+    {
+      "n": 14,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 33
+    },
+    {
+      "n": 15,
+      "created": 0,
+      "reused": 9,
+      "cumulative": 33
+    },
+    {
+      "n": 16,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 33
+    },
+    {
+      "n": 17,
+      "created": 0,
+      "reused": 8,
+      "cumulative": 33
+    },
+    {
+      "n": 18,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 33
+    },
+    {
+      "n": 19,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 33
+    },
+    {
+      "n": 20,
+      "created": 2,
+      "reused": 8,
+      "cumulative": 35
+    },
+    {
+      "n": 21,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 35
+    },
+    {
+      "n": 22,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 35
+    },
+    {
+      "n": 23,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 35
+    },
+    {
+      "n": 24,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 35
+    },
+    {
+      "n": 25,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 35
+    },
+    {
+      "n": 26,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 35
+    },
+    {
+      "n": 27,
+      "created": 1,
+      "reused": 3,
+      "cumulative": 36
+    },
+    {
+      "n": 28,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 36
+    },
+    {
+      "n": 29,
+      "created": 0,
+      "reused": 8,
+      "cumulative": 36
+    },
+    {
+      "n": 30,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 36
+    },
+    {
+      "n": 31,
+      "created": 2,
+      "reused": 4,
+      "cumulative": 38
+    },
+    {
+      "n": 32,
+      "created": 3,
+      "reused": 3,
+      "cumulative": 41
+    },
+    {
+      "n": 33,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 41
+    },
+    {
+      "n": 34,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 41
+    },
+    {
+      "n": 35,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 41
+    },
+    {
+      "n": 36,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 41
+    },
+    {
+      "n": 37,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 41
+    },
+    {
+      "n": 38,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 41
+    },
+    {
+      "n": 39,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 41
+    },
+    {
+      "n": 40,
+      "created": 2,
+      "reused": 6,
+      "cumulative": 43
+    },
+    {
+      "n": 41,
+      "created": 2,
+      "reused": 2,
+      "cumulative": 45
+    },
+    {
+      "n": 42,
+      "created": 2,
+      "reused": 4,
+      "cumulative": 47
+    },
+    {
+      "n": 43,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 47
+    },
+    {
+      "n": 44,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 47
+    },
+    {
+      "n": 45,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 47
+    },
+    {
+      "n": 46,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 47
+    },
+    {
+      "n": 47,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 47
+    },
+    {
+      "n": 48,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 47
+    },
+    {
+      "n": 49,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 47
+    },
+    {
+      "n": 50,
+      "created": 1,
+      "reused": 6,
+      "cumulative": 48
+    },
+    {
+      "n": 51,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 48
+    },
+    {
+      "n": 52,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 48
+    },
+    {
+      "n": 53,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 48
+    },
+    {
+      "n": 54,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 48
+    },
+    {
+      "n": 55,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 48
+    },
+    {
+      "n": 56,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 48
+    },
+    {
+      "n": 57,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 48
+    },
+    {
+      "n": 58,
+      "created": 1,
+      "reused": 6,
+      "cumulative": 49
+    },
+    {
+      "n": 59,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 49
+    },
+    {
+      "n": 60,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 49
+    },
+    {
+      "n": 61,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 49
+    },
+    {
+      "n": 62,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 49
+    },
+    {
+      "n": 63,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 49
+    },
+    {
+      "n": 64,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 49
+    },
+    {
+      "n": 65,
+      "created": 0,
+      "reused": 8,
+      "cumulative": 49
+    },
+    {
+      "n": 66,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 49
+    },
+    {
+      "n": 67,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 49
+    },
+    {
+      "n": 68,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 49
+    },
+    {
+      "n": 69,
+      "created": 0,
+      "reused": 9,
+      "cumulative": 49
+    },
+    {
+      "n": 70,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 49
+    },
+    {
+      "n": 71,
+      "created": 5,
+      "reused": 0,
+      "cumulative": 54
+    },
+    {
+      "n": 72,
+      "created": 1,
+      "reused": 3,
+      "cumulative": 55
+    },
+    {
+      "n": 73,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 55
+    },
+    {
+      "n": 74,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 55
+    },
+    {
+      "n": 75,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 55
+    },
+    {
+      "n": 76,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 55
+    },
+    {
+      "n": 77,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 55
+    },
+    {
+      "n": 78,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 55
+    },
+    {
+      "n": 79,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 55
+    },
+    {
+      "n": 80,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 55
+    },
+    {
+      "n": 81,
+      "created": 2,
+      "reused": 6,
+      "cumulative": 57
+    },
+    {
+      "n": 82,
+      "created": 0,
+      "reused": 1,
+      "cumulative": 57
+    },
+    {
+      "n": 83,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 57
+    },
+    {
+      "n": 84,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 57
+    },
+    {
+      "n": 85,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 57
+    },
+    {
+      "n": 86,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 57
+    },
+    {
+      "n": 87,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 57
+    },
+    {
+      "n": 88,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 57
+    },
+    {
+      "n": 89,
+      "created": 2,
+      "reused": 4,
+      "cumulative": 59
+    },
+    {
+      "n": 90,
+      "created": 1,
+      "reused": 4,
+      "cumulative": 60
+    },
+    {
+      "n": 91,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 60
+    },
+    {
+      "n": 92,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 60
+    },
+    {
+      "n": 93,
+      "created": 1,
+      "reused": 5,
+      "cumulative": 61
+    },
+    {
+      "n": 94,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 61
+    },
+    {
+      "n": 95,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 61
+    },
+    {
+      "n": 96,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 61
+    },
+    {
+      "n": 97,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 61
+    },
+    {
+      "n": 98,
+      "created": 1,
+      "reused": 5,
+      "cumulative": 62
+    },
+    {
+      "n": 99,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 62
+    },
+    {
+      "n": 100,
+      "created": 0,
+      "reused": 8,
+      "cumulative": 62
+    },
+    {
+      "n": 101,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 62
+    },
+    {
+      "n": 102,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 62
+    },
+    {
+      "n": 103,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 62
+    },
+    {
+      "n": 104,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 62
+    },
+    {
+      "n": 105,
+      "created": 0,
+      "reused": 8,
+      "cumulative": 62
+    },
+    {
+      "n": 106,
+      "created": 1,
+      "reused": 2,
+      "cumulative": 63
+    },
+    {
+      "n": 107,
+      "created": 0,
+      "reused": 9,
+      "cumulative": 63
+    },
+    {
+      "n": 108,
+      "created": 1,
+      "reused": 3,
+      "cumulative": 64
+    },
+    {
+      "n": 109,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 64
+    },
+    {
+      "n": 110,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 64
+    },
+    {
+      "n": 111,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 64
+    },
+    {
+      "n": 112,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 64
+    },
+    {
+      "n": 113,
+      "created": 1,
+      "reused": 4,
+      "cumulative": 65
+    },
+    {
+      "n": 114,
+      "created": 1,
+      "reused": 6,
+      "cumulative": 66
+    },
+    {
+      "n": 115,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 66
+    },
+    {
+      "n": 116,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 66
+    },
+    {
+      "n": 117,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 66
+    },
+    {
+      "n": 118,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 66
+    },
+    {
+      "n": 119,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 66
+    },
+    {
+      "n": 120,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 66
+    },
+    {
+      "n": 121,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 66
+    },
+    {
+      "n": 122,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 66
+    },
+    {
+      "n": 123,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 66
+    },
+    {
+      "n": 124,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 66
+    },
+    {
+      "n": 125,
+      "created": 0,
+      "reused": 8,
+      "cumulative": 66
+    },
+    {
+      "n": 126,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 66
+    },
+    {
+      "n": 127,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 66
+    },
+    {
+      "n": 128,
+      "created": 1,
+      "reused": 8,
+      "cumulative": 67
+    },
+    {
+      "n": 129,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 67
+    },
+    {
+      "n": 130,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 67
+    },
+    {
+      "n": 131,
+      "created": 2,
+      "reused": 3,
+      "cumulative": 69
+    },
+    {
+      "n": 132,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 69
+    },
+    {
+      "n": 133,
+      "created": 4,
+      "reused": 2,
+      "cumulative": 73
+    },
+    {
+      "n": 134,
+      "created": 6,
+      "reused": 0,
+      "cumulative": 79
+    },
+    {
+      "n": 135,
+      "created": 5,
+      "reused": 0,
+      "cumulative": 84
+    },
+    {
+      "n": 136,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 84
+    },
+    {
+      "n": 137,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 84
+    },
+    {
+      "n": 138,
+      "created": 1,
+      "reused": 5,
+      "cumulative": 85
+    },
+    {
+      "n": 139,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 85
+    },
+    {
+      "n": 140,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 85
+    },
+    {
+      "n": 141,
+      "created": 0,
+      "reused": 8,
+      "cumulative": 85
+    },
+    {
+      "n": 142,
+      "created": 2,
+      "reused": 1,
+      "cumulative": 87
+    },
+    {
+      "n": 143,
+      "created": 2,
+      "reused": 3,
+      "cumulative": 89
+    },
+    {
+      "n": 144,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 89
+    },
+    {
+      "n": 145,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 89
+    },
+    {
+      "n": 146,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 89
+    }
+  ],
+  "top_codes": [
+    {
+      "label": "proposed requirements for high-impact AI systems",
+      "count": 162
+    },
+    {
+      "label": "mechanisms of AI system failure",
+      "count": 116
+    },
+    {
+      "label": "exemplary agency compliance with AI mandates",
+      "count": 45
+    },
+    {
+      "label": "international allied cooperation for AI safety",
+      "count": 40
+    },
+    {
+      "label": "advocating for comprehensive AI legislation",
+      "count": 37
+    },
+    {
+      "label": "need for proactive rather than reactive regulation",
+      "count": 33
+    },
+    {
+      "label": "envisioning a beneficial technological future",
+      "count": 19
+    },
+    {
+      "label": "evaluating adequacy of existing laws for AI",
+      "count": 19
+    },
+    {
+      "label": "designating federal agencies for AI oversight",
+      "count": 18
+    },
+    {
+      "label": "need for guardrails in AI technology",
+      "count": 16
+    },
+    {
+      "label": "acknowledging domain expertise limits",
+      "count": 16
+    },
+    {
+      "label": "bureaucratic burden over operational enablement",
+      "count": 16
+    },
+    {
+      "label": "establishing informal rapport",
+      "count": 12
+    },
+    {
+      "label": "democratic values as competitive advantage in AI",
+      "count": 12
+    },
+    {
+      "label": "restricting sensitive technology deployment in China",
+      "count": 12
+    },
+    {
+      "label": "executive branch focus and briefings on AI",
+      "count": 11
+    },
+    {
+      "label": "societal reach of algorithmic decisions",
+      "count": 10
+    },
+    {
+      "label": "authoritarian AI surveillance applications",
+      "count": 10
+    },
+    {
+      "label": "focusing on current algorithmic harms over speculative AGI",
+      "count": 9
+    },
+    {
+      "label": "AI as a tool to address labor shortages",
+      "count": 9
+    },
+    {
+      "label": "corporate entwinement with foreign adversaries",
+      "count": 7
+    },
+    {
+      "label": "stating professional affiliation",
+      "count": 6
+    },
+    {
+      "label": "necessity of government mandates for industry compliance",
+      "count": 6
+    },
+    {
+      "label": "audited verification structures in other sectors",
+      "count": 6
+    },
+    {
+      "label": "expansion of generative AI technologies",
+      "count": 5
+    }
+  ],
+  "failed": [
+    {
+      "respondent": "CHRG-118shrg52785_Ariga",
+      "errors": [
+        {
+          "chunk": 5,
+          "error": "JSONDecodeError: Expecting property name enclosed in double quotes: line 32 column 7 (char 3227)"
+        }
+      ]
+    },
+    {
+      "respondent": "CHRG-118shrg53879_Smith",
+      "errors": [
+        {
+          "chunk": 0,
+          "error": "JSONDecodeError: Expecting property name enclosed in double quotes: line 20 column 7 (char 1442)"
+        }
+      ]
+    },
+    {
+      "respondent": "CHRG-118hhrg55220_Chilson",
+      "errors": [
+        {
+          "chunk": 2,
+          "error": "empty"
+        }
+      ]
+    }
+  ]
+}

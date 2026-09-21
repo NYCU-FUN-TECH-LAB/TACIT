@@ -1,0 +1,83 @@
+{
+ "respondent": "Product manager, roadside camera hardware vendor",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "over_20y",
+  "descriptor_basis": "the interview transcript does not state it"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Anticipation of potential issues",
+   "quote": "About four months in we started getting complaints from residents on Fenwick Street.",
+   "full_text": "About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipated potential issues with the status LED shining into residents' bedrooms"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reflexivity on assumptions",
+   "quote": "I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them.",
+   "full_text": "Placement was decided on traffic engineering grounds — sight lines, pole availability, power. I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent questioned their own assumptions about the need for consultation with residents"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Engagement with residents",
+   "quote": "Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us.",
+   "full_text": "How did those residents reach you? Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent described a lack of direct engagement with residents, relying on the city and council to escalate the issue"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Responsiveness to feedback",
+   "quote": "We fixed it. Took about six weeks.",
+   "full_text": "We fixed it. Took about six weeks. We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent described a responsive approach to addressing the issue with the status LED"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Anticipation of future issues",
+   "quote": "One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+   "full_text": "A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent described a new approach to anticipating potential issues, incorporating the perspective of those who live next to the product"
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibited a mix of responsible innovation dimensions, including anticipation of potential issues, reflexivity on assumptions, engagement with residents (although indirectly), and responsiveness to feedback. The respondent's approach to design review has also become more anticipatory, incorporating the perspective of those who live next to the product.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P03 — Product manager, roadside camera hardware vendor\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | Tell me about your part of the deployment.\nRespondent | We supply the roadside units — the housing, the sensor, the local compute. Thirty intersections, two units each, some with three where the geometry is awkward. My job is that they work in the weather and don't need a truck roll every month.\nInterviewer | Did anything come up after installation that you hadn't expected?\nRespondent | Yes, and it's the thing I always tell people about now. About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it. It's not in any specification anywhere.\nInterviewer | What happened then?\nRespondent | We fixed it. Took about six weeks. We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street. I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.\nInterviewer | How did those residents reach you?\nRespondent | Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us. I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.\nInterviewer | Was there consultation before installation about where units went?\nRespondent | Placement was decided on traffic engineering grounds — sight lines, pole availability, power. I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them. 'Do you mind a camera here' — most people would say yes they mind, and then what?\nInterviewer | Has the LED episode changed how you think about new products?\nRespondent | A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it."
+}

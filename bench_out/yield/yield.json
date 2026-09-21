@@ -1,0 +1,96 @@
+{
+  "model": "ollama/qwen2.5:7b@http://localhost:11434",
+  "num_ctx": 32768,
+  "respondents": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06"
+  ],
+  "chars": 53121,
+  "prompt_tokens_est": 3390,
+  "reference_segments": 148,
+  "single": {
+    "median": 5,
+    "min": 3,
+    "max": 16,
+    "ok_runs": 3
+  },
+  "windowed": {
+    "median": 90,
+    "min": 84,
+    "max": 94,
+    "ok_runs": 3
+  },
+  "runs": {
+    "single": [
+      {
+        "segments": 5,
+        "seconds": 92.7,
+        "error": null
+      },
+      {
+        "segments": 16,
+        "seconds": 175.1,
+        "error": null
+      },
+      {
+        "segments": 3,
+        "seconds": 56.7,
+        "error": null
+      }
+    ],
+    "windowed": [
+      {
+        "segments": 94,
+        "seconds": 1034.7,
+        "error": [
+          {
+            "chunk": 19,
+            "error": "JSONDecodeError: Unterminated string starting at: line 14 column 20 (char 675)"
+          }
+        ]
+      },
+      {
+        "segments": 90,
+        "seconds": 1070.3,
+        "error": [
+          {
+            "chunk": 19,
+            "error": "JSONDecodeError: Unterminated string starting at: line 14 column 20 (char 656)"
+          }
+        ]
+      },
+      {
+        "segments": 84,
+        "seconds": 1007.9,
+        "error": [
+          {
+            "chunk": 19,
+            "error": "JSONDecodeError: Unterminated string starting at: line 14 column 20 (char 662)"
+          }
+        ]
+      }
+    ]
+  }
+}

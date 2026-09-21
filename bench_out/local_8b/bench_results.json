@@ -1,0 +1,83 @@
+{
+  "generated": "2026-09-14T17:33:44",
+  "framework": "ri_stilgoe_2013",
+  "results": [
+    {
+      "model": "llama3:8b",
+      "endpoint": "ollama/llama3:8b@http://localhost:11434",
+      "framework": "ri_stilgoe_2013",
+      "at": "2026-09-14T17:21:56",
+      "contract": {
+        "compliance": 1.0,
+        "verdict": "ok",
+        "answered": 6,
+        "asked": 6,
+        "valid_json": true,
+        "non_conforming": [],
+        "error": "",
+        "seconds": 56.3
+      },
+      "coding": {
+        "en": {
+          "transcripts": 24,
+          "failed": 0,
+          "segments": 104,
+          "codes": 104,
+          "chars": 53075,
+          "per_10k": 19.59,
+          "verbatim_rate": 0.99,
+          "absence_codes": 1,
+          "degenerate_titles": 6,
+          "window_chars": 3000,
+          "overlap_chars": 300,
+          "minutes": 10.0
+        }
+      },
+      "themes": {
+        "first_order": 104,
+        "themes": 7,
+        "unassigned": 7,
+        "dimensions_covered": 0,
+        "dimensions_total": 4,
+        "empty_dimensions": [
+          "anticipation",
+          "reflexivity",
+          "engagement",
+          "responsiveness"
+        ],
+        "unrecognised_dimensions": [
+          {
+            "theme": "Communication and engagement are one-way and limited",
+            "wrote": "anticipation|responsiveness|unassigned"
+          },
+          {
+            "theme": "Assumptions and knowledge limits are not reflexively examine",
+            "wrote": "reflexivity|responsiveness|unassigned"
+          },
+          {
+            "theme": "Evaluation and measurement are not evidence-based or transpa",
+            "wrote": "responsiveness|unassigned"
+          },
+          {
+            "theme": "Governance and accountability are inadequate",
+            "wrote": "responsiveness|unassigned"
+          },
+          {
+            "theme": "Stakeholder engagement is limited and ineffective",
+            "wrote": "engagement|responsiveness|unassigned"
+          },
+          {
+            "theme": "Assumptions and uncertainty are pervasive",
+            "wrote": "anticipation|reflexivity|unassigned"
+          },
+          {
+            "theme": "Inadequate review and revision",
+            "wrote": "responsiveness|unassigned"
+          }
+        ],
+        "note_written": true,
+        "minutes": 0.9
+      }
+    }
+  ]
+}

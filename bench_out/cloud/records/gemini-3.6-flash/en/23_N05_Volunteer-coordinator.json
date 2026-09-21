@@ -1,0 +1,99 @@
+{
+ "respondent": "N05 — Volunteer coordinator, walking and cycling advocacy group",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript header identifies respondent as 'Volunteer coordinator, walking and cycling advocacy group' in the case of Port Calder adaptive traffic signal system; years of experience are not stated."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Low-tech citizen monitoring designed for open participation and verification",
+   "quote": "Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done.",
+   "full_text": "We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done. We measured wait time from arrival at the kerb to green, which is the number that matters to a person and is not the number anybody publishes.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Mobilises public volunteers and uses deliberately accessible methods to enable transparent, inclusive citizen data collection."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Uncovering unexpected outcomes and critiquing reductionist reporting metrics",
+   "quote": "Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.",
+   "full_text": "Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Demonstrates epistemic honesty by reporting counter-intuitive data and critically questioning standard aggregate success assumptions."
+    },
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Critiques official reliance on single median metrics that obscure distribution risks and extreme wait times."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Institutional metric modification in response to citizen-generated data",
+   "quote": "Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before.",
+   "full_text": "Better than the campaigning stuff we've sent before, honestly, and I think it's because we led with the good news. An officer emailed and asked for our raw sheets, which we sent. Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Municipal monitoring process altered by incorporating the citizen group's 90th percentile metric into monthly reporting summaries."
+    },
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Two-way exchange of raw data between external advocacy group and city officials led to consequential monitoring adjustments."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Acknowledging methodological constraints dictated by comparative study design",
+   "quote": "Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak.",
+   "full_text": "Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak. That's frustrating and it's the right call.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Shows epistemic humility by recognizing methodological weaknesses while accepting trade-offs necessary for longitudinal comparison."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Proactive disclosure of sampling non-representativeness",
+   "quote": "Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+   "full_text": "Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school. Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Openly scrutinises knowledge limits and self-critiques data validity rather than making exaggerated claims."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent strongly exhibits Reflexivity (P), demonstrating sustained epistemic humility by acknowledging unexpected data, critiquing aggregate metrics, and proactively disclosing sampling biases (such as non-representative Saturday measurements). Public Engagement (P) is prominent through low-tech, participatory citizen science designed for transparent public verification, which facilitated productive two-way dialogue with municipal authorities. Responsiveness (P) is evidenced by the local government's institutional adaptation: while physical junction infrastructure remained unchanged, officials updated their monthly performance summaries to include the 90th percentile wait times highlighted by the advocacy group. Anticipation (N) appears via the respondent's critique of conventional official oversight, which relied on single deterministic median forecasts that concealed extreme wait times. Multi-coded segments reveal how citizen-led engagement and critical self-reflection can directly prompt institutional responsiveness, shifting municipal monitoring trajectories toward more nuanced, public-facing metrics.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N05 — Volunteer coordinator, walking and cycling advocacy group\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You did your own measurement, I understand.\n[Respondent] We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done. We measured wait time from arrival at the kerb to green, which is the number that matters to a person and is not the number anybody publishes.\n[Interviewer] What did you find?\n[Respondent] Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.\n[Interviewer] How was that received?\n[Respondent] Better than the campaigning stuff we've sent before, honestly, and I think it's because we led with the good news. An officer emailed and asked for our raw sheets, which we sent. Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before.\n[Interviewer] Will you repeat the survey?\n[Respondent] Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak. That's frustrating and it's the right call.\n[Interviewer] What's the weakness you'd fix if you could?\n[Respondent] Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school. Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 25.3,
+  "absence": 0
+ }
+}

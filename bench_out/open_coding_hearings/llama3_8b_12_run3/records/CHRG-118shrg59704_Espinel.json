@@ -1,0 +1,712 @@
+{
+ "respondent": "CHRG-118shrg59704_Espinel",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Introduction",
+   "quote": "Good afternoon, Chair Hickenlooper, Ranking Member Blackburn, Chair Cantwell, and Members of the Subcommittee.",
+   "full_text": "Good afternoon, Chair Hickenlooper, Ranking Member Blackburn, Chair Cantwell, and Members of the Subcommittee. My name is Victoria Espinel, and I am the CEO of BSA | The Software Alliance.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of establishing thoughtful rules for AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Benefits of AI",
+   "quote": "AI is helping to provide these answers. With AI weather forecasters are better able to predict extreme weather events, helping people prepare before disaster strikes.",
+   "full_text": "AI is helping to provide these answers. With AI weather forecasters are better able to predict extreme weather events, helping people prepare before disaster strikes. And what happens to those families who are in the storm's path? How do they get food in the aftermath of a storm? How do rescue workers know that they need help?",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The respondent provides a general overview of AI's capabilities"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Responsible Innovation",
+   "quote": "And with thoughtful rules in place, innovation in AI will continue to advance, and the responsible use of artificial intelligence will serve society.",
+   "full_text": "In the face of extreme danger, AI's predictions can save lives. More needs to be done, however, so that we can see greater benefits. And with thoughtful rules in place, innovation in AI will continue to advance, and the responsible use of artificial intelligence will serve society.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of establishing thoughtful rules for AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "AI's role in disaster relief",
+   "quote": "AI is helping relief workers anticipate where medical equipment, food, water, and supplies are most needed in response to natural disasters.",
+   "full_text": "AI is helping relief workers anticipate where medical equipment, food, water, and supplies are most needed in response to natural disasters. In the face of extreme danger, AI's predictions can save lives. More needs to be done, however, so that we can see greater benefits.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The passage highlights the importance of guardrails in AI development to ensure responsible use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Committee's work on AI",
+   "quote": "This committee began studying the issue in a thoughtful manner years earlier.",
+   "full_text": "This committee began studying the issue in a thoughtful manner years earlier. Nearly six years ago, I testified here about the building blocks of machine learning and artificial intelligence. Chair Cantwell and Senator Young introduced one of the first AI bills in 2017.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The passage provides a general overview of AI and its applications."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Concerns about AI development",
+   "quote": "As with any new technology there are legitimate concerns that need to be addressed, including the risk of bias and discrimination.",
+   "full_text": "As with any new technology there are legitimate concerns that need to be addressed, including the risk of bias and discrimination.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI",
+     "rationale": "The passage mentions the risk of bias and discrimination as legitimate concerns in AI development."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Legislation on AI",
+   "quote": "This committee is well placed to move legislation that sets rules around AI.",
+   "full_text": "This committee is well placed to move legislation that sets rules around AI. The U.S. economy will benefit from responsible and broad-based AI adoption. An important part of facilitating that adoption is passing a strong national law.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The passage highlights the need for legislation to set rules around AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Global approach to AI regulation",
+   "quote": "The window for the U.S. to lead those conversations, globally, is rapidly closing.",
+   "full_text": "The window for the U.S. to lead those conversations, globally, is rapidly closing.",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Bias Mitigation",
+     "rationale": "The passage mentions the need for a global approach to AI regulation, highlighting the importance of bias mitigation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Legislative recommendations",
+   "quote": "It should focus on high risk uses of AI, like those that decide whether a person can get a job, a home, health care.",
+   "full_text": "It should focus on high risk uses of AI, like those that decide whether a person can get a job, a home, health care. It should require companies to have risk management programs. It should require companies to conduct impact assessments, and it should require companies to publicly certify that they have met those requirements.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "Best Practices for AI Training",
+     "rationale": "The passage recommends guidelines for training AI systems to minimize bias."
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Different roles in AI development",
+   "quote": "It is important that legislation reflect different roles. Some companies develop AI, some companies use AI, our companies do both, and both roles have to be covered.",
+   "full_text": "It is important that legislation reflect different roles. Some companies develop AI, some companies use AI, our companies do both, and both roles have to be covered. Legislation should set distinct obligations for developers and users because each will know different things about the AI system in question, and each will be able to take different actions to identify and mitigate risks.",
+   "open_codes": [
+    {
+     "code_id": "c014",
+     "label": "Inclusive AI development",
+     "rationale": "The passage highlights the importance of different roles in AI development and the need for legislation to set distinct obligations for developers and users."
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Legislation is necessary to ensure responsible AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "Call to action",
+   "quote": "Do not wait. AI legislation can build on work by governmental organizations, industry, and civil society.",
+   "full_text": "So my message to Congress is simple. Do not wait. AI legislation can build on work by governmental organizations, industry, and civil society. These steps provide a collective basis for action. You can develop and pass AI legislation now that creates meaningful rules to reduce risks and promote innovation. We are ready to help you do so.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Legislation is necessary to ensure responsible AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Risk management programs",
+   "quote": "many of them have implemented very extensive risk management programs that include, as part of that, impact assessments.",
+   "full_text": "Thank you. So BSA members have--many of them have implemented very extensive risk management programs that include, as part of that, impact assessments. And I will talk a little bit about what they do, and how they can use evidence to make the kinds of determinations that you are talking about, to both increase transparency, but also reduce the risk of bias and discrimination.",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Bias Mitigation",
+     "rationale": "Risk management programs aim to reduce bias and discrimination"
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Impact assessments",
+   "quote": "they can assess the training data that they are using to ensure that it is representative of the community.",
+   "full_text": "So as an example, if a BSA member is acting as a developer of AI, they can assess the training data that they are using to ensure that it is representative of the community. And they can use the evidence that is gathered from that assessment to ensure that the risk of bias and discrimination is as low as possible.",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Bias Mitigation",
+     "rationale": "Impact assessments aim to reduce bias and discrimination"
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Legislative requirements",
+   "quote": "we don't think it is sufficient to--we think it would be best if legislation required companies in high risk situations to be doing impact assessments and have internal risk management programs.",
+   "full_text": "So yes, there is much that our companies have been doing. I think there is probably much that many companies have been doing, but we think in order to bring clarity and predictability to the system, and to ensure that use of artificial intelligence is as responsible as possible for Congress to require impact assessment, and require risk management programs, is essential.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Legislation is necessary to ensure responsible AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "Importance of harmonized approach to AI regulation",
+   "quote": "I think one of the challenges, but an avoidable challenge, is if we end up in a situation where there is, as you said, an inconsistent patchwork of regulations around the world.",
+   "full_text": "I think one of the challenges, but an avoidable challenge, is if we end up in a situation where there is, as you said, an inconsistent patchwork of regulations around the world. And I think if the United States--I think the United States has a very important role to play there, in terms of moving a large number of countries to a harmonized approach.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of harmonized regulations to avoid a patchwork of inconsistent regulations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "US role in harmonized approach to AI regulation",
+   "quote": "I think if the United States--I think the United States has a very important role to play there, in terms of moving a large number of countries to a harmonized approach.",
+   "full_text": "I think if the United States--I think the United States has a very important role to play there, in terms of moving a large number of countries to a harmonized approach.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent highlights the importance of the US role in promoting a harmonized approach to AI regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "Importance of transparency in AI",
+   "quote": "So it is very important that we have a system that builds trust in AI, and transparency is clearly part of what is important in order to build trust.",
+   "full_text": "So it is very important that we have a system that builds trust in AI, and transparency is clearly part of what is important in order to build trust. Let me give you just a few examples of ways that there could be transparency. One is to let consumers know if they are interacting with an AI service, such as the chatbot. Another example would be, let consumers know if they--if the image that they are seeing has been generated by artificial intelligence. There is important work that is being done by other witnesses at this table, in terms of content authenticity, and letting consumers know if images have been altered or manipulated in some ways.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of transparency in AI development to build trust."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "NIST AI Risk Management Framework",
+   "quote": "It is very important the NIST AI framework is flexible, it provides a roadmap for companies in terms of how they can put practices and policies in place, to responsibly develop and use AI.",
+   "full_text": "I would be delighted to. It is very important the NIST AI framework is flexible, it provides a roadmap for companies in terms of how they can put practices and policies in place, to responsibly develop and use AI. We support it being used by the U.S. Government, we support it being used in the context of procurement.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent supports the NIST AI Risk Management Framework as a means to establish guardrails for AI development."
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "Responsibility for AI risk mitigation",
+   "quote": "I believe that both developers and deployers, users of AI, should have obligations. I believe they both have responsibility.",
+   "full_text": "I believe that both developers and deployers, users of AI, should have obligations. I believe they both have responsibility. I would emphasize that I think the obligations that are put on them should differ, depending--so that it reflects what they do. So a developer of AI is going to have information about how the data--the data that was used and how the AI was trained.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of both developers and deployers having obligations and responsibilities for AI risk mitigation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Intellectual property issues with AI",
+   "quote": "We have also seen intellectual property issues with AI, songs, and the like, copyright, only around half the states have laws, that give individuals control over these, their name, image, and voice.",
+   "full_text": "We have also seen intellectual property issues with AI, songs, and the like, copyright, only around half the states have laws, that give individuals control over these, their name, image, and voice.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The respondent mentions intellectual property issues with AI, which is a general topic related to AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Agreement on AI obligations",
+   "quote": "I agree with you. And thank you for thinking about the distinction between developers and deployers, the fact that both should have obligations, and that those obligations and requirements should reflect what they do;",
+   "full_text": "So 100 percent, I agree with you. And thank you for thinking about the distinction between developers and deployers, the fact that both should have obligations, and that those obligations and requirements should reflect what they do; the information that they are going to have about the AI system in question, and the different steps that each can and should take to identify and mitigate risk.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent agrees on the need for guardrails in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Concerns about AI-generated content",
+   "quote": "That is clearly wrong, and should be stopped.",
+   "full_text": "I know there have been instances where AI-- there has been AI-generated information or content that has pretended to be someone that it wasn't. That is clearly wrong, and should be stopped. I am thinking about writer publicity, as you point out, that is not something that exist consistently throughout the United States. And so I think thinking about solutions to that problem, which is clearly wrong and needs to be addressed, is very important.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The respondent is discussing AI-generated content"
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "AI-Enabled Society",
+   "quote": "Does existing law address whatever potential vulnerability we are concerned about?",
+   "full_text": "Analysis of each of these use cases, and concerns of an AI- enabled society should, in my view, start with the same litmus test. Does existing law address whatever potential vulnerability we are concerned about? I have found through my interactions with a number of experts in this area, that existing law would address the vast majority of concerns that we have, not every one though.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI",
+     "rationale": "The respondent is discussing the limitations of AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Concerns about AI-Enabled Society",
+   "quote": "Straight out of science fiction, that could be right around the corner.",
+   "full_text": "Recent advancements, in generative AI platforms, like ChatGPT, have raised concerns among my constituents, and many others, about a dystopian future. Straight out of science fiction, that could be right around the corner.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent is expressing concerns about the potential risks of AI-enabled society"
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "Guardrails for AI",
+   "quote": "We have to closely evaluate and carefully target areas where existing law doesn't address these vulnerabilities, that is why, of course, we are here today, to identify high risk use cases of AI, and discuss potential guardrails to minimize those risks.",
+   "full_text": "We have to closely evaluate and carefully target areas where existing law doesn't address these vulnerabilities, that is why, of course, we are here today, to identify high risk use cases of AI, and discuss potential guardrails to minimize those risks. Recent advancements, in generative AI platforms, like ChatGPT, have raised concerns among my constituents, and many others, about a dystopian future. Straight out of science fiction, that could be right around the corner.\r\nThe truth is, nobody knows what future this incredible technology will usher in, and it is human nature to fear uncertainty. History shows innovations that democratize access to information, into media, the printing press, recorded sound, film, have been met with similar concerns, usually exaggerated concerns. But history also shows these innovations have brought great benefits to society, to national security, and the economy.\r\nAs we evaluate the need for any level of AI regulation it is important we don't lose sight of the many potential benefits that harnessing the power of AI presents. These benefits include: self-driving cars, medical advances, immersive technology, educational opportunities, and more. So I sort of want to get on record, a high-level perspective.\r\nWith that said, you are here today, and let us not focus on the unknowns but rather the knowns, the here and now risks. As we think about trust, transparency, and exploitability within AI, the goal is not to stifle growth, but rather to increase adoption, and innovation in the long term.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The passage discusses the need for guardrails in AI development to address vulnerabilities and minimize risks."
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Developer vs. Deployer",
+   "quote": "Those are very distinct roles, and the developer and the deployer will know very different things about the AI system, both how it is being developed, and how it is being used.",
+   "full_text": "Those are very distinct roles, and the developer and the deployer will know very different things about the AI system, both how it is being developed, and how it is being used. And because they know different things, they will be able to do very different things in terms of addressing and mitigating that risk. So as you were thinking about legislation, clearly distinguishing between developers and deployers is very--is critical, in order for the legislation to be effective and workable.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Biographical Context",
+     "rationale": "The passage provides background information about Ms. Espinel, the respondent."
+    },
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The passage provides a general overview of AI and its potential benefits and risks."
+    },
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI",
+     "rationale": "The passage discusses the limitations of AI systems in addressing and mitigating risks."
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The passage highlights the importance of distinguishing between developers and deployers in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "Transparency in AI systems",
+   "quote": "Increasing the transparency of AI systems is one of the key vehicles by which we gain confidence and trust among the users.",
+   "full_text": "Increasing the transparency of AI systems is one of the key vehicles by which we gain confidence and trust among the users. Without appropriate guardrails around the risks from AI, I think developers will struggle to compete in the U.S., and certainly internationally as well. So it is in our best interest to demonstrate leadership, and safe and responsible deployment. What transparency steps do you prioritize; do you think are most crucial in terms of gaining the trust of consumers?",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The passage mentions AI systems and the importance of transparency"
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "Impact assessments",
+   "quote": "Impact assessments are a tool that we think that organizations should be using whether--again, whether they are creating the AI or they are using the AI.",
+   "full_text": "So what if I start off by saying that I think building trust, as you say, is important for our ability to compete. I think it is important for the U.S. economy, and it is obviously important in terms of protecting consumers. So I think that is an absolutely critical step. Impact assessments are a tool that we think that organizations should be using whether--again, whether they are creating the AI or they are using the AI. If they are in a high-risk situation, if the AI is being used to make a consequential decision, then impact assessments are an accountability tool that should be required. And by requiring impact assessments, you will increase transparency.",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Bias Mitigation",
+     "rationale": "The passage mentions the importance of impact assessments in AI development"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of impact assessments as a tool for accountability and transparency in AI development."
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Protecting Consumers and Economy",
+   "quote": "Consumers need to have confidence that if AI is being used in a way that could have an impact on their rights, or have, you know, significant consequence for their life, that that AI is being vetted, and that it is being continuously monitored to be as safe, as secure, as nondiscriminatory as possible.",
+   "full_text": "Consumers need to have confidence that if AI is being used in a way that could have an impact on their rights, or have, you know, significant consequence for their life, that that AI is being vetted, and that it is being continuously monitored to be as safe, as secure, as nondiscriminatory as possible. And so I would go back to saying having a requirement for impact assessments by developers or deployers in high-risk situations, having a strong national law from the United States, I think is very important in terms of protecting consumers and our economy.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of impact assessments and national laws in protecting consumers and the economy."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "Affirmative Model of Effective Legislation",
+   "quote": "And I think having the United States be a leader in shaping that conversation, and the global approach to responsible AI is critically important.",
+   "full_text": "And then going to your last point, I think it is also very important for the United States to have an affirmative model of effective legislation when we--when other countries are moving quickly to regulate. And I think having the United States be a leader in shaping that conversation, and the global approach to responsible AI is critically important.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of the United States taking a leadership role in shaping the global approach to responsible AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Guardrails for AI — Need for guardrails in AI development",
+   "quote": "I think there is a lot of great work that is being done, some of it spearheaded by a BSA member company named Adobe that has been working on the Content Authenticity Initiative.",
+   "full_text": "I think there is a lot of great work that is being done, some of it spearheaded by a BSA member company named Adobe that has been working on the Content Authenticity Initiative. And I think in terms of giving--I know a lot of that is focused on making sure that consumers have more accurate information that is truly easily accessible, that they could access, and use, and take into account about the generation of AI content, and about whether or not that content has been manipulated or altered in other ways.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent highlights the need for guardrails in AI development, emphasizing the importance of responsible and ethical use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "Need for global initiative on deepfakes",
+   "quote": "I think it will be stronger and more effective if it is--if those discussions are happening with a group of companies--with a group of countries that represent different perspectives.",
+   "full_text": "I think we believe that it is very important as governments are thinking about what the right approach is to regulating AI, or trying to address some of the concerns that have been raised by artificial intelligence, to make sure that those conversations are happening not just with the United States, not just with the EU, not just inside the G7, the OECD, but to try to have that be a broad-based conversation, including bringing in emerging economies that are--have not typically been as much a part of some of these discussions as I think should be the case.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of a global initiative to address concerns around AI and deepfakes"
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "Passion for deepfakes",
+   "quote": "I am kind of probably overly passionate about it.",
+   "full_text": "I am kind of probably overly passionate about it. So I feel like I have gone on a bit too long.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Passion for deepfakes reflects a desire for responsible AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "Responsibilities of NAIAC",
+   "quote": "we created the NAIAC, we said, here is your responsibilities",
+   "full_text": "we created the NAIAC, we said, here is your responsibilities, we hope you have been thinking about this because we have given you a few years to do so.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Biographical Context",
+     "rationale": "NAIAC responsibilities provide context for Senator Hickenlooper's role"
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "International coordination",
+   "quote": "you need others to participate",
+   "full_text": "you need others to participate. But consumer issue is very different from how we deal with national security issues.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "International coordination highlights the need for global guardrails in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "Handing over to Senator Cantwell",
+   "quote": "I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate.",
+   "full_text": "I am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Senator Hickenlooper hands over to Senator Cantwell, implying a need for guardrails in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "Closing remarks",
+   "quote": "The Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.",
+   "full_text": "The Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Opening Remarks",
+     "rationale": "Closing remarks and thank-yous"
+    }
+   ]
+  },
+  {
+   "segment_id": "S038",
+   "title": "Guarding AI Summit",
+   "quote": "I think one of the challenges they face is, who--if you are going to have a global summit that is intended to address the safety of artificial intelligence, which is what the UK has announced, who are you going to have--who is going to be part of that summit, and how many issues can they address?",
+   "full_text": "I think one of the challenges they face is, who--if you are going to have a global summit that is intended to address the safety of artificial intelligence, which is what the UK has announced, who are you going to have--who is going to be part of that summit, and how many issues can they address? Because there are a myriad of challenges, and as you say, they are often addressed by different parts of government.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent highlights the need for coordination and guardrails in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S039",
+   "title": "Effective Coordination",
+   "quote": "I think having effective coordination across the Federal Government, I think there is more that could be done there.",
+   "full_text": "I think having effective coordination across the Federal Government, I think there is more that could be done there. And I think that would be very, very helpful because you don't want these issues to get siloed, you don't want agencies to be doing things that are duplicative or in conflict.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of effective coordination in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S040",
+   "title": "Importance of AI Transparency",
+   "quote": "Any action Congress takes on AI transparency must protect our most marginalized communities, including non-English speakers.",
+   "full_text": "Any action Congress takes on AI transparency must protect our most marginalized communities, including non-English speakers. And for those that don't know what LISTOS means, it means ``ready,'' but it is an acronym, so I credit the staff for coming up with an acronym that calls to action to ensure that we would all get ready.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The Senator emphasizes the importance of AI transparency to protect marginalized communities"
+    }
+   ]
+  },
+  {
+   "segment_id": "S041",
+   "title": "Broader Applications of AI",
+   "quote": "AI systems are useful in a huge variety of scenarios, from making financial decisions, to medical diagnosis, and content modernization, and I believe government should also utilize AI for improving constituents' access to government services.",
+   "full_text": "Now, AI systems are used in different sectors and for different purposes, and these various systems can have different kinds of outputs. For example, we have predictive AI making best guesses, and generative AI creating content. I have a hard time keeping up with a lot of this stuff; but maybe the Insight Forum tomorrow will help a little for folks like myself, but understandably. Consumers and other users of these systems will have very different experiences interacting in these systems.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The Senator highlights the broader applications of AI and the need for government to utilize AI for improving constituents' access to government services"
+    }
+   ]
+  },
+  {
+   "segment_id": "S042",
+   "title": "AI systems' diverse outputs and uses",
+   "quote": "AI systems are used in different sectors and for different purposes, and these various systems can have different kinds of outputs.",
+   "full_text": "Now, Ms. Espinel, AI systems are used in different sectors and for different purposes, and these various systems can have different kinds of outputs. For example, we have predictive AI making best guesses, and generative AI creating content. I have a hard time keeping up with a lot of this stuff; but maybe the Insight Forum tomorrow will help a little for folks like myself, but understandably. Consumers and other users of these systems will have very different experiences interacting in these systems.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent highlights the importance of guardrails in AI development due to its diverse outputs and uses."
+    }
+   ]
+  },
+  {
+   "segment_id": "S043",
+   "title": "Transparency and oversight requirements",
+   "quote": "isn't it then necessary that any transparency and oversight requirements be specific to the sector or use case of the AI system?",
+   "full_text": "Now, my question to you stems from, if people even know they are interacting with an AI system, which is not a given, so under that premise, isn't it then necessary that any transparency and oversight requirements be specific to the sector or use case of the AI system?",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Bias Mitigation",
+     "rationale": "The respondent emphasizes the importance of transparency and oversight requirements, which may help mitigate biases in AI systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S044",
+   "title": "Impact assessments for consequential decisions",
+   "quote": "if it is going to have a consequential decision in someone's life, then I believe, we believe at BSA, that companies should be required, by legislation, to do impact assessments to identify those risks, and then take steps to reduce those risks.",
+   "full_text": "And if it is, if it is going to have a consequential decision in someone's life, then I believe, we believe at BSA, that companies should be required, by legislation, to do impact assessments to identify those risks, and then take steps to reduce those risks.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "Best Practices for AI Training",
+     "rationale": "The respondent suggests that companies should be required to conduct impact assessments to identify and mitigate risks, which aligns with best practices for AI training."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_192719",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 17,
+   "n_ok": 17
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 7,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 2
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 3
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 4
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 6
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 8
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 9
+   },
+   {
+    "reused": 1,
+    "created": 0,
+    "chunk": 10
+   },
+   {
+    "reused": 1,
+    "created": 0,
+    "chunk": 11
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 12
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 13
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 14
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 15
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 16
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg59704 — Victoria Espinel, Chief Executive Officer, Bsa | The Software Alliance\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg59704  |  The Need For Transparency In Artificial Intelligence  |  Senate, Subcommittee On Consumer Protection, Product Safety, And Data Security / Committee On Commerce, Science, And Transportation  |  2023-09-12  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Senator Hickenlooper) Thank you, Madam Chair. I appreciate your being here and helping create this hearing. Now we will go and we will have the opening statements from each of the witnesses.\nMs. Espinel. STATEMENT OF VICTORIA ESPINEL, CHIEF EXECUTIVE OFFICER, BSA |\n[Respondent] Good afternoon, Chair Hickenlooper, Ranking Member Blackburn, Chair Cantwell, and Members of the Subcommittee.\nMy name is Victoria Espinel, and I am the CEO of BSA | The Software Alliance.\nBSA is the advocate for the global enterprise software industry. BSA members are at the forefront of developing cutting-edge services including AI, and their products are used by businesses across every sector of the economy. I commend the Subcommittee for convening today's hearing, and I thank you for the opportunity to testify.\nThere are two things that need to be done. Companies that develop and use AI must act responsibly to identify and address risks, and Congress needs to establish thoughtful, effective rules that protect consumers, and promote responsible innovation.\nAI has real world benefits. Think about extreme weather events, hurricanes, wildfires, tornadoes, that have affected many states this year, as we know, there are families wondering whether the eye of a hurricane will hit their hometown, and whether they will be safe if they stay, or if they should pack up and go. How will they know whether they should leave? And if they do, which nearby destination is the safest to ride out the storm?\nAI is helping to provide these answers. With AI weather forecasters are better able to predict extreme weather events, helping people prepare before disaster strikes. And what happens to those families who are in the storm's path? How do they get food in the aftermath of a storm? How do rescue workers know that they need help?\nAI is helping relief workers anticipate where medical equipment, food, water, and supplies are most needed in response to natural disasters.\nIn the face of extreme danger, AI's predictions can save lives. More needs to be done, however, so that we can see greater benefits. And with thoughtful rules in place, innovation in AI will continue to advance, and the responsible use of artificial intelligence will serve society.\nThere has been a wave of attention on AI since ChatGPT launched publicly nine months ago. But this committee began studying the issue in a thoughtful manner years earlier. Nearly six years ago, I testified here about the building blocks of machine learning and artificial intelligence. Chair Cantwell and Senator Young introduced one of the first AI bills in 2017. We also appreciate the committee's recent work to establish the National Artificial Intelligence Initiative, and your request to BSA about how our member companies are using the NIST, AI Risk Management Framework to responsibly develop and use AI.\nThe pace of AI development and use has increased significantly since 2017. As with any new technology there are legitimate concerns that need to be addressed, including the risk of bias and discrimination.\nThis committee is well placed to move legislation that sets rules around AI. The U.S. economy will benefit from responsible and broad-based AI adoption. An important part of facilitating that adoption is passing a strong national law. The countries that best support responsible AI innovation will see the greatest benefits of economic and job growth in the coming years.\nMoreover, other countries are moving quickly on regulations that affect U.S. companies. The U.S. should be part of shaping the global approach to responsible AI. The window for the U.S. to lead those conversations, globally, is rapidly closing.\nThis is what we think legislation should do: It should focus on high risk uses of AI, like those that decide whether a person can get a job, a home, health care. It should require companies to have risk management programs. It should require companies to conduct impact assessments, and it should require companies to publicly certify that they have met those requirements.\nThis will include some concrete steps. I have set these out in more detail in my written testimony, and I hope we have a chance to discuss those.\nIt is important that legislation reflect different roles. Some companies develop AI, some companies use AI, our companies do both, and both roles have to be covered. Legislation should set distinct obligations for developers and users because each will know different things about the AI system in question, and each will be able to take different actions to identify and mitigate risks.\nSo my message to Congress is simple. Do not wait. AI legislation can build on work by governmental organizations, industry, and civil society. These steps provide a collective basis for action. You can develop and pass AI legislation now that creates meaningful rules to reduce risks and promote innovation. We are ready to help you do so.\nThank you for the opportunity to testify. And I look forward to your questions.\n[Interviewer] (Senator Hickenlooper) Great. Thank you.\nMs. Espinel, what are some evidence-based steps that your member companies have been using to develop AI with the safety of consumers in mind, but in that notion of the AI Risk Management Framework?\n[Respondent] Thank you. So BSA members have--many of them have implemented very extensive risk management programs that include, as part of that, impact assessments. And I will talk a little bit about what they do, and how they can use evidence to make the kinds of determinations that you are talking about, to both increase transparency, but also reduce the risk of bias and discrimination.\nSo as an example, if a BSA member is acting as a developer of AI, they can assess the training data that they are using to ensure that it is representative of the community. And they can use the evidence that is gathered from that assessment to ensure that the risk of bias and discrimination is as low as possible.\nThat is certainly in line with the NIST AI--the risk management framework that was developed by NIST. But I would say, as important as the NIST Risk Management Framework is, and as much commendation I give to the Department of Commerce for coming up with it, we don't think it is sufficient to--we think it would be best if legislation required companies in high risk situations to be doing impact assessments and have internal risk management programs.\nSo yes, there is much that our companies have been doing. I think there is probably much that many companies have been doing, but we think in order to bring clarity and predictability to the system, and to ensure that use of artificial intelligence is as responsible as possible for Congress to require impact assessment, and require risk management programs, is essential.\n[Interviewer] (Senator Blackburn) Thank you so much. Ms. Espinel, I want to come to you first. Because I know that the EU is looking at implementing their AI Act later this year. I was recently over there, and working on the privacy issue, and holding some meetings, and I think they are a little bit frustrated that we haven't moved forward on some of these guidelines and governance that would help our innovators here in the country.\nSo talk for just a minute about how your members would navigate a patchwork system around the globe when it comes to AI and the guardrails that are going to be put around it?\n[Respondent] Thank you very much. So let me start off my thanking you. When you were in Brussels, you had an opportunity to visit us at BSA.\n[Interviewer] (Senator Blackburn) Right.\n[Respondent] And visit many of our member companies. You led a fantastic roundtable there. So thank you very much for that. But also thank you for that question, because I think that is a very important issue.\nSo as you said the EU is moving forward with legislation. They are not the only country that is moving forward with legislation; governments around the world are moving forward with legislation as well. And I think one of the challenges, but an avoidable challenge, is if we end up in a situation where there is, as you said, an inconsistent patchwork of regulations around the world.\nI think because there is so much policymaker focus around the world on artificial intelligence, as you said, in part, because of the launch of ChatGPT, there is a real opportunity right now to move towards a harmonized approach globally. And that may not include every country in the world, but I think it could include a lot.\nAnd I think if the United States--I think the United States has a very important role to play there, in terms of moving a large number of countries to a harmonized approach.\n[Interviewer] (Senator Blackburn) Should we be moving to set standards and lead this?\n[Respondent] In my opinion, yes.\n[Interviewer] (Senator Blackburn) Okay.\n[Respondent] The United States is leader in innovation; we should be a leader here as well.\n[Interviewer] (Senator Blackburn) Thank you. Ms. Espinel, let me come back to you. I have got just a little bit of time left. I would like for you to just briefly talk about how your companies have worked to have policies that are transparent, that are interpretable, that are explainable, when it is--when you are dealing with AI?\nAnd Mr. Strayer, I will come to you for the follow-on on that.\n[Respondent] So it is very important that we have a system that builds trust in AI, and transparency is clearly part of what is important in order to build trust. Let me give you just a few examples of ways that there could be transparency. One is to let consumers know if they are interacting with an AI service, such as the chatbot.\nAnother example would be, let consumers know if they--if the image that they are seeing has been generated by artificial intelligence. There is important work that is being done by other witnesses at this table, in terms of content authenticity, and letting consumers know if images have been altered or manipulated in some ways.\nThose are all--those are just three examples. But I want to end by saying, in addition to transparency practices I do think it is very important that we have regulation, and that we have regulation that requires high-risk uses for companies that are developing or using AI to be doing impact assessments, to try to mitigate those risks.\n[Interviewer] (Senator Moran) Chairman Hickenlooper, thank you. Thank you all for your presence and testimony today. It is annoying that we are here now on AI when we have been unsuccessful in reaching conclusions on data privacy legislation. It just seems like one issue piles up after another, both of huge significance.\nMs. Espinel, let me start with you. I want to talk about the NIST AI Risk Management Framework, launched after NDAA authorization in 2023. I am working on legislation, in fact, authored an amendment to NDAA this year, that would require federal agencies to apply the AI framework when using AI systems. An attempt to ensure that government acts responsibly in implementing AI systems, and in a manner that limits potential risk, not only to Americans and their data, but to governmental agencies and their missions.\nCan you talk about, Ms. Espinel, about the implementation of policies based on NIST AI Risk Management Framework that can establish a baseline of good behavior when implementing artificial intelligence systems, which can actually unleash beneficial AI technologies instead of just hindering the development of AI?\n[Respondent] I would be delighted to. It is very important the NIST AI framework is flexible, it provides a roadmap for companies in terms of how they can put practices and policies in place, to responsibly develop and use AI. We support it being used by the U.S. Government, we support it being used in the context of procurement.\nAnd I will close by saying, I think it is the place, that you kind of alluded to at the end, and as Ranking Member Blackburn raised, where the U.S. can show leadership. I think a model or an approach similar to the NIST AI Risk Framework, is one that could be usefully adopted by other countries as well; and so very supportive of that. Thank you.\n[Interviewer] (Senator Klobuchar) Okay. Well, I really do appreciate that answer, and also the timeliness of it, given that we are in election season. We have already seen the use of it against some of my colleagues on both sides of the aisle. And so people are very aware. I think it also, by the way, extends, and I will get your answer, Dr. Krishnan, in writing, if that is okay, because I want to move on to another question.\nI wanted to move into the AI risk assessment and mitigation issue. we know that these systems have the potential to impact individuals in many key areas, especially if it evaluates rental insurance applications. I am working with Senator Thune on a bill to require companies that develop and use AI to identify risk and implement procedures to mitigate risk. This involves Department of Commerce Oversight.\nMs. Espinel, do you agree that both developers and deployers of the AI systems bear responsibility to mitigate risk before they release the AI on the market?\n[Respondent] I believe that both developers and deployers, users of AI, should have obligations. I believe they both have responsibility. I would emphasize that I think the obligations that are put on them should differ, depending--so that it reflects what they do. So a developer of AI is going to have information about how the data--the data that was used and how the AI was trained.\nTo use an example of a deployer, a bank is going to have information about how loans were actually made, and whether or not loans were made in a way that was disproportionately negatively impacted a part of the community.\nSo 100 percent, I agree with you. And thank you for thinking about the distinction between developers and deployers, the fact that both should have obligations, and that those obligations and requirements should reflect what they do; the information that they are going to have about the AI system in question, and the different steps that each can and should take to identify and mitigate risk.\n[Interviewer] (Senator Klobuchar) Thank you. We have also seen intellectual property issues with AI, songs, and the like, copyright, only around half the states have laws, that give individuals control over these, their name, image, and voice.\nDo you agree, Ms. Espinel, that we need stronger protections for the image, likeness, and voices of creators?\n[Respondent] I know there have been instances where AI-- there has been AI-generated information or content that has pretended to be someone that it wasn't. That is clearly wrong, and should be stopped. I am thinking about writer publicity, as you point out, that is not something that exist consistently throughout the United States. And so I think thinking about solutions to that problem, which is clearly wrong and needs to be addressed, is very important.\n[Interviewer] (Senator Young) Thank you, Chairman, for acknowledging my presence in this room, and for chairing this hearing. I thank our witnesses for being here. I will just dive in. I know you have been responding to a number of inquiries.\nI will begin with the observation that artificial intelligence wasn't something that we invented yesterday; it has been around for decades now. In fact, for years we have seen AI technology in products and services across nearly every sector of our economy, and in a wide variety of use cases.\nAnalysis of each of these use cases, and concerns of an AI- enabled society should, in my view, start with the same litmus test. Does existing law address whatever potential vulnerability we are concerned about?\nI have found through my interactions with a number of experts in this area, that existing law would address the vast majority of concerns that we have, not every one though.\nWe have to closely evaluate and carefully target areas where existing law doesn't address these vulnerabilities, that is why, of course, we are here today, to identify high risk use cases of AI, and discuss potential guardrails to minimize those risks. Recent advancements, in generative AI platforms, like ChatGPT, have raised concerns among my constituents, and many others, about a dystopian future. Straight out of science fiction, that could be right around the corner.\nThe truth is, nobody knows what future this incredible technology will usher in, and it is human nature to fear uncertainty. History shows innovations that democratize access to information, into media, the printing press, recorded sound, film, have been met with similar concerns, usually exaggerated concerns. But history also shows these innovations have brought great benefits to society, to national security, and the economy.\nAs we evaluate the need for any level of AI regulation it is important we don't lose sight of the many potential benefits that harnessing the power of AI presents. These benefits include: self-driving cars, medical advances, immersive technology, educational opportunities, and more. So I sort of want to get on record, a high-level perspective.\nWith that said, you are here today, and let us not focus on the unknowns but rather the knowns, the here and now risks. As we think about trust, transparency, and exploitability within AI, the goal is not to stifle growth, but rather to increase adoption, and innovation in the long term.\nMs. Espinel, can you briefly discuss two things: first, the important distinction between a developer and a deployer? And then second, how should Congress think about the role of transparency between businesses and consumers as opposed to transparency between businesses and government? And I ask that you answer these pretty tightly, if you could, so I can ask some follow-up questions. Thanks.\n[Respondent] Thank you. So developers and deployers, developers and users, developers of AI systems are the ones that are producing the AI system, they are creating the AI systems, and the deployers are the users. To give an example, a developer is a software company that is developing a speech recognition system, and a bank is using, a deployer, using an AI system to help make determinations about who should get loans.\nThose are very distinct roles, and the developer and the deployer will know very different things about the AI system, both how it is being developed, and how it is being used. And because they know different things, they will be able to do very different things in terms of addressing and mitigating that risk. So as you were thinking about legislation, clearly distinguishing between developers and deployers is very--is critical, in order for the legislation to be effective and workable.\nIn terms of transparency, you also alluded to the fact that--or mentioned the fact that AI has been used for a long time, right. It has. It is also used in many different types of circumstances, and some of those are high risk, and some of them are lower risk. And it is our believe that in high risk situations, so for example, making a--a government making a determination about access to public benefits as an example; if there are consequential decisions that impact a person's rights, we believe there should be legislation requiring that an impact assessment be done, and that those risks be mitigated.\nBut there are also uses, as you have said, that have been around for a long time, that are relatively low risk. So reminding me when I send an email that I may have left off an attachment. Or one that has been quite popular lately, adjusting, you know, the background, if you were on a video conferencing call. Those are relatively low risks, and having impact assessment required in those cases, we believe would be overly burdensome, and not add a lot of value.\nBut where there are other consequential decisions, whether by--whether companies to consumers, or government to its citizens, we believe impact assessment should be required.\n[Interviewer] (Senator Hickenlooper) Absolutely. Ms. Espinel, increasing the transparency of AI systems is one of the key vehicles by which we gain confidence and trust among the users. Without appropriate guardrails around the risks from AI, I think developers will struggle to compete in the U.S., and certainly internationally as well. So it is in our best interest to demonstrate leadership, and safe and responsible deployment. What transparency steps do you prioritize; do you think are most crucial in terms of gaining the trust of consumers?\n[Respondent] So what if I start off by saying that I think building trust, as you say, is important for our ability to compete. I think it is important for the U.S. economy, and it is obviously important in terms of protecting consumers. So I think that is an absolutely critical step.\nImpact assessments are a tool that we think that organizations should be using whether--again, whether they are creating the AI or they are using the AI. If they are in a high-risk situation, if the AI is being used to make a consequential decision, then impact assessments are an accountability tool that should be required. And by requiring impact assessments, you will increase transparency.\nConsumers need to have confidence that if AI is being used in a way that could have an impact on their rights, or have, you know, significant consequence for their life, that that AI is being vetted, and that it is being continuously monitored to be as safe, as secure, as nondiscriminatory as possible.\nAnd so I would go back to saying having a requirement for impact assessments by developers or deployers in high-risk situations, having a strong national law from the United States, I think is very important in terms of protecting consumers and our economy.\nAnd then going to your last point, I think it is also very important for the United States to have an affirmative model of effective legislation when we--when other countries are moving quickly to regulate. And I think having the United States be a leader in shaping that conversation, and the global approach to responsible AI is critically important.\n[Interviewer] (Senator Hickenlooper) And an affirmative model; what a concept.\n[Respondent] Mm-hmm.\n[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often.\nI am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.\nThe Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.\nI wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information. What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.\nWhat do you all see as the key tools for effectiveness in developing a system to respond to deepfakes? And we will just go right down the----\n[Respondent] So it is a very important issue. I think there is a lot of great work that is being done, some of it spearheaded by a BSA member company named Adobe that has been working on the Content Authenticity Initiative. And I think in terms of giving--I know a lot of that is focused on making sure that consumers have more accurate information that is truly easily accessible, that they could access, and use, and take into account about the generation of AI content, and about whether or not that content has been manipulated or altered in other ways.\nBut I also know that there are witnesses at this table that are devoting a great deal of their life and energy to that thought. So I am going to cede the mic to them.\n[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often.\nI am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.\nThe Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.\nI wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information. What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.\nWhat do you all see as the key tools for effectiveness in developing a system to respond to deepfakes? And we will just go right down the----\n[Respondent] So I do--I have the honor of chairing the International Working Group for the NAIAC Advisory Committee. I would be--there are conversations that we are having internally about ways that NAIAC, as a committee, could be helpful. And either in terms of making recommendations to the administration, which is our mandate, or perhaps NAIAC as a committee, and I would be--some of them I can't talk about publicly here, although I would be--I would be happy to have follow-up conversations.\nI can tell you about one though that I think goes to what you are talking about, which is, I think we believe that it is very important as governments are thinking about what the right approach is to regulating AI, or trying to address some of the concerns that have been raised by artificial intelligence, to make sure that those conversations are happening not just with the United States, not just with the United States, and the EU, not just inside the G7, the OECD, but to try to have that be a broad-based conversation, including bringing in emerging economies that are--have not typically been as much a part of some of these discussions as I think should be the case.\nAnd so I think if we are going to end up with solutions that are really effective, for example, in deepfakes, that is going to have to be a global initiative, and I think it will be stronger and more effective if it is--if those discussions are happening with a group of companies--with a group of countries that represent different perspectives.\nSo emerging economies are going to have slightly different benefits and challenges, they need to be part of that discussion and that is----\nThe Chair. Well, besides----\n[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often.\nI am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.\nThe Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.\nI wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information. What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.\nWhat do you all see as the key tools for effectiveness in developing a system to respond to deepfakes? And we will just go right down the----\n[Respondent] Sorry. I am kind of probably overly passionate about it. So I feel like I have gone on a bit too long.\nThe Chair. No, no. The question I was trying to get at as people--listen, this committee passed this legislation, we created the NAIAC, we said, here is your responsibilities, we hope you have been thinking about this because we have given you a few years to do so. And so I was wondering if the current thinking was a divide over the complexity of dealing with national security kind of deepfakes in, you know, commercial, and citizen issues on deepfake.\nAnd whether they--you would reach some conclusion on the international side of, there is a lot to this, and a lot to communicate and coordinate, because obviously the World Wide Web is a big, you know, open system. So you could say the United States is doing this, but you need others to participate. But consumer issue is very different from how we deal with national security issues. And so did the--has the organization come to any conclusion on that?\n[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often.\nI am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.\nThe Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.\nI wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information. What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.\nWhat do you all see as the key tools for effectiveness in developing a system to respond to deepfakes? And we will just go right down the----\n[Respondent] I think the short answer is no. Just not to be overly legalistic, but there are significant restrictions on what I am allowed to say in a public forum, and I don't want to--I want to be very careful not to cross any lines.\nSo I can tell you that I think there are conversations happening about national security and consumers, on the point-- I feel like it is fine for me to say, on the point that you were talking about, I don't see there being a real challenge. I don't see there being a lack of consensus on national security versus consumer issues, and be able to engage internationally on that.\nThe Chair. Well, they are just different organizations within our government and I am pretty sure they are internationally. So it just makes it challenging.\n[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often.\nI am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.\nThe Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.\nI wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information. What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.\nWhat do you all see as the key tools for effectiveness in developing a system to respond to deepfakes? And we will just go right down the----\n[Respondent] It makes it challenging. And so I think one of the--so this I could say, I will just say, in my capacity as BSA, one of the--you have, for example, the U.K. government is hosting a global summit in the beginning of November, and I think one of the challenges they face is, who--if you are going to have a global summit that is intended to address the safety of artificial intelligence, which is what the UK has announced, who are you going to have--who is going to be part of that summit, and how many issues can they address?\nBecause there are a myriad of challenges, and as you say, they are often addressed by different parts of government. Speaking just for the United--speaking just in the context of the United States, I think having effective coordination across the Federal Government, I think there is more that could be done there. And I think that would be very, very helpful because you don't want these issues to get siloed, you don't want agencies to be doing things that are duplicative or in conflict.\nThe Chair. Okay.\n[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often.\nI am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.\nThe Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.\nI wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information. What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.\nWhat do you all see as the key tools for effectiveness in developing a system to respond to deepfakes? And we will just go right down the----\n[Respondent] Thank you. If I get to say briefly, I am excited to be here to testify in my capacity as CEO of BSA, but I would also be happy to follow up with you in my capacity as a member of the NAIAC Committee.\nThe Chair. Thank you.\n[Interviewer] (Senator Lujan) Well, thank you for your work in that space and bringing attention to it. I introduced a piece of legislation, called the LISTOS Act, this year to address the lack of non-English investment in multilingual, large language models. Any action Congress takes on AI transparency must protect our most marginalized communities, including non- English speakers. And for those that don't know what LISTOS means, it means ``ready,'' but it is an acronym, so I credit the staff for coming up with an acronym that calls to action to ensure that we would all get ready.\nNow, AI systems are useful in a huge variety of scenarios, from making financial decisions, to medical diagnosis, and content modernization, and I believe government should also utilize AI for improving constituents' access to government services. This just goes to show the broad application of what AI can do.\nNow, Ms. Espinel, AI systems are used in different sectors and for different purposes, and these various systems can have different kinds of outputs. For example, we have predictive AI making best guesses, and generative AI creating content. I have a hard time keeping up with a lot of this stuff; but maybe the Insight Forum tomorrow will help a little for folks like myself, but understandably. Consumers and other users of these systems will have very different experiences interacting in these systems.\nNow, my question to you stems from, if people even know they are interacting with an AI system, which is not a given, so under that premise, isn't it then necessary that any transparency and oversight requirements be specific to the sector or use case of the AI system?\n[Respondent] So you are absolutely correct that AI is used in many different ways, and has many different outputs, and has many different consequences. So I would say a couple of things. One is, I think, in terms of having transparency so that, for example, a consumer knows if they are interacting with an AI service like a chatbot, I think that is important.\nBut I would also say, to build on that, is that looking at the specific uses, perhaps, as opposed to looking at a sector, but looking to see whether or not that use is going to have a consequential decision on someone's life. Is it going to impact their ability to access government services, to access public benefits, to get a loan, to get education, to get a job?\nAnd if it is, if it is going to have a consequential decision in someone's life, then I believe, we believe at BSA, that companies should be required, by legislation, to do impact assessments to identify those risks, and then take steps to reduce those risks.",
+ "_bench": {
+  "seconds": 245.9,
+  "chars": 38360
+ }
+}

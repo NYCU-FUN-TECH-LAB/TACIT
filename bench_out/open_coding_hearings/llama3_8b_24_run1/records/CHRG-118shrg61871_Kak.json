@@ -1,0 +1,523 @@
+{
+ "respondent": "CHRG-118shrg61871_Kak",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "American prosperity and entrepreneurship",
+   "quote": "American prosperity depends upon entrepreneurs. These are ambitious and optimistic men and women who are willing to take risks, pursue their dreams, and try to change the world.",
+   "full_text": "American prosperity depends upon entrepreneurs. These are ambitious and optimistic men and women who are willing to take risks, pursue their dreams, and try to change the world. They mortgage their own homes. They put everything on the line to build a business that fills an unmet need or does something better than what is offered today.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The passage highlights the limitations of AI systems, emphasizing the need for a hands-off approach to technological innovation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Regulatory path and entrepreneurial freedom",
+   "quote": "Do we embrace our proven history, one with entrepreneurial freedom and technological innovation, or will we adopt the European model where government technocrats get to second guess and manage perceived risks with economic activity, ultimately creating an environment where only big tech with its armies of lawyers and lobbyists exist.",
+   "full_text": "Today's hearing on data privacy and artificial intelligence is a debate about which regulatory path we will take. Do we embrace our proven history, one with entrepreneurial freedom and technological innovation, or will we adopt the European model where government technocrats get to second guess and manage perceived risks with economic activity, ultimately creating an environment where only big tech with its armies of lawyers and lobbyists exist.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The passage discusses the need for guardrails to prevent failures and ensure benefits in the development and use of AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Comparison of US and EU economies",
+   "quote": "In 1993 at the dawn of the tech age the economies of the United States and the European Union were, roughly, equal in size. Today the American economy is nearly 50 percent larger than the EU's.",
+   "full_text": "Consider this. In 1993 at the dawn of the tech age the economies of the United States and the European Union were, roughly, equal in size. Today the American economy is nearly 50 percent larger than the EU's. The tech boom happened in America in part because Congress and the Clinton administration deliberately took a hands-off approach to the nascent internet.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The passage provides background information on the speaker's expertise and experience in the field of AI and technology."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Concerns about AI regulation",
+   "quote": "Unfortunately, the Biden administration and many of my colleagues are suggesting the European model for AI, based heavily on hysterical doomsday prophecies to justify a command and control Federal regulatory scheme that will cause the United States to lose our technological edge over China.",
+   "full_text": "The result was millions of jobs and a much higher standard of living for Americans. Unfortunately, the Biden administration and many of my colleagues are suggesting the European model for AI, based heavily on hysterical doomsday prophecies to justify a command and control Federal regulatory scheme that will cause the United States to lose our technological edge over China. The Biden administration's AI executive actions as well as many of the AI legislative proposals call for a new regulatory order that protects giant incumbent operators and discourages innovation with supposedly optional best practices or guidance written by all-knowing bureaucrats, some of whom were recently employed by the same big tech firms they seek to regulate and some of whom hope to be employed again by those same big tech firms right after they write the rules that benefit those giant big tech firms.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage highlights the respondent's concerns about the European model for AI regulation and its potential consequences for the United States."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "AI regulation and innovation",
+   "quote": "Now, AI can certainly be used for nefarious purposes just like any other technology, but to address specific harms or issues we should craft appropriate and targeted responses.",
+   "full_text": "Now, AI can certainly be used for nefarious purposes just like any other technology, but to address specific harms or issues we should craft appropriate and targeted responses. For example, Senator Klobuchar and I have introduced the bipartisan Take It Down Act which targets bad actors who use AI to create and publish fake lifelike explicit images of real people.",
+   "open_codes": [
+    {
+     "code_id": "c250",
+     "label": "Concerns about AI use",
+     "rationale": "The passage highlights the respondent's concerns about the potential misuse of AI technology."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Data privacy and innovation",
+   "quote": "I support Congress--not the FTC or any Federal agency but Congress setting a nationwide data privacy standard.",
+   "full_text": "I support Congress--not the FTC or any Federal agency but Congress setting a nationwide data privacy standard. Not only is it good for Americans to be empowered with privacy protections, but it is good for American businesses that desperately need legal certainty given the increasingly complex patchwork of state laws.",
+   "open_codes": [
+    {
+     "code_id": "c251",
+     "label": "Concerns about data privacy",
+     "rationale": "The passage highlights the respondent's concerns about the need for a uniform data privacy standard."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Concerns about APRA",
+   "quote": "It delegates far too much power to unelected commissioners at the FTC.",
+   "full_text": "But our goal should not be to pass any uniform privacy standard but rather the right standard that protects privacy without preventing U.S. technological innovation. I have discussed APRA with Chairwoman McMorris Rodgers and will continue my offer to work with her but right now this bill is not the solution. It delegates far too much power to unelected commissioners at the FTC. It focuses on algorithmic regulations under the guise of civil rights which would directly empower the DEI speech police efforts underway at the Biden White House, harming the free speech rights of all Americans. As currently constructed APRA is more about Federal regulatory control of the Internet than personal privacy. In the end, it is the giant companies with vast resources that ultimately benefit from bills like APRA at the expense of small businesses.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "Dr. Calo discusses his understanding of APRA and its implications"
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Guardrails for AI",
+   "quote": "Without guardrails to set the rules of the road we are committing ourselves to more of the same, to carrying forward extractive, invasive, and often predatory data practices and business models that have characterized the past decade of the tech industry.",
+   "full_text": "We are at a very clear inflection point in the trajectory of AI. Without guardrails to set the rules of the road we are committing ourselves to more of the same, to carrying forward extractive, invasive, and often predatory data practices and business models that have characterized the past decade of the tech industry. We are also committing ourselves to the seamless transition of big tech from surveillance monopolies to AI monopolies. A Federal data privacy law could break this cycle, especially one with strong data minimization, which could challenge the culture of impunity and recklessness in the AI industry that is already hurting both consumers and competition.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Dr. Calo emphasizes the importance of setting rules for AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Data privacy regulation",
+   "quote": "Data privacy regulation is AI regulation and it provides many of the tools that we need to protect the public from harm.",
+   "full_text": "Data privacy regulation is AI regulation and it provides many of the tools that we need to protect the public from harm. But let us get concrete. How might the AI market shape up differently in the presence of a strong data privacy law? First, with data minimization rules firms would need to put reason in place of recklessness when it comes to decisions about what data to collect, the purposes to which it can be used, and for how long it can be stored.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "Dr. Calo discusses the limitations of AI systems and the need for regulations"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The passage discusses the importance of data privacy regulation as AI regulation to protect the public from harm."
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Data minimization rules",
+   "quote": "Firms would need to put reason in place of recklessness when it comes to decisions about what data to collect, the purposes to which it can be used, and for how long it can be stored.",
+   "full_text": "First, with data minimization rules firms would need to put reason in place of recklessness when it comes to decisions about what data to collect, the purposes to which it can be used, and for how long it can be stored.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The passage provides background information on data minimization rules and their importance in AI regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "Recall.ai feature",
+   "quote": "which, by the way, takes continuous screenshots of everything you see or do on your computer",
+   "full_text": "These requirements would empower lawmakers but also the public to demand very basic accountability. So before Microsoft, for example, rushes to release its new Recall.ai feature, which, by the way, takes continuous screenshots of everything you see or do on your computer, the company might need to ask itself and, importantly, document its answer does the utility of this feature outweigh the honeypot it is creating for bad actors?",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The passage expresses concerns about the Recall.ai feature and its potential impact on data privacy."
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Data decisions that affect us all",
+   "quote": "Meta and Google recently announced updates unilaterally, of course, to their terms which allow AI training from user data.",
+   "full_text": "Now, we know about this because European users were alerted by Meta. Without a legal mandate to require it, of course, American users received no such notification and users in--of Reddit are also similarly up in arms because their content was just sold to the highest bidder, in this case Google, for use of training its AI.",
+   "open_codes": [
+    {
+     "code_id": "c044",
+     "label": "Transparency",
+     "rationale": "The passage discusses the importance of transparency in AI regulation and its impact on public trust."
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Purpose limitation rules",
+   "quote": "prevent big tech from using AI as its catch-all justification to use and combine data across contexts and store it forever.",
+   "full_text": "But it is important to remember that a privacy law would offer much more than just transparency in every single instant I mentioned. Purpose limitation rules would prevent big tech from using AI as its catch-all justification to use and combine data across contexts and store it forever.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The passage provides background information on purpose limitation rules and their importance in AI regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "AI developers making data choices",
+   "quote": "AI developers would need to make data choices that deliberately prevent discriminatory outcomes.",
+   "full_text": "Third, in a world with a data privacy mandate AI developers would need to make data choices that deliberately prevent discriminatory outcomes. So we should not be surprised when we see that women are seeing far less ads for high-paying jobs in Google ads. That is 100 percent a feature of data decisions that have already been made upstream.",
+   "open_codes": [
+    {
+     "code_id": "c005",
+     "label": "Characteristics of machine learning systems",
+     "rationale": "The passage discusses the importance of AI developers making data choices that deliberately prevent discriminatory outcomes."
+    },
+    {
+     "code_id": "c252",
+     "label": "Data privacy mandate",
+     "rationale": "The passage discusses the need for a data privacy mandate to prevent discriminatory outcomes"
+    },
+    {
+     "code_id": "c253",
+     "label": "Discriminatory outcomes",
+     "rationale": "The passage highlights the need to prevent discriminatory outcomes in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "Avoidable problems and data privacy law",
+   "quote": "These are avoidable problems, and it is not just in scope for privacy law.",
+   "full_text": "I mean, the good news here is that these are avoidable problems, and it is not just in scope for privacy law. I would say it is integral to protecting people from the most serious abusers of this data and where specific AI practices have sort of inherent, well-established harms, emotion recognition systems that have faulty scientific foundations or pernicious forms of ad targeting. The law would hold them entirely off limits.",
+   "open_codes": [
+    {
+     "code_id": "c254",
+     "label": "Avoidable problems",
+     "rationale": "The passage discusses the need to address avoidable problems through data privacy law"
+    },
+    {
+     "code_id": "c255",
+     "label": "Data privacy law",
+     "rationale": "The passage highlights the importance of data privacy law in addressing avoidable problems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "Costs and business models of AI",
+   "quote": "Now, these eye-watering costs will need a path to profit and by every account a viable business model still does not exist.",
+   "full_text": "Finally--and here is the thing about very large-scale AI-- it is not only computationally, ecologically, and data intensive it is also very, very expensive to develop and run. Now, these eye-watering costs will need a path to profit and by every account a viable business model still does not exist. Now, it is precisely in this kind of an environment with a few incumbent firms feeling the pressure to turn a profit that predatory business models emerge.",
+   "open_codes": [
+    {
+     "code_id": "c256",
+     "label": "Costs of AI",
+     "rationale": "The passage discusses the high costs of AI development and operation"
+    },
+    {
+     "code_id": "c257",
+     "label": "Business models of AI",
+     "rationale": "The passage highlights the challenges of developing a viable business model for AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "Hyper-personalized inferences and surveillance",
+   "quote": "You do not need to be a clairvoyant to see that all roads might well be leading us right back to the surveillance advertising business model that got us here.",
+   "full_text": "Meanwhile, we are hearing new research that LLM systems are capable of hyper personalized inferences about us even from the most general prompts. You do not need to be a clairvoyant to see that all roads might well be leading us right back to the surveillance advertising business model that got us here.",
+   "open_codes": [
+    {
+     "code_id": "c258",
+     "label": "Hyper-personalized inferences",
+     "rationale": "The passage discusses the potential for AI to make highly personalized inferences about individuals"
+    },
+    {
+     "code_id": "c259",
+     "label": "Surveillance",
+     "rationale": "The passage highlights the potential for AI to enable surveillance"
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "Conclusion and call to action",
+   "quote": "There is nothing about the current trajectory of AI that is inevitable and as a democracy the U.S. has a huge opportunity to take global leadership and shape this next era of tech so that it reflects the public interest and not just the bottom lines of very few companies.",
+   "full_text": "So, to conclude, there is nothing about the current trajectory of AI that is inevitable and as a democracy the U.S. has a huge opportunity to take global leadership and shape this next era of tech so that it reflects the public interest and not just the bottom lines of very few companies. This is the moment for action. Thank you.",
+   "open_codes": [
+    {
+     "code_id": "c260",
+     "label": "Call to action",
+     "rationale": "The passage concludes with a call to action to shape the future of AI"
+    },
+    {
+     "code_id": "c261",
+     "label": "Public interest",
+     "rationale": "The passage highlights the importance of prioritizing the public interest in shaping the future of AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "AI scams and data privacy concerns",
+   "quote": "Americans are generating more data online than ever before, and we know with advances in AI, data can be used in many ways depending on the algorithms that are written.",
+   "full_text": "I am going to talk first a little bit about AI scams because Americans are generating more data online than ever before, and we know with advances in AI, data can be used in many ways depending on the algorithms that are written. And, of course, bad actors are going to use AI to generate more believable scams using the deep fake, cloning, and all the pictures. You have seen it. Everyone has seen it everywhere, and these particularly target our seniors and they target our veterans.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about AI development and use, specifically in the context of scams and data privacy"
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "ChatGPT and AI-enabled cyber attacks",
+   "quote": "What we were really more concerned about was had we just seen the creation of the most effective spam generator that history had ever seen.",
+   "full_text": "It is interesting because when ChatGPT was released and there was all of this excitement about whether we were one step--who knows if it is tomorrow or in 50 years but one step away from these sort of fantastical Terminator like scenarios. What we were really more concerned about was had we just seen the creation of the most effective spam generator that history had ever seen.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about AI development and use, specifically in the context of ChatGPT and spam generation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Federal data privacy law and AI-enabled cyber attacks",
+   "quote": "I think it would do so in a very sort of structural sense. It would say that there need to be certain rules of the road. There need to be limits on what companies are able to collect, the ways in which they are training their models, so that these companies are not creating inaccurate sort of misleading AI tools which are then being integrated into our most sort of sensitive social domains, whether that is banking or health care or hiring.",
+   "full_text": "To your question on how would a Federal data privacy law sort of nip these kinds of problems in the bud, I think it would do so in a very sort of structural sense. It would say that there need to be certain rules of the road. There need to be limits on what companies are able to collect, the ways in which they are training their models, so that these companies are not creating inaccurate sort of misleading AI tools which are then being integrated into our most sort of sensitive social domains, whether that is banking or health care or hiring.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about AI development and use, specifically in the context of Federal data privacy law and AI-enabled cyber attacks"
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Garbage in, garbage out",
+   "quote": "So when we see these failures we should see them not as output failures but as failures that go back to very crucial data decisions that are made right from the training and development stage of these models all the way through to the output stage and so the privacy risk is----",
+   "full_text": "So when we see these failures we should see them not as output failures but as failures that go back to very crucial data decisions that are made right from the training and development stage of these models all the way through to the output stage and so the privacy risk is----",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about AI development and use, specifically in the context of data quality and privacy risks"
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "AI-enabled cyber attacks and incentives",
+   "quote": "the sort of incentives for irresponsible data surveillance have existed for the last decade. What AI does is it pours gasoline on these incentives.",
+   "full_text": "Thank you, Senator. I will say that the sort of incentives for irresponsible data surveillance have existed for the last decade. What AI does is it pours gasoline on these incentives. So, if anything, we have a situation where all of our known privacy and security harms and risks are getting exacerbated.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about AI development and use, specifically in the context of AI-enabled cyber attacks and incentives"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "AI exacerbates existing privacy and security harms"
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Data minimization and privacy",
+   "quote": "data never collected is data that is never at risk, and data that is deleted after it is no longer needed is also data that is no longer at risk.",
+   "full_text": "To the second part of your question, which is what is the connection between privacy and security, I would say those are sort of two sides of the same coin. So data never collected is data that is never at risk, and data that is deleted after it is no longer needed is also data that is no longer at risk.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "defining the connection between privacy and security"
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "Quantification of data leakage",
+   "quote": "we do not know and that is sort of part of why we are here today, which is that we do not have basic transparency about whether our data is being used, how it is being protected.",
+   "full_text": "Senator, there are two parts--two ways in which I will answer that question. The first is to say we do not know and that is sort of part of why we are here today, which is that we do not have basic transparency about whether our data is being used, how it is being protected. And what we do know is that companies like Meta and Google are sort of at-will changing their terms of service to say, heads up, we are now using your data for AI. At the same time as we are seeing these chatbots routinely leak the personal information they were trained on.",
+   "open_codes": [
+    {
+     "code_id": "c044",
+     "label": "Transparency",
+     "rationale": "lack of transparency about data use and protection"
+    },
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "Ms. Kak expresses concerns about AI development and use due to lack of transparency"
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Importance of transparency",
+   "quote": "transparency is not enough and why proposals like the bipartisan ADPPA and the APRA are so important because they are putting down sort of rules of the rule that apply regardless of consent and what consumers choose.",
+   "full_text": "The only thing I would add, Senator, is sort of what do we do as consumers with that information and that is really why transparency is not enough and why proposals like the bipartisan ADPPA and the APRA are so important because they are putting down sort of rules of the rule that apply regardless of consent and what consumers choose.",
+   "open_codes": [
+    {
+     "code_id": "c044",
+     "label": "Transparency",
+     "rationale": "Ms. Kak emphasizes the importance of transparency in AI use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "Need for accountability",
+   "quote": "what has not worked is a consent-only based regime. That is why we need accountability in addition to consent.",
+   "full_text": "What has not worked is a consent-only based regime. That is why we need accountability in addition to consent. What has worked is that the Brazilian data protection regulator recently banned Meta from using user data to train their AI because they found that there was children's images in the training data and it was being leaked on the other side.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Ms. Kak highlights the need for accountability in AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "Importance of regulation",
+   "quote": "it directs the Commerce Department to set minimum testing and evaluation standards for AI systems that pose the highest risk such as systems used to manage our electric grid, other critical infrastructure.",
+   "full_text": "Ms. Kak, Senator Thune and I have a bill--I think you may be familiar with it--the AI Research, Innovation, and Accountability Act--to increase transparency and accountability for the riskiest nondefense applications of AI. It directs the Commerce Department to set minimum testing and evaluation standards for AI systems that pose the highest risk such as systems used to manage our electric grid, other critical infrastructure.",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Single agency for AI regulation",
+     "rationale": "Ms. Kak supports regulation of AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Importance of transparency in AI development",
+   "quote": "Absolutely, and, Senator Klobuchar, we are actually seeing some of these big tech companies argue in their policy briefs that it is the training stage that is irrelevant and we should only be focusing on the output stage.",
+   "full_text": "It also requires AI deployers to submit regular risk assessments and transparency reports to the Commerce Department that among other things document the source of the AI data used to train employees. Do you agree that transparency in the datasets used to train commercially available models can do more to protect consumer privacy but also ensure more reliable systems?",
+   "open_codes": [
+    {
+     "code_id": "c262",
+     "label": "Importance of transparency in AI development",
+     "rationale": "The respondent emphasizes the importance of transparency in AI development and use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "Concerns about AI regulation",
+   "quote": "But that could not be further from the truth and it is very clearly in service of their interests alone.",
+   "full_text": "But that could not be further from the truth and it is very clearly in service of their interests alone. So I think we should really double down on both transparency but also testing and evaluation throughout the life cycle of an AI product.",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The respondent is skeptical about the motivations behind AI regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Need for independent regulation",
+   "quote": "We have done this in the past when we started the Securities and Exchange Commission, when we started the Federal Aviation Authority, when we did the Interstate Commerce Commission.",
+   "full_text": "Give me your thoughts on just the concept of a digital platform commission as having that responsibility in an ongoing basis. In general we do think that independent regulation and sort of resourcing our enforcers is--should be a top priority.",
+   "open_codes": [
+    {
+     "code_id": "c263",
+     "label": "Need for independent regulation",
+     "rationale": "The respondent believes that independent regulation is essential for effective governance."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_015911",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 9,
+   "n_ok": 9
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 1,
+    "created": 2,
+    "chunk": 1
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 2
+   },
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 3
+   },
+   {
+    "reused": 0,
+    "created": 10,
+    "chunk": 4
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 6
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 1,
+    "created": 2,
+    "chunk": 8
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg61871 — Amba Kak, Co-Executive Director, Ai Now Institute\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg61871  |  The Need To Protect Americans' Privacy And The Ai Accelerant  |  Senate, Committee On Commerce, Science, And Transportation  |  2024-07-11  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Senator Cruz) Thank you, Madam Chair.\nAmerican prosperity depends upon entrepreneurs. These are ambitious and optimistic men and women who are willing to take risks, pursue their dreams, and try to change the world.\nThey mortgage their own homes. They put everything on the line to build a business that fills an unmet need or does something better than what is offered today.\nBut throughout history prosperity and human flourishing has been stymied or delayed by governments that impose regulatory policies to address supposed harms but in actuality overstated risk in order to protect incumbent operators, often large and powerful companies that did not want to compete and that just happened to give big campaign checks to the politicians in power.\nThe United States has mostly chosen a different path, one where a free enterprise system governed by the rule of law allows Americans to freely pursue their ideas, grow their own businesses, and compete without having to obtain permission from all-knowing bureaucrats.\nToday's hearing on data privacy and artificial intelligence is a debate about which regulatory path we will take.\nDo we embrace our proven history, one with entrepreneurial freedom and technological innovation, or will we adopt the European model where government technocrats get to second guess and manage perceived risks with economic activity, ultimately creating an environment where only big tech with its armies of lawyers and lobbyists exist.\nConsider this. In 1993 at the dawn of the tech age the economies of the United States and the European Union were, roughly, equal in size.\nToday the American economy is nearly 50 percent larger than the EU's. The tech boom happened in America in part because Congress and the Clinton administration deliberately took a hands-off approach to the nascent internet.\nThe result was millions of jobs and a much higher standard of living for Americans. Unfortunately, the Biden administration and many of my colleagues are suggesting the European model for AI, based heavily on hysterical doomsday prophecies to justify a command and control Federal regulatory scheme that will cause the United States to lose our technological edge over China.\nThe Biden administration's AI executive actions as well as many of the AI legislative proposals call for a new regulatory order that protects giant incumbent operators and discourages innovation with supposedly optional best practices or guidance written by all-knowing bureaucrats, some of whom were recently employed by the same big tech firms they seek to regulate and some of whom hope to be employed again by those same big tech firms right after they write the rules that benefit those giant big tech firms.\nWe already see Federal AI regulators and Biden allies talking about the need to stop, quote, ``bias,'' quote, ``misinformation,'' quote, ``discrimination'' in AI systems and algorithms. That is code for speech police. If they do not like what you say they want to silence it.\nNow, AI can certainly be used for nefarious purposes just like any other technology, but to address specific harms or issues we should craft appropriate and targeted responses.\nFor example, Senator Klobuchar and I have introduced the bipartisan Take It Down Act which targets bad actors who use AI to create and publish fake lifelike explicit images of real people.\nOur bill, which is sponsored by many Republican and Democrat members of this committee, would also require big tech to follow a notice and take down process so ordinary Americans who are victimized by these disturbing images can get them offline immediately.\nThe bipartisan Take It Down Act is a tailored solution to a real problem. On behalf of the teenage girls and others who have been victimized by deep fake explicit imagery I hope that this committee will take up soon the Take It Down Act and pass it and move it to the floor and get it signed into law.\nAs I conclude, I would like to address a related matter, the American Privacy Rights Act--APRA. I support Congress--not the FTC or any Federal agency but Congress setting a nationwide data privacy standard.\nNot only is it good for Americans to be empowered with privacy protections, but it is good for American businesses that desperately need legal certainty given the increasingly complex patchwork of state laws.\nBut our goal should not be to pass any uniform privacy standard but rather the right standard that protects privacy without preventing U.S. technological innovation.\nI have discussed APRA with Chairwoman McMorris Rodgers and will continue my offer to work with her but right now this bill is not the solution. It delegates far too much power to unelected commissioners at the FTC.\nIt focuses on algorithmic regulations under the guise of civil rights which would directly empower the DEI speech police efforts underway at the Biden White House, harming the free speech rights of all Americans.\nAs currently constructed APRA is more about Federal regulatory control of the Internet than personal privacy. In the end, it is the giant companies with vast resources that ultimately benefit from bills like APRA at the expense of small businesses.\nThe path that Congress needs to take is to put individuals in control of the privacy of their own data and give them transparency to make decisions in the marketplace, and I look forward to working with my colleagues to do exactly that.\nThe Chair. Thank you, Senator Cruz.\nWe will now turn to our panel starting with Dr. Calo. Thank you so much. We are really proud of the work that the University of Washington has done. I think we are on both.\nSenator Cruz is mentioning the innovation economy. I think we have that down in the Northwest, but we also want to make sure we have down the important protections that go along with it.\nSo thank you, Dr. Calo, for your presence.\n[Respondent] Thank you, Chair Cantwell, Ranking Member Cruz, and esteemed members of this committee. Thank you for inviting me to testify.\nWe are at a very clear inflection point in the trajectory of AI. Without guardrails to set the rules of the road we are committing ourselves to more of the same, to carrying forward extractive, invasive, and often predatory data practices and business models that have characterized the past decade of the tech industry.\nWe are also committing ourselves to the seamless transition of big tech from surveillance monopolies to AI monopolies. A Federal data privacy law could break this cycle, especially one with strong data minimization, which could challenge the culture of impunity and recklessness in the AI industry that is already hurting both consumers and competition.\nIf there is a single point I want to make in today's testimony it is that now is the moment when passing such a law actually matters before the trajectory has been set.\nData privacy regulation is AI regulation and it provides many of the tools that we need to protect the public from harm. But let us get concrete. How might the AI market shape up differently in the presence of a strong data privacy law?\nFirst, with data minimization rules firms would need to put reason in place of recklessness when it comes to decisions about what data to collect, the purposes to which it can be used, and for how long it can be stored.\nThese requirements would empower lawmakers but also the public to demand very basic accountability. So before Microsoft, for example, rushes to release its new Recall.ai feature, which, by the way, takes continuous screenshots of everything you see or do on your computer, the company might need to ask itself and, importantly, document its answer does the utility of this feature outweigh the honeypot it is creating for bad actors?\nAs a security researcher quickly discovered with Microsoft Recall it is actually scarily trivial for an attacker to use malware to extract a record of everything you have ever viewed on your PC.\nNow, a strong data minimization mandate would have nipped this in the bud. It would have likely disincentivized the development of such a patently insecure feature to begin with.\nSecond, we would have transparency about the data decisions that affect us all. Meta and Google recently announced updates unilaterally, of course, to their terms which allow AI training from user data.\nNow, we know about this because European users were alerted by Meta. Without a legal mandate to require it, of course, American users received no such notification and users in--of Reddit are also similarly up in arms because their content was just sold to the highest bidder, in this case Google, for use of training its AI.\nBut it is important to remember that a privacy law would offer much more than just transparency in every single instant I mentioned. Purpose limitation rules would prevent big tech from using AI as its catch-all justification to use and combine data across contexts and store it forever.\nThe FTC has already penalized Amazon for storing the voice data of children indefinitely, using AI as its excuse. But we cannot rely on this kind of one-off enforcement. There needs to be rules of the road.\nAnd these rules, it is important to remember, would not just safeguard our privacy. They would also act as a powerful check on the data advantages currently being consolidated by big tech to build a moat around them and stave off competition in AI.\nThird, in a world with a data privacy mandate AI developers would need to make data choices that deliberately prevent discriminatory outcomes. So we should not be surprised when we see that women are seeing far less ads for high-paying jobs in Google ads. That is 100 percent a feature of data decisions that have already been made upstream.\nI mean, the good news here is that these are avoidable problems, and it is not just in scope for privacy law. I would say it is integral to protecting people from the most serious abusers of this data and where specific AI practices have sort of inherent, well-established harms, emotion recognition systems that have faulty scientific foundations or pernicious forms of ad targeting. The law would hold them entirely off limits.\nFinally--and here is the thing about very large-scale AI-- it is not only computationally, ecologically, and data intensive it is also very, very expensive to develop and run.\nNow, these eye-watering costs will need a path to profit and by every account a viable business model still does not exist. Now, it is precisely in this kind of an environment with a few incumbent firms feeling the pressure to turn a profit that predatory business models emerge.\nMeanwhile, we are hearing new research that LLM systems are capable of hyper personalized inferences about us even from the most general prompts. You do not need to be a clairvoyant to see that all roads might well be leading us right back to the surveillance advertising business model that got us here.\nSo, to conclude, there is nothing about the current trajectory of AI that is inevitable and as a democracy the U.S. has a huge opportunity to take global leadership and shape this next era of tech so that it reflects the public interest and not just the bottom lines of very few companies.\nThis is the moment for action. Thank you.\n[Interviewer] (Senator Rosen) Well, thank you. Writing that computer code it was a great experience, a great living, and I loved every minute of it and now it prepares me for a lot of things I do here today.\nSo thank you for holding this hearing. These issues are so important. I really appreciate the witnesses.\nI am going to talk first a little bit about AI scams because Americans are generating more data online than ever before, and we know with advances in AI, data can be used in many ways depending on the algorithms that are written. And, of course, bad actors are going to use AI to generate more believable scams using the deep fake, cloning, and all the pictures. You have seen it. Everyone has seen it everywhere, and these particularly target our seniors and they target our veterans.\nAnd so I would like to ask each--Ms. Kak and Professor Calo, both of you, how can enacting a Federal data privacy law better protect individuals from these AI-enabled cyber attacks and scams that we know are happening every single day in every community?\n[Respondent] Thank you, Senator.\n[Interviewer] (Senator Rosen) Ms. Kak, we will start with you and then we will go to the professor.\n[Respondent] Thank you, Senator.\nIt is interesting because when ChatGPT was released and there was all of this excitement about whether we were one step--who knows if it is tomorrow or in 50 years but one step away from these sort of fantastical Terminator like scenarios.\nWhat we were really more concerned about was had we just seen the creation of the most effective spam generator that history had ever seen.\nAnd so I think what is at the heart of these issues is that we are creating these technologies that are moving to market clearly before they are ready for commercial release and they are sort of unleashing these diffuse harms including, as you mentioned, the risk of sort of exacerbating concerns of deceptive and spam content.\nTo your question on how would a Federal data privacy law sort of nip these kinds of problems in the bud, I think it would do so in a very sort of structural sense.\nIt would say that there need to be certain rules of the road. There need to be limits on what companies are able to collect, the ways in which they are training their models, so that these companies are not creating inaccurate sort of misleading AI tools which are then being integrated into our most sort of sensitive social domains, whether that is banking or health care or hiring.\nSo I think the--sort of a final thing I will say on the kind of spam generation point is that we have known for the last decade--we have evidence that garbage in, garbage out.\nSo when we see these failures we should see them not as output failures but as failures that go back to very crucial data decisions that are made right from the training and development stage of these models all the way through to the output stage and so the privacy risk is----\n[Interviewer] (Senator Blackburn) Thank you.\n[Respondent] Thank you, Senator.\nI will say that the sort of incentives for irresponsible data surveillance have existed for the last decade. What AI does is it pours gasoline on these incentives.\nSo, if anything, we have a situation where all of our known privacy and security harms and risks are getting exacerbated.\nTo the second part of your question, which is what is the connection between privacy and security, I would say those are sort of two sides of the same coin.\nSo data never collected is data that is never at risk, and data that is deleted after it is no longer needed is also data that is no longer at risk.\nSo I think having a strong data minimization mandate that puts what we would consider a very basic data hygiene in place is absolutely essential, especially as you are seeing more kind of concerning bad actors use this information in nefarious ways, some of which the legislation you mentioned is going to clamp down on.\n[Interviewer] (Senator Hickenlooper) All right. Good answer.\nAnd, Ms. Kak, you can opine on that as well but I have got another question so let me start with the question.\nAnd you guys have discussed a little bit the advances in generative and traditional AI and how those advances really are fueled by data now.\nI mean, we recognize that. But training AI systems cannot be--it really cannot be at the expense of people's privacy and reducing the amount of personal sets of data, as you have all discussed, the notion of minimization does really reduce the likelihood that data privacy and data security harm could happen.\nAnd Senator Blackburn, among all the other bills she listed these issues are covered extensively in various hearings we have had on our subcommittee that she and I chair, Consumer Protection, Product Safety, and Data Security.\nSo, Ms. Kak, I want to say how would you quantify--how often or what types of quantification do you say when you--when you say how often is the data of consumers unnecessarily exposed within the AI model and do you believe that the strict data minimization requirements can significantly help control this--let us call it data leakage?\n[Respondent] Senator, there are two parts--two ways in which I will answer that question. The first is to say we do not know and that is sort of part of why we are here today, which is that we do not have basic transparency about whether our data is being used, how it is being protected.\nAnd what we do know is that companies like Meta and Google are sort of at-will changing their terms of service to say, heads up, we are now using your data for AI. At the same time as we are seeing these chatbots routinely leak the personal information they were trained on.\nBut I think if we did--in the absence of clear data from these companies and a regulatory mandate that allows us to ask them for it I think what we can already see just from the most obvious lapses is that this irresponsible data collection and use is happening everywhere. It is happening all the time, and I think one of the ways in which the U.S. might benefit from being somewhat of a laggard when it comes to data privacy law is to look at what has not worked elsewhere.\nWhat has not worked is a consent-only based regime. That is why we need accountability in addition to consent. What has worked is that the Brazilian data protection regulator recently banned Meta from using user data to train their AI because they found that there was children's images in the training data and it was being leaked on the other side.\nSo there is a lot to learn and there is a lot of, I think, a foundation from which to act from.\n[Interviewer] (Senator Moran) It is a sad state of affairs, actually. We cannot understand it well enough to protect ourselves.\nAnything to add?\n[Respondent] Yes. The only thing I would add, Senator, is sort of what do we do as consumers with that information and that is really why transparency is not enough and why proposals like the bipartisan ADPPA and the APRA are so important because they are putting down sort of rules of the rule that apply regardless of consent and what consumers choose.\n[Interviewer] (Senator Klobuchar) Thank you.\nMs. Kak, Senator Thune and I have a bill--I think you may be familiar with it--the AI Research, Innovation, and Accountability Act--to increase transparency and accountability for the riskiest nondefense applications of AI.\nIt directs the Commerce Department to set minimum testing and evaluation standards for AI systems that pose the highest risk such as systems used to manage our electric grid, other critical infrastructure.\nIt also requires AI deployers to submit regular risk assessments and transparency reports to the Commerce Department that among other things document the source of the AI data used to train employees.\nDo you agree that transparency in the datasets used to train commercially available models can do more to protect consumer privacy but also ensure more reliable systems?\n[Respondent] Absolutely, and, Senator Klobuchar, we are actually seeing some of these big tech companies argue in their policy briefs that it is the training stage that is irrelevant and we should only be focusing on the output stage.\nBut that could not be further from the truth and it is very clearly in service of their interests alone. So I think we should really double down on both transparency but also testing and evaluation throughout the life cycle of an AI product.\nI will also say that companies should not be getting to grade their own homework so the actual metrics that we use for this evaluation should be set by regulators. It should be set by public bodies and not the companies themselves.\n[Interviewer] (Senator Welch) Thank you.\nI want to ask Ms. Kak this question. Senator Bennet and I have introduced the Digital Commission--the Digital Platform Commission Act, and what it would do is establish an independent Federal commission to regulate digital platforms and that would include on key issues like AI and privacy concerns.\nAnd our theory, essentially, is that the Congress simply cannot keep up with everything that is happening and we cannot address everything in a one-off piece of legislation. There has to be a governmental agency that is properly staffed and resourced to keep up with this.\nWe have done this in the past when we started the Securities and Exchange Commission, when we started the Federal Aviation Authority, when we did the Interstate Commerce Commission.\nGive me your thoughts on just the concept of a digital platform commission as having that responsibility in an ongoing basis.\n[Respondent] Thank you, Senator, for your leadership on this issue.\nIn general we do think that independent regulation and sort of resourcing our enforcers is--should be a top priority. What I will say, though, is that I do think that existing enforcement agencies like the FTC have been working on these issues for decades now.\nThey have the capacity. They have the kind of technical expertise. What the moment needs is for these agencies to be much better resourced so that they can meet the moment and for laws like the APRA and the bipartisan ADPPA which empower them to then enforce clear privacy standards.",
+ "_bench": {
+  "seconds": 191.8,
+  "chars": 21806
+ }
+}

@@ -1,0 +1,559 @@
+{
+  "codebook_id": "cb_20260921_192719",
+  "language": "en",
+  "created": "2026-09-21T19:27:19",
+  "codes": [
+    {
+      "code_id": "c001",
+      "label": "Opening Remarks",
+      "definition": "Initial statements and greetings",
+      "examples": [
+        {
+          "quote": "Thank you, Senator Peters and Members of the Homeland Security and Government Affairs Committee.",
+          "respondent": "Suresh Venkatasubramanian"
+        },
+        {
+          "quote": "Thank you, Chairman Peters, Ranking Member Paul, and Committee Members for your attention to artificial intelligence and automated decisionmaking in government programs.",
+          "respondent": "Richard A. Eppink, Of Counsel, American Civil Liberties Union Of Idaho Foundation"
+        },
+        {
+          "quote": "They have the right to see it. They have the right to ask us to correct it, if it's wrong. They have the right to ask us to delete it, if that's what they want us to do.",
+          "respondent": "Smith"
+        },
+        {
+          "quote": "The Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.",
+          "respondent": "Senator Hickenlooper"
+        },
+        {
+          "quote": "And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.",
+          "respondent": "Senator Hickenlooper"
+        }
+      ],
+      "count": 10,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c002",
+      "label": "Biographical Context",
+      "definition": "Providing background information about the respondent",
+      "examples": [
+        {
+          "quote": "I recently completed a stint as tech policy advisor in the White House and helped develop the Blueprint for an AI Bill of Rights.",
+          "respondent": "Suresh Venkatasubramanian"
+        },
+        {
+          "quote": "I was invited here today because I have been working for over a decade with Idahoans with developmental disabilities and their families to challenge secret decisions made by computerized algorithmic systems.",
+          "respondent": "Richard A. Eppink, Of Counsel, American Civil Liberties Union Of Idaho Foundation"
+        },
+        {
+          "quote": "I would say academic researchers--not all of them, but many of them don't have any commercial ties. They have a reputation to keep in order to continue their career.",
+          "respondent": "Bengio"
+        },
+        {
+          "quote": "the organizations that're going to do that, in my opinion, shouldn't be for-profit.",
+          "respondent": "Bengio"
+        },
+        {
+          "quote": "we should be very careful to do this with our allies in the world and not do it alone.",
+          "respondent": "Bengio"
+        }
+      ],
+      "count": 23,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c003",
+      "label": "Defining AI",
+      "definition": "Providing a general overview of the field of AI",
+      "examples": [
+        {
+          "quote": "We are here today to talk about AI, a field of study trying to design systems that can sense, interact, reason, and behave in the way humans do, and in some cases even surpass us.",
+          "respondent": "Suresh Venkatasubramanian"
+        },
+        {
+          "quote": "a field of study trying to design systems that can sense, interact, reason, and behave in the way humans do, and in some cases even surpass us.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "They fail when the algorithms draw incorrect conclusions from data. They fail when they make predictions based on faulty or biased data. They fail when the results of one AI system are fed into another, or even the same one, amplifying errors along the way. They fail when they are so opaque that errors in how they function cannot even be detected.",
+          "respondent": "Professor Venkatasubramanian"
+        },
+        {
+          "quote": "There is a future in which automated technology is an assistant. It enables human freedom, liberty, and flourishing, where the technology we build is inclusive and helps all of us achieve our dreams and maximize our potential.",
+          "respondent": "Professor Venkatasubramanian"
+        },
+        {
+          "quote": "when we do not know how an algorithm works or why it works, we also do not know how it fails and under what circumstances it fails, and that is where the biggest problem is.",
+          "respondent": "Professor Venkatasubramanian"
+        }
+      ],
+      "count": 64,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c004",
+      "label": "Impact of Machine Learning",
+      "definition": "Machine learning's far-reaching impact on society",
+      "examples": [
+        {
+          "quote": "Virtually every sector of society is now touched by machine learning, and the most consequential decisions and experiences in our lives are mediated by algorithms--where we go to school, how we learn, how we get jobs, whether we can buy a house, what kind of loan we get, whether we get credit to start a small business, whether we are surveilled by law enforcement or incarcerated before a trial, how long a sentence for a convicted individual is, and whether we can get paroled.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "Alan Turing, the founder of computer science, warned in 1951 that once AI outstrips our feeble powers, we should have to expect the machines to take control.",
+          "respondent": "Stuart Russell, Professor Of Computer Science, University Of California, Berkeley"
+        },
+        {
+          "quote": "2024 is a critical year for elections, not only in this country. But it's not only for the United States, it's for the United Kingdom, for India, across the European Union. More than two billion people will vote for who is going to represent them.",
+          "respondent": "Smith"
+        },
+        {
+          "quote": "All these systems have something in common. They are algorithms for making algorithms.",
+          "respondent": "Venkatasubramanian"
+        }
+      ],
+      "count": 4,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Characteristics of Machine Learning Systems"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:01",
+          "action": "merge",
+          "detail": "merged: Characteristics of Machine Learning Systems",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c006",
+      "label": "Limitations of AI",
+      "definition": "Limitations of AI systems",
+      "examples": [
+        {
+          "quote": "They fail when the algorithms draw incorrect conclusions from data. They fail when they make predictions based on faulty or biased data. They fail when the results of one AI system are fed into another, or even the same one, amplifying errors along the way. They fail when they are so opaque that errors in how they function cannot even be detected.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "But there is another future in which we are at the mercy of technology, where the world is shaped by algorithms and we are forced to conform, in which those who have access to resources and power control the world and the rest of us are left behind.",
+          "respondent": "Professor Venkatasubramanian"
+        },
+        {
+          "quote": "algorithms which are essentially, for most people in this world, black boxes, driving content to children",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "I think there are two parts to this, to helping workers deal with displacement due to AI. One, of course, is training and skilling, and the Federal Government can invest effort and research into helping workers train for our science, technology, engineering and mathematics (STEM)-enabled world.",
+          "respondent": "Professor V, as I will call you, and Ms. Givens"
+        },
+        {
+          "quote": "As I mentioned earlier in response to Senator Padilla, one of the reasons that animates students from across the spectrum to work in technology, especially those who have not been seen by technology or are not being represented by technology earlier, is a desire to do something in the public good, to do something to improve the way all of us get the benefits of technology.",
+          "respondent": "Venkatasubramanian"
+        }
+      ],
+      "count": 42,
+      "first_seen_chunk": 1,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c007",
+      "label": "Guardrails for AI",
+      "definition": "Need for guardrails in AI development",
+      "examples": [
+        {
+          "quote": "The truth is AI systems are not magic. AI is technology, and like any other piece of technology that has benefited us-- drugs, cars, planes--AI needs guardrails so we can be protected from the worst failures while still benefiting from the progress AI offers.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "The truth is AI systems are not magic. AI is technology, and like any other piece of technology that has benefited us-- drugs, cars, planes--AI needs guardrails so we can be protected from the worst failures while still benefiting from the progress AI offers.",
+          "respondent": "Professor Venkatasubramanian"
+        },
+        {
+          "quote": "Any automated system that has meaningful impact on our rights, opportunities for advancement, and access to critical services should be tested so it works, and works well. It should not exhibit discriminatory behavior, be limited and careful in its use of our personal data, be transparent, and easily understandable, and be accompanied by human supervision for all the times that it fails.",
+          "respondent": "Professor Venkatasubramanian"
+        },
+        {
+          "quote": "I believe it is our job to lay down the rules of the road, the guardrails and the protections, so that we can achieve that future. I know we can do it if we try.",
+          "respondent": "Professor Venkatasubramanian"
+        },
+        {
+          "quote": "safety testing, investigation, and transparency are so critical, because of the way in which machine learning algorithms, and the fact that there are algorithms for generating algorithms, create these procedures that are very hard to understand.",
+          "respondent": "Professor Venkatasubramanian"
+        }
+      ],
+      "count": 301,
+      "first_seen_chunk": 1,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c008",
+      "label": "Bias in, Bias out",
+      "definition": "the concept of bias being amplified in AI systems",
+      "examples": [
+        {
+          "quote": "A machine learning algorithm that takes data that has hidden biases in it will invariably, almost certainly, detect and amplify those biases in its output.",
+          "respondent": "Professor Venkatasubramanian"
+        },
+        {
+          "quote": "A machine learning algorithm that takes data that has hidden biases in it will invariably, almost certainly, detect and amplify those biases in its output.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "when students are able to see themselves in the work that they do, and the topics they study, they are more engaged with it and they feel like technology, in this case, can speak to them.",
+          "respondent": "Dr. Venkatasubramanian"
+        }
+      ],
+      "count": 3,
+      "first_seen_chunk": 3,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c009",
+      "label": "Bias Mitigation",
+      "definition": "The process of identifying and addressing biases in AI systems.",
+      "examples": [
+        {
+          "quote": "What is required is a collection of procedures, among them procedures that examine the sources of data, examine the biases in the data, even if it is a large dataset, and try to understand how those biases might be affecting what the algorithm would do.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "One of the reasons why I spend a lot of time talking about concerns about bias and inequities in technology is because it is only by speaking out loud about those issues and pointing to the ways in which we can use technology to mitigate those issues that we can actually bring in a population that feels like they are now being heard and that their concerns are being heard.",
+          "respondent": "Dr. Venkatasubramanian"
+        },
+        {
+          "quote": "I completely agree with the idea that the United States has values that can be transmitted into the systems we build, and I would argue this is happening already, but unfortunately the United States is not leading on this.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "I think an agency that is doing deployment of accountable AI well would be doing all of these things.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "AGI does not keep me up at night.",
+          "respondent": "Venkatasubramanian"
+        }
+      ],
+      "count": 24,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c010",
+      "label": "Best Practices for AI Training",
+      "definition": "The guidelines for training AI systems to minimize bias.",
+      "examples": [
+        {
+          "quote": "There are certain best practices for how to train algorithms to try to mitigate these forms of bias, and they need to be put into place.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "I think we should push forward on that, we should emphasize that, and we should prioritize investments in those directions by prioritizing it within Congress and within the Federal Government.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "The Department of Health and Human Services (HHS) has done an excellent job complying with congressional mandates around the inventory of AI, for example, and around executive orders around AI.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "We must address both challenges at pace with, and perhaps even anticipate, rapid advances in AI capabilities.",
+          "respondent": "Taka Ariga, Chief Data Scientist, U.S. Government Accountability Office"
+        },
+        {
+          "quote": "the aim is to improve the Federal pipeline of highly trained digital talent",
+          "respondent": "GAO"
+        }
+      ],
+      "count": 31,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c011",
+      "label": "Effective Computing Concerns",
+      "definition": "The concept of inferring internal states from external features raises concerns about the potential misuse of this technology.",
+      "examples": [
+        {
+          "quote": "The premise, or the stated premise of effective computing is that we can infer information about people's internal States, their emotions, their cognitive States, their affect, from external features, external features like facial recognition, external features like how they walk, what kind of microtargeted expressions on their face, wrinkles, frowns, and so on.",
+          "respondent": "Venkatasubramanian"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 9,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c012",
+      "label": "Risk of Predictive Modeling",
+      "definition": "The potential misuse of predictive behavioral modeling by law enforcement agencies",
+      "examples": [
+        {
+          "quote": "The risk here, I think, is that prosecutors or law enforcement agencies may use such predictive modeling in order to justify forms of surveillance or to seek warrants or to take other action.",
+          "respondent": "Mr. Eppink"
+        },
+        {
+          "quote": "The Office of Management and Budget is working in a very focused manner on what they clearly understand----",
+          "respondent": "Respondent"
+        },
+        {
+          "quote": "Seems to me that AI is a tremendous threat in that arena.",
+          "respondent": "Prabhakar"
+        }
+      ],
+      "count": 3,
+      "first_seen_chunk": 6,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c013",
+      "label": "Experts on AI decision-making",
+      "definition": "The people who are directly affected by AI decision-making should be the experts on these systems.",
+      "examples": [
+        {
+          "quote": "The experts on these systems are the people that the systems make decisions about.",
+          "respondent": "Mr. Eppink"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 8,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c014",
+      "label": "Inclusive AI development",
+      "definition": "The importance of involving those who are directly affected by AI decision-making in the development and oversight of these systems.",
+      "examples": [
+        {
+          "quote": "My clients, people with disabilities in Idaho, often use the phrase, ``nothing about us, without us,'' and that is critical in these automated decisionmaking systems and AI systems.",
+          "respondent": "Mr. Eppink"
+        },
+        {
+          "quote": "If you think about counterfeiting money, the criminal penalties are very high, and that deters a lot of people. And when it comes to counterfeiting humans, it should be at least at the same level.",
+          "respondent": "Professor Bengio"
+        },
+        {
+          "quote": "Some companies develop AI, some companies use AI, our companies do both, and both roles have to be covered.",
+          "respondent": "Espinel"
+        },
+        {
+          "quote": "Anybody given that thought about how that framework should operate?",
+          "respondent": "Senator Strayer"
+        },
+        {
+          "quote": "The Office of Science and Technology Policy is not a regulatory agency. It is a White House policy shop. So, can you explain what role you and your office play with respect to Federal AI policy? How does that work?",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "Can we use this technology to help advance productivity for a much broader range of people, including people who didn't have the good fortune to go to, say, where you or I went to college or law school?",
+          "respondent": "Smith"
+        },
+        {
+          "quote": "I do not. I think that is a good question for Congress to ask and an oversight committee to ask, and I do not have good information on that.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 20,
+      "first_seen_chunk": 8,
+      "merged_from": [
+        "Desire for inclusive AI development",
+        "Lack of transparency in AI development"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:01",
+          "action": "merge",
+          "detail": "merged: Desire for inclusive AI development",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:01",
+          "action": "merge",
+          "detail": "merged: Lack of transparency in AI development",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c015",
+      "label": "Widening economic divide",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "since the 1990s, and I think this is the point you're making, if you look at the flow of digital technology--you know, fundamentally we've lived in a world that has widened the economic divide",
+          "respondent": "Smith"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 18,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c017",
+      "label": "Critique of economic policy",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "I'd argue it's not a success story. It's not a success story. And I'd argue more broadly that our economic policy the last 30 years has been downright disastrous for working people.",
+          "respondent": "Smith"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 18,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c018",
+      "label": "NIST's role in developing standards for deepfake identification",
+      "definition": "NIST's experience in developing standards for complex challenges",
+      "examples": [
+        {
+          "quote": "I also think that NIST is a place where, over time, we have seen them deal with some very difficult problems, come up with new profiles for addressing very specific challenges and developing standards that are universally accepted, through in this process.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 6,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c019",
+      "label": "AI's impact on government services",
+      "definition": "Government's use of AI to improve services",
+      "examples": [
+        {
+          "quote": "AI technology is also changing the way government agencies interact with their citizens.",
+          "respondent": "Prabhakar"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 1,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c020",
+      "label": "AI's potential in research and development",
+      "definition": "Government's use of AI in research and development",
+      "examples": [
+        {
+          "quote": "If you take a peek inside of labs around the country and look at what is happening with federally funded R&D, in the world of research and development you will get a glimpse of where the future is going, and AI is playing a huge role there as well because AI can enable the design of the materials that we need for advanced batteries, for hydrogen storage, the things that are critical to our clean energy future.",
+          "respondent": "Prabhakar"
+        },
+        {
+          "quote": "We must finally commit to the hard work of building digital capacity.",
+          "respondent": "Ms. Pahlka"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 1,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c021",
+      "label": "Responsibly using AI",
+      "definition": "Government's emphasis on responsible AI use",
+      "examples": [
+        {
+          "quote": "Used responsibly, AI can help us deliver better outcomes and to create new possibilities for the American people.",
+          "respondent": "Prabhakar"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 1,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c022",
+      "label": "DHS's AI Use Cases",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "I would like to talk with you today about three concrete use cases where DHS is already using AI to deliver clear benefits for the American people and then share the comprehensive measures we are taking to ensure that our use of AI is safe, responsible, and rights respecting.",
+          "respondent": "Eric Hysen, Chief Information Officer, Department Of Homeland Security"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c024",
+      "label": "Concerns about AI innovation",
+      "definition": "The respondent expresses concerns about the impact of AI regulation on innovation.",
+      "examples": [
+        {
+          "quote": "I think it could chill innovation in a couple of different ways.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "They absolutely could move overseas, and I know that there are jurisdictions that are actively recruiting AI startups and AI companies to move to their jurisdictions, promising them less constraining regulatory environments.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 4,
+      "merged_from": [
+        "Concerns about AI development moving overseas"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:01",
+          "action": "merge",
+          "detail": "merged: Concerns about AI development moving overseas",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c026",
+      "label": "Unprecedented use of DPA",
+      "definition": "The respondent notes that the use of DPA for AI regulation is unprecedented.",
+      "examples": [
+        {
+          "quote": "We have never seen it applied to AI, and we have never seen it applied not to ensure that there is sufficient production for defense, but more for a regulatory purpose, like it is being used here, to make sure it is safer or that it is more limited than it is.",
+          "respondent": "Chilson"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 7,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c027",
+      "label": "Template for AI regulation",
+      "definition": "The respondent suggests that the U.S. Government should use a template from the past to regulate AI.",
+      "examples": [
+        {
+          "quote": "Well, we do have a template for how the last disruptive technology, the last major disruptive sea change technology of the internet was treated by the U.S. Government.",
+          "respondent": "Chilson"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 7,
+      "merged_from": [],
+      "history": []
+    }
+  ],
+  "provenance": {}
+}

@@ -1,0 +1,44 @@
+hearings：24 份，待編 24 份，端點 ollama/llama3:8b@http://localhost:11434
+  ✓ CHRG-118shrg52483_Venkatasubramanian  29,530 字元  13/13 窗   41 段  碼簿   7 碼  775s
+  ✓ CHRG-118shrg52785_Ariga  13,785 字元  6/6 窗   20 段  碼簿   7 碼  102s
+  ✓ CHRG-118shrg52785_Eppink  18,011 字元  9/9 窗   29 段  碼簿   8 碼  152s
+  ✓ CHRG-118shrg53503_Bengio  23,249 字元  11/11 窗   29 段  碼簿   9 碼  171s
+  ✓ CHRG-118shrg53503_Russell  31,065 字元  14/14 窗   47 段  碼簿   9 碼  256s
+  ✓ CHRG-118shrg53879_Smith  72,374 字元  31/31 窗   99 段  碼簿  30 碼  2028s
+  ✓ CHRG-118shrg59704_Espinel  38,360 字元  17/17 窗   41 段  碼簿  40 碼  275s
+  ✓ CHRG-118shrg59704_Strayer  25,169 字元  11/11 窗   32 段  碼簿  49 碼  199s
+  ✓ CHRG-118shrg53707_Ghani  20,910 字元  9/9 窗   36 段  碼簿  52 碼  182s
+  ✓ CHRG-118shrg53707_Li  22,903 字元  10/10 窗   37 段  碼簿  56 碼  211s
+  ✓ CHRG-118hhrg53382_Prabhakar  27,615 字元  12/12 窗   40 段  碼簿  62 碼  244s
+  ✓ CHRG-118hhrg53382_Hysen   7,417 字元  3/3 窗   11 段  碼簿  62 碼  60s
+  ✓ CHRG-118hhrg53782_Tabassi  25,420 字元  12/12 窗   34 段  碼簿  71 碼  223s
+  ✓ CHRG-118hhrg56783_Stamos  43,123 字元  19/19 窗   64 段  碼簿 105 碼  395s
+  ✓ CHRG-118shrg54718_Pahlka  33,557 字元  14/14 窗   51 段  碼簿 143 碼  279s
+  ✓ CHRG-118shrg54718_Noveck  26,289 字元  11/11 窗   39 段  碼簿 177 碼  230s
+  ✓ CHRG-118hhrg55220_Chilson  17,557 字元  8/8 窗   26 段  碼簿 199 碼  144s
+  ✓ CHRG-118hhrg55220_Lee  29,000 字元  15/15 窗   44 段  碼簿 234 碼  245s
+  ✓ CHRG-118shrg58917_Scanlan  12,835 字元  6/6 窗   15 段  碼簿 249 碼  115s
+  ✓ CHRG-118shrg61871_Kak  21,806 字元  9/9 窗   31 段  碼簿 263 碼  192s
+  ✓ CHRG-118shrg63050_Toner  28,404 字元  12/12 窗   43 段  碼簿 283 碼  263s
+  ✓ CHRG-118shrg63050_Saunders  18,658 字元  8/8 窗   27 段  碼簿 301 碼  177s
+  ✓ CHRG-118shrg63050_Harris  40,331 字元  17/17 窗   57 段  碼簿 324 碼  306s
+  ✓ CHRG-119hhrg60818_Shah  27,790 字元  13/13 窗   43 段  碼簿 352 碼  292s
+
+{
+  "corpus": "hearings",
+  "model": "ollama/llama3:8b@http://localhost:11434",
+  "transcripts": 24,
+  "chars": 655158,
+  "windows": 290,
+  "windows_ok": 290,
+  "transcripts_with_chunk_errors": 0,
+  "coding_minutes": 125.3,
+  "open_segments": 936,
+  "codes_initial": 352,
+  "applications_initial": 1051,
+  "singletons_initial": 319,
+  "merge_suggestions": 40,
+  "codes_after_merge": 323
+}
+最常用的碼：Guardrails for AI (270); Concerns about AI development and use (91); Limitations of AI systems (61); Background and Expertise (57); Definition of AI (55); Impact of machine learning on society (55); Characteristics of machine learning syst (21); Concerns about AI regulation (18); Transparency (14); Opening Remarks (11)
+已寫入 bench_out\open_coding_hearings\llama3_8b/summary.json

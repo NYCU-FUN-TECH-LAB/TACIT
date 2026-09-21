@@ -1,0 +1,93 @@
+{
+ "respondent": "Chair, university research ethics committee",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript header identifies the respondent as 'Chair, university research ethics committee', and the text notes the committee comprises 'eleven academics and an administrator'."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Jurisdictional disconnect between research ethics review and municipal technological deployment",
+   "quote": "If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee.",
+   "full_text": "Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Chair critically scrutinises institutional governance structures, highlighting the illogical boundary between ethics review and mass deployment."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Lack of governance authority and institutional capacity constraints",
+   "quote": "We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind.",
+   "full_text": "Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Chair acknowledges institutional resource limits and challenges the unexamined assumption that expanding review mandates is free."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The ethics committee lacks authority and structural capacity to affect real-world deployment trajectories."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Failure to anticipate funder conflicts and resistance to ethical self-scrutiny",
+   "quote": "What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.",
+   "full_text": "More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Chair prompts researchers to systematically plan for future uncertainties and potential funder conflicts."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Applicants exhibit unreflective hubris and irritation when asked to examine their funding assumptions and ethical limits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Tokenistic public representation and structural absence of community voices",
+   "quote": "When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+   "full_text": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Public involvement is reduced to a single lay member, resulting in participation washing and absent public voice."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Chair self-critically acknowledges that proceeding without the lay member is ethically unacceptable."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent strongly exhibits positive Reflexivity (Reflexivity P), demonstrating sharp second-order reflection on the structural limits, absurdities, and resource constraints of institutional ethics governance. The Chair actively questions prevailing assumptions—such as the illusion that expanding review capacity is costless—while acknowledging the committee's inability to govern actual technological deployments. However, the narrative exposes significant negative polarities across other dimensions within the broader academic and municipal ecosystem. Public Engagement is severely constrained (Engagement N), reduced to tokenistic representation via a single lay member, resulting in participation washing when meetings proceed in her absence. Furthermore, researchers themselves display low reflexivity (Reflexivity N), showing irritation when pushed by the Chair to anticipate future funder conflicts (Anticipation P). Multi-coded segments reveal a deep structural disconnect: while the Chair personally strives to enforce anticipatory foresight and reflective governance, institutional design locks the committee into an obdurate, powerless position (Responsiveness N) where mass public surveillance bypassing ethics review remains unchallenged.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A05 — Chair, university research ethics committee\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Did any part of this deployment come before your committee?\n[Respondent] Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.\n[Interviewer] Could your committee's remit cover deployments?\n[Respondent] Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.\n[Interviewer] What have you seen change in the studies that do come to you?\n[Respondent] More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.\n[Interviewer] Do affected communities have any voice in your process?\n[Respondent] We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 29.9,
+  "seconds_source": "estimated: gap between saved files",
+  "absence": null,
+  "note": "written by bench_models.py before resume support; completeness verified (no chunk_errors) and marker added afterwards"
+ }
+}

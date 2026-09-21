@@ -1,0 +1,594 @@
+{
+  "framework_id": "tdf_cane_2012",
+  "version": "1.0",
+  "provenance": "manual",
+  "name": {
+    "en": "Theoretical Domains Framework (TDF)",
+    "zh": "理論領域框架（TDF）"
+  },
+  "citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.",
+  "description": {
+    "en": "The fourteen domains of the refined Theoretical Domains Framework, a synthesis of 33 behaviour-change theories into a set of domains for identifying the determinants of professional behaviour. Included as a second worked example because, unlike the built-in Responsible Innovation framework, it was designed from the outset as a coding frame for interview data: Atkins et al. (2017) set out how to code transcripts against these domains and how to judge domain relevance. It also differs structurally in two ways that matter for a pluggability claim — fourteen dimensions rather than four, and no polarity model, so codes collapse from DIM-P / DIM-N to DIM and the polarity sub-tab disappears from the interface. Barrier/enabler coding is common TDF practice and can be added by giving this file a polarity block; it is deliberately left out here so that one shipped framework exercises the no-polarity path.",
+    "zh": "精煉版理論領域框架的十四個領域，把 33 個行為改變理論綜合成一組用於辨識專業行為決定因素的領域。收錄為第二個示範框架的理由是：與內建的負責任創新框架不同，它從一開始就是**為了編碼訪談資料而設計的**——Atkins 等人（2017）明確寫出如何拿逐字稿對這些領域編碼、如何判定領域是否相關。它在結構上也有兩點與預設框架不同，而那兩點正是可插拔主張需要的：十四個維度而不是四個、而且沒有極性模型，因此編碼會從 DIM-P／DIM-N 收合成 DIM，介面上的極性子頁籤也會消失。以障礙／助力（barrier／enabler）當極性是 TDF 的常見作法，只要在這個檔案加一個 polarity 區塊就能啟用；這裡刻意不加，是為了讓發行的框架裡有一個走無極性路徑。"
+  },
+  "polarity": {
+    "enabled": false,
+    "values": [],
+    "labels": {},
+    "citation": ""
+  },
+  "corpus": {
+    "document": {"en": "interview transcript", "zh": "訪談逐字稿"},
+    "case": {"en": "respondent", "zh": "受訪者"},
+    "descriptor_source": {
+      "en": "the respondent's self-introduction and any statement of their role, setting and length of experience",
+      "zh": "受訪者的自我介紹，以及任何關於職務、場域與年資的陳述"
+    }
+  },
+  "dimensions": [
+    {
+      "id": "knowledge",
+      "short": "KNO",
+      "label": {"en": "Knowledge", "zh": "知識"},
+      "definition": {
+        "en": "An awareness of the existence of something: knowledge of the procedure, of the evidence behind it, or of the task environment.",
+        "zh": "對某事物存在的知悉：對程序本身的知識、對其背後證據的知識，或對任務環境的知識。"
+      },
+      "indicators": {
+        "all": {
+          "en": [
+            "stating what the guideline, procedure or evidence says",
+            "reporting not having known something until a particular point",
+            "describing where knowledge came from (training, colleagues, reading)",
+            "distinguishing what is known from what is assumed"
+          ],
+          "zh": [
+            "陳述指引、程序或證據的內容",
+            "表示在某個時點之前並不知道某件事",
+            "說明知識的來源（訓練、同事、閱讀）",
+            "區分「知道的」與「以為的」"
+          ]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "Believing one is able to do something is Beliefs about Capabilities, not Knowledge.",
+          "Knowing how to perform a procedure through practice is Skills, not Knowledge.",
+          "Do not code a passage as Knowledge merely because it contains factual content; the passage must be about the respondent's awareness."
+        ],
+        "zh": [
+          "相信自己做得到屬於能力信念，不是知識。",
+          "透過練習而會做某個程序屬於技能，不是知識。",
+          "不可以因為段落含有事實性內容就編為知識；段落必須談的是受訪者的知悉狀態。"
+        ]
+      },
+      "literature": [
+        {"citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.", "doi": "10.1186/1748-5908-7-37", "year": 2012, "role": "grounding", "included": true},
+        {"citation": "Atkins, L., Francis, J., Islam, R., O'Connor, D., Patey, A., Ivers, N., Foy, R., Duncan, E. M., Colquhoun, H., Grimshaw, J. M., Lawton, R., & Michie, S. (2017). A guide to using the Theoretical Domains Framework of behaviour change to investigate implementation problems. Implementation Science, 12, 77.", "doi": "10.1186/s13012-017-0605-9", "year": 2017, "role": "grounding", "included": true}
+      ]
+    },
+    {
+      "id": "skills",
+      "short": "SKI",
+      "label": {"en": "Skills", "zh": "技能"},
+      "definition": {
+        "en": "An ability or proficiency acquired through practice, including the competence to carry out the behaviour and the practice needed to maintain it.",
+        "zh": "經由練習獲得的能力或熟練度，包含執行該行為的勝任程度，以及維持它所需的練習。"
+      },
+      "indicators": {
+        "all": {
+          "en": [
+            "describing having learned to do something by doing it",
+            "reporting skill decay or the need for refresher practice",
+            "assessment or supervision of competence",
+            "describing the difference between knowing and being able to do"
+          ],
+          "zh": [
+            "描述靠實作學會某件事",
+            "提到技能生疏或需要複訓",
+            "對勝任度的評估或督導",
+            "描述「知道」與「做得到」的差別"
+          ]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "Confidence in one's ability is Beliefs about Capabilities; Skills is about the ability itself.",
+          "Lacking the equipment to practise is Environmental Context and Resources.",
+          "Awareness that a technique exists is Knowledge."
+        ],
+        "zh": [
+          "對自身能力的信心屬於能力信念；技能談的是能力本身。",
+          "缺乏練習所需的設備屬於環境脈絡與資源。",
+          "知道有某種技術存在屬於知識。"
+        ]
+      },
+      "literature": [
+        {"citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.", "doi": "10.1186/1748-5908-7-37", "year": 2012, "role": "grounding", "included": true}
+      ]
+    },
+    {
+      "id": "role_identity",
+      "short": "ROL",
+      "label": {"en": "Social/professional role and identity", "zh": "社會／專業角色與認同"},
+      "definition": {
+        "en": "A coherent set of behaviours and displayed personal qualities of an individual in a social or work setting: what the respondent takes to be part of their job, and what kind of professional they take themselves to be.",
+        "zh": "個人在社會或工作場域中一組連貫的行為與展現出的特質：受訪者認為什麼是自己的分內工作，以及認為自己是哪一種專業人員。"
+      },
+      "indicators": {
+        "all": {
+          "en": [
+            "stating that something is or is not part of one's job",
+            "boundary work between professions (\"that's the nurses' side\")",
+            "appeals to professional identity or standards as a reason",
+            "describing a change in what the role is taken to cover"
+          ],
+          "zh": [
+            "陳述某件事是不是自己的分內工作",
+            "專業之間的界線劃分（「那是護理端的事」）",
+            "以專業身分或專業標準當作理由",
+            "描述角色涵蓋範圍的改變"
+          ]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "What other people expect of the respondent is Social Influences; this domain is about the respondent's own account of their role.",
+          "Being formally required to do something by the organisation is Environmental Context and Resources unless the respondent frames it as identity.",
+          "Do not infer role identity from job title alone; the passage must voice it."
+        ],
+        "zh": [
+          "別人對受訪者的期待屬於社會影響；這個領域談的是受訪者自己對角色的陳述。",
+          "組織形式上要求做某件事屬於環境脈絡與資源，除非受訪者以認同的語言陳述它。",
+          "不可以只憑職稱推論角色認同；段落必須自己說出來。"
+        ]
+      },
+      "literature": [
+        {"citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.", "doi": "10.1186/1748-5908-7-37", "year": 2012, "role": "grounding", "included": true}
+      ]
+    },
+    {
+      "id": "beliefs_capabilities",
+      "short": "CAP",
+      "label": {"en": "Beliefs about capabilities", "zh": "能力信念"},
+      "definition": {
+        "en": "Acceptance of the truth, reality or validity about an ability, talent or facility that a person can put to constructive use — self-efficacy and perceived behavioural control.",
+        "zh": "對自己所具備、可建設性運用的能力或天賦的真實性所持的接受態度——即自我效能與知覺行為控制。"
+      },
+      "indicators": {
+        "all": {
+          "en": [
+            "expressed confidence or doubt about being able to do it",
+            "reference to how difficult the behaviour is for this respondent",
+            "comparison with others' ability",
+            "describing what would have to be true for them to manage it"
+          ],
+          "zh": [
+            "表達對自己做得到與否的信心或懷疑",
+            "提到這個行為對自己而言有多難",
+            "與他人能力的比較",
+            "說明要具備什麼條件自己才應付得來"
+          ]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "Actual demonstrated ability is Skills; this domain is about the belief.",
+          "General positive outlook about outcomes is Optimism.",
+          "Believing the behaviour will produce a good result is Beliefs about Consequences."
+        ],
+        "zh": [
+          "實際展現出來的能力屬於技能；這個領域談的是信念。",
+          "對結果的一般性樂觀屬於樂觀。",
+          "相信該行為會產生好結果屬於結果信念。"
+        ]
+      },
+      "literature": [
+        {"citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.", "doi": "10.1186/1748-5908-7-37", "year": 2012, "role": "grounding", "included": true},
+        {"citation": "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191-215.", "doi": "10.1037/0033-295X.84.2.191", "year": 1977, "role": "supporting", "included": true}
+      ]
+    },
+    {
+      "id": "optimism",
+      "short": "OPT",
+      "label": {"en": "Optimism", "zh": "樂觀"},
+      "definition": {
+        "en": "The confidence that things will happen for the best or that desired goals will be attained — a general disposition rather than a judgement about one specific behaviour.",
+        "zh": "相信事情會往好的方向發展、期望的目標會達成的信心——是一種一般性的傾向，而不是對某個特定行為的判斷。"
+      },
+      "indicators": {
+        "all": {
+          "en": [
+            "general expressions that things will work out, or will not",
+            "pessimism about the setting or the system as a whole",
+            "expectation that difficulties will resolve over time",
+            "a stated outlook that is not tied to one particular action"
+          ],
+          "zh": [
+            "一般性地表示事情會好轉，或不會",
+            "對整個場域或制度的悲觀",
+            "預期困難會隨時間化解",
+            "不繫於任何單一行動的整體展望"
+          ]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "A prediction about what one specific action will achieve is Beliefs about Consequences.",
+          "Confidence in one's own ability is Beliefs about Capabilities.",
+          "This domain is frequently over-applied: code it only when the passage voices a general outlook. Pleasant tone is not optimism."
+        ],
+        "zh": [
+          "對某個特定行動會達成什麼的預測屬於結果信念。",
+          "對自身能力的信心屬於能力信念。",
+          "這個領域很常被濫用：只有在段落真的表達了一般性展望時才編。語氣愉快不是樂觀。"
+        ]
+      },
+      "literature": [
+        {"citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.", "doi": "10.1186/1748-5908-7-37", "year": 2012, "role": "grounding", "included": true}
+      ]
+    },
+    {
+      "id": "beliefs_consequences",
+      "short": "CON",
+      "label": {"en": "Beliefs about consequences", "zh": "結果信念"},
+      "definition": {
+        "en": "Acceptance of the truth, reality or validity about outcomes of a behaviour in a given situation — what the respondent expects to follow from doing or not doing it.",
+        "zh": "對某一行為在特定情境下會產生什麼結果的接受態度——受訪者預期做或不做會帶來什麼。"
+      },
+      "indicators": {
+        "all": {
+          "en": [
+            "stated expectations about what the behaviour will achieve",
+            "perceived risks, costs or harms of doing it",
+            "weighing benefits against costs",
+            "beliefs about consequences for patients, clients or colleagues"
+          ],
+          "zh": [
+            "陳述對該行為會達成什麼的預期",
+            "知覺到做這件事的風險、成本或損害",
+            "權衡利益與成本",
+            "對病患、客戶或同事會有什麼後果的信念"
+          ]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "Rewards and penalties that actually followed are Reinforcement; this domain is the belief beforehand.",
+          "A general sense that things will be fine is Optimism.",
+          "Emotional reactions to an anticipated outcome are Emotion; the belief and the feeling are separate codes."
+        ],
+        "zh": [
+          "實際發生過的獎懲屬於增強；這個領域談的是事前的信念。",
+          "泛泛地覺得事情會沒事屬於樂觀。",
+          "對預期結果的情緒反應屬於情緒；信念與感受是兩個不同的碼。"
+        ]
+      },
+      "literature": [
+        {"citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.", "doi": "10.1186/1748-5908-7-37", "year": 2012, "role": "grounding", "included": true}
+      ]
+    },
+    {
+      "id": "reinforcement",
+      "short": "REI",
+      "label": {"en": "Reinforcement", "zh": "增強"},
+      "definition": {
+        "en": "Increasing the probability of a response by arranging a dependent relationship between the response and a given stimulus: incentives, rewards, sanctions and their contingencies.",
+        "zh": "藉由在反應與特定刺激之間建立依賴關係，來提高該反應出現的機率：誘因、獎勵、制裁及其權變關係。"
+      },
+      "indicators": {
+        "all": {
+          "en": [
+            "financial or non-financial incentives attached to the behaviour",
+            "audit, feedback or performance monitoring with consequences",
+            "sanctions, penalties or the absence of any consequence",
+            "describing how past consequences changed subsequent behaviour"
+          ],
+          "zh": [
+            "與該行為掛勾的金錢或非金錢誘因",
+            "帶有後果的稽核、回饋或績效監控",
+            "制裁、罰則，或根本沒有任何後果",
+            "描述過去的後果如何改變了後續行為"
+          ]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "An expectation about consequences that have not occurred is Beliefs about Consequences.",
+          "Colleagues' approval as a motivator is Social Influences unless it is an arranged contingency.",
+          "Resource availability is Environmental Context and Resources."
+        ],
+        "zh": [
+          "對尚未發生的後果的預期屬於結果信念。",
+          "以同事認可作為動機屬於社會影響，除非那是被安排出來的權變關係。",
+          "資源是否可得屬於環境脈絡與資源。"
+        ]
+      },
+      "literature": [
+        {"citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.", "doi": "10.1186/1748-5908-7-37", "year": 2012, "role": "grounding", "included": true}
+      ]
+    },
+    {
+      "id": "intentions",
+      "short": "INT",
+      "label": {"en": "Intentions", "zh": "意圖"},
+      "definition": {
+        "en": "A conscious decision to perform a behaviour or a resolve to act in a certain way — a stated commitment, not a specific plan.",
+        "zh": "有意識地決定執行某個行為，或決心以某種方式行動——是一種表明的承諾，不是具體計畫。"
+      },
+      "indicators": {
+        "all": {
+          "en": [
+            "stating a decision to do or not do something",
+            "expressed willingness or unwillingness",
+            "describing having changed one's mind",
+            "commitment stated without a specific plan attached"
+          ],
+          "zh": [
+            "陳述決定要做或不做某件事",
+            "表達願意或不願意",
+            "描述自己改變了想法",
+            "只有承諾、沒有附帶具體計畫"
+          ]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "A specific target with a time frame or priority ordering is Goals.",
+          "Concrete if-then planning or self-monitoring is Behavioural Regulation.",
+          "Believing the behaviour is worthwhile is Beliefs about Consequences, not an intention to do it."
+        ],
+        "zh": [
+          "帶有時程或優先順序的具體標的屬於目標。",
+          "具體的「若…則…」規劃或自我監控屬於行為調節。",
+          "認為該行為值得做屬於結果信念，不等於有意圖去做。"
+        ]
+      },
+      "literature": [
+        {"citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.", "doi": "10.1186/1748-5908-7-37", "year": 2012, "role": "grounding", "included": true}
+      ]
+    },
+    {
+      "id": "goals",
+      "short": "GOA",
+      "label": {"en": "Goals", "zh": "目標"},
+      "definition": {
+        "en": "Mental representations of outcomes or end states that an individual wants to achieve, including how they are prioritised against competing goals.",
+        "zh": "個人想要達成的結果或終局狀態的心理表徵，包含它們與其他競爭目標之間的優先順序。"
+      },
+      "indicators": {
+        "all": {
+          "en": [
+            "a stated target, standard or end state to be reached",
+            "ranking this behaviour against competing demands",
+            "describing goal conflict between clinical, financial or personal aims",
+            "distinguishing what matters most from what is merely desirable"
+          ],
+          "zh": [
+            "陳述要達到的標的、標準或終局狀態",
+            "把這個行為與其他競爭需求排序",
+            "描述臨床、財務或個人目標之間的衝突",
+            "區分最要緊的與只是想要的"
+          ]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "A bare decision to act, with no target or priority, is Intentions.",
+          "Targets imposed and enforced by the organisation with consequences are Reinforcement.",
+          "The means by which a goal is pursued is Behavioural Regulation."
+        ],
+        "zh": [
+          "只是決定要行動、沒有標的或優先順序，屬於意圖。",
+          "組織強制施加並帶有後果的指標屬於增強。",
+          "追求目標所用的手段屬於行為調節。"
+        ]
+      },
+      "literature": [
+        {"citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.", "doi": "10.1186/1748-5908-7-37", "year": 2012, "role": "grounding", "included": true}
+      ]
+    },
+    {
+      "id": "memory_attention",
+      "short": "MEM",
+      "label": {"en": "Memory, attention and decision processes", "zh": "記憶、注意與決策歷程"},
+      "definition": {
+        "en": "The ability to retain information, focus selectively on aspects of the environment, and choose between two or more alternatives.",
+        "zh": "保留資訊、選擇性地專注於環境中某些面向，以及在兩個以上選項之間做出抉擇的能力。"
+      },
+      "indicators": {
+        "all": {
+          "en": [
+            "forgetting to do it, or relying on prompts and reminders",
+            "competing demands on attention during the task",
+            "describing how a judgement between options was made",
+            "the behaviour described as automatic or as requiring deliberation"
+          ],
+          "zh": [
+            "忘記做，或依賴提示與提醒",
+            "執行任務時注意力被其他事情競逐",
+            "描述如何在選項之間做出判斷",
+            "把該行為描述為自動化的，或需要刻意思考的"
+          ]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "Not knowing what to do is Knowledge, not forgetting.",
+          "Interruptions caused by the physical setting are Environmental Context and Resources; this domain is the cognitive effect of them.",
+          "A checklist or reminder system the respondent set up deliberately is Behavioural Regulation."
+        ],
+        "zh": [
+          "不知道該怎麼做屬於知識，不是忘記。",
+          "實體環境造成的中斷屬於環境脈絡與資源；這個領域談的是它造成的認知效果。",
+          "受訪者刻意建立的查核表或提醒機制屬於行為調節。"
+        ]
+      },
+      "literature": [
+        {"citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.", "doi": "10.1186/1748-5908-7-37", "year": 2012, "role": "grounding", "included": true}
+      ]
+    },
+    {
+      "id": "environmental_context",
+      "short": "ENV",
+      "label": {"en": "Environmental context and resources", "zh": "環境脈絡與資源"},
+      "definition": {
+        "en": "Any circumstance of a person's situation or environment that discourages or encourages the behaviour, including physical resources, staffing, time, organisational culture and regulatory context.",
+        "zh": "個人所處情境或環境中任何會阻礙或促進該行為的條件，包含實體資源、人力、時間、組織文化與法規環境。"
+      },
+      "indicators": {
+        "all": {
+          "en": [
+            "availability of equipment, systems, funding or staffing",
+            "time pressure and workload",
+            "organisational culture, policy or regulatory requirement",
+            "physical layout or workflow that makes the behaviour easier or harder"
+          ],
+          "zh": [
+            "設備、系統、經費或人力是否可得",
+            "時間壓力與工作負荷",
+            "組織文化、政策或法規要求",
+            "使該行為變得容易或困難的空間配置或流程"
+          ]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "This is the most over-applied domain in TDF coding, because almost every account mentions circumstances. Code it only when the circumstance is offered as bearing on the behaviour, not merely as background description.",
+          "What colleagues or managers expect is Social Influences, even when it is part of the culture.",
+          "The respondent's own workload management strategies are Behavioural Regulation."
+        ],
+        "zh": [
+          "這是 TDF 編碼中最常被濫用的領域，因為幾乎每段話都會提到情境。只有在該情境被當成與行為有關而提出時才編，單純的背景描述不算。",
+          "同事或主管的期待屬於社會影響，即使那是文化的一部分。",
+          "受訪者自己管理工作量的策略屬於行為調節。"
+        ]
+      },
+      "literature": [
+        {"citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.", "doi": "10.1186/1748-5908-7-37", "year": 2012, "role": "grounding", "included": true},
+        {"citation": "Atkins, L., Francis, J., Islam, R., O'Connor, D., Patey, A., Ivers, N., Foy, R., Duncan, E. M., Colquhoun, H., Grimshaw, J. M., Lawton, R., & Michie, S. (2017). A guide to using the Theoretical Domains Framework of behaviour change to investigate implementation problems. Implementation Science, 12, 77.", "doi": "10.1186/s13012-017-0605-9", "year": 2017, "role": "supporting", "included": true}
+      ]
+    },
+    {
+      "id": "social_influences",
+      "short": "SOC",
+      "label": {"en": "Social influences", "zh": "社會影響"},
+      "definition": {
+        "en": "Interpersonal processes that can cause an individual to change their thoughts, feelings or behaviours: norms, pressure, modelling, support and conflict.",
+        "zh": "會使個人改變想法、感受或行為的人際歷程：規範、壓力、示範、支持與衝突。"
+      },
+      "indicators": {
+        "all": {
+          "en": [
+            "what colleagues, managers, patients or clients expect",
+            "observing and following what others do",
+            "support, encouragement or discouragement from others",
+            "conflict or negotiation with another group"
+          ],
+          "zh": [
+            "同事、主管、病患或客戶的期待",
+            "觀察並跟隨他人的作法",
+            "來自他人的支持、鼓勵或勸阻",
+            "與另一群體的衝突或協商"
+          ]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "The respondent's own account of what their job covers is Social/professional role and identity.",
+          "Formal organisational requirements are Environmental Context and Resources unless voiced as interpersonal expectation.",
+          "Arranged incentives and sanctions are Reinforcement."
+        ],
+        "zh": [
+          "受訪者自己對職務範圍的陳述屬於社會／專業角色與認同。",
+          "正式的組織要求屬於環境脈絡與資源，除非是以人際期待的方式說出來。",
+          "被安排出來的誘因與制裁屬於增強。"
+        ]
+      },
+      "literature": [
+        {"citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.", "doi": "10.1186/1748-5908-7-37", "year": 2012, "role": "grounding", "included": true}
+      ]
+    },
+    {
+      "id": "emotion",
+      "short": "EMO",
+      "label": {"en": "Emotion", "zh": "情緒"},
+      "definition": {
+        "en": "A complex reaction pattern involving experiential, behavioural and physiological elements, by which the individual attempts to deal with a personally significant matter or event.",
+        "zh": "一種涉及經驗、行為與生理成分的複雜反應型態，個人藉此應對對自己而言重要的事件。"
+      },
+      "indicators": {
+        "all": {
+          "en": [
+            "named feelings about the behaviour or its context (anxiety, frustration, relief)",
+            "stress, burnout or emotional exhaustion",
+            "fear of a specific consequence",
+            "describing how a feeling affected what was done"
+          ],
+          "zh": [
+            "指名對該行為或其脈絡的感受（焦慮、挫折、鬆一口氣）",
+            "壓力、耗竭或情緒耗損",
+            "對某個特定後果的恐懼",
+            "描述某種感受如何影響了實際作為"
+          ]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "A belief that something bad will happen is Beliefs about Consequences; code Emotion only when a feeling is voiced.",
+          "General outlook without a named feeling is Optimism.",
+          "Do not infer emotion from tone of voice or word choice alone — the transcript must state it."
+        ],
+        "zh": [
+          "認為壞事會發生屬於結果信念；只有在感受被說出來時才編情緒。",
+          "沒有指名感受的整體展望屬於樂觀。",
+          "不可以單憑語氣或用詞推論情緒——逐字稿必須明白說出來。"
+        ]
+      },
+      "literature": [
+        {"citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.", "doi": "10.1186/1748-5908-7-37", "year": 2012, "role": "grounding", "included": true}
+      ]
+    },
+    {
+      "id": "behavioural_regulation",
+      "short": "REG",
+      "label": {"en": "Behavioural regulation", "zh": "行為調節"},
+      "definition": {
+        "en": "Anything aimed at managing or changing objectively observed or measured actions: self-monitoring, action planning, and the deliberate structuring of one's own behaviour.",
+        "zh": "任何用來管理或改變可客觀觀察、測量之行動的作為：自我監控、行動規劃，以及刻意為自身行為建立結構。"
+      },
+      "indicators": {
+        "all": {
+          "en": [
+            "self-monitoring, recording or reviewing one's own performance",
+            "action planning or if-then rules the respondent set for themselves",
+            "checklists, routines or habits deliberately established",
+            "describing how a new practice was embedded into the working day"
+          ],
+          "zh": [
+            "自我監控、記錄或檢視自己的表現",
+            "受訪者為自己訂下的行動計畫或「若…則…」規則",
+            "刻意建立的查核表、例行程序或習慣",
+            "描述如何把新作法嵌進日常工作"
+          ]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "Monitoring imposed by the organisation with consequences attached is Reinforcement.",
+          "A decision to act, with no mechanism, is Intentions.",
+          "A reminder system supplied by the employer is Environmental Context and Resources; this domain is what the respondent does themselves."
+        ],
+        "zh": [
+          "組織施加且帶有後果的監控屬於增強。",
+          "只有決定要行動、沒有任何機制，屬於意圖。",
+          "雇主提供的提醒系統屬於環境脈絡與資源；這個領域談的是受訪者自己做的事。"
+        ]
+      },
+      "literature": [
+        {"citation": "Cane, J., O'Connor, D., & Michie, S. (2012). Validation of the theoretical domains framework for use in behaviour change and implementation research. Implementation Science, 7, 37.", "doi": "10.1186/1748-5908-7-37", "year": 2012, "role": "grounding", "included": true},
+        {"citation": "Michie, S., Johnston, M., Abraham, C., Lawton, R., Parker, D., & Walker, A. (2005). Making psychological theory useful for implementing evidence based practice: A consensus approach. Quality and Safety in Health Care, 14(1), 26-33.", "doi": "10.1136/qshc.2004.011155", "year": 2005, "role": "supporting", "included": true}
+      ]
+    }
+  ]
+}

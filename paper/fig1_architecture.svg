@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 870" width="1200" height="870">
+  <!--
+    Fig. 1 — TACIT layered architecture.
+
+    這張圖要傳達兩件事：
+      1. 分析引擎既不依賴模型供應者，也不依賴編碼框架。可抽換的兩樣東西
+         放在視覺上的兩端——供應者在下、框架在右。
+      2. 開放編碼累積出來的碼簿，定案之後流回同一個框架槽。這條回流箭頭
+         就是「一套引擎服務演繹與歸納兩條路」的根據（稿件 §2.3）。
+
+    尺寸照印出來的樣子定：圖在正文佔 6.27 吋寬，畫布寬 1200 單位，最小的
+    21 單位字體印出來約 7.9 pt（Elsevier 要求至少 7 pt）。改圖時不要讓
+    任何字小於 21 單位。
+
+    灰階印刷前提：不使用任何靠顏色區分的元素。
+  -->
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1a1a1a"/>
+    </marker>
+    <marker id="ahd" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555555"/>
+    </marker>
+    <style>
+      .tier { fill:#f5f5f5; stroke:#1a1a1a; stroke-width:2.6; }
+      .box  { fill:#ffffff; stroke:#1a1a1a; stroke-width:2.2; }
+      .chip { fill:#ffffff; stroke:#666666; stroke-width:1.8; }
+      .chipk{ fill:#ffffff; stroke:#1a1a1a; stroke-width:2.6; }
+      .side { fill:#ececec; stroke:#1a1a1a; stroke-width:2.2; }
+      .t    { font-family:'DejaVu Sans','Helvetica','Arial',sans-serif; fill:#1a1a1a; }
+      .hd   { font-size:32px; font-weight:700; }
+      .hd2  { font-size:25px; font-weight:700; }
+      .mo   { font-family:'DejaVu Sans Mono',Consolas,'Courier New',monospace; font-size:26px; }
+      .mos  { font-family:'DejaVu Sans Mono',Consolas,'Courier New',monospace; font-size:24px; }
+      .tiny { font-size:21px; fill:#555555; }
+      .note { font-size:23px; fill:#2a2a2a; font-style:italic; }
+      .lnk  { stroke:#1a1a1a; stroke-width:2.6; fill:none; }
+      .dsh  { stroke:#555555; stroke-width:2.2; fill:none; stroke-dasharray:9 6; }
+      .ind  { fill:none; stroke:#555555; stroke-width:2.4; stroke-dasharray:12 8; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="870" fill="#ffffff"/>
+
+  <!-- ===== 左側縱向：跨層共用的記錄結構 ===== -->
+  <rect class="side" x="30" y="88" width="62" height="620" rx="6"/>
+  <text class="t mos" transform="translate(68,590) rotate(-90)">tacit_schema</text>
+
+  <!-- ===== 介面 ===== -->
+  <rect class="tier" x="118" y="88" width="684" height="86" rx="8"/>
+  <text class="t mo" x="146" y="128">app</text>
+  <text class="t hd" x="226" y="130">Interface</text>
+  <text class="t tiny" x="146" y="160">no dimension name, no display string in this layer</text>
+
+  <line class="lnk" x1="460" y1="174" x2="460" y2="224" marker-end="url(#ah)"/>
+
+  <!-- ===== 編碼與分析引擎 ===== -->
+  <rect class="tier" x="118" y="224" width="684" height="352" rx="8"/>
+  <text class="t hd" x="146" y="268">Coding and analysis engines</text>
+  <rect class="ind" x="130" y="238" width="660" height="326" rx="6"/>
+
+  <!-- 第一列：兩條編碼路徑。tacit_open 用粗框，因為回流箭頭從它出發 -->
+  <rect class="chip" x="146" y="288" width="312" height="52" rx="5"/>
+  <text class="t mos" x="166" y="322">tacit_coding</text>
+  <rect class="chipk" x="474" y="288" width="312" height="52" rx="5"/>
+  <text class="t mos" x="494" y="322">tacit_open</text>
+
+  <rect class="chip" x="146" y="352" width="312" height="52" rx="5"/>
+  <text class="t mos" x="166" y="386">tacit_analysis</text>
+  <rect class="chip" x="474" y="352" width="312" height="52" rx="5"/>
+  <text class="t mos" x="494" y="386">tacit_themes</text>
+
+  <rect class="chip" x="146" y="416" width="312" height="52" rx="5"/>
+  <text class="t mos" x="166" y="450">tacit_irr</text>
+  <rect class="chip" x="474" y="416" width="312" height="52" rx="5"/>
+  <text class="t mos" x="494" y="450">tacit_review</text>
+
+  <rect class="chip" x="146" y="480" width="312" height="52" rx="5"/>
+  <text class="t mos" x="166" y="514">tacit_lexicon</text>
+  <rect class="chip" x="474" y="480" width="312" height="52" rx="5"/>
+  <text class="t mos" x="494" y="514">tacit_openalex</text>
+
+  <text class="t note" x="146" y="556">Depend on neither the provider nor the framework.</text>
+
+  <line class="lnk" x1="460" y1="576" x2="460" y2="626" marker-end="url(#ah)"/>
+
+  <!-- ===== 供應者抽象層 ===== -->
+  <rect class="tier" x="118" y="626" width="684" height="82" rx="8"/>
+  <text class="t mo" x="146" y="666">tacit_llm</text>
+  <text class="t hd2" x="316" y="666">Provider abstraction</text>
+  <text class="t tiny" x="146" y="696">one interface · explicit context window</text>
+
+  <path class="lnk" d="M 271 708 L 271 754" marker-end="url(#ah)"/>
+  <path class="lnk" d="M 482 708 L 482 754" marker-end="url(#ah)"/>
+  <path class="lnk" d="M 685 708 L 685 754" marker-end="url(#ah)"/>
+
+  <rect class="box" x="146" y="754" width="250" height="76" rx="6"/>
+  <text class="t hd2" x="168" y="788">Google Gemini</text>
+  <text class="t tiny" x="168" y="816">cloud</text>
+
+  <rect class="box" x="412" y="754" width="140" height="76" rx="6"/>
+  <text class="t hd2" x="434" y="788">Ollama</text>
+  <text class="t tiny" x="434" y="816">local</text>
+
+  <rect class="box" x="568" y="754" width="234" height="76" rx="6"/>
+  <text class="t hd2" x="590" y="788">OpenAI API</text>
+  <text class="t tiny" x="590" y="816">local or hosted</text>
+
+  <!-- ===== 右側：可插拔的框架槽 ===== -->
+  <rect class="side" x="872" y="380" width="298" height="222" rx="8"/>
+  <text class="t hd2" x="896" y="424" style="font-size:24px">Coding framework</text>
+  <text class="t mos" x="896" y="460">JSON</text>
+  <text class="t tiny" x="896" y="496">from literature, or a</text>
+  <text class="t tiny" x="896" y="522">fixed codebook</text>
+  <text class="t tiny" x="896" y="558">enters as data, not code</text>
+  <text class="t tiny" x="896" y="586">four ship</text>
+
+  <!-- 框架 → 引擎 -->
+  <path class="dsh" d="M 872 470 L 806 470" marker-end="url(#ahd)"/>
+
+  <!-- 框架 → 介面的顯示標籤 -->
+  <path class="dsh" d="M 1140 380 L 1140 132 L 806 132" marker-end="url(#ahd)"/>
+  <text class="t tiny" x="1000" y="122" text-anchor="middle">labels</text>
+
+  <!-- 回流：開放編碼累積的碼簿，定案後進入同一個框架槽 -->
+  <path class="lnk" d="M 786 314 L 960 314 L 960 380" marker-end="url(#ah)"/>
+  <text class="t tiny" x="960" y="300" text-anchor="middle">codebook, once fixed</text>
+
+  <text class="t note" x="872" y="664">Replace the framework</text>
+  <text class="t note" x="872" y="692">or the provider —</text>
+  <text class="t note" x="872" y="720">the engines are</text>
+  <text class="t note" x="872" y="748">unchanged.</text>
+</svg>

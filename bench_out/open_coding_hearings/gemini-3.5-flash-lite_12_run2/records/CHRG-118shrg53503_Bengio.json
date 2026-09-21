@@ -1,0 +1,627 @@
+{
+ "respondent": "CHRG-118shrg53503_Bengio",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "researcher",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Opening statement and acknowledgment of AI risks",
+   "quote": "While this revolution has the potential to enable tremendous progress and innovation, it also entails a wide range of risks, from immediate ones like discrimination, to growing ones like disinformation, and even more concerning ones in the future like loss of control of superhuman AIs.",
+   "full_text": "Chairman Blumenthal, Ranking Member Hawley, Members of the Judiciary Committee, thank you for the invitation to speak today. The capabilities of AI systems have steadily increased over the last two decades, thanks to advances in deep learning that I and others introduced. While this revolution has the potential to enable tremendous progress and innovation, it also entails a wide range of risks, from immediate ones like discrimination, to growing ones like disinformation, and even more concerning ones in the future like loss of control of superhuman AIs.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Identifies immediate and future risks such as discrimination, disinformation, and loss of control."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Accelerating timelines for human-level AI",
+   "quote": "Previously thought to be decades or even centuries away, we now believe it could be within a few years or decades. The shorter timeframe, say, 5 years, is really worrisome because we'll need more time to effectively mitigate the potentially significant threats to democracy, national security, and our collective future.",
+   "full_text": "Recently, I, and many others, have been surprised by the giant leap realized by systems like ChatGPT to the point where it becomes difficult to discern whether one is interacting with another human or a machine. These advancements have led many top AI researchers, including myself, to revise our estimates of when human-level intelligence could be achieved. Previously thought to be decades or even centuries away, we now believe it could be within a few years or decades. The shorter timeframe, say, 5 years, is really worrisome because we'll need more time to effectively mitigate the potentially significant threats to democracy, national security, and our collective future.",
+   "open_codes": [
+    {
+     "code_id": "c032",
+     "label": "need for proactive rather than reactive regulation",
+     "rationale": "Emphasizes the need for time and preparation to mitigate fast-approaching severe threats."
+    },
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Describes intentional and unintentional ways AI systems can cause severe harm."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Intentional and unintentional severe risks from AI",
+   "quote": "These severe risks could arise either intentionally, because of malicious actors using AI systems to achieve harmful goals, or unintentionally, if an AI system develops strategies that are misaligned with our values and norms.",
+   "full_text": "As Sam Altman said here, if this technology goes wrong, it could go terribly wrong. These severe risks could arise either intentionally, because of malicious actors using AI systems to achieve harmful goals, or unintentionally, if an AI system develops strategies that are misaligned with our values and norms.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Describes intentional malicious use and unintentional value misalignment."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "four regulatory factors for AI",
+   "quote": "First, access: limiting who has access to powerful AI systems, structuring the proper protocols, duties, oversight, and incentives for them to act safely. Second, alignment: ensuring that AI systems will act as intended, in agreement with our values and norms. Third, raw intellectual power: which depends on the level of sophistication of the algorithms and the scale of computing resources and of datasets. And fourth, scope of action: the potential for harm an AI system can affect indirectly, for example, through human actions or directly, for example, through the internet.",
+   "full_text": "I would like to emphasize four factors that governments can focus on in their regulatory efforts to mitigate all AI harms and risks. First, access: limiting who has access to powerful AI systems, structuring the proper protocols, duties, oversight, and incentives for them to act safely. Second, alignment: ensuring that AI systems will act as intended, in agreement with our values and norms. Third, raw intellectual power: which depends on the level of sophistication of the algorithms and the scale of computing resources and of datasets. And fourth, scope of action: the potential for harm an AI system can affect indirectly, for example, through human actions or directly, for example, through the internet. So, looking at risks through the lens of each of these four factors--access, alignment, intellectual power, and scope of action--is critical to designing appropriate Government intervention.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Outlines specific factors and protocols for governing powerful AI systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "urgent regulatory frameworks and licensing",
+   "quote": "First, the coordination of highly agile national and international regulatory frameworks and liability incentives that bolster safety. This would require licenses for people and organizations with standardized duties to evaluate and mitigate potential harm, allow independent audits, and restrict AI systems with unacceptable levels of risk.",
+   "full_text": "I firmly believe that urgent efforts, preferably in the coming months, are required in the following three areas. First, the coordination of highly agile national and international regulatory frameworks and liability incentives that bolster safety. This would require licenses for people and organizations with standardized duties to evaluate and mitigate potential harm, allow independent audits, and restrict AI systems with unacceptable levels of risk.",
+   "open_codes": [
+    {
+     "code_id": "c014",
+     "label": "advocating for comprehensive AI legislation",
+     "rationale": "Calls for national and international frameworks requiring licenses, audits, and restrictions."
+    },
+    {
+     "code_id": "c032",
+     "label": "need for proactive rather than reactive regulation",
+     "rationale": "Stresses the urgency of implementing regulatory frameworks in the coming months."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "accelerating global AI safety research",
+   "quote": "Second, because the current methodologies are not demonstrably safe, significantly accelerate global research endeavors focused on AI safety, enabling the informed creation of essential regulations, protocols, safe AI methodologies, and governance structures.",
+   "full_text": "Second, because the current methodologies are not demonstrably safe, significantly accelerate global research endeavors focused on AI safety, enabling the informed creation of essential regulations, protocols, safe AI methodologies, and governance structures.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "need for guardrails in AI technology",
+     "rationale": "Calls for accelerating research into AI safety to create safe methodologies and regulations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "countermeasures against rogue AIs",
+   "quote": "And, third, research on countermeasures to protect society from potential rogue AIs, because no regulation is going to be perfect. This research in AI and international security should be conducted with several highly secure and decentralized labs operating under multilateral oversight to mitigate an AI arms race.",
+   "full_text": "And, third, research on countermeasures to protect society from potential rogue AIs, because no regulation is going to be perfect. This research in AI and international security should be conducted with several highly secure and decentralized labs operating under multilateral oversight to mitigate an AI arms race.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Addresses the risk of potential rogue AIs and imperfect regulations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "investing in safety and moral responsibility",
+   "quote": "Given the significant potential for detrimental consequences, we must therefore allocate substantial additional resources to safeguard our future, at least as much as we are collectively globally investing in increasing the capabilities of AI. I believe we have a moral responsibility to mobilize our greatest minds and make major investments in a bold and internationally coordinated effort to fully reap the economic and social benefits of AI while protecting society and our shared future against its potential perils.",
+   "full_text": "Given the significant potential for detrimental consequences, we must therefore allocate substantial additional resources to safeguard our future, at least as much as we are collectively globally investing in increasing the capabilities of AI. I believe we have a moral responsibility to mobilize our greatest minds and make major investments in a bold and internationally coordinated effort to fully reap the economic and social benefits of AI while protecting society and our shared future against its potential perils. Thank you for your attention to this pressing matter. I look forward to your questions.",
+   "open_codes": [
+    {
+     "code_id": "c017",
+     "label": "responsibility to establish AI rules",
+     "rationale": "Asserts the moral duty to invest in safety and coordinate internationally to protect society."
+    },
+    {
+     "code_id": "c012",
+     "label": "need for guardrails in AI technology",
+     "rationale": "arguing for substantial investments in safety to protect against potential perils"
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "risks of open source model weights and malicious tuning",
+   "quote": "One concern I have is that even if companies use watermarking, and especially because there is now several open source versions to train LLMs or use them, including model weights that have been made available to the global community, we also need to understand how things can go wrong on that front.",
+   "full_text": "One concern I have is that even if companies use watermarking, and especially because there is now several open source versions to train LLMs or use them, including model weights that have been made available to the global community, we also need to understand how things can go wrong on that front. In other words, people are not all going to obey that law.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "highlights vulnerabilities and misuse stemming from the wide availability of open source model weights"
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "cheap fine-tuning for harmful purposes",
+   "quote": "And one important thing I'm concerned about is, one can take a pretrained model, say by a company that made it public, and then without huge computing resources--so, not the hundred million cost that it takes to train them, but something very cheap, can tune these systems to a particular task, which could be to play the game of being a troll, for example.",
+   "full_text": "And one important thing I'm concerned about is, one can take a pretrained model, say by a company that made it public, and then without huge computing resources--so, not the hundred million cost that it takes to train them, but something very cheap, can tune these systems to a particular task, which could be to play the game of being a troll, for example. There's plenty of examples of that to train them on, or other examples in generating deepfakes in a way that might be more powerful than what we've seen up to now. So, I don't know how to fix this, but I want to bring that to the attention of this Committee.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "explains how malicious actors can easily fine-tune public models for trolling or deepfakes"
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "restricting release of pretrained models",
+   "quote": "Well, I mean, one immediate fix is to avoid releasing more of these pretrained large models. That's the thing that governments can do, because right now, very few companies, including, you know, the seven you brought last week, can do that. And so that's a place where Government can act.",
+   "full_text": "Well, I mean, one immediate fix is to avoid releasing more of these pretrained large models. That's the thing that governments can do, because right now, very few companies, including, you know, the seven you brought last week, can do that. And so that's a place where Government can act.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "designating federal agencies for AI oversight",
+     "rationale": "proposing government action to restrict the public release of large pretrained models by top companies"
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "restricting social media accounts to verified humans",
+   "quote": "In order to reduce the chances that AI systems will massively influence voters through social media, one thing that should've been done a long time ago is that social media accounts should be restricted to actual human beings that have identified themselves, ideally in person. Right?",
+   "full_text": "Yes. I would like to add one suggestion which may sound drastic but isn't if you look at other fields like banking. In order to reduce the chances that AI systems will massively influence voters through social media, one thing that should''ve been done a long time ago is that social media accounts should be restricted to actual human beings that have identified themselves, ideally in person. Right?",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "suggests mandatory in-person identity verification for social media accounts to prevent AI voter manipulation"
+    },
+    {
+     "code_id": "c012",
+     "label": "need for guardrails in AI technology",
+     "rationale": "Proposes a government regulation to prevent AI voter manipulation on social media."
+    },
+    {
+     "code_id": "c037",
+     "label": "requiring human identity verification for social media",
+     "rationale": "Suggests restricting accounts to verified human beings to curb AI influence."
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "industry reliance on government mandates for verification",
+   "quote": "And right now, social media companies are spending a lot of money to figure out whether an account is legitimate or not. They will not, by themselves, force these kinds of regulations, because it's going to create friction to recruit more users. But if the Government says everyone needs to do it, they'll be happy.",
+   "full_text": "And right now, social media companies are spending a lot of money to figure out whether an account is legitimate or not. They will not, by themselves, force these kinds of regulations, because it's going to create friction to recruit more users. But if the Government says everyone needs to do it, they'll be happy. Well, I'm not them, but that's what I would--if I were them.",
+   "open_codes": [
+    {
+     "code_id": "c038",
+     "label": "necessity of government mandates for industry compliance",
+     "rationale": "Explains companies won't self-impose regulations due to user growth friction unless mandated."
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "caution regarding AI in political advertising",
+   "quote": "Well, my view on this is we should be very careful with any kind of use of AI for political purposes, political advertising, whether it's done officially through some agency that does advertising or in a more direct way.",
+   "full_text": "Well, my view on this is we should be very careful with any kind of use of AI for political purposes, political advertising, whether it's done officially through some agency that does advertising or in a more direct way.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Calls for careful handling or restrictions on AI use in political contexts."
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "banning political advertising before elections",
+   "quote": "In many countries, any kind of advertising, which would include disseminating such videos, is not allowed for some period before the election, to try to minimize, you know, the potential effect of these things.",
+   "full_text": "In many countries, any kind of advertising, which would include disseminating such videos, is not allowed for some period before the election, to try to minimize, you know, the potential effect of these things.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Suggests blackouts on political ads and video dissemination before elections."
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "criminal penalties for counterfeiting humans",
+   "quote": "If you think about counterfeiting money, the criminal penalties are very high, and that deters a lot of people. And when it comes to counterfeiting humans, it should be at least at the same level.",
+   "full_text": "Certainly, but I would go further. If you think about counterfeiting money, the criminal penalties are very high, and that deters a lot of people. And when it comes to counterfeiting humans, it should be at least at the same level.",
+   "open_codes": [
+    {
+     "code_id": "c014",
+     "label": "advocating for comprehensive AI legislation",
+     "rationale": "Proposes severe criminal penalties for generating deepfakes and counterfeiting human identity."
+    },
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Advocating for high criminal penalties to deter severe AI-related harms."
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "Academic researchers as a reliable yardstick",
+   "quote": "Trying to respond to your question from another angle, why researchers? I would say academic researchers--not all of them, but many of them don't have any commercial ties. They have a reputation to keep in order to continue their career. So, they're not perfect, but I think it's a very good yardstick to judge that something's----",
+   "full_text": "Trying to respond to your question from another angle, why researchers? I would say academic researchers--not all of them, but many of them don't have any commercial ties. They have a reputation to keep in order to continue their career. So, they're not perfect, but I think it's a very good yardstick to judge that something's----",
+   "open_codes": [
+    {
+     "code_id": "c039",
+     "label": "value of independent academic researchers",
+     "rationale": "Explains why academic researchers serve as unbiased yardsticks for safety."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "Uncertain timeline and impact of regulation",
+   "quote": "About the timeline, there's a lot of uncertainty, so as I wrote in my testimony, it could be a few years, but it could also be a couple of decades, because, you know, research is impossible to predict. But if we follow the trend, it's very concerning. And regulation, liability--they will help a lot. My calculations-- you know, we could reduce the probability of a rogue AI showing up by maybe a factor of 100, if we do the right things in terms of regulation.",
+   "full_text": "About the timeline, there's a lot of uncertainty, so as I wrote in my testimony, it could be a few years, but it could also be a couple of decades, because, you know, research is impossible to predict. But if we follow the trend, it's very concerning. And regulation, liability--they will help a lot. My calculations-- you know, we could reduce the probability of a rogue AI showing up by maybe a factor of 100, if we do the right things in terms of regulation.",
+   "open_codes": [
+    {
+     "code_id": "c032",
+     "label": "need for proactive rather than reactive regulation",
+     "rationale": "Argues that regulation and liability can drastically reduce rogue AI risks."
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "Need for countermeasures and cautious deployment",
+   "quote": "So, it's really worth it, but it's not going to bring those risks to zero, and especially for bad actors that don't follow the rules anyways. So, we need that investment in countermeasures, and AI is going to help us with that, but we have to do it carefully so that we don't create the problem that we're trying to solve in the first place.",
+   "full_text": "So, it's really worth it, but it's not going to bring those risks to zero, and especially for bad actors that don't follow the rules anyways. So, we need that investment in countermeasures, and AI is going to help us with that, but we have to do it carefully so that we don't create the problem that we're trying to solve in the first place.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Notes that AI itself might create problems if countermeasures are not deployed carefully."
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Non-profit multidisciplinary organizations for defense",
+   "quote": "Another aspect of this is, it's not just AI. You know, it needs to bring expertise in national security, in bioweapons, chemical weapons, and AI people together. The organizations that're going to do that, in my opinion, shouldn't be for- profit. We shouldn't mix the objective of making money, which, you know, makes a lot of sense in our economic system, with the objective, which should be single minded, of defending humanity against a potential rogue AI.",
+   "full_text": "Another aspect of this is, it's not just AI. You know, it needs to bring expertise in national security, in bioweapons, chemical weapons, and AI people together. The organizations that're going to do that, in my opinion, shouldn't be for- profit. We shouldn't mix the objective of making money, which, you know, makes a lot of sense in our economic system, with the objective, which should be single minded, of defending humanity against a potential rogue AI.",
+   "open_codes": [
+    {
+     "code_id": "c040",
+     "label": "proposing non-profit multidisciplinary safety organizations",
+     "rationale": "Proposes keeping safety organizations non-profit to avoid profit motives."
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "International cooperation and democratic resilience",
+   "quote": "Also, I think we should be very careful to do this with our allies in the world and not do it alone. There is--first, we can have a diverse set of approaches, because we don't know how to really do this. We are hoping that, as we move forward and we try to solve the problem, we'll find solutions. But we need a diversity of approaches. And we also need some kind of robustness against the possibility that one of the governments involved in this kind of research isn't democratic anymore, for some reason. Right? This can happen. We don't want a country that was democratic and has power over a superhuman AI to be the only country working on this. We need a resilient system of partners, so that if one of them ends up being a bad actor, the others are there.",
+   "full_text": "Also, I think we should be very careful to do this with our allies in the world and not do it alone. There is--first, we can have a diverse set of approaches, because we don't know how to really do this. We are hoping that, as we move forward and we try to solve the problem, we'll find solutions. But we need a diversity of approaches. And we also need some kind of robustness against the possibility that one of the governments involved in this kind of research isn't democratic anymore, for some reason. Right? This can happen. We don't want a country that was democratic and has power over a superhuman AI to be the only country working on this. We need a resilient system of partners, so that if one of them ends up being a bad actor, the others are there.",
+   "open_codes": [
+    {
+     "code_id": "c041",
+     "label": "international allied cooperation for AI safety",
+     "rationale": "Stresses the importance of working with international allies and maintaining a resilient partner system."
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Talent distribution across allied nations",
+   "quote": "On the Allied side, there are a few countries, including Canada, from which I come from, that have really important concentration of talent in AI. And, you know, in Canada we've contributed a lot of the principles behind what we're seeing today.",
+   "full_text": "On the Allied side, there are a few countries, including Canada, from which I come from, that have really important concentration of talent in AI. And, you know, in Canada we've contributed a lot of the principles behind what we're seeing today. There is also a lot of really good European researchers in the UK and outside the UK. So, I think that we would all gain by making sure we work with these countries to develop these countermeasures as well as the improved understanding of the potentially dangerous scenarios and what methodologies in terms of safety can protect us.",
+   "open_codes": [
+    {
+     "code_id": "c041",
+     "label": "international allied cooperation for AI safety",
+     "rationale": "Leveraging talent in allied nations like Canada and Europe for safety research."
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Multilateral umbrella for decentralized labs",
+   "quote": "A common umbrella that would be multilateral. Maybe this could be--a good starting place could be Five Eyes or G7, and that would capture pretty much the bulk of the expertise in these very strong AI systems that could be important here.",
+   "full_text": "A common umbrella that would be multilateral. Maybe this could be--a good starting place could be Five Eyes or G7, and that would capture pretty much the bulk of the expertise in these very strong AI systems that could be important here.",
+   "open_codes": [
+    {
+     "code_id": "c041",
+     "label": "international allied cooperation for AI safety",
+     "rationale": "Proposing a multilateral framework like G7 or Five Eyes for powerful AI safety."
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "National security and classified coordination",
+   "quote": "There's no doubt that individual countries have their own national security organizations and are going to do their own laws, but the more we can coordinate on this, the better. Of course, I think some of that research should be classified and not shared with anyone, only trusted parties.",
+   "full_text": "There's no doubt that individual countries have their own national security organizations and are going to do their own laws, but the more we can coordinate on this, the better. Of course, I think some of that research should be classified and not shared with anyone, only trusted parties.",
+   "open_codes": [
+    {
+     "code_id": "c041",
+     "label": "international allied cooperation for AI safety",
+     "rationale": "Emphasizing international coordination alongside national security classification."
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "international coordination on AI safety rules",
+   "quote": "So, there are aspects of what we have to do that have to be really broad, at the international level, and I think the guidelines or the maybe mandatory rules for safety should be something we do internationally, like with the U.N.",
+   "full_text": "There's no doubt that individual countries have their own national security organizations and are going to do their own laws, but the more we can coordinate on this, the better. Of course, I think some of that research should be classified and not shared with anyone, only trusted parties. So, there are aspects of what we have to do that have to be really broad, at the international level, and I think the guidelines or the maybe mandatory rules for safety should be something we do internationally, like with the U.N.",
+   "open_codes": [
+    {
+     "code_id": "c041",
+     "label": "international allied cooperation for AI safety",
+     "rationale": "Advocating for international safety guidelines and UN coordination."
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "cross-border risks and global safety consensus",
+   "quote": "Like, we want every country to follow some basic rules, because even if they don't have the technology, some rogue actor, even here in the U.S., might just go and do it somewhere else, and then, you know, viruses--computer or biological viruses don't see any border.",
+   "full_text": "Like, we want every country to follow some basic rules, because even if they don't have the technology, some rogue actor, even here in the U.S., might just go and do it somewhere else, and then, you know, viruses--computer or biological viruses don't see any border. So, we need to make sure there's an international effort, in terms of these safety measures. We need to agree with China on these safety measures, as the first interlocutor. And we need to work with our allies on these countermeasures.",
+   "open_codes": [
+    {
+     "code_id": "c041",
+     "label": "international allied cooperation for AI safety",
+     "rationale": "Stating the need for global rules to prevent rogue actors and borderless harms."
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "supporting mandatory incident reporting for AI",
+   "quote": "Would you all favor some kind of requirement for that kind of reporting? [Respondent] Absolutely.",
+   "full_text": "We've discussed this afternoon both short-term and long- term kinds of risks that can cause very significant public harm. It doesn't seem like AI companies have an obligation to report issues right now. In other words, there's no place to report it. They have no obligation to make it known. If they discover the ``Oh, my God, how did that happen?'' incident, it can be entirely undisclosed. Would you all favor some kind of requirement for that kind of reporting? [Respondent] Absolutely.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Supporting mandatory reporting requirements for AI failures and safety incidents."
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "heavy investment in AI safety research",
+   "quote": "What I would suggest, in addition to what Professor Russell said, is to make sure, either through incentives to companies but also direct investments in nonprofit organizations, that we invest heavily--so, totally as much as we spend on, you know, making more capable AIs, that we invest heavily in safety",
+   "full_text": "What I would suggest, in addition to what Professor Russell said, is to make sure, either through incentives to companies but also direct investments in nonprofit organizations, that we invest heavily--so, totally as much as we spend on, you know, making more capable AIs, that we invest heavily in safety, whether it's at a level of the hardware or it's at a level of cybersecurity and national security, to protect the public.",
+   "open_codes": [
+    {
+     "code_id": "c040",
+     "label": "proposing non-profit multidisciplinary safety organizations",
+     "rationale": "Proposing heavy investment in safety via incentives and non-profit organizations."
+    },
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Advocating for heavy investments in AI safety matching capabilities development."
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Attribution difficulties in AI training data",
+   "quote": "It's not always going to be possible to know, to attribute the output of a system to a particular piece of data, because these systems are not just copying. They're integrating information from many, many sources.",
+   "full_text": "It's not always going to be possible to know, to attribute the output of a system to a particular piece of data, because these systems are not just copying. They're integrating information from many, many sources. And so we need other mechanisms to share to the people who are losing something, for example, artists. But in some cases, it could be identified, if an output is close enough to something that has been, you know, has copyright or something. I think in that case, yes, we should do it.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Discussing the technical difficulty of attributing model outputs to specific training data sources."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "Military aircraft analogy and the necessity of mandatory red teaming",
+   "quote": "This red teaming is an example of how voluntary nonspecific commitments are insufficient. The advantages are in the details, not just the devil. The details are tremendously important, and when it comes to economic pressures, companies can cut corners.",
+   "full_text": "Well, you know, that's a very timely analogy, because a lot of the military aircraft we're building now basically fly on computers. And the pilot is in the planes, right now, but we're moving toward such sophisticated and complicated aircraft, which I know a little bit about because I'm on the Armed Services Committee, that, you know, they're a lot smarter than pilots in some of the flying they can do. But at the same time, they are certainly red teamed to avoid misdirection and mistakes. And the kinds of specifics that you just mentioned are where the rubber hits the road. These kinds of specifics are where the legislation will be very important. President Biden has enlisted--or elicited commitments to security, safety, transparency, announced on Friday. Important step forward. But this red teaming is an example of how voluntary nonspecific commitments are insufficient. The advantages are in the details, not just the devil. The details are tremendously important, and when it comes to economic pressures, companies can cut corners. Again, the Gold Rush. These decisions have real economic consequences.",
+   "open_codes": [
+    {
+     "code_id": "c032",
+     "label": "need for proactive rather than reactive regulation",
+     "rationale": "Argues that voluntary commitments are insufficient and details are needed."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Risks of open source AI models and misuse",
+   "quote": "There are some advantages to having open source, as well. It's a complicated issue. I appreciate that open source can be an extraordinary resource. But even in the short time that we've had some AI tools and they've been available, they have been abused.",
+   "full_text": "I want to just, in the last--maybe the last question I have. On the issue of open source, you each raised the security and safety risk of AI models that are open source or are leaked to the public, the danger. There are some advantages to having open source, as well. It's a complicated issue. I appreciate that open source can be an extraordinary resource. But even in the short time that we've had some AI tools and they've been available, they have been abused. For example, I'm aware that a group of people took Stable Diffusion and created a version for the express purpose of creating nonconsensual sexual material. So, on the one hand, access to AI data is a good thing for research, but on the other hand, the same open models can create risks, just because they are open.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Notes how open source models can be abused for harmful purposes."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "Corporate release of AI models driven by business decisions",
+   "quote": "The second version had more documentation of its safety work, but it seems like Meta or Facebook's business decisions may have been driving its agenda.",
+   "full_text": "Senator Hawley and I, as an example of our cooperation, wrote to Meta about an AI model that they released to the public. You're familiar with it, I'm sure, LLaMA. They put the first version of LLaMA out there with not much consideration of risk, and it was leaked or it was somehow made known. The second version had more documentation of its safety work, but it seems like Meta or Facebook's business decisions may have been driving its agenda. So, let me ask you about that phenomenon. I think you have commented on it, Dr. Bengio, so let me----",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Refers to companies releasing models with inadequate consideration of risk due to business pressures."
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "Risks of open sourcing dangerous AI models",
+   "quote": "when we put open source out there for something that could be dangerous, which is a tiny minority of all the code that's open source, essentially we're opening the door to all the bad actors.",
+   "full_text": "Yes. I think it's really important, because when we put open source out there for something that could be dangerous, which is a tiny minority of all the code that's open source, essentially we're opening the door to all the bad actors.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Open sourcing dangerous AI models enables bad actors to exploit them."
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "Lowered barriers for malicious actors using advanced AI",
+   "quote": "as these systems become more capable, bad actors don't need to have very strong expertise, whether it's in bioweapons or cybersecurity, in order to take advantage of systems like this. And they don't even need to have huge amounts of compute, either, to take advantage of systems like this.",
+   "full_text": "And as these systems become more capable, bad actors don't need to have very strong expertise, whether it's in bioweapons or cybersecurity, in order to take advantage of systems like this. And they don't even need to have huge amounts of compute, either, to take advantage of systems like this.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Advanced AI lowers technical and resource barriers for malicious use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "Government definitions and pre-release evaluation for AI",
+   "quote": "I think it's really important that the Government comes up with some definition, which is going to keep moving, but make sure that future releases are going to be very carefully evaluated for that potential before they're released.",
+   "full_text": "Now, I believe that the different companies that committed to these measures last week probably have a different interpretation of what is a dangerous system, and I think it's really important that the Government comes up with some definition, which is going to keep moving, but make sure that future releases are going to be very carefully evaluated for that potential before they're released.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Calling for government definitions and mandatory safety evaluations before release."
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "Comparing AI open sourcing to nuclear weapons",
+   "quote": "I've been a staunch advocate of open source for all my scientific career. Open source is great for scientific progress. But as Geoff Hinton, my colleague, was saying, ``If nuclear bombs were software, would you allow open source of nuclear bombs?''",
+   "full_text": "I've been a staunch advocate of open source for all my scientific career. Open source is great for scientific progress. But as Geoff Hinton, my colleague, was saying, ``If nuclear bombs were software, would you allow open source of nuclear bombs?'' Right?",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "need for guardrails in AI technology",
+     "rationale": "Using the nuclear weapons analogy to argue against unrestricted open-sourcing of dangerous AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "University AI code usage and need for ethics boards",
+   "quote": "So, I have another thing to add on open source. Some of it is coming from companies like Meta, but there's also a lot of open source coming out of universities. Now, usually these universities don't have the means of training the kind of large systems that we're seeing in industry. But the code could be then, you know, used by a rich bad actor and turned into something dangerous. So, I believe that we need ethics review boards in universities for AI, just like we have for biology and medicine.",
+   "full_text": "So, I have another thing to add on open source. Some of it is coming from companies like Meta, but there's also a lot of open source coming out of universities. Now, usually these universities don't have the means of training the kind of large systems that we're seeing in industry. But the code could be then, you know, used by a rich bad actor and turned into something dangerous. So, I believe that we need ethics review boards in universities for AI, just like we have for biology and medicine.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Proposing institutional ethics review boards for university-developed AI code."
+    }
+   ]
+  },
+  {
+   "segment_id": "S038",
+   "title": "academic open source risks and ethics boards",
+   "quote": "So, I believe that we need ethics review boards in universities for AI, just like we have for biology and medicine. Right now, there's no such thing.",
+   "full_text": "So, I have another thing to add on open source. Some of it is coming from companies like Meta, but there's also a lot of open source coming out of universities. Now, usually these universities don't have the means of training the kind of large systems that we're seeing in industry. But the code could be then, you know, used by a rich bad actor and turned into something dangerous. So, I believe that we need ethics review boards in universities for AI, just like we have for biology and medicine. Right now, there's no such thing. I mean, there are ethics, in principle, they could do that but they're not set up for that. They don't have the expertise. They don't have the kind of protocols. We need to move into a culture where universities across the world but, you know, in the VLOP nations in particular, adopt these ethics reviews with the same principles we're doing for other sciences where there is dangerous output, but in the case of AI.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Advocating for institutional ethics review boards in universities to oversee AI research and code."
+    }
+   ]
+  },
+  {
+   "segment_id": "S039",
+   "title": "single federal agency for coordination and agility",
+   "quote": "So, I would like to add a point about international or multilateral collaboration on these things and how it's related to having maybe a single agency here in the United States. If there are 10 different agencies trying to regulate AI in its various forms, that could be useful, but as Stuart Russell was saying, this is going to be very big in terms of the space it takes in the economy, but also we need to have a single voice that coordinates with the other countries.",
+   "full_text": "So, I would like to add a point about international or multilateral collaboration on these things and how it's related to having maybe a single agency here in the United States. If there are 10 different agencies trying to regulate AI in its various forms, that could be useful, but as Stuart Russell was saying, this is going to be very big in terms of the space it takes in the economy, but also we need to have a single voice that coordinates with the other countries. And having one agency that does that is going to be very important. Also, we need an agency in the first place because we can't predict--we can't put in the law every protection that is needed, every regulation that is needed. We don't know yet what the regulations should be in 1 year or 2 years, 3 years from now. So, we need to build something that's going to be very agile. And I know it's difficult for governments to do that. Maybe we can do research to improve on that front, agility in doing the right thing. But having an agency is at least a tool toward that goal.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "designating federal agencies for AI oversight",
+     "rationale": "Proposing a single federal agency to coordinate internationally and handle future regulatory needs."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_173944",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 11,
+   "n_ok": 11
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 8,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 2
+   },
+   {
+    "reused": 4,
+    "created": 2,
+    "chunk": 3
+   },
+   {
+    "reused": 3,
+    "created": 3,
+    "chunk": 4
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 6
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 8
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 9
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 10
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg53503 — Yoshua Bengio, Founder And Scientific Director, Mila--Quebec Ai Institute, And Professor, Department Of Computer Science And Operations Research, Universite De Montreal\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg53503  |  Oversight Of A.I.: Principles For Regulation  |  Senate, Subcommittee On Privacy, Technology, And The Law / Committee On The Judiciary  |  2023-07-25  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chair Blumenthal) Thank you very much. Why don't we go to Mr. Bengio.\n[Respondent] Chairman Blumenthal, Ranking Member Hawley, Members of the Judiciary Committee, thank you for the invitation to speak today. The capabilities of AI systems have steadily increased over the last two decades, thanks to advances in deep learning that I and others introduced. While this revolution has the potential to enable tremendous progress and innovation, it also entails a wide range of risks, from immediate ones like discrimination, to growing ones like disinformation, and even more concerning ones in the future like loss of control of superhuman AIs.\nRecently, I, and many others, have been surprised by the giant leap realized by systems like ChatGPT to the point where it becomes difficult to discern whether one is interacting with another human or a machine. These advancements have led many top AI researchers, including myself, to revise our estimates of when human-level intelligence could be achieved. Previously thought to be decades or even centuries away, we now believe it could be within a few years or decades.\nThe shorter timeframe, say, 5 years, is really worrisome because we'll need more time to effectively mitigate the potentially significant threats to democracy, national security, and our collective future. As Sam Altman said here, if this technology goes wrong, it could go terribly wrong. These severe risks could arise either intentionally, because of malicious actors using AI systems to achieve harmful goals, or unintentionally, if an AI system develops strategies that are misaligned with our values and norms.\nI would like to emphasize four factors that governments can focus on in their regulatory efforts to mitigate all AI harms and risks. First, access: limiting who has access to powerful AI systems, structuring the proper protocols, duties, oversight, and incentives for them to act safely. Second, alignment: ensuring that AI systems will act as intended, in agreement with our values and norms. Third, raw intellectual power: which depends on the level of sophistication of the algorithms and the scale of computing resources and of datasets. And fourth, scope of action: the potential for harm an AI system can affect indirectly, for example, through human actions or directly, for example, through the internet. So, looking at risks through the lens of each of these four factors--access, alignment, intellectual power, and scope of action--is critical to designing appropriate Government intervention.\nI firmly believe that urgent efforts, preferably in the coming months, are required in the following three areas.\nFirst, the coordination of highly agile national and international regulatory frameworks and liability incentives that bolster safety. This would require licenses for people and organizations with standardized duties to evaluate and mitigate potential harm, allow independent audits, and restrict AI systems with unacceptable levels of risk.\nSecond, because the current methodologies are not demonstrably safe, significantly accelerate global research endeavors focused on AI safety, enabling the informed creation of essential regulations, protocols, safe AI methodologies, and governance structures.\nAnd, third, research on countermeasures to protect society from potential rogue AIs, because no regulation is going to be perfect. This research in AI and international security should be conducted with several highly secure and decentralized labs operating under multilateral oversight to mitigate an AI arms race.\nGiven the significant potential for detrimental consequences, we must therefore allocate substantial additional resources to safeguard our future, at least as much as we are collectively globally investing in increasing the capabilities of AI. I believe we have a moral responsibility to mobilize our greatest minds and make major investments in a bold and internationally coordinated effort to fully reap the economic and social benefits of AI while protecting society and our shared future against its potential perils.\nThank you for your attention to this pressing matter. I look forward to your questions.\n[Interviewer] (Chair Blumenthal) Thank you. Mr. Bengio?\n[Respondent] I agree with all of that. I will add a few things. One concern I have is that even if companies use watermarking, and especially because there is now several open source versions to train LLMs or use them, including model weights that have been made available to the global community, we also need to understand how things can go wrong on that front. In other words, people are not all going to obey that law.\nAnd one important thing I'm concerned about is, one can take a pretrained model, say by a company that made it public, and then without huge computing resources--so, not the hundred million cost that it takes to train them, but something very cheap, can tune these systems to a particular task, which could be to play the game of being a troll, for example. There's plenty of examples of that to train them on, or other examples in generating deepfakes in a way that might be more powerful than what we've seen up to now. So, I don't know how to fix this, but I want to bring that to the attention of this Committee.\n[Interviewer] (Chair Blumenthal) Thank you. Well, on that point, and on both of the excellent points that you both have raised, I would invite fixes, and----\n[Respondent] Well, I mean, one immediate fix is to avoid releasing more of these pretrained large models. That's the thing that governments can do, because right now, very few companies, including, you know, the seven you brought last week, can do that. And so that's a place where Government can act.\n[Interviewer] (Chair Blumenthal) But protecting our election system has to be a priority. I think all of you are very, very emphatically and cogently making that point. Professor Bengio?\n[Respondent] Yes. I would like to add one suggestion which may sound drastic but isn't if you look at other fields like banking. In order to reduce the chances that AI systems will massively influence voters through social media, one thing that should've been done a long time ago is that social media accounts should be restricted to actual human beings that have identified themselves, ideally in person. Right?\nAnd right now, social media companies are spending a lot of money to figure out whether an account is legitimate or not. They will not, by themselves, force these kinds of regulations, because it's going to create friction to recruit more users. But if the Government says everyone needs to do it, they'll be happy. Well, I'm not them, but that's what I would--if I were them.\n[Interviewer] (Senator Klobuchar) Okay. I'm just going to--Professor Bengio, what do you think?\n[Respondent] Well, my view on this is we should be very careful with any kind of use of AI for political purposes, political advertising, whether it's done officially through some agency that does advertising or in a more direct way.\n[Interviewer] (Senator Klobuchar) But it might not be actual advertising. It's just put out for----\n[Respondent] Yes.\n[Interviewer] (Senator Klobuchar) Circulation. That's always what we've----\n[Respondent] Yes.\n[Interviewer] (Senator Klobuchar) Confronted, because----\n[Respondent] Yes.\n[Interviewer] (Senator Klobuchar) The Federal Election Commission, while deadlocking on this, has asked for authority, including the Republican-appointed----\n[Respondent] Yes. So----\n[Interviewer] (Senator Klobuchar) Members, to do more. But go ahead.\n[Respondent] In many countries, any kind of advertising, which would include disseminating such videos, is not allowed for some period before the election, to try to minimize, you know, the potential effect of these things.\n[Interviewer] (Senator Klobuchar) Well, I hope so. About half of the States have laws that give individuals control over the use of their name, image, and voice, but in the other half of the country, someone who is harmed by a fake recording purporting to be them has little recourse. Senators Coons and Tillis just did a hearing on this. Would you support a Federal law, Mr. Bengio, that gives individuals control over the use of their name, image, and voice?\n[Respondent] Certainly, but I would go further.\n[Interviewer] (Senator Klobuchar) Mm-hmm.\n[Respondent] If you think about counterfeiting money, the criminal penalties are very high, and that deters a lot of people. And when it comes to counterfeiting humans, it should be at least at the same level.\n[Interviewer] (Senator Klobuchar) All right. Do you want to add one more thing, Mr. Bengio?\n[Respondent] Yes. Trying to respond to your question from another angle, why researchers? I would say academic researchers--not all of them, but many of them don't have any commercial ties. They have a reputation to keep in order to continue their career. So, they're not perfect, but I think it's a very good yardstick to judge that something's----\n[Interviewer] (Chair Blumenthal) Mr. Bengio?\n[Respondent] Yes. I completely agree. About the timeline, there's a lot of uncertainty, so as I wrote in my testimony, it could be a few years, but it could also be a couple of decades, because, you know, research is impossible to predict. But if we follow the trend, it's very concerning. And regulation, liability--they will help a lot. My calculations-- you know, we could reduce the probability of a rogue AI showing up by maybe a factor of 100, if we do the right things in terms of regulation. So, it's really worth it, but it's not going to bring those risks to zero, and especially for bad actors that don't follow the rules anyways. So, we need that investment in countermeasures, and AI is going to help us with that, but we have to do it carefully so that we don't create the problem that we're trying to solve in the first place.\nAnother aspect of this is, it's not just AI. You know, it needs to bring expertise in national security, in bioweapons, chemical weapons, and AI people together. The organizations that're going to do that, in my opinion, shouldn't be for- profit. We shouldn't mix the objective of making money, which, you know, makes a lot of sense in our economic system, with the objective, which should be single minded, of defending humanity against a potential rogue AI.\nAlso, I think we should be very careful to do this with our allies in the world and not do it alone. There is--first, we can have a diverse set of approaches, because we don't know how to really do this. We are hoping that, as we move forward and we try to solve the problem, we'll find solutions. But we need a diversity of approaches. And we also need some kind of robustness against the possibility that one of the governments involved in this kind of research isn't democratic anymore, for some reason. Right? This can happen. We don't want a country that was democratic and has power over a superhuman AI to be the only country working on this. We need a resilient system of partners, so that if one of them ends up being a bad actor, the others are there.\n[Interviewer] (Chair Blumenthal) Mr. Bengio? Professor?\n[Respondent] On the Allied side, there are a few countries, including Canada, from which I come from, that have really important concentration of talent in AI. And, you know, in Canada we've contributed a lot of the principles behind what we're seeing today. There is also a lot of really good European researchers in the UK and outside the UK. So, I think that we would all gain by making sure we work with these countries to develop these countermeasures as well as the improved understanding of the potentially dangerous scenarios and what methodologies in terms of safety can protect us.\n[Interviewer] (Chair Blumenthal) You've advocated decentralized labs.\n[Respondent] Yes.\n[Interviewer] (Chair Blumenthal) But under----\n[Respondent] A common umbrella that would be multilateral. Maybe this could be--a good starting place could be Five Eyes or G7, and that would capture pretty much the bulk of the expertise in these very strong AI systems that could be important here.\n[Interviewer] (Chair Blumenthal) And there would probably be some way for our entity, our national oversight body doing licensing and registration, to still cooperate. In fact, I would guess that's----\n[Respondent] Oh, yes.\n[Interviewer] (Chair Blumenthal) One of the reasons to have a single entity, to be able to work and collaborate----\n[Respondent] Yes. So----\n[Interviewer] (Chair Blumenthal) With other countries.\n[Respondent] There's no doubt that individual countries have their own national security organizations and are going to do their own laws, but the more we can coordinate on this, the better. Of course, I think some of that research should be classified and not shared with anyone, only trusted parties.\nSo, there are aspects of what we have to do that have to be really broad, at the international level, and I think the guidelines or the maybe mandatory rules for safety should be something we do internationally, like with the U.N. Like, we want every country to follow some basic rules, because even if they don't have the technology, some rogue actor, even here in the U.S., might just go and do it somewhere else, and then, you know, viruses--computer or biological viruses don't see any border. So, we need to make sure there's an international effort, in terms of these safety measures. We need to agree with China on these safety measures, as the first interlocutor. And we need to work with our allies on these countermeasures.\n[Interviewer] (Chair Blumenthal) You know, in some of the areas that have been mentioned like medicines and transportation, there are public reporting requirements. For example, when there's a failure, the FAA's system has an accident and incident report. They collect data about failures in those kinds of machinery, and it serves as a warning to consumers. It creates a deterrence for putting unsafe products on the market, and it adds to oversight of public safety issues.\nWe've discussed this afternoon both short-term and long- term kinds of risks that can cause very significant public harm. It doesn't seem like AI companies have an obligation to report issues right now. In other words, there's no place to report it. They have no obligation to make it known. If they discover the ``Oh, my God, how did that happen?'' incident, it can be entirely undisclosed.\nWould you all favor some kind of requirement for that kind of reporting?\n[Respondent] Absolutely.\n[Interviewer] (Senator Hawley) Very good. Professor Bengio?\n[Respondent] What I would suggest, in addition to what Professor Russell said, is to make sure, either through incentives to companies but also direct investments in nonprofit organizations, that we invest heavily--so, totally as much as we spend on, you know, making more capable AIs, that we invest heavily in safety, whether it's at a level of the hardware or it's at a level of cybersecurity and national security, to protect the public.\n[Interviewer] (Senator Hawley) Thank you, each of you. That's really helpful. Let me just throw an idea out to you while I have you here, so to speak, which is, when we think about protecting individuals and their personal data and making sure that it doesn't end up being used to train one of these generative AI systems without the individual's consent--and we know that there's just an enormous amount of our own personal information out there in public, kind of, you know, I mean, it's really without our permission, but it's out there on the Web, everything from our credit histories to social media posts, et cetera, et cetera. Should we, in addition to assigning property rights in individual data, you know, explicitly giving every American a property right in their data, should we also require monetary compensation if AI companies want to use individual data in their model in some way? Professor Bengio, go ahead.\n[Respondent] It's not always going to be possible to know, to attribute the output of a system to a particular piece of data, because these systems are not just copying. They're integrating information from many, many sources. And so we need other mechanisms to share to the people who are losing something, for example, artists. But in some cases, it could be identified, if an output is close enough to something that has been, you know, has copyright or something. I think in that case, yes, we should do it.\n[Interviewer] (Chair Blumenthal) Well, you know, that's a very timely analogy, because a lot of the military aircraft we're building now basically fly on computers. And the pilot is in the planes, right now, but we're moving toward such sophisticated and complicated aircraft, which I know a little bit about because I'm on the Armed Services Committee, that, you know, they're a lot smarter than pilots in some of the flying they can do. But at the same time, they are certainly red teamed to avoid misdirection and mistakes.\nAnd the kinds of specifics that you just mentioned are where the rubber hits the road. These kinds of specifics are where the legislation will be very important. President Biden has enlisted--or elicited commitments to security, safety, transparency, announced on Friday. Important step forward. But this red teaming is an example of how voluntary nonspecific commitments are insufficient. The advantages are in the details, not just the devil. The details are tremendously important, and when it comes to economic pressures, companies can cut corners. Again, the Gold Rush. These decisions have real economic consequences.\nI want to just, in the last--maybe the last question I have. On the issue of open source, you each raised the security and safety risk of AI models that are open source or are leaked to the public, the danger. There are some advantages to having open source, as well. It's a complicated issue. I appreciate that open source can be an extraordinary resource. But even in the short time that we've had some AI tools and they've been available, they have been abused. For example, I'm aware that a group of people took Stable Diffusion and created a version for the express purpose of creating nonconsensual sexual material. So, on the one hand, access to AI data is a good thing for research, but on the other hand, the same open models can create risks, just because they are open.\nSenator Hawley and I, as an example of our cooperation, wrote to Meta about an AI model that they released to the public. You're familiar with it, I'm sure, LLaMA. They put the first version of LLaMA out there with not much consideration of risk, and it was leaked or it was somehow made known. The second version had more documentation of its safety work, but it seems like Meta or Facebook's business decisions may have been driving its agenda. So, let me ask you about that phenomenon. I think you have commented on it, Dr. Bengio, so let me----\n[Respondent] Yes.\n[Interviewer] (Chair Blumenthal) Talk to you first.\n[Respondent] Yes. I think it's really important, because when we put open source out there for something that could be dangerous, which is a tiny minority of all the code that's open source, essentially we're opening the door to all the bad actors. And as these systems become more capable, bad actors don't need to have very strong expertise, whether it's in bioweapons or cybersecurity, in order to take advantage of systems like this. And they don't even need to have huge amounts of compute, either, to take advantage of systems like this.\nNow, I believe that the different companies that committed to these measures last week probably have a different interpretation of what is a dangerous system, and I think it's really important that the Government comes up with some definition, which is going to keep moving, but make sure that future releases are going to be very carefully evaluated for that potential before they're released.\nI've been a staunch advocate of open source for all my scientific career. Open source is great for scientific progress. But as Geoff Hinton, my colleague, was saying, ``If nuclear bombs were software, would you allow open source of nuclear bombs?'' Right?\n[Interviewer] (Chair Blumenthal) And I think the comparison is apt. You know, I've been reading the most recent biography of Robert Oppenheimer, and every time I think about AI, the specter of quantum physics, nuclear bombs, but also atomic energy, both peaceful and military purposes, is inescapable.\n[Respondent] So, I have another thing to add on open source. Some of it is coming from companies like Meta, but there's also a lot of open source coming out of universities. Now, usually these universities don't have the means of training the kind of large systems that we're seeing in industry. But the code could be then, you know, used by a rich bad actor and turned into something dangerous. So, I believe that we need ethics review boards in universities for AI, just like we have for biology and medicine.\nRight now, there's no such thing. I mean, there are ethics, in principle, they could do that but they're not set up for that. They don't have the expertise. They don't have the kind of protocols. We need to move into a culture where universities across the world but, you know, in the VLOP nations in particular, adopt these ethics reviews with the same principles we're doing for other sciences where there is dangerous output, but in the case of AI.\n[Interviewer] (Chair Blumenthal) I want to invite any of you who have closing comments or thoughts that you haven't had an opportunity to express. Professor?\n[Respondent] So, I would like to add a point about international or multilateral collaboration on these things and how it's related to having maybe a single agency here in the United States.\nIf there are 10 different agencies trying to regulate AI in its various forms, that could be useful, but as Stuart Russell was saying, this is going to be very big in terms of the space it takes in the economy, but also we need to have a single voice that coordinates with the other countries. And having one agency that does that is going to be very important.\nAlso, we need an agency in the first place because we can't predict--we can't put in the law every protection that is needed, every regulation that is needed. We don't know yet what the regulations should be in 1 year or 2 years, 3 years from now. So, we need to build something that's going to be very agile. And I know it's difficult for governments to do that. Maybe we can do research to improve on that front, agility in doing the right thing. But having an agency is at least a tool toward that goal.",
+ "_bench": {
+  "seconds": 55.7,
+  "chars": 23249
+ }
+}

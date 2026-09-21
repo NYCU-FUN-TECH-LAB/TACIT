@@ -1,0 +1,557 @@
+{
+ "respondent": "CHRG-118hhrg53782_Tabassi",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "policy_maker",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Introduction and overview of NIST's work on AI",
+   "quote": "AI technologies provide enormous opportunities for positive impact. They can also cause cascading negative consequences if proper safeguards are not in place.",
+   "full_text": "AI technologies provide enormous opportunities for positive impact. They can also cause cascading negative consequences if proper safeguards are not in place. NIST works to advance research, standards, measurements, and tools to manage AI risks and realize the full promise of this technology for all people.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "Elham Tabassi introduces herself as the Director for Emerging Technologies of the Information Technology Laboratory at the National Institute of Standards and Technology"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "NIST's role in AI risk management",
+   "quote": "NIST works with the AI community to develop and improve its resources.",
+   "full_text": "NIST works with the AI community to develop and improve its resources. We pride ourselves in our engagements and collaborations, and the trust we have built with the private sector, government agencies, civil society, and academia.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "Elham Tabassi discusses NIST's role in AI risk management and its collaborations with the AI community"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Release of the AI Risk Management Framework",
+   "quote": "The AI RMF is a voluntary framework that provides a flexible, structured, and measurable process to address the AI risks purposefully and continually throughout the AI lifecycle.",
+   "full_text": "Among its many AI-related activities, NIST released the AI Risk Management Framework, or AI RMF, in January 2023 after considerable collaborations with stakeholders. Directed by congressional mandate, the AI RMF is a voluntary framework that provides a flexible, structured, and measurable process to address the AI risks purposefully and continually throughout the AI lifecycle.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "Elham Tabassi discusses the AI Risk Management Framework and its purpose in addressing AI risks"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "NIST's AI-related activities",
+   "quote": "Among its many AI-related activities, NIST released the AI Risk Management Framework, or AI RMF, in January 2023 after considerable collaborations with stakeholders.",
+   "full_text": "Among its many AI-related activities, NIST released the AI Risk Management Framework, or AI RMF, in January 2023 after considerable collaborations with stakeholders. Directed by congressional mandate, the AI RMF is a voluntary framework that provides a flexible, structured, and measurable process to address the AI risks purposefully and continually throughout the AI lifecycle. The AI RMF offers a resource to the organization's designing, developing, deploying, or using AI systems to help manage the many risks of AI and promote trustworthy and responsible development and use of AI systems. The framework was developed through an open, transparent, and collaborative process that allowed for a broad range of stakeholder input. NIST also released a companion NIST AI RMF playbook and a roadmap. The playbook provides additional guidelines to organizations on the action they can take to meet the outcomes included in the framework. The roadmap identifies key activities for advancing the AI RMF that could be carried out by NIST in collaboration with public or private organizations or by those organizations independently.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The AI RMF is a response to the risks and challenges posed by AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "NIST's Trustworthy & Responsible AI Resource Center",
+   "quote": "To support the operationalization of the AI RMF, NIST established the online Trustworthy & Responsible AI Resource Center (AIRC) in March 2023.",
+   "full_text": "To support the operationalization of the AI RMF, NIST established the online Trustworthy & Responsible AI Resource Center (AIRC) in March 2023. It serves as a one- stop shop for foundational content, technical documents, and AI toolkits.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The AI Resource Center aims to address concerns about AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "NIST's generative AI public working group",
+   "quote": "In June 2023, NIST launched a generative AI public working group to help NIST develop a profile of AI RMF to address the risks of generative AI technologies.",
+   "full_text": "In June 2023, NIST launched a generative AI public working group to help NIST develop a profile of AI RMF to address the risks of generative AI technologies.",
+   "open_codes": [
+    {
+     "code_id": "c005",
+     "label": "Characteristics of machine learning systems",
+     "rationale": "The working group focuses on the characteristics of generative AI technologies"
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "NIST's AI evaluation efforts",
+   "quote": "New NIST efforts in AI evaluation will focus on sociotechnical aspects of system functionality and performance in addition to accuracy.",
+   "full_text": "New NIST efforts in AI evaluation will focus on sociotechnical aspects of system functionality and performance in addition to accuracy. In particular, the evaluations have the goal of identifying risks and harms of AI systems before they are deployed and to establish metrics and evaluation infrastructure that will allow AI developers and deployers to detect the extent to which AI systems exhibit negative impacts or harms.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The AI evaluation efforts aim to identify the limitations and potential harms of AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "NIST's international engagement",
+   "quote": "NIST engages with partners around the world to advance shared goals in trustworthy AI.",
+   "full_text": "NIST engages with partners around the world to advance shared goals in trustworthy AI. NIST also coordinates with other Federal agencies and leads several policymaking and interagency efforts, including administering the National Artificial Intelligence Advisory Committee, or NAIAC, which advises the President and the National AI Initiative Office.",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Single agency for AI regulation",
+     "rationale": "NIST's international engagement aims to establish a single agency for AI regulation"
+    },
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage emphasizes the need for shared goals in trustworthy AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Chairman Obernolte's concerns about Federal regulation",
+   "quote": "I think that's a strong argument for the Federal Government to take a leading role in this.",
+   "full_text": "I think, at the very least, we in Congress have to recognize the Federal responsibility to regulate interstate commerce and the fact that that is a Federal obligation and not something we can allow the States to preempt, so I think that's a strong argument for the Federal Government to take a leading role in this.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Opening Remarks",
+     "rationale": "The passage is an introduction to the topic of Federal regulation."
+    },
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage emphasizes the importance of Federal regulation to prevent a patchwork of State regulations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Ms. Tabassi's response to Chairman Obernolte's question",
+   "quote": "We can follow the European model where we spin up a brand new bureaucracy and empower them with the ability to issue licenses and preempt that authority from--away from the existing sectoral regulators.",
+   "full_text": "Ms. Tabassi, I would like to ask you a question about the path that we take in crafting a Federal regulatory framework for AI. And NIST, I think, has done some of the furthest- reaching work on looking at risk management and looking at what a framework might look like. In my thinking, we really have two paths. We can follow the European model where we spin up a brand new bureaucracy and empower them with the ability to issue licenses and preempt that authority from--away from the existing sectoral regulators. Or we could empower our existing sectoral regulators to regulate within their sectoral spaces and give them the tools and the resources that they need, which would include support from organizations like NIST in developing testing and evaluation standards and the frameworks that you've already been working on to be able to do those jobs.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage emphasizes the importance of a Federal regulatory framework to ensure trustworthy AI."
+    },
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The passage emphasizes the need for a Federal regulatory framework to address the limitations of AI systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "Hybrid approach to AI regulation",
+   "quote": "The approach we took for--in development of the AI RMF is actually a hybrid approach that the AI RMF provide the horizontal, the interoperable lexicon to talk about risk.",
+   "full_text": "The approach we took for--in development of the AI RMF is actually a hybrid approach that the AI RMF provide the horizontal, the interoperable lexicon to talk about risk. So because we don't want to make-- we want to make sure that the risk of bias or interpretability has the same meaning, and hopefully, similar measurement techniques and methods across all of the different sectors and think about development of the profiles, which are verticals, that give more specificity for that domain.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent mentions the importance of ensuring the AI assurance and measuring its capabilities, functionality, and trustworthiness."
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Importance of measurement science",
+   "quote": "One other thing that I also want to mention, a lot of really good and important noting that importance of availability of metrics, methodologies, test environment, and measurement science for evaluations of AI systems, limits, capabilities, functionality, and trustworthiness.",
+   "full_text": "One other thing that I also want to mention, a lot of really good and important noting that importance of availability of metrics, methodologies, test environment, and measurement science for evaluations of AI systems, limits, capabilities, functionality, and trustworthiness. So regardless of the regulatory or policy landscape, we do need to have measurement science methods and methodologies to ensure the AI assurance because, again, if we can't measure it, we cannot improve it.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent emphasizes the importance of measurement science for evaluating AI systems and ensuring their trustworthiness."
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Grounding discussions in evidence and data",
+   "quote": "I think grounding the discussions into evidence and data is one way to go.",
+   "full_text": "I second everything Emily said. I think grounding the discussions into evidence and data is one way to go. And of course, we need to have more measurement science and methodologies to be able to get to those evidence.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent suggests grounding discussions in evidence and data to ensure the responsible use of AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Addressing AI bias and equity issues",
+   "quote": "One of the most important ways to address AI bias and equity issues is to engage a broader community of stakeholders and to get them involved with AI development throughout the process.",
+   "full_text": "What are some of the best practices to bring diverse communities, including historically marginalized communities, into the decisionmaking process for the design and deployment of AI systems? Thank you for that question, and that's a really important one. And what we learn in development of the AI RMF is the importance of reaching out and having many diverse views around the table. There are discussions around participatory engagements and how to bring the voices of the impacted community but also the voices of the group that study the impact of the AI systems or technology on the community and other people. Some of these frameworks talk about the impacted community ought to be consulted, but beyond that, they need-- also need to be--have an opportunity to contribute and collaborate. But ultimately, we need to have them as part of the co-design and involved in the earliest stages of the conversations.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about AI bias and equity issues, highlighting the need for diverse communities to be involved in AI development and decision-making"
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "Update on AIRC's work and industry perception",
+   "quote": "Oh, thank you.",
+   "full_text": "Sorry, who is doing? That you're doing through the Responsible AI Resource Center through NIST. Oh, thank you.",
+   "open_codes": [
+    {
+     "code_id": "c005",
+     "label": "Characteristics of machine learning systems",
+     "rationale": "The respondent provides an update on the work of the Responsible AI Resource Center, highlighting the importance of machine learning systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "Introduction to AIRC and its goals",
+   "quote": "We launched the AI Resource Center end of March, tried to be a one-stop shop for foundational content, technical documents, everything that's needed for discussions of AI and AI risk.",
+   "full_text": "We launched the AI Resource Center end of March, tried to be a one-stop shop for foundational content, technical documents, everything that's needed for discussions of AI and AI risk. So it includes AI RMF. It includes the playbook and an interactive forum to make it easy for everybody to use. It includes a glossary because, as Dr. Bender mentioned, the importance of having common vocabulary and making sure that you're in a shared understanding. There is a metrics hub to bring people--to give people everything that's happening in the world of the measurement. We are going to add a standard tracker. All of these things are trying to help the community with operationalization of the AI RMF, particularly small-, medium- sized businesses that need more help and support in operationalization of the AI RMF. We also like that to be a platform for engagement, so beyond that, just information- sharing, make it a platform for conversations around AI risk management and AI evaluations.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent highlights the importance of having a one-stop shop for foundational content and technical documents for discussions of AI and AI risk."
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "Assessment of technological infrastructure gaps",
+   "quote": "I think the biggest technical challenge and technical gap is availability of metrics, methodologies, test environment, and standards for evaluations of AI systems.",
+   "full_text": "I think the biggest technical challenge and technical gap is availability of metrics, methodologies, test environment, and standards for evaluations of AI systems. And I think it was also mentioned that we need to evaluate AI systems beyond their functionality and performance, beyond their technical robustness and measure the societal robustness. We need to be able to measure AI risk and impact. And those measurements ought to be done where the AI system in its native context in interacting and being used, operated by the humans, impacting in--interaction with humans that are being impacted or influenced by the systems. And those measurement sciences, that test environment doesn't exist today.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent highlights the limitations of AI systems in terms of metrics, methodologies, test environment, and standards for evaluations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "NIST's role in developing technical standards for AI",
+   "quote": "How is NIST helping the Federal Government think about our role in developing technical standards for AI?",
+   "full_text": "How is NIST helping the Federal Government think about our role in developing technical standards for AI?",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Single agency for AI regulation",
+     "rationale": "The respondent mentions NIST's role in developing technical standards for AI, which could imply the need for a single agency for AI regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "NIST's role in developing AI standards",
+   "quote": "We are working with all of the government agencies across in understanding their priorities, their needs for standards, but also working on scientific underpinning needed for development of the clear, implementable standards.",
+   "full_text": "We are working with all of the government agencies across in understanding their priorities, their needs for standards, but also working on scientific underpinning needed for development of the clear, implementable standards. That goes from the common definitions to establishing trustworthiness characteristics to advancing tests and measurements for AI standards----",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent mentions the need for scientific underpinning for AI standards, implying limitations in current AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "NIST's partnership with agencies for AI policy development",
+   "quote": "How can NIST partner with agencies like the Department of Homeland Security, the Federal Aviation Administration, Pipeline and Hazardous Materials Safety Administration to develop and promote AI policies that will safeguard our critical infrastructure, including major ports like the Port of Houston?",
+   "full_text": "How can NIST partner with agencies like the Department of Homeland Security, the Federal Aviation Administration, Pipeline and Hazardous Materials Safety Administration to develop and promote AI policies that will safeguard our critical infrastructure, including major ports like the Port of Houston? AI has the potential to bolster our defenses for critical infrastructure like the Port of Houston, but it can also be an asset for nefarious actors as well.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent mentions the potential for AI to be used for nefarious purposes, expressing concerns about AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Hybrid approach for AI standards",
+   "quote": "I think a hybrid approach, I think, yes, it's--AI is very contextual. It's important to do it for the particular use cases. It's also important to make sure that at least terminology is the same across.",
+   "full_text": "I think a hybrid approach, I think, yes, it's--AI is very contextual. It's important to do it for the particular use cases. It's also important to make sure that at least terminology is the same across.",
+   "open_codes": [
+    {
+     "code_id": "c005",
+     "label": "Characteristics of machine learning systems",
+     "rationale": "The respondent describes AI as 'very contextual', highlighting the need for a hybrid approach that considers different use cases and terminology"
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "AI RMF and coordination",
+   "quote": "AI RMF lays kind of the foundations and the right guidance for developing all of these other guidelines on our--we call them profile of the AI RMF, and we're already working with, for example, our colleagues across the agencies, with Department of Homeland Security operationalizing AI RMF, with our colleagues at the DOD on advancing measurement and evaluations of the AI.",
+   "full_text": "Thank you very much for that question. And AI RMF lays kind of the foundations and the right guidance for developing all of these other guidelines on our--we call them profile of the AI RMF, and we're already working with, for example, our colleagues across the agencies, with Department of Homeland Security operationalizing AI RMF, with our colleagues at the DOD on advancing measurement and evaluations of the AI. So coordination is the key and is vital, and we'll be happy to work on and build on top of AI RMF to address all of these important questions.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent mentions the importance of coordination and building on top of AI RMF to ensure benefits and prevent failures."
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Mitigating risks in AI",
+   "quote": "Right. So in terms of ethics, I think, first, again, we need to have a clear definition on what ethics is. In AI RMF we tried not to use ethics because it has dependencies to the culture, to the time, and tried to unpack it to the concepts of the trustworthiness. But it all, again, goes back to measurement and having test environments and methodologies and metrics for tests to provide that type of information. And that's something that's missing now. And there's no quick fix. There's a lot of research that's needed to build that type of test environments.",
+   "full_text": "Right. So in terms of ethics, I think, first, again, we need to have a clear definition on what ethics is. In AI RMF we tried not to use ethics because it has dependencies to the culture, to the time, and tried to unpack it to the concepts of the trustworthiness. But it all, again, goes back to measurement and having test environments and methodologies and metrics for tests to provide that type of information. And that's something that's missing now. And there's no quick fix. There's a lot of research that's needed to build that type of test environments.",
+   "open_codes": [
+    {
+     "code_id": "c044",
+     "label": "Transparency",
+     "rationale": "The respondent emphasizes the importance of transparency and measurement in AI development and use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Importance of AI in chip manufacturing",
+   "quote": "Chips and--specialized chips for AI are basically the engine and power. It's really important.",
+   "full_text": "Chips and--specialized chips for AI are basically the engine and power. It's really important. So at NIST we--our researchers are working on some specialized AI chips, kind of next generations that can do many of those computations inside the chips. And we work with the community to advance this type of research.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent mentions the importance of AI in chip manufacturing, highlighting its limitations and potential for failure."
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "NIST's role in AI research",
+   "quote": "our researchers are working on some specialized AI chips, kind of next generations that can do many of those computations inside the chips.",
+   "full_text": "our researchers are working on some specialized AI chips, kind of next generations that can do many of those computations inside the chips. And we work with the community to advance this type of research.",
+   "open_codes": [
+    {
+     "code_id": "c005",
+     "label": "Characteristics of machine learning systems",
+     "rationale": "The respondent discusses NIST's role in AI research, highlighting the development of specialized AI chips and their potential to advance machine learning systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Importance of interoperable lexicon in AI applications",
+   "quote": "I do think that it's important to have some sort of an interoperable lexicon, a horizontal foundation of at least having the same vocabulary and understanding of the risk and harms that give some sort of interoperability across all of the applications and all of the use cases.",
+   "full_text": "So in development of the AI RMF we engage a very broad community, and we heard from all sorts of stakeholders, including State, local governments, international, and globally. I don't have any information about particularly the task force that you mentioned. But again, in all of these discussions, I do think that it's important to have some sort of an interoperable lexicon, a horizontal foundation of at least having the same vocabulary and understanding of the risk and harms that give some sort of interoperability across all of the applications and all of the use cases.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent emphasizes the importance of having an interoperable lexicon in AI applications, highlighting the need for a shared understanding of risk and harms to ensure interoperability."
+    },
+    {
+     "code_id": "c063",
+     "label": "Importance of interoperable lexicon and vocabulary",
+     "rationale": "The respondent highlights the need for a common lexicon to ensure understanding and cooperation across various stakeholders."
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "Trustworthy AI and safety concerns",
+   "quote": "When we talk about trustworthy AI, the use of such technology in machines in the physical world pose a danger that I'd like to dig into just a little bit further.",
+   "full_text": "When we talk about trustworthy AI, the use of such technology in machines in the physical world pose a danger that I'd like to dig into just a little bit further. In San Francisco, which I partially represent, we have seen autonomous vehicles, or AVs, which had great promise, struggle to address some complex real-world situations. These malfunctions have obstructed public transit routes, blocked intersections, and impeded first responders from reaching people in need.",
+   "open_codes": [
+    {
+     "code_id": "c064",
+     "label": "Trustworthy AI and safety concerns",
+     "rationale": "The respondent highlights the need to address safety concerns in the development of trustworthy AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "NIST's work on safety",
+   "quote": "Safety is being identified as one of the seven trustworthiness characteristics of a--in AI RMF and it--beyond going--beyond the having definitions for what safety means, which understand that now is being defined and perceived differently across the different domains.",
+   "full_text": "Thank you. Safety is being identified as one of the seven trustworthiness characteristics of a--in AI RMF and it--beyond going--beyond the having definitions for what safety means, which understand that now is being defined and perceived differently across the different domains. We also need to have, as you said, tests and measurements for measuring the functionality, capability, and limits on the technical robustness, as well as the societal robustness.",
+   "open_codes": [
+    {
+     "code_id": "c065",
+     "label": "NIST's work on safety",
+     "rationale": "The respondent highlights NIST's efforts to develop safety standards for AI technology."
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "To prevent failures and ensure benefits"
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Risk management in AI RMF",
+   "quote": "In AI RMF it mentions that the--in terms of the safety, most urgent parameterizations and most risk management is required when there are risks to human life and where there are risks of serious injuries.",
+   "full_text": "In AI RMF it mentions that the--in terms of the safety, most urgent parameterizations and most risk management is required when there are risks to human life and where there are risks of serious injuries. And also it mentions that when there are cases that significant risks are present, actual harm is happening, that there should be--that there's--the deployment and development should cease in a safe manner until all of those risks are being addressed and managed properly.",
+   "open_codes": [
+    {
+     "code_id": "c066",
+     "label": "Risk management in AI RMF",
+     "rationale": "To ensure safety and prevent harm"
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "Guiding principles for AI",
+   "quote": "What would you say Congress must do to separate the processes of setting principles that will guide AI and machine learning tools prior to design and deployment of such tools from the technical operation of such tools?",
+   "full_text": "What would you say Congress must do to separate the processes of setting principles that will guide AI and machine learning tools prior to design and deployment of such tools from the technical operation of such tools?",
+   "open_codes": [
+    {
+     "code_id": "c067",
+     "label": "Guiding principles for AI",
+     "rationale": "To ensure fairness and accountability"
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Continuum of risk management",
+   "quote": "In AI RMF we talk about a continuum, and that the risk management and accountability is a shared responsibility across all of them.",
+   "full_text": "In AI RMF we talk about a continuum, and that the risk management and accountability is a shared responsibility across all of them. And for any of these trustworthiness characteristics, including bias, it's important to start thinking about this as the earliest stage of the planning and design. And so talking about how we can advance research centers and evaluations to bring all of these concepts into the design and development of the systems and not having them as an afterthought to the--after the systems is deployed is a very important topic.",
+   "open_codes": [
+    {
+     "code_id": "c068",
+     "label": "Continuum of risk management",
+     "rationale": "To ensure safety and prevent harm"
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "NIST's willingness to collaborate on AI evaluation",
+   "quote": "So we are certainly not--more than open, eager, and enthusiastic to work with everybody on understanding how to evaluate AI systems in a way that not only look at the functionality, limits, and capabilities, but also their trustworthiness and their societal robustness.",
+   "full_text": "So working across the community and with everybody and our colleagues across the government agencies and our colleagues across all of the AI community, academia, private sector, and civil society-centered development organizations is something that we do at NIST and that's how we work. So we are certainly not--more than open, eager, and enthusiastic to work with everybody on understanding how to evaluate AI systems in a way that not only look at the functionality, limits, and capabilities, but also their trustworthiness and their societal robustness. We look forward to work with that, and we're already talking about having conversations with the community on how to set up those evaluations and advance those techniques.",
+   "open_codes": [
+    {
+     "code_id": "c069",
+     "label": "Collaboration on AI evaluation",
+     "rationale": "NIST is open to collaboration to evaluate AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "Building on existing guidelines",
+   "quote": "some of the guidelines in the AI RMF can already be applicable and can--we can start building on top of those",
+   "full_text": "I want to say that some of the guidelines in the AI RMF can already be applicable and can--we can start building on top of those. And of course, advancing the evaluations is something near and dear to our hearts, and we're working with the community.",
+   "open_codes": [
+    {
+     "code_id": "c070",
+     "label": "Building on existing guidelines",
+     "rationale": "Existing guidelines can be used as a foundation for AI evaluation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "Extending evaluations to AI systems in context",
+   "quote": "we're thinking of how to extending them, but also building this addition of being able to evaluate AI systems in their context of use with real interactions with the humans that operate them, use them, being impacted by them to be able to assess the risk and impact of the AI systems",
+   "full_text": "NIST has a long history of evaluations, and we already have a lot of different evaluations in the biometric, information retrieval, all of those things can be leveraged for evaluations of AI systems, and we're thinking of how to extending them, but also building this addition of being able to evaluate AI systems in their context of use with real interactions with the humans that operate them, use them, being impacted by them to be able to assess the risk and impact of the AI systems. We're excited about that work, and we look forward to work with the whole community on that.",
+   "open_codes": [
+    {
+     "code_id": "c071",
+     "label": "Extending evaluations to AI systems in context",
+     "rationale": "Evaluations should consider AI systems in their real-world context"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_015911",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 12,
+   "n_ok": 12
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 2
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 3
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 4
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 6
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 8
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 9
+   },
+   {
+    "reused": 1,
+    "created": 3,
+    "chunk": 10
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 11
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118hhrg53782 — Elham Tabassi, Associate Director For Emerging Technologies, NIST Information Technology Laboratory\nSource: https://www.govinfo.gov/app/details/CHRG-118hhrg53782  |  Balancing Knowledge And Governance: Foundations For Effective Risk Management Of Artificial Intelligence  |  House, Subcommittee On Investigations And Oversight Subcommittee On Research And Technology / Committee On Science, Space, And Technology  |  2023-10-18  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chairman Obernolte) We'll move now to our witness panel. Our first witness today is Ms. Elham Tabassi, the Director for Emerging Technologies of the Information Technology Laboratory at the National Institute of Standards and Technology. She also leads NIST's Trustworthy & Responsible AI Program and the development of the National AI Risk Management Framework that seeks to cultivate trust in the design, development, and use of AI technologies. Ms. Tabassi, you are recognized for five minutes.\n[Respondent] AI technologies provide enormous opportunities for positive impact. They can also cause cascading negative consequences if proper safeguards are not in place. NIST works to advance research, standards, measurements, and tools to manage AI risks and realize the full promise of this technology for all people. NIST works with the AI community to develop and improve its resources. We pride ourselves in our engagements and collaborations, and the trust we have built with the private sector, government agencies, civil society, and academia.\nAmong its many AI-related activities, NIST released the AI Risk Management Framework, or AI RMF, in January 2023 after considerable collaborations with stakeholders. Directed by congressional mandate, the AI RMF is a voluntary framework that provides a flexible, structured, and measurable process to address the AI risks purposefully and continually throughout the AI lifecycle. The AI RMF offers a resource to the organization's designing, developing, deploying, or using AI systems to help manage the many risks of AI and promote trustworthy and responsible development and use of AI systems. The framework was developed through an open, transparent, and collaborative process that allowed for a broad range of stakeholder input. NIST also released a companion NIST AI RMF playbook and a roadmap. The playbook provides additional guidelines to organizations on the action they can take to meet the outcomes included in the framework. The roadmap identifies key activities for advancing the AI RMF that could be carried out by NIST in collaboration with public or private organizations or by those organizations independently.\nTo support the operationalization of the AI RMF, NIST established the online Trustworthy & Responsible AI Resource Center (AIRC) in March 2023. It serves as a one- stop shop for foundational content, technical documents, and AI toolkits. In June 2023, NIST launched a generative AI public working group to help NIST develop a profile of AI RMF to address the risks of generative AI technologies.\nThe AI technologies are advancing at an extraordinary pace. For that reason, the AI RMF and its related documents will evolve over time to reflect new knowledge and practices. NIST continues its robust engagement with stakeholders to keep the framework up to date with AI trends and reflect experience based on the use of AI RMF.\nTo build on NIST's work on the AI RMF and provide additional guidelines to organizations to advance trustworthy and responsible AI, NIST conducts fundamental research on many of the AI trustworthiness characteristics and prioritizes its work based on its insights and the community's stated needs.\nNew NIST efforts in AI evaluation will focus on sociotechnical aspects of system functionality and performance in addition to accuracy. In particular, the evaluations have the goal of identifying risks and harms of AI systems before they are deployed and to establish metrics and evaluation infrastructure that will allow AI developers and deployers to detect the extent to which AI systems exhibit negative impacts or harms.\nNIST engages with partners around the world to advance shared goals in trustworthy AI. NIST also coordinates with other Federal agencies and leads several policymaking and interagency efforts, including administering the National Artificial Intelligence Advisory Committee, or NAIAC, which advises the President and the National AI Initiative Office.\nAdvancing AI research, evaluation, and standards that contribute to a secure, private, interoperable, innovative, and world-leading digital economy is a top priority for NIST. Thank you for the opportunity to present on NIST's activities to improve AI trustworthiness. I look forward to your questions.\n[Interviewer] (Chairman Obernolte) I think, at the very least, we in Congress have to recognize the Federal responsibility to regulate interstate commerce and the fact that that is a Federal obligation and not something we can allow the States to preempt, so I think that's a strong argument for the Federal Government to take a leading role in this. But, you know, the point is this is a decision that has to be made soon because the mistake that was made with digital data privacy is Federal inaction, which allowed--now we have 23 different State frameworks, probably more to come in the months and years ahead, that create this patchwork of regulation that's very difficult for small companies to deal with. And now there's a creative ownership amongst the States that makes it more difficult for us to preempt at the Federal level. So I think if we're going to do it, it has to be done now.\nMs. Tabassi, I would like to ask you a question about the path that we take in crafting a Federal regulatory framework for AI. And NIST, I think, has done some of the furthest- reaching work on looking at risk management and looking at what a framework might look like. In my thinking, we really have two paths. We can follow the European model where we spin up a brand new bureaucracy and empower them with the ability to issue licenses and preempt that authority from--away from the existing sectoral regulators. Or we could empower our existing sectoral regulators to regulate within their sectoral spaces and give them the tools and the resources that they need, which would include support from organizations like NIST in developing testing and evaluation standards and the frameworks that you've already been working on to be able to do those jobs. Which of those two approaches do you think would be best? I mean, is it like if you consider the fact that the FDA (Food and Drug Administration) has already processed over 500 applications for the use of AI in medical devices? You know, the question is, is it easier to teach a new organization everything the FDA knows about ensuring patient safety, or is it easier to teach the FDA what it doesn't already know with the help of organizations like NIST about artificial intelligence?\n[Respondent] Thank you for that question. As we all know, NIST is a non-regulatory agency, so we don't take----\n[Interviewer] (Chairman Obernolte) That's why I asked you.\n[Respondent] Regulation agnostic.\n[Interviewer] (Chairman Obernolte) You don't have a dog in the fight.\n[Respondent] Thank you. Thank you. The approach we took for--in development of the AI RMF is actually a hybrid approach that the AI RMF provide the horizontal, the interoperable lexicon to talk about risk. So because we don't want to make-- we want to make sure that the risk of bias or interpretability has the same meaning, and hopefully, similar measurement techniques and methods across all of the different sectors and think about development of the profiles, which are verticals, that give more specificity for that domain.\nOne other thing that I also want to mention, a lot of really good and important noting that importance of availability of metrics, methodologies, test environment, and measurement science for evaluations of AI systems, limits, capabilities, functionality, and trustworthiness. So regardless of the regulatory or policy landscape, we do need to have measurement science methods and methodologies to ensure the AI assurance because, again, if we can't measure it, we cannot improve it.\n[Interviewer] (Mrs. Foushee) Ms. Tabassi, would you like to add any further thoughts on this question?\n[Respondent] I second everything Emily said. I think grounding the discussions into evidence and data is one way to go. And of course, we need to have more measurement science and methodologies to be able to get to those evidence.\n[Interviewer] (Mrs. Foushee) My next question is for the entire panel, starting with Ms. Tabassi. I have very serious concerns about bias and equity issues arising from the manner in which AI systems are developed and deployed. One of the most important ways to address AI bias and equity issues is to engage a broader community of stakeholders and to get them involved with AI development throughout the process. What are some of the best practices to bring diverse communities, including historically marginalized communities, into the decisionmaking process for the design and deployment of AI systems?\n[Respondent] Thank you for that question, and that's a really important one. And what we learn in development of the AI RMF is the importance of reaching out and having many diverse views around the table. There are discussions around participatory engagements and how to bring the voices of the impacted community but also the voices of the group that study the impact of the AI systems or technology on the community and other people. Some of these frameworks talk about the impacted community ought to be consulted, but beyond that, they need-- also need to be--have an opportunity to contribute and collaborate. But ultimately, we need to have them as part of the co-design and involved in the earliest stages of the conversations.\n[Interviewer] (Ms. Stevens) Great. Thank you.\nAnd how delighted to hear so many of our witnesses. Mr. Kratsios, Mr. Watney endorse funding the NAIRR, you know, the National AI Research Resource. I think that would be very important, and many of us have called on the Administration to do so.\nAnd, Ms. Tabassi, could you provide an update on the critical work that AIRC is doing and how that is being perceived by industry at this time?\n[Respondent] Sorry, who is doing?\n[Interviewer] (Ms. Stevens) That you're doing through the Responsible AI Resource Center through NIST.\n[Respondent] Oh, thank you.\n[Interviewer] (Ms. Stevens) Yes.\n[Respondent] Thank you so very much. Yes. We launched the AI Resource Center end of March, tried to be a one-stop shop for foundational content, technical documents, everything that's needed for discussions of AI and AI risk. So it includes AI RMF. It includes the playbook and an interactive forum to make it easy for everybody to use. It includes a glossary because, as Dr. Bender mentioned, the importance of having common vocabulary and making sure that you're in a shared understanding. There is a metrics hub to bring people--to give people everything that's happening in the world of the measurement. We are going to add a standard tracker. All of these things are trying to help the community with operationalization of the AI RMF, particularly small-, medium- sized businesses that need more help and support in operationalization of the AI RMF. We also like that to be a platform for engagement, so beyond that, just information- sharing, make it a platform for conversations around AI risk management and AI evaluations.\n[Interviewer] (Chairman Lucas) Thank you, Mr. Chairman.\nMs. Tabassi, in your written testimony, you highlight how NIST has begun developing industry--specific profiles for operationalizing the Risk Management Framework? What is your assessment of the current gaps in the technological infrastructure, tools, standards, that could slow down Federal agency adoption of the Risk Management Framework?\n[Respondent] Thank you very much for the question. I think the biggest technical challenge and technical gap is availability of metrics, methodologies, test environment, and standards for evaluations of AI systems. And I think it was also mentioned that we need to evaluate AI systems beyond their functionality and performance, beyond their technical robustness and measure the societal robustness. We need to be able to measure AI risk and impact. And those measurements ought to be done where the AI system in its native context in interacting and being used, operated by the humans, impacting in--interaction with humans that are being impacted or influenced by the systems. And those measurement sciences, that test environment doesn't exist today.\n[Interviewer] (Chairman Lucas) Finally, Ms. Tabassi, NIST functions as the Federal AI standards coordinator and works across the government with stakeholders to identify critical standards, development activity, strategies, and gaps. How is NIST helping the Federal Government think about our role in developing technical standards for AI?\n[Respondent] We are working with all of the government agencies across in understanding their priorities, their needs for standards, but also working on scientific underpinning needed for development of the clear, implementable standards. That goes from the common definitions to establishing trustworthiness characteristics to advancing tests and measurements for AI standards----\n[Interviewer] (Chairman Lucas) Thank you.\n[Respondent] For AI systems.\n[Interviewer] (Mr. Babin) Thank you, Mr. Chairman. I appreciate it, and appreciate all your witnesses for being here.\nMs. Tabassi, as you know, the Port of Houston is a vital economic generator in my district there in east Texas, District 36, but it's also a national security asset that rebuffs thousands of attempted cyber attacks each and every year. AI has the potential to bolster our defenses for critical infrastructure like the Port of Houston, but it can also be an asset for nefarious actors as well. How can NIST partner with agencies like the Department of Homeland Security, the Federal Aviation Administration, Pipeline and Hazardous Materials Safety Administration to develop and promote AI policies that will safeguard our critical infrastructure, including major ports like the Port of Houston?\n[Respondent] Thank you very much for that question. And AI RMF lays kind of the foundations and the right guidance for developing all of these other guidelines on our--we call them profile of the AI RMF, and we're already working with, for example, our colleagues across the agencies, with Department of Homeland Security operationalizing AI RMF, with our colleagues at the DOD on advancing measurement and evaluations of the AI. So coordination is the key and is vital, and we'll be happy to work on and build on top of AI RMF to address all of these important questions.\n[Interviewer] (Ms. Bonamici) Thank you. Ms. Tabassi?\n[Respondent] I think a hybrid approach, I think, yes, it's--AI is very contextual. It's important to do it for the particular use cases. It's also important to make sure that at least terminology is the same across.\n[Interviewer] (Ms. Bonamici) Excellent. Thank you. And, Ms. Tabassi, I know the Biden Administration recently published the blueprint, of course, the AI Bill of Rights and highlight in there the importance of mitigating safety and discriminatory risks. And as the Administration works to implement this framework, what practices should they adopt to mitigate risks before automation is deployed? And how will we know whether these systems are ethically implemented? Because we do hear a lot about AI ethics, so how will we verify that ethics are embedded within?\n[Respondent] Right. So in terms of ethics, I think, first, again, we need to have a clear definition on what ethics is. In AI RMF we tried not to use ethics because it has dependencies to the culture, to the time, and tried to unpack it to the concepts of the trustworthiness. But it all, again, goes back to measurement and having test environments and methodologies and metrics for tests to provide that type of information. And that's something that's missing now. And there's no quick fix. There's a lot of research that's needed to build that type of test environments.\n[Interviewer] (Mr. Baird) Thank you, Mr. Chairman and Ranking Member. I really appreciate that you are holding this Committee session. And I really appreciate, I always do, I appreciate all the witnesses sharing your expertise with this Committee as we struggle with trying to find ways to protect the public.\nAnd so this Committee has played an instrumental role in passing the CHIPS and Science Act. And in my district in Indiana, we have plans to start production of the chips or the semiconductors in the next five years in a fab lab in West Lafayette. But in this process, I learned that the average car has anywhere from 1,400 to 1,500 chips, and some cars have even more than that. And then my background is agriculture. And, you know, the farm equipment and machinery that we're using to implement more and more precision agriculture is extremely important.\nSo since AI is playing such a major role in many of these industries, I'm curious to know what role it's playing in the chip manufacturing, or what does it have the capability to do in this industry? Ms. Tabassi, do you want to start that conversation or----\n[Respondent] Obviously, chips and--specialized chips for AI are basically the engine and power. It's really important. So at NIST we--our researchers are working on some specialized AI chips, kind of next generations that can do many of those computations inside the chips. And we work with the community to advance this type of research.\n[Interviewer] (Mr. Kean) Thank you, Mr. Chairman. And I want to associate myself with Representative Stevens' support and strong advocacy for the Privacy Enhancing Technology Research Act that passed this Committee and I agree needs to get--go to the floor. And, as a cosponsor of that bill, it is surely important that we focus on government coordination to ensure responsible data use.\nMy first question is for Ms. Tabassi. I'm interested in understanding how NIST is engaging with States' implementation of their various task forces. And can you provide insights as to whether it's collaborative, when--do you have any concerns that--as you're approaching their--either their risk mitigation strategy or their public safety focus on their local State labs, those efforts?\n[Respondent] I'm sorry, collaboration with----\n[Interviewer] (Mr. Kean) When you're looking at--so, for example, New Jersey is starting to look at a State artificial intelligence task force and looking at a little bit of the--whether you're focusing on the State level or the--on the Federal regulatory, what guidance are you--from a NIST perspective, what's your best recommendation, whether it's State or Federal partners are getting involved in this?\n[Respondent] So in development of the AI RMF we engage a very broad community, and we heard from all sorts of stakeholders, including State, local governments, international, and globally. I don't have any information about particularly the task force that you mentioned. But again, in all of these discussions, I do think that it's important to have some sort of an interoperable lexicon, a horizontal foundation of at least having the same vocabulary and understanding of the risk and harms that give some sort of interoperability across all of the applications and all of the use cases.\n[Interviewer] (Mr. Kean) OK. Thank you. Ms. Tabassi, do you have----\n[Respondent] All the great things, as we mentioned, and I think that expertise in the domains is important so there is reasons--that's why we did--we talk about development of the profiles or verticals, and that goes the same thing for the agencies with certain expertise.\n[Interviewer] (Mr. Mullin) Thank you, Mr. Chair. Thank you all for your attendance at this important hearing.\nWhen we talk about trustworthy AI, the use of such technology in machines in the physical world pose a danger that I'd like to dig into just a little bit further. In San Francisco, which I partially represent, we have seen autonomous vehicles, or AVs, which had great promise, struggle to address some complex real-world situations. These malfunctions have obstructed public transit routes, blocked intersections, and impeded first responders from reaching people in need.\nLast month, I led a letter, along with Speaker Emerita Pelosi, to the National Highway Traffic Safety Administration (NHTSA) to improve its collection of safety data so different manufacturers may be compared relative to each other and relative to manually operated vehicles. We're waiting to hear back from NHTSA on what steps it plans to take. But this is just one area where we need to be able to assess AI capabilities and its limits. And I'm concerned that we do not have clear standards for the assessment of safety.\nSo, Ms. Tabassi, could you share more about the work NIST is doing in this area relative to safety?\n[Respondent] Thank you. Safety is being identified as one of the seven trustworthiness characteristics of a--in AI RMF and it--beyond going--beyond the having definitions for what safety means, which understand that now is being defined and perceived differently across the different domains. We also need to have, as you said, tests and measurements for measuring the functionality, capability, and limits on the technical robustness, as well as the societal robustness.\nIn AI RMF, it mentions that the--in terms of the safety, most urgent parameterizations and most risk management is required when there are risks to human life and where there are risks of serious injuries. And also it mentions that when there are cases that significant risks are present, actual harm is happening, that there should be--that there's--the deployment and development should cease in a safe manner until all of those risks are being addressed and managed properly.\n[Interviewer] (Ms. Lee) Thank you. Ms. Tabassi, my understanding based on conversations I had and my staff has had with researchers at CMU, Carnegie Mellon, is that for the most part AI decision tools are being designed and deployed without much forethought on the part of the entity deploying them as to what policies and principles will guide their use to ensure their fairness. What would you say Congress must do to separate the processes of setting principles that will guide AI and machine learning tools prior to design and deployment of such tools from the technical operation of such tools?\n[Respondent] In AI RMF we talk about a continuum, and that the risk management and accountability is a shared responsibility across all of them. And for any of these trustworthiness characteristics, including bias, it's important to start thinking about this as the earliest stage of the planning and design. And so talking about how we can advance research centers and evaluations to bring all of these concepts into the design and development of the systems and not having them as an afterthought to the--after the systems is deployed is a very important topic.\n[Interviewer] (Mr. Bowman) Thank you so much, Mr. Chairman.\nMs. Tabassi, the need for better evaluation frameworks has been surfaced consistently today. Will NIST partner with other agencies and private sector organizations to provide sample data and create evaluations around specific high risk use cases like hiring?\n[Respondent] So working across the community and with everybody and our colleagues across the government agencies and our colleagues across all of the AI community, academia, private sector, and civil society-centered development organizations is something that we do at NIST and that's how we work. So we are certainly not--more than open, eager, and enthusiastic to work with everybody on understanding how to evaluate AI systems in a way that not only look at the functionality, limits, and capabilities, but also their trustworthiness and their societal robustness. We look forward to work with that, and we're already talking about having conversations with the community on how to set up those evaluations and advance those techniques.\n[Interviewer] (Mr. Bowman) Yes, and thank you for leading the way for me, but I wanted Ms. Tabassi to comment if she wouldn't mind.\n[Respondent] I want to say that some of the guidelines in the AI RMF can already be applicable and can--we can start building on top of those. And of course, advancing the evaluations is something near and dear to our hearts, and we're working with the community.\nNIST has a long history of evaluations, and we already have a lot of different evaluations in the biometric, information retrieval, all of those things can be leveraged for evaluations of AI systems, and we're thinking of how to extending them, but also building this addition of being able to evaluate AI systems in their context of use with real interactions with the humans that operate them, use them, being impacted by them to be able to assess the risk and impact of the AI systems. We're excited about that work, and we look forward to work with the whole community on that.",
+ "_bench": {
+  "seconds": 222.7,
+  "chars": 25420
+ }
+}

@@ -1,0 +1,646 @@
+{
+ "respondent": "CHRG-118shrg52483_Venkatasubramanian",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "researcher",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Introduction and Context",
+   "quote": "Thank you, Senator Peters and Members of the Homeland Security and Government Affairs Committee. I thank you for inviting me to testify at this important hearing on the risks and opportunities of AI.",
+   "full_text": "Thank you, Senator Peters and Members of the Homeland Security and Government Affairs Committee. I thank you for inviting me to testify at this important hearing on the risks and opportunities of AI. I am a professor of computer science and director of the Center for Technological Responsibility at Brown University.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Setting the stage",
+     "rationale": "The respondent introduces themselves and the topic of the hearing"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Biographical Background",
+   "quote": "I recently completed a stint as tech policy advisor in the White House and helped develop the Blueprint for an AI Bill of Rights.",
+   "full_text": "I recently completed a stint as tech policy advisor in the White House and helped develop the Blueprint for an AI Bill of Rights. I have spent the last decade studying and researching the impact of automated systems, and AI, on people's rights, opportunities, and access to services.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Providing background information",
+     "rationale": "The respondent provides context for their testimony"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Defining AI",
+   "quote": "We are here today to talk about AI, a field of study trying to design systems that can sense, interact, reason, and behave in the way humans do, and in some cases even surpass us.",
+   "full_text": "We are here today to talk about AI, a field of study trying to design systems that can sense, interact, reason, and behave in the way humans do, and in some cases even surpass us. People learn from the data we receive, and thus one sub-area of AI that is dominant right now, fueled by the collection of vast amounts of data, is machine learning, the design of systems that can incorporate historical data into the predictions they produce, and in some cases keep adapting as more data appears.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The respondent provides a definition of AI and its applications"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Impact of Machine Learning",
+   "quote": "Virtually every sector of society is now touched by machine learning, and the most consequential decisions and experiences in our lives are mediated by algorithms--where we go to school, how we learn, how we get jobs, whether we can buy a house, what kind of loan we get, whether we get credit to start a small business, whether we are surveilled by law enforcement or incarcerated before a trial, how long a sentence for a convicted individual is, and whether we can get paroled.",
+   "full_text": "Virtually every sector of society is now touched by machine learning, and the most consequential decisions and experiences in our lives are mediated by algorithms--where we go to school, how we learn, how we get jobs, whether we can buy a house, what kind of loan we get, whether we get credit to start a small business, whether we are surveilled by law enforcement or incarcerated before a trial, how long a sentence for a convicted individual is, and whether we can get paroled.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Setting the stage",
+     "rationale": "Establishing the context and purpose of the testimony"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Characteristics of Machine Learning Systems",
+   "quote": "All these systems have something in common. They are algorithms for making algorithms.",
+   "full_text": "All these systems have something in common. They are algorithms for making algorithms. The distinctive feature of a machine learning system is that the output of the system is itself an algorithm that purports to solve an underlying problem, whether it is predicting your loan worthiness, searching for a face in a video stream, or even having a conversation with an individual.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "Describing the characteristics of machine learning systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Limitations of AI Systems",
+   "quote": "As a consequence of the above, we do not actually know for sure whether and how these algorithms work and why they produce the output that they do.",
+   "full_text": "As a consequence of the above, we do not actually know for sure whether and how these algorithms work and why they produce the output that they do. This might come as a surprise given how much we hear every day about the amazing and miraculous successes of AI. Yet AI systems fail. They fail when the algorithms draw incorrect conclusions from data. They fail when they make predictions based on faulty or biased data. They fail when the results of one AI system are fed into another, or even the same one, amplifying errors along the way. They fail when they are so opaque that errors in how they function cannot even be detected.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "Highlighting the limitations of AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Guardrails for AI",
+   "quote": "The truth is AI systems are not magic. AI is technology, and like any other piece of technology that has benefited us-- drugs, cars, planes--AI needs guardrails so we can be protected from the worst failures while still benefiting from the progress AI offers.",
+   "full_text": "The truth is AI systems are not magic. AI is technology, and like any other piece of technology that has benefited us-- drugs, cars, planes--AI needs guardrails so we can be protected from the worst failures while still benefiting from the progress AI offers.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "Proposing the need for guardrails in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "AI failures and limitations",
+   "quote": "They fail when the algorithms draw incorrect conclusions from data. They fail when they make predictions based on faulty or biased data.",
+   "full_text": "They fail when the algorithms draw incorrect conclusions from data. They fail when they make predictions based on faulty or biased data. They fail when the results of one AI system are fed into another, or even the same one, amplifying errors along the way. They fail when they are so opaque that errors in how they function cannot even be detected.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "Describing the limitations of AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Guardrails for AI",
+   "quote": "What should these guardrails look like? Any automated system that has meaningful impact on our rights, opportunities for advancement, and access to critical services should be tested so it works, and works well.",
+   "full_text": "What should these guardrails look like? Any automated system that has meaningful impact on our rights, opportunities for advancement, and access to critical services should be tested so it works, and works well. It should not exhibit discriminatory behavior, be limited and careful in its use of our personal data, be transparent, and easily understandable, and be accompanied by human supervision for all the times that it fails. Moreover, all these protections should be documented and reported on clearly for independent scrutiny. Congress should enshrine these ideas in legislation, not just for government use of AI but for private sector uses of AI that have people-facing impact.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Providing background information",
+     "rationale": "Sharing relevant details about the respondent's experience and expertise"
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Imagining AI futures",
+   "quote": "There is a future in which automated technology is an assistant. It enables human freedom, liberty, and flourishing, where the technology we build is inclusive and helps all of us achieve our dreams and maximize our potential.",
+   "full_text": "There is a future in which automated technology is an assistant. It enables human freedom, liberty, and flourishing, where the technology we build is inclusive and helps all of us achieve our dreams and maximize our potential. But there is another future in which we are at the mercy of technology, where the world is shaped by algorithms and we are forced to conform, in which those who have access to resources and power control the world and the rest of us are left behind. I know which future I want to imagine and work toward. I believe it is our job to lay down the rules of the road, the guardrails and the protections, so that we can achieve that future. I know we can do it if we try.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "Describing the potential of AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "Risks of non-transparent algorithms",
+   "quote": "You mentioned in your opening comments and your written comments some of those risks, but for the Committee's benefit could you tell us more about the risks that are associated when you have non-transparent algorithms?",
+   "full_text": "You mentioned in your opening comments and your written comments some of those risks, but for the Committee's benefit could you tell us more about the risks that are associated when you have non-transparent algorithms?",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Setting the stage",
+     "rationale": "Establishing the context and purpose of the testimony"
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Risks of non-transparent algorithms",
+   "quote": "we also do not know how it fails and under what circumstances it fails, and that is where the biggest problem is.",
+   "full_text": "When we do not know how an algorithm works or why it works, we also do not know how it fails and under what circumstances it fails, and that is where the biggest problem is. We do not even know how to tell whether it is failing or not. If I use, for example, an algorithm to analyze a tissue scan, to determine whether a patient has cancer, such a failed algorithm could either falsely declare a patient free from cancer, which would be catastrophic, or falsely declare that they were positive for the test and therefore have to undergo harmful treatments that could be very harmful to them. We would not be able to tell the difference.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The respondent describes the risks associated with non-transparent AI algorithms"
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Bias in AI systems",
+   "quote": "A machine learning algorithm that takes data that has hidden biases in it will invariably, almost certainly, detect and amplify those biases in its output.",
+   "full_text": "In machine learning, what we talk about now is ``bias in, bias out.'' A machine learning algorithm that takes data that has hidden biases in it will invariably, almost certainly, detect and amplify those biases in its output.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The respondent explains how bias gets into AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Garbage in, garbage out",
+   "quote": "It means that if you put bad data into an algorithm you will get a bad outcome.",
+   "full_text": "There is a phrase in computer science that is called ``garbage in, garbage out.'' It means that if you put bad data into an algorithm you will get a bad outcome.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "Introducing the concept of garbage in, garbage out"
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "Biased data in AI",
+   "quote": "One very important example where bias gets into an AI system is when the underlying data used to train the algorithm has biases coming from historical context.",
+   "full_text": "One very important example where bias gets into an AI system is when the underlying data used to train the algorithm has biases coming from historical context.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Providing background information",
+     "rationale": "Sharing a specific example of biased data in AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "Mitigating bias in AI",
+   "quote": "What is required is a collection of procedures, among them procedures that examine the sources of data, examine the biases in the data, even if it is a large dataset, and try to understand how those biases might be affecting what the algorithm would do.",
+   "full_text": "What is required is a collection of procedures, among them procedures that examine the sources of data, examine the biases in the data, even if it is a large dataset, and try to understand how those biases might be affecting what the algorithm would do.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Setting the stage",
+     "rationale": "Discussing the importance of mitigating bias in AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "Best practices for AI training",
+   "quote": "There are certain best practices for how to train algorithms to try to mitigate these forms of bias, and they need to be put into place.",
+   "full_text": "There are certain best practices for how to train algorithms to try to mitigate these forms of bias, and they need to be put into place.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Setting the stage",
+     "rationale": "Discussing best practices for AI training"
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "Deploying AI",
+   "quote": "Similarly looking at, in context, how the algorithm is used and deployed and how the results are showing up and whether biases are showing up in the output as well.",
+   "full_text": "Similarly looking at, in context, how the algorithm is used and deployed and how the results are showing up and whether biases are showing up in the output as well.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Setting the stage",
+     "rationale": "Discussing the importance of deploying AI responsibly"
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "Governance and transparency in AI",
+   "quote": "the importance of governance, the importance of transparency of how these algorithms work, of having independent review and ongoing monitoring, are critically important",
+   "full_text": "That idea of governance in AI, it is an important part of the process of determining what is it we want out of these algorithms we are deploying. Oftentimes we do not ask that question, and algorithms are used for engagement or for selling ads, and we do not ask the question of what impact they are having.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The respondent describes the importance of governance and transparency in AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Defining AI — Describing the concept and scope of AI",
+   "quote": "Having a broad framework, an overarching, comprehensive framework, where we can evaluate what these algorithms are, how they work, and what they are doing is a way, in general, that we can make sure that we can get the benefits of these systems and not get the harms.",
+   "full_text": "Having a broad framework, an overarching, comprehensive framework, where we can evaluate what these algorithms are, how they work, and what they are doing is a way, in general, that we can make sure that we can get the benefits of these systems and not get the harms. But to your specific point about child online safety I will defer to others on the panel who have more expertise.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "Describing the concept and scope of AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Addressing challenges in the workplace",
+   "quote": "There is growing concern among workers in many industries that AI could fundamentally change the nature of work in unpredictable ways.",
+   "full_text": "There is growing concern among workers in many industries that AI could fundamentally change the nature of work in unpredictable ways. You have touched on this a little bit, but do you have recommendations for how the Federal Government should be addressing challenges that companies and employees face from the use of AI in the workplace? Dr. V, I will start with you.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Providing background information",
+     "rationale": "Sharing relevant details about the respondent's experience and expertise"
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Recommendations for addressing challenges",
+   "quote": "I think there are two parts to this, to helping workers deal with displacement due to AI.",
+   "full_text": "I think there are two parts to this, to helping workers deal with displacement due to AI. One, of course, is training and skilling, and the Federal Government can invest effort and research into helping workers train for our science, technology, engineering and mathematics (STEM)-enabled world. I think the Federal Government is doing that, and we can do definitely a lot more on that.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Providing background information",
+     "rationale": "Sharing relevant details about the respondent's experience and expertise"
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Governance and structures",
+   "quote": "I fundamentally believe it is because of overpromising on the part of AI systems, that tends to not play out when these systems are deployed.",
+   "full_text": "I fundamentally believe it is because of overpromising on the part of AI systems, that tends to not play out when these systems are deployed. Systems are presented as being able to replace because of efficiencies, workers, but in fact they cause more problems than they deserve, and it is precisely because there is not governance, there is not the supervision, there is not the human supervision around these systems.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "Describing the concept and scope of AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Concerns about AI and computer science diversity",
+   "quote": "This is an issue that concerns me greatly, as you might imagine, as an educator.",
+   "full_text": "This is an issue that concerns me greatly, as you might imagine, as an educator. I see the students who come to me who are concerned about this, and more often than not the students who are most concerned about these issues are students who truly reflect the broad diversity in this country, which is in one way a very good thing, but it also shows where the gaps in our ability to deliver STEM education effectively to our population is.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Providing background information",
+     "rationale": "The respondent shares their experience and expertise"
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "Importance of representation in STEM education",
+   "quote": "I would say that in my experience when students are able to see themselves in the work that they do, and the topics they study, they are more engaged with it and they feel like technology, in this case, can speak to them.",
+   "full_text": "I would say that in my experience when students are able to see themselves in the work that they do, and the topics they study, they are more engaged with it and they feel like technology, in this case, can speak to them. The students who come to speak to me about concerns around bias and responsible AI come to me because they have literally said, ``I finally see a place for myself in this tech ecosystem.''",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The respondent describes the concept and scope of AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Addressing bias and inequities in technology",
+   "quote": "One of the reasons why I spend a lot of time talking about concerns about bias and inequities in technology is because it is only by speaking out loud about those issues and pointing to the ways in which we can use technology to mitigate those issues that we can actually bring in a population that feels like they are now being heard and that their concerns are being heard.",
+   "full_text": "One of the reasons why I spend a lot of time talking about concerns about bias and inequities in technology is because it is only by speaking out loud about those issues and pointing to the ways in which we can use technology to mitigate those issues that we can actually bring in a population that feels like they are now being heard and that their concerns are being heard.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Providing background information",
+     "rationale": "The respondent shares their experience and expertise"
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "Recognizing inequities and welcoming people in AI",
+   "quote": "I view these as part of the same story, that by spending time recognizing the inequities of AI, by spending time recognizing the need to govern areas to take account of these inequities we are actually telling people, ``We welcome you in this technology and in this technology-enabled world.''",
+   "full_text": "I view these as part of the same story, that by spending time recognizing the inequities of AI, by spending time recognizing the need to govern areas to take account of these inequities we are actually telling people, ``We welcome you in this technology and in this technology-enabled world.''",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The respondent is describing the concept of AI and its relationship to equity and inclusivity"
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "Advantages and disadvantages in AI competition with China",
+   "quote": "As we compete against Beijing to win the AI race, America may lose if we focus solely on the size of our datasets, since, frankly, China's authoritarian system lends itself to vacuuming up vast volumes of data with few privacy protections.",
+   "full_text": "What advantages and disadvantages does our country face in the AI competition with China, and do you agree thatinstead of viewing our values as a liability in this competition America could and should view them as an asset?",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Providing background information",
+     "rationale": "The respondent is sharing relevant details about the AI competition with China and its implications"
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Prioritizing investments in responsible AI practices",
+   "quote": "I think the United States can take the innovative lead, on these practices and provide a model for, frankly, the rest of the world to follow in how we do AI that is innovative, as well as responsible, as well as ethical at the same time.",
+   "full_text": "I think we should push forward on that, we should emphasize that, and we should prioritize investments in those directions by prioritizing it within Congress and within the Federal Government.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Setting the stage",
+     "rationale": "The respondent is establishing the context and purpose of their testimony on responsible AI practices"
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "Prioritizing investments in AI research and development",
+   "quote": "As I mentioned earlier in response to Senator Padilla, one of the reasons that animates students from across the spectrum to work in technology, especially those who have not been seen by technology or are not being represented by technology earlier, is a desire to do something in the public good, to do something to improve the way all of us get the benefits of technology.",
+   "full_text": "Thank you, Senator. As I mentioned earlier in response to Senator Padilla, one of the reasons that animates students from across the spectrum to work in technology, especially those who have not been seen by technology or are not being represented by technology earlier, is a desire to do something in the public good, to do something to improve the way all of us get the benefits of technology.\nI feel like the Federal Government is a place where a lot of these students, university students, come and say they want to work in the Federal Government. They do not want to work in the private sector because they want to do some good. I think that is where the Federal Government has a comparative advantage over the private sector, becausethe Federal Government can articulate a value of public good in working with technology. I think the Federal Government should advertise that, should focus on developing technology to help bring it to all in a responsible and ethical manner.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Providing background information",
+     "rationale": "The respondent is sharing relevant details about their experience and expertise in AI research and development"
+    },
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The respondent is describing the motivation for working in technology, which is related to the concept of AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Role of the Federal Government in AI",
+   "quote": "I think the Federal Government should advertise that, should focus on developing technology to help bring it to all in a responsible and ethical manner.",
+   "full_text": "I think the Federal Government should advertise that, should focus on developing technology to help bring it to all in a responsible and ethical manner.\nI think Congress should continue its work to grow Federal expertise through training and skilling programs in the Federal Government. I think Congress should bring back the Office of Technology Assessment to help Members of Congress, the legislature, get more expertise on these topics as well.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The respondent is discussing the role of the Federal Government in AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "Concerns about effective computing",
+   "quote": "The premise, or the stated premise of effective computing is that we can infer information about people's internal States, their emotions, their cognitive States, their affect, from external features, external features like facial recognition, external features like how they walk, what kind of microtargeted expressions on their face, wrinkles, frowns, and so on.",
+   "full_text": "The premise, or the stated premise of effective computing is that we can infer information about people's internal States, their emotions, their cognitive States, their affect, from external features, external features like facial recognition, external features like how they walk, what kind of microtargeted expressions on their face, wrinkles, frowns, and so on.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Concerns about effective computing",
+     "rationale": "The respondent is questioning the idea of inferring internal states from external features"
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "Concerns about effective computing",
+   "quote": "The premise of effective computing is unfounded. It has no basis. AI systems cannot do this. They might claim they do but they cannot because there is no underlying science to back this up.",
+   "full_text": "The premise, or the stated premise of effective computing is that we can infer information about people's internal States, their emotions, their cognitive States, their affect, from external features, external features like facial recognition, external features like how they walk, what kind of microtargeted expressions on their face, wrinkles, frowns, and so on. I have great concerns about this.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Concerns about effective computing",
+     "rationale": "The respondent questions the premise of effective computing and its underlying science."
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "Accountable AI system",
+   "quote": "It would start by consulting with advocates, community partners, and other stakeholders to ensure that any system it might want to procure truly benefits those being impacted, in an equitable manner.",
+   "full_text": "This Federal agency procures and wants to procure an AI system that would be used to impact people, it would start by consulting with advocates, community partners, and other stakeholders to ensure that any system it might want to procure truly benefits those being impacted, in an equitable manner.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "The respondent outlines the characteristics of an accountable AI system."
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "Accountability measures",
+   "quote": "The system would be regularly re-evaluated on a standard, on a cadence, to make sure data shifts have not affected its behavior.",
+   "full_text": "The system would be regularly re-evaluated on a standard, on a cadence, to make sure data shifts have not affected its behavior. The vendor would need to provide tools to explain the algorithm's behavior.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Concerns about effective computing",
+     "rationale": "The respondent emphasizes the importance of evaluating AI systems regularly."
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "Accountable AI deployment",
+   "quote": "I think an agency that is doing deployment of accountable AI well would be doing all of these things.",
+   "full_text": "I think an agency that is doing deployment of accountable AI well would be doing all of these things.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "Describing the concept and scope of AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "Government agency for accountability",
+   "quote": "For private sector use cases, the FTC and its new Office of Technology would be perhaps the best place to do this, and should be given the resources to do this kind of work.",
+   "full_text": "For private sector use cases, the FTC and its new Office of Technology would be perhaps the best place to do this, and should be given the resources to do this kind of work. For government uses, using the National AI Office that Congress had created, and OMB would probably be the best place to have high-level guidance and supervision of these systems.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Providing background information",
+     "rationale": "Sharing relevant details about the respondent's experience and expertise"
+    }
+   ]
+  },
+  {
+   "segment_id": "S038",
+   "title": "Example of effective AI use",
+   "quote": "The Department of Health and Human Services (HHS) has done an excellent job complying with congressional mandates around the inventory of AI, for example, and around executive orders around AI.",
+   "full_text": "The Department of Health and Human Services (HHS) has done an excellent job complying with congressional mandates around the inventory of AI, for example, and around executive orders around AI. They are being very careful, for example, in their Updates Rule 1557 and the development of guidelines together with the Food and Drug Administration (FDA) around the use of AI in diagnostics, and that is one agency I would definitely hold up as doing a good job in this space.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "Describing the concept and scope of AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S039",
+   "title": "Concerns about technology advancement",
+   "quote": "The technology we know, that we heard from the experts here, is advancing very rapidly.",
+   "full_text": "The technology we know, that we heard from the experts here, is advancing very rapidly. In the past we have tended to look at technology as it is developed and just be excited about the promise of it. It gets developed and then we start seeing some adverse consequences, and then we look at regulation or other types of ways of dealing with it.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Concerns about effective computing",
+     "rationale": "The respondent is expressing concerns about the premise of effective computing"
+    }
+   ]
+  },
+  {
+   "segment_id": "S040",
+   "title": "AGI concerns",
+   "quote": "AGI does not keep me up at night.",
+   "full_text": "AGI does not keep me up at night. The reason why it does not is because, as Ms. Givens mentioned, the problems we are likely to face with the apocalyptic visions of AGI are the same problems we are already facing right now with the systems that are already in play.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Concerns about effective computing",
+     "rationale": "The respondent is expressing concerns about the premise of effective computing"
+    }
+   ]
+  },
+  {
+   "segment_id": "S041",
+   "title": "Concerns about effective computing",
+   "quote": "I worry about people being sent to jail because of an error in an ML system.",
+   "full_text": "I worry about people being sent to jail because of an error in an ML system. Whether you use some fancy AGI to do the same thing, it is the same problem, and we are seeing this problem right now.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Concerns about effective computing",
+     "rationale": "The respondent expresses concerns about the potential consequences of AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S042",
+   "title": "Focus on governance and regulation",
+   "quote": "I think that the Committee's time is well spent pondering the harms that we are facing right now from these systems, and I would say, again, it is hard to predict.",
+   "full_text": "I think that the Committee's time is well spent pondering the harms that we are facing right now from these systems, and I would say, again, it is hard to predict. I am a computer scientist so maybe I should predict. But I would say that my bet is that the harms we are going to see as these more powerful systems come online, even with ChatGPT, are no different from the harms we are seeing right now. If we focus our efforts and our energies on governance and regulation and guardrails to address the harms we are seeing right now, they will be able to adjust as the technology improves. I am not worried that what we have put in place today will be out of date or out of sync with the new tech. The new tech is like the old tech, just supercharged.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Concerns about effective computing",
+     "rationale": "The respondent emphasizes the importance of governance and regulation to address the harms caused by AI systems"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260922_032312",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 13,
+   "n_ok": 13
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 0
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 2
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 3
+   },
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 4
+   },
+   {
+    "reused": 1,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 6
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 8
+   },
+   {
+    "reused": 2,
+    "created": 1,
+    "chunk": 9
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 10
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 11
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 12
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg52483 — Suresh Venkatasubramanian, Professor Of Computer Science And Data Science, Brown University\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg52483  |  Artificial Intelligence: Risks And Opportunities  |  Senate, ?  |  2023-03-08  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chairman Peters) Let us hope we can return to working in a bipartisan way and have folks do the work necessary so that these hearings go forward.\nWith that, let us get to the important business at hand.\nIt is the practice of the Homeland Security and Governmental Affairs Committee (HSGAC) to swear in witnesses, so if each of you will please stand and raise your right hand.\nDo you swear that the testimony that you will give before this Committee will be the truth, the whole truth, and nothing but the truth, so help you, God?\n[Respondent] I do.\n[Interviewer] (Chairman Peters) Thank you, Ms. Givens.\nOur next witness is Dr. Venkatasubramanian who currently serves as Professor of Computer Science and Data Science at Brown University. His expertise includes data mining, machine learning (ML), algorithms, and computational geometry, specifically algorithmic fairness and their impacts on decisionmaking on society.\nPreviously Professor Venkatasubramanian served as the Assistant Director for Science and Justice in the White House Office of Science and Technology Policy.\nProfessor, welcome to the Committee, and thank you for appearing. You are recognized for your opening statement. TESTIMONY OF SURESH VENKATASUBRAMANIAN, Ph.D., PROFESSOR OF\n[Respondent] Thank you, Senator Peters and Members of the Homeland Security and Government Affairs Committee. I thank you for inviting me to testify at this important hearing on the risks and opportunities of AI. I am a professor of computer science and director of the Center for Technological Responsibility at Brown University.\nThe prepared statement of Dr. Venkatassubramanian appears in the Appendix on page 53.\nI recently completed a stint as tech policy advisor in the White House and helped develop the Blueprint for an AI Bill of Rights.\nI have spent the last decade studying and researching the impact of automated systems, and AI, on people's rights, opportunities, and access to services. I have also spent time advising State and local governments on sound approaches to governing the use of technology that impacts people's lives.\nWe are here today to talk about AI, a field of study trying to design systems that can sense, interact, reason, and behave in the way humans do, and in some cases even surpass us. People learn from the data we receive, and thus one sub-area of AI that is dominant right now, fueled by the collection of vast amounts of data, is machine learning, the design of systems that can incorporate historical data into the predictions they produce, and in some cases keep adapting as more data appears.\nVirtually every sector of society is now touched by machine learning, and the most consequential decisions and experiences in our lives are mediated by algorithms--where we go to school, how we learn, how we get jobs, whether we can buy a house, what kind of loan we get, whether we get credit to start a small business, whether we are surveilled by law enforcement or incarcerated before a trial, how long a sentence for a convicted individual is, and whether we can get paroled.\nThe list goes on and on, and keeps expanding, with systems like GPT3, ChatGPT, and Bard, and many others that ingest extremely large amounts of data and huge compute power to create the plausibly realistic conversations that have caught our imagination over the past few months.\nAll these systems have something in common. They are algorithms for making algorithms. The distinctive feature of a machine learning system is that the output of the system is itself an algorithm that purports to solve an underlying problem, whether it is predicting your loan worthiness, searching for a face in a video stream, or even having a conversation with an individual.\nAs a consequence of the above, we do not actually know for sure whether and how these algorithms work and why they produce the output that they do. This might come as a surprise given how much we hear every day about the amazing and miraculous successes of AI. Yet AI systems fail.\nThey fail when the algorithms draw incorrect conclusions from data. They fail when they make predictions based on faulty or biased data. They fail when the results of one AI system are fed into another, or even the same one, amplifying errors along the way. They fail when they are so opaque that errors in how they function cannot even be detected.\nThe truth is AI systems are not magic. AI is technology, and like any other piece of technology that has benefited us-- drugs, cars, planes--AI needs guardrails so we can be protected from the worst failures while still benefiting from the progress AI offers.\nWhat should these guardrails look like? Any automated system that has meaningful impact on our rights, opportunities for advancement, and access to critical services should be tested so it works, and works well. It should not exhibit discriminatory behavior, be limited and careful in its use of our personal data, be transparent, and easily understandable, and be accompanied by human supervision for all the times that it fails. Moreover, all these protections should be documented and reported on clearly for independent scrutiny. Congress should enshrine these ideas in legislation, not just for government use of AI but for private sector uses of AI that have people-facing impact.\nI am a computer scientist--a card-carrying computer scientist, I like to say--and my work is to imagine technological futures. There is a future in which automated technology is an assistant. It enables human freedom, liberty, and flourishing, where the technology we build is inclusive and helps all of us achieve our dreams and maximize our potential.\nBut there is another future in which we are at the mercy of technology, where the world is shaped by algorithms and we are forced to conform, in which those who have access to resources and power control the world and the rest of us are left behind. I know which future I want to imagine and work toward. I believe it is our job to lay down the rules of the road, the guardrails and the protections, so that we can achieve that future. I know we can do it if we try.\nThank you for giving me this opportunity to speak.\n[Interviewer] (Chairman Peters) Thank you, Dr. Matheny.\nProfessor Venkatasubramanian, this question is for you. In your statement you describe the so-called black box of the AI systems, where developers themselves do not fully understand exactly what happened in that black box as it is making those decisions. You mentioned in your opening comments and your written comments some of those risks, but for the Committee's benefit could you tell us more about the risks that are associated when you have non-transparent algorithms?\n[Respondent] Thank you, Senator, and you can call me Professor V. That is fine. My students do that too.\n[Interviewer] (Chairman Peters) Professor V?\n[Respondent] Professor V is just fine.\n[Interviewer] (Chairman Peters) Thank you.\n[Respondent] To your question, when we do not know how an algorithm works or why it works, we also do not know how it fails and under what circumstances it fails, and that is where the biggest problem is. We do not even know how to tell whether it is failing or not.\nIf I use, for example, an algorithm to analyze a tissue scan, to determine whether a patient has cancer, such a failed algorithm could either falsely declare a patient free from cancer, which would be catastrophic, or falsely declare that they were positive for the test and therefore have to undergo harmful treatments that could be very harmful to them. We would not be able to tell the difference.\nThat is why safety testing, investigation, and transparency are so critical, because of the way in which machine learning algorithms, and the fact that there are algorithms for generating algorithms, create these procedures that are very hard to understand. This comes up again with things like ChatGPT, where we do not know how they do what they do. They seem to be providing plausible answers, but as we have seen, it is very easy to get them to lie, or not lie but give answers that are false because we do not understand how they are working. That is where the lack of transparency is one of the biggest problems with understanding the effectiveness and whether these systems can work.\n[Interviewer] (Chairman Peters) Thank you. Dr. V, we are talking about bias in these systems. As a computer scientist you have considerable expertise in this area. Could you tell the Committee how does bias actually get into these AI systems? We should know how it gets in so we can figure out how to deal with it.\n[Respondent] Thanks for that. There is a phrase in computer science that is called ``garbage in, garbage out.'' It means that if you put bad data into an algorithm you will get a bad outcome. In machine learning, what we talk about now is ``bias in, bias out.'' A machine learning algorithm that takes data that has hidden biases in it will invariably, almost certainly, detect and amplify those biases in its output.\nWe saw this happening when a company was training a system to predict who would be good people to hire. The system started picking up signals that the candidate was a woman, even if it was not explicitly mentioned--for example, a person whose curriculum vitae (CV) said that they went to Smith College--and then it started rejecting them. It turns out that in this case it was because the data being used to train the algorithm was itself biased. It was historical data on hiring from the company, and the company, as it turned out, had skewed and gender biased hiring practices.\nOne very important example where bias gets into an AI system is when the underlying data used to train the algorithm has biases coming from historical context.\n[Interviewer] (Chairman Peters) Can you mitigate that by having larger datasets? Is that one way to do it, or you still have to, in some way, examine those sometimes very large datasets that are training AI.\n[Respondent] Unfortunately, merely having more data does not actually solve the problem because if that more data continues to have those kinds of biases then you will just make the problem even worse. What is required is a collection of procedures, among them procedures that examine the sources of data, examine the biases in the data, even if it is a large dataset, and try to understand how those biases might be affecting what the algorithm would do.\nAnother set of procedures is to understand how the algorithm training is being done. There are certain best practices for how to train algorithms to try to mitigate these forms of bias, and they need to be put into place. When you do that you can mitigate a lot of these biases.\nSimilarly looking at, in context, how the algorithm is used and deployed and how the results are showing up and whether biases are showing up in the output as well.\nIn these three ways, if you have the appropriate practices put into place you could try to mitigate some of these biases. You may not remove all of them but you can definitely go a long way toward doing that.\n[Interviewer] (Senator Blumenthal) Thank you very much, Mr. Chairman, and I want to thank you for having this hearing, and the panel that we have which is, as you referred to it as truly eminent, informed, very helpful, and I welcome your willingness to have additional hearings, which I think most certainly we will want to do.\nProfessor, I was interested in your reference to algorithms, quoting Princeton professor Narayanan, as ``snake oil.'' For me the danger of that snake oil is not only the mistakes that can be made, that is, the failings, and you all have identified some of those failings, but sometimes how they work all too well, the algorithms which are essentially, for most people in this world, black boxes, driving content to children. I want to thank the Chairman for his support in the efforts that we are making to protect children better than we have before. But these algorithms that work all too well will identify an interest that a child has and then continue driving content to that child. The idea that artificial intelligence is something way off in the future I think is a little bit misleading because right now Google and others are using these algorithms to drive that content.\nCould you describe whether they have control--and I will ask the other Members of the panel as well--whether they have and could exercise more control over what these algorithms do and whether they could make them more transparent.\n[Respondent] Thank you for the question, Senator. I should say up front I am not an expert on matters linked to children's safety online, but as an AI expert what I can tell you is that for all of these algorithms, and the kinds you mentioned, the things we have talked about today so far, the importance of governance, the importance of transparency of how these algorithms work, of having independent review and ongoing monitoring, are critically important to make sure that they do not have the consequences that we do not want them to have.\nThat idea of governance in AI, it is an important part of the process of determining what is it we want out of these algorithms we are deploying. Oftentimes we do not ask that question, and algorithms are used for engagement or for selling ads, and we do not ask the question of what impact they are having.\nHaving a broad framework, an overarching, comprehensive framework, where we can evaluate what these algorithms are, how they work, and what they are doing is a way, in general, that we can make sure that we can get the benefits of these systems and not get the harms.\nBut to your specific point about child online safety I will defer to others on the panel who have more expertise.\n[Interviewer] (Senator Hassan) Thank you.\nNow a question for Professor V, as I will call you, and Ms. Givens. This is a question for both of you. There is growing concern among workers in many industries that AI could fundamentally change the nature of work in unpredictable ways. You have touched on this a little bit, but do you have recommendations for how the Federal Government should be addressing challenges that companies and employees face from the use of AI in the workplace? Dr. V, I will start with you.\n[Respondent] Thank you for the question, Senator. I think there are two parts to this, to helping workers deal with displacement due to AI. One, of course, is training and skilling, and the Federal Government can invest effort and research into helping workers train for our science, technology, engineering and mathematics (STEM)-enabled world. I think the Federal Government is doing that, and we can do definitely a lot more on that.\nI think it is even more important that we make sure that that training and that access to those skills is widely distributed and not just to those who have access to those already. That is one thing.\nI think another component of this is when we talk about worker displacement due to AI. I fundamentally believe it is because of overpromising on the part of AI systems, that tends to not play out when these systems are deployed.\nSystems are presented as being able to replace because of efficiencies, workers, but in fact they cause more problems than they deserve, and it is precisely because there is not governance, there is not the supervision, there is not the human supervision around these systems.\nI would argue that rather than thinking about workers displaced by AI, if we put proper governance and structures in place we will need more jobs for workers, in fact, to make sure that these systems, that are supposed to assist them, are not replacing them and doing it badly.\n[Interviewer] (Senator Padilla) Excited about the opportunities that advances in technology will offer to society. But as this conversation has already shown, with every disruptive technology there are risks that demand mitigation. For example, automated decisionmaking systems and tools risk actually exacerbating the many existing inequities in our society, and that actually leads me to my first question.\nIt is clear that investments in AI research and education have not been distributed equally across the nation's researchers and innovators. Racial and gender diversity in AI and computer science programs are severely lacking. This lack of diversity among students gives rise to the corresponding lack of diversity in the workforce. A lack of diversity in the workforce then contributes to the development of AI tools and approaches that either do not account for or actively perpetuate systemic bias and limits the breadth of ideas incorporated into AI innovation.\nMy question is for Dr. Venkatasubramanian. As an educator, how can we ensure our AI and computer science students and workforce reflect the diversity of our nation?\n[Respondent] Thank you, Senator, for that question. This is an issue that concerns me greatly, as you might imagine, as an educator. I see the students who come to me who are concerned about this, and more often than not the students who are most concerned about these issues are students who truly reflect the broad diversity in this country, which is in one way a very good thing, but it also shows where the gaps in our ability to deliver STEM education effectively to our population is.\nI would say that in my experience when students are able to see themselves in the work that they do, and the topics they study, they are more engaged with it and they feel like technology, in this case, can speak to them. Thestudents who come to speak to me about concerns around bias and responsible AI come to me because they have literally said, ``I finally see a place for myself in this tech ecosystem.''\nOne of the reasons why I spend a lot of time talking about concerns about bias and inequities in technology isbecause it is only by speaking out loud about those issues and pointing to the ways in which we can use technology to mitigate those issues that we can actually bring in a population that feels like they are now being heard and that their concerns are being heard.\nI view these as part of the same story, that by spending time recognizing the inequities of AI, by spending time recognizing the need to govern areas to take account of these inequities we are actually telling people, ``We welcome you in this technology and in this technology-enabled world.''\n[Interviewer] (Senator Sinema) Thank you.\nMy next question is for Dr. Venkatasubramanian--I practiced that one--and Dr. Metheny.\nI would like to continue on the topic of ethical AI but in the context of U.S.-China competition. As we compete against Beijing to win the AI race, America may lose if we focus solely on the size of our datasets, since, frankly, China's authoritarian system lends itself to vacuuming up vast volumes of data with few privacy protections. In contrast, America's competitive advantage may be our values, if we can translate these values into developing AI that is transparent, efficient, and fair.\nWhat advantages and disadvantages does our country face in the AI competition with China, and do you agree thatinstead of viewing our values as a liability in this competition America could and should view them as an asset?\n[Respondent] Thank you for the question, Senator. I completely agree with the idea that the United States has values that can be transmitted into the systems we build, and I would argue this is happening already, but unfortunately the United States is not leading on this. For example, in the European Union (EU), with the development of the AI Act and other legislation that is going to govern the use of technology, especially AI technology, there is an attempt to push forward on the kinds of responsible practices that I think have been, frankly, developed here in the United States but are now being used in Europe. I think the United States can take the innovative lead, on these practices and provide a model for, frankly, the rest of the world to follow in how we do AI that is innovative, as well as responsible, as well as ethical at the same time.\nI think we should push forward on that, we should emphasize that, and we should prioritize investments in those directions by prioritizing it within Congress and within the Federal Government.\n[Interviewer] (Senator Rosen) Thank you. Professor V, I am going to turn to you because what kind of research and development investments should we be making to do just this, to uphill, reskill, or some might say right-skill the folks that are out there that do want to work, giving them an onramp to these jobs that can continue to grow?\n[Respondent] Thank you, Senator. As I mentioned earlier in response to Senator Padilla, one of the reasons that animates students from across the spectrum to work in technology, especially those who have not been seen by technology or are not being represented by technology earlier, is a desire to do something in the public good, to do something to improve the way all of us get the benefits of technology.\nI feel like the Federal Government is a place where a lot of these students, university students, come and say they want to work in the Federal Government. They do not want to work in the private sector because they want to do some good. I think that is where the Federal Government has a comparative advantage over the private sector, becausethe Federal Government can articulate a value of public good in working with technology. I think the Federal Government should advertise that, should focus on developing technology to help bring it to all in a responsible and ethical manner.\nI think Congress should continue its work to grow Federal expertise through training and skilling programs in the Federal Government. I think Congress should bring back the Office of Technology Assessment to help Members of Congress, the legislature, get more expertise on these topics as well.\n[Interviewer] (Senator Rosen) I could not agree more, as a former software developer, and so I am going to continue on this vein as we think about AI, the application that we use it for, cybersecurity, that can help us in these hunt forward operations, highlighting, or flagging, if you will, things for then humans to discern what seems right. So AI technology is rapidly evolving, and like I said, we really have to work on this. The National Cybersecurity Commission calls for more AI funding for AI-enabled cyber defenses.\nAgain, Professor V, how do you think we can enable and use AI to detect malware, pattern recognition, the things that computers are really good at, on the defensive side, and how can we use that to harden our security against cyber threats?\n[Respondent] Senator Rosen, I think I will defer that question to Mr. Matheny here. He has much more expertise than I do on the national security side.\n[Interviewer] (Chairman Peters) Thank you.\nProfessor V, I have heard concerns about effective computing, which tries to discern someone's emotion from those facial expressions that Ms. Givens was just talking about. Could you tell the Committee more about effective computing and if you have concerns?\n[Respondent] Yes. Thank you for that.\nThe premise, or the stated premise of effective computing is that we can infer information about people's internal States, their emotions, their cognitive States, their affect, from external features, external features like facial recognition, external features like how they walk, what kind of microtargeted expressions on their face, wrinkles, frowns, and so on.\nI have great concerns about this. The premise of effective computing is unfounded. It has no basis. AI systems cannot do this. They might claim they do but they cannot because there is no underlying science to back this up. There is no underlying science that says that you can, in fact, do this kind of inference of people's internal States from external features. It just does not work, and most claims are, pardon my expression, completely bogus.\n[Interviewer] (Chairman Peters) Professor V, based on your time at the Office of Science and Technology Policy and your contributions to the Blueprint for an AI Bill of Rights, could you paint a picture for us of what a truly accountable AI system would look like within a Federal agency?\n[Respondent] Yes. This Federal agency procures and wants to procure an AI system that would be used to impact people, it would start by consulting with advocates, community partners, and other stakeholders to ensure that any system it might want to procure truly benefits those being impacted, in an equitable manner.\nThe agency will lay out strict guidelines and specifications to make sure that only the specific task is being sold, and that the system is not being repurposed for other tasks as well. It will make sure that the procurement process incorporates information about testing and validation for the specific task, that the system, in fact, works, and that as appropriate, disparity mitigation has been performed and results of these disparity mitigations are presented to the agency before procurement. It would not hand over people's data to the vendor, and if necessary would only share data with the vendor in a very controlled environment, for development purposes only.\nAny deployed algorithm, once the system is deployed, would be supervised by agency experts who have expertise in the domain of interest and can tell when the algorithm or the system might be generating inaccurate outputs. The system would be regularly re-evaluated on a standard, on a cadence, to make sure data shifts have not affected its behavior. The vendor would need to provide tools to explain the algorithm's behavior.\nI think an agency that is doing deployment of accountable AI well would be doing all of these things.\n[Interviewer] (Chairman Peters) Professor, if Congress were to requirement all the practices that you mentioned, what government body do you think would be best suited to hold agencies accountable?\n[Respondent] I think it is helpful to maybe distinguish between private sector use cases and government use cases. For private sector use cases, the FTC and its new Office of Technology would be perhaps the best place to do this, and should be given the resources to do this kind of work. For government uses, using the National AI Office that Congress had created, and OMB would probably be the best place to have high- level guidance and supervision of these systems.\n[Interviewer] (Chairman Peters) Is there an example of an agency now that is using AI effectively and responsibly, in your opinion?\n[Respondent] The Department of Health and Human Services (HHS) has done an excellent job complying with congressional mandates around the inventory of AI, for example, and around executive orders around AI. They are being very careful, for example, in their Updates Rule 1557 and the development of guidelines together with the Food and Drug Administration (FDA) around the use of AI in diagnostics, and that is one agency I would definitely hold up as doing a good job in this space.\n[Interviewer] (Chairman Peters) I think it is an important point.\nThe technology we know, that we heard from the experts here, is advancing very rapidly. In the past we have tended to look at technology as it is developed and just be excited about the promise of it. It gets developed and then we start seeing some adverse consequences, and then we look at regulation or other types of ways of dealing with it.\nIn this case this is moving so fast that I am concerned that if it gets way ahead of us that we cannot use the model of the past, where we see how things work out and then we address it. We really have to be thinking ahead, thinking a few steps ahead, which is why I am asking this question about the probability of even more powerful systems.\nProfessor V, that is in your wheelhouse.\n[Respondent] Yes. People ask me what keeps me up at night. AGI does not keep me up at night.\nThe reason why it does not is because, as Ms. Givens mentioned, the problems we are likely to face with the apocalyptic visions of AGI are the same problems we are already facing right now with the systems that are alreadyin play.\nI worry about people being sent to jail because of an error in an ML system. Whether you use some fancy AGI to do the same thing, it is the same problem, and we are seeing this problem right now.\nI think that the Committee's time is well spent pondering the harms that we are facing right now from these systems, and I would say, again, it is hard to predict. I am a computer scientist so maybe I should predict. But I would say that my bet is that the harms we are going to see as these more powerful systems come online, even with ChatGPT, are no different from the harms we are seeing right now. If we focus our efforts and our energies on governance and regulation and guardrails to address the harms we are seeing right now, they will be able to adjust as the technology improves. I am not worried that what we have put in place today will be out of date or out of sync with the new tech. The new tech is like the old tech, just supercharged.",
+ "_bench": {
+  "seconds": 237.0,
+  "chars": 29530
+ }
+}

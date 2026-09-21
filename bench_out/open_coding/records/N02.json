@@ -1,0 +1,96 @@
+{
+ "respondent": "N02",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "unspecified",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Getting involved",
+   "quote": "Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity.",
+   "full_text": "We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "[2x] New code: Measuring impact — The challenges of measuring the impact of the system",
+     "rationale": "The respondent mentions the challenges of measuring the impact of the system"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "The session",
+   "quote": "Professional. Slides, a model of a junction, sandwiches. Everyone was polite.",
+   "full_text": "Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.",
+   "open_codes": [
+    {
+     "code_id": "c016",
+     "label": "[4x] Community engagement — The efforts to inform and involve the community in the project",
+     "rationale": "The respondent describes the community engagement process"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Raising concerns",
+   "quote": "I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway.",
+   "full_text": "I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.",
+   "open_codes": [
+    {
+     "code_id": "c034",
+     "label": "[1x] New code: Shifting responsibility — The way in which actors avoid taking responsibility for the long-term effects of the system",
+     "rationale": "The respondent describes how actors in the system avoid taking responsibility for the long-term effects"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Follow-up",
+   "quote": "No. And in fairness we haven't asked them to.",
+   "full_text": "No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.",
+   "open_codes": [
+    {
+     "code_id": "c034",
+     "label": "[1x] New code: Shifting responsibility — The way in which actors avoid taking responsibility for the long-term effects of the system",
+     "rationale": "The respondent describes how actors in the system avoid taking responsibility for the long-term effects"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Lessons learned",
+   "quote": "The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+   "full_text": "The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+   "open_codes": [
+    {
+     "code_id": "c023",
+     "label": "[5x] Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+     "rationale": "The respondent reflects on what they would do differently in hindsight"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260914_193235",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 1,
+   "n_ok": 1
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 3,
+    "created": 2,
+    "chunk": 0
+   }
+  ]
+ },
+ "transcript": "Interview transcript N02 — Board member, neighbourhood residents' association\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How did your association get involved?\n[Respondent] We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.\n[Interviewer] What was the session like?\n[Respondent] Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.\n[Interviewer] Did you raise anything?\n[Respondent] I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.\n[Interviewer] Has anyone from the council been back since?\n[Respondent] No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.\n[Interviewer] Would you go to the next one?\n[Respondent] Yes. Lower expectations, but yes. The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask."
+}

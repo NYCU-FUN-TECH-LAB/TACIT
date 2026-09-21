@@ -1,0 +1,565 @@
+{
+ "respondent": "CHRG-118shrg52785_Eppink",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "other",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Swearing in the witness",
+   "quote": "Do you swear that the testimony that you will give before this Committee will be the truth, the whole truth, and nothing but the truth, so help you, God? [Respondent] I do.",
+   "full_text": "[Interviewer] (Chairman Peters) Thank you, Ranking Member Paul. It is the practice of the Homeland Security and Governmental Affairs Committee (HSGAC) to swear in witnesses, so if each of you would please stand and raise your right hand. Do you swear that the testimony that you will give before this Committee will be the truth, the whole truth, and nothing but the truth, so help you, God? [Respondent] I do.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "swearing in witness",
+     "rationale": "The formal administrative oath administered to the witness."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Greeting the committee and affiliation",
+   "quote": "Thank you, Chairman Peters, Ranking Member Paul, and Committee Members for your attention to artificial intelligence and automated decisionmaking in government programs.",
+   "full_text": "[Interviewer] (Chairman Peters) (Chairman Peters) Thank you. Our next witness is Ritchie Eppink. Mr. Eppink serves as Counsel for the American Civil Liberties Union of Idaho Foundation. He was previously the Justice Architect for the Idaho Legal Aid Services, and before that a Fulbright Fellow. Mr. Eppink, you are recognized for your opening statement. TESTIMONY OF RICHARD A. EPPINK, OF COUNSEL, [Respondent] Thank you, Chairman Peters, Ranking Member Paul, and Committee Members for your attention to artificial intelligence and automated decisionmaking in government programs.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "expressing gratitude and stating affiliation",
+     "rationale": "Witness thanks the committee at the beginning of testimony."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Litigating secret algorithmic systems in Idaho",
+   "quote": "I was invited here today because I have been working for over a decade with Idahoans with developmental disabilities and their families to challenge secret decisions made by computerized algorithmic systems.",
+   "full_text": "I was invited here today because I have been working for over a decade with Idahoans with developmental disabilities and their families to challenge secret decisions made by computerized algorithmic systems. Only through litigation that I have helped these families pursue were they able to access the algorithms the State of Idaho uses to make decisions about the health care that they depend on day to day.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "specific failure modes of AI systems",
+     "rationale": "Describes opaque, secret computerized systems making decisions affecting healthcare."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Uncovering flaws in the black box",
+   "quote": "Once we opened the black box that concealed that automated system, we found that it was built out of corrupt data, relied on inputs that the State never validated, and produced results that even those who created it could not explain.",
+   "full_text": "Once we opened the black box that concealed that automated system, we found that it was built out of corrupt data, relied on inputs that the State never validated, and produced results that even those who created it could not explain. A Federal court ruled that the system was unconstitutional.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "specific failure modes of AI systems",
+     "rationale": "Details concrete system failures including corrupt data, unvalidated inputs, and unexplainable results."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Need for federal regulation over prolonged litigation",
+   "quote": "Decades-long class actions by indigent families are not a viable plan for AI governance in taxpayer programs. We need Federal regulation and enforcement to protect basic fairness and constitutional rights in government programs that use AI in automated decisionmaking systems.",
+   "full_text": "Yet a decade after filing suit and over seven years since winning in court we are still litigating the case, battling for due process against still more black box secrecy. Decades-long class actions by indigent families are not a viable plan for AI governance in taxpayer programs. We need Federal regulation and enforcement to protect basic fairness and constitutional rights in government programs that use AI in automated decisionmaking systems.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "need for regulatory guardrails for AI technology",
+     "rationale": "Argues that litigation is insufficient and calls for federal regulation of government AI systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Medicaid and community-based care in Idaho",
+   "quote": "A little bit about the Idaho lawsuit. Although in the past our society shamefully confined people with developmental disabilities in State hospitals, today, through Medicaid, they can get services at home and in their communities instead, at a savings to the government and to taxpayers.",
+   "full_text": "A little bit about the Idaho lawsuit. Although in the past our society shamefully confined people with developmental disabilities in State hospitals, today, through Medicaid, they can get services at home and in their communities instead, at a savings to the government and to taxpayers.",
+   "open_codes": [
+    {
+     "code_id": "c047",
+     "label": "contextualizing Medicaid home care benefits",
+     "rationale": "Explains the real-world benefit program that was impacted by the algorithmic system."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "protracted litigation against algorithmic opacity",
+   "quote": "Yet a decade after filing suit and over seven years since winning in court we are still litigating the case, battling for due process against still more black box secrecy.",
+   "full_text": "Yet a decade after filing suit and over seven years since winning in court we are still litigating the case, battling for due process against still more black box secrecy. Decades-long class actions by indigent families are not a viable plan for AI governance in taxpayer programs. We need Federal regulation and enforcement to protect basic fairness and constitutional rights in government programs that use AI in automated decisionmaking systems.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "black box nature and failures of AI",
+     "rationale": "Describes the ongoing battle for due process against opaque AI systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "impact of automated budget cuts on disabled individual",
+   "quote": "Christie came to me when the State told her her budget would suddenly be cut by tens of thousands of dollars, more than 20 percent, and not enough for the 24-hour support she needed to survive. The State refused to provide an explanation, claiming that the system was a ``trade secret.''",
+   "full_text": "One of my clients was Christie Mathwig. She was a bulwark in her rural community of Troy, Idaho, a mother, and a leader in her church, bible studies, and Al-Anon. She was also diagnosed as a teenager with a rare neuromuscular disease and relied on workers in her community for health care and support throughout her day. Each year, the State assigned her a budget: not dollars that she would ever see, but reimbursement for her health care providers, based on assessment results plugged into an automated system. Christie came to me when the State told her her budget would suddenly be cut by tens of thousands of dollars, more than 20 percent, and not enough for the 24-hour support she needed to survive. The State refused to provide an explanation, claiming that the system was a ``trade secret.''",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "specific failure modes of AI systems",
+     "rationale": "Details a concrete failure where an automated system slashed care budgets behind a trade secret claim."
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "reverse-engineering a rudimentary automated system",
+   "quote": "It turned out to be just a handful of formulas coded into a basic Microsoft Excel spreadsheet. As rudimentary as it was, it still took us many months, three experts, and over $40,000 to reverse-engineer the system, catalog its flaws, and assess the harm that its results could wreak upon our clients.",
+   "full_text": "We filed suit, and a Federal court quickly ordered the agency to disclose the system to us. It turned out to be just a handful of formulas coded into a basic Microsoft Excel spreadsheet. As rudimentary as it was, it still took us many months, three experts, and over $40,000 to reverse-engineer the system, catalog its flaws, and assess the harm that its results could wreak upon our clients. We presented our analysis to the court, and it ruled that the system arbitrarily deprives participants of their property rights and, hence, violates due process.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "specific failure modes of AI systems",
+     "rationale": "Highlights the extreme difficulty and resource cost of uncovering flaws in an opaque government spreadsheet system."
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "identifying key automated decisionmaking dangers and solutions",
+   "quote": "I want to point out three dangers with automated government decisionmaking that this Idaho litigation, which is known as the K.W. v. Armstrong lawsuit, illustrates, and then I want to share three solutions that Congress should enmesh across Federal programs like these.",
+   "full_text": "I want to point out three dangers with automated government decisionmaking that this Idaho litigation, which is known as the K.W. v. Armstrong lawsuit, illustrates, and then I want to share three solutions that Congress should enmesh across Federal programs like these.",
+   "open_codes": [
+    {
+     "code_id": "c042",
+     "label": "GAO AI Accountability Framework",
+     "rationale": "Frames the discussion around structured accountability frameworks and governance solutions for federal programs."
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "hidden government use of AI through black boxes",
+   "quote": "One, black boxes that conceal government use of AI. If my clients had not found a lawyer with the time and resources to help, they probably still would not know that Idaho was using an automated system to make decisions about them in the first place.",
+   "full_text": "First, the dangers. One, black boxes that conceal government use of AI. If my clients had not found a lawyer with the time and resources to help, they probably still would not know that Idaho was using an automated system to make decisions about them in the first place.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "specific failure modes of AI systems",
+     "rationale": "Emphasizes the opacity and hidden deployment of automated systems in government."
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "corrupt and erroneous underlying data in automated systems",
+   "quote": "Two, black boxes concealing how these systems work, including bad data that they are trained on. Once a Federal court order put Idaho's secret formulas into our hands, it took a mammoth effort to figure out all the many things that were wrong with it, including erroneous and corrupt data underlying it.",
+   "full_text": "Two, black boxes concealing how these systems work, including bad data that they are trained on. Once a Federal court order put Idaho's secret formulas into our hands, it took a mammoth effort to figure out all the many things that were wrong with it, including erroneous and corrupt data underlying it.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "specific failure modes of AI systems",
+     "rationale": "Points directly to bad data and hidden mechanisms causing system failures."
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "black boxes preventing accountability",
+   "quote": "Three, black boxes that prevent accountability. Idaho's Medicaid agency has been fighting again and again, including just last month, to ban my clients from accessing the very information they need to challenge the results of its automated system.",
+   "full_text": "Three, black boxes that prevent accountability. Idaho's Medicaid agency has been fighting again and again, including just last month, to ban my clients from accessing the very information they need to challenge the results of its automated system.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "specific failure modes of AI systems",
+     "rationale": "Highlights how opacity prevents individuals from obtaining information to challenge results."
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "involving affected people in system development",
+   "quote": "First, the people that these AI systems make decisions about should be integrally involved in their development, implementation, and evaluation. This is a cornerstone of the court-ordered settlement agreement in the Idaho case, and it is the solution that could prevent the most dangers.",
+   "full_text": "Now toward solutions. There are three that I want to stress today. First, the people that these AI systems make decisions about should be integrally involved in their development, implementation, and evaluation. This is a cornerstone of the court-ordered settlement agreement in the Idaho case, and it is the solution that could prevent the most dangers.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Proposes user involvement in AI development as a preventative guardrail."
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "government regulation instead of litigation",
+   "quote": "Two, government agencies must implement constitutional rights through regulation and enforcement specific to AI systems. Case-by-case litigation, which we know from Idaho is immensely resource intensive, is not a sustainable solution.",
+   "full_text": "Two, government agencies must implement constitutional rights through regulation and enforcement specific to AI systems. Case-by-case litigation, which we know from Idaho is immensely resource intensive, is not a sustainable solution.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "need for regulatory guardrails for AI technology",
+     "rationale": "Argues for proactive regulation rather than relying on resource-intensive litigation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "transparency requirements and proprietary interests",
+   "quote": "Three, transparency requirements and governance standards must apply to these systems from before they start until after they finish. Black boxes have plagued the Idaho system since 2012, and continue through to the present, in 2023. My clients have a right to the same information the government does to evaluate these systems and to challenge their results, and private contractors' proprietary interests can never be allowed to trump individual due process and equal protection rights.",
+   "full_text": "Three, transparency requirements and governance standards must apply to these systems from before they start until after they finish. Black boxes have plagued the Idaho system since 2012, and continue through to the present, in 2023. My clients have a right to the same information the government does to evaluate these systems and to challenge their results, and private contractors' proprietary interests can never be allowed to trump individual due process and equal protection rights.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Calls for permanent transparency requirements over proprietary contractor secrecy."
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "closing statement of testimony",
+   "quote": "Thank you for the opportunity to testify. I look forward to your questions.",
+   "full_text": "Thank you for the opportunity to testify. I look forward to your questions.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "expressing gratitude and stating affiliation",
+     "rationale": "Standard polite closing thanking the committee."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "discovering the Idaho automated system through clients",
+   "quote": "Certainly, Chairman. The Idaho system, when we got started, I think like many other systems around the country probably still today, was not disclosed to anyone outside of the Idaho agency, so far as I know, and after about a half dozen families had contacted me, scared that their lives would be upended, I figured I would send a letter, which I did, and I got one back from the agency's lawyers saying that the system was a trade secret. Once we knew it was a secret, we had to go from there to file a lawsuit to find out more about what the system was.",
+   "full_text": "[Interviewer] (Chairman Peters) Thank you, Mr. Siegel. Mr. Eppink, in your testimony you told us about how you are suing the Idaho Medicaid program for its failure to disclose the algorithm that it used to substantially cut recipients' health care services. But could you tell the Committee more about how your clients even learned about the use of this automated system? [Respondent] Certainly, Chairman. The Idaho system, when we got started, I think like many other systems around the country probably still today, was not disclosed to anyone outside of the Idaho agency, so far as I know, and after about a half dozen families had contacted me, scared that their lives would be upended, I figured I would send a letter, which I did, and I got one back from the agency's lawyers saying that the system was a trade secret. Once we knew it was a secret, we had to go from there to file a lawsuit to find out more about what the system was.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "specific failure modes of AI systems",
+     "rationale": "Describes the complete secrecy of an automated system until discovered via affected families and litigation."
+    },
+    {
+     "code_id": "c010",
+     "label": "black box nature and failures of AI",
+     "rationale": "Idaho system concealed behind trade secret and lack of disclosure."
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "Simplicity of older systems versus modern AI",
+   "quote": "Even though the Idaho system was just an Excel spreadsheet, it still ended up taking us a significant amount of time--I think it was maybe months, possibly a matter of years--to get all of the information on which it was built. Federal AI policy standards and enforcement that are governing use of automated systems and AI are not solving necessarily for the complexity of those systems. They are solving for the harms that they are causing.",
+   "full_text": "Yes. I guess for starters, black boxes are black boxes, no matter how big they get and no matter what is inside of them. Even though the Idaho system was just an Excel spreadsheet, it still ended up taking us a significant amount of time--I think it was maybe months, possibly a matter of years--to get all of the information on which it was built. Federal AI policy standards and enforcement that are governing use of automated systems and AI are not solving necessarily for the complexity of those systems. They are solving for the harms that they are causing.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "black box nature and failures of AI",
+     "rationale": "Equates simple spreadsheets and complex systems as equally opaque black boxes."
+    },
+    {
+     "code_id": "c040",
+     "label": "prioritizing current algorithmic harms over speculative AGI risks",
+     "rationale": "Focusing policy on actual harms caused rather than system complexity."
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Applying universal principles to new technologies",
+   "quote": "I do not know that we need new standards for each new technology. I think the same principles that we can apply to protect and prevent some of the things that we have had to litigate in Idaho would apply to more complex systems as well.",
+   "full_text": "I do not know that we need new standards for each new technology. I think the same principles that we can apply to protect and prevent some of the things that we have had to litigate in Idaho would apply to more complex systems as well.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "need for regulatory guardrails for AI technology",
+     "rationale": "Argues foundational protection principles apply across technologies."
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Challenges of applying constitutional principles to automated systems",
+   "quote": "What is critical is standards and enforcement that are specific to AI and automated decisionmaking systems, which we have had to enforce in Idaho through the litigation. We have basic American principles like due process and equal protection that are there. Where our courts struggle and where our agencies still have gaps as far as what they are overseeing is how to apply those in this new context to these automated systems.",
+   "full_text": "What is critical is standards and enforcement that are specific to AI and automated decisionmaking systems, which we have had to enforce in Idaho through the litigation. We have basic American principles like due process and equal protection that are there. Where our courts struggle and where our agencies still have gaps as far as what they are overseeing is how to apply those in this new context to these automated systems. We know that the litigation in court, I think, is too unwieldly. Although we have done it in Idaho, it is not going to meet the proliferation of these systems.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "need for regulatory guardrails for AI technology",
+     "rationale": "Stating the need for specific standards and enforcement for automated decision-making."
+    },
+    {
+     "code_id": "c011",
+     "label": "specific failure modes of AI systems",
+     "rationale": "Courts and agencies struggle with applying constitutional protections to automated systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Agency oversight of automated systems in federal programs",
+   "quote": "Each agency, for instance, with the Medicare program in Idaho, the Centers for Medicare and Medicaid Services (CMS) should be overseeing programs that are using automated systems, like Idaho, and making sure that they are complying with standards that are specific to those programs.",
+   "full_text": "Each agency, for instance, with the Medicare program in Idaho, the Centers for Medicare and Medicaid Services (CMS) should be overseeing programs that are using automated systems, like Idaho, and making sure that they are complying with standards that are specific to those programs. We already have a lot of jumping-off points that can be used to develop those standards. They just need to be put in place and then enforced by these agencies.",
+   "open_codes": [
+    {
+     "code_id": "c037",
+     "label": "designating specific federal agencies for private and public AI oversight",
+     "rationale": "Argues that specific agencies like CMS should oversee automated systems within their programs."
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Inaccessibility of data analysis for affected individuals",
+   "quote": "One is to recognize that, as I have talked about a little bit, the costs and the time necessary to analyze this data for someone who these systems are making decisions about is inaccessible.",
+   "full_text": "Two other things I might add, Senator, on data. One is to recognize that, as I have talked about a little bit, the costs and the time necessary to analyze this data for someone who these systems are making decisions about is inaccessible. In the data, often, especially when you are talking about my clients who are people with developmental disabilities, is corrupted not only potentially by the creation of the data in the first place but by years and years of discrimination and other effects that have biased the data in the first place.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "specific failure modes of AI systems",
+     "rationale": "Highlights how data is corrupted and biased by historical discrimination affecting vulnerable clients."
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Current deployment of AI across federal agencies",
+   "quote": "Artificial intelligence is already transforming how government agencies serve the public. Federal agencies are leveraging AI in a number of important ways, including to support disaster response and emergency management efforts, to detect financial fraud and identity theft...",
+   "full_text": "Artificial intelligence is already transforming how government agencies serve the public. Federal agencies are leveraging AI in a number of important ways, including to support disaster response and emergency management efforts, to detect financial fraud and identity theft, to offer chatbots and virtual assistants that enhance customer service and engagement, as well as for environmental monitoring and conservation.",
+   "open_codes": [
+    {
+     "code_id": "c039",
+     "label": "need for proactive regulation due to rapid AI advancement",
+     "rationale": "Details how government agencies are currently utilizing AI in various practical applications."
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "AI as a present-day reality rather than future speculation",
+   "quote": "I lay this out because a lot of times we are trying to have these conversations about AI, the potential, some risks, and things to keep in mind, as if it is a far-off-into-the-future dynamic. No, this is a here-and-now conversation.",
+   "full_text": "I lay this out because a lot of times we are trying to have these conversations about AI, the potential, some risks, and things to keep in mind, as if it is a far-off-into-the-future dynamic. No, this is a here-and-now conversation.",
+   "open_codes": [
+    {
+     "code_id": "c040",
+     "label": "prioritizing current algorithmic harms over speculative AGI risks",
+     "rationale": "Stresses that AI impacts and risks are immediate, current realities rather than distant future concepts."
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "acknowledging immediate presence of AI in government",
+   "quote": "Thank you, Senator, for the question, and you are absolutely right. This is definitely a here-and-now problem, and we do have these frameworks that have been discussed today...",
+   "full_text": "Thank you, Senator, for the question, and you are absolutely right. This is definitely a here-and-now problem, and we do have these frameworks that have been discussed today, but what we do not have, at least that I have observed, is the on-the-ground enforcement and policing of those, and that is especially true when it comes to these in- house versus proprietary systems.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "expressing gratitude and stating affiliation",
+     "rationale": "The speaker thanks the senator and acknowledges the timeliness of the issue."
+    },
+    {
+     "code_id": "c039",
+     "label": "need for proactive regulation due to rapid AI advancement",
+     "rationale": "Highlights that AI is a current reality requiring immediate attention rather than a future concern."
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "lack of enforcement for AI frameworks",
+   "quote": "This is definitely a here-and-now problem, and we do have these frameworks that have been discussed today, but what we do not have, at least that I have observed, is the on-the-ground enforcement and policing of those, and that is especially true when it comes to these in- house versus proprietary systems.",
+   "full_text": "Thank you, Senator, for the question, and you are absolutely right. This is definitely a here-and-now problem, and we do have these frameworks that have been discussed today, but what we do not have, at least that I have observed, is the on-the-ground enforcement and policing of those, and that is especially true when it comes to these in- house versus proprietary systems.",
+   "open_codes": [
+    {
+     "code_id": "c048",
+     "label": "lack of on-the-ground enforcement for AI frameworks",
+     "rationale": "Focuses on the gap between having policy frameworks and actual on-the-ground policing of them."
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "protecting due process against proprietary interests",
+   "quote": "This should be an easy question, I think. We cannot allow proprietary interests--when we are talking about government making decisions about individuals and their families--to hold due process rights hostage.",
+   "full_text": "This should be an easy question, I think. We cannot allow proprietary interests--when we are talking about government making decisions about individuals and their families--to hold due process rights hostage. To the extent that a government agency or a State-funded agency needs to use, or wants to use automated decisionmaking if they have gone through the process, a transparent process of deciding that that is appropriate in the first place, if there is going to be proprietary or private interest providing any of that, the price of admission is going to have to honor Americans' due process rights, equal protection rights, which would mean the transparency of those proprietary systems, so that my clients, for instance, in Idaho, can access the information about the data, the methods, and the processes involved so they can evaluate whether they need to challenge those government decisions, and challenge them and appeal them if they have to.",
+   "open_codes": [
+    {
+     "code_id": "c049",
+     "label": "proprietary algorithms compromising constitutional due process",
+     "rationale": "Argues that proprietary tools cannot hold due process rights hostage and must allow transparency for legal challenges."
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "predictive behavioral modeling risks in law enforcement",
+   "quote": "One of the things that I have been grappling with is given the massive datasets that are available in open source or that can be purchased by a state actor, the capacity for predictive behavioral modeling is potentially very significant. Perhaps with a high degree of integrity some of this technology will be able to assign probabilities with respect to future conduct by individuals.",
+   "full_text": "[Interviewer] (Senator Ossoff) All right. Let us think about some of the constitutional and other questions that may arise. Mr. Eppink, from your standpoint, thinking about, for example, evidentiary predicate that justifies certain police actions or can be used to secure certain court orders. One of the things that I have been grappling with is given the massive datasets that are available in open source or that can be purchased by a state actor, the capacity for predictive behavioral modeling is potentially very significant. Perhaps with a high degree of integrity some of this technology will be able to assign probabilities with respect to future conduct by individuals. The risk here, I think, is that prosecutors or law enforcement agencies may use such predictive modeling in order to justify forms of surveillance or to seek warrants or to take other action. How do you think about that risk and how should Congress think about that risk?",
+   "open_codes": [
+    {
+     "code_id": "c050",
+     "label": "risks of predictive behavioral modeling in law enforcement",
+     "rationale": "The senator outlines the risks of state actors using predictive modeling for surveillance and warrants."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "lack of governance for AI in law enforcement",
+   "quote": "Especially when we are talking about law enforcement and the risk of life and liberty, the technology may be developing but the governance of that technology is not yet there to be condoning use of AI in those contexts.",
+   "full_text": "[Respondent] Thank you, Senator. Yes, especially based on what we have heard today, we have, I think, at best, principles to start to think about how to build these systems in a safe way, in a democratic way, but I do not believe they are being built that way right now. Especially when we are talking about law enforcement and the risk of life and liberty, the technology may be developing but the governance of that technology is not yet there to be condoning use of AI in those contexts. I am not even sure, based on what we have seen in Idaho in the Medicaid context of comparatively very rudimentary automated system, that we are there yet, and I think the necessity of litigation there corroborates that.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "need for regulatory guardrails for AI technology",
+     "rationale": "Argues governance is lacking for high-stakes law enforcement AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "need for clear governance and community inclusion",
+   "quote": "We have to go beyond these jumping-off points that we have been discussing today, create clear governance, and include the people who these systems will be making decisions about in the process of selecting whether there will be automated decisionmaking in the first place and how those things will be crafted to ensure that the systems are built fairly and used fairly.",
+   "full_text": "We have to go beyond these jumping-off points that we have been discussing today, create clear governance, and include the people who these systems will be making decisions about in the process of selecting whether there will be automated decisionmaking in the first place and how those things will be crafted to ensure that the systems are built fairly and used fairly.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "need for regulatory guardrails for AI technology",
+     "rationale": "Calls for clear governance and inclusive process for automated systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "constitutional safeguards and pre-deployment testing",
+   "quote": "To the extent that we have systems that are involved in making decisions on those things that affect individuals and families, we have to ensure that there is the transparency, the inclusion, the reliability, the independent auditing and testing of those programs before they should be deployed in government uses.",
+   "full_text": "[Interviewer] (Senator Ossoff) Mr. Eppink. [Respondent] Yes, I think we can look to the Constitution. We can look to life, liberty, property, privacy. To the extent that we have systems that are involved in making decisions on those things that affect individuals and families, we have to ensure that there is the transparency, the inclusion, the reliability, the independent auditing and testing of those programs before they should be deployed in government uses.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "specific failure modes of AI systems",
+     "rationale": "Outlines required testing and transparency for government AI deployments."
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "lack of governance for high-stakes lethal force AI",
+   "quote": "I think we can get there, in some instances, but we are not there now, and especially when you were talking about making decisions about use of lethal force or other decisions that could take a life or threaten a life. I think there is governance that is not yet in place to ensure those systems are fair.",
+   "full_text": "I think we can get there, in some instances, but we are not there now, and especially when you were talking about making decisions about use of lethal force or other decisions that could take a life or threaten a life. I think there is governance that is not yet in place to ensure those systems are fair.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "specific failure modes of AI systems",
+     "rationale": "Highlights lack of fairness and governance in critical life-or-death AI decisions."
+    },
+    {
+     "code_id": "c048",
+     "label": "lack of on-the-ground enforcement for AI frameworks",
+     "rationale": "Points out that proper governance is not yet in place for high-stakes systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "expressing gratitude and professional background",
+   "quote": "Thank you, Chairman. The experts on these systems are the people that the systems make decisions about. I worked on this litigation in Idaho for 12 years now, almost, and I have worked with agency officials, I have communicated with Federal overseers, I have communicated with the courts. But it is time and time again my clients who have been able to spot the most important systemic problems with these systems.",
+   "full_text": "Thank you, Chairman. The experts on these systems are the people that the systems make decisions about. I worked on this litigation in Idaho for 12 years now, almost, and I have worked with agency officials, I have communicated with Federal overseers, I have communicated with the courts. But it is time and time again my clients who have been able to spot the most important systemic problems with these systems.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "expressing gratitude and stating affiliation",
+     "rationale": "The speaker thanks the chair and begins the testimony."
+    },
+    {
+     "code_id": "c051",
+     "label": "affected communities as the true experts on algorithmic flaws",
+     "rationale": "Asserts that those affected by systems are the true experts spotting systemic problems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "inclusion of impacted populations in AI development",
+   "quote": "I appreciate the opportunity to testify to the Committee today. The people that the Committee especially should hear from and the policies that the Congress should put in place should make sure that at each step in the development and selection of these systems, the people who they make decisions about are included it. My clients, people with disabilities in Idaho, often use the phrase, ``nothing about us, without us,'' and that is critical in these automated decisionmaking systems and AI systems. Thank you.",
+   "full_text": "I appreciate the opportunity to testify to the Committee today. The people that the Committee especially should hear from and the policies that the Congress should put in place should make sure that at each step in the development and selection of these systems, the people who they make decisions about are included it. My clients, people with disabilities in Idaho, often use the phrase, ``nothing about us, without us,'' and that is critical in these automated decisionmaking systems and AI systems. Thank you.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "expressing gratitude and stating affiliation",
+     "rationale": "The speaker expresses appreciation for the opportunity to testify."
+    },
+    {
+     "code_id": "c052",
+     "label": "mandating inclusion of impacted groups in AI design",
+     "rationale": "Argues for policies ensuring impacted people are included at every step of system development."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_175930",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 9,
+   "n_ok": 9
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 5,
+    "created": 1,
+    "chunk": 0
+   },
+   {
+    "reused": 8,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 7,
+    "created": 0,
+    "chunk": 2
+   },
+   {
+    "reused": 7,
+    "created": 0,
+    "chunk": 3
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 4
+   },
+   {
+    "reused": 2,
+    "created": 1,
+    "chunk": 5
+   },
+   {
+    "reused": 1,
+    "created": 2,
+    "chunk": 6
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 4,
+    "created": 2,
+    "chunk": 8
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg52785 — Richard A. Eppink, Of Counsel, American Civil Liberties Union Of Idaho Foundation\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg52785  |  Artificial Intelligence In Government  |  Senate, ?  |  2023-05-16  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chairman Peters) Thank you, Ranking Member Paul.\nIt is the practice of the Homeland Security and Governmental Affairs Committee (HSGAC) to swear in witnesses, so if each of you would please stand and raise your right hand.\nDo you swear that the testimony that you will give before this Committee will be the truth, the whole truth, and nothing but the truth, so help you, God?\n[Respondent] I do.\n[Interviewer] (Chairman Peters) Thank you. Our next witness is Ritchie Eppink. Mr. Eppink serves as Counsel for the American Civil Liberties Union of Idaho Foundation. He was previously the Justice Architect for the Idaho Legal Aid Services, and before that a Fulbright Fellow.\nMr. Eppink, you are recognized for your opening statement.\nTESTIMONY OF RICHARD A. EPPINK, OF COUNSEL,\n[Respondent] Thank you, Chairman Peters, Ranking Member Paul, and Committee Members for your attention to artificial intelligence and automated decisionmaking in government programs.\nThe prepared statement of Mr. Eppink appears in the Appendix on page 72.\nI was invited here today because I have been working for over a decade with Idahoans with developmental disabilities and their families to challenge secret decisions made by computerized algorithmic systems. Only through litigation that I have helped these families pursue were they able to access the algorithms the State of Idaho uses to make decisions about the health care that they depend on day to day.\nOnce we opened the black box that concealed that automated system, we found that it was built out of corrupt data, relied on inputs that the State never validated, and produced results that even those who created it could not explain. A Federal court ruled that the system was unconstitutional.\nYet a decade after filing suit and over seven years since winning in court we are still litigating the case, battling for due process against still more black box secrecy. Decades-long class actions by indigent families are not a viable plan for AI governance in taxpayer programs. We need Federal regulation and enforcement to protect basic fairness and constitutional rights in government programs that use AI in automated decisionmaking systems.\nA little bit about the Idaho lawsuit. Although in the past our society shamefully confined people with developmental disabilities in State hospitals, today, through Medicaid, they can get services at home and in their communities instead, at a savings to the government and to taxpayers.\nOne of my clients was Christie Mathwig. She was a bulwark in her rural community of Troy, Idaho, a mother, and a leader in her church, bible studies, and Al-Anon. She was also diagnosed as a teenager with a rare neuromuscular disease and relied on workers in her community for health care and support throughout her day. Each year, the State assigned her a budget: not dollars that she would ever see, but reimbursement for her health care providers, based on assessment results plugged into an automated system.\nChristie came to me when the State told her her budget would suddenly be cut by tens of thousands of dollars, more than 20 percent, and not enough for the 24-hour support she needed to survive. The State refused to provide an explanation, claiming that the system was a ``trade secret.''\nWe filed suit, and a Federal court quickly ordered the agency to disclose the system to us. It turned out to be just a handful of formulas coded into a basic Microsoft Excel spreadsheet. As rudimentary as it was, it still took us many months, three experts, and over $40,000 to reverse-engineer the system, catalog its flaws, and assess the harm that its results could wreak upon our clients. We presented our analysis to the court, and it ruled that the system arbitrarily deprives participants of their property rights and, hence, violates due process.\nI want to point out three dangers with automated government decisionmaking that this Idaho litigation, which is known as the K.W. v. Armstrong lawsuit, illustrates, and then I want to share three solutions that Congress should enmesh across Federal programs like these.\nFirst, the dangers. One, black boxes that conceal government use of AI. If my clients had not found a lawyer with the time and resources to help, they probably still would not know that Idaho was using an automated system to make decisions about them in the first place.\nTwo, black boxes concealing how these systems work, including bad data that they are trained on. Once a Federal court order put Idaho's secret formulas into our hands, it took a mammoth effort to figure out all the many things that were wrong with it, including erroneous and corrupt data underlying it.\nThree, black boxes that prevent accountability. Idaho's Medicaid agency has been fighting again and again, including just last month, to ban my clients from accessing the very information they need to challenge the results of its automated system.\nNow toward solutions. There are three that I want to stress today.\nFirst, the people that these AI systems make decisions about should be integrally involved in their development, implementation, and evaluation. This is a cornerstone of the court-ordered settlement agreement in the Idaho case, and it is the solution that could prevent the most dangers.\nTwo, government agencies must implement constitutional rights through regulation and enforcement specific to AI systems. Case-by-case litigation, which we know from Idaho is immensely resource intensive, is not a sustainable solution.\nThree, transparency requirements and governance standards must apply to these systems from before they start until after they finish. Black boxes have plagued the Idaho system since 2012, and continue through to the present, in 2023. My clients have a right to the same information the government does to evaluate these systems and to challenge their results, and private contractors' proprietary interests can never be allowed to trump individual due process and equal protection rights.\nThank you for the opportunity to testify. I look forward to your questions.\n[Interviewer] (Chairman Peters) Thank you, Mr. Siegel.\nMr. Eppink, in your testimony you told us about how you are suing the Idaho Medicaid program for its failure to disclose the algorithm that it used to substantially cut recipients' health care services. But could you tell the Committee more about how your clients even learned about the use of this automated system?\n[Respondent] Certainly, Chairman. The Idaho system, when we got started, I think like many other systems around the country probably still today, was not disclosed to anyone outside of the Idaho agency, so far as I know, and after about a half dozen families had contacted me, scared that their lives would be upended, I figured I would send a letter, which I did, and I got one back from the agency's lawyers saying that the system was a trade secret. Once we knew it was a secret, we had to go from there to file a lawsuit to find out more about what the system was.\n[Interviewer] (Chairman Peters) Right now we are hearing an awful lot about generative AI tools, like Chat Generative Pre-Trained Transformer (ChatGPT). It is all over the news. Everybody is chatting about it. It is a hot topic.\nThe system that you are talking about was relatively simple and an older, automated system compared to what we are seeing right now. What are your thoughts on that fact and how it should inform our efforts to set Federal AI policy?\n[Respondent] Yes. I guess for starters, black boxes are black boxes, no matter how big they get and no matter what is inside of them. Even though the Idaho system was just an Excel spreadsheet, it still ended up taking us a significant amount of time--I think it was maybe months, possibly a matter of years--to get all of the information on which it was built.\nFederal AI policy standards and enforcement that are governing use of automated systems and AI are not solving necessarily for the complexity of those systems. They are solving for the harms that they are causing.\nI do not know that we need new standards for each new technology. I think the same principles that we can apply to protect and prevent some of the things that we have had to litigate in Idaho would apply to more complex systems as well.\n[Interviewer] (Chairman Peters) Clearly, as I listen to your testimony, you believe that there is simply just not enough transparency. What would you recommend when it comes to holding these platforms more accountable?\n[Respondent] What is critical is standards and enforcement that are specific to AI and automated decisionmaking systems, which we have had to enforce in Idaho through the litigation. We have basic American principles like due process and equal protection that are there. Where our courts struggle and where our agencies still have gaps as far as what they are overseeing is how to apply those in this new context to these automated systems. We know that the litigation in court, I think, is too unwieldly. Although we have done it in Idaho, it is not going to meet the proliferation of these systems.\nEach agency, for instance, with the Medicare program in Idaho, the Centers for Medicare and Medicaid Services (CMS) should be overseeing programs that are using automated systems, like Idaho, and making sure that they are complying with standards that are specific to those programs. We already have a lot of jumping-off points that can be used to develop those standards. They just need to be put in place and then enforced by these agencies.\n[Interviewer] (Senator Lankford) Does anybody else want to make a comment on that?\n[Respondent] Two other things I might add, Senator, on data. One is to recognize that, as I have talked about a little bit, the costs and the time necessary to analyze this data for someone who these systems are making decisions about is inaccessible. In the data, often, especially when you are talking about my clients who are people with developmental disabilities, is corrupted not only potentially by the creation of the data in the first place but by years and years of discrimination and other effects that have biased the data in the first place.\n[Interviewer] (Senator Padilla) Thank you, Mr. Chair. I wanted to thank you also for your flexibility. I am back and forth with the Judiciary subcommittee on AI this morning as well.\nArtificial intelligence is already transforming how government agencies serve the public. Federal agencies are leveraging AI in a number of important ways, including to support disaster response and emergency management efforts, to detect financial fraud and identity theft, to offer chatbots and virtual assistants that enhance customer service and engagement, as well as for environmental monitoring and conservation.\nI lay this out because a lot of times we are trying to have these conversations about AI, the potential, some risks, and things to keep in mind, as if it is a far-off-into-the-future dynamic. No, this is a here-and-now conversation.\nBut clearly there are risks that we will need to address, especially the sensitive context of providing government services. Automated decisionmaking systems and tools risk exacerbating the many existing inequities in our society, as some of the testimony today reflects. Again, Mr. Chairman, thank you for calling this hearing. I look forward to hearing from our panel today on how we can ensure that fostering trustworthy, equitable, and accountable applications of AI in government can be achieved.\nNow in reviewing the published inventory of AI use across the Federal Government--again, today, not into the future--I was pleasantly surprised to see that many agencies are building AI tools in-house. Some argue that it is more cost effective for our government to simply purchase AI products developed by the private sector, whether it is off the shelf or customized. However, many of the testimonies that we have heard today explicitly mentioned that government technologists and in-house tools are important to ensuring that they comply with the relevant regulations and have the focus of furthering agencies' mission, not always achieved when you contract out.\nMr. Eppink, first question. In your testimony you highlighted some of the tensions that arise when government relies on proprietary private sector tools that are not always available for public scrutiny. What are some of the factors that should go into agency decisions to build a tool internally as opposed to procuring it externally?\n[Respondent] Thank you, Senator, for the question, and you are absolutely right. This is definitely a here-and-now problem, and we do have these frameworks that have been discussed today, but what we do not have, at least that I have observed, is the on-the-ground enforcement and policing of those, and that is especially true when it comes to these in- house versus proprietary systems.\nThis should be an easy question, I think. We cannot allow proprietary interests--when we are talking about government making decisions about individuals and their families--to hold due process rights hostage. To the extent that a government agency or a State-funded agency needs to use, or wants to use automated decisionmaking if they have gone through the process, a transparent process of deciding that that is appropriate in the first place, if there is going to be proprietary or private interest providing any of that, the price of admission is going to have to honor Americans' due process rights, equal protection rights, which would mean the transparency of those proprietary systems, so that my clients, for instance, in Idaho, can access the information about the data, the methods, and the processes involved so they can evaluate whether they need to challenge those government decisions, and challenge them and appeal them if they have to.\n[Interviewer] (Senator Ossoff) All right. Let us think about some of the constitutional and other questions that may arise. Mr. Eppink, from your standpoint, thinking about, for example, evidentiary predicate that justifies certain police actions or can be used to secure certain court orders. One of the things that I have been grappling with is given the massive datasets that are available in open source or that can be purchased by a state actor, the capacity for predictive behavioral modeling is potentially very significant. Perhaps with a high degree of integrity some of this technology will be able to assign probabilities with respect to future conduct by individuals. The risk here, I think, is that prosecutors or law enforcement agencies may use such predictive modeling in order to justify forms of surveillance or to seek warrants or to take other action.\nHow do you think about that risk and how should Congress think about that risk?\n[Respondent] Thank you, Senator. Yes, especially based on what we have heard today, we have, I think, at best, principles to start to think about how to build these systems in a safe way, in a democratic way, but I do not believe they are being built that way right now. Especially when we are talking about law enforcement and the risk of life and liberty, the technology may be developing but the governance of that technology is not yet there to be condoning use of AI in those contexts. I am not even sure, based on what we have seen in Idaho in the Medicaid context of comparatively very rudimentary automated system, that we are there yet, and I think the necessity of litigation there corroborates that.\nWe have to go beyond these jumping-off points that we have been discussing today, create clear governance, and include the people who these systems will be making decisions about in the process of selecting whether there will be automated decisionmaking in the first place and how those things will be crafted to ensure that the systems are built fairly and used fairly.\n[Interviewer] (Senator Ossoff) Mr. Eppink.\n[Respondent] Yes, I think we can look to the Constitution. We can look to life, liberty, property, privacy. To the extent that we have systems that are involved in making decisions on those things that affect individuals and families, we have to ensure that there is the transparency, the inclusion, the reliability, the independent auditing and testing of those programs before they should be deployed in government uses.\nI think we can get there, in some instances, but we are not there now, and especially when you were talking about making decisions about use of lethal force or other decisions that could take a life or threaten a life. I think there is governance that is not yet in place to ensure those systems are fair.\n[Interviewer] (Chairman Peters) Thank you. Mr. Eppink.\n[Respondent] Thank you, Chairman. The experts on these systems are the people that the systems make decisions about. I worked on this litigation in Idaho for 12 years now, almost, and I have worked with agency officials, I have communicated with Federal overseers, I have communicated with the courts. But it is time and time again my clients who have been able to spot the most important systemic problems with these systems.\nI appreciate the opportunity to testify to the Committee today. The people that the Committee especially should hear from and the policies that the Congress should put in place should make sure that at each step in the development and selection of these systems, the people who they make decisions about are included it. My clients, people with disabilities in Idaho, often use the phrase, ``nothing about us, without us,'' and that is critical in these automated decisionmaking systems and AI systems. Thank you.",
+ "_bench": {
+  "seconds": 57.3,
+  "chars": 18011
+ }
+}

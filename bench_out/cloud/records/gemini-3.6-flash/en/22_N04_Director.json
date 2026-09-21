@@ -1,0 +1,96 @@
+{
+ "respondent": "Director, older people's community service",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "The header states 'Director, older people's community service'. No years of experience are mentioned."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Institutional dismissal of public impact through narrow technical metrics",
+   "quote": "I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.",
+   "full_text": "I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Transport department refused to adapt system behaviour, prioritizing formal specifications over real-world external impact data."
+    },
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "One-way dismissal of external user evidence through standard bureaucracy rather than two-way dialogue."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Need for epistemic humility and metric adaptation in public systems",
+   "quote": "'We measure accuracy, we don't measure consistency, we'll look at whether we can.' That would have been a good answer and it costs nothing to write.",
+   "full_text": "Anything that engaged with unpredictability. 'We measure accuracy, we don't measure consistency, we'll look at whether we can.' That would have been a good answer and it costs nothing to write. I don't need them to fix it in a fortnight. I need to know the problem I described has been understood.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Advocates epistemic humility, acknowledging limits of current metrics, and questioning technical assumptions."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Calls for institutional openness to adapt metrics and acknowledge external feedback."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Reliance on political privilege rather than institutionalised participation",
+   "quote": "I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "full_text": "Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Critically reflects on structural inequalities and reliance on political connections rather than fair systematic feedback."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Crossing timing was increased after external political intervention demonstrated capacity to alter technical parameters."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Downstream accountability and communication gaps with affected service users",
+   "quote": "I told the ones who'd told me, because that seemed like the least I could do. What I couldn't tell them is why it took eight months, because I don't know",
+   "full_text": "Some do. I told the ones who'd told me, because that seemed like the least I could do. What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Closing the loop with impacted community members who raised the crossing issue."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Epistemic humility and transparent acknowledgment of limits in explaining institutional delay to affected citizens."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent, a director of an older people's community service, provides a critical perspective on the municipal transport system's implementation of adaptive traffic signals. The account strongly exhibits negative responsiveness and engagement from public authorities, who initially dismissed detailed community impact data by hiding behind technical compliance (\"within specification\"). In contrast, the respondent emphasizes positive reflexivity by calling for epistemic humility—specifically questioning whether narrow engineering metrics like \"accuracy\" miss key operational realities like user \"consistency.\"\n\nThe multi-coded segment regarding political intervention highlights a tension between formal and informal channels: while system parameters were ultimately changed (positive responsiveness), the respondent critically reflects (positive reflexivity) on how this outcome required political privilege (\"knowing a councillor\") rather than functioning, inclusive public engagement mechanisms. Finally, the respondent demonstrates positive engagement and reflexivity at the community level by reporting back to affected residents while openly acknowledging the limits of their own knowledge regarding municipal delays. Anticipation remains absent as the transcript focuses on reactive feedback to deployed systems rather than foresight.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N04 — Director, older people's community service\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does this show up in your work?\n[Respondent] In cancelled appointments, mostly. We run a day centre and we started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.\n[Interviewer] Did you report it?\n[Respondent] I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.\n[Interviewer] What would have been a useful reply?\n[Respondent] Anything that engaged with unpredictability. 'We measure accuracy, we don't measure consistency, we'll look at whether we can.' That would have been a good answer and it costs nothing to write. I don't need them to fix it in a fortnight. I need to know the problem I described has been understood.\n[Interviewer] Have you found any other route?\n[Respondent] Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.\n[Interviewer] Do the people who use your centre know any of this happened?\n[Respondent] Some do. I told the ones who'd told me, because that seemed like the least I could do. What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 23.6,
+  "absence": 0
+ }
+}

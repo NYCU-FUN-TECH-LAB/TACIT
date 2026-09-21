@@ -1,0 +1,879 @@
+{
+ "respondent": "CHRG-118shrg53503_Russell",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "researcher",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "defining artificial intelligence",
+   "quote": "AI, as we all know, is the study of how to make machines intelligent. Its stated goal is general purpose artificial intelligence, sometimes called AGI or artificial general intelligence, machines that match or exceed human capabilities in every relevant dimension.",
+   "full_text": "AI, as we all know, is the study of how to make machines intelligent. Its stated goal is general purpose artificial intelligence, sometimes called AGI or artificial general intelligence, machines that match or exceed human capabilities in every relevant dimension.",
+   "open_codes": [
+    {
+     "code_id": "c005",
+     "label": "defining artificial intelligence",
+     "rationale": "Explaining the definition and core goal of AI as creating machines that match or exceed human capabilities."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "historical shift in AI approaches",
+   "quote": "For most of that time, we created systems whose internal operations we understood, drawing on centuries of work in mathematics, statistics, philosophy, and operations research. Over the last decade, that has changed.",
+   "full_text": "The last 80 years have seen a lot of progress toward that goal. For most of that time, we created systems whose internal operations we understood, drawing on centuries of work in mathematics, statistics, philosophy, and operations research. Over the last decade, that has changed. Beginning with vision and speech recognition and now with language, the dominant approach has been end-to-end training of circuits with billions or trillions of adjustable parameters.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "explaining machine learning dominance",
+     "rationale": "Discussing the transition from understandable mathematical systems to end-to-end training of parameter-heavy circuits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "opacity of modern AI systems",
+   "quote": "The success of these systems is undeniable, but their internal principles of operation remain a mystery. This is particularly true for the large language models, or LLMs, such as ChatGPT.",
+   "full_text": "The success of these systems is undeniable, but their internal principles of operation remain a mystery. This is particularly true for the large language models, or LLMs, such as ChatGPT.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "opacity and failure of AI systems",
+     "rationale": "Highlighting that internal operations of modern LLMs remain unknown and mysterious."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "rapid progress toward AGI",
+   "quote": "Many researchers now see AGI on the horizon. In my view, LLMs do not constitute AGI, but they are a piece of the puzzle. We're not sure what shape the piece is yet or how it fits into the puzzle, but the field is working hard on those questions, and progress is rapid.",
+   "full_text": "Many researchers now see AGI on the horizon. In my view, LLMs do not constitute AGI, but they are a piece of the puzzle. We're not sure what shape the piece is yet or how it fits into the puzzle, but the field is working hard on those questions, and progress is rapid. If we succeed, the upside could be enormous. I've estimated a cash value of at least $14 quadrillion for this technology, a huge magnet in the future pulling us forward.",
+   "open_codes": [
+    {
+     "code_id": "c008",
+     "label": "expansion of generative AI technologies",
+     "rationale": "Discussing progress on language models and their role as components toward AGI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "longstanding warnings about AI control",
+   "quote": "On the other hand, Alan Turing, the founder of computer science, warned in 1951 that once AI outstrips our feeble powers, we should have to expect the machines to take control. We have pretty much completely ignored this warning.",
+   "full_text": "On the other hand, Alan Turing, the founder of computer science, warned in 1951 that once AI outstrips our feeble powers, we should have to expect the machines to take control. We have pretty much completely ignored this warning. It's as if an alien civilization warned us by email of its impending arrival, and we replied, ``Humanity is currently out of the office.'' Fortunately, humanity is now back in the office and has read the email from the aliens.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Referencing the existential risk of machines taking control once they outstrip human power."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "focusing on control and known AI risks",
+   "quote": "Of course, many of the risks from AI are well recognized already, including bias, disinformation, manipulation, and impacts on employment. I'm happy to discuss any of these, but most of my work over the last decade has been on the problem of control: How do we maintain power forever over entities more powerful than ourselves?",
+   "full_text": "Of course, many of the risks from AI are well recognized already, including bias, disinformation, manipulation, and impacts on employment. I'm happy to discuss any of these, but most of my work over the last decade has been on the problem of control: How do we maintain power forever over entities more powerful than ourselves?",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Listing recognized risks like bias, disinformation, and the fundamental long-term problem of maintaining control over powerful entities."
+    },
+    {
+     "code_id": "c042",
+     "label": "long-term challenge of AI superintelligence control",
+     "rationale": "Discusses maintaining power forever over entities more powerful than humans."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "mis-specified objectives and LLM imitation",
+   "quote": "The core problem we have studied comes from AI systems pursuing fixed objectives that are mis-specified, the so-called King Midas problem. For example, social media algorithms were trained to maximize clicks and learned to do so by manipulating human users and polarizing societies. But with LLMs, we don't even know what their objectives are. They learn to imitate humans and probably absorb all-too-human goals in the process.",
+   "full_text": "The core problem we have studied comes from AI systems pursuing fixed objectives that are mis-specified, the so-called King Midas problem. For example, social media algorithms were trained to maximize clicks and learned to do so by manipulating human users and polarizing societies. But with LLMs, we don't even know what their objectives are. They learn to imitate humans and probably absorb all-too-human goals in the process.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Explains the King Midas problem and how maximizing clicks led to manipulation and polarization."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "safety and innovation false dichotomy with predictability",
+   "quote": "Now, regulation is often said to stifle innovation, but there is no real tradeoff between safety and innovation. An AI system that harms human beings is simply not good AI. And I believe analytic predictability is as essential for safe AI as it is for the autopilot on an airplane. This Committee has discussed ideas such as third-party testing, licensing, national agency, an international coordinating body--all of which I support.",
+   "full_text": "Now, regulation is often said to stifle innovation, but there is no real tradeoff between safety and innovation. An AI system that harms human beings is simply not good AI. And I believe analytic predictability is as essential for safe AI as it is for the autopilot on an airplane. This Committee has discussed ideas such as third-party testing, licensing, national agency, an international coordinating body--all of which I support.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Supports committee ideas including third-party testing, licensing, a national agency, and an international coordinating body."
+    },
+    {
+     "code_id": "c043",
+     "label": "rejecting the trade-off between safety and innovation",
+     "rationale": "States there is no real tradeoff between safety and innovation and harmful AI is not good AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "specific regulatory proposals and safety guardrails",
+   "quote": "Here are some more ways to, as it's said, move fast and fix things. First, an absolute right to know if one is interacting with a person or a machine. Second, no algorithms that can decide to kill human beings, particularly when attached to nuclear weapons. Third, a kill switch that must be activated if systems break into other computers or replicate themselves. Fourth, go beyond the voluntary steps announced last Friday: Systems that break the rules must be recalled from the market for anything from defaming real individuals to helping terrorists build biological weapons.",
+   "full_text": "Here are some more ways to, as it's said, move fast and fix things. First, an absolute right to know if one is interacting with a person or a machine. Second, no algorithms that can decide to kill human beings, particularly when attached to nuclear weapons. Third, a kill switch that must be activated if systems break into other computers or replicate themselves. Fourth, go beyond the voluntary steps announced last Friday: Systems that break the rules must be recalled from the market for anything from defaming real individuals to helping terrorists build biological weapons.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Proposes specific rules like human-machine disclosure, lethal autonomy bans, kill switches, and product recalls."
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "rejecting developer excuses and calling for provable safety",
+   "quote": "Now, developers may argue that preventing these behaviors is too hard, because LLMs have no notion of truth and are just trying to help. This is no excuse. Eventually, and the sooner the better, I would say, we will develop forms of AI that are provably safe and beneficial, which can then be mandated. Until then, we need real regulation and a pervasive culture of safety. Thank you.",
+   "full_text": "Now, developers may argue that preventing these behaviors is too hard, because LLMs have no notion of truth and are just trying to help. This is no excuse. Eventually, and the sooner the better, I would say, we will develop forms of AI that are provably safe and beneficial, which can then be mandated. Until then, we need real regulation and a pervasive culture of safety. Thank you.",
+   "open_codes": [
+    {
+     "code_id": "c014",
+     "label": "advocating for comprehensive AI legislation",
+     "rationale": "Calls for real regulation, provably safe AI systems, and a pervasive culture of safety."
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "hyper-personalized AI disinformation campaigns for elections",
+   "quote": "Yes, I would certainly like to support the remarks of the other two witnesses. And I would say my major concern with respect to elections would be disinformation and, particularly, external influence campaigns, because with these systems, we can present to the system a great deal of information about an individual, everything they've ever written or published on Twitter or Facebook, their social media presence, their floor speeches, and train the system and ask it to generate a disinformation campaign particularly for that person. And then we can do that for a million people before lunch. And that has a far greater effect than, you know, the sort of spamming and broadcasting of false information that isn't tailored to the individual.",
+   "full_text": "Yes, I would certainly like to support the remarks of the other two witnesses. And I would say my major concern with respect to elections would be disinformation and, particularly, external influence campaigns, because with these systems, we can present to the system a great deal of information about an individual, everything they've ever written or published on Twitter or Facebook, their social media presence, their floor speeches, and train the system and ask it to generate a disinformation campaign particularly for that person. And then we can do that for a million people before lunch. And that has a far greater effect than, you know, the sort of spamming and broadcasting of false information that isn't tailored to the individual.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Describes the specific threat of mass-scale, highly personalized AI disinformation campaigns targeting elections."
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Hyper-targeted AI disinformation in elections",
+   "quote": "my major concern with respect to elections would be disinformation and, particularly, external influence campaigns, because with these systems, we can present to the system a great deal of information about an individual... and ask it to generate a disinformation campaign particularly for that person. And then we can do that for a million people before lunch.",
+   "full_text": "Yes, I would certainly like to support the remarks of the other two witnesses. And I would say my major concern with respect to elections would be disinformation and, particularly, external influence campaigns, because with these systems, we can present to the system a great deal of information about an individual, everything they've ever written or published on Twitter or Facebook, their social media presence, their floor speeches, and train the system and ask it to generate a disinformation campaign particularly for that person. And then we can do that for a million people before lunch. And that has a far greater effect than, you know, the sort of spamming and broadcasting of false information that isn't tailored to the individual.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Describes how AI enables hyper-targeted disinformation campaigns at scale."
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Encrypted output escrow for machine-generated text",
+   "quote": "an important proposal from the Global Partnership on AI is actually for a kind of an escrow, an encrypted storage where every output from a model is stored in an encrypted form, enabling, for example, a platform to check whether a piece of text that's uploaded is actually machine generated",
+   "full_text": "I think labeling is important. For text, it's going to be very difficult to tell whether a short piece of text is machine generated, if someone doesn't want you to know that it's machine generated. I think an important proposal from the Global Partnership on AI is actually for a kind of an escrow, an encrypted storage where every output from a model is stored in an encrypted form, enabling, for example, a platform to check whether a piece of text that's uploaded is actually machine generated by testing it against the escrow storage without revealing private information, et cetera. So, that can be done.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Proposes an encrypted output escrow system to verify machine-generated text."
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Fragmentation of labeling standards",
+   "quote": "The effort is very fragmented, and, you know, there are as many standards as there are coalitions. I think it really needs national and probably international leadership to bring these together, to have pretty much a unified approach and standards that all organizations can sign up to.",
+   "full_text": "Another problem we face is that there are many, many extremely well-intended efforts to create standards around labeling and how platforms should respond to labels, in terms of what should be posted, and media organizations like the BBC, The New York Times, Wall Street Journal, et cetera, et cetera-- there are dozens of these coalitions. The effort is very fragmented, and, you know, there are as many standards as there are coalitions. I think it really needs national and probably international leadership to bring these together, to have pretty much a unified approach and standards that all organizations can sign up to.",
+   "open_codes": [
+    {
+     "code_id": "c044",
+     "label": "fragmentation of voluntary AI standards",
+     "rationale": "Highlights the chaotic state of industry coalitions and the need for unified standards."
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "Drawing on established audited verification structures from other sectors",
+   "quote": "I think there's a lot of experience in other spheres such as in the equity markets, in real estate, in the insurance business, where truth is absolutely essential. If you take the equity markets, if companies can make up their quarterly figures, then the equity markets collapse. And so we've developed this whole regulated third-party structure of accountants' audits",
+   "full_text": "And, third, I think there's a lot of experience in other spheres such as in the equity markets, in real estate, in the insurance business, where truth is absolutely essential. If you take the equity markets, if companies can make up their quarterly figures, then the equity markets collapse. And so we've developed this whole regulated third-party structure of accountants' audits, so that the information is reasonably trustworthy. In real estate, we have title registries, we have notaries, all kinds of stuff to make it work.",
+   "open_codes": [
+    {
+     "code_id": "c045",
+     "label": "audited verification structures in other sectors",
+     "rationale": "Compares AI verification needs to existing regulated structures in finance and real estate."
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "audited verification structures in equity markets and real estate",
+   "quote": "If you take the equity markets, if companies can make up their quarterly figures, then the equity markets collapse. And so we've developed this whole regulated third-party structure of accountants' audits, so that the information is reasonably trustworthy. In real estate, we have title registries, we have notaries, all kinds of stuff to make it work.",
+   "full_text": "And, third, I think there's a lot of experience in other spheres such as in the equity markets, in real estate, in the insurance business, where truth is absolutely essential. If you take the equity markets, if companies can make up their quarterly figures, then the equity markets collapse. And so we've developed this whole regulated third-party structure of accountants' audits, so that the information is reasonably trustworthy. In real estate, we have title registries, we have notaries, all kinds of stuff to make it work.",
+   "open_codes": [
+    {
+     "code_id": "c045",
+     "label": "audited verification structures in other sectors",
+     "rationale": "Citing accounting audits and real estate registries as verification models."
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "fragmentation of public information verification",
+   "quote": "We don't really have that structure in the public information sphere. And we see, you know, again, it's very fragmented. There's FactCheck.org, there's Snopes, there's--I suppose Elon Musk is going to have his TruthGPT, and so on.",
+   "full_text": "We don't really have that structure in the public information sphere. And we see, you know, again, it's very fragmented. There's FactCheck.org, there's Snopes, there's--I suppose Elon Musk is going to have his TruthGPT, and so on.",
+   "open_codes": [
+    {
+     "code_id": "c044",
+     "label": "fragmentation of voluntary AI standards",
+     "rationale": "Describing the fragmented landscape of fact-checking and information verification."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "government role in information licensing and standards",
+   "quote": "Again, this is something that I think governments can help, in terms of licensing and standards for how those organizations should function and, again, what platforms do with the information that the third-party institutions supply to enable users to have access to high-quality information streams. So, I think there's quite a lot we can do, but it's pretty urgent.",
+   "full_text": "Again, this is something that I think governments can help, in terms of licensing and standards for how those organizations should function and, again, what platforms do with the information that the third-party institutions supply to enable users to have access to high-quality information streams. So, I think there's quite a lot we can do, but it's pretty urgent.",
+   "open_codes": [
+    {
+     "code_id": "c032",
+     "label": "need for proactive rather than reactive regulation",
+     "rationale": "Emphasizing urgency and government standards for information quality."
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "rejecting the Ministry of Truth concept",
+   "quote": "If I just might add one point. We're absolutely not talking about a Ministry of Truth. In some sense, it's similar to what happens in the courts. The courts have standards for finding out what the truth is, but they don't say what the truth is. And that's what we need.",
+   "full_text": "If I just might add one point. We're absolutely not talking about a Ministry of Truth. In some sense, it's similar to what happens in the courts. The courts have standards for finding out what the truth is, but they don't say what the truth is. And that's what we need.",
+   "open_codes": [
+    {
+     "code_id": "c046",
+     "label": "clarifying oversight versus censorship",
+     "rationale": "Distinguishing verification standards from state censorship or dictating truth."
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "limitations of watermarks for deepfakes",
+   "quote": "And it's not going to help, just at the very end. It might, for some things, but to just say at the end, ``Oh, by the way, that was `Produced by AI.' Hope you saw our little mark at the end that says that.'' So, could you address that, Professor Russell? How, within the clear confines of the Constitution, for things like satire, we're going to have to do more than just watermarks?",
+   "full_text": "And it's not going to help, just at the very end. It might, for some things, but to just say at the end, ``Oh, by the way, that was `Produced by AI.' Hope you saw our little mark at the end that says that.'' So, could you address that, Professor Russell? How, within the clear confines of the Constitution, for things like satire, we're going to have to do more than just watermarks?",
+   "open_codes": [
+    {
+     "code_id": "c047",
+     "label": "limitations of AI watermarking",
+     "rationale": "Discussing the inadequacy of watermarks for political deepfakes."
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "guarding against government overreach in information standards",
+   "quote": "I do want to be careful not to veer into, once again, the sort of Ministry of Truth idea.",
+   "full_text": "[Respondent] I do want to be careful not to veer into, once again, the sort of Ministry of Truth idea.",
+   "open_codes": [
+    {
+     "code_id": "c046",
+     "label": "clarifying oversight versus censorship",
+     "rationale": "Reiterating caution against state overreach when discussing information controls."
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Credit card disclosure as a model for transparency",
+   "quote": "You've got to say, ``This is the interest rate, this is the grace period, this is the late fee,'' and a couple of other things, and that has to be in big print on the front of the envelope or on the front page.",
+   "full_text": "But I think clear labeling--I mean, if you look at what happened with credit cards, for example, it used to be that credit cards came with 14 pages of tiny, tiny print, and that allowed companies to rip off the consumer all the time. And eventually, Congress said no, there's got to be disclosure. You've got to say, ``This is the interest rate, this is the grace period, this is the late fee,'' and a couple of other things, and that has to be in big print on the front of the envelope or on the front page. There are very strict rules now about how you direct market credit cards and other lending products, and that's been enormously beneficial, because it actually allows competition on those primary features of the product, as opposed----",
+   "open_codes": [
+    {
+     "code_id": "c045",
+     "label": "audited verification structures in other sectors",
+     "rationale": "Drawing an analogy to mandatory financial disclosures for consumer protection."
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Proposing prominent visual labeling for machine-generated media",
+   "quote": "Right? We could say, for example, there's got to be a big red frame around the outside of the image, when it's a machine-generated image.",
+   "full_text": "Right. But the point being, we can mandate much clearer labeling than just a little thing in the corner at the end of a 90-second piece. Right? We could say, for example, there's got to be a big red frame around the outside of the image, when it's a machine-generated image.",
+   "open_codes": [
+    {
+     "code_id": "c047",
+     "label": "limitations of AI watermarking",
+     "rationale": "Advocating for prominent visual labels over inadequate watermarks."
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Platform resistance to independent research partnerships",
+   "quote": "So, our experience actually involved 3 years of negotiating an agreement with one of the large platforms, only to be told at the end that actually they didn't want to pursue this collaborative agreement after all.",
+   "full_text": "So, our experience actually involved 3 years of negotiating an agreement with one of the large platforms, only to be told at the end that actually they didn't want to pursue this collaborative agreement after all.",
+   "open_codes": [
+    {
+     "code_id": "c039",
+     "label": "value of independent academic researchers",
+     "rationale": "Sharing firsthand experience of prolonged, failed negotiations with tech platforms for research access."
+    },
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Illustrates platform resistance and bad faith in voluntary collaboration attempts."
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "Urgency of researcher access without lengthy platform delays",
+   "quote": "No, we don't.",
+   "full_text": "[Interviewer] (Senator Klobuchar) We don't really have 3 years to spare on AI, it sounds like, so----\n[Respondent] No, we don't.",
+   "open_codes": [
+    {
+     "code_id": "c032",
+     "label": "need for proactive rather than reactive regulation",
+     "rationale": "Agreeing that waiting years for voluntary platform access is unfeasible given AI's pace."
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Pattern of terminated research collaborations",
+   "quote": "And, you know, I then discussed this with the director of the digital division of OECD, and he said I was about the tenth person who had told him the same story. So, it seems there's a modus operandi of appearing to be open to collaborations with researchers, only to terminate that collaboration right before it actually begins.",
+   "full_text": "And, you know, I then discussed this with the director of the digital division of OECD, and he said I was about the tenth person who had told him the same story. So, it seems there's a modus operandi of appearing to be open to collaborations with researchers, only to terminate that collaboration right before it actually begins. There have been claims that they have provided open datasets to researchers, to allow this type of research, but I've talked to those researchers, and it hasn't happened. It's been----",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Highlights systemic obstruction by tech companies regarding research access."
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "Democratic right to know algorithmic subversion",
+   "quote": "Because the effects--for example, the social media recommender systems, they're correlated across hundreds of millions of people. So, those systems can shift public opinion in ways that are not even necessarily deliberate. They're probably not deliberate. But they can be massive and polarizing. Unless we have access to the data, which the companies internally certainly do--and I think the Facebook revelations from a few years ago suggested that they are totally aware of what's happening, but that information is not available to governments and researchers. And I think, you know, in a democracy, we have a right to know if our democracy is being subverted by an algorithm, and that seems absolutely crucial.",
+   "full_text": "Because the effects--for example, the social media recommender systems, they're correlated across hundreds of millions of people. So, those systems can shift public opinion in ways that are not even necessarily deliberate. They're probably not deliberate. But they can be massive and polarizing. Unless we have access to the data, which the companies internally certainly do--and I think the Facebook revelations from a few years ago suggested that they are totally aware of what's happening, but that information is not available to governments and researchers. And I think, you know, in a democracy, we have a right to know if our democracy is being subverted by an algorithm, and that seems absolutely crucial.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Describes how recommender systems unintentionally shift public opinion and polarize society."
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "mandatory disclosure of data harvesting",
+   "quote": "I think there needs to be absolutely a requirement to disclose if the system is harvesting the data from individual conversations.",
+   "full_text": "I think there needs to be absolutely a requirement to disclose if the system is harvesting the data from individual conversations. And my guess is that immediately people would stop using a system that says, ``I am taking your conversation. I am folding it into the next version of the model, and anyone in the country can basically listen in on this conversation because they're going to be asking questions about what I did.''",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Proposes a mandatory requirement to disclose data harvesting in AI systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "rejection of industry self-regulation",
+   "quote": "Do you think the industry is mature enough to self-regulate? [Respondent] No.",
+   "full_text": "[Interviewer] (Senator Blackburn) Do you think the industry is mature enough to self-regulate? [Respondent] No.",
+   "open_codes": [
+    {
+     "code_id": "c038",
+     "label": "necessity of government mandates for industry compliance",
+     "rationale": "Explicitly rejects industry self-regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "necessity of government mandates",
+   "quote": "It is going to be necessary for us to mandate a structure? [Respondent] Yes.",
+   "full_text": "[Interviewer] (Senator Blackburn) It is going to be necessary for us to mandate a structure? [Respondent] Yes. I think there's certainly a change of heart at OpenAI. Initially, they were harvesting the data produced by individual conversations, and then more recently they said, ``We're going to stop doing that.''",
+   "open_codes": [
+    {
+     "code_id": "c038",
+     "label": "necessity of government mandates for industry compliance",
+     "rationale": "Affirms that government-mandated structures are necessary for the industry."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Need for mandatory corporate data privacy structures",
+   "quote": "Yes. I think there's certainly a change of heart at OpenAI. Initially, they were harvesting the data produced by individual conversations, and then more recently they said, ``We're going to stop doing that.''",
+   "full_text": "[Interviewer] (Senator Blackburn) It is going to be necessary for us to mandate a structure? [Respondent] Yes. I think there's certainly a change of heart at OpenAI. Initially, they were harvesting the data produced by individual conversations, and then more recently they said, ``We're going to stop doing that.''",
+   "open_codes": [
+    {
+     "code_id": "c038",
+     "label": "necessity of government mandates for industry compliance",
+     "rationale": "Affirms the need for a mandated structure regarding AI data practices."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "Risks of corporate proprietary data leakage through chatbots",
+   "quote": "And clearly, if you're in a company, even not considering personal conversation but just in a company, and you want the system to help you with some internal operation, you're going to be divulging company proprietary information to the chatbot to get it to give you the answers you want.",
+   "full_text": "And clearly, if you're in a company, even not considering personal conversation but just in a company, and you want the system to help you with some internal operation, you're going to be divulging company proprietary information to the chatbot to get it to give you the answers you want. And if that information is then available to your competitors by simply asking ChatGPT what's going on over in that company, this would be terrible.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Highlights how chatbots inadvertently expose company proprietary data to competitors."
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "Guaranteeing oblivious data handling in AI devices",
+   "quote": "So, having a clear definition of what it is--there's a technical term, ``oblivious.'' Right? Which basically says, whatever we talk about, I am going to forget completely. Right? That's a guarantee that systems should offer.",
+   "full_text": "So, having a clear definition of what it is--there's a technical term, ``oblivious.'' Right? Which basically says, whatever we talk about, I am going to forget completely. Right? That's a guarantee that systems should offer. I actually believe that browsers and any other device that interacts with individuals should offer that as a formal guarantee.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Proposes a formal guarantee that systems completely forget user interaction data."
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "Failure of current laws and enforcement mechanisms",
+   "quote": "My estimate is that there are hundreds of billions, or possibly a trillion, Federal crimes happening every year. [Interviewer] (Senator Blackburn) Every day. Yes. So---- [Respondent] And we're not---- [Interviewer] (Senator Blackburn) You would say existing---- [Respondent] Really enforcing anything. Yes. Right.",
+   "full_text": "Let me also make the point about enforcement, which I think Senator Hawley mentioned at the beginning, a right of action. But, for example, we have a Federal Do Not Call List. So, as I understand it, it is a Federal crime for a company to do robocalls to people who are on the Federal Do Not Call list. My estimate is that there are hundreds of billions, or possibly a trillion, Federal crimes happening every year. [Interviewer] (Senator Blackburn) Every day. Yes. So---- [Respondent] And we're not---- [Interviewer] (Senator Blackburn) You would say existing---- [Respondent] Really enforcing anything. Yes. Right.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Discusses massive non-compliance and lack of enforcement under existing laws."
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "Existing laws and enforcement patterns are insufficient for AI",
+   "quote": "[Interviewer] (Senator Blackburn) Right. So, you would say existing law is not sufficient for AI? [Respondent] Correct. [Interviewer] (Senator Blackburn) Okay. [Respondent] And existing---- [Interviewer] (Senator Blackburn) All right. Let me---- [Respondent] Enforcement patterns, as well.",
+   "full_text": "[Interviewer] (Senator Blackburn) Right. So, you would say existing law is not sufficient for AI? [Respondent] Correct. [Interviewer] (Senator Blackburn) Okay. [Respondent] And existing---- [Interviewer] (Senator Blackburn) All right. Let me---- [Respondent] Enforcement patterns, as well.",
+   "open_codes": [
+    {
+     "code_id": "c014",
+     "label": "advocating for comprehensive AI legislation",
+     "rationale": "Agrees that existing laws and enforcement are insufficient for addressing AI challenges."
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "AI applications across various industries in Tennessee",
+   "quote": "In Tennessee, AI is important. Our auto industry uses so many AI applications, you know, and we followed this issue for quite a period of time, because of the auto industry, because of the healthcare industry and the healthcare technology industry that is headquartered in Nashville.",
+   "full_text": "[Interviewer] (Senator Blackburn) Yes. Let me move on. In Tennessee, AI is important. Our auto industry uses so many AI applications, you know, and we followed this issue for quite a period of time, because of the auto industry, because of the healthcare industry and the healthcare technology industry that is headquartered in Nashville. And, of course, predictive diagnosis, disease analysis, research, pharmaceutical research benefits tremendously from AI.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "societal reach of algorithmic decisions",
+     "rationale": "Describes widespread AI deployment across the auto, healthcare, and research sectors."
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "Creative community facing livelihood threats from AI voice cloning",
+   "quote": "And then you look at the entertainment industry and the voice cloning, and you look at what our entertainers, our songwriters, our artists, our authors, our publishers, our TV actors, our TV producers are facing with AI, and to them, it is an absolute way that they're robbing them of their ability to make a living off of their creative work.",
+   "full_text": "And then you look at the entertainment industry and the voice cloning, and you look at what our entertainers, our songwriters, our artists, our authors, our publishers, our TV actors, our TV producers are facing with AI, and to them, it is an absolute way that they're robbing them of their ability to make a living off of their creative work. So, our creative community has a different set of issues.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Details how generative AI and voice cloning threaten creators' livelihoods."
+    }
+   ]
+  },
+  {
+   "segment_id": "S038",
+   "title": "Algorithmic bias in music streaming playlists",
+   "quote": "She had to refresh that 13 times before a song by a female artist came up--13 times. So, you look at the power of AI to shape what people are hearing.",
+   "full_text": "Martina McBride, who is no stranger to country music, went in to Spotify. And the playlists are a big thing, building your own playlist. So, she was going to build a country music playlist out of Spotify. She had to refresh that 13 times before a song by a female artist came up--13 times. So, you look at the power of AI to shape what people are hearing.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Algorithmic playlists systematically excluding female artists."
+    }
+   ]
+  },
+  {
+   "segment_id": "S039",
+   "title": "Impact of algorithmic curation on new artists",
+   "quote": "But if you've got these algorithmically AI-generated playlists that cut out new artists or females or certain sounds, then you are limiting someone's potential, just as if you allow AI-generated content like on Jukebox, which OpenAI is experimenting with, and you train it on that artist's sound and their songs to imitate them, then you are robbing them of the ability to be compensated.",
+   "full_text": "But in Nashville, we like to say you can go on Lower Broad, you can go to one of the honky-tonks, your band can have a great night, you can be discovered, and you, too, could end up with a record deal. But if you've got these algorithmically AI-generated playlists that cut out new artists or females or certain sounds, then you are limiting someone's potential, just as if you allow AI-generated content like on Jukebox, which OpenAI is experimenting with, and you train it on that artist's sound and their songs to imitate them, then you are robbing them of the ability to be compensated.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Algorithms limiting potential and mimicking artists without compensation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S040",
+   "title": "Copyright law inadequacy for generative AI",
+   "quote": "And I'm not really an expert on copyright at all, but some of my colleagues are, like Pam Samuelson, for example, and I think she would be a great witness for a future hearing. And I think the view is that the law, as it's written, simply wasn't ready for this kind of thing to be possible.",
+   "full_text": "I think this is a very important issue. I think it also applies to book authors, some of whom are suing OpenAI. And I'm not really an expert on copyright at all, but some of my colleagues are, like Pam Samuelson, for example, and I think she would be a great witness for a future hearing. And I think the view is that the law, as it's written, simply wasn't ready for this kind of thing to be possible. So, if by accident the system produces a song that has the same melody, then it's going to fall under existing law, that you're basically plagiarizing. And there have been cases of human plagiarism----",
+   "open_codes": [
+    {
+     "code_id": "c019",
+     "label": "acknowledging domain expertise limits",
+     "rationale": "Witness defers to other experts regarding copyright law."
+    }
+   ]
+  },
+  {
+   "segment_id": "S041",
+   "title": "Mathematical guarantees for AI safety",
+   "quote": "I think there are a number of approaches that are promising. I tend toward approaches that provide mathematical guarantees rather than just best-effort guarantees.",
+   "full_text": "Yes. So, I completely agree that if there is a body that's set up, that it should be enabled to fund and coordinate this type of research, and I completely agree with the other witnesses that we haven't solved the problem yet. I think there are a number of approaches that are promising. I tend toward approaches that provide mathematical guarantees rather than just best-effort guarantees.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Advocating for mathematical guarantees rather than best-effort AI safety."
+    }
+   ]
+  },
+  {
+   "segment_id": "S042",
+   "title": "Drawing lessons from nuclear safety standards",
+   "quote": "And, you know, we've seen that in the nuclear area, where originally the standard, I believe, was, you know, you could have a major core accident every 10,000 years, and you had to demonstrate that your system design met that requirement.",
+   "full_text": "And, you know, we've seen that in the nuclear area, where originally the standard, I believe, was, you know, you could have a major core accident every 10,000 years, and you had to demonstrate that your system design met that requirement. You know, then it was a million years, and now it's 10 million years. And so that's progress, and it comes from actually having a real scientific understanding of the materials, the designs, redundancy, et cetera. And we are just in the infant stages of a corresponding understanding of the AI systems that we're building.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "need for guardrails in AI technology",
+     "rationale": "Comparing AI development and safety standards to the nuclear industry."
+    }
+   ]
+  },
+  {
+   "segment_id": "S043",
+   "title": "Resource disparity between AI startups and government",
+   "quote": "I would also say that no Government agency is going to be able to match the resources that are going into the creation of these AI systems.",
+   "full_text": "I would also say that no Government agency is going to be able to match the resources that are going into the creation of these AI systems. The numbers I've seen are roughly $10 billion a month going into AGI startups. And just for comparison, that's about 10 times the amount of the entire National Science Foundation of the United States, which has to cover physics, chemistry, basic biology, et cetera, et cetera, et cetera.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Highlighting massive private capital investments in AGI compared to limited public agency funding."
+    }
+   ]
+  },
+  {
+   "segment_id": "S044",
+   "title": "Using involuntary recalls to incentivize safety",
+   "quote": "So, how do we get that resource flow directed toward safety? I actually believe that the involuntary recall provisions that I mentioned would have that effect because if a company puts out a system that violates one of the rules and then is recalled until the company can demonstrate that it will never do that again, then the company can go out of business.",
+   "full_text": "So, how do we get that resource flow directed toward safety? I actually believe that the involuntary recall provisions that I mentioned would have that effect because if a company puts out a system that violates one of the rules and then is recalled until the company can demonstrate that it will never do that again, then the company can go out of business. So, they have a very strong incentive to actually understand how their systems work and, if they can't, to redesign their systems so that they do understand how they work. That just seems like basic common sense to me.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Proposing involuntary recall provisions as a mechanism for industry accountability."
+    }
+   ]
+  },
+  {
+   "segment_id": "S045",
+   "title": "Flipping digital permissions for security",
+   "quote": "The system should not run any piece of binary code unless it can prove to itself that this is a safe piece of code to run. So, it's sort of flipping the notion of permission, and with that approach, I think we could actually have a chance of preventing bad actors from being able to circumvent these controls",
+   "full_text": "I also want to mention, on rogue AI, right, the bad actors--Professor Bengio has mentioned an approach based on AI systems that are developed to try to counteract that possibility. But I also feel that we may end up needing a very different kind of digital ecosystem, in general. What do I mean by that? Right now, to a first approximation, a computer runs any piece of binary code that you load into it. We put layers on top of that that say, ``Okay, that looks like a virus. I'm not running that.'' We actually need to go the other way around. The system should not run any piece of binary code unless it can prove to itself that this is a safe piece of code to run. So, it's sort of flipping the notion of permission, and with that approach, I think we could actually have a chance of preventing bad actors from being able to circumvent these controls, because for them to develop their own hardware resources is into the tens or hundreds of billions of dollars. And so that's an approach I would recommend.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Proposing a fundamental redesign of the digital ecosystem where code must prove safety before execution."
+    }
+   ]
+  },
+  {
+   "segment_id": "S046",
+   "title": "geopolitical risks and semiconductor supply chain vulnerability",
+   "quote": "There are already plans to diversify away from Taiwan. TSMC is trying to create a plant in the U.S. Intel is now building some very large plants in the U.S. and in Germany, I believe, so--but it's taking time. I think if the invasion that you mention happened tomorrow, we would be in a huge amount of trouble.",
+   "full_text": "Yes. I mean, there are studies. My colleague Orville Schell, who is a China expert, has been working on a study of these issues. There are already plans to diversify away from Taiwan. TSMC is trying to create a plant in the U.S. Intel is now building some very large plants in the U.S. and in Germany, I believe, so--but it's taking time. I think if the invasion that you mention happened tomorrow, we would be in a huge amount of trouble. As far as I understand it, there are plans to sabotage all the TSMC operations in Taiwan, if an invasion were to take place. So, it's not that all that capacity would then be taken over by China.",
+   "open_codes": [
+    {
+     "code_id": "c041",
+     "label": "international allied cooperation for AI safety",
+     "rationale": "Discussing geopolitical supply chain diversification for hardware and chips related to AI development."
+    }
+   ]
+  },
+  {
+   "segment_id": "S047",
+   "title": "comparing AI development to an unregulated gold rush",
+   "quote": "We right now have a gold rush, literally much like the Gold Rush that we had in the Wild West, where, in fact, there are no rules, and everybody's trying to get to the gold without very many law enforcers out there preventing the kinds of crimes that can occur.",
+   "full_text": "[Interviewer] (Chair Blumenthal) But we need to train workers to do these jobs. And for those who want to pause, and some of the experts have written that we should pause AI development, I don't think it's going to happen. We right now have a gold rush, literally much like the Gold Rush that we had in the Wild West, where, in fact, there are no rules, and everybody's trying to get to the gold without very many law enforcers out there preventing the kinds of crimes that can occur. So, I am totally in agreement with Senator Hawley in focusing on keeping it in America, made in America, when we're talking about AI, and I think he is absolutely right that we need to build those kinds of structures, provide the training and incentives that enable it and enforce it.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "need for guardrails in AI technology",
+     "rationale": "Describing the current lack of rules in AI as a lawless gold rush requiring law enforcement structures."
+    }
+   ]
+  },
+  {
+   "segment_id": "S048",
+   "title": "identifying the UK as a top AI research competitor",
+   "quote": "So, I think the closest competitor we have is probably the UK, in terms of making advances in basic research, both in academia and in DeepMind, in particular, which is based in London, now being merged more forcefully into the larger Google organization.",
+   "full_text": "[Interviewer] (Chair Blumenthal) Let me, though, come back to this issue of national security. Who are our competitors, among our adversaries and our allies? Who are closest to the United States in terms of developing AI? Is it China? Are there other adversaries out there that could be rogue nations, not just rogue actors but rogue nations, and whom we need to bring into some international body of cooperation? [Respondent] So, I think the closest competitor we have is probably the UK, in terms of making advances in basic research, both in academia and in DeepMind, in particular, which is based in London, now being merged more forcefully into the larger Google organization. But they have a very distinct approach, and they've created an ecosystem in the UK that's really quite productive.",
+   "open_codes": [
+    {
+     "code_id": "c041",
+     "label": "international allied cooperation for AI safety",
+     "rationale": "Identifying the UK as a key ally and competitor in AI research and ecosystem development."
+    }
+   ]
+  },
+  {
+   "segment_id": "S049",
+   "title": "Assessment of Chinese AI capabilities",
+   "quote": "I've spent a fair amount of time in China. I was there a month ago, talking to the major institutions that are working on AGI. And my sense is that we've slightly overstated the level of threat that they currently present. They've mostly been building copycat systems that turn out not to be nearly as good as the systems that are coming out from Anthropic and OpenAI and Google.",
+   "full_text": "I've spent a fair amount of time in China. I was there a month ago, talking to the major institutions that are working on AGI. And my sense is that we've slightly overstated the level of threat that they currently present. They've mostly been building copycat systems that turn out not to be nearly as good as the systems that are coming out from Anthropic and OpenAI and Google. But the intent is definitely there. I mean, they publicly stated their goal to be the world leader, and they are investing probably larger sums of public money than we are in the U.S., smaller sums in the private sector.",
+   "open_codes": [
+    {
+     "code_id": "c041",
+     "label": "international allied cooperation for AI safety",
+     "rationale": "Evaluates China's AI development relative to the US."
+    }
+   ]
+  },
+  {
+   "segment_id": "S050",
+   "title": "Chinese state security applications",
+   "quote": "The areas where they are actually most effective--and I was actually on a panel in Tianjin for the top 50 Chinese AI startups, and they were giving out awards. But I think about 40 of those 50, their primary customer was state security. So, they're extremely good at voice recognition, face recognition, tracking and recognition of humans based on gait, and similar capabilities that are useful for state security.",
+   "full_text": "The areas where they are actually most effective--and I was actually on a panel in Tianjin for the top 50 Chinese AI startups, and they were giving out awards. But I think about 40 of those 50, their primary customer was state security. So, they're extremely good at voice recognition, face recognition, tracking and recognition of humans based on gait, and similar capabilities that are useful for state security.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": ""
+    },
+    {
+     "code_id": "c048",
+     "label": "authoritarian AI surveillance applications",
+     "rationale": "Describes Chinese startups focusing on facial recognition and tracking for state security."
+    }
+   ]
+  },
+  {
+   "segment_id": "S051",
+   "title": "Limitations in Chinese basic research",
+   "quote": "Other areas like reasoning and so on, planning--they're just not in--they're not really that close. They have a pretty good academic sector, that they are in the process of ruining by forcing them to meet numerical publication targets and things like that. They don't give people the freedom to think hard about the most important problems, and they are not producing the basic research breakthroughs that we've seen both in the academic and the private sector in the U.S.",
+   "full_text": "Other areas like reasoning and so on, planning--they're just not in--they're not really that close. They have a pretty good academic sector, that they are in the process of ruining by forcing them to meet numerical publication targets and things like that. They don't give people the freedom to think hard about the most important problems, and they are not producing the basic research breakthroughs that we've seen both in the academic and the private sector in the U.S. I'm also----",
+   "open_codes": [
+    {
+     "code_id": "c048",
+     "label": "authoritarian AI surveillance applications",
+     "rationale": "Highlights how bureaucratic controls and lack of freedom hinder basic research in China."
+    }
+   ]
+  },
+  {
+   "segment_id": "S052",
+   "title": "Global landscape of AI research",
+   "quote": "You know, I've also looked a lot at European countries. I'm working with the French government quite a bit, and I don't think anywhere else is in the same league as those three. Russia, in particular, has been completely denuded of its experts and was already well behind.",
+   "full_text": "[Interviewer] (Chair Blumenthal) Hard to produce a superhuman thinking machine if you don't allow humans to think.\n[Respondent] Yup. You know, I've also looked a lot at European countries. I'm working with the French government quite a bit, and I don't think anywhere else is in the same league as those three. Russia, in particular, has been completely denuded of its experts and was already well behind.",
+   "open_codes": [
+    {
+     "code_id": "c041",
+     "label": "international allied cooperation for AI safety",
+     "rationale": "Discusses global standing of European countries, France, and Russia in AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S053",
+   "title": "Reporting step for AI oversight",
+   "quote": "Yes. I think, to go along with the notion of an involuntary recall, there has to be that reporting step happening first.",
+   "full_text": "[Interviewer] (Chair Blumenthal) And it may be obvious, but let me ask all of you. I see, again, your heads nodding, for the record. Would that inhibit creativity or innovation, to have that kind of requirement? I would think not.\n[Respondent] Yes. I think, to go along with the notion of an involuntary recall, there has to be that reporting step happening first.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Discusses mandatory reporting steps to support oversight mechanisms like involuntary recall."
+    }
+   ]
+  },
+  {
+   "segment_id": "S054",
+   "title": "necessity of a dedicated regulatory agency for AI",
+   "quote": "So, I gave some, you know, ``move fast and fix things'' recommendations in my opening remarks, and I think there's no doubt that we're going to have to have an agency. You know, if things go as expected, AI is going to end up being responsible for the majority of economic output in the United States. So, it cannot be the case that there's no overall regulatory agency for this technology.",
+   "full_text": "[Interviewer] (Senator Hawley) This has been a tremendously helpful hearing. I just want to thank each of you, again, for taking the time to be here. Can I just ask you, if you could give us your one or, at most, two recommendations for what you think Congress ought to do right now, what should we do right now, based on your expertise, what we've talked about today? I would be very, very curious to hear. So maybe we'll start with you, Professor Russell, and go that way.\n[Respondent] So, I gave some, you know, ``move fast and fix things'' recommendations in my opening remarks, and I think there's no doubt that we're going to have to have an agency. You know, if things go as expected, AI is going to end up being responsible for the majority of economic output in the United States. So, it cannot be the case that there's no overall regulatory agency for this technology.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "designating federal agencies for AI oversight",
+     "rationale": "Argues for establishing a regulatory agency due to AI's massive future economic role."
+    }
+   ]
+  },
+  {
+   "segment_id": "S055",
+   "title": "removing harmful AI systems stimulates safe research",
+   "quote": "And the second thing, I think, would be just to focus, again, on systems that violate a certain set of unacceptable behaviors are removed from the market. And I think that will have not only a benefit in terms of protecting the American people and our national security, but also stimulating a great deal of research on ensuring that the AI systems are well understood, predictable, controllable. And that's it.",
+   "full_text": "And the second thing, I think, would be just to focus, again, on systems that violate a certain set of unacceptable behaviors are removed from the market. And I think that will have not only a benefit in terms of protecting the American people and our national security, but also stimulating a great deal of research on ensuring that the AI systems are well understood, predictable, controllable. And that's it. Thank you.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Recommends removing systems that violate unacceptable behaviors from the market."
+    }
+   ]
+  },
+  {
+   "segment_id": "S056",
+   "title": "importance of tracing AI model provenance",
+   "quote": "So, one issue is being able to trace the provenance of--from the output that is problematic, through to which model was used to create it, through to where did that model come from?",
+   "full_text": "[Interviewer] (Chair Blumenthal) And I think the comparison is apt. You know, I've been reading the most recent biography of Robert Oppenheimer, and every time I think about AI, the specter of quantum physics, nuclear bombs, but also atomic energy, both peaceful and military purposes, is inescapable.\n[Respondent] So, I'd just like to add a couple of points. I agree with everything the other witnesses said. So, one issue is being able to trace the provenance of--from the output that is problematic, through to which model was used to create it, through to where did that model come from?",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Advocates for tracing the origin and model source of problematic AI outputs."
+    }
+   ]
+  },
+  {
+   "segment_id": "S057",
+   "title": "corporate liability for dangerous technology using nuclear analogy",
+   "quote": "And a second point is about liability. And it's not completely clear where exactly the liability should lie. But to continue the nuclear analogy, if a corporation decided they wanted to sell a lot of enriched uranium in supermarkets, and someone decided to take that enriched uranium and buy several pounds of it and make a bomb, we say that some liability should reside with the company that decided to sell the enriched uranium. They could put advice on it saying, ``Do not use more than,'' you know, ``three ounces of this in one place,'' or something. But no one's going to say that that absolves them from liability.",
+   "full_text": "And a second point is about liability. And it's not completely clear where exactly the liability should lie. But to continue the nuclear analogy, if a corporation decided they wanted to sell a lot of enriched uranium in supermarkets, and someone decided to take that enriched uranium and buy several pounds of it and make a bomb, we say that some liability should reside with the company that decided to sell the enriched uranium. They could put advice on it saying, ``Do not use more than,'' you know, ``three ounces of this in one place,'' or something. But no one's going to say that that absolves them from liability.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Discusses corporate liability and accountability using a nuclear material analogy."
+    },
+    {
+     "code_id": "c011",
+     "label": "mechanisms of AI system failure",
+     "rationale": "Discusses liability and safety regarding the distribution of hazardous materials or technology."
+    }
+   ]
+  },
+  {
+   "segment_id": "S058",
+   "title": "open source community liability",
+   "quote": "So, I think those two are really important. And the open source community has got to start thinking about whether they should be liable for putting stuff out there that is ripe for misuse.",
+   "full_text": "So, I think those two are really important. And the open source community has got to start thinking about whether they should be liable for putting stuff out there that is ripe for misuse.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposed requirements for high-impact AI systems",
+     "rationale": "Calls for considering legal liability for releasing technology susceptible to misuse."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_173944",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 14,
+   "n_ok": 14
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 6,
+    "created": 2,
+    "chunk": 1
+   },
+   {
+    "reused": 2,
+    "created": 2,
+    "chunk": 2
+   },
+   {
+    "reused": 4,
+    "created": 2,
+    "chunk": 3
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 4
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 6
+   },
+   {
+    "reused": 7,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 8
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 9
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 10
+   },
+   {
+    "reused": 6,
+    "created": 1,
+    "chunk": 11
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 12
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 13
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg53503 — Stuart Russell, Professor Of Computer Science, University Of California, Berkeley\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg53503  |  Oversight Of A.I.: Principles For Regulation  |  Senate, Subcommittee On Privacy, Technology, And The Law / Committee On The Judiciary  |  2023-07-25  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chair Blumenthal) Thank you very much, Professor. Professor Russell?\n[Respondent] Thank you, Chair Blumenthal and Ranking Member Hawley and Members of the Subcommittee, for the invitation to speak today and for your excellent work on this vital issue. AI, as we all know, is the study of how to make machines intelligent. Its stated goal is general purpose artificial intelligence, sometimes called AGI or artificial general intelligence, machines that match or exceed human capabilities in every relevant dimension.\nThe last 80 years have seen a lot of progress toward that goal. For most of that time, we created systems whose internal operations we understood, drawing on centuries of work in mathematics, statistics, philosophy, and operations research. Over the last decade, that has changed. Beginning with vision and speech recognition and now with language, the dominant approach has been end-to-end training of circuits with billions or trillions of adjustable parameters. The success of these systems is undeniable, but their internal principles of operation remain a mystery. This is particularly true for the large language models, or LLMs, such as ChatGPT.\nMany researchers now see AGI on the horizon. In my view, LLMs do not constitute AGI, but they are a piece of the puzzle. We're not sure what shape the piece is yet or how it fits into the puzzle, but the field is working hard on those questions, and progress is rapid. If we succeed, the upside could be enormous. I've estimated a cash value of at least $14 quadrillion for this technology, a huge magnet in the future pulling us forward.\nOn the other hand, Alan Turing, the founder of computer science, warned in 1951 that once AI outstrips our feeble powers, we should have to expect the machines to take control. We have pretty much completely ignored this warning. It's as if an alien civilization warned us by email of its impending arrival, and we replied, ``Humanity is currently out of the office.'' Fortunately, humanity is now back in the office and has read the email from the aliens.\nOf course, many of the risks from AI are well recognized already, including bias, disinformation, manipulation, and impacts on employment. I'm happy to discuss any of these, but most of my work over the last decade has been on the problem of control: How do we maintain power forever over entities more powerful than ourselves?\nThe core problem we have studied comes from AI systems pursuing fixed objectives that are mis-specified, the so-called King Midas problem. For example, social media algorithms were trained to maximize clicks and learned to do so by manipulating human users and polarizing societies. But with LLMs, we don't even know what their objectives are. They learn to imitate humans and probably absorb all-too-human goals in the process.\nNow, regulation is often said to stifle innovation, but there is no real tradeoff between safety and innovation. An AI system that harms human beings is simply not good AI. And I believe analytic predictability is as essential for safe AI as it is for the autopilot on an airplane. This Committee has discussed ideas such as third-party testing, licensing, national agency, an international coordinating body--all of which I support.\nHere are some more ways to, as it's said, move fast and fix things. First, an absolute right to know if one is interacting with a person or a machine. Second, no algorithms that can decide to kill human beings, particularly when attached to nuclear weapons. Third, a kill switch that must be activated if systems break into other computers or replicate themselves. Fourth, go beyond the voluntary steps announced last Friday: Systems that break the rules must be recalled from the market for anything from defaming real individuals to helping terrorists build biological weapons.\nNow, developers may argue that preventing these behaviors is too hard, because LLMs have no notion of truth and are just trying to help. This is no excuse. Eventually, and the sooner the better, I would say, we will develop forms of AI that are provably safe and beneficial, which can then be mandated. Until then, we need real regulation and a pervasive culture of safety. Thank you.\n[Interviewer] (Chair Blumenthal) Professor Russell?\n[Respondent] Yes, I would certainly like to support the remarks of the other two witnesses. And I would say my major concern with respect to elections would be disinformation and, particularly, external influence campaigns, because with these systems, we can present to the system a great deal of information about an individual, everything they've ever written or published on Twitter or Facebook, their social media presence, their floor speeches, and train the system and ask it to generate a disinformation campaign particularly for that person. And then we can do that for a million people before lunch. And that has a far greater effect than, you know, the sort of spamming and broadcasting of false information that isn't tailored to the individual.\nI think labeling is important. For text, it's going to be very difficult to tell whether a short piece of text is machine generated, if someone doesn't want you to know that it's machine generated. I think an important proposal from the Global Partnership on AI is actually for a kind of an escrow, an encrypted storage where every output from a model is stored in an encrypted form, enabling, for example, a platform to check whether a piece of text that's uploaded is actually machine generated by testing it against the escrow storage without revealing private information, et cetera. So, that can be done.\nAnother problem we face is that there are many, many extremely well-intended efforts to create standards around labeling and how platforms should respond to labels, in terms of what should be posted, and media organizations like the BBC, The New York Times, Wall Street Journal, et cetera, et cetera-- there are dozens of these coalitions. The effort is very fragmented, and, you know, there are as many standards as there are coalitions. I think it really needs national and probably international leadership to bring these together, to have pretty much a unified approach and standards that all organizations can sign up to.\nAnd, third, I think there's a lot of experience in other spheres such as in the equity markets, in real estate, in the insurance business, where truth is absolutely essential. If you take the equity markets, if companies can make up their quarterly figures, then the equity markets collapse. And so we've developed this whole regulated third-party structure of accountants' audits, so that the information is reasonably trustworthy. In real estate, we have title registries, we have notaries, all kinds of stuff to make it work.\nWe don't really have that structure in the public information sphere. And we see, you know, again, it's very fragmented. There's FactCheck.org, there's Snopes, there's--I suppose Elon Musk is going to have his TruthGPT, and so on. Again, this is something that I think governments can help, in terms of licensing and standards for how those organizations should function and, again, what platforms do with the information that the third-party institutions supply to enable users to have access to high-quality information streams. So, I think there's quite a lot we can do, but it's pretty urgent.\n[Interviewer] (Chair Blumenthal) Thank you. I think all of these points argue very, very powerfully against fragmentation, for some kind of single entity that would establish oversight standards, enforcement of rules, because as you say, malign actors can not only eliminate quarterly reports, they can also make up numbers for corporations that can disastrously impact the stock of the corporation. I'm going to call Mr.----\n[Respondent] If I just might add one point. We're absolutely not talking about a Ministry of Truth. In some sense, it's similar to what happens in the courts. The courts have standards for finding out what the truth is, but they don't say what the truth is. And that's what we need.\n[Interviewer] (Senator Klobuchar) Thank you very much. So, I chair the Rules Committee, and we're working on a number of pieces of legislation, and I've really appreciated working with Senator Hawley on some of this. But one bill is, you know, watermarks and making sure that the election materials say, ``Produced by AI.'' But I don't think that's enough, when you look at the fact that someone's going to watch a fake Joe Biden or a fake Donald Trump or a fake Elizabeth Warren--all of this has really happened--and then not know who the person is and not know if it's really them.\nAnd it's not going to help, just at the very end. It might, for some things, but to just say at the end, ``Oh, by the way, that was `Produced by AI.' Hope you saw our little mark at the end that says that.''\nSo, could you address that, Professor Russell? How, within the clear confines of the Constitution, for things like satire, we're going to have to do more than just watermarks?\n[Respondent] I do want to be careful not to veer into, once again, the sort of Ministry of Truth idea.\n[Interviewer] (Senator Klobuchar) Mm-hmm.\n[Respondent] But I think clear labeling--I mean, if you look at what happened with credit cards, for example, it used to be that credit cards came with 14 pages of tiny, tiny print, and that allowed companies to rip off the consumer all the time. And eventually, Congress said no, there's got to be disclosure. You've got to say, ``This is the interest rate, this is the grace period, this is the late fee,'' and a couple of other things, and that has to be in big print on the front of the envelope or on the front page. There are very strict rules now about how you direct market credit cards and other lending products, and that's been enormously beneficial, because it actually allows competition on those primary features of the product, as opposed----\n[Interviewer] (Senator Klobuchar) Yes, but you can't really compare a credit card to someone who's telling the United States of America that there's some kind of a nuclear explosion when there isn't.\n[Respondent] Right. But the point being, we can mandate much clearer labeling than just a little thing in the corner at the end of a 90-second piece. Right? We could say, for example, there's got to be a big red frame around the outside of the image, when it's a machine-generated image.\n[Interviewer] (Senator Klobuchar) Okay. One last thing I wanted to ask about here is just the ability of researchers to be able to figure out what is going on, and there's a bill that a number of us are supporting, including Senator Blumenthal, that allows for researchers the transparency that we need, and including Senators Cassidy, Cornyn, Coons, and Romney. It's called the Platform Accountability and Transparency Act, to require social media companies to share data with researchers, so we can try to figure out what's happening with the algorithms and the like. Dr. Russell, why is researcher access to social media platform data so important for regulating AI?\n[Respondent] So, our experience actually involved 3 years of negotiating an agreement with one of the large platforms, only to be told at the end that actually they didn't want to pursue this collaborative agreement after all.\n[Interviewer] (Senator Klobuchar) We don't really have 3 years to spare on AI, it sounds like, so----\n[Respondent] No, we don't.\n[Interviewer] (Senator Klobuchar) Continue on. Yes.\n[Respondent] And, you know, I then discussed this with the director of the digital division of OECD, and he said I was about the tenth person who had told him the same story. So, it seems there's a modus operandi of appearing to be open to collaborations with researchers, only to terminate that collaboration right before it actually begins. There have been claims that they have provided open datasets to researchers, to allow this type of research, but I've talked to those researchers, and it hasn't happened. It's been----\n[Interviewer] (Senator Klobuchar) And why is it----\n[Respondent] Extraordinarily difficult.\n[Interviewer] (Senator Klobuchar) So important to have it put in place, these regulations? We know we'll be--we can't wait for you to get all the data, obviously, and we can't let it take 3 years, but putting in place a clear mandate that that data be shared--why is that helpful?\n[Respondent] Because the effects--for example, the social media recommender systems, they're correlated across hundreds of millions of people. So, those systems can shift public opinion in ways that are not even necessarily deliberate. They're probably not deliberate. But they can be massive and polarizing. Unless we have access to the data, which the companies internally certainly do--and I think the Facebook revelations from a few years ago suggested that they are totally aware of what's happening, but that information is not available to governments and researchers. And I think, you know, in a democracy, we have a right to know if our democracy is being subverted by an algorithm, and that seems absolutely crucial.\n[Interviewer] (Senator Blackburn) Thank you, Mr. Chairman, and thank you all for being here. Mr. Amodei, I think you got a little aggravated trying to answer Senator Hawley's question about something you may create that you think of as an ethical use. But let me tell you why this bothers us, the unethical use.\nSenator Blumenthal and I have worked together for nearly 4 years on looking at social media and the harms that have happened to our Nation's youth, and hopefully, this week our Kids Online Safety Act comes out of Committee.\nIt wasn't intended. Social media wasn't intended--the intent was not to harm children, cause mental health crisis, put children in touch with drug dealers and pedophiles. But we have heard story after story and have uncovered instance after instance where the technology was used in a way that nobody ever thought it was, and now we're trying to clean it up, because we've not put the right guardrails in place. So, as we look at AI, the guardrails are very important.\nAnd, Professor Russell, I want to come to you, because the U.S. is behind the--we're really behind our colleagues in the EU, the UK, New Zealand, Australia, Canada, when it comes to online consumer privacy and having a way for consumers to protect that name, image, voice; having a way for them to protect their data, their writings, so that AI is not trained on their data. So, talk for just a minute about how we keep our position as a global leader in generative AI and, at the same time, protect consumer privacy. Would a Federal privacy standard help? What are your recommendations there?\n[Respondent] I think there needs to be absolutely a requirement to disclose if the system is harvesting the data from individual conversations. And my guess is that immediately people would stop using a system that says, ``I am taking your conversation. I am folding it into the next version of the model, and anyone in the country can basically listen in on this conversation because they're going to be asking questions about what I did.''\n[Interviewer] (Senator Blackburn) Let me ask you this.\n[Respondent] Yes.\n[Interviewer] (Senator Blackburn) Do you think the industry is mature enough to self-regulate?\n[Respondent] No.\n[Interviewer] (Senator Blackburn) You do not. So, therefore----\n[Respondent] No.\n[Interviewer] (Senator Blackburn) It is going to be necessary for us to mandate a structure?\n[Respondent] Yes. I think there's certainly a change of heart at OpenAI. Initially, they were harvesting the data produced by individual conversations, and then more recently they said, ``We're going to stop doing that.''\nAnd clearly, if you're in a company, even not considering personal conversation but just in a company, and you want the system to help you with some internal operation, you're going to be divulging company proprietary information to the chatbot to get it to give you the answers you want. And if that information is then available to your competitors by simply asking ChatGPT what's going on over in that company, this would be terrible.\nSo, having a clear definition of what it is--there's a technical term, ``oblivious.'' Right? Which basically says, whatever we talk about, I am going to forget completely. Right? That's a guarantee that systems should offer. I actually believe that browsers and any other device that interacts with individuals should offer that as a formal guarantee.\nLet me also make the point about enforcement, which I think Senator Hawley mentioned at the beginning, a right of action. But, for example, we have a Federal Do Not Call List. So, as I understand it, it is a Federal crime for a company to do robocalls to people who are on the Federal Do Not Call list. My estimate is that there are hundreds of billions, or possibly a trillion, Federal crimes happening every year.\n[Interviewer] (Senator Blackburn) Every day. Yes. So----\n[Respondent] And we're not----\n[Interviewer] (Senator Blackburn) You would say existing----\n[Respondent] Really enforcing anything. Yes. Right.\n[Interviewer] (Senator Blackburn) Right. So, you would say existing law is not sufficient for AI?\n[Respondent] Correct.\n[Interviewer] (Senator Blackburn) Okay.\n[Respondent] And existing----\n[Interviewer] (Senator Blackburn) All right. Let me----\n[Respondent] Enforcement patterns, as well.\n[Interviewer] (Senator Blackburn) Yes. Let me move on. In Tennessee, AI is important. Our auto industry uses so many AI applications, you know, and we followed this issue for quite a period of time, because of the auto industry, because of the healthcare industry and the healthcare technology industry that is headquartered in Nashville. And, of course, predictive diagnosis, disease analysis, research, pharmaceutical research benefits tremendously from AI.\nAnd then you look at the entertainment industry and the voice cloning, and you look at what our entertainers, our songwriters, our artists, our authors, our publishers, our TV actors, our TV producers are facing with AI, and to them, it is an absolute way that they're robbing them of their ability to make a living off of their creative work. So, our creative community has a different set of issues.\nMartina McBride, who is no stranger to country music, went in to Spotify. And the playlists are a big thing, building your own playlist. So, she was going to build a country music playlist out of Spotify. She had to refresh that 13 times before a song by a female artist came up--13 times. So, you look at the power of AI to shape what people are hearing.\nAnd in Nashville, we like to say you can go on Lower Broad, you can go to one of the honky-tonks, your band can have a great night, you can be discovered, and you, too, could end up with a record deal.\nBut if you've got these algorithmically AI-generated playlists that cut out new artists or females or certain sounds, then you are limiting someone's potential, just as if you allow AI-generated content like on Jukebox, which OpenAI is experimenting with, and you train it on that artist's sound and their songs to imitate them, then you are robbing them of the ability to be compensated.\nSo, how do we ensure that that creative community is still going to have a way to make a living without having AI become a way to steal their creative talents and works?\n[Respondent] I think this is a very important issue. I think it also applies to book authors, some of whom are suing OpenAI. And I'm not really an expert on copyright at all, but some of my colleagues are, like Pam Samuelson, for example, and I think she would be a great witness for a future hearing. And I think the view is that the law, as it's written, simply wasn't ready for this kind of thing to be possible. So, if by accident the system produces a song that has the same melody, then it's going to fall under existing law, that you're basically plagiarizing. And there have been cases of human plagiarism----\n[Interviewer] (Senator Blackburn) Well, we've just----\n[Respondent] That have succeeded.\n[Interviewer] (Senator Blackburn) We've explored the fair use issue----\n[Respondent] Yes.\n[Interviewer] (Chair Blumenthal) Thank you very much. I'll turn to Professor Russell, if you have a comment.\n[Respondent] Yes. So, I completely agree that if there is a body that's set up, that it should be enabled to fund and coordinate this type of research, and I completely agree with the other witnesses that we haven't solved the problem yet. I think there are a number of approaches that are promising. I tend toward approaches that provide mathematical guarantees rather than just best-effort guarantees.\nAnd, you know, we've seen that in the nuclear area, where originally the standard, I believe, was, you know, you could have a major core accident every 10,000 years, and you had to demonstrate that your system design met that requirement. You know, then it was a million years, and now it's 10 million years. And so that's progress, and it comes from actually having a real scientific understanding of the materials, the designs, redundancy, et cetera. And we are just in the infant stages of a corresponding understanding of the AI systems that we're building.\nI would also say that no Government agency is going to be able to match the resources that are going into the creation of these AI systems. The numbers I've seen are roughly $10 billion a month going into AGI startups. And just for comparison, that's about 10 times the amount of the entire National Science Foundation of the United States, which has to cover physics, chemistry, basic biology, et cetera, et cetera, et cetera.\nSo, how do we get that resource flow directed toward safety? I actually believe that the involuntary recall provisions that I mentioned would have that effect because if a company puts out a system that violates one of the rules and then is recalled until the company can demonstrate that it will never do that again, then the company can go out of business. So, they have a very strong incentive to actually understand how their systems work and, if they can't, to redesign their systems so that they do understand how they work. That just seems like basic common sense to me.\nI also want to mention, on rogue AI, right, the bad actors--Professor Bengio has mentioned an approach based on AI systems that are developed to try to counteract that possibility. But I also feel that we may end up needing a very different kind of digital ecosystem, in general. What do I mean by that? Right now, to a first approximation, a computer runs any piece of binary code that you load into it. We put layers on top of that that say, ``Okay, that looks like a virus. I'm not running that.''\nWe actually need to go the other way around. The system should not run any piece of binary code unless it can prove to itself that this is a safe piece of code to run. So, it's sort of flipping the notion of permission, and with that approach, I think we could actually have a chance of preventing bad actors from being able to circumvent these controls, because for them to develop their own hardware resources is into the tens or hundreds of billions of dollars. And so that's an approach I would recommend.\n[Interviewer] (Senator Hawley) Do either of the other panelists want to say anything on this, about the--Professor Russell, perhaps?\n[Respondent] Yes. I mean, there are studies. My colleague Orville Schell, who is a China expert, has been working on a study of these issues. There are already plans to diversify away from Taiwan. TSMC is trying to create a plant in the U.S. Intel is now building some very large plants in the U.S. and in Germany, I believe, so--but it's taking time. I think if the invasion that you mention happened tomorrow, we would be in a huge amount of trouble.\nAs far as I understand it, there are plans to sabotage all the TSMC operations in Taiwan, if an invasion were to take place. So, it's not that all that capacity would then be taken over by China.\n[Interviewer] (Chair Blumenthal) But we need to train workers to do these jobs. And for those who want to pause, and some of the experts have written that we should pause AI development, I don't think it's going to happen. We right now have a gold rush, literally much like the Gold Rush that we had in the Wild West, where, in fact, there are no rules, and everybody's trying to get to the gold without very many law enforcers out there preventing the kinds of crimes that can occur. So, I am totally in agreement with Senator Hawley in focusing on keeping it in America, made in America, when we're talking about AI, and I think he is absolutely right that we need to build those kinds of structures, provide the training and incentives that enable it and enforce it.\nLet me, though, come back to this issue of national security. Who are our competitors, among our adversaries and our allies? Who are closest to the United States in terms of developing AI? Is it China? Are there other adversaries out there that could be rogue nations, not just rogue actors but rogue nations, and whom we need to bring into some international body of cooperation?\n[Respondent] So, I think the closest competitor we have is probably the UK, in terms of making advances in basic research, both in academia and in DeepMind, in particular, which is based in London, now being merged more forcefully into the larger Google organization. But they have a very distinct approach, and they've created an ecosystem in the UK that's really quite productive.\nI've spent a fair amount of time in China. I was there a month ago, talking to the major institutions that are working on AGI. And my sense is that we've slightly overstated the level of threat that they currently present. They've mostly been building copycat systems that turn out not to be nearly as good as the systems that are coming out from Anthropic and OpenAI and Google. But the intent is definitely there. I mean, they publicly stated their goal to be the world leader, and they are investing probably larger sums of public money than we are in the U.S., smaller sums in the private sector.\nThe areas where they are actually most effective--and I was actually on a panel in Tianjin for the top 50 Chinese AI startups, and they were giving out awards. But I think about 40 of those 50, their primary customer was state security. So, they're extremely good at voice recognition, face recognition, tracking and recognition of humans based on gait, and similar capabilities that are useful for state security.\nOther areas like reasoning and so on, planning--they're just not in--they're not really that close. They have a pretty good academic sector, that they are in the process of ruining by forcing them to meet numerical publication targets and things like that. They don't give people the freedom to think hard about the most important problems, and they are not producing the basic research breakthroughs that we've seen both in the academic and the private sector in the U.S. I'm also----\n[Interviewer] (Chair Blumenthal) Hard to produce a superhuman thinking machine if you don't allow humans to think.\n[Respondent] Yup. You know, I've also looked a lot at European countries. I'm working with the French government quite a bit, and I don't think anywhere else is in the same league as those three. Russia, in particular, has been completely denuded of its experts and was already well behind.\n[Interviewer] (Chair Blumenthal) And it may be obvious, but let me ask all of you. I see, again, your heads nodding, for the record. Would that inhibit creativity or innovation, to have that kind of requirement? I would think not.\n[Respondent] Yes. I think, to go along with the notion of an involuntary recall, there has to be that reporting step happening first.\n[Interviewer] (Senator Hawley) This has been a tremendously helpful hearing. I just want to thank each of you, again, for taking the time to be here. Can I just ask you, if you could give us your one or, at most, two recommendations for what you think Congress ought to do right now, what should we do right now, based on your expertise, what we've talked about today? I would be very, very curious to hear. So maybe we'll start with you, Professor Russell, and go that way.\n[Respondent] So, I gave some, you know, ``move fast and fix things'' recommendations in my opening remarks, and I think there's no doubt that we're going to have to have an agency. You know, if things go as expected, AI is going to end up being responsible for the majority of economic output in the United States. So, it cannot be the case that there's no overall regulatory agency for this technology.\nAnd the second thing, I think, would be just to focus, again, on systems that violate a certain set of unacceptable behaviors are removed from the market. And I think that will have not only a benefit in terms of protecting the American people and our national security, but also stimulating a great deal of research on ensuring that the AI systems are well understood, predictable, controllable. And that's it. Thank you.\n[Interviewer] (Chair Blumenthal) And I think the comparison is apt. You know, I've been reading the most recent biography of Robert Oppenheimer, and every time I think about AI, the specter of quantum physics, nuclear bombs, but also atomic energy, both peaceful and military purposes, is inescapable.\n[Respondent] So, I'd just like to add a couple of points. I agree with everything the other witnesses said. So, one issue is being able to trace the provenance of--from the output that is problematic, through to which model was used to create it, through to where did that model come from?\nAnd a second point is about liability. And it's not completely clear where exactly the liability should lie. But to continue the nuclear analogy, if a corporation decided they wanted to sell a lot of enriched uranium in supermarkets, and someone decided to take that enriched uranium and buy several pounds of it and make a bomb, we say that some liability should reside with the company that decided to sell the enriched uranium. They could put advice on it saying, ``Do not use more than,'' you know, ``three ounces of this in one place,'' or something. But no one's going to say that that absolves them from liability.\nSo, I think those two are really important. And the open source community has got to start thinking about whether they should be liable for putting stuff out there that is ripe for misuse.",
+ "_bench": {
+  "seconds": 77.6,
+  "chars": 31065
+ }
+}

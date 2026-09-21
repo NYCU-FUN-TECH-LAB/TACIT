@@ -1,0 +1,91 @@
+{
+  "respondent": "G06 (Data protection officer, city council)",
+  "descriptors": {
+    "institution_type": "government",
+    "role_level": "middle_management",
+    "sector": "other",
+    "experience": "11_20y",
+    "descriptor_basis": "Interview transcript: G06 (Data protection officer, city council)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "Identifies the framing limit of his own assessment",
+      "quote": "it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time",
+      "full_text": "Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms. Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Critical scrutiny of the categories the respondent's own instrument imposed on the object."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "No trigger causes the assessment to be revisited",
+      "quote": "There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.",
+      "full_text": "No. It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "The absence of a review mechanism is stated plainly, including the respondent's own inaction."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "Questions whether anonymity covers the derived data",
+      "quote": "They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.",
+      "full_text": "Seventy-two hours for the raw video, indefinite for the derived counts. The derived counts are the interesting part and nobody asks about them because they're described as anonymous. They are anonymous. They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Anticipates a risk that the current framing renders invisible."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "Concern raised in a form unlikely to prompt action",
+      "quote": "In a footnote. I know how that sounds after what I just said about the risk register. I think the honest position is that I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously",
+      "full_text": "In a footnote. I know how that sounds after what I just said about the risk register. I think the honest position is that I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "The respondent's own foresight is expressed in a channel he expects to be ineffective."
+        },
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Reflexive scrutiny of the respondent's own strategic self-censorship."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "Access right exists but is practically unexercisable",
+      "quote": "the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either",
+      "full_text": "Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "The formal route for individuals to obtain information about themselves cannot in practice be used."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "A data protection officer who defends his impact assessment while naming its framing limit: it assesses a camera system, not a system making real-time decisions about people, because the 2022 template had no section for that. The assessment has not been reopened since sign-off and no trigger exists that would cause it to be — he notes he could set one and has not. His sharpest observation concerns the derived counts, indefinitely retained and described as anonymous, which he raised in a footnote.",
+  "transcript": "Interview transcript G06 — Data protection officer, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Was a data protection impact assessment done?\n[Respondent] Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms. Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.\n[Interviewer] Has the assessment been revisited?\n[Respondent] No. It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.\n[Interviewer] How is retention handled in practice?\n[Respondent] Seventy-two hours for the raw video, indefinite for the derived counts. The derived counts are the interesting part and nobody asks about them because they're described as anonymous. They are anonymous. They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.\n[Interviewer] Have you raised that?\n[Respondent] In a footnote. I know how that sounds after what I just said about the risk register. I think the honest position is that I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.\n[Interviewer] Do residents have a route to see what data concerns them?\n[Respondent] Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+  "transcript_file": "18_G06_Data-protection-officer.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

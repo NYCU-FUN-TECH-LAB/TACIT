@@ -1,0 +1,997 @@
+{
+ "respondent": "CHRG-118hhrg56783_Stamos",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Introduction and context",
+   "quote": "Thank you, Mr. Chairman. Thank you Mr. Swalwell. I really appreciate you holding this hearing and inviting me today.",
+   "full_text": "Thank you, Mr. Chairman. Thank you Mr. Swalwell. I really appreciate you holding this hearing and inviting me today. So I'm the chief trust officer of SentinelOne. I've had the job for about a month, and in that role, I've got two responsibilities.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent introduces themselves and their role at SentinelOne."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "AI and cybersecurity",
+   "quote": "So what I thought I'd do is, if we're going to talk about the impact of AI and cybersecurity, is just set the stage of where we are in the cybersecurity space and where American companies are right now so, we can have a honest discussion about what AI, the effects might be.",
+   "full_text": "So what I thought I'd do is, if we're going to talk about the impact of AI and cybersecurity, is just set the stage of where we are in the cybersecurity space and where American companies are right now so, we can have a honest discussion about what AI, the effects might be.",
+   "open_codes": [
+    {
+     "code_id": "c072",
+     "label": "Impact of AI on cybersecurity",
+     "rationale": "The respondent sets the stage for discussing the impact of AI on cybersecurity."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Cybersecurity challenges",
+   "quote": "The truth is, is we're not doing so hot. We're kind-of losing.",
+   "full_text": "The truth is, is we're not doing so hot. We're kind-of losing. We talk a lot in our field about the really high-end actors, the State actors, the GRU, the FSB, the MSF, the folks you get Classified briefings on. That's incredibly important, right? Just this weekend we learned more about Typhoon, a Chinese actor breaking into the Texas power grid, a variety of critical infrastructure providers. That is scary and something we need to focus on.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent highlights the challenges faced in the cybersecurity space."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Professionalized cyber crime",
+   "quote": "Those kinds of companies are having an extremely difficult time because of professionalized cyber crime.",
+   "full_text": "Those kinds of companies are having an extremely difficult time because of professionalized cyber crime. The quality of the cyber criminals has come up to the level that I used to only see from state actors 4 or 5 years ago, right? So now you will see things out of these groups, the BlackCats, the Alphas, the LockBits, the kinds of coordinated, specialized capabilities that you used to only see for hackers working for the Ministry of State Security or the Russian SVR.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about the impact of AI on cybersecurity."
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The passage discusses the impact of professionalized cybercrime on companies, highlighting the need for guardrails to prevent failures and ensure benefits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Sanctions and their limitations",
+   "quote": "Unfortunately, these companies are not ready to play at this level. Now the administration has done some things to respond to this.",
+   "full_text": "Unfortunately, these companies are not ready to play at this level. Now the administration has done some things to respond to this. There is, as you all know, there have been sanctions put in place to make paying ransoms to certain actors more difficult. That strategy, I understand why they did it. I'm glad they did it, but it has failed.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "The passage discusses the limitations of sanctions in responding to cybercrime, highlighting the need for a more effective strategy."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Legal environment and reporting requirements",
+   "quote": "You folks in Congress passed a law in 2022 that was supposed to standardize how do you tell the U.S. Government that somebody has broken into your network.",
+   "full_text": "You folks in Congress passed a law in 2022 that was supposed to standardize how do you tell the U.S. Government that somebody has broken into your network. That law created a requirement for CISA to create rules. Now it's taken them a while to create those, and I think it would be great if that was accelerated.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The passage discusses the legal environment and reporting requirements for companies affected by cybercrime, highlighting the need for expertise and experience in this area."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Government support for private companies",
+   "quote": "So as we talk today, I hope we can talk about the ways the Government can support private companies.",
+   "full_text": "So as we talk today, I hope we can talk about the ways the Government can support private companies. These companies are victims. They are victims of crime, or they're victims of our geopolitical adversaries attacking American businesses. They are not there to be punished. They should be encouraged. They should have requirements for sure. But when we talk about these laws, we also need to encourage them to work with the Government, and the Government needs to be there to support them.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The passage discusses the need for government support for private companies affected by cybercrime, highlighting the importance of guardrails to prevent failures and ensure benefits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Government support for private companies",
+   "quote": "These companies are victims. They are victims of crime, or they're victims of our geopolitical adversaries attacking American businesses.",
+   "full_text": "So as we talk today, I hope we can talk about the ways the Government can support private companies. These companies are victims. They are victims of crime, or they're victims of our geopolitical adversaries attacking American businesses. They are not there to be punished. They should be encouraged. They should have requirements for sure. But when we talk about these laws, we also need to encourage them to work with the Government, and the Government needs to be there to support them.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent highlights the need for the Government to support private companies and establish guardrails for AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "AI's impact on cybersecurity",
+   "quote": "I actually think--I'm very positive about the impact of AI on cybersecurity.",
+   "full_text": "Where does AI come into this? I actually think--I'm very positive about the impact of AI on cybersecurity. Like I said, these normal companies have to play at the level Lockheed Martin had to 10 years ago, right? When I was the CISO at Facebook, I had an Eximius malware engineer. I had threat intel people that could read Chinese, that could read Russian. I had people who had done incident response at hundreds of companies.",
+   "open_codes": [
+    {
+     "code_id": "c005",
+     "label": "Characteristics of machine learning systems",
+     "rationale": "The respondent emphasizes the importance of AI in enabling normal IT folks to have greater capabilities in cybersecurity."
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "AI's potential in cybersecurity",
+   "quote": "That's one of the ways I think AI could be really positive.",
+   "full_text": "So as we talk about AI today, I know we're going to talk about the downsides. But I also just want to say there is a positive future here about using AI to help normal companies defend themselves against these really high-end actors.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent emphasizes the positive impact of AI on cybersecurity."
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "AI's potential in securing AI",
+   "quote": "I don't--can AI itself secure AI? Is there any way that we can remove as much error as possible and have artificial intelligence work to secure artificial intelligence?",
+   "full_text": "My question is, because people show up after the attack happens. We have--and I would say it's inevitably when you peel this onion back, it's the human factor that more or less is the problem set because we can't keep up with the advances in AI. Every second of every hour of every day, it's advancing.",
+   "open_codes": [
+    {
+     "code_id": "c073",
+     "label": "AI's role in securing AI",
+     "rationale": "The respondent emphasizes the importance of AI in securing AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "AI v. AI",
+   "quote": "It is going to be AI v. AI. You'll have humans supervising, training, pushing the AI in the right direction on both the defender side and the attacker side.",
+   "full_text": "It is going to be AI v. AI. You'll have humans supervising, training, pushing the AI in the right direction on both the defender side and the attacker side.",
+   "open_codes": [
+    {
+     "code_id": "c074",
+     "label": "AI v. AI",
+     "rationale": "The passage highlights the potential for AI to compete against AI in the future."
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "AI's limitations",
+   "quote": "AI is not super inventive yet, and I think that's where we're looking as defenders to make it more creative and more predictive of where things are going, and better at noticing things, weird attacks that have never been seen before, which is still a problem.",
+   "full_text": "The problem is that AI is not super inventive yet, and I think that's where we're looking as defenders to make it more creative and more predictive of where things are going, and better at noticing things, weird attacks that have never been seen before, which is still a problem.",
+   "open_codes": [
+    {
+     "code_id": "c075",
+     "label": "AI's limitations",
+     "rationale": "The passage highlights the need for AI to be more creative and predictive in order to effectively defend against threats."
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Equity in AI",
+   "quote": "I think that's one part we have to get right is to make sure you don't have kind of two classes of kids, the class that learns AI and the class that doesn't have the resources.",
+   "full_text": "Like every witness, I share in the excitement about the potential of AI. One piece of this that is not discussed enough is equity in AI, in making sure that every school district in my district gives a child the opportunity to learn it. I think that's one part we have to get right is to make sure you don't have kind of two classes of kids, the class that learns AI and the class that doesn't have the resources.",
+   "open_codes": [
+    {
+     "code_id": "c076",
+     "label": "Equity in AI",
+     "rationale": "The passage highlights the need for AI education to be equitable and accessible to all children."
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "AI's role in cybersecurity",
+   "quote": "What can AI do on the predictive side to help small and medium-sized businesses to kind of see the threats that are, you know, coming down the track and stopping them?",
+   "full_text": "But on cybersecurity, Mr. Stamos, if you could just talk about: What can AI do on the predictive side to help small and medium-sized businesses to kind of see the threats that are, you know, coming down the track and stopping them? Is that affordable right now? Is it off the shelf? Like how do they do that?",
+   "open_codes": [
+    {
+     "code_id": "c077",
+     "label": "AI's role in cybersecurity",
+     "rationale": "The passage highlights the potential of AI in cybersecurity and its ability to help small and medium-sized businesses."
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "Predictive AI for small and medium-sized businesses",
+   "quote": "If you're a small or medium business, it has--it has never been either cost- effective or really honestly possible to protect yourself at the level that you're dealing with by yourself.",
+   "full_text": "But on cybersecurity, Mr. Stamos, if you could just talk about: What can AI do on the predictive side to help small and medium-sized businesses to kind-of see the threats that are, you know, coming down the track and stopping them? Is that affordable right now? Is it off the shelf? Like how do they do that?\n[Respondent] Yes, so I think this is related to Mr. Luttrell's flower shop he was talking about. If you're a small or medium business, it has--it has never been either cost- effective or really honestly possible to protect yourself at the level that you're dealing with by yourself.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of guardrails in AI development and use to prevent failures and ensure benefits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "Collective defense through cloud services",
+   "quote": "If your mail system is run by the same company that's running 100,000 other companies and they have a security team of 4- or 500 people that they can amortize all across those customers, that's the same thing with AI.",
+   "full_text": "So, I think the way that we support small or medium businesses is we try to encourage, No. 1, to move them to the cloud as much as possible, effectively collective defense. If your mail system is run by the same company that's running 100,000 other companies and they have a security team of 4- or 500 people that they can amortize all across those customers, that's the same thing with AI.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of guardrails in AI development and use to prevent failures and ensure benefits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "Reporting infrastructure for CISA",
+   "quote": "One of the problems we have as defenders is we don't talk to each other enough, right? The bad guys are actually working together. They hang out on these forums. They trade code. They trade exploits.",
+   "full_text": "So I like what CISA has done so far. I mean, I think their initial guidelines are smart. You know, CISA, like I said before, I think a key thing for CISA to focus on right now is to get the reporting infrastructure up.\nOne of the problems we have as defenders is we don't talk to each other enough, right? The bad guys are actually working together. They hang out on these forums. They trade code. They trade exploits.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of guardrails in AI development and use to prevent failures and ensure benefits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "Legal risks and instant response",
+   "quote": "it's something I put in my written testimony. I once worked in instant response where there were four law firms on every single call because different parts of the board were suing each other and there's a new CEO and an old CEO and it was a mess.",
+   "full_text": "I think part of this is--the part of this comes from the shareholder stuff is that any company that deals with any security breach, any public company, automatically ends up with derivative lawsuits that they spend years and years defending that don't actually make anything better.\nI once worked in instant response where there were four law firms on every single call because different parts of the board were suing each other and there's a new CEO and an old CEO and it was a mess.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of guardrails in AI development and use to prevent failures and ensure benefits."
+    },
+    {
+     "code_id": "c078",
+     "label": "Overly legalized situations",
+     "rationale": "The respondent describes a situation where multiple law firms are involved, indicating a high level of legal complexity."
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Concerns about AI development and use",
+   "quote": "any company that deals with any security breach, any public company, automatically ends up with derivative lawsuits that they spend years and years defending that don't actually make anything better.",
+   "full_text": "Then part of it is the shareholder stuff is that any company that deals with any security breach, any public company, automatically ends up with derivative lawsuits that they spend years and years defending that don't actually make anything better.",
+   "open_codes": [
+    {
+     "code_id": "c079",
+     "label": "Derivative lawsuits",
+     "rationale": "The respondent describes the consequences of security breaches, including derivative lawsuits that can be lengthy and unproductive."
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Talent pool for CISO roles",
+   "quote": "Yes, so we actually have a real talent.",
+   "full_text": "Yes, so we actually have a real talent. As a CISO, we have a real talent pool problem on two sides. So on--I don't want to say the low-end, but the entry-level jobs, we are not creating enough people for the SOC jobs, the analyst jobs, the kind of things that most companies need.",
+   "open_codes": [
+    {
+     "code_id": "c080",
+     "label": "Talent pool problem",
+     "rationale": "The respondent describes a talent pool problem for CISO roles, specifically mentioning a shortage of entry-level professionals."
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Challenges for CISOs",
+   "quote": "Because it is--you are naturally--like when I was a CISO and I would walk in the room, people would mutter under their breath, like, Oh, my God, Stamos is here.",
+   "full_text": "Because it is--you are naturally--like when I was a CISO and I would walk in the room, people would mutter under their breath, like, Oh, my God, Stamos is here. It's partially because you're kind-of the grim reaper, right? You're only there for negative downside effects for the company. You have no positive impact on the bottom line, generally.",
+   "open_codes": [
+    {
+     "code_id": "c081",
+     "label": "Negative perception of CISOs",
+     "rationale": "The respondent describes the negative perception of CISOs, comparing them to the grim reaper and highlighting their association with negative outcomes."
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Deterrent to CISO roles",
+   "quote": "Oh, absolutely. I have two friends this last month who have turned down CISO jobs because they don't want the personal liability.",
+   "full_text": "Oh, absolutely. I have two friends this last month who have turned down CISO jobs because they don't want the personal liability. They don't want to be in a situation where the entire company makes the mistake, and then they're the ones facing the prosecution or an SEC investigation. It's become a real problem for CISOs.",
+   "open_codes": [
+    {
+     "code_id": "c082",
+     "label": "Personal liability concerns",
+     "rationale": "The respondent describes how personal liability concerns are deterring individuals from taking on CISO roles, highlighting the problem for CISOs."
+    },
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent shares personal anecdotes about friends turning down CISO jobs due to liability concerns"
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "AI's potential for cyber attacks",
+   "quote": "cyber attacks are going to be launched by artificial intelligence networks, and they're going to be guarded against by artificial intelligence networks",
+   "full_text": "So, you know, the capabilities right now that I see are pretty scary. So at the end of the day, do you think--this could all be elementary. I mean, it appears to me that what we're heading for is cyber attacks are going to be launched by artificial intelligence networks, and they're going to be guarded against by artificial intelligence networks and that it's who has the smartest artificial intelligence is going to win the race or is going to win out in that battle or war, et cetera.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent warns about the potential for AI to be used for cyber attacks"
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "AI's role in cybersecurity",
+   "quote": "AI technologies that are focused on cybersecurity",
+   "full_text": "Yes, I mean, I think basic American economic competitiveness is absolutely dependent on us maintaining our lead in overall AI technologies, but then especially AI technologies that are focused on cybersecurity.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent provides context about their background and expertise in AI and cybersecurity"
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Future of AI and cybersecurity",
+   "quote": "machines going at each other all the time, testing each other, probing each other, defending against each other",
+   "full_text": "So where do you see the future? Am I too far off? Is this going to be machines going at each other all the time, testing each other, probing each other, defending against each other? But is this just going to be continuous, around-the-clock cyber warfare?",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent warns about the potential for AI to be used for continuous cyber warfare"
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "Fear of AI-generated malware",
+   "quote": "I am very afraid of the constant attacks. The other thing I'm really afraid of is smart AI-enabled malware that, you know, you look at the Stuxnet virus that the United States has never admitted to have a part of.",
+   "full_text": "I am very afraid of the constant attacks. The other thing I'm really afraid of is smart AI-enabled malware that, you know, you look at the Stuxnet virus that the United States has never admitted to have a part of. But whoever created Stuxnet spent a huge amount of money and time building a virus that could take down the Natanz nuclear plant, and it required a huge amount of human intelligence because it was specifically built for exactly how Natanz's network was laid out.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent expresses fear of AI-generated malware and the need for guardrails to prevent failures and ensure benefits"
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "Concerns about AI-generated disinformation",
+   "quote": "How do we manage that? From a security risk, how do we know that it's that this person that's purporting to be Secretary Mayorkas telling us about a natural disaster or a security breach isn't some foreign actor?",
+   "full_text": "How do we manage that? From a security risk, how do we know that it's that this person that's purporting to be Secretary Mayorkas telling us about a natural disaster or a security breach isn't some foreign actor? Any one of you, in fact, everyone quickly. We have about 2 minutes. Mr. Stamos.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about AI-generated disinformation and its potential impact on national security"
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Lack of regulation for AI-generated content",
+   "quote": "I think one of the problems now is it is not illegal to use AI to create. There's no liability of creating totally real things that say embarrassing things that are used for political.",
+   "full_text": "I think one of the problems now is it is not illegal to use AI to create. There's no liability of creating totally real things that say embarrassing things that are used for political. It is totally legal to use AI in political campaigns and political advertising.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent highlights the lack of regulation for AI-generated content and its potential misuse in political campaigns"
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "Cyber attacks and AI-generated malware",
+   "quote": "Yesterday, it was widely reported that China launched a massive attack, a cyber attack, against the United States and our infrastructure.",
+   "full_text": "Yesterday, it was widely reported that China launched a massive attack, a cyber attack, against the United States and our infrastructure. This incident is just one single event in a decades-long cyber warfare campaign launched against the United States.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent discusses the threat of cyber attacks and AI-generated malware, highlighting the need for guardrails to prevent failures and ensure benefits"
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Cyber warfare campaign and AI-enabled malicious cyber actors",
+   "quote": "This incident is just one single event in a decades-long cyber warfare campaign launched against the United States.",
+   "full_text": "Yesterday, it was widely reported that China launched a massive attack, a cyber attack, against the United States and our infrastructure. This incident is just one single event in a decades-long cyber warfare campaign launched against the United States. We should not expect these threats to lessen, and should continue to engage with the proper stakeholders to determine how best to defend our infrastructure, and one of the things that's so important is what each of you has touched on here today: how artificial intelligence is going to empower and equip and enable malicious cyber actors to do potential harm to the United States and our infrastructure.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The passage highlights the importance of establishing guardrails for AI to prevent failures and ensure benefits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "Stuxnet and air gap networks",
+   "quote": "This is Stuxnet, where the exact mechanism where the jump to air gap has not been totally determined.",
+   "full_text": "Right. So, you know, the example I was using is the most famous example. This is Stuxnet, where the exact mechanism where the jump to air gap has not been totally determined. But one of the theories is that Stuxnet was spread pretty widely among the Iranian population, and somebody made a mistake. They charged a phone. They plugged in their iPod at home, and it jumped on the USB device into the network.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The passage highlights the limitations of AI systems, including the possibility of failure."
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "Generative AI and election security",
+   "quote": "The real danger from AI in 2024 and beyond—",
+   "full_text": "For any of the witnesses, what specific risk does AI pose to election security? So when I--I think there's too much focus on a specific video or image being created of a Presidential candidate. You know, if that happened, every media organization in the world would be looking into whether it's real or not. I think the real danger from AI in 2024 and beyond--and, again, you've got India. You've got the European Union. There's a ton of elections next year. The real problem is this is a huge force multiplier for groups who want to create content.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The passage highlights the significant impact of machine learning on various aspects of life, including election security."
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "AI's potential for group manipulation",
+   "quote": "A couple of guys with a graphics card can go create the same amount of content on their own.",
+   "full_text": "If you look at what the Russians did in 2016, they had to fill a building in St. Petersburg with people who spoke English. You don't have to do that anymore. A couple of guys with a graphics card can go create the same amount of content on their own. That's what really scares me is that you'll have groups that used to not have the ability to run large professional troll farms to create all this content, the fake photos, the fake profiles, the content that they push, that now a very small group of people can create the content that used to take 20 or 30.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent expresses concern about the potential for AI to be used for group manipulation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "Frustration with lack of deterrent for cyber crimes",
+   "quote": "it's really frustrating to see, whether it's an individual who's the victim, whether it's, as you said, any size company, or our country, it's frustrating because you can't punish these guys.",
+   "full_text": "As a former prosecutor, perhaps there's no crime today that exists that has less of a deterrent in its punishment than cyber crimes, and it's really frustrating to see, whether it's an individual who's the victim, whether it's, as you said, any size company, or our country, it's frustrating because you can't punish these guys. It seems like they're just untouchable.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses frustration with the lack of deterrent for cyber crimes, which is a concern about AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "Potential deterrents for cyber crimes",
+   "quote": "I do think like the FBI workups and the red notices do have a deterrent effect.",
+   "full_text": "I mean, I think there's a bunch of things we can do. One, I do think like the FBI workups and the red notices do have a deterrent effect. You know, people don't--Russians love to go visit their money in Cyprus, right, especially in the winter. So, locking people, 22-year-olds that can never travel for the rest of their lives, I think actually is a positive thing. Like, enjoy Kazakhstan, right. So I do think that is good.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent shares their experience as a former prosecutor and provides background information on the effectiveness of FBI workups and red notices"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent mentions the effectiveness of FBI workups and red notices as a deterrent, which is a form of guardrails for AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "Desire for U.S. offensive capability to be used against cyber threats",
+   "quote": "I would like to see the United States--I don't think private companies should do it, but I do think the U.S. offensive capability should be used against them.",
+   "full_text": "I would like to see--obviously, I don't see what happens on the Classified side. It felt like after Colonial Pipeline that there was an offensive operation by cyber command against a lot of work to try to deter these guys and to disrupt their operations, and that that is, perhaps, slacking off. So I would like to see the United States--I don't think private companies should do it, but I do think the U.S. offensive capability should be used against them.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about the effectiveness of U.S. offensive capability in addressing cyber threats"
+    }
+   ]
+  },
+  {
+   "segment_id": "S038",
+   "title": "Outlawing ransomware payments",
+   "quote": "Then I think it's seriously time for Congress to consider outlawing ransomware payments.",
+   "full_text": "Then I think it's seriously time for Congress to consider outlawing ransomware payments.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent mentions the limitations of AI systems in addressing cyber threats"
+    }
+   ]
+  },
+  {
+   "segment_id": "S039",
+   "title": "Challenges in implementing outlawing ransomware payments",
+   "quote": "Yes. I mean, if you outlawed ransom repayments, there would be 6 months of carnage as they try to punish the United States and to reverse it.",
+   "full_text": "I think a couple of things have to happen here. No. 1, I think that this is something that Congress should do, not the administration unilaterally, because I think it needs to be a unified political stand of both political parties saying we are not doing this anymore. We are not sending billions of dollars a year to our adversaries to hack us. So it doesn't become a political football. If the admin did it by themselves, I think it would be much easier to blackmail them into undoing it, right. Congress needs to speak as one voice here.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent discusses the potential consequences of outlawing ransomware payments"
+    }
+   ]
+  },
+  {
+   "segment_id": "S040",
+   "title": "Importance of unified political stand",
+   "quote": "Congress needs to speak as one voice here.",
+   "full_text": "I think a couple of things have to happen here. No. 1, I think that this is something that Congress should do, not the administration unilaterally, because I think it needs to be a unified political stand of both political parties saying we are not doing this anymore. We are not sending billions of dollars a year to our adversaries to hack us. So it doesn't become a political football. If the admin did it by themselves, I think it would be much easier to blackmail them into undoing it, right. Congress needs to speak as one voice here.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent emphasizes the importance of a unified political stand in addressing cyber threats"
+    }
+   ]
+  },
+  {
+   "segment_id": "S041",
+   "title": "Need for delay in implementing outlawing ransomware payments",
+   "quote": "Second, I think Congress would need to set up--delay the implementation, and especially focus on nonprofits and local and State municipalities.",
+   "full_text": "Second, I think Congress would need to set up--delay the implementation, and especially focus on nonprofits and local and State municipalities. You know, you could be buying them insurance policies. There's been a lot of interesting work around State national guards, State guards of direct commissions. I know, like, CISOs my age getting direct commissions, so that if something bad happens to a State or locality, they have the legal authority to go work with them. I do think, though, it's the time to do that because the current status quo is not working.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent discusses the need for delay in implementing outlawing ransomware payments"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Congress needs to set up guardrails for AI implementation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S042",
+   "title": "Cyber attacks on local entities",
+   "quote": "one of our local churches got hacked and locked everything down, and the preacher had to use his own credit card to pay $500 to get them to turn that thing loose. A hospital system was hacked.",
+   "full_text": "You know, I was listening to Representative Swalwell talk about lack of prosecution, lack of anything getting done. Going back to my small home town, one of our local churches got hacked and locked everything down, and the preacher had to use his own credit card to pay $500 to get them to turn that thing loose. A hospital system was hacked. It's just--you know, it goes on and on, and it seems like there's just no recourse. It's almost like credit card fraud sometimes.",
+   "open_codes": [
+    {
+     "code_id": "c083",
+     "label": "Cyber attacks on local entities",
+     "rationale": "Local entities are vulnerable to cyber attacks"
+    }
+   ]
+  },
+  {
+   "segment_id": "S043",
+   "title": "Gap in law enforcement",
+   "quote": "If you're Mr. Luttrell's flower shop or the church in your district, they're not going to get an FBI agent on the phone. If they call the local police, generally those folks are not prepared to help with international cyber crime.",
+   "full_text": "If you're a big company, you can call an FBI agent. You can get 3 or 4 of them on the phone with you. They will be as supportive as possible. If you're Mr. Luttrell's flower shop or the church in your district, they're not going to get an FBI agent on the phone. If they call the local police, generally those folks are not prepared to help with international cyber crime.",
+   "open_codes": [
+    {
+     "code_id": "c084",
+     "label": "Gap in law enforcement",
+     "rationale": "Local law enforcement is not equipped to handle international cyber crime"
+    }
+   ]
+  },
+  {
+   "segment_id": "S044",
+   "title": "ICAC as a model for cyber crime",
+   "quote": "where the creation of local folks who are then trained and supported by Federal agencies to do child safety work, and in the end, it's local sheriffs, deputies, and local detectives, but they can call upon investigative resources from the Secret Service, from the FBI, from HSI.",
+   "full_text": "A good example of that, where this has been positive is in work called the ICAC which is the child safety world, which I've done a bunch of work in, where the creation of local folks who are then trained and supported by Federal agencies to do child safety work, and in the end, it's local sheriffs, deputies, and local detectives, but they can call upon investigative resources from the Secret Service, from the FBI, from HSI.",
+   "open_codes": [
+    {
+     "code_id": "c085",
+     "label": "ICAC as a model for cyber crime",
+     "rationale": "ICAC is a successful model for local cyber crime capabilities"
+    }
+   ]
+  },
+  {
+   "segment_id": "S045",
+   "title": "Gap in Congress's consideration",
+   "quote": "I do think there's a gap here that Congress should consider how to fill.",
+   "full_text": "So I do think there's a gap here that Congress should consider how to fill. A good example of that, where this has been positive is in work called the ICAC which is the child safety world, which I've done a bunch of work in, where the creation of local folks who are then trained and supported by Federal agencies to do child safety work, and in the end, it's local sheriffs, deputies, and local detectives, but they can call upon investigative resources from the Secret Service, from the FBI, from HSI. I think something like that around cyber crime of investing in the local capabilities would be a good idea.",
+   "open_codes": [
+    {
+     "code_id": "c086",
+     "label": "Gap in Congress's consideration",
+     "rationale": "The respondent identifies a gap in Congress's consideration of a specific topic."
+    }
+   ]
+  },
+  {
+   "segment_id": "S046",
+   "title": "AI's potential to level the playing field",
+   "quote": "I think one of the great things about AI is it is going to even out the playing field and that people who have lack of, you know, business email skills, perfect English and such, the AI will be a huge help, but you don't want to give kids that crutch as they get there.",
+   "full_text": "Yes. I mean, teach two classes at Stanford, and this is a huge discussion among the faculty is how do you give an essay in the modern world. I mean, I think one of the great things about AI is it is going to even out the playing field and that people who have lack of, you know, business email skills, perfect English and such, the AI will be a huge help, but you don't want to give kids that crutch as they get there. This is going to become much harder over the next couple of years, because AI is being turned on in default. So students won't have to go actively cheat. They will get in trouble for not going and turning off things that are turned on by default in Google Docs or in Microsoft Word and such.",
+   "open_codes": [
+    {
+     "code_id": "c087",
+     "label": "AI's potential to level the playing field",
+     "rationale": "The respondent highlights AI's ability to help individuals with limited skills or experience."
+    }
+   ]
+  },
+  {
+   "segment_id": "S047",
+   "title": "Anticipated consequences of outlawing ransomware payments",
+   "quote": "I do think--these are professionals. They're used to making tens of millions of dollars a year. They are somewhat rational actors. So eventually I think that they will have to adapt their economic model. But in the short run, being cut off, they would do everything they can to try to convince the United States that this policy was not appropriate.",
+   "full_text": "Would you tell us a little bit more about what you anticipate that 6 months of carnage would look like, and what could we be doing to help mitigate that vision? Yes. Maybe I'm being a little too colorful here, but I do think--these are professionals. They're used to making tens of millions of dollars a year. They are somewhat rational actors. So eventually I think that they will have to adapt their economic model. But in the short run, being cut off, they would do everything they can to try to convince the United States that this policy was not appropriate.",
+   "open_codes": [
+    {
+     "code_id": "c088",
+     "label": "Anticipated consequences of outlawing ransomware payments",
+     "rationale": "The respondent anticipates the consequences of outlawing ransomware payments and the potential actions of professionals involved."
+    },
+    {
+     "code_id": "c089",
+     "label": "Adapting to changing circumstances",
+     "rationale": "The respondent believes that professionals will adapt their economic model to changing circumstances."
+    }
+   ]
+  },
+  {
+   "segment_id": "S048",
+   "title": "No exceptions",
+   "quote": "No. 1, no exceptions.",
+   "full_text": "So, I think there are things you can do. No. 1, no exceptions. I've heard people talk about bug bounty limits, and they say, Oh, well, we'll exempt hospitals or something like that. If you have an exception, then that's all they'll do, right. If there's exceptions for a hospital, all they're going to hack is hospitals, right.",
+   "open_codes": [
+    {
+     "code_id": "c090",
+     "label": "No exceptions",
+     "rationale": "The respondent believes that making exceptions can lead to exploitation and abuse."
+    }
+   ]
+  },
+  {
+   "segment_id": "S049",
+   "title": "Preemptive grants",
+   "quote": "preemptive grants for them to upgrade their architectures.",
+   "full_text": "Second, I do think that there's a role to play, especially, like I said, the locals and the States are in real trouble here, and so, preemptive grants for them to upgrade their architectures. When we usually see these bug bounty--or I'm sorry--these ransomware actors are really good at breaking the networks that are built the way that Microsoft told you to build them in 2016, right.",
+   "open_codes": [
+    {
+     "code_id": "c091",
+     "label": "Preemptive measures",
+     "rationale": "The respondent believes that preemptive grants can help prevent cyber attacks."
+    }
+   ]
+  },
+  {
+   "segment_id": "S050",
+   "title": "Imposing costs on bad guys",
+   "quote": "trying to impose costs on the bad guys that--in that active time in which they are trying to, you know, deter the Government from standing strong, that you're also actively going after them.",
+   "full_text": "Then, I think the third is, like Mr. Swalwell was talking about, trying to impose costs on the bad guys that--in that active time in which they are trying to, you know, deter the Government from standing strong, that you're also actively going after them. You're doxxing them. You have the FBI indicting them. You have cyber command, you know, destroying their command-and-control networks and such.",
+   "open_codes": [
+    {
+     "code_id": "c092",
+     "label": "Imposing costs on malicious actors",
+     "rationale": "The respondent believes that imposing costs on bad guys can deter them from continuing their malicious activities."
+    }
+   ]
+  },
+  {
+   "segment_id": "S051",
+   "title": "Concerns about AI's impact on election security",
+   "quote": "I just want to return back to the risks that AI poses to election security.",
+   "full_text": "I just want to return back to the risks that AI poses to election security. I appreciate Mr. Stamos' answer. I just want to quickly open up to any of the other witnesses if they would like to expand on it.",
+   "open_codes": [
+    {
+     "code_id": "c093",
+     "label": "AI's potential for election interference",
+     "rationale": "The respondent expresses concerns about AI's impact on election security"
+    }
+   ]
+  },
+  {
+   "segment_id": "S052",
+   "title": "Congress' role in election security",
+   "quote": "I think Congress has a role to play here.",
+   "full_text": "So not just about AI, but the kind of coalition that came together to protect the 2018, 2020, 2022 elections has fallen apart. I think Congress has a role to play here. This is due to investigations elsewhere in the House and to civil lawsuits.",
+   "open_codes": [
+    {
+     "code_id": "c094",
+     "label": "Congress' responsibility in election security",
+     "rationale": "The respondent believes Congress has a role to play in election security"
+    }
+   ]
+  },
+  {
+   "segment_id": "S053",
+   "title": "Supporting local election officials",
+   "quote": "Just looking through the election system, how can we support our local election officials who face some of the same challenges small businesses do, in terms of fewer resources, but having the same challenge arrive at their doorstep?",
+   "full_text": "Just looking through the election system, how can we support our local election officials who face some of the same challenges small businesses do, in terms of fewer resources, but having the same challenge arrive at their doorstep?",
+   "open_codes": [
+    {
+     "code_id": "c095",
+     "label": "Support for local election officials",
+     "rationale": "The respondent highlights the need for support for local election officials"
+    }
+   ]
+  },
+  {
+   "segment_id": "S054",
+   "title": "Reaffirming CISA's role",
+   "quote": "So I think reaffirming CISA's role as a supporter here, and reaffirming the role of the ISACs as providing that level of support is a key thing because that's, again, something that's kind-of fallen apart since 2020.",
+   "full_text": "So I think reaffirming CISA's role as a supporter here, and reaffirming the role of the ISACs as providing that level of support is a key thing because that's, again, something that's kind-of fallen apart since 2020.",
+   "open_codes": [
+    {
+     "code_id": "c096",
+     "label": "Reaffirming CISA's role",
+     "rationale": "The respondent emphasizes the importance of reaffirming CISA's role"
+    },
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "CISA's role and ISACs' support have limitations and can fail"
+    }
+   ]
+  },
+  {
+   "segment_id": "S055",
+   "title": "Considerations for election integrity",
+   "quote": "Are there any other considerations that we in Congress should be thinking about as we go into 2024 with respect to election integrity?",
+   "full_text": "Are there any other considerations that we in Congress should be thinking about as we go into 2024 with respect to election integrity?",
+   "open_codes": [
+    {
+     "code_id": "c097",
+     "label": "Considerations for election integrity",
+     "rationale": "The respondent asks Congress to consider factors that impact election integrity"
+    }
+   ]
+  },
+  {
+   "segment_id": "S056",
+   "title": "Election integrity considerations",
+   "quote": "I mean, I guess there's a bunch--I think the other thing that a number of people have proposed, a colleague of mine, Matt Masterson, came and wrote a report with us at Stanford on the things that he would do. So, I'm happy to send you a link to that. But there's been discussion of creating standards around, you know, what audits look like, what does transparency look like, and such.",
+   "full_text": "I mean, I guess there's a bunch--I think the other thing that a number of people have proposed, a colleague of mine, Matt Masterson, came and wrote a report with us at Stanford on the things that he would do. So, I'm happy to send you a link to that. But there's been discussion of creating standards around, you know, what audits look like, what does transparency look like, and such.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "Discussion of creating standards around audits and transparency raises concerns about AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S057",
+   "title": "CISA's information-sharing mission",
+   "quote": "CISA's information-sharing mission is crucial. Do you think CISA has the tools it needs to be able to notify entities of potential AI threats? Is CISA's ability to issue administrative subpoenas sufficient?",
+   "full_text": "CISA's information-sharing mission is crucial. Do you think CISA has the tools it needs to be able to notify entities of potential AI threats? Is CISA's ability to issue administrative subpoenas sufficient?",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "CISA's information-sharing mission and ability to issue administrative subpoenas have limitations and can fail"
+    },
+    {
+     "code_id": "c098",
+     "label": "Importance of information-sharing mission",
+     "rationale": "The respondent highlights the importance of CISA's information-sharing mission in the context of AI threats."
+    }
+   ]
+  },
+  {
+   "segment_id": "S058",
+   "title": "Administrative subpoenas",
+   "quote": "What I would like to see is, I think it would be great to follow on what Congress did of centralizing cyber incident reporting to some equivalent around AI incidents",
+   "full_text": "What I would like to see is, I think it would be great to follow on what Congress did of centralizing cyber incident reporting to some equivalent around AI incidents that--you know, effectively blame-free, regulatory-free, that, you know, you have a free--I would like to see a model more of what happens with aviation, where if there's a near-miss, you can report that to a system that NASA runs, and nobody is going to sue you. Nobody is going to take your license away. That information is used to inform the aviation safety system. I would love to see the same thing out of AI, and I don't think CISA has that capability right now.",
+   "open_codes": [
+    {
+     "code_id": "c099",
+     "label": "Limitations of administrative subpoenas",
+     "rationale": "The respondent suggests that administrative subpoenas are not sufficient for AI incidents and proposes a centralized reporting system."
+    }
+   ]
+  },
+  {
+   "segment_id": "S059",
+   "title": "Collaboration among defenders",
+   "quote": "I just feel like subpoenas are for a very specific thing. The key thing we need is we need defenders to work together, and right now, the lawyers don't let them.",
+   "full_text": "I just feel like subpoenas are for a very specific thing. The key thing we need is we need defenders to work together, and right now, the lawyers don't let them. So finding out what those barriers are that make the lawyers give that advice and taking those barriers down, I think, is a good idea.",
+   "open_codes": [
+    {
+     "code_id": "c100",
+     "label": "Importance of collaboration among defenders",
+     "rationale": "The respondent highlights the need for defenders to work together to address AI incidents, citing the role of lawyers as a barrier to this collaboration."
+    }
+   ]
+  },
+  {
+   "segment_id": "S060",
+   "title": "Appreciation for the hearing",
+   "quote": "I want to go on record for saying that we, as Members of Congress, have been engaged in a task force.",
+   "full_text": "I'm probably going to take a lot of time reading the transcript, having been delayed in my district, but I wanted to come in the room, first of all, to express my appreciation that this hearing is being held, because I have been in discussions in my district where I've heard, and media commentary, that Congress has no interest in regulating or understanding AI. I want to go on record for saying that we, as Members of Congress, have been engaged in a task force. I'm a member of the task force led by a bipartisan group of Members. I know that the Ranking Member and others, we have been discussing the cruciality of AI and how we play a role. It is not always good for Congress to say me, me, me. I'm here to regulate and not ensure that we have the right road map to go forward.",
+   "open_codes": [
+    {
+     "code_id": "c101",
+     "label": "Appreciation for the hearing",
+     "rationale": "The respondent thanks the committee for holding the hearing and emphasizes the importance of discussing AI regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S061",
+   "title": "Importance of nimble policies",
+   "quote": "I don't know if I'm right, but I'm very wedded to because AI is fluid.",
+   "full_text": "I want to go on record for saying that we, as Members of Congress, have been engaged in a task force. I'm a member of the task force led by a bipartisan group of Members. I know that the Ranking Member and others, we have been discussing the cruciality of AI and how we play a role. It is not always good for Congress to say me, me, me. I'm here to regulate and not ensure that we have the right road map to go forward.",
+   "open_codes": [
+    {
+     "code_id": "c102",
+     "label": "Importance of nimble policies",
+     "rationale": "The respondent's emphasis on the fluidity of AI and the need for nimble policies to keep up with its development."
+    }
+   ]
+  },
+  {
+   "segment_id": "S062",
+   "title": "Recommendations for AI regulation",
+   "quote": "My suggestion on AI regulation is to do it as close to the people it's impacting as possible.",
+   "full_text": "So the people you can learn from what not to do here would be Europe, right, so with the----",
+   "open_codes": [
+    {
+     "code_id": "c103",
+     "label": "Regulate AI close to the people it impacts",
+     "rationale": "The respondent's emphasis on the importance of understanding the local context and impact of AI regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S063",
+   "title": "Concerns about AI dominance",
+   "quote": "The truth is that the capabilities are actually much more spread out than you might tell from the press because of open source, like Mr. Swanson's been talking about, and just because of the fact that my Stanford students build generative AI models as upper division class projects now.",
+   "full_text": "That is just something they do in the spring to get a grade.",
+   "open_codes": [
+    {
+     "code_id": "c104",
+     "label": "Concerns about AI dominance",
+     "rationale": "The respondent's emphasis on the spread of AI capabilities beyond the dominant players."
+    }
+   ]
+  },
+  {
+   "segment_id": "S064",
+   "title": "Regulating AI's impact on society",
+   "quote": "So, my suggestion is regulate the industries that have effect on people about the effects.",
+   "full_text": "Right, right. But I'm saying, like, they go out into the workplace, and they don't necessarily work for an open AI or a Microsoft or a Google, they can go work for an insurance company, and the way that they will be building software for State Farm in the future is going to be based upon the basic skills that they've learned now, which includes a huge amount about AI. So, my suggestion is regulate the industries that have effect on people about the effects. The fact that it's AI or not, if an insurance company makes a discriminatory decision about somebody, it is the discriminatory decision that should be punished, not the fact that there's some model buried in it.",
+   "open_codes": [
+    {
+     "code_id": "c105",
+     "label": "Regulating AI's impact on society",
+     "rationale": "The respondent suggests regulating industries that have a significant impact on people's lives, regardless of whether AI is involved, to address the effects of AI on society."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_015911",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 19,
+   "n_ok": 19
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 3,
+    "created": 1,
+    "chunk": 0
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 3,
+    "created": 1,
+    "chunk": 2
+   },
+   {
+    "reused": 1,
+    "created": 4,
+    "chunk": 3
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 4
+   },
+   {
+    "reused": 0,
+    "created": 5,
+    "chunk": 5
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 6
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 8
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 9
+   },
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 10
+   },
+   {
+    "reused": 1,
+    "created": 3,
+    "chunk": 11
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 12
+   },
+   {
+    "reused": 0,
+    "created": 4,
+    "chunk": 13
+   },
+   {
+    "reused": 0,
+    "created": 5,
+    "chunk": 14
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 15
+   },
+   {
+    "reused": 0,
+    "created": 4,
+    "chunk": 16
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 17
+   },
+   {
+    "reused": 0,
+    "created": 1,
+    "chunk": 18
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118hhrg56783 — Alex Stamos, Chief Trust Officer, Sentinel One\nSource: https://www.govinfo.gov/app/details/CHRG-118hhrg56783  |  Considering Dhs'S And Cisa'S Role In Securing Artificial Intelligence  |  House, Subcommittee On Cybersecurity And Infrastructure Protection / Committee On Homeland Security  |  2023-12-12  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Mr. Garbarino) Thank you, Mr. O'Neill.\nMr. Stamos, I now recognize you for 5 minutes to summarize your opening statement.\n[Respondent] Thank you, Mr. Chairman. Thank you Mr. Swalwell. I really appreciate you holding this hearing and inviting me today.\nSo I'm the chief trust officer of SentinelOne. I've had the job for about a month, and in that role, I've got two responsibilities. So SentinelOne's a company that uses AI to do defense. We also work with companies directly to help them respond to incidents.\nSo, I get to go out in the field and work with companies that are being breached, help them fix their problems. But then I'm also responsible for protecting our own systems because security companies are constantly under attack these days, especially since the SolarWinds incident.\nSo what I thought I'd do is, if we're going to talk about the impact of AI and cybersecurity, is just set the stage of where we are in the cybersecurity space and where American companies are right now so, we can have a honest discussion about what AI, the effects might be.\nThe truth is, is we're not doing so hot. We're kind-of losing. We talk a lot in our field about the really high-end actors, the State actors, the GRU, the FSB, the MSF, the folks you get Classified briefings on. That's incredibly important, right? Just this weekend we learned more about Typhoon, a Chinese actor breaking into the Texas power grid, a variety of critical infrastructure providers. That is scary and something we need to focus on.\nBut while that very high-end stuff has been happening, something much more subtle has been occurring that has kind-of crept up on us, which is, the level of adversity faced by kind- of your standard mid-sized company, the kind of companies that, honestly, employ a lot of your constituents, 5,000 employees, 10,000 employees, successful in their field, but not defense contractors or oil and gas or banks or the kinds of people who have traditionally had huge security teams.\nThose kinds of companies are having an extremely difficult time because of professionalized cyber crime. The quality of the cyber criminals has come up to the level that I used to only see from state actors 4 or 5 years ago, right? So now you will see things out of these groups, the BlackCats, the Alphas, the LockBits, the kinds of coordinated, specialized capabilities that you used to only see for hackers working for the Ministry of State Security or the Russian SVR.\nUnfortunately, these companies are not ready to play at this level. Now the administration has done some things to respond to this. There is, as you all know, there have been sanctions put in place to make paying ransoms to certain actors more difficult. That strategy, I understand why they did it. I'm glad they did it, but it has failed. The current strategy of sanctioning, all it has done has made, created new compliance and billable-hour steps for lawyers before ransom is paid.\nIt hasn't actually reduced the amount of money that is being paid to ransomware actors, which is something on the order of over $2 billion a year being paid by American companies to these actors. That money, then they go reinvest in their offensive capabilities.\nWhile this has been happening, the legal environment for these companies has gotten more complicated. You folks in Congress passed a law in 2022 that was supposed to standardize how do you tell the U.S. Government that somebody has broken into your network. That law created a requirement for CISA to create rules. Now it's taken them a while to create those, and I think it would be great if that was accelerated.\nBut in the mean time, while we've been waiting for CISA to create a standardized reporting structure, the SEC has stepped in and created a completely separate mechanism and requirements around public companies that don't take into account any of the equities that are necessary to be thought of in this situation, including having people report within 48 hours, which from my perspective, usually at 48 hours you're still in a knife fight with these guys. You're trying to get them out of the network. You're trying to figure out exactly what they've done. The fact you're filing 8-Ks in EDGAR that says exactly what you know and the bad guys are reading it, not a great idea.\nSome other steps that'd been taken by the SEC and others has really over-legalized the response companies are taking.\nSo as we talk today, I hope we can talk about the ways the Government can support private companies. These companies are victims. They are victims of crime, or they're victims of our geopolitical adversaries attacking American businesses. They are not there to be punished. They should be encouraged. They should have requirements for sure. But when we talk about these laws, we also need to encourage them to work with the Government, and the Government needs to be there to support them.\nWhere does AI come into this? I actually think--I'm very positive about the impact of AI on cybersecurity. Like I said, these normal companies have to play at the level Lockheed Martin had to 10 years ago, right? When I was the CISO at Facebook, I had an Eximius malware engineer. I had threat intel people that could read Chinese, that could read Russian. I had people who had done incident response at hundreds of companies.\nThere is no way an insurance company in one of your districts can go hire those people, but what you can do through AI is we can enable kind-of more normal IT folks who don't have to have years of experience fighting the Russians and the Chinese and the Iranians, we can enable them to have much greater capabilities. That's one of the ways I think AI could be really positive.\nSo as we talk about AI today, I know we're going to talk about the downsides. But I also just want to say there is a positive future here about using AI to help normal companies defend themselves against these really high-end actors.\nThank you so much.\n[Interviewer] (Mr. Garbarino) Thank you, Mr. Stamos.\nLike you, I agree that the SEC rule is terrible.\n[Respondent] Same.\n[Interviewer] (Mr. Luttrell) Thank you, Mr. Chairman.\nThank you all for being here today. This is definitely a space that we need to be operating in from now until the very extensive future.\nMr. Stamos, you brought up a very valid point. It's the lower entities. I had a hospital get hit in my district the day after we had a CISA briefing in the district.\nMy question is, because people show up after the attack happens. We have--and I would say it's inevitably when you peel this onion back, it's the human factor that more or less is the problem set because we can't keep up with the advances in AI. Every second of every hour of every day, it's advancing.\nIt seems like, because industry is very siloed, AI ML is very siloed, depending on the company you work for, as we try to secure artificial intelligence, and we have that human factor, my question is--and this may even sound silly. But, again, I don't know what I don't know.\nI don't--can AI itself secure AI? Is there any way that we can remove as much error as possible and have artificial intelligence work to secure artificial intelligence? Because as humans, we can't work that fast. Does that question at all make sense?\nMr. Stamos, you start that.\n[Respondent] Yes, absolutely, sir. I think it does make sense.\nI think where we're going to end up is, we're moving out of a realm, this stuff is happening so fast, where human reaction time is not going to be effective anymore.\n[Interviewer] (Mr. Luttrell) Correct, yes.\n[Respondent] It is going to be AI v. AI. You'll have humans supervising, training, pushing the AI in the right direction on both the defender side and the attacker side.\n[Interviewer] (Mr. Luttrell) Is there anything that lives out there right now in the AI ML space that's combating on its--and I dare not say on its own, because I don't want to talk about the singularities and scare people out of their clothes.\n[Respondent] Yes.\n[Interviewer] (Mr. Luttrell) But are we even remotely close? Because I agree with your other statement. You said, we're behind on this one.\n[Respondent] Yes, so I--there's a bunch companies including our own that use AI in defensive purposes. Most of it right now is you get--one of the precepts of modern defense in large networks is you gather up as much telemetry data, you suck as much data as possible into one place. But the problem is having humans look at that is effectively impossible.\nSo using AI to look through the billions of events that happen per day inside of a medium-sized enterprise is what is happening right now.\nThe problem is that AI is not super inventive yet, and I think that's where we're looking as defenders to make it more creative and more predictive of where things are going, and better at noticing things, weird attacks that have never been seen before, which is still a problem.\n[Interviewer] (Mr. Swalwell) Great. Thank you, Chairman.\nLike every witness, I share in the excitement about the potential of AI.\nOne piece of this that is not discussed enough is equity in AI, in making sure that every school district in my district gives a child the opportunity to learn it. I think that's one part we have to get right is to make sure you don't have kind- of two classes of kids, the class that learns AI and the class that doesn't have the resources. That's a separate issue.\nBut on cybersecurity, Mr. Stamos, if you could just talk about: What can AI do on the predictive side to help small and medium-sized businesses to kind-of see the threats that are, you know, coming down the track and stopping them? Is that affordable right now? Is it off the shelf? Like how do they do that?\n[Respondent] Yes, so I think this is related to Mr. Luttrell's flower shop he was talking about. If you're a small or medium business, it has--it has never been either cost- effective or really honestly possible to protect yourself at the level that you're dealing with by yourself.\nSo, I think the way that we support small or medium businesses is we try to encourage, No. 1, to move them to the cloud as much as possible, effectively collective defense. If your mail system is run by the same company that's running 100,000 other companies and they have a security team of 4- or 500 people that they can amortize all across those customers, that's the same thing with AI.\nThen the second is probably to build more what are called MSSP, Manage Security Service Provider relationships so that you can go hire somebody whose job it is to watch your network, and that they give you a phone call.\nHopefully if everything is worked out and AI is worked out, you get a call that says, Oh, somebody tried to break in. They tried to encrypt your machine. I took care of it.\n[Interviewer] (Mr. Swalwell) What can CISA do to work with the private sector on this?\n[Respondent] So I like what CISA has done so far. I mean, I think their initial guidelines are smart. You know, CISA, like I said before, I think a key thing for CISA to focus on right now is to get the reporting infrastructure up.\nOne of the problems we have as defenders is we don't talk to each other enough, right? The bad guys are actually working together. They hang out on these forums. They trade code. They trade exploits.\nBut when you deal with a breach, you're often in a lawyer- imposed silo that you're not supposed to talk to anybody and not, you know, send any emails and not work together. I think CISA breaking those silos apart so the companies are working together is a key thing they can do.\n[Interviewer] (Mr. Swalwell) Do you see legal risks that are bending companies away from smart, transparent responses?\n[Respondent] Yes, unfortunately, you know, it's something I put in my written testimony. I once worked in instant response where there were four law firms on every single call because different parts of the board were suing each other and there's a new CEO and an old CEO and it was a mess. Like you can't do instant response in a situation where it's all overly legalized.\nI think part of this is--the part of this comes from the shareholder stuff is that any company that deals with any security breach, any public company, automatically ends up with derivative lawsuits that they spend years and years defending that don't actually make anything better.\nThen part of it is the regulatory structure, you know, of the SEC and such, creating rules that now kind-of really over- legalize defense.\n[Interviewer] (Mr. Swalwell) Do we have the talent pool, or the willingness, of individuals right now to go into these fields to work as a chief information security officer?\n[Respondent] Yes, so we actually have a real talent.\n[Interviewer] (Mr. Swalwell) Can you speak to that?\n[Respondent] Yes, as a CISO, we have a real talent pool problem on two sides. So on--I don't want to say the low-end, but the entry-level jobs, we are not creating enough people for the SOC jobs, the analyst jobs, the kind of things that most companies need.\nI think that's about, you know, investing in community colleges and retraining programs of helping people create, get these jobs either mid-career or without going and doing a computer science degree, which really isn't required for that work.\nThen at the high end, chief information security officer, CISO is the worst C-level job in all of public capitalism.\n[Interviewer] (Mr. Swalwell) Why is that?\n[Respondent] Sorry, sir.\nBecause it is--you are naturally--like when I was a CISO and I would walk in the room, people would mutter under their breath, like, Oh, my God, Stamos is here.\nIt's partially because you're kind-of the grim reaper, right? You're only there for negative downside effects for the company. You have no positive impact on the bottom line, generally.\nSo, it's already a tough place. But what's also happened is that there's now legal actions against CISOs for mistakes that have been made by the overall enterprise, and this is something else I'm very critical of the SEC about is that they're going after the CISO of SolarWinds.\n[Interviewer] (Mr. Swalwell) Is that a deterrent to people wanting to be a CISO?\n[Respondent] Oh, absolutely. I have two friends this last month who have turned down CISO jobs because they don't want the personal liability. They don't want to be in a situation where the entire company makes the mistake, and then they're the ones facing the prosecution or an SEC investigation. It's become a real problem for CISOs.\n[Interviewer] (Mr. Gimenez) Thank you, Mr. Chairman.\nI just asked my ChatON if there are AI systems right now actively protecting computer systems in the United States and around the world. They said yes. So you do have, you know, the rudimentary aspects of AI, because some months ago we were at a conference or at least a meeting with a number of technologists, Google, Apple, all those.\nI asked them a question. You know, where--in terms of AI, where are we? Imagine that 21 being an adult. Where are we in that race?\nThey refused to answer and give me an age. What they did do, though, they said it was we're in the third inning. So, you know, baseball analogy, 9 innings is the full game. So we're 1/ 3 of the way there which is kind-of scary because of the capabilities right now that I see are pretty scary.\nSo at the end of the day, do you think--this could all be elementary. I mean, it appears to me that what we're heading for is cyber attacks are going to be launched by artificial intelligence networks, and they're going to be guarded against by artificial intelligence networks and that it's who has the smartest artificial intelligence is going to win the race or is going to win out in that battle or war, et cetera. Would that be accurate?\nYes, anybody.\n[Respondent] Yes, sir, that's absolutely accurate.\n[Interviewer] (Mr. Gimenez) So it all--now it means that we have to win the artificial intelligence battle. Or is this just going to be a race that's going to be forever?\n[Respondent] Yes, I mean, I think basic American economic competitiveness is absolutely dependent on us maintaining our lead in overall AI technologies, but then especially AI technologies that are focused on cybersecurity.\n[Interviewer] (Mr. Gimenez) So where do you see the future? Am I too far off? Is this going to be machines going at each other all the time, testing each other, probing each other, defending against each other? Then, you know, somebody will learn a little bit more, get into one system, and then that system learns and combats the next one? But is this just going to be continuous, around-the-clock cyber warfare?\n[Respondent] Yes, unfortunately, I think that's the future we're leading to.\nI mean, it was 7 years ago, in 2016, DARPA ran an event which was about teams building computers that hacked each other without human intervention, and that was successful. So, you know, we're 7 years on from that kind of basic research that was happening.\nI am very afraid of the constant attacks. The other thing I'm really afraid of is smart AI-enabled malware that, you know, you look at the Stuxnet virus that the United States has never admitted to have a part of. But whoever created Stuxnet spent a huge amount of money and time building a virus that could take down the Natanz nuclear plant, and it required a huge amount of human intelligence because it was specifically built for exactly how Natanz's network was laid out.\nMy real fear is that we're going to have AI-generated malware that won't need that, that if you drop it inside of an air gap network in a critical infrastructure network, it will be able to intelligently figure out, Oh, this bug here, this bug here, and take down the power grid, even if you have an air gap.\n[Interviewer] (Mr. Carter) So let me re-ask that. Thank you very much.\nBut what I really want to know is we're here. It's here. How can we learn, and how can we regulate it better to make sure that what has so much power, and so much potential to be good, we thwart the bad part?\nOne example, I recently saw on social media a few weeks ago a message from what looked like, sounded like the President of the United States of America giving a message. Now to the naked eye, to the individual that's out there that's not paying attention to the wonders of AI, that was the President.\nHow do we manage that? From a security risk, how do we know that it's that this person that's purporting to be Secretary Mayorkas telling us about a natural disaster or a security breach isn't some foreign actor?\nAny one of you, in fact, everyone quickly. We have about 2 minutes.\nMr. Stamos.\n[Respondent] So on the deepfakes, for--on the kind of political disinformation, I mean, I think one of the problems now is it is not illegal to use AI to create. There's no liability of creating totally real things that say embarrassing things that are used for political. It is totally legal to use AI in political campaigns and political advertising.\n[Interviewer] (Mr. Carter) For the moment.\n[Respondent] I would--right.\nSo I would start there, and then work your way down. I think the platforms have a big responsibility here to try to detect, but turns out detection of this stuff is a technical challenge.\n[Interviewer] (Ms. Lee) Thank you, Mr. Chairman.\nYesterday, it was widely reported that China launched a massive attack, a cyber attack, against the United States and our infrastructure. This incident is just one single event in a decades-long cyber warfare campaign launched against the United States.\nWe should not expect these threats to lessen, and should continue to engage with the proper stakeholders to determine how best to defend our infrastructure, and one of the things that's so important is what each of you has touched on here today: how artificial intelligence is going to empower and equip and enable malicious cyber actors to do potential harm to the United States and our infrastructure.\nI'd like to start by returning to something you mentioned, Mr. Stamos. I was interested in this point during your testimony with Mr. Gimenez. You described a scenario where artificial intelligence malware could essentially deploy within critical infrastructure on an air gap network.\nCan you share with us a little bit more about how you visualize that threat occurring, how would it get to the air gap network in the first place?\n[Respondent] Right. So, you know, the example I was using is the most famous example. This is Stuxnet, where the exact mechanism where the jump to air gap has not been totally determined. But one of the theories is that Stuxnet was spread pretty widely among the Iranian population, and somebody made a mistake. They charged a phone. They plugged in their iPod at home, and it jumped on the USB device into the network.\nSo, there are constantly, whenever you work with, like, secure air gaps networks, there are constant mistakes that being made where people hook them up, people bring devices, and stuff like that.\n[Interviewer] (Mr. Menendez) Agree with that approach and would love to build that from an earlier age.\nI have to pivot real quickly. One of the things that I want to focus on is less than a year before the 2024 election, we see the potential for generative AI increasingly likely spreading misinformation with respect to our elections.\nFor any of the witnesses, what specific risk does AI pose to election security?\n[Respondent] So when I--I think there's too much focus on a specific video or image being created of a Presidential candidate. You know, if that happened, every media organization in the world would be looking into whether it's real or not. I think the real danger from AI in 2024 and beyond--and, again, you've got India. You've got the European Union. There's a ton of elections next year. The real problem is this is a huge force multiplier for groups who want to create content.\nIf you look at what the Russians did in 2016, they had to fill a building in St. Petersburg with people who spoke English. You don't have to do that anymore. A couple of guys with a graphics card can go create the same amount of content on their own. That's what really scares me is that you'll have groups that used to not have the ability to run large professional troll farms to create all this content, the fake photos, the fake profiles, the content that they push, that now a very small group of people can create the content that used to take 20 or 30.\n[Interviewer] (Mr. Swalwell) Mr. Stamos, I want to vent a little bit. As a former prosecutor, perhaps there's no crime today that exists that has less of a deterrent in its punishment than cyber crimes, and it's really frustrating to see, whether it's an individual who's the victim, whether it's, as you said, any size company, or our country, it's frustrating because you can't punish these guys. It seems like they're just untouchable.\nI wanted you to maybe talk a little bit about--like recognizing that if these attacks are coming from Russia or China or, you know, other Eastern European countries, many of them are not going to recognize a red notice. So we could work up a case and send a red notice to Moscow, like, they're not going to go and grab these guys.\nDo you see any deterrent that's out there? Is there a way to punish these guys? Does AI help us? I know we have our own limitations on going offensive for private companies, but should we reexamine that? I just--like, how do you impose a cost on these actors who are just savage in the way that they take down our individuals and companies?\n[Respondent] Yes. I mean, it is extremely frustrating to work with companies and to watch these guys not just demand money but text family members of employees, and do ACH transfers from small vendors just to intimidate them and to laugh about it effectively.\nI mean, I think there's a bunch of things we can do. One, I do think like the FBI workups and the red notices do have a deterrent effect. You know, people don't--Russians love to go visit their money in Cyprus, right, especially in the winter. So, locking people, 22-year-olds that can never travel for the rest of their lives, I think actually is a positive thing. Like, enjoy Kazakhstan, right. So I do think that is good.\nI would like to see--obviously, I don't see what happens on the Classified side. It felt like after Colonial Pipeline that there was an offensive operation by cyber command against a lot of work to try to deter these guys and to disrupt their operations, and that that is, perhaps, slacking off. So I would like to see the United States--I don't think private companies should do it, but I do think the U.S. offensive capability should be used against them.\nThen I think it's seriously time for Congress to consider outlawing ransomware payments.\n[Interviewer] (Mr. Swalwell) Can we just briefly talk about that? Because you and I have talked about this for a long time, and I do think in a perfect world, that stops it. But what do you do in the gap between the day you outlaw them and then the weeks after where they're going to test to see if they're paid and you can see just a crippling of critical infrastructure?\n[Respondent] Yes. I mean, if you outlawed ransom repayments, there would be 6 months of carnage as they try to punish the United States and to reverse it.\nI think a couple of things have to happen here. No. 1, I think that this is something that Congress should do, not the administration unilaterally, because I think it needs to be a unified political stand of both political parties saying we are not doing this anymore. We are not sending billions of dollars a year to our adversaries to hack us. So it doesn't become a political football. If the admin did it by themselves, I think it would be much easier to blackmail them into undoing it, right. Congress needs to speak as one voice here.\nSecond, I think Congress would need to set up--delay the implementation, and especially focus on nonprofits and local and State municipalities. You know, you could be buying them insurance policies. There's been a lot of interesting work around State national guards, State guards of direct commissions. I know, like, CISOs my age getting direct commissions, so that if something bad happens to a State or locality, they have the legal authority to go work with them. I do think, though, it's the time to do that because the current status quo is not working.\n[Interviewer] (Mr. Ezell) Thank you very much.\nYou know, I was listening to Representative Swalwell talk about lack of prosecution, lack of anything getting done. Going back to my small home town, one of our local churches got hacked and locked everything down, and the preacher had to use his own credit card to pay $500 to get them to turn that thing loose. A hospital system was hacked. It's just--you know, it goes on and on, and it seems like there's just no recourse. It's almost like credit card fraud sometimes. As a law enforcement officer, I have seen so many victims out here, and there's hardly anything that can be done about it.\nWould any of you like to expand on that just a little bit?\n[Respondent] If I may, sir, I think you're totally right. I think one of our problems is we have a serious lack in--gap in law enforcement between local and the FBI. If you're a big company, you can call an FBI agent. You can get 3 or 4 of them on the phone with you. They will be as supportive as possible. If you're Mr. Luttrell's flower shop or the church in your district, they're not going to get an FBI agent on the phone. If they call the local police, generally those folks are not prepared to help with international cyber crime.\n[Interviewer] (Mr. Ezell) And we're not.\n[Respondent] So I do think there's a gap here that Congress should consider how to fill. A good example of that, where this has been positive is in work called the ICAC which is the child safety world, which I've done a bunch of work in, where the creation of local folks who are then trained and supported by Federal agencies to do child safety work, and in the end, it's local sheriffs, deputies, and local detectives, but they can call upon investigative resources from the Secret Service, from the FBI, from HSI. I think something like that around cyber crime of investing in the local capabilities would be a good idea.\n[Interviewer] (Mr. Carter) I have about 55 seconds. Would you mind sharing, Mr. Stamos and Ms. Moore?\n[Respondent] Yes. I mean, teach two classes at Stanford, and this is a huge discussion among the faculty is how do you give an essay in the modern world. I mean, I think one of the great things about AI is it is going to even out the playing field and that people who have lack of, you know, business email skills, perfect English and such, the AI will be a huge help, but you don't want to give kids that crutch as they get there. This is going to become much harder over the next couple of years, because AI is being turned on in default. So students won't have to go actively cheat. They will get in trouble for not going and turning off things that are turned on by default in Google Docs or in Microsoft Word and such. So, I think it's a huge problem for both higher and lower education.\n[Interviewer] (Ms. Lee) Thank you.\nMr. Stamos, I would like to have you elaborate a bit. Earlier, we were talking about the concept of Congress potentially outlawing ransomware payments, and you indicated that you anticipated that if Congress were to do so, it would follow--it would be followed with 6 months of carnage.\nWould you tell us a little bit more about what you anticipate that 6 months of carnage would look like, and what could we be doing to help mitigate that vision?\n[Respondent] Yes. Maybe I'm being a little too colorful here, but I do think--these are professionals. They're used to making tens of millions of dollars a year. They are somewhat rational actors. So eventually I think that they will have to adapt their economic model. But in the short run, being cut off, they would do everything they can to try to convince the United States that this policy was not appropriate.\nSo, I think there are things you can do. No. 1, no exceptions. I've heard people talk about bug bounty limits, and they say, Oh, well, we'll exempt hospitals or something like that. If you have an exception, then that's all they'll do, right. If there's exceptions for a hospital, all they're going to hack is hospitals, right. So it's terrible, but we'd have to live through the President getting up there and saying, We are not negotiating with terrorists. We are not paying this bounty. It's terrible for the people who live in this place. We're going to give them as much support as possible.\nSecond, I do think that there's a role to play, especially, like I said, the locals and the States are in real trouble here, and so, preemptive grants for them to upgrade their architectures. When we usually see these bug bounty--or I'm sorry--these ransomware actors are really good at breaking the networks that are built the way that Microsoft told you to build them in 2016, right. That's kind-of a very traditional-- not to get too technical, but Active Directory, SCCM, like a very traditional Windows network that the bad guys love that, and that's how your local States, your counties and such. So, an aggressive move to try to get them on to more modern technology stacks is something you could do in that run-up.\nThen, I think the third is, like Mr. Swalwell was talking about, trying to impose costs on the bad guys that--in that active time in which they are trying to, you know, deter the Government from standing strong, that you're also actively going after them. You're doxxing them. You have the FBI indicting them. You have cyber command, you know, destroying their command-and-control networks and such. Eventually, they would have to change their business models to match. That wouldn't make the world--that wouldn't all of a sudden, make America be totally secure, but it would get rid of the cycle of these guys being able to get better and better, both by practicing their craft all day, and also collecting all of this money and building these huge networks.\n[Interviewer] (Mr. Menendez) Thank you, Mr. Chairman.\nI just want to return back to the risks that AI poses to election security. I appreciate Mr. Stamos' answer. I just want to quickly open up to any of the other witnesses if they would like to expand on it.\nOK. So let me ask a question. How can CISA best support election officials in combating the risk? Mr. Stamos, I'll go back to you.\n[Respondent] So not just about AI, but the kind of coalition that came together to protect the 2018, 2020, 2022 elections has fallen apart. I think Congress has a role to play here. This is due to investigations elsewhere in the House and to civil lawsuits. There's a lot of arguments over what is the appropriate role of Government here, and there are totally legitimate arguments here, right. There are totally legitimate arguments that there are things that the Government should not do, especially when we talk about mis- and disinformation.\nInstead of this being a 5-year fight in the courts, I think Congress needs to act, and say these are things that the Government is not allowed to say, this is what the administration cannot do, with the social media companies; but if the FBI knows that this IP address is being used by the Iranians to create fake accounts, they can contact Facebook, right. That--recreating that pipeline of cyber command and NSA to the FBI who can help social media companies stop foreign interference, recreating that, I think, is a super critical thing and only Congress has the ability to do that.\n[Interviewer] (Mr. Menendez) Got it.\nJust looking through the election system, how can we support our local election officials who face some of the same challenges small businesses do, in terms of fewer resources, but having the same challenge arrive at their doorstep?\n[Respondent] Yes. I mean, so traditionally this has been the role of the election infrastructure ISAC and the multi-State ISACs in that, you know, unlike any other developed economy, we have 10,000 election officials who run our elections, and that does provide security benefits in that it would be extremely hard to steal the entire election because you have so many disparate systems, so many different ways of counting and such. But it also makes it much easier to cause chaos.\nSo I think reaffirming CISA's role as a supporter here, and reaffirming the role of the ISACs as providing that level of support is a key thing because that's, again, something that's kind-of fallen apart since 2020.\n[Interviewer] (Mr. Menendez) Are there any other considerations that we in Congress should be thinking about as we go into 2024 with respect to election integrity?\n[Respondent] I mean, I guess there's a bunch--I think the other thing that a number of people have proposed, a colleague of mine, Matt Masterson, came and wrote a report with us at Stanford on the things that he would do. So, I'm happy to send you a link to that. But there's been discussion of creating standards around, you know, what audits look like, what does transparency look like, and such. I think it would be nice to see the States with a push from the Federal Government to more aggressively mentally red-team their processes to see how does it look to people; that if you have rules that you're counting, you know, that it takes you 2 weeks here--in California, it takes us forever to count our ballots because of a bunch of different rules, and that makes people think the election is being stolen. It's not being stolen, but it's not fair. But you should set your policies with the expectation that people will take advantage of those kinds of situations to say the election is being stolen. So, I think doing a better job of setting up our rules to be very transparent, to make it clear to people this is how an audit works, is one of the things that we've got to think about going into 2024, so that when you have these things that seem a little weird, it does not create an opportunity for bad actors to try and imply that the entire election was rigged.\n[Interviewer] (Mr. Garbarino) Mr. Stamos, quick question for you. Now I've lied, I'm not going to be the last person to speak.\nCISA's information-sharing mission is crucial. Do you think CISA has the tools it needs to be able to notify entities of potential AI threats? Is CISA's ability to issue administrative subpoenas sufficient?\n[Respondent] So the administrative subpoena thing, my understanding, is mostly used for if you find vulnerabilities and you can't assign them to a specific--you know, here's an open port, and we think it's a dam, but we're not sure exactly who it is, that you can find out who that is.\nWhat I would like to see is, I think it would be great to follow on what Congress did of centralizing cyber incident reporting to some equivalent around AI incidents that--you know, effectively blame-free, regulatory-free, that, you know, you have a free--I would like to see a model more of what happens with aviation, where if there's a near-miss, you can report that to a system that NASA runs, and nobody is going to sue you. Nobody is going to take your license away. That information is used to inform the aviation safety system. I would love to see the same thing out of AI, and I don't think CISA has that capability right now.\n[Interviewer] (Mr. Garbarino) So subpoenas are useful, but something like CIRCIA would be--would deal with the----\n[Respondent] I just feel like subpoenas are for a very specific thing. The key thing we need is we need defenders to work together, and right now, the lawyers don't let them. So finding out what those barriers are that make the lawyers give that advice and taking those barriers down, I think, is a good idea.\n[Interviewer] (Ms. Jackson Lee) I thank you for yielding. Let me thank Ranking Member Swalwell for a very important hearing.\nI'm probably going to take a lot of time reading the transcript, having been delayed in my district, but I wanted to come in the room, first of all, to express my appreciation that this hearing is being held, because I have been in discussions in my district where I've heard, and media commentary, that Congress has no interest in regulating or understanding AI.\nI want to go on record for saying that we, as Members of Congress, have been engaged in a task force. I'm a member of the task force led by a bipartisan group of Members. I know that the Ranking Member and others, we have been discussing the cruciality of AI and how we play a role. It is not always good for Congress to say me, me, me. I'm here to regulate and not ensure that we have the right road map to go forward.\nSo, Mr. Stamos, if I have asked you questions that have been asked and answered, forgive me. I'd like to hear them again. In particular, let me start by saying you mention in the last page of your testimony that it is important for policy makers to adopt nimble policies. This is something that I am very wedded to. I don't know if I'm right, but I'm very wedded to because AI is fluid. It is something today, it was something yesterday, and it will be something tomorrow and then the day after. But nimble policies and safeguards in collaboration with the private sector, how would you recommend we implement that? In that would you please use the word, should Congress--is there a space, a place for Congress to jump in and regulate? Again, this is a fluid technology that is moving faster than light, I would imagine. But let me yield to you.\n[Respondent] Yes, Congresswoman. I mean, I think you had made a very good point about being flexible here. My suggestion on AI regulation is to do it as close to the people it's impacting as possible. So the people you can learn from what not to do here would be Europe, right, so with the----\n[Interviewer] (Ms. Jackson Lee) Would be?\n[Respondent] The Europeans, in that the European Parliament believes that effectively every problem can be solved by regulating the right 5 American companies, right. The truth is with AI, is while it feels like 5 or 6 companies are dominating it, the truth is that the capabilities are actually much more spread out than you might tell from the press because of open source, like Mr. Swanson's been talking about, and just because of the fact that my Stanford students build generative AI models as upper division class projects now. That is just something they do in the spring to get a grade.\nSo, what I would be thinking about is----\n[Interviewer] (Ms. Jackson Lee) These are students who have not yet become experts?\n[Respondent] Right, right. But I'm saying, like, they go out into the workplace, and they don't necessarily work for an open AI or a Microsoft or a Google, they can go work for an insurance company, and the way that they will be building software for State Farm in the future is going to be based upon the basic skills that they've learned now, which includes a huge amount about AI.\nSo, my suggestion is regulate the industries that have effect on people about the effects. The fact that it's AI or not, if an insurance company makes a discriminatory decision about somebody, it is the discriminatory decision that should be punished, not the fact that there's some model buried in it. I think that's--I think it's not going to be effective to try to go upstream to the fundamental models and foresee every possible use, but if it's misused in medical purposes, if a car kills somebody, if a plane crashes, we already have regulatory structures to focus on the actual effect on humans, not on the fact that AI was involved.\n[Interviewer] (Ms. Jackson Lee) So then how would you reach AI as--what would be Congress' reach to AI where Congress could say on behalf of the American people, we have our hands around this?\n[Respondent] So where you could, in those cases, is--I think one of the things that's very confusing to people is where does liability accrue when something bad happens. Is it only at the end, or is there some liability upstream? So I think clarifying that is important.\nI do think, you know, like the EO said, having your hands around some of the really high-end models to make sure that, you know, they're still being developed in the United States, that there's appropriate protections about that intellectual property being protected, I think that's important. But there's just not--there's not a magical regulation you can pass at the top of the AI that's going to affect all of the possible bad things that happen at the bottom.",
+ "_bench": {
+  "seconds": 395.4,
+  "chars": 43123
+ }
+}

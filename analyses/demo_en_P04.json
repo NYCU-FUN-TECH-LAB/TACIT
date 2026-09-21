@@ -1,0 +1,96 @@
+{
+  "respondent": "P04 (Head of compliance, mobility technology group)",
+  "descriptors": {
+    "institution_type": "industry",
+    "role_level": "middle_management",
+    "sector": "ict_ai",
+    "experience": "over_20y",
+    "descriptor_basis": "Interview transcript: P04 (Head of compliance, mobility technology group)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "Distinguishes legal risk from ethical scrutiny",
+      "quote": "most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.",
+      "full_text": "In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive. I've made peace with being unpopular. The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Explicit critical awareness of the limits of the respondent's own function — refusing the common conflation of compliance with responsibility."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "Distributional performance queried before launch",
+      "quote": "Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong. The third one is the one nobody has a good answer to, ever.",
+      "full_text": "Three things, mainly. What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong. The third one is the one nobody has a good answer to, ever.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Foresight directed at who would bear the cost of error, not only at aggregate reliability."
+        },
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Anticipating the need for an exit route is a strong form of keeping options open against lock-in."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "Identifies a specific mechanism of lock-in",
+      "quote": "the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays.",
+      "full_text": "A version of 'why would we'. Which isn't an answer. Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "A precise, mechanism-level account of how reversibility is lost over time — anticipation at its strongest."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "Risk documented into an inert register",
+      "quote": "It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.",
+      "full_text": "I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "A well-founded anticipatory finding produces no change in the project — the failure is in responsiveness, not foresight."
+        },
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Reflexive attribution of responsibility to himself rather than only to the system around him."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "Scrutiny rests on one internal function",
+      "quote": "We don't have an ethics board, we don't have community input, we have me reading and worrying.",
+      "full_text": "No. It's me and a junior analyst. We don't have an ethics board, we don't have community input, we have me reading and worrying. For a system that watches thirty intersections that is a thin basis and I would say that on the record.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "No external or public input into the assessment of a system with city-wide reach."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "The strongest anticipation in the industry group, and the clearest illustration that anticipation without responsiveness changes nothing. The respondent identifies a concrete lock-in mechanism — decay of the fixed-time fallback plans — and files it in a risk register that he himself describes as inert. He is unusually reflexive about both the limits of compliance-as-ethics and his own failure to escalate.",
+  "transcript": "Interview transcript P04 — Head of compliance, mobility technology group\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What does responsible deployment mean in your role?\n[Respondent] In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive. I've made peace with being unpopular. The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.\n[Interviewer] What did you ask on this project?\n[Respondent] Three things, mainly. What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong. The third one is the one nobody has a good answer to, ever.\n[Interviewer] What answer did you get on switching it off?\n[Respondent] A version of 'why would we'. Which isn't an answer. Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.\n[Interviewer] Did that get escalated?\n[Respondent] I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.\n[Interviewer] Was there any external input into these questions?\n[Respondent] No. It's me and a junior analyst. We don't have an ethics board, we don't have community input, we have me reading and worrying. For a system that watches thirty intersections that is a thin basis and I would say that on the record.",
+  "transcript_file": "04_P04_Head-of-compliance.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

@@ -1,0 +1,193 @@
+{
+ "respondent": "CHRG-118hhrg53382_Hysen",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "policy_maker",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Opening Remarks",
+   "quote": "Chairwoman Mace, Ranking Member Connolly, and distinguished Members of the Subcommittee, thank you for the opportunity to testify today.",
+   "full_text": "Chairwoman Mace, Ranking Member Connolly, and distinguished Members of the Subcommittee, thank you for the opportunity to testify today. I would like to note that in addition to serving as the Department's Chief Information Officer, Secretary Mayorkas also named me today as the first DHS Chief Artificial Intelligence Officer.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Opening Remarks",
+     "rationale": "Initial statements and greetings"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "DHS's AI Use Cases",
+   "quote": "I would like to talk with you today about three concrete use cases where DHS is already using AI to deliver clear benefits for the American people and then share the comprehensive measures we are taking to ensure that our use of AI is safe, responsible, and rights respecting.",
+   "full_text": "I would like to talk with you today about three concrete use cases where DHS is already using AI to deliver clear benefits for the American people and then share the comprehensive measures we are taking to ensure that our use of AI is safe, responsible, and rights respecting.",
+   "open_codes": [
+    {
+     "code_id": "c022",
+     "label": "DHS's AI Use Cases",
+     "rationale": "Introduction to AI use cases at DHS"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "AI in Drug Interdiction",
+   "quote": "Recently, a car drove north from Mexico and approached the San Ysidro port of entry in San Diego, California. In the past, the Customs and Border Protection officer that inspected that car would likely have had no reason to give it extra scrutiny. But this time, one of our machine learning models noticed a potentially suspicious pattern in the vehicle's crossing history.",
+   "full_text": "Recently, a car drove north from Mexico and approached the San Ysidro port of entry in San Diego, California. In the past, the Customs and Border Protection officer that inspected that car would likely have had no reason to give it extra scrutiny. But this time, one of our machine learning models noticed a potentially suspicious pattern in the vehicle's crossing history. After looking at the model's flag, the officer decided to refer the car to secondary inspection, where we discovered and seized nearly 60 kilograms of fentanyl and 16 kilograms of meth concealed in the vehicle's rear quarter panels and gas tank. If not for this use of AI, those drugs could be on our streets.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Discussion of AI's potential benefits and limitations"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "AI in Law Enforcement",
+   "quote": "Operation Renewed Hope resulted in identifying 311 previously unknown victims of sexual exploitation and led to the rescue of several victims from active abuse and the arrests of suspected perpetrators.",
+   "full_text": "Operation Renewed Hope resulted in identifying 311 previously unknown victims of sexual exploitation and led to the rescue of several victims from active abuse and the arrests of suspected perpetrators. This operation relied on the expertise and dedication of our agents and our partners domestically and abroad, but our agents had an extra tool at their disposal. Machine learning algorithms were used to enhance older images and give investigators new leads. Through this use of AI, we were able to turn formerly cold cases into rescues and arrests.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "Best Practices for AI Training",
+     "rationale": "Discussion of AI's potential benefits and limitations"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "DHS emphasizes the importance of responsible AI use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "DHS's use of AI in air travel",
+   "quote": "TSA has started rolling out touchless pre-check in select airports, a new optional way of going through the airport, curb to gate, without ever taking out your wallet.",
+   "full_text": "TSA has started rolling out touchless pre-check in select airports, a new optional way of going through the airport, curb to gate, without ever taking out your wallet. Once you opt in, you can check your bag, go through the security checkpoint, and board your flight all with just a quick photo.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "DHS uses AI to improve air travel security"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "DHS's AI strategy",
+   "quote": "AI will provide smarter and timelier information to our agents and officers to aid them in making decisions and free them up from routine tasks to focus on higher value work.",
+   "full_text": "AI will provide smarter and timelier information to our agents and officers to aid them in making decisions and free them up from routine tasks to focus on higher value work. As we move forward, we will ensure that our use of AI is responsible and trustworthy; that it is rigorously tested to be effective; that it safeguards privacy, civil rights, and civil liberties, while avoiding inappropriate biases; and to the extent possible, that it is transparent and explainable to the people we serve.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "DHS emphasizes the importance of responsible AI use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "DHS's AI Task Force",
+   "quote": "We are applying these principles through the DHS AI Task Force, which I lead alongside our Under Secretary for Science and Technology, by issuing comprehensive policies on specific types of AI, as we did just this week with new restrictions on our use of facial recognition.",
+   "full_text": "We are applying these principles through the DHS AI Task Force, which I lead alongside our Under Secretary for Science and Technology, by issuing comprehensive policies on specific types of AI, as we did just this week with new restrictions on our use of facial recognition. We will work alongside our internal and external oversight partners, to include Congress and this Subcommittee, as we work to implement NIST's AI risk management framework and remain fully compliant with evolving laws, practices, and policies.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "DHS establishes an AI Task Force to ensure responsible AI use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Implementing AI risk management framework",
+   "quote": "We will work alongside our internal and external oversight partners, to include Congress and this Subcommittee, as we work to implement NIST's AI risk management framework and remain fully compliant with evolving laws, practices, and policies.",
+   "full_text": "We will work alongside our internal and external oversight partners, to include Congress and this Subcommittee, as we work to implement NIST's AI risk management framework and remain fully compliant with evolving laws, practices, and policies. Thank you again for the opportunity to testify today. I look forward to your questions.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Implementing AI risk management framework requires guardrails"
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Combating child exploitation",
+   "quote": "We absolutely are concerned there; however, we are also looking to harness AI to combat those crimes.",
+   "full_text": "Congressman, we absolutely are concerned there; however, we are also looking to harness AI to combat those crimes. I shared earlier our work of Homeland Security Investigations in Operation Renewed Hope, which used AI to help rescue victims from active abuse, as well as to arrest suspected perpetrators.",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Bias Mitigation",
+     "rationale": "Concern about AI amplifying biases in combating child exploitation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Using AI to combat cyber-attacks",
+   "quote": "We are, and have been for the entire Administration, concerned about adversarial use of AI against Federal and critical infrastructure networks.",
+   "full_text": "Absolutely. We are, and have been for the entire Administration, concerned about adversarial use of AI against Federal and critical infrastructure networks. Secretary Mayorkas established our Artificial Intelligence Task Force, which I co-lead, and charged us with looking at the use of AI to secure critical infrastructure as one of our critical objectives.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI",
+     "rationale": "Concern about AI limitations in combating cyber-attacks"
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "AI decision support for law enforcement",
+   "quote": "We are leveraging AI as decision support for our law enforcement officers, but that ultimately, our officers are the ones responsible for making law enforcement decisions.",
+   "full_text": "I certainly acknowledge the risk and want to assure you that we are leveraging AI as decision support for our law enforcement officers, but that ultimately, our officers are the ones responsible for making law enforcement decisions.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "Best Practices for AI Training",
+     "rationale": "Concern about AI decision support for law enforcement"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_192719",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 3,
+   "n_ok": 3
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 3,
+    "created": 1,
+    "chunk": 0
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 2
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118hhrg53382 — Eric Hysen, Chief Information Officer, Department Of Homeland Security\nSource: https://www.govinfo.gov/app/details/CHRG-118hhrg53382  |  How Are Federal Agencies Harnessing Artificial Intelligence?  |  House, Subcommittee On Cybersecurity, Information Technology, And Government Innovation / Committee On Oversight And Accountability  |  2023-09-14  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Ms. Mace) Great, thank you. There you go. Awesome. Bravo.\nI would like to recognize Mr. Hysen to please begin your opening statement.\n[Respondent] Chairwoman Mace, Ranking Member Connolly, and distinguished Members of the Subcommittee, thank you for the opportunity to testify today.\nI would like to note that in addition to serving as the Department's Chief Information Officer, Secretary Mayorkas also named me today as the first DHS Chief Artificial Intelligence Officer.\nI would like to talk with you today about three concrete use cases where DHS is already using AI to deliver clear benefits for the American people and then share the comprehensive measures we are taking to ensure that our use of AI is safe, responsible, and rights respecting.\nFirst, DHS is using AI to keep dangerous drugs out of our country. Recently, a car drove north from Mexico and approached the San Ysidro port of entry in San Diego, California. In the past, the Customs and Border Protection officer that inspected that car would likely have had no reason to give it extra scrutiny. But this time, one of our machine learning models noticed a potentially suspicious pattern in the vehicle's crossing history. After looking at the model's flag, the officer decided to refer the car to secondary inspection, where we discovered and seized nearly 60 kilograms of fentanyl and 16 kilograms of meth concealed in the vehicle's rear quarter panels and gas tank. If not for this use of AI, those drugs could be on our streets.\nSecond, DHS is using AI to aid our law enforcement officers in investigating heinous crimes. Last month, Homeland Security Investigations announced the completion of one of the most successful operations ever against child sexual abuse online.\nOperation Renewed Hope resulted in identifying 311 previously unknown victims of sexual exploitation and led to the rescue of several victims from active abuse and the arrests of suspected perpetrators. This operation relied on the expertise and dedication of our agents and our partners domestically and abroad, but our agents had an extra tool at their disposal.\nMachine learning algorithms were used to enhance older images and give investigators new leads. Through this use of AI, we were able to turn formerly cold cases into rescues and arrests.\nFinally, DHS is using AI to make air travel easier and safer. TSA has started rolling out touchless pre-check in select airports, a new optional way of going through the airport, curb to gate, without ever taking out your wallet. Once you opt in, you can check your bag, go through the security checkpoint, and board your flight all with just a quick photo.\nThis process and TSA's acceptance of mobile driver's licenses in seven states, and counting, used thoroughly tested AI powered algorithms to save time, reduce physical touch points, and increase security by verifying identity more accurately.\nWhile I have highlighted these three examples today, DHS will use AI to transform all parts of our operation, from detecting and mitigating cybersecurity vulnerabilities to enhancing maritime search and rescue operations and far beyond. AI will provide smarter and timelier information to our agents and officers to aid them in making decisions and free them up from routine tasks to focus on higher value work.\nAs we move forward, we will ensure that our use of AI is responsible and trustworthy; that it is rigorously tested to be effective; that it safeguards privacy, civil rights, and civil liberties, while avoiding inappropriate biases; and to the extent possible, that it is transparent and explainable to the people we serve.\nLast month, Secretary Mayorkas issued our key principles for responsible AI use. We are applying these principles through the DHS AI Task Force, which I lead alongside our Under Secretary for Science and Technology, by issuing comprehensive policies on specific types of AI, as we did just this week with new restrictions on our use of facial recognition.\nWe will work alongside our internal and external oversight partners, to include Congress and this Subcommittee, as we work to implement NIST's AI risk management framework and remain fully compliant with evolving laws, practices, and policies.\nThank you again for the opportunity to testify today. I look forward to your questions.\n[Interviewer] (Mr. Langworthy) Mr. Hysen?\n[Respondent] No, nothing to add on regulatory approaches. We defer to the White House.\nThank you.\n[Interviewer] (Mr. Langworthy) OK. With the remaining time, I want to focus on the Department of Homeland Security. So, Mr. Hysen, are you concerned that as AI systems become more mature and complicated, that criminals will have greater opportunity to commit heinous crimes, like child exploitation?\n[Respondent] Congressman, we absolutely are concerned there; however, we are also looking to harness AI to combat those crimes. I shared earlier our work of Homeland Security Investigations in Operation Renewed Hope, which used AI to help rescue victims from active abuse, as well as to arrest suspected perpetrators. So, as we are looking to better defend against the use of AI to commit these crimes, we are also using it to defend against them.\n[Interviewer] (Mr. Langworthy) The protections, you know, have to be built at the same time as, you know, all of the fruits of what AI can bring us. They have to be there. Our most vulnerable, I believe, are those most likely to be harmed by, you know, a lot of this AI technology.\nNow, I will expand the scope of this question and include America's adversaries unleashing increasingly powerful cyber- attacks against U.S. critical systems. What is DHS doing in preparation to respond with the use of AI in those respects?\n[Respondent] Absolutely. We are, and have been for the entire Administration, concerned about adversarial use of AI against Federal and critical infrastructure networks. Secretary Mayorkas established our Artificial Intelligence Task Force, which I co-lead, and charged us with looking at the use of AI to secure critical infrastructure as one of our critical objectives. We are working with the Cybersecurity and Infrastructure Security Agency to look at how we can effectively partner with critical infrastructure organizations on safeguarding their uses of AI and strengthening their cybersecurity practices writ large to defend against evolving threats.\n[Interviewer] (Mr. Edwards) The witness may answer the question.\n[Respondent] Congressman, thank you. I certainly acknowledge the risk and want to assure you that we are leveraging AI as decision support for our law enforcement officers, but that ultimately, our officers are the ones responsible for making law enforcement decisions.\nI also see tremendous potential to use AI to remove repetitive paperwork and administrative tasks that our officers have to do that they would tell you, and they would tell me, dulls their focus from their security mission.",
+ "_bench": {
+  "seconds": 57.6,
+  "chars": 7417
+ }
+}

@@ -1,0 +1,7 @@
+hearings：12 份，待編 12 份，端點 gemini/gemini-3.6-flash
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+
+  ■ 額度用完或缺少設定，停在 CHRG-118shrg52483_Venkatasubramanian。
+    換一組**不同專案**的 API key 後用同一行指令重跑。
+    已完成 0 份已存檔，重跑會從這一份接著編。
+    CHRG-118shrg52483_Venkatasubramanian: RateLimited: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https

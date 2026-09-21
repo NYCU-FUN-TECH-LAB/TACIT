@@ -1,0 +1,226 @@
+{
+  "framework_id": "esg_disclosure_probe",
+  "version": "0.2.0",
+  "provenance": "manual",
+  "name": {
+    "en": "Sustainability disclosure quality (probe)",
+    "zh": "永續揭露品質（試作）"
+  },
+  "citation": "Probe framework written to test whether the tool works on corporate disclosure rather than interviews, and on a polarity model whose values are not P/N. Not a validated instrument.",
+  "description": {
+    "en": "A minimal four-dimension scheme for reading corporate sustainability reports, written only to test portability. The polarity model asks whether a passage substantiates a claim or merely asserts it, which is the recurring problem in disclosure research. It ships because it is the least similar framework available: a non-interview corpus, descriptor fields that have nothing to do with people, and poles named S and A rather than P and N. Several defects were only ever found by running it. Replace it with a real instrument (GRI, SASB, TCFD, ESRS) before using it for research.",
+    "zh": "為了測試可攜性而寫的四維度極簡架構，用來讀企業永續報告書。極性模型問的是「這段話是有憑據的揭露，還是只是宣稱」——那正是揭露研究反覆遇到的問題。它之所以隨工具一起發行，是因為它是手上最不像預設框架的那一個：語料不是訪談、屬性欄位跟人無關、兩極叫 S 和 A 而不是 P 和 N。有好幾個缺陷是靠實際跑這個框架才被發現的。真要做研究，請換成正式工具（GRI、SASB、TCFD、ESRS）。"
+  },
+  "polarity": {
+    "enabled": true,
+    "values": ["S", "A"],
+    "labels": {
+      "S": {"en": "Substantiated", "zh": "有憑據"},
+      "A": {"en": "Asserted only", "zh": "僅為宣稱"}
+    },
+    "citation": "Substantiated = the passage gives a figure, a boundary, a method or a verifiable reference. Asserted = a commitment or achievement stated without any of those."
+  },
+  "corpus": {
+    "document": {"en": "corporate sustainability report",
+                 "zh": "企業永續報告書"},
+    "case": {"en": "reporting entity", "zh": "報告主體"},
+    "descriptor_source": {
+      "en": "the cover, the About-this-report section, the reporting-boundary statement and the assurance statement",
+      "zh": "封面、關於本報告書章節、報告邊界說明與確信聲明"
+    }
+  },
+  "descriptors": {
+    "industry": ["finance", "manufacturing", "utilities", "retail",
+                 "technology", "transport", "other"],
+    "report_year": ["y2021", "y2022", "y2023", "y2024", "y2025"],
+    "assurance": ["none", "limited", "reasonable"],
+    "framework_used": ["gri", "sasb", "tcfd", "esrs", "ifrs_s", "multiple",
+                       "none_stated"]
+  },
+  "dimensions": [
+    {
+      "id": "targets",
+      "short": "TGT",
+      "label": {"en": "Targets and baselines", "zh": "目標與基線"},
+      "definition": {
+        "en": "Statements about what the organisation intends to achieve, by when, and measured against what starting point.",
+        "zh": "組織打算達成什麼、何時達成、以哪一年為基準衡量。"
+      },
+      "indicators": {
+        "S": {
+          "en": [
+            "a numeric target with a target year",
+            "an explicit baseline year and baseline value",
+            "scope of the target (which entities, which emissions scopes)",
+            "restatement of a previously published target, with the reason"
+          ],
+          "zh": ["帶年度的量化目標", "明確的基準年與基準值",
+                 "目標涵蓋範圍（哪些實體、哪些排放範疇）",
+                 "對先前已公布目標的重述，並說明原因"]
+        },
+        "A": {
+          "en": [
+            "an ambition with no number attached (\"net zero by 2050\" with no interim figure)",
+            "a target with no stated baseline",
+            "a target whose scope is left unspecified",
+            "a previously published target quietly dropped or changed"
+          ],
+          "zh": ["沒有數字的抱負（只說「2050 淨零」卻沒有中期數字）",
+                 "沒有說明基準的目標", "未界定涵蓋範圍的目標",
+                 "先前公布過的目標被悄悄拿掉或更改"]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "A description of an action already completed is not a target. Targets are forward-looking.",
+          "Regulatory minimums the entity is required to meet are not targets unless the entity commits to going beyond them.",
+          "Do NOT code a passage as asserted-only merely because you cannot verify the figure from the report alone. A stated figure with a stated baseline is substantiated disclosure even if you cannot audit it."
+        ],
+        "zh": [
+          "描述已經做完的事情不算目標，目標是前瞻的。",
+          "法規要求的最低標準不算目標，除非報告主體承諾超越它。",
+          "不可以因為「光看報告書無法查證這個數字」就判成僅為宣稱。有數字、有基準的揭露就是有憑據的揭露，能不能稽核是另一回事。"
+        ]
+      },
+      "literature": []
+    },
+    {
+      "id": "measurement",
+      "short": "MEA",
+      "label": {"en": "Measurement and boundary", "zh": "量測與邊界"},
+      "definition": {
+        "en": "How a reported figure was produced: the method, the reporting boundary, what was estimated, and what was left out.",
+        "zh": "一個揭露數字是怎麼算出來的：方法、報告邊界、哪些是估算、哪些被排除。"
+      },
+      "indicators": {
+        "S": {
+          "en": [
+            "named calculation method or protocol",
+            "stated organisational or operational boundary",
+            "explicit exclusions from the figure",
+            "distinction between measured, calculated and estimated values"
+          ],
+          "zh": ["明確指名的計算方法或協定", "已說明的組織或營運邊界",
+                 "明確排除在數字之外的項目", "區分實測、計算與估算"]
+        },
+        "A": {
+          "en": [
+            "a figure presented with no method and no boundary",
+            "\"in accordance with international standards\" without naming one",
+            "year-on-year comparison where the boundary changed and this is not said",
+            "a total that cannot be reconciled with the parts disclosed elsewhere"
+          ],
+          "zh": ["沒有方法也沒有邊界的數字",
+                 "只說「依據國際標準」卻不指名是哪一個",
+                 "邊界改變卻未說明的逐年比較",
+                 "與報告書他處揭露的分項對不起來的總數"]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "The presence of a number is not by itself substantiation. A number with no method and no boundary belongs to the asserted pole.",
+          "A methodological appendix elsewhere in the report counts: if the passage cites it, code the passage as substantiated.",
+          "Do not code the absence of a figure as evidence about measurement quality unless the report claims to report that figure."
+        ],
+        "zh": [
+          "出現數字本身不構成憑據。沒有方法也沒有邊界的數字屬於宣稱那一極。",
+          "報告書別處的方法論附錄算數：段落若有指向它，就編為有憑據。",
+          "不可以把「沒有某個數字」當成量測品質的證據，除非報告書自稱會揭露那個數字。"
+        ]
+      },
+      "literature": []
+    },
+    {
+      "id": "governance",
+      "short": "GOV",
+      "label": {"en": "Governance and accountability", "zh": "治理與課責"},
+      "definition": {
+        "en": "Who inside the organisation is answerable for sustainability outcomes, and through what mechanism.",
+        "zh": "組織內部誰為永續成果負責，透過什麼機制負責。"
+      },
+      "indicators": {
+        "S": {
+          "en": [
+            "a named body or role with stated responsibility",
+            "frequency and content of board-level review",
+            "link between sustainability outcomes and remuneration, with the weighting",
+            "escalation route when a target is missed"
+          ],
+          "zh": ["有明確職責的具名單位或職位", "董事會層級審議的頻率與內容",
+                 "永續成果與薪酬的連結，並說明權重", "目標未達成時的處理途徑"]
+        },
+        "A": {
+          "en": [
+            "\"the board oversees sustainability\" with no mechanism",
+            "a committee named but with no stated remit, membership or cadence",
+            "remuneration described as linked to ESG with no weighting or metric",
+            "accountability asserted for outcomes the entity does not control"
+          ],
+          "zh": ["只說「董事會監督永續」卻沒有機制",
+                 "點名了委員會，卻沒有職權、成員或開會頻率",
+                 "說薪酬與 ESG 連結，卻沒有權重或指標",
+                 "為自己無法控制的成果宣稱課責"]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "An organisation chart is not governance evidence unless responsibility for sustainability outcomes is attached to a position on it.",
+          "A policy document existing is not accountability. Accountability needs a consequence: who answers, to whom, when the outcome is missed.",
+          "Do not infer weak governance from silence. Code only what the report states."
+        ],
+        "zh": [
+          "組織圖不算治理證據，除非圖上的某個位置被賦予永續成果的責任。",
+          "有一份政策文件不等於課責。課責需要後果：沒達成時誰要向誰交代。",
+          "不可以從沉默推論治理薄弱。只編報告書真的寫出來的東西。"
+        ]
+      },
+      "literature": []
+    },
+    {
+      "id": "stakeholder",
+      "short": "STK",
+      "label": {"en": "Stakeholder engagement", "zh": "利害關係人議合"},
+      "definition": {
+        "en": "How outside parties were consulted and whether their input demonstrably changed anything.",
+        "zh": "如何徵詢外部各方意見，以及那些意見是否確實改變了什麼。"
+      },
+      "indicators": {
+        "S": {
+          "en": [
+            "identified stakeholder groups and how they were selected",
+            "method and timing of consultation",
+            "issues raised, in the stakeholders' own terms",
+            "a decision that changed as a result, named"
+          ],
+          "zh": ["已辨識的利害關係人群體及其選取方式", "議合的方式與時點",
+                 "以利害關係人自己的語彙陳述的議題", "因此而改變的具名決策"]
+        },
+        "A": {
+          "en": [
+            "a list of stakeholder categories with no method attached",
+            "a materiality matrix with no account of how positions were obtained",
+            "\"we engage regularly with our stakeholders\"",
+            "issues reported only in the entity's own framing"
+          ],
+          "zh": ["只列出利害關係人類別，沒有說明方法",
+                 "有重大性矩陣，卻沒有交代座標是怎麼來的",
+                 "只說「我們定期與利害關係人溝通」",
+                 "議題只以報告主體自己的框架陳述"]
+        }
+      },
+      "exclusions": {
+        "en": [
+          "Counting how many people were surveyed is not engagement quality on its own; what matters is whether anything changed.",
+          "Customers buying the product and employees being employed are not stakeholder engagement. Engagement requires consultation about the entity's conduct.",
+          "Philanthropy and community sponsorship are not engagement unless the recipients shaped a decision."
+        ],
+        "zh": [
+          "問卷發了幾份本身不構成議合品質，關鍵是有沒有東西因此改變。",
+          "顧客買產品、員工受雇不算利害關係人議合。議合要求就報告主體的作為進行徵詢。",
+          "公益捐助與社區贊助不算議合，除非受贈方影響了某個決策。"
+        ]
+      },
+      "literature": []
+    }
+  ]
+}

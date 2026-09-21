@@ -1,0 +1,714 @@
+{
+ "respondent": "CHRG-119hhrg60818_Shah",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Introduction and background",
+   "quote": "Thank you for the opportunity to testify on government use and procurement of AI.",
+   "full_text": "Chairwoman Mace, Ranking Member Lynch, and distinguished Members of the Committee, thank you for the opportunity to testify on government use and procurement of AI. I am Bhavin Shah, CEO and founder of Moveworks.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is introducing themselves and their company, Moveworks"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Moveworks' mission and capabilities",
+   "quote": "Moveworks transforms how organizations support their employees.",
+   "full_text": "Moveworks transforms how organizations support their employees. We do this through an enterprise AI assistant, and employees interact conversationally with the assistant in a chat-based interface. They can get IT support, ask H.R. questions, and find company information. But the assistant is not just for looking up information. It can also be used to take actions, such as scheduling time off or obtaining software licenses.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "The respondent is explaining the capabilities of their AI assistant"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Combining language models",
+   "quote": "We put these together with our own enterprise-specific models, all governed by enterprise-grade guardrails, including fact-checking, citations, and security filters.",
+   "full_text": "We do this work by combining top-tier language models, like OpenAI's GPT-4, Meta Llama 3, as well as other models from Google's DeepMind, Microsoft, NVIDIA, just to name a few. We put these together with our own enterprise-specific models, all governed by enterprise-grade guardrails, including fact-checking, citations, and security filters.",
+   "open_codes": [
+    {
+     "code_id": "c005",
+     "label": "Characteristics of machine learning systems",
+     "rationale": "The respondent is explaining how they combine different language models"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "AI assistant benefits",
+   "quote": "employees no longer have to log in and out of multiple systems to get work done. Organizations can extend the system to simplify and accelerate their most complex business processes, all done safely and securely while respecting permissions.",
+   "full_text": "Because the AI assistant is a single unified tool, employees no longer have to log in and out of multiple systems to get work done. Organizations can extend the system to simplify and accelerate their most complex business processes, all done safely and securely while respecting permissions. We do this work by combining top-tier language models, like OpenAI's GPT-4, Meta Llama 3, as well as other models from Google's DeepMind, Microsoft, NVIDIA, just to name a few. We put these together with our own enterprise-specific models, all governed by enterprise-grade guardrails, including fact-checking, citations, and security filters. The result is AI that understands work context. It handles complex business processes safely and effectively and follows industry-leading data protection and privacy approaches.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "AI systems are governed by guardrails to ensure safety and security"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Moveworks' experience and impact",
+   "quote": "Today, Moveworks serves 5 million employees across 350 organizations, including major companies like Broadcom, Marriott, and CVS Health. We are also used by a number of local governments, such as Scottsdale, Ventura, and Durham County. In addition, government contractors, like Leidos and Northrop Grumman, use Moveworks to make their businesses more efficient.",
+   "full_text": "Today, Moveworks serves 5 million employees across 350 organizations, including major companies like Broadcom, Marriott, and CVS Health. We are also used by a number of local governments, such as Scottsdale, Ventura, and Durham County. In addition, government contractors, like Leidos and Northrop Grumman, use Moveworks to make their businesses more efficient. We have seen firsthand how AI drives measurable results. Honeywell reduced IT help desk requests by 80 percent, Broadcom scaled from 10,000 to 50,000 employees without increasing service staff, and the city of Glendale achieved a 514 percent return on its AI investment.",
+   "open_codes": [
+    {
+     "code_id": "c325",
+     "label": "AI drives measurable results",
+     "rationale": "The respondent highlights the tangible benefits of AI adoption"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Federal Government's AI adoption challenges",
+   "quote": "We have engaged with agencies across the government and consistently see enthusiasm for AI adoption, but that enthusiasm has not translated into government procuring AI products like Moveworks.",
+   "full_text": "Our experience positions us uniquely to understand the Federal Government's complex requirements. The Federal Government has an unprecedent opportunity. You can leverage AI for efficiency, you can achieve cost savings, you can improve employee experience, and, most importantly, you can therefore improve citizen services. We have engaged with agencies across the government and consistently see enthusiasm for AI adoption, but that enthusiasm has not translated into government procuring AI products like Moveworks.",
+   "open_codes": [
+    {
+     "code_id": "c326",
+     "label": "Barriers to AI adoption",
+     "rationale": "The respondent identifies three primary barriers to AI adoption in the Federal Government"
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "FedRAMP process as a barrier",
+   "quote": "The first is the FedRAMP process. Moveworks invested 3-and-a-half years and over $8-and-a-half million to achieve FedRAMP-ready status.",
+   "full_text": "The first is the FedRAMP process. Moveworks invested 3-and-a-half years and over $8-and-a-half million to achieve FedRAMP-ready status. This is a prohibited barrier for smaller AI innovators, the companies that often develop the most cutting-edge solutions.",
+   "open_codes": [
+    {
+     "code_id": "c327",
+     "label": "FedRAMP process as a barrier",
+     "rationale": "The respondent highlights the time and financial investment required to achieve FedRAMP-ready status"
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Complex reseller networks as a barrier",
+   "quote": "Second, complex reseller networks. These force innovative companies to work through intermediaries rather than directly with agencies, adding cost without adding value.",
+   "full_text": "Second, complex reseller networks. These force innovative companies to work through intermediaries rather than directly with agencies, adding cost without adding value.",
+   "open_codes": [
+    {
+     "code_id": "c328",
+     "label": "Complex reseller networks as a barrier",
+     "rationale": "The respondent highlights the added cost and lack of value in working through intermediaries"
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Multi-year contracting vehicles as a barrier",
+   "quote": "Third, multi-year contracting vehicles. These favor large incumbents over agile AI companies. These create delays measured in years.",
+   "full_text": "Third, multi-year contracting vehicles. These favor large incumbents over agile AI companies. These create delays measured in years.",
+   "open_codes": [
+    {
+     "code_id": "c329",
+     "label": "Multi-year contracting vehicles as a barrier",
+     "rationale": "The respondent highlights the favoritism towards large incumbents and the resulting delays"
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Barriers to AI innovation",
+   "quote": "We have encountered three primary barriers. The first is the FedRAMP process.",
+   "full_text": "We have encountered three primary barriers. The first is the FedRAMP process. Moveworks invested 3-and-a-half years and over $8-and-a-half million to achieve FedRAMP-ready status. This is a prohibited barrier for smaller AI innovators, the companies that often develop the most cutting-edge solutions. Second, complex reseller networks. These force innovative companies to work through intermediaries rather than directly with agencies, adding cost without adding value. Third, multi-year contracting vehicles. These favor large incumbents over agile AI companies. These create delays measured in years. Meanwhile, AI technology advances every month.",
+   "open_codes": [
+    {
+     "code_id": "c330",
+     "label": "FedRAMP process",
+     "rationale": "A barrier to AI innovation for smaller companies"
+    },
+    {
+     "code_id": "c331",
+     "label": "Complex reseller networks",
+     "rationale": "A barrier to AI innovation that favors large companies"
+    },
+    {
+     "code_id": "c332",
+     "label": "Multi-year contracting vehicles",
+     "rationale": "A barrier to AI innovation that creates delays"
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "American AI leadership",
+   "quote": "American AI leadership requires action, not just intention.",
+   "full_text": "American AI leadership requires action, not just intention. The private sector has demonstrated that AI adoption can both be rapid and secure when procurement processes match the pace of innovation. I recommend Congress consider immediate steps to improve government use and procurement of AI. Embed AI education and adoption goals in agency leadership performance plans. Create government developer programs for startups to learn Federal systems. Scale AI proof-of-concept programs for rapid pilots to all agencies, similar to the Investment Horizon's pilot program developed by the Office of the CIO within the Navy. And finally, establish agency innovator programs that allow smaller agencies to serve as test beds for AI implementations. Longer term, we must modernize acquisition policies. We must accelerate procurement timelines.",
+   "open_codes": [
+    {
+     "code_id": "c333",
+     "label": "Action over intention",
+     "rationale": "American AI leadership requires action"
+    },
+    {
+     "code_id": "c334",
+     "label": "Private sector AI adoption",
+     "rationale": "Demonstrates that AI adoption can be rapid and secure"
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Government AI adoption",
+   "quote": "We have a choice.",
+   "full_text": "We have a choice. We can modernize our procurement process to embrace AI innovation or we can watch other Nations take the lead in government AI adoption while our agencies struggle with outdated processes and missed opportunities. I urge this Committee to champion procurement reform. We need to maintain our competitive edge while serving citizens more effectively.",
+   "open_codes": [
+    {
+     "code_id": "c335",
+     "label": "Government AI adoption choice",
+     "rationale": "A choice between embracing AI innovation and falling behind"
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Opening Remarks",
+   "quote": "Thank you, and I welcome your questions and discussions on these critical topics.",
+   "full_text": "Thank you, and I welcome your questions and discussions on these critical topics.\n[Interviewer] (Mr. Gosar) OK. Mr. Shah, you talked about our procurement system. Boy, it is broken. So, how would you use AI during that whole process, because our overruns in our military are outrageous. How can we keep them on track? How does that work?\n[Respondent] Yes. I think there are a variety of things to talk about on that topic. One, you can use AI to help with the procurement process itself in terms of analyzing vendors, summarizing submissions, generating use cases and requirements for the different agencies that are looking for new technology. But I think before that, we need to sort of create an environment where these new technologies that can be applied to procurement or anything else in the U.S. Government can make their way into these agencies. And I think that is a human process problem that we have an opportunity here in this Committee to really kind of provide some oversight and correction so that we can go about delivering these great new technologies into these agencies quickly, right?\nWe have spent years working on this ourselves to try and get into agencies, but if you look at a lot of these procurement, sort of processes, they are multiyear. They are outdated from the 1990s where, essentially, you are thinking about installing software on some server rack that is going to last 5 years, and it might take 2 years to actually go through the procurement process. This is untenable for young companies who have limited cash, limited capital, who want to be able to monetize their investments and especially help the U.S. Government move quickly.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is introducing themselves and their company, providing context for their discussion on AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "AI Application in Procurement",
+   "quote": "One, you can use AI to help with the procurement process itself in terms of analyzing vendors, summarizing submissions, generating use cases and requirements for the different agencies that are looking for new technology.",
+   "full_text": "One, you can use AI to help with the procurement process itself in terms of analyzing vendors, summarizing submissions, generating use cases and requirements for the different agencies that are looking for new technology. But I think before that, we need to sort of create an environment where these new technologies that can be applied to procurement or anything else in the U.S. Government can make their way into these agencies. And I think that is a human process problem that we have an opportunity here in this Committee to really kind of provide some oversight and correction so that we can go about delivering these great new technologies into these agencies quickly, right?",
+   "open_codes": [
+    {
+     "code_id": "c336",
+     "label": "AI's role in streamlining administrative tasks",
+     "rationale": "The respondent is discussing how AI can be used to improve the procurement process."
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "Blockchain and Data Preservation",
+   "quote": "So, we do not deploy blockchain technology for our solution. We focus squarely on what employees can benefit from when it comes to using AI to be more productive, so I am unfortunately not able to answer how blockchain could be used here.",
+   "full_text": "So, we do not deploy blockchain technology for our solution. We focus squarely on what employees can benefit from when it comes to using AI to be more productive, so I am unfortunately not able to answer how blockchain could be used here. But, generally speaking, technology has been shown in the private sector to have tremendous impacts on their efficiencies and their ability to stay ahead and to lead in the industry.",
+   "open_codes": [
+    {
+     "code_id": "c337",
+     "label": "No use of blockchain technology",
+     "rationale": "The respondent is stating that their company does not use blockchain technology."
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "AI Application in Federal Government",
+   "quote": "How do you see AI technologies like those developed by your company being effectively used in the Federal Government, and what kinds of productivity gains and cost savings could we expect to see?",
+   "full_text": "How do you see AI technologies like those developed by your company being effectively used in the Federal Government, and what kinds of productivity gains and cost savings could we expect to see?",
+   "open_codes": [
+    {
+     "code_id": "c338",
+     "label": "AI application in Federal Government",
+     "rationale": "The respondent is answering a question about the potential application of AI in the Federal Government."
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "AI's potential for efficiency and productivity",
+   "quote": "AI gives us today, and the private sector is using this quite aggressively to make their own teams more efficient and effective.",
+   "full_text": "All these things are things that AI gives us today, and the private sector is using this quite aggressively to make their own teams more efficient and effective.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent mentions the private sector using AI aggressively to make their teams more efficient and effective, implying the need for guardrails to prevent failures and ensure benefits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "Scale and employee time savings",
+   "quote": "Broadcom, for example, was able to go from 10,000 employees to 50,000 while keeping the same support staff.",
+   "full_text": "So, that is another benefit, which is you can take the same team and allow them to support a lot more employees in this case, but in our case here today, talking about constituents.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent mentions the potential for AI to support a larger number of employees, highlighting concerns about AI development and use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "Monetary savings and ROI",
+   "quote": "The city of Glendale I mentioned did a 500-percent plus ROI on their investment, but that was 3,500 hours of savings from the employees themselves that they could apply and use toward other tasks and functions for their constituents.",
+   "full_text": "And then, of course, there are monetary savings, which is that if we can do some of this more efficiently, that goes back to the U.S. taxpayers. It goes back into the economy to get spent on further innovation.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent mentions the potential for AI to generate monetary savings, highlighting concerns about AI development and use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Cybersecurity and AI standards",
+   "quote": "what we have seen, especially in cybersecurity, the NIST has created standards there that became adopted by a majority of the industry. And I think when it comes to AI and protecting data, coming from the lens of a startup, from a young company, we have looked at the new standards that they have around AI and they are actually pretty good, and they do provide for a lot of recommendations that we actually follow.",
+   "full_text": "Yes. I think, you know, what we have seen, especially in cybersecurity, the NIST has created standards there that became adopted by a majority of the industry. And I think when it comes to AI and protecting data, coming from the lens of a startup, from a young company, we have looked at the new standards that they have around AI and they are actually pretty good, and they do provide for a lot of recommendations that we actually follow. And then furthermore, you know, going through the FedRAMP process, while I found it to be very expensive, there was a lot of amazing sort of things that they recommended in terms of infrastructure, software, process, and procedures that allow us to really make sure that the data is secured.",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The respondent mentions the importance of AI standards and recommendations, highlighting concerns about AI regulation."
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent mentions the importance of standards and guidelines for AI development and use, citing NIST's standards in cybersecurity as an example"
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "FedRAMP process and infrastructure",
+   "quote": "And then furthermore, you know, going through the FedRAMP process, while I found it to be very expensive, there was a lot of amazing sort of things that they recommended in terms of infrastructure, software, process, and procedures that allow us to really make sure that the data is secured.",
+   "full_text": "And then furthermore, you know, going through the FedRAMP process, while I found it to be very expensive, there was a lot of amazing sort of things that they recommended in terms of infrastructure, software, process, and procedures that allow us to really make sure that the data is secured.",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The respondent mentions the importance of the FedRAMP process and its recommendations for securing data, highlighting concerns about AI regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Cities and Counties using AI",
+   "quote": "in terms of the cities and counties that have started to adopt this technology, they are using it to make their employees more effective. What does that mean? That means that they can self-serve a lot more use cases than they would have otherwise.",
+   "full_text": "Yes, it is a great question. So, you know, in terms of the cities and counties that have started to adopt this technology, they are using it to make their employees more effective. What does that mean? That means that they can self-serve a lot more use cases than they would have otherwise. They can find information. They can troubleshoot issues that they might be having with IT or even an H.R. situation or use case. They can submit performance reviews. They can do a variety of tasks that were otherwise very manual and very slow, and required a lot of coordination amongst folks.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent mentions the limitations of AI systems, stating that they can self-serve a lot more use cases than they would have otherwise"
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Benefits of AI",
+   "quote": "the city of Glendale in Arizona is saving their employees 3,500 hours now each month, being able to now do more with those same team members to support the employees or the constituents of their county.",
+   "full_text": "And so, you know, as I was mentioning earlier, the city of Glendale in Arizona is saving their employees 3,500 hours now each month, being able to now do more with those same team members to support the employees or the constituents of their county. And so, I think that we see this across the private sector. We have seen people use this technology to enable more employees to do greater levels of work and greater levels of output, while still sort of maintaining all the privacy and the security that is required in any of those environments.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent highlights the benefits of AI, stating that it enables more employees to do greater levels of work and greater levels of output"
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Procurement process and pilot programs",
+   "quote": "creating more POC-type programs",
+   "full_text": "creating more POC-type programs. You know, a good example is the, I think it is called the investment horizon pilot program that the Office of the CIO of the Navy has implemented. But the challenge is, every agency seems to have their own set of ways that they procure new technology, so to the extent that we can help to normalize that will help us also navigate.",
+   "open_codes": [
+    {
+     "code_id": "c339",
+     "label": "Pilot programs for procurement",
+     "rationale": "Mr. Shah suggests that pilot programs can help normalize procurement processes"
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "Benefits of AI for government employees",
+   "quote": "Yes, thank you. You know, the things that we are seeing in the private sector today with large organizations like Honeywell and like, you know, Northrop Grumman and the likes, they are benefiting from AI by making their employees be able to self-serve, get information that they are looking for and take actions across a variety of systems.",
+   "full_text": "Yes, thank you. You know, the things that we are seeing in the private sector today with large organizations like Honeywell and like, you know, Northrop Grumman and the likes, they are benefiting from AI by making their employees be able to self-serve, get information that they are looking for and take actions across a variety of systems. You know, on any given day, an employee might have to swivel their chair 17 times to use different tools, and that becomes a very wasteful portion of their day, sometimes many hours. And so, to the extent that we can start to do that for Federal workers, for all folks who work for this government, I think we are going to see some benefits, benefits that will allow them to troubleshoot, to have better IT, benefits that will accrue to them from an H.R. perspective in terms of getting the information they need, making the changes, the benefit selections that go into that and also be able to work across different systems without having to be an expert.",
+   "open_codes": [
+    {
+     "code_id": "c340",
+     "label": "Benefits of AI for government employees",
+     "rationale": "Mr. Shah discusses how AI can benefit government employees by streamlining their work"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent is discussing the benefits of AI for Federal workers"
+    },
+    {
+     "code_id": "c344",
+     "label": "Support for federalism",
+     "rationale": "The passage indicates the respondent's affirmative response to the question about support for federalism."
+    },
+    {
+     "code_id": "c351",
+     "label": "AI dominance",
+     "rationale": "The respondent's affirmative response to the question about AI dominance"
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "AI benefits for Federal workers",
+   "quote": "I think one of the things that you all have pointed out, there are hundreds of enterprise systems inside the government, and you may only touch it once a year, twice a year. And so, if you can use AI as the overlay, kind of that front door, what you will see is your staff and all the members of the Federal Government be able to navigate these systems, which can be very complex, very easily using the most intuitive interface in the world, which is which is language and conversation.",
+   "full_text": "I think one of the things that you all have pointed out, there are hundreds of enterprise systems inside the government, and you may only touch it once a year, twice a year. And so, if you can use AI as the overlay, kind of that front door, what you will see is your staff and all the members of the Federal Government be able to navigate these systems, which can be very complex, very easily using the most intuitive interface in the world, which is which is language and conversation. So, when it comes to that, you know, we have seen companies and our, sort of, world of private sector, be able to reclaim--a top five pharmaceutical was able to reclaim 75,000 hours of employee productivity by deploying this kind of AI across 44 languages. We have had a Fortune 500 aerospace manufacturer reclaim 75 percent of its support budget to be able to bring in technologies and leverage.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent is discussing the impact of AI on Federal workers"
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "AI benefits for Federal workers",
+   "quote": "I think that you are going to see both happier employees and better outcomes while also making the government more efficient.",
+   "full_text": "I think that you are going to see both happier employees and better outcomes while also making the government more efficient.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent is discussing the benefits of AI for Federal workers"
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "AI advancements and quantum computing modernizing and streamlining governmental operations",
+   "quote": "what type of advantages AI advancements as well as, you know, I guess you could say quantum computing, what that could actually do to modernize and streamline governmental operations, not just Federal, but state and local.",
+   "full_text": "I was sitting with my colleague, Mr. Perry. We were just kind of theorizing about what type of advantages AI advancements as well as, you know, I guess you could say quantum computing, what that could actually do to modernize and streamline governmental operations, not just Federal, but state and local.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage expresses concerns about the potential impact of AI advancements and quantum computing on governmental operations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Agentic AI and automation",
+   "quote": "it allows for a new kind of automation. We have been building automation for several decades, but a lot of it was very brittle, and if something slightly changed under the hood, all of a sudden, you know, that automation would no longer work.",
+   "full_text": "it allows for a new kind of automation. We have been building automation for several decades, but a lot of it was very brittle, and if something slightly changed under the hood, all of a sudden, you know, that automation would no longer work. With Agentic AI, you can actually overcome a lot of that by having these very, you know, smart, intelligent reasoners and systems that can then go and do the levels of automation that we have not been able to do before.",
+   "open_codes": [
+    {
+     "code_id": "c341",
+     "label": "Agentic AI and automation",
+     "rationale": "The passage highlights the limitations of traditional automation and the potential of Agentic AI to overcome them."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "AI's role in modernizing and streamlining governmental operations",
+   "quote": "I think what that is going to do is really elevate all of us to be able to work on less mundane things and more sort of advanced thinking and creative ideas.",
+   "full_text": "I think what that is going to do is really elevate all of us to be able to work on less mundane things and more sort of advanced thinking and creative ideas.",
+   "open_codes": [
+    {
+     "code_id": "c037",
+     "label": "Impact of AI systems",
+     "rationale": "The passage highlights the potential benefits of AI systems in terms of elevating human work."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "AI's potential for dominant leadership position",
+   "quote": "I think that to the extent that we can be the ones that others follow, that we can be the ones whose software, whose hardware, whose foundation models others use, we will have the sort of dominant leadership position of how this whole planet evolves.",
+   "full_text": "I think that to the extent that we can be the ones that others follow, that we can be the ones whose software, whose hardware, whose foundation models others use, we will have the sort of dominant leadership position of how this whole planet evolves.",
+   "open_codes": [
+    {
+     "code_id": "c342",
+     "label": "AI's potential for dominant leadership position",
+     "rationale": "The passage highlights the potential for AI to have a dominant leadership position in terms of technological advancements."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "Innovation in AI happening at small startups",
+   "quote": "Most of the innovation happening in AI is happening at small startups, and I think that, to the extent that you can look at a team of maybe 50 people and see how long it takes for them to get their product discovered and utilized by Federal Agencies, will determine how fast we can move, and to the extent that we can solve that, I think it would make a big difference.",
+   "full_text": "Most of the innovation happening in AI is happening at small startups, and I think that, to the extent that you can look at a team of maybe 50 people and see how long it takes for them to get their product discovered and utilized by Federal Agencies, will determine how fast we can move, and to the extent that we can solve that, I think it would make a big difference.",
+   "open_codes": [
+    {
+     "code_id": "c343",
+     "label": "Innovation in AI happening at small startups",
+     "rationale": "The passage highlights the importance of small startups in driving innovation in AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "Support for state rights and navigating 50 states",
+   "quote": "whatever we can do to make it easier for a young company to navigate the 50 states will be very important",
+   "full_text": "I do support state rights, and just from a small company standpoint, I would say whatever we can do to make it easier for a young company to navigate the 50 states will be very important, because otherwise----",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent mentions the importance of making it easier for young companies to navigate the 50 states, implying the need for guardrails to prevent failures and ensure benefits"
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "AI's role in monitoring and mitigating risks",
+   "quote": "a lot of these problems can be overcome at the application layer",
+   "full_text": "I think a lot of the conversation so far since ChatGPT came out is about foundation models and how they operate and how they hallucinate, and some of the shortcomings of them and the risks with them, but a lot of these problems can be overcome at the application layer. And Ms. Miller and I represent companies who build applications on top of many models, and so if you think about that framework, what you understand then is the responsibility of some of these outcomes, the responsibility of some of these behaviors is not just left to the model. It is left to the vendor and the developer of----",
+   "open_codes": [
+    {
+     "code_id": "c345",
+     "label": "AI's role in monitoring and mitigating risks",
+     "rationale": "The respondent discusses the role of AI in monitoring and mitigating risks, highlighting its potential to detect biases and enhancement distribution"
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "Concerns about AI's impact on workforce",
+   "quote": "AI could wipe out half of the entry- level white-collar jobs and spike unemployment 10 to 20 percent in the next 1 to 5 years.",
+   "full_text": "Recently, Dario Amodei, CEO of Anthropic, one of the world's most powerful creators of AI, has a scary warning for all of us. He says this: ``AI could wipe out half of the entry- level white-collar jobs and spike unemployment 10 to 20 percent in the next 1 to 5 years.'' Other experts have said that number is closer to 50 percent in the next 5 years. He also said that ``AI companies and the government need to stop sugarcoating what is coming, the possible elimination of jobs across technology, finance, law, consulting, and other white-collar professions, especially entry-level gigs,'' he says.",
+   "open_codes": [
+    {
+     "code_id": "c346",
+     "label": "Concerns about AI's impact on workforce",
+     "rationale": "The respondent highlights the potential risks of AI on the workforce, emphasizing the need for transparency and regulation"
+    },
+    {
+     "code_id": "c016",
+     "label": "Impact of AI on job loss",
+     "rationale": "The respondent is discussing the potential consequences of AI on job loss."
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "Research on job loss",
+   "quote": "IBM just laid off 8,000 employees as of last week; McKinsey, a consulting firm, 5,000 employees as of May 28. Dell has laid off 6,000 employees in 2024. Intel has laid off 15,000 employees in 2024.",
+   "full_text": "Research that we have done shows that IBM just laid off 8,000 employees as of last week; McKinsey, a consulting firm, 5,000 employees as of May 28. Dell has laid off 6,000 employees in 2024. Intel has laid off 15,000 employees in 2024. And all of these were credited to AI and efficiency. Estimated total jobs lost, 214,000 total jobs lost to AI.",
+   "open_codes": [
+    {
+     "code_id": "c016",
+     "label": "Impact of AI on job loss",
+     "rationale": "The respondent is discussing the consequences of AI on job loss."
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "AI's potential impact on careers",
+   "quote": "data entry clerks, telemarketers, retail cashiers, warehouse workers, paralegals and legal assistants, basic customer support representatives, bank tellers, fast food workers, IT support technicians, tax preparers.",
+   "full_text": "I recently asked AI, what are the careers that will be replaced first by AI, and AI told me data entry clerks, telemarketers, retail cashiers, warehouse workers, paralegals and legal assistants, basic customer support representatives, bank tellers, fast food workers, IT support technicians, tax preparers.",
+   "open_codes": [
+    {
+     "code_id": "c016",
+     "label": "Impact of AI on job loss",
+     "rationale": "The respondent is discussing the potential consequences of AI on job loss."
+    }
+   ]
+  },
+  {
+   "segment_id": "S038",
+   "title": "Respondent's perspective on AI's impact",
+   "quote": "technology over time has generally raised the quality of living for all humans, and, you know, I know a lot of my fellow CEO AI folks out there try to grab headlines with some of their claims. I have not seen Dario's math behind all of this, but I think the point there is correct, that low-paying entry jobs will be taken on by computers, but it gives us a chance to reposition those individuals, re-skill them, and I do not think this is going to end. I think it is going to continue. For the next, you know, every 7 years, we are going to be talking about this.",
+   "full_text": "One of my questions to you guys, and I am not blaming any of you, but does it bother you at all that the technology you are developing is set to destroy tens of millions of jobs? I want to start with you, Mr. Shah. [Respondent] You know, technology over time has generally raised the quality of living for all humans, and, you know, I know a lot of my fellow CEO AI folks out there try to grab headlines with some of their claims. I have not seen Dario's math behind all of this, but I think the point there is correct, that low-paying entry jobs will be taken on by computers, but it gives us a chance to reposition those individuals, re-skill them, and I do not think this is going to end. I think it is going to continue. For the next, you know, every 7 years, we are going to be talking about this.",
+   "open_codes": [
+    {
+     "code_id": "c016",
+     "label": "Impact of AI on job loss",
+     "rationale": "The respondent is discussing the potential consequences of AI on job loss."
+    },
+    {
+     "code_id": "c347",
+     "label": "Impact of technology on quality of living",
+     "rationale": "The respondent highlights the positive impact of technology on human quality of living"
+    },
+    {
+     "code_id": "c348",
+     "label": "Automation and job repositioning",
+     "rationale": "The respondent discusses the impact of automation on job roles"
+    }
+   ]
+  },
+  {
+   "segment_id": "S039",
+   "title": "Private sector efficiency and growth",
+   "quote": "they have taken those efficiencies, turned them into profits. Profits have then led to more ambition to grow their businesses",
+   "full_text": "What we have found is that for customers of ours, if you look at the private sector, they have taken those efficiencies, turned them into profits. Profits have then led to more ambition to grow their businesses. In fact, the majority of our customers have actually increased their employee headcount over time because they want to endeavor to do more things.",
+   "open_codes": [
+    {
+     "code_id": "c349",
+     "label": "Private sector efficiency and growth",
+     "rationale": "The respondent highlights the positive impact of efficiency on business growth"
+    }
+   ]
+  },
+  {
+   "segment_id": "S040",
+   "title": "AI's impact on industries",
+   "quote": "there will be changes to many industries because of this",
+   "full_text": "I think that there will be changes to many industries because of this, and I think we are going to have to, as a species, respond to what this brings us and be able to, if we want to continue to lead the global race in AI, our agility is going to really matter.",
+   "open_codes": [
+    {
+     "code_id": "c350",
+     "label": "AI's impact on industries",
+     "rationale": "The respondent discusses the impact of AI on various industries"
+    }
+   ]
+  },
+  {
+   "segment_id": "S041",
+   "title": "DOGE's work in identifying waste, fraud, and abuse",
+   "quote": "DOGE has done outstanding work in identifying waste, fraud, and abuse. They have brought to the public's attention extreme inefficiencies in our government, especially involving outdated technology.",
+   "full_text": "DOGE has done outstanding work in identifying waste, fraud, and abuse. They have brought to the public's attention extreme inefficiencies in our government, especially involving outdated technology. In one example, DOGE highlighted the OPM Retirement Operations Center. This facility is located in an underground mine that holds over 400 million individual paper documents. It should come as no surprise that using outdated technologies leads to more mistakes. During the Fiscal Year 2024, the Federal Government reported an estimated $162 billion in improper payments. Banks and credit card companies use AI and machine learning to prevent fraud, oftentimes before any money changes hands.",
+   "open_codes": [
+    {
+     "code_id": "c352",
+     "label": "DOGE's work in identifying waste, fraud, and abuse",
+     "rationale": "The respondent highlights DOGE's achievements in identifying inefficiencies and preventing fraud"
+    },
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "Mr. Shah shares his background and expertise in the field of AI and government inefficiencies"
+    }
+   ]
+  },
+  {
+   "segment_id": "S042",
+   "title": "Treasury payment system and AI",
+   "quote": "In general, yes. I am not qualified on this particular topic.",
+   "full_text": "So, I guess I will ask each witness, do you think the Treasury payment system could use similar technology to lower waste, fraud, and abuse? And I am talking AI.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "Mr. Shah shares his background and expertise in the field of AI and government inefficiencies"
+    }
+   ]
+  },
+  {
+   "segment_id": "S043",
+   "title": "AI bias and government use",
+   "quote": "There is a proliferation of AI models now being trained on all sorts of data sets, and hallucinations are a thing, bias are a thing, and we can never really overcome them forever.",
+   "full_text": "Mr. McGuire: OK. Mr. Shah, as AI becomes more integrated in decision-making systems, are you concerned that these tools might reflect political bias? Specifically, are today's AI models biased toward left-leaning perspectives, and what implications might that have for public trust or government use? Mr. Shah: There is a proliferation of AI models now being trained on all sorts of data sets, and hallucinations are a thing, bias are a thing, and we can never really overcome them forever. I think there are going to still be traces of that given the type of technology that they are, but you can build applications that can control for this. You can absolutely look and have models checking models, checking models, and have a structure that ensures that everything it decides can be backed up and that can be referenced. And while that will not solve every particular case, nor can we do that with human beings, I think the models and the AI systems can get very, very accurate.",
+   "open_codes": [
+    {
+     "code_id": "c044",
+     "label": "Transparency",
+     "rationale": "Mr. Shah discusses the importance of transparency in AI decision-making systems"
+    },
+    {
+     "code_id": "c005",
+     "label": "Characteristics of machine learning systems",
+     "rationale": "Mr. Shah explains the characteristics of AI models and their potential biases"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_015911",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 13,
+   "n_ok": 13
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 1,
+    "created": 5,
+    "chunk": 1
+   },
+   {
+    "reused": 0,
+    "created": 6,
+    "chunk": 2
+   },
+   {
+    "reused": 1,
+    "created": 3,
+    "chunk": 3
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 4
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 0,
+    "created": 2,
+    "chunk": 6
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 2,
+    "created": 4,
+    "chunk": 8
+   },
+   {
+    "reused": 1,
+    "created": 2,
+    "chunk": 9
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 10
+   },
+   {
+    "reused": 0,
+    "created": 6,
+    "chunk": 11
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 12
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-119hhrg60818 — Bhavin Shah, Founder And Chief Executive Officer, Moveworks\nSource: https://www.govinfo.gov/app/details/CHRG-119hhrg60818  |  The Federal Government In The Age Of Artificial Intelligence  |  House, Committee On Oversight And Government Reform U.S.  |  2025-06-05  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Ms. Mace) Thank you. I will now recognize Mr. Shah for his opening statement.\nMOVEWORKS\n[Respondent] Chairwoman Mace, Ranking Member Lynch, and distinguished Members of the Committee, thank you for the opportunity to testify on government use and procurement of AI. I am Bhavin Shah, CEO and founder of Moveworks. Moveworks is an enterprise AI company that has spent 9 years successfully helping some of the world's largest organizations to use AI to transform their operations. Today, we face a moment of national importance. The question before us is not whether the Federal Government should adopt AI. It is whether we will lead or follow. Before we talk about the procurement hurdles that we have faced, let me explain to you what Moveworks does.\nMoveworks transforms how organizations support their employees. We do this through an enterprise AI assistant, and employees interact conversationally with the assistant in a chat-based interface. They can get IT support, ask H.R. questions, and find company information. But the assistant is not just for looking up information. It can also be used to take actions, such as scheduling time off or obtaining software licenses. Behind the scenes, our platform integrates with all of an organization's technology systems.\nBecause the AI assistant is a single unified tool, employees no longer have to log in and out of multiple systems to get work done. Organizations can extend the system to simplify and accelerate their most complex business processes, all done safely and securely while respecting permissions. We do this work by combining top-tier language models, like OpenAI's GPT-4, Meta Llama 3, as well as other models from Google's DeepMind, Microsoft, NVIDIA, just to name a few. We put these together with our own enterprise-specific models, all governed by enterprise-grade guardrails, including fact- checking, citations, and security filters. The result is AI that understands work context. It handles complex business processes safely and effectively and follows industry-leading data protection and privacy approaches.\nToday, Moveworks serves 5 million employees across 350 organizations, including major companies like Broadcom, Marriott, and CVS Health. We are also used by a number of local governments, such as Scottsdale, Ventura, and Durham County. In addition, government contractors, like Leidos and Northrop Grumman, use Moveworks to make their businesses more efficient. We have seen firsthand how AI drives measurable results. Honeywell reduced IT help desk requests by 80 percent, Broadcom scaled from 10,000 to 50,000 employees without increasing service staff, and the city of Glendale achieved a 514 percent return on its AI investment.\nOur experience positions us uniquely to understand the Federal Government's complex requirements. The Federal Government has an unprecedent opportunity. You can leverage AI for efficiency, you can achieve cost savings, you can improve employee experience, and, most importantly, you can therefore improve citizen services. We have engaged with agencies across the government and consistently see enthusiasm for AI adoption, but that enthusiasm has not translated into government procuring AI products like Moveworks.\nWe have encountered three primary barriers. The first is the FedRAMP process. Moveworks invested 3-and-a-half years and over $8-and-a-half million to achieve FedRAMP-ready status. This is a prohibited barrier for smaller AI innovators, the companies that often develop the most cutting-edge solutions. Second, complex reseller networks. These force innovative companies to work through intermediaries rather than directly with agencies, adding cost without adding value. Third, multi- year contracting vehicles. These favor large incumbents over agile AI companies. These create delays measured in years. Meanwhile, AI technology advances every month.\nAmerican AI leadership requires action, not just intention. The private sector has demonstrated that AI adoption can both be rapid and secure when procurement processes match the pace of innovation. I recommend Congress consider immediate steps to improve government use and procurement of AI. Embed AI education and adoption goals in agency leadership performance plans. Create government developer programs for startups to learn Federal systems. Scale AI proof-of-concept programs for rapid pilots to all agencies, similar to the Investment Horizon's pilot program developed by the Office of the CIO within the Navy. And finally, establish agency innovator programs that allow smaller agencies to serve as test beds for AI implementations. Longer term, we must modernize acquisition policies. We must accelerate procurement timelines. The Federal Government employs the most important workforce in the world, the workforce that operates our democracy and defends our Nation. These public servants deserve the same AI-powered tools that are transforming the private sector's productivity and effectiveness.\nWe have a choice. We can modernize our procurement process to embrace AI innovation or we can watch other Nations take the lead in government AI adoption while our agencies struggle with outdated processes and missed opportunities. I urge this Committee to champion procurement reform. We need to maintain our competitive edge while serving citizens more effectively.\nThank you, and I welcome your questions and discussions on these critical topics.\n[Interviewer] (Mr. Gosar) OK. Mr. Shah, you talked about our procurement system. Boy, it is broken. So, how would you use AI during that whole process, because our overruns in our military are outrageous. How can we keep them on track? How does that work?\n[Respondent] Yes. I think there are a variety of things to talk about on that topic. One, you can use AI to help with the procurement process itself in terms of analyzing vendors, summarizing submissions, generating use cases and requirements for the different agencies that are looking for new technology. But I think before that, we need to sort of create an environment where these new technologies that can be applied to procurement or anything else in the U.S. Government can make their way into these agencies. And I think that is a human process problem that we have an opportunity here in this Committee to really kind of provide some oversight and correction so that we can go about delivering these great new technologies into these agencies quickly, right?\nWe have spent years working on this ourselves to try and get into agencies, but if you look at a lot of these procurement, sort of processes, they are multiyear. They are outdated from the 1990s where, essentially, you are thinking about installing software on some server rack that is going to last 5 years, and it might take 2 years to actually go through the procurement process. This is untenable for young companies who have limited cash, limited capital, who want to be able to monetize their investments and especially help the U.S. Government move quickly.\n[Interviewer] (Mr. Gosar) So, could you use something like a blockchain? See, I am not a techie. I got questions. Could you use a blockchain to kind of utilize some type of--I see you. I will come back to you in a second, but I want Mr. Shah. Is there some kind of technology that will help preserve some of this data or save us?\n[Respondent] So, we do not deploy blockchain technology for our solution. We focus squarely on what employees can benefit from when it comes to using AI to be more productive, so I am unfortunately not able to answer how blockchain could be used here. But, generally speaking, technology has been shown in the private sector to have tremendous impacts on their efficiencies and their ability to stay ahead and to lead in the industry.\n[Interviewer] (Ms. Foxx) Thank you. Mr. Shah, your company has been successful at streamlining certain administrative tasks for businesses in the private sector and helping boost productivity. How do you see AI technologies like those developed by your company being effectively used in the Federal Government, and what kinds of productivity gains and cost savings could we expect to see?\n[Respondent] Thank you for the question. You know, to put it in maybe legislative terms, imagine you had an assistant that could summarize the status of a bill. Perhaps maybe look up a constituent problem that you have been tackling before a meeting or be able to search all of your notes and your memos about various Committee hearings and tasks that have been assigned. All these things are things that AI gives us today, and the private sector is using this quite aggressively to make their own teams more efficient and effective.\nTo your question about sort of what that looks like, you know, there are sort of three categories I like to think about. Scale. Broadcom, for example, was able to go from 10,000 employees to 50,000 while keeping the same support staff. So, that is another benefit, which is you can take the same team and allow them to support a lot more employees in this case, but in our case here today, talking about constituents. I think there are also employee time savings. The city of Glendale I mentioned did a 500-percent plus ROI on their investment, but that was 3,500 hours of savings from the employees themselves that they could apply and use toward other tasks and functions for their constituents. And then, of course, there are monetary savings, which is that if we can do some of this more efficiently, that goes back to the U.S. taxpayers. It goes back into the economy to get spent on further innovation.\n[Interviewer] (Mr. Sessions) We also have battleships and aircraft carriers that are out in the middle of places. Anyone else? Thank you, sir. Mr. Shah?\n[Respondent] Yes. I think, you know, what we have seen, especially in cybersecurity, the NIST has created standards there that became adopted by a majority of the industry. And I think when it comes to AI and protecting data, coming from the lens of a startup, from a young company, we have looked at the new standards that they have around AI and they are actually pretty good, and they do provide for a lot of recommendations that we actually follow. And then furthermore, you know, going through the FedRAMP process, while I found it to be very expensive, there was a lot of amazing sort of things that they recommended in terms of infrastructure, software, process, and procedures that allow us to really make sure that the data is secured. And so, I think that if we can have more of these types of frameworks, more of a lighter touch, it will allow us to continue to innovate fast but still give us all a true north of where we should take things in terms of our infrastructure and our processes.\n[Interviewer] (Mr. Biggs) Thank you, Madam Chair. Thank the panelists for being here today.\nMr. Shah, in your written testimony, you describe how various communities, counties, cities, and two of them in Arizona--Scottsdale and Glendale--are actually using AI, perhaps becoming a hub of AI, anyway, using to become more efficient. Can you expand on that for us? Tell us what they are doing and the guidelines or guardrails that they have in place.\n[Respondent] Yes, it is a great question. So, you know, in terms of the cities and counties that have started to adopt this technology, they are using it to make their employees more effective. What does that mean? That means that they can self- serve a lot more use cases than they would have otherwise. They can find information. They can troubleshoot issues that they might be having with IT or even an H.R. situation or use case. They can submit performance reviews. They can do a variety of tasks that were otherwise very manual and very slow, and required a lot of coordination amongst folks.\nAnd so, you know, as I was mentioning earlier, the city of Glendale in Arizona is saving their employees 3,500 hours now each month, being able to now do more with those same team members to support the employees or the constituents of their county. And so, I think that we see this across the private sector. We have seen people use this technology to enable more employees to do greater levels of work and greater levels of output, while still sort of maintaining all the privacy and the security that is required in any of those environments.\n[Interviewer] (Mr. Burlison) Thank you. Mr. Shah, you have highlighted the Federal Government's procurement problem in their process. Based on your direct experience, do you believe that changes to the procurement process, allowing agencies to pilot products like yours before going enterprise wide, would allow smaller companies like you to better compete for contracts?\n[Respondent] Yes, we believe that strongly. I think there are a variety of ways to do that: one, creating more POC-type programs. You know, a good example is the, I think it is called the investment horizon pilot program that the Office of the CIO of the Navy has implemented. But the challenge is, every agency seems to have their own set of ways that they procure new technology, so to the extent that we can help to normalize that will help us also navigate. You know, for example, through the FedRAMP process that I have described, of the $8.5 million, $600,000 I spent on consultants to help me figure out the process.\n[Interviewer] (Mr. Burlison) Just to get certified, the program.\n[Respondent] Yes. So, it is like, you know, I could have spent that on maybe more innovation or other areas. So, I think that if you have innovator programs or ways for us to start with other agencies that are less security-focused will give the help.\n[Interviewer] (Mr. Burlison) Is it safe to say the Federal Government is a pain-in-the-ass client?\n[Respondent] It is a complex web, and if you ever want to do a secret shopper with me 1 day and you can sort of watch how this plays out, I would be very happy to show you what it looks like.\n[Interviewer] (Mr. Khanna) Thank you, Madam Chair. I appreciate the testimony. Mr. Shah, of course you have been such a successful entrepreneur and leader in Silicon Valley. I appreciate your being here, so I will ask my first question to you. How do you think AI can help, particularly government employees, do better and be more effective in their work?\n[Respondent] Yes, thank you. You know, the things that we are seeing in the private sector today with large organizations like Honeywell and like, you know, Northrop Grumman and the likes, they are benefiting from AI by making their employees be able to self-serve, get information that they are looking for and take actions across a variety of systems. You know, on any given day, an employee might have to swivel their chair 17 times to use different tools, and that becomes a very wasteful portion of their day, sometimes many hours. And so, to the extent that we can start to do that for Federal workers, for all folks who work for this government, I think we are going to see some benefits, benefits that will allow them to troubleshoot, to have better IT, benefits that will accrue to them from an H.R. perspective in terms of getting the information they need, making the changes, the benefit selections that go into that and also be able to work across different systems without having to be an expert.\nI think one of the things that you all have pointed out, there are hundreds of enterprise systems inside the government, and you may only touch it once a year, twice a year. And so, if you can use AI as the overlay, kind of that front door, what you will see is your staff and all the members of the Federal Government be able to navigate these systems, which can be very complex, very easily using the most intuitive interface in the world, which is which is language and conversation. So, when it comes to that, you know, we have seen companies and our, sort of, world of private sector, be able to reclaim--a top five pharmaceutical was able to reclaim 75,000 hours of employee productivity by deploying this kind of AI across 44 languages. We have had a Fortune 500 aerospace manufacturer reclaim 75 percent of its support budget to be able to bring in technologies and leverage. I think that you are going to see both happier employees and better outcomes while also making the government more efficient.\n[Interviewer] (Mr. Donalds) Last point, I will just throw this out to the panel. I was sitting with my colleague, Mr. Perry. We were just kind of theorizing about what type of advantages AI advancements as well as, you know, I guess you could say quantum computing, what that could actually do to modernize and streamline governmental operations, not just Federal, but state and local. Just in your own expert opinions, what do you think the possibilities are in terms of how it would essentially help to redesign, streamline, and bring greater amounts of efficiency into the Federal Government? Like, where do you think is a good place to start, I guess I would say.\n[Respondent] Yes, I would say that, you know, if you think about this new technology of Agentic AI, it allows for a new kind of automation. We have been building automation for several decades, but a lot of it was very brittle, and if something slightly changed under the hood, all of a sudden, you know, that automation would no longer work. With Agentic AI, you can actually overcome a lot of that by having these very, you know, smart, intelligent reasoners and systems that can then go and do the levels of automation that we have not been able to do before. And I think what that is going to do is really elevate all of us to be able to work on less mundane things and more sort of advanced thinking and creative ideas.\n[Interviewer] (Mr. Burchett) Right.\n[Respondent] I will just add, I agree with all the other panelists here and witnesses. I think that this is an infinite race, and the technology that is being discussed here today, AI, can essentially be wielded and constructed by any sort of group of smart people, and the planet grows smart people everywhere every day. And I think that to the extent that we can be the ones that others follow, that we can be the ones whose software, whose hardware, whose foundation models others use, we will have the sort of dominant leadership position of how this whole planet evolves.\n[Interviewer] (Ms. Mace) Mr. Shah?\n[Respondent] Most of the innovation happening in AI is happening at small startups, and I think that, to the extent that you can look at a team of maybe 50 people and see how long it takes for them to get their product discovered and utilized by Federal Agencies, will determine how fast we can move, and to the extent that we can solve that, I think it would make a big difference.\n[Interviewer] (Ms. Greene) OK. Then I take that as a no. Mr. Shah, do you support federalism?\n[Respondent] I do support state rights, and just from a small company standpoint, I would say whatever we can do to make it easier for a young company to navigate the 50 states will be very important, because otherwise----\n[Interviewer] (Ms. Green) Well, either you support federalism or you do not, one or the other. It is a yes or no.\n[Respondent] Yes.\n[Interviewer] (Ms. Greene) Right, so the answer is no. I am short on time. Mr. Shah, no or yes?\n[Respondent] I think it is hard to predict 5 years.\n[Interviewer] (Ms. Greene) Yes or no. Can you predict that period?\n[Respondent] No.\n[Interviewer] (Mrs. Luna) OK. And also, what role can AI itself play in monitoring and mitigating risks associated with transhumanist technologies, such as detecting biases and enhancement distribution?\n[Respondent] I think a lot of the conversation so far since ChatGPT came out is about foundation models and how they operate and how they hallucinate, and some of the shortcomings of them and the risks with them, but a lot of these problems can be overcome at the application layer. And Ms. Miller and I represent companies who build applications on top of many models, and so if you think about that framework, what you understand then is the responsibility of some of these outcomes, the responsibility of some of these behaviors is not just left to the model. It is left to the vendor and the developer of----\n[Interviewer] (Mrs. Luna) So, how you train it.\n[Respondent] How you train it, how you package it, how you check for issues and guardrails and all of that.\n[Interviewer] (Mrs. Luna) OK.\n[Respondent] I am supportive of any sort of sovereign AI that we think makes sense.\n[Interviewer] (Mr. Crane) Thank you for holding this hearing today. I want to say thank you to all the panelists for coming. I think we are all aware that the age of AI is here and expansion is absolute and unstoppable, but I do want to talk about what I feel to be the elephant in the room when we talk about AI, and one of my major concerns as a representative of the people to this country is our workforce.\nRecently, Dario Amodei, CEO of Anthropic, one of the world's most powerful creators of AI, has a scary warning for all of us. He says this: ``AI could wipe out half of the entry- level white-collar jobs and spike unemployment 10 to 20 percent in the next 1 to 5 years.'' Other experts have said that number is closer to 50 percent in the next 5 years. He also said that ``AI companies and the government need to stop sugarcoating what is coming, the possible elimination of jobs across technology, finance, law, consulting, and other white-collar professions, especially entry-level gigs,'' he says.\nSteve Bannon, who was a top advisor to President Trump in his first term, recently told Axios, ``I don't think anyone is taking into consideration how much administration, administrative, managerial, and tech jobs for people under 30, entry-level jobs that are so important in your 20s, are going to be eviscerated, and it is already happening.'' Research that we have done shows that IBM just laid off 8,000 employees as of last week; McKinsey, a consulting firm, 5,000 employees as of May 28. Dell has laid off 6,000 employees in 2024. Intel has laid off 15,000 employees in 2024. And all of these were credited to AI and efficiency. Estimated total jobs lost, 214,000 total jobs lost to AI.\nI recently asked AI, what are the careers that will be replaced first by AI, and AI told me data entry clerks, telemarketers, retail cashiers, warehouse workers, paralegals and legal assistants, basic customer support representatives, bank tellers, fast food workers, IT support technicians, tax preparers. So, we are talking about tens of millions of jobs, and I think that that is very scary, even though we have been talking about the efficiencies of AI, how much money it can save the Federal Government, corporations, and how we have to keep up with China.\nOne of my questions to you guys, and I am not blaming any of you, but does it bother you at all that the technology you are developing is set to destroy tens of millions of jobs? I want to start with you, Mr. Shah.\n[Respondent] You know, technology over time has generally raised the quality of living for all humans, and, you know, I know a lot of my fellow CEO AI folks out there try to grab headlines with some of their claims. I have not seen Dario's math behind all of this, but I think the point there is correct, that low-paying entry jobs will be taken on by computers, but it gives us a chance to reposition those individuals, re-skill them, and I do not think this is going to end. I think it is going to continue. For the next, you know, every 7 years, we are going to be talking about this.\nWhat we have found is that for customers of ours, if you look at the private sector, they have taken those efficiencies, turned them into profits. Profits have then led to more ambition to grow their businesses. In fact, the majority of our customers have actually increased their employee headcount over time because they want to endeavor to do more things. So, I think when we start to automate mundane tasks, we can start to do more interesting work, and I think organizations will take full advantage of that.\n[Interviewer] (Mr. Crane) And you think that applies across the board to all those careers and industries that I just listed off, not just the ones in tech?\n[Respondent] I think that there will be changes to many industries because of this, and I think we are going to have to, as a species, respond to what this brings us and be able to, if we want to continue to lead the global race in AI, our agility is going to really matter.\n[Interviewer] (Mr. McGuire) Thank you, Madam Chair. Thank you to our witnesses for being here today. I want to start by saying that I agree with Madam Chair, Congresswoman Marjorie Taylor Greene, that somehow we missed this 10-year ban on AI state laws, and I am hoping that we will fix that in the U.S. Senate. The President Trump and the White House, they said that we must ensure American AI dominance, and just yes or no real quick-- just yes or no real quick--do you agree with the Trump Administration that the U.S. must have AI dominance? Just yes or no real quick.\n[Respondent] Yes.\n[Interviewer] (Mr. McGuire) Thank you. All right. So, DOGE has done outstanding work in identifying waste, fraud, and abuse. They have brought to the public's attention extreme inefficiencies in our government, especially involving outdated technology. In one example, DOGE highlighted the OPM Retirement Operations Center. This facility is located in an underground mine that holds over 400 million individual paper documents. It should come as no surprise that using outdated technologies leads to more mistakes. During the Fiscal Year 2024, the Federal Government reported an estimated $162 billion in improper payments. Banks and credit card companies use AI and machine learning to prevent fraud, oftentimes before any money changes hands.\nSo, I guess I will ask each witness, do you think the Treasury payment system could use similar technology to lower waste, fraud, and abuse? And I am talking AI.\n[Respondent] In general, yes. I am not qualified on this particular topic.\n[Interviewer] (Mr. McGuire) OK. Do you think the Federal Government is losing money by not using modern technology, including AI and machine learning? That is just a yes or no.\n[Respondent] The private sector is doing this, so I think the government could do as well.\n[Interviewer] (Mr. McGuire) OK. Mr. Shah, as AI becomes more integrated in decision-making systems, are you concerned that these tools might reflect political bias? Specifically, are today's AI models biased toward left-leaning perspectives, and what implications might that have for public trust or government use?\n[Respondent] There is a proliferation of AI models now being trained on all sorts of data sets, and hallucinations are a thing, bias are a thing, and we can never really overcome them forever. I think there are going to still be traces of that given the type of technology that they are, but you can build applications that can control for this. You can absolutely look and have models checking models, checking models, and have a structure that ensures that everything it decides can be backed up and that can be referenced. And while that will not solve every particular case, nor can we do that with human beings, I think the models and the AI systems can get very, very accurate.",
+ "_bench": {
+  "seconds": 292.5,
+  "chars": 27790
+ }
+}

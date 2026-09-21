@@ -1,0 +1,866 @@
+{
+ "respondent": "CHRG-118shrg63050_Harris",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "other",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Introduction and Context",
+   "quote": "it is an honor to appear before you today to discuss the harms and risks of artificial intelligence.",
+   "full_text": "Chairman Blumenthal, Ranking Member Hawley, and Members of the Committee, it is an honor to appear before you today to discuss the harms and risks of artificial intelligence. It is particularly heartening to see that this Committee has developed a promising bipartisan framework and proposals that I earnestly hope will become law. They are urgently needed to provide effective guardrails for AI systems.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Background and Expertise",
+   "quote": "From 2018 to 2023, I worked at Facebook and Meta on the Civic Integrity and Responsible AI Teams.",
+   "full_text": "My name is David Evan Harris. From 2018 to 2023, I worked at Facebook and Meta on the Civic Integrity and Responsible AI Teams. In my role, I helped lead efforts to combat online election interference, protect public figures, and drive research to develop ethical AI systems and AI governance. Today, those two safety teams do not exist.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is providing background information on their expertise and experience"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Industry Changes and Challenges",
+   "quote": "Trust and safety teams have shrunk dramatically. Secrecy is on the rise, and transparency is on the decline.",
+   "full_text": "In the past 2 years, there have been striking changes across the industry. Trust and safety teams have shrunk dramatically. Secrecy is on the rise, and transparency is on the decline.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent is discussing the limitations of AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Testimony and Key Messages",
+   "quote": "Today, there are three things that I hope you take away from my testimony.",
+   "full_text": "Today, there are three things that I hope you take away from my testimony. First, voluntary self-regulation does not work. Second, many of the solutions for AI safety and fairness already exist in the framework and bills proposed by the Members of this Committee. Third, as you said, not all the horses have left the barn. There is still time to act.",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The respondent is expressing concerns about AI regulation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Voluntary Self-Regulation",
+   "quote": "Voluntary self-regulation is a myth. Take just one example from my time at Facebook.",
+   "full_text": "Back to my first point: Voluntary self-regulation is a myth. Take just one example from my time at Facebook. In 2018, the company set out to make time on their platforms into time well spent: reducing the number of viral videos and increasing more meaningful content from friends and family. The voluntary policy opened up a vacuum that TikTok was more than happy to step into.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent is discussing the limitations of voluntary self-regulation"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The passage highlights the lack of effective self-regulation in the AI industry."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Tech companies' promises are not enough",
+   "quote": "While nonbinding efforts such as the White House Voluntary AI Commitments and the AI Elections Accord are positive steps forward, the reality is that we've seen very little clear progress toward the promises made by tech companies in those commitments.",
+   "full_text": "When it comes to policies and laws governing AI, laws with ``shalls'' rather than ``mays'' are essential. Without the ``shalls,'' the legislation becomes voluntary and many companies will delay or simply avoid taking meaningful actions to prioritize safety or harm reduction.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage highlights the lack of effective self-regulation in the AI industry."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Embedding provenance data in AI-generated content",
+   "quote": "AI companies should be held liable for their products, and they should be required to embed hard-to-remove provenance data in AI-generated content.",
+   "full_text": "Two recommendations, in particular, in the framework are essential components for legislation: AI companies should be held liable for their products, and they should be required to embed hard-to-remove provenance data in AI-generated content.",
+   "open_codes": [
+    {
+     "code_id": "c302",
+     "label": "Embedding provenance data in AI-generated content",
+     "rationale": "The passage highlights the importance of provenance data in AI-generated content."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "The need for binding and enforceable oversight of AI",
+   "quote": "We need to move quickly with binding and enforceable oversight of AI. It is possible.",
+   "full_text": "Next come the realistic video deepfakes, live audio deepfakes that can interact with millions of people at once, personalized election disinformation calls, large scale automated sextortion schemes targeting children. Those are just a few of the ones that we see on the horizon. We need to move quickly with binding and enforceable oversight of AI. It is possible.",
+   "open_codes": [
+    {
+     "code_id": "c303",
+     "label": "The need for binding and enforceable oversight of AI",
+     "rationale": "The passage highlights the importance of binding and enforceable oversight of AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Opening remarks",
+   "quote": "If you take action now on the promising framework and bills already before you, you can reign in the Clydesdales and the centaurs waiting just behind the barn door. Thank you.",
+   "full_text": "If you take action now on the promising framework and bills already before you, you can reign in the Clydesdales and the centaurs waiting just behind the barn door. Thank you.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent uses a metaphor to emphasize the need for action on AI regulation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Questioning on trust and safety teams",
+   "quote": "Trust and safety teams have shrunk dramatically, secrecy and lack of transparency have increased. Is that true across the board of all companies?",
+   "full_text": "Trust and safety teams have shrunk dramatically, secrecy and lack of transparency have increased. Is that true across the board of all companies?",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about the impact of AI development and use on trust and safety teams"
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "Example of backslide in trust and safety",
+   "quote": "It has been reported that Elon Musk let go of 81 percent of the staff of Twitter after purchasing it.",
+   "full_text": "It has been reported that Elon Musk let go of 81 percent of the staff of Twitter after purchasing it. We saw large layoffs across the board in the entire sector, but part of the backslide is also the retreat from policies, specific policies that the companies have designed to keep our elections safe.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent highlights the limitations of AI systems in terms of trust and safety"
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Example of company making strides forward",
+   "quote": "And you're not going to like the one that it is, but it's TikTok. Honestly, TikTok has been hiring a lot of the people who were let go from many of those other companies.",
+   "full_text": "And you're not going to like the one that it is, but it's TikTok. Honestly, TikTok has been hiring a lot of the people who were let go from many of those other companies.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "Appreciation for challenges and uncertainty",
+     "rationale": "The respondent expresses appreciation for the challenges and uncertainty in the AI industry"
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Metaphor of the bear",
+   "quote": "Thus, the moral of the story, if you are a tech company, is, just don't be the second slowest. That is the strategy.",
+   "full_text": "Thus, the moral of the story, if you are a tech company, is, just don't be the second slowest. That is the strategy. So as long as you can point to someone, to another tech company that is doing a worse job than you are, on trust and safety, the idea is that is the optimal allocation of resources in your company.",
+   "open_codes": [
+    {
+     "code_id": "c039",
+     "label": "Importance of transparency",
+     "rationale": "The respondent emphasizes the importance of transparency in the AI industry"
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Strategy for tech companies",
+   "quote": "just don't be the second slowest. That is the strategy. So as long as you can point to someone, to another tech company that is doing a worse job than you are, on trust and safety, the idea is that is the optimal allocation of resources in your company.",
+   "full_text": "Thus, the moral of the story, if you are a tech company, is, just don't be the second slowest. That is the strategy. So as long as you can point to someone, to another tech company that is doing a worse job than you are, on trust and safety, the idea is that is the optimal allocation of resources in your company.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent suggests that tech companies should focus on being better than others in terms of trust and safety, implying the need for guardrails to prevent failures and ensure benefits"
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "Government effort and regulation",
+   "quote": "I understood two different elements from your question. One, being, can we actually regulate this? And two, being, do we have the right people in Government to do it?",
+   "full_text": "I understood two different elements from your question. One, being, can we actually regulate this? And two, being, do we have the right people in Government to do it? To the first point, I would refer you back to the excellent Blumenthal-Hawley framework that has already been presented.",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The respondent questions whether AI can be effectively regulated and highlights the need for a framework"
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "Talent and hiring in the Federal Government",
+   "quote": "Now, there have been advances since then. There's something called cyber pay that allows agencies to pay a little bit more. But I don't think it's gone far enough.",
+   "full_text": "Now, there have been advances since then. There's something called cyber pay that allows agencies to pay a little bit more. But I don't think it's gone far enough. I think there's a situation now where one of the techniques to recruit is to find people who've already made a good amount of money in the private sector and can make a little bit less for a few years and then know they're going to go back.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent shares their personal experience and expertise in the field of AI and government"
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "AI Safety Institute",
+   "quote": "I think that there are incredible people there that need a lot more money. And I hope that you will give that to them.",
+   "full_text": "I think that there are incredible people there that need a lot more money. And I hope that you will give that to them.",
+   "open_codes": [
+    {
+     "code_id": "c273",
+     "label": "Appreciation for AI Safety Institute's work",
+     "rationale": "The respondent shows appreciation for the AI Safety Institute's efforts and hopes for its success"
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "Provenance and notice",
+   "quote": "I think that notice that when consumers deal with the right--robot, they should be told if it's a robot?",
+   "full_text": "I think that notice that when consumers deal with the right--robot, they should be told if it's a robot?",
+   "open_codes": [
+    {
+     "code_id": "c304",
+     "label": "Provenance",
+     "rationale": "The respondent suggests that consumers should be informed when interacting with AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "Notice and Disclosure",
+   "quote": "you should be told if it's a robot?",
+   "full_text": "Thank you so much for your question----",
+   "open_codes": [
+    {
+     "code_id": "c305",
+     "label": "Notice and Disclosure",
+     "rationale": "The respondent emphasizes the importance of transparency in AI interactions"
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Watermarking",
+   "quote": "I know that this Committee heard, in April, testimony about this topic of watermarking.",
+   "full_text": "And watermarking can happen in one of two ways. It can be either a visible or direct disclosure that content, for example, an AI-generated image, an AI-generated audio file video or even text, can be a direct disclosure that it's AI generated.",
+   "open_codes": [
+    {
+     "code_id": "c306",
+     "label": "Watermarking",
+     "rationale": "The respondent explains the concept of watermarking as a form of notice"
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Digital Fingerprinting",
+   "quote": "This technology has been used to keep track of child sexual abuse material and terrorist content circulating online.",
+   "full_text": "And that creates what's called a ``hash,'' a unique identifier for images. Audio files could be even done with text or videos, and that's stored in a database, and that can associate a piece of content and then identify it as AI generated.",
+   "open_codes": [
+    {
+     "code_id": "c307",
+     "label": "Digital Fingerprinting",
+     "rationale": "The respondent explains the concept of digital fingerprinting as a means of identifying AI-generated content"
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Forms of Notice",
+   "quote": "All these are forms of notice.",
+   "full_text": "I would--some more direct than others. I would call them forms of----",
+   "open_codes": [
+    {
+     "code_id": "c308",
+     "label": "Forms of Notice",
+     "rationale": "The respondent emphasizes the importance of transparency in AI interactions"
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Licensing and Code of Behavior",
+   "quote": "You need a license to practice. And if you violate the code of that profession, you can no longer practice.",
+   "full_text": "You need a license to practice. And if you violate the code of that profession, you can no longer practice. And with technology, I see no reason why it should be different.",
+   "open_codes": [
+    {
+     "code_id": "c309",
+     "label": "Licensing and Code of Behavior",
+     "rationale": "The respondent suggests that a license and code of behavior are necessary to ensure responsible AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Ethics in AI Design",
+   "quote": "Artificial intelligence systems should be designed in ways that they can't harm human beings.",
+   "full_text": "Artificial intelligence systems should be designed in ways that they can't harm human beings. That they don't do damage to people. That they don't discriminate. That they don't give people advice that causes, brings harm to them, that's incorrect.",
+   "open_codes": [
+    {
+     "code_id": "c310",
+     "label": "Ethics in AI Design",
+     "rationale": "The respondent emphasizes the need for AI systems to be designed with ethics in mind to prevent harm to human beings"
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "Government Agency for Code Enforcement",
+   "quote": "You license with a code of behavior that would require Government to set up some sort of agency to enforce that code of behavior.",
+   "full_text": "You license with a code of behavior that would require Government to set up some sort of agency to enforce that code of behavior. Is that correct?",
+   "open_codes": [
+    {
+     "code_id": "c311",
+     "label": "Government Agency for Code Enforcement",
+     "rationale": "The respondent suggests that a government agency is necessary to enforce a code of behavior for AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Concerns about AI use in elections",
+   "quote": "Do you agree there's a serious risk posed by the use of AI in our elections? And can you tell us how AI has the potential to turbocharge your election-related disinformation?",
+   "full_text": "Concerns about AI use in elections. Do you agree there's a serious risk posed by the use of AI in our elections? And can you tell us how AI has the potential to turbocharge your election-related disinformation?",
+   "open_codes": [
+    {
+     "code_id": "c312",
+     "label": "Concerns about AI use in elections",
+     "rationale": "The respondent expresses concerns about the potential risks and consequences of AI use in elections"
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "Concerns about AI threats to elections",
+   "quote": "Those threats could include deepfakes of election officials, of candidates like yourselves, and also deepfakes that present election apparatus in them that indicate that there was tampering with physical objects associated with the election.",
+   "full_text": "Those threats could include deepfakes of election officials, of candidates like yourselves, and also deepfakes that present election apparatus in them that indicate that there was tampering with physical objects associated with the election. In two bills, that I mentioned earlier, that I worked on in California that are currently awaiting signature--fingers crossed--by Governor Newsom: Assembly Bill 2655 by Marc Berman, Assembly Bill 2839 by Gail Pellerin--those would actually have serious consequences so that if someone posted those types of election deepfakes, they could be removed. That platforms would be required to remove them.",
+   "open_codes": [
+    {
+     "code_id": "c313",
+     "label": "AI threats to elections",
+     "rationale": "The passage highlights the importance of being prepared for AI threats to elections."
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "Difficulty in opting out of data use",
+   "quote": "I tried to do it in Facebook, I tried to do it in Instagram, and I couldn't find the button. And then I posted and said, I can't find the button, in the comments there.",
+   "full_text": "I saw this on both TikTok and on LinkedIn--users had posted instructions how to go to the part of your Facebook or Instagram settings where you can opt out of having your data used. I tried to do it in Facebook, I tried to do it in Instagram, and I couldn't find the button. And then I posted and said, I can't find the button, in the comments there. And it turned out everyone with their IP address in the United States couldn't find the button because this was a feature that, I believe, was only offered to people in the EU, and, perhaps, in the UK--I heard different stories about which parts of the world.",
+   "open_codes": [
+    {
+     "code_id": "c314",
+     "label": "Difficulty in opting out of data use",
+     "rationale": "The passage highlights the complexity and potential limitations of opting out of data use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Concerns about AI development and use",
+   "quote": "And it turned out everyone with their IP address in the United States couldn't find the button because this was a feature that, I believe, was only offered to people in the EU, and, perhaps, in the UK--I heard different stories about which parts of the world.",
+   "full_text": "I tried to do it in Facebook, I tried to do it in Instagram, and I couldn't find the button. And then I posted and said, I can't find the button, in the comments there. And it turned out everyone with their IP address in the United States couldn't find the button because this was a feature that, I believe, was only offered to people in the EU, and, perhaps, in the UK--I heard different stories about which parts of the world. But this idea that we, Americans, are, you know, second-class citizens, that we don't even have the right to object-- that Europeans or people in the UK have to object to--are photos of ourselves, of our families, of our children being used to train AI systems. And, at that, AI systems that we don't even have confidence in how they work.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage highlights the respondent's concerns about the unequal access to AI features and the potential misuse of AI systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "Incentives for AI development",
+   "quote": "Do they align with safety, for example, are employees rewarded for developing better safety features? Or, is it more rewards for racing to the market, which is the dynamic that we've discussed today?",
+   "full_text": "Do they align with safety, for example, are employees rewarded for developing better safety features? Or, is it more rewards for racing to the market, which is the dynamic that we've discussed today? Mr. Harris and--or Mr. Saunders? Mr. Harris.",
+   "open_codes": [
+    {
+     "code_id": "c315",
+     "label": "Incentives for AI development",
+     "rationale": "The passage highlights the respondent's concerns about the motivations behind AI development and the potential consequences for safety."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Challenges in AI development",
+   "quote": "You can never show impact. You can never--you never have anything to say on your performance reviews about what you did, because the only thing you achieved was hopefully to not have something happen.",
+   "full_text": "Early in my tenure at Facebook, I was introduced to someone who was a friend of a friend, and I told them that I had joined the Civic Integrity Team, and this person said, oh, that work sounds so interesting. But, you know, I just never joined teams like that because you can never show impact. You can never--you never have anything to say on your performance reviews about what you did, because the only thing you achieved was hopefully to not have something happen. And I heard different versions of that throughout my time in the tech industry, not just from inside of the companies where I worked. But I heard that across the board. It's very hard to make progress in your career when you work in an area that doesn't have clear ways to show progress.",
+   "open_codes": [
+    {
+     "code_id": "c316",
+     "label": "Challenges in AI development",
+     "rationale": "The passage highlights the respondent's concerns about the lack of clear ways to show progress in AI development and the potential consequences for career advancement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "Difficulty making progress in career",
+   "quote": "It's very hard to make progress in your career when you work in an area that doesn't have clear ways to show progress.",
+   "full_text": "And I heard different versions of that throughout my time in the tech industry, not just from inside of the companies where I worked. But I heard that across the board.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The passage highlights the difficulties in demonstrating the impact of AI work"
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "Demonstrating AI impact",
+   "quote": "How can you possibly demonstrate that you reduced the number of public relations emergencies for a company?",
+   "full_text": "I also heard of people being asked whether they could demonstrate, that work that they did reduced the number of public relations emergencies for the company.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The passage highlights the difficulties in demonstrating the impact of AI work"
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "Foreign adversaries using AI",
+   "quote": "You know, we've seen examples already of our foreign adversaries using AI to meddle in our democracy.",
+   "full_text": "I think last month OpenAI revealed that the Iranian government-linked group had used ChatGPT to create content for social media and blogs attempting to sow division and push Iran's agenda in the United States.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage highlights the potential misuse of AI technology"
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "California law and Federal level",
+   "quote": "I believe that in California, it's difficult to make a lot of types of laws that could be made at the Federal level.",
+   "full_text": "There are a number of reasons for that. One is simply the State agency infrastructure is dramatically smaller than the Federal agency infrastructure.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The passage provides context for the respondent's understanding of the issue"
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "Barriers to passing legislation",
+   "quote": "And in California, in a situation of budget deficit it's very hard right now to pass any legislation that has any significant cost.",
+   "full_text": "And I think that you have in front of you, in your framework, the type of legislation that California would not be able to achieve, things like licensing and registration and liability.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The passage highlights the difficulties in passing legislation related to AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "Concerns about tech industry lobbyists",
+   "quote": "I have been surprised in my work in the California Legislature by the way in which tech industry lobbyists, sometimes hiding behind industry groups, sometimes from individual named companies, are able to arrive at legislators' doors with requests to remove ``shalls'' and replace them with ``mays.''",
+   "full_text": "I made a reference in my opening statement to the idea of ``shalls'' and ``mays.'' I was surprised. I have been surprised in my work in the California Legislature by the way in which tech industry lobbyists, sometimes hiding behind industry groups, sometimes from individual named companies, are able to arrive at legislators' doors with requests to remove ``shalls'' and replace them with ``mays.''",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about the impact of AI development and use on society"
+    }
+   ]
+  },
+  {
+   "segment_id": "S038",
+   "title": "Concerns about AI training data",
+   "quote": "A Stanford Internet Observatory Report this past December that found that, that training data sets used by AI companies are filled with thousands of known images of child sexual abuse.",
+   "full_text": "A Stanford Internet Observatory Report this past December that found that, that training data sets used by AI companies are filled with thousands of known images of child sexual abuse. Possessing that kind of material is a crime. And as you wrote, Dr. Mitchell, in your testimony, training AI with these kinds of abusive materials means there's a good chance that the model will generate new abuse material.",
+   "open_codes": [
+    {
+     "code_id": "c317",
+     "label": "Concerns about AI training data",
+     "rationale": "The respondent expresses concerns about the training data used by AI companies"
+    }
+   ]
+  },
+  {
+   "segment_id": "S039",
+   "title": "Concerns about AI-generated content",
+   "quote": "So, these new AI tools, which are trained on child sexual exploitation, are fostering sexual harassment of young people, and the apps to create that abuse material are easy, they're free to find on Google and Apple App stores right now.",
+   "full_text": "So, these new AI tools, which are trained on child sexual exploitation, are fostering sexual harassment of young people, and the apps to create that abuse material are easy, they're free to find on Google and Apple App stores right now. Possessing and creating child abuse material, clear example of the problems with this race to the market, which can easily turn into a race to the bottom.",
+   "open_codes": [
+    {
+     "code_id": "c246",
+     "label": "Concerns about AI-generated content",
+     "rationale": "The respondent expresses concerns about the impact of AI-generated content on society"
+    },
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage highlights the negative impact of AI tools trained on child sexual exploitation material on young people."
+    }
+   ]
+  },
+  {
+   "segment_id": "S040",
+   "title": "Need for steps to prevent illegal child exploitation",
+   "quote": "There must be steps that generative AI companies can be taken to make sure their tools aren't being trained on illegal child exploitation material, and aren't creating these kinds of abusive images of anyone, let alone kids.",
+   "full_text": "There must be steps that generative AI companies can be taken to make sure their tools aren't being trained on illegal child exploitation material, and aren't creating these kinds of abusive images of anyone, let alone kids. Would you agree? And what kinds of steps should these companies be taking?",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The passage highlights the importance of regulating AI development and use to prevent illegal child exploitation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S041",
+   "title": "Voluntary self-regulation does not work",
+   "quote": "One is, again, voluntary self-regulation does not work.",
+   "full_text": "One is, again, voluntary self-regulation does not work. There is another public statement about this topic that was signed by a number of companies that signed onto what, what Thorn and All Tech is Human, another tech nonprofit called the Safety by Design, principles.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The passage emphasizes the need for more effective measures to regulate AI systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S042",
+   "title": "Companies' responses to illegal child exploitation",
+   "quote": "One of the companies involved RunwayML--the company that people point to as being responsible for training Stable Diffusion 1.5, the specific model trained on thousands of images of CSAM--they actually removed their Hugging Face repository.",
+   "full_text": "Now, the problem with removing a repository--this was an open-source AI model. The problem with removing it is that there were many other versions of that model that are still hosted on Hugging Face. And my co-panelist, Dr. Mitchell, is appearing here in her individual capacity. And I have immense respect for her research and do not expect her to feel the need to speak up on behalf of or in response to my statements here. But Hugging Face has chosen not to take down other versions of Stable Diffusion 1.5. Another company called CIVICAi has a website with many, many models derived from Stable Diffusion 1.5, perhaps the original model itself--or something close to it. They also choose not to take it down.",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The passage highlights the need for more effective measures to regulate AI systems and prevent illegal child exploitation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S043",
+   "title": "Concerns about AI-generated content",
+   "quote": "And these are the open-source models that are likely behind the report that I shared with you from Graphika, that will also go into the record, states that a big reason for the rise of these undressing or nudifying apps is the advancement of open- source AI image-generation tools.",
+   "full_text": "And my co-panelist, Dr. Mitchell, is appearing here in her individual capacity. And I have immense respect for her research and do not expect her to feel the need to speak up on behalf of or in response to my statements here. But Hugging Face has chosen not to take down other versions of Stable Diffusion 1.5. Another company called CIVICAi has a website with many, many models derived from Stable Diffusion 1.5, perhaps the original model itself--or something close to it. They also choose not to take it down. And these are the open-source models that are likely behind the report that I shared with you from Graphika, that will also go into the record, states that a big reason for the rise of these undressing or nudifying apps is the advancement of open- source AI image-generation tools. And until we can get the companies that are hosting these tools to take just the minimum level of responsibility--I mean, I've done content moderation before. I've worked on this issue. If something is called Stable Diffusion 1.5, Stanford says that was trained on child sexual abuse material, why let someone upload something called Stable Diffusion 1.5 today? After it was taken down, more people uploaded dozens more versions of it.",
+   "open_codes": [
+    {
+     "code_id": "c246",
+     "label": "Concerns about AI-generated content",
+     "rationale": "The passage highlights the connection between open-source AI models and the proliferation of problematic content."
+    }
+   ]
+  },
+  {
+   "segment_id": "S044",
+   "title": "Importance of regulation",
+   "quote": "Exempting open-source AI from AI regulation is not appropriate.",
+   "full_text": "So, I've written extensively on this topic of open source, and I think there are a number of important points. The first one that I would like to caution you of, in advance, is that in the European Union, in the lead up to the signing and the finalization of the EU AI Act, a number of companies pushed very, very hard to get full exemptions for open-source AI from the provisions of the EU AI Act. I would expect, if I were in your position, that you will receive these types of requests here, if you have not already. Exempting open-source AI from AI regulation is not appropriate. That's because once you release an OpenAI system, some people now, even including the Federal Government, are using a different term, ``open weights''--that's perhaps a more appropriate term. The Executive order on AI uses the term, ``dual use models,'' foundation models with widely available model weights. There's a lot of terminology issues here. I'll go with open weights, because I think that's the clearest one right now. Also, ``unsecured'' is a way to think about it. So, when you release open weights, unsecured models, you never get them back.",
+   "open_codes": [
+    {
+     "code_id": "c298",
+     "label": "Importance of regulation",
+     "rationale": "The passage highlights the importance of regulation to prevent the misuse of open-source AI models."
+    }
+   ]
+  },
+  {
+   "segment_id": "S045",
+   "title": "Concerns about open weights and unsecured models",
+   "quote": "When you release open weights, unsecured models, you never get them back.",
+   "full_text": "The Executive order on AI uses the term, ``dual use models,'' foundation models with widely available model weights. There's a lot of terminology issues here. I'll go with open weights, because I think that's the clearest one right now. Also, ``unsecured'' is a way to think about it. So, when you release open weights, unsecured models, you never get them back. If they're trained on thousands of images of CSAM and they can produce CSAM, child sexual abuse material, you will never retrieve that. It will live on. You can do things to make it hide out in only the hidden corners of the internet. You can make it less available. And that's the case with all of these open weights or unsecured models.",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The respondent highlights the risks of releasing open weights and unsecured models, citing the potential for them to be used to produce harmful content."
+    }
+   ]
+  },
+  {
+   "segment_id": "S046",
+   "title": "Disconnect between AI company CEOs and lobbyists",
+   "quote": "I suspect that the disconnect is that the lobbyists are not--the lobbyists that work for these tech companies are, perhaps, not in direct communication with the CEOs, maybe something gets lost in communication, maybe they're actually automated themselves and they're still in an old version of their operating systems.",
+   "full_text": "Now, I do want to caution that I see some kind of disconnect. I suspect that the disconnect is that the lobbyists are not--the lobbyists that work for these tech companies are, perhaps, not in direct communication with the CEOs, maybe something gets lost in communication, maybe they're actually automated themselves and they're still in an old version of their operating systems. But they come in with a goal to kill or hobble every piece of legislation about AI.",
+   "open_codes": [
+    {
+     "code_id": "c318",
+     "label": "Disconnect between AI company CEOs and lobbyists",
+     "rationale": "The respondent highlights the potential for a disconnect between the CEOs and lobbyists, citing the possibility of lost communication and outdated operating systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S047",
+   "title": "Advantages of clear regulation for tech companies",
+   "quote": "Also, it's advantageous to tech companies to have clear rules of the road upon which they are racing.",
+   "full_text": "Also, it's advantageous to tech companies to have clear rules of the road upon which they are racing. Otherwise, they're going to end up parked at the--in the parking lot of the courthouse, depending on regulations that stem from decades-old laws that are brought to bear on them, or tort law, which will just lead to more cost and confusion, or States with many different laws. And that itself is more costly.",
+   "open_codes": [
+    {
+     "code_id": "c319",
+     "label": "Advantages of clear regulation for tech companies",
+     "rationale": "The respondent highlights the benefits of clear regulation for tech companies, citing the potential for reduced costs and confusion."
+    }
+   ]
+  },
+  {
+   "segment_id": "S048",
+   "title": "Importance of clear regulation for AI",
+   "quote": "clear regulation is advantageous to innovation and to the tech companies",
+   "full_text": "So, I do believe that clear regulation is advantageous to innovation and to the tech companies, and we should take their CEOs' word for it.",
+   "open_codes": [
+    {
+     "code_id": "c320",
+     "label": "Importance of clear regulation",
+     "rationale": "The respondent believes that clear regulation is advantageous for innovation and tech companies."
+    }
+   ]
+  },
+  {
+   "segment_id": "S049",
+   "title": "AI regulation as a means to prevent AI catastrophe",
+   "quote": "it's equivalent to a food company taking the issue of food safety, having a major outbreak of Listeria food poisoning",
+   "full_text": "If there's a disaster on AI, it's equivalent to a food company taking the issue of food safety, having a major outbreak of Listeria food poisoning. It has to recall products, its credibility is undermined, it's a major marketing disaster.",
+   "open_codes": [
+    {
+     "code_id": "c321",
+     "label": "AI regulation as a means to prevent AI catastrophe",
+     "rationale": "The respondent believes that regulation is necessary to prevent AI catastrophes."
+    }
+   ]
+  },
+  {
+   "segment_id": "S050",
+   "title": "Need for stability and certainty in regulation",
+   "quote": "give us the rules. We may disagree with you, but just tell us the rules",
+   "full_text": "And the idea of some certainty. You know, one after another, for 20, 30 years, businesses have told me, give us the rules. We may disagree with you, but just tell us the rules. And don't change them from year to year. We need some stability.",
+   "open_codes": [
+    {
+     "code_id": "c322",
+     "label": "Need for stability and certainty in regulation",
+     "rationale": "The respondent believes that businesses need stability and certainty in regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S051",
+   "title": "AI's potential for good",
+   "quote": "it would be easy to say, let's ban AI, but it has enormous potential for good",
+   "full_text": "Nobody here wants to do something crazy because we recognize the immense good that can come from AI. And this goes back to the point that you made, Ms. Toner, that it would be easy to say, let's ban AI, but it has enormous potential for good.",
+   "open_codes": [
+    {
+     "code_id": "c299",
+     "label": "AI's potential for good",
+     "rationale": "The respondent believes that AI has enormous potential for good."
+    }
+   ]
+  },
+  {
+   "segment_id": "S052",
+   "title": "Analogies between AI and COVID-19 research",
+   "quote": "the debate about, did it start in a lab? Was there a release, was there research that tried to develop a more potent evil virus",
+   "full_text": "And it's a little bit like, and forgive me for being over simplistic, but I've been doing some reading on COVID, the origins of COVID. The debate about, did it start in a lab? Was there a release, was there research that tried to develop a more potent evil virus, or did it come from the wild?",
+   "open_codes": [
+    {
+     "code_id": "c323",
+     "label": "Analogies between AI and COVID-19 research",
+     "rationale": "The respondent uses analogies to illustrate the potential risks and benefits of AI and COVID-19 research."
+    }
+   ]
+  },
+  {
+   "segment_id": "S053",
+   "title": "Concerns about AI development and use",
+   "quote": "But we do know that there are dangers in research on gain of function, trying to develop more lethal viruses.",
+   "full_text": "We, at this point, we don't know, at least, there are equally--or I shouldn't say equally, there are theories that have credibility that argue for all of it. But we do know that there are dangers in research on gain of function, trying to develop more lethal viruses. Now, the argument for that research is, then we'll know how to deal with them. The argument against it is, why would you develop a virus that is more destructive and damaging? The argument is not exactly the same. It's analogous, not the same.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about the potential dangers and risks associated with AI development and use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S054",
+   "title": "Importance of regulation",
+   "quote": "But impose some rules of the road that protect them and the industry, as well as the public.",
+   "full_text": "But with every advance in technology, there are also potential downsides. And the point here is to deal with the downsides and not rely only on the creators to oversee what they're doing, but impose some rules of the road that protect them and the industry, as well as the public.",
+   "open_codes": [
+    {
+     "code_id": "c298",
+     "label": "Importance of regulation",
+     "rationale": "The respondent emphasizes the need for rules and regulations to protect the public, industry, and creators."
+    }
+   ]
+  },
+  {
+   "segment_id": "S055",
+   "title": "AI's potential for good",
+   "quote": "I think the good news I have for you is that the answer to that question might not be that important for you.",
+   "full_text": "I think the good news I have for you is that the answer to that question might not be that important for you. The reason I say that is that my background working on AI is in other areas, not about artificial general intelligence, but about AI and bias, AI and deepfakes and elections, and, more recently, AI and harm to children.",
+   "open_codes": [
+    {
+     "code_id": "c299",
+     "label": "AI's potential for good",
+     "rationale": "The respondent highlights the potential benefits and positive impacts of AI development and use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S056",
+   "title": "Concerns about AI development and use",
+   "quote": "who've dedicated their lives and their careers to stopping artificial intelligence from eliminating our species.",
+   "full_text": "Stuart has invited me to a couple of his conferences, of his lab, where I am in a room surrounded by hundreds of people with computer science degrees, Ph.D.s, who've dedicated their lives and their careers to stopping artificial intelligence from eliminating our species.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage highlights the dedication of experts to stopping AI from eliminating humanity, indicating concerns about AI's potential impact."
+    }
+   ]
+  },
+  {
+   "segment_id": "S057",
+   "title": "Importance of addressing AI bias and discrimination",
+   "quote": "AI bias, discrimination, disinfor-mation, interference in elections, harm to children, and the specter of AI, artificial general intelligence, or superintelligent AI being abused by bad actors to harm us in catastrophic ways.",
+   "full_text": "So, provenance, those key solutions are the solutions that we need to address the issues of AI bias, discrimination, disinfor-mation, interference in elections, harm to children, and the specter of AI, artificial general intelligence, or superintelligent AI being abused by bad actors to harm us in catastrophic ways.",
+   "open_codes": [
+    {
+     "code_id": "c324",
+     "label": "Importance of addressing AI bias and discrimination",
+     "rationale": "The passage highlights the importance of addressing these issues to prevent catastrophic consequences."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_015911",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 17,
+   "n_ok": 17
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 2,
+    "created": 2,
+    "chunk": 1
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 2
+   },
+   {
+    "reused": 4,
+    "created": 1,
+    "chunk": 3
+   },
+   {
+    "reused": 0,
+    "created": 4,
+    "chunk": 4
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 5
+   },
+   {
+    "reused": 0,
+    "created": 1,
+    "chunk": 6
+   },
+   {
+    "reused": 0,
+    "created": 2,
+    "chunk": 7
+   },
+   {
+    "reused": 1,
+    "created": 2,
+    "chunk": 8
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 9
+   },
+   {
+    "reused": 2,
+    "created": 1,
+    "chunk": 10
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 11
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 12
+   },
+   {
+    "reused": 1,
+    "created": 2,
+    "chunk": 13
+   },
+   {
+    "reused": 1,
+    "created": 4,
+    "chunk": 14
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 15
+   },
+   {
+    "reused": 1,
+    "created": 1,
+    "chunk": 16
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg63050 — David Evan Harris, Senior Policy Advisor, California Initiative for Technology and Democracy\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg63050  |  Oversight Of Ai: Insiders' Perspectives  |  Senate, ?  |  2024-09-17  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chair Blumenthal) Thanks very much, Mr. Saunders.\nBy the way, I'm going to ask that all of your written testimony be made a part of the record. So I know you've abbreviated your remarks, as I expect the others will do, as well. Your full remarks will be part of the record, without objection. Mr. Harris.\n[Respondent] Chairman Blumenthal, Ranking Member Hawley, and Members of the Committee, it is an honor to appear before you today to discuss the harms and risks of artificial intelligence.\nIt is particularly heartening to see that this Committee has developed a promising bipartisan framework and proposals that I earnestly hope will become law. They are urgently needed to provide effective guardrails for AI systems.\nMy name is David Evan Harris. From 2018 to 2023, I worked at Facebook and Meta on the Civic Integrity and Responsible AI Teams. In my role, I helped lead efforts to combat online election interference, protect public figures, and drive research to develop ethical AI systems and AI governance. Today, those two safety teams do not exist.\nIn the past 2 years, there have been striking changes across the industry. Trust and safety teams have shrunk dramatically. Secrecy is on the rise, and transparency is on the decline.\nSince leaving Meta, I have helped craft two bills about deepfakes and elections in California that await the Governor's signature. Working closely with policymakers in California, Arizona, and internationally, I am more convinced than ever that effective oversight of AI is possible.\nToday, there are three things that I hope you take away from my testimony.\nFirst, voluntary self-regulation does not work.\nSecond, many of the solutions for AI safety and fairness already exist in the framework and bills proposed by the Members of this Committee.\nThird, as you said, not all the horses have left the barn. There is still time to act.\nBack to my first point: Voluntary self-regulation is a myth. Take just one example from my time at Facebook. In 2018, the company set out to make time on their platforms into time well spent: reducing the number of viral videos and increasing more meaningful content from friends and family.\nThe voluntary policy opened up a vacuum that TikTok was more than happy to step into.\nToday, Facebook and Instagram are fighting to claw back market share from TikTok with reels, essentially, those same viral videos that they sought to diminish.\nWhen one tech company tries to be responsible, another less responsible company steps in to fill the void. While nonbinding efforts such as the White House Voluntary AI Commitments and the AI Elections Accord are positive steps forward, the reality is that we've seen very little clear progress toward the promises made by tech companies in those commitments.\nWhen it comes to policies and laws governing AI, laws with ``shalls'' rather than ``mays'' are essential. Without the ``shalls,'' the legislation becomes voluntary and many companies will delay or simply avoid taking meaningful actions to prioritize safety or harm reduction.\nTo my second point: We don't need silver bullets. The framework proposed by this Committee's leadership already has so many of the answers.\nTwo recommendations, in particular, in the framework are essential components for legislation: AI companies should be held liable for their products, and they should be required to embed hard-to-remove provenance data in AI-generated content.\nIt is encouraging to see a bill on transparency in elections that would require labeling of some AI-generated material. More steps like these are needed.\nThis brings me to my final point: The horses have not left the barn. The misconception is that it is too late to do anything. It can be dizzying to watch the fast-paced releases of AI, voice and image, deepfakes, and the growing role of biased AI systems making decisions about our lives.\nBut there are still so many more uses of AI technology that have not yet seen the light of day.\nNext come the realistic video deepfakes, live audio deepfakes that can interact with millions of people at once, personalized election disinformation calls, large scale automated sextortion schemes targeting children. Those are just a few of the ones that we see on the horizon.\nWe need to move quickly with binding and enforceable oversight of AI. It is possible.\nIf you take action now on the promising framework and bills already before you, you can reign in the Clydesdales and the centaurs waiting just behind the barn door. Thank you.\n[Interviewer] (Chair Blumenthal) Thank you very much, Ms. Mitchell.\nAgain, I want to thank all of you for your very insightful and important testimony. We're going to have 5-minute rounds of questions, and I'll begin.\nMr. Saunders, you--I'm sorry.\nMr. Harris, you said in your testimony, quote, ``Trust and safety teams have shrunk dramatically,'' secrecy and lack of transparency have increased. Is that true across the board of all companies?\n[Respondent] Thank you so much, Senator Blumenthal, for the opportunity to answer that question.\nI have appended in the appendices to my written testimony, a report by an organization called The Free Press that is entitled, ``The Big Tech Backslide.''\nI would encourage you and your colleagues to visit this report. It's the most comprehensive study that I have seen so far about the backslide--the backslide consistent part of just removing the people from those teams.\nIt has been reported that Elon Musk let go of 81 percent of the staff of Twitter after purchasing it.\nWe saw large layoffs across the board in the entire sector, but part of the backslide is also the retreat from policies, specific policies that the companies have designed to keep our elections safe.\nSo I do believe that I personally have observed one company that has actually made strides forward and hired many people during this same period of the past 2 years. And you're not going to like the one that it is, but it's TikTok. Honestly, TikTok has been hiring a lot of the people who were let go from many of those other companies.\n[Interviewer] (Chair Blumenthal) But the measure of their commitment to some oversight and safeguards is their investment in that kind of, in effect trust and safety teams, and they have been backsliding, which belies their stated commitment to ``Trust us, we'll do it, don't worry.''\n[Respondent] Yes. perhaps because my equine metaphor resonated so much with you, I could offer another story from the animal kingdom, but this time a sign in nature. There is a metaphor that is used in the tech industry that I know of being used in at least two of the very biggest tech companies, and it's called, the metaphor of the bear.\nYou, Senators, are the bear in this metaphor, along with other regulatory bodies--the regulators. And the tech companies in this metaphor are people running away from the bear, as fast as they can. In this story the bear eventually catches up and it eats the slowest person, eating the slowest tech company.\nThus, the moral of the story, if you are a tech company, is, just don't be the second slowest. That is the strategy. So as long as you can point to someone, to another tech company that is doing a worse job than you are, on trust and safety, the idea is that is the optimal allocation of resources in your company.\n[Interviewer] (Chair Durbin) Anyone else want to comment on the Government effort? Mr. Harris?\n[Respondent] Yes. Thank you so much for the question, Senator Durbin.\nI understood two different elements from your question. One, being, can we actually regulate this? And two, being, do we have the right people in Government to do it?\nTo the first point, I would refer you back to the excellent Blumenthal-Hawley framework that has already been presented.\n[Interviewer] (Chair Durbin) I was hoping you'd say that.\n[Respondent] It contains the key elements that I would recommend. Even if I had not read it, I would've said licensing and registration of AI systems and the companies that make them; liability, clearly holding AI companies liable for the products that they make; and provenance, giving people the ability to know what content is produced by AI and what content is produced by humans.\nThose are just a few pieces that are already in the framework, and I'm excited to see legislative text with the details of that.\nTo your question about talent, this is not the first time this issue has come up in the Federal Government. You might recall the healthcare.gov launch, and that was----\n[Interviewer] (Chair Durbin) Oh, yes.\n[Respondent] That was, I believe, one of the first major public moments when people realized it was very hard for the Federal Government, under procurement and staffing procedures, to hire the right people to launch large-scale technology projects.\nNow, there have been advances since then. There's something called cyber pay that allows agencies to pay a little bit more. But I don't think it's gone far enough.\nI think there's a situation now where one of the techniques to recruit is to find people who've already made a good amount of money in the private sector and can make a little bit less for a few years and then know they're going to go back.\nI don't actually think that's a long-term sustainable model. I think the rates of pay still need to go up.\nBut I would like to call your attention to the AI Safety Institute, which exists within this--within the Department of Commerce, that has actually started hiring up for this task at hand. I think that there are incredible people there that need a lot more money. And I hope that you will give that to them.\n[Interviewer] (Senator Kennedy) Thank you, Mr. Chairman.\nMr. Harris, you mentioned as one of the tenets of regulation provenance, by that, do you mean notice that when consumers deal with the right--robot, they should be told if it's a robot?\n[Respondent] Thank you so much for your question----\n[Interviewer] (Senator Kennedy) You don't need to thank me. You can just answer.\n[Respondent] There are multiple elements of provenance technologies. One is disclosure. And yes, that is saying that if a company uses AI and has AI interacting with you, that it should disclose that you are interacting with an AI system or a bot.\nBut another element of----\n[Interviewer] (Senator Kennedy) So that's number one, is notice. If I'm interfacing with a robot----\n[Respondent] Yes.\n[Interviewer] (Senator Kennedy) Or with artificial intelligence, the owner of that artificial intelligence should tell me, as a consumer, ``I'm a robot.''\n[Respondent] Yes, absolutely.\n[Interviewer] (Senator Kennedy) Okay. That's number one. Tell me what number two is.\n[Respondent] So number two is sometimes referred to as watermarking. I know that this Committee heard, in April, testimony about this topic of watermarking.\nAnd watermarking can happen in one of two ways. It can be either a visible or direct disclosure that content, for example, an AI-generated image, an AI-generated audio file video or even text, can be a direct disclosure that it's AI generated. You've seen watermarks that have----\n[Interviewer] (Senator Kennedy) I get it. So that's another form of notice.\n[Respondent] Yes, you could call it that. So that's, direct watermarking. Then there's also another technique, which is a more indirect disclosure, which is hiding an invisible signal within the text of a piece of text that's generated by AI within an image, which is a hidden pattern of pixels.\n[Interviewer] (Senator Kennedy) What good does that do, in terms of a consumer?\n[Respondent] Well, the good thing about that is that it can be much more difficult to remove than simply a notice that says this was produced by AI at the top or bottom of a picture that you could just crop out and remove very easily. So watermarks have value in that sense.\nThere's also another technology that was also discussed in April here, which is called ``digital fingerprinting.'' This technology has been used to keep track of child sexual abuse material and terrorist content circulating online. And that creates what's called a ``hash,'' a unique identifier for images.\nAudio files could be even done with text or videos, and that's stored in a database, and that can associate a piece of content and then identify it as AI generated.\n[Interviewer] (Senator Kennedy) All these are forms of notice.\n[Respondent] I would--some more direct than others. I would call them forms of----\n[Interviewer] (Senator Kennedy) I'm not trying to trick you. I'm trying to understand. Are there any companies that are giving the world proper notice right now?\n[Respondent] Um----\n[Interviewer] (Senator Kennedy) Anybody?\n[Respondent] So, I'm happy to answer that.\n[Interviewer] (Senator Kennedy) Sure.\n[Respondent] So, according to their public statements----\n[Interviewer] (Senator Kennedy) Yes or no, please, sir. Because I got other ground to cover.\n[Respondent] Google DeepMind SynthID is the name of the technology. Looks good, I haven't tested it.\n[Interviewer] (Senator Kennedy) But they're trying to give notice.\n[Respondent] Yes.\n[Interviewer] (Senator Kennedy) Okay. Licensing. What good is licensing going to do? I mean, you go to the Government and say, okay, here, gimme a license. What good is that going to do?\n[Respondent] Well----\n[Interviewer] (Senator Kennedy) Anybody?\n[Respondent] I'm happy to take that one also, briefly. As in, is the case in many professions, the law, medicine, you need a license to practice. And if you violate the code of that profession, you can no longer practice. And with technology, I see no reason why it should be different.\n[Interviewer] (Senator Kennedy) So with the license, we should have a code of behavior?\n[Respondent] Yes, absolutely.\n[Interviewer] (Senator Kennedy) Okay. And what should be in that code of behavior?\n[Respondent] Again, happy to offer this to any of my--my co- panelists here.\nBut I believe that ethics are critical. That artificial intelligence systems should be designed in ways that they can't harm human beings. That they don't do damage to people. That they don't discriminate. That they don't give people advice that causes, brings harm to them, that's incorrect. Those are a few elements of the code.\n[Interviewer] (Senator Kennedy) So basically, I'm not--I'm trying to understand this.\n[Respondent] Yes.\n[Interviewer] (Senator Kennedy) Because I think you're all extraordinarily bright--that's obvious. But the American people don't understand what you're talking about. Okay?\nAnd, frankly, many times, neither do I. So, you license with a code of behavior that would require Government to set up some sort of agency to enforce that code of behavior. Is that correct?\n[Respondent] This is an area where there are actually multiple interesting proposals.\nThere's a law professor at Fordham Law School named Chinmayi Sharma, who has been writing about creating a malpractice regime for engineers who develop AI----\n[Interviewer] (Senator Kennedy) Well, that's what I'm getting to next. Liability. It is possible for the private sector to enforce through liability. Why are our tort laws right now, or our contract laws right now not adequate?\n[Respondent] Again--oh, go ahead.\n[Interviewer] (Senator Klobuchar) Okay, thank you. We obviously have a number of bills, people are working on this Committee, including Coons, and Tillis, and Blackburn, and I, on people's right to their own images, and the like.\nBut I thought I'd focus just on one thing today, and I have a number of bills with Senator Thune, and others, to make sure we have regulations at work and guardrails in place, just because I see the potential upside of this, as well.\nAnd I think the only way we're going to get there is if we don't have a bunch of people ripped off in scams, and if we don't have a harm done to our democracy.\nSo, two ways that we look at this. One, is to do--we have two bills that are major, one is with Senator Hawley and myself on banning the deepfakes where it is actually someone pretending to be the candidate when they're not. We've seen this happen on both sides of the aisle. And we've seen other States, including Texas, actually take action on this.\nWe have, I think 18, 19 States have done this, including red States, blue States, purple States, where they have, at least, required labeling of ads.\nAnd we understand in our bill, Senator Hawley, and myself, that you're not going to be able to cover satire and that kind of thing, because of the Constitution.\nBut the labeling requirements, that Senator Murkowski and I have, we'd get at not small-ball stuff, like hair color, but we'd get it, at least, so that people know--if it is the candidate or not--themselves.\nBecause even with satire, I know people are confused because they've showed me stuff and said, is this really them? Is that really Trump? Is that really Harris? Is that really--I mean, it's an unbelievable thing to do to voters when you're trying to get them to make a decision.\nSo I just look at this as two-pronged, and I guess I'd go with you, Mr. Harris, because you talked about this earlier. Do you agree there's a serious risk posed by the use of AI in our elections? And can you tell us how AI has the potential to turbocharge your election-related disinformation?\n[Respondent] Thank you so much, Senator Klobuchar, for the question and for your commendable efforts on legislation producing all of the bills that you mentioned.\n[Interviewer] (Senator Klobuchar) We have gotten those two bills through the Rules Committee, but Senator McConnell is having an issue with them. And I'm just really concerned that we are not going to be able to advance them on the floor before it's too late-- but continue on.\n[Respondent] Yes, absolutely. So this is a topic that I have written about extensively, in part with--in my work with the Brennan Center for Justice at the New York University School of Law. I produced a guide for how election officials can prepare for AI threats along with co-authors. And I think that it's very, very important that we be prepared for a variety of threats.\nThose threats could include deepfakes of election officials, of candidates like yourselves, and also deepfakes that present election apparatus in them that indicate that there was tampering with physical objects associated with the election.\nIn two bills, that I mentioned earlier, that I worked on in California that are currently awaiting signature--fingers crossed--by Governor Newsom: Assembly Bill 2655 by Marc Berman, Assembly Bill 2839 by Gail Pellerin--those would actually have serious consequences so that if someone posted those types of election deepfakes, they could be removed. That platforms would be required to remove them.\n[Interviewer] (Senator Klobuchar) Yes, well, our bill allows for them-- many of them are actually supporting this bill because it makes it clear the platforms are that they would have to take it down. But it also puts liability on the people that put those up.\n[Respondent] Yes.\n[Interviewer] (Senator Blackburn) Probably need that privacy bill\n[Respondent] I'm happy to add on that.\nThere was actually something on this same topic that really got a lot of attention at the beginning of the summer. A lot of users of Facebook and Instagram found that they could opt out of the process of having their public data used for training of AI systems, and then they posted instructions.\nI saw this on both TikTok and on LinkedIn--users had posted instructions how to go to the part of your Facebook or Instagram settings where you can opt out of having your data used.\nI tried to do it in Facebook, I tried to do it in Instagram, and I couldn't find the button. And then I posted and said, I can't find the button, in the comments there.\nAnd it turned out everyone with their IP address in the United States couldn't find the button because this was a feature that, I believe, was only offered to people in the EU, and, perhaps, in the UK--I heard different stories about which parts of the world.\nBut this idea that we, Americans, are, you know, second- class citizens, that we don't even have the right to object-- that Europeans or people in the UK have to object to--are photos of ourselves, of our families, of our children being used to train AI systems. And, at that, AI systems that we don't even have confidence in how they work.\nWe don't know if they will accidentally release personal information about us in the future, make images that look just like us.\nSo, I applaud you for raising this issue, and I'm excited to see bills like APRA make progress so that we have the foundations of a legal system that can address that issue.\n[Interviewer] (Chair Blumenthal) So that--I think the point that you've just made is really important that the failure to develop safety and control features in a product is not illegal, perhaps, and therefore may not be covered by a strict reading of whistleblower laws, even if it is a practice which is unethical and harmful. I think that's a very important point.\nLet me, sort of, go to the other side of that question, which is the incentives, whether promotion or compensation, bonuses and other kinds of incentives that are offered by the company.\nDo they align with safety, for example, are employees rewarded for developing better safety features? Or, is it more rewards for racing to the market, which is the dynamic that we've discussed today? Mr. Harris and--or Mr. Saunders? Mr. Harris.\n[Respondent] Yes, I could share an anecdote about that, Senator Blumenthal.\nEarly in my tenure at Facebook, I was introduced to someone who was a friend of a friend, and I told them that I had joined the Civic Integrity Team, and this person said, oh, that work sounds so interesting.\nBut, you know, I just never joined teams like that because you can never show impact. You can never--you never have anything to say on your performance reviews about what you did, because the only thing you achieved was hopefully to not have something happen.\nAnd I heard different versions of that throughout my time in the tech industry, not just from inside of the companies where I worked. But I heard that across the board. It's very hard to make progress in your career when you work in an area that doesn't have clear ways to show progress.\nI also heard of people being asked whether they could demonstrate, that work that they did reduced the number of public relations emergencies for the company.\nHow can you possibly demonstrate that you reduced the number of public relations emergencies for a company? So, again, these are structural problems with doing that work. And I applaud you for bringing up that question.\n[Interviewer] (Chair Blumenthal) You know, we've seen examples already of our foreign adversaries using AI to meddle in our democracy.\nI think last month OpenAI revealed that the Iranian government-linked group had used ChatGPT to create content for social media and blogs attempting to sow division and push Iran's agenda in the United States.\nThere have been reports that China and Russia have also used AI tools deceptively to interfere in our democracy. I mentioned them earlier. I think the threat to our elections is real and we're unprepared.\nMr. Harris, you worked on a California law that seeks to safeguard our democracy. Are those the kinds of protections that you think would be effective at the Federal level? And is there more that you would add to the California law?\n[Respondent] Thank you so much for the question, Senator. I believe that in California, it's difficult to make a lot of types of laws that could be made at the Federal level.\nThere are a number of reasons for that. One is simply the State agency infrastructure is dramatically smaller than the Federal agency infrastructure.\nAnd in California, in a situation of budget deficit it's very hard right now to pass any legislation that has any significant cost. That, I believe, is one of the biggest barriers to passing the legislation that we need.\nAnd I think that you have in front of you, in your framework, the type of legislation that California would not be able to achieve, things like licensing and registration and liability. Those would be very costly at the scale of a State to enforce those.\nAnd to be honest--it would of all the States in the country maybe be one that cost California more than many others, simply because of the location of the technology industry there. And there might be political conditions that make it harder in California to pass that type of legislation.\n[Interviewer] (Chair Blumenthal) Again, I'll--I'll entertain any points about the California law that any of you would like to make.\nAnd if not, let me follow up, Mr. Harris, in your experience there, what was your--what was your takeaway from the tech companies? Were they supportive? Helpful? How would you characterize their reaction?\n[Respondent] Thank you so much for the question. I believe that you need to look at two different phenomena. One is the outward presentation of the tech companies about legislation. And then another is, what's happening behind closed doors.\nI made a reference in my opening statement to the idea of ``shalls'' and ``mays.'' I was surprised.\nI have been surprised in my work in the California Legislature by the way in which tech industry lobbyists, sometimes hiding behind industry groups, sometimes from individual named companies, are able to arrive at legislators' doors with requests to remove ``shalls'' and replace them with ``mays.''\nTo take legislative language that was very well intentioned, and at the 11th hour, turn it into something that is meaningless.\nIt concerns me greatly, what I've seen in California. There are political realities that, if draft legislation comes from a civil society group, like the one that I work--that I have been working for, the California Initiative for Technology and Democracy, that if those pieces of legislation are too bold, sponsors of that legislation, organizational sponsors, will be told this isn't going to work and you're going to have to weaken it.\nAnd sometimes that comes in many rounds of weakening, and it can be very painful to watch.\n[Interviewer] (Chair Blumenthal) I want to mention two others. A Stanford Internet Observatory Report this past December that found that, that training data sets used by AI companies are filled with thousands of known images of child sexual abuse.\nPossessing that kind of material is a crime.\nAnd as you wrote, Dr. Mitchell, in your testimony, training AI with these kinds of abusive materials means there's a good chance that the model will generate new abuse material.\nThe second study is a survey released last month by the anti-exploitation group, Thorn, one in 10 preteens and teens reported that their friends or classmates had used AI tools to generate sexual images of other kids--one in 10 preteens and teens saying they'd use these tools to generate sexual images of their peers.\nSo, these new AI tools, which are trained on child sexual exploitation, are fostering sexual harassment of young people, and the apps to create that abuse material are easy, they're free to find on Google and Apple App stores right now.\nPossessing and creating child abuse material, clear example of the problems with this race to the market, which can easily turn into a race to the bottom.\nThere must be steps that generative AI companies can be taken to make sure their tools aren't being trained on illegal child exploitation material, and aren't creating these kinds of abusive images of anyone, let alone kids. Would you agree? And what kinds of steps should these companies be taking?\n[Respondent] If I could add, Senator Blumenthal?\n[Interviewer] (Chair Blumenthal) Absolutely.\n[Respondent] So, yes, I agree with the statements that you made. And I think there are a few lessons that we should learn from this current situation.\nOne is, again, voluntary self-regulation does not work. There is another public statement about this topic that was signed by a number of companies that signed onto what, what Thorn and All Tech is Human, another tech nonprofit called the Safety by Design, principles.\nAnd amongst the signers to that included Stability AI, I believe Hugging Face, and other company called CIVICAi--and they signed this and made agreements about doing things to prevent the use of child sexual abuse material in AI models.\nNow the problem is that, that report that you referred to from the Stanford Internet Observatory, that was released in December--but until just a few weeks ago, there had been no moves to actually take down the offending AI models in any serious way.\nA few weeks ago, when I was on the eve of publishing a paper on this topic with IEEE Spectrum, a technology publication, I reached out to those companies and perhaps in response to my outreach, perhaps not, one of the companies involved RunwayML--the company that people point to as being responsible for training Stable Diffusion 1.5, the specific model trained on thousands of images of CSAM--they actually removed their Hugging Face repository.\nNow, the problem with removing a repository--this was an open-source AI model. The problem with removing it is that there were many other versions of that model that are still hosted on Hugging Face.\nAnd my co-panelist, Dr. Mitchell, is appearing here in her individual capacity. And I have immense respect for her research and do not expect her to feel the need to speak up on behalf of or in response to my statements here.\nBut Hugging Face has chosen not to take down other versions of Stable Diffusion 1.5.\nAnother company called CIVICAi has a website with many, many models derived from Stable Diffusion 1.5, perhaps the original model itself--or something close to it. They also choose not to take it down.\nAnd these are the open-source models that are likely behind the report that I shared with you from Graphika, that will also go into the record, states that a big reason for the rise of these undressing or nudifying apps is the advancement of open- source AI image-generation tools.\nAnd until we can get the companies that are hosting these tools to take just the minimum level of responsibility--I mean, I've done content moderation before. I've worked on this issue.\nIf something is called Stable Diffusion 1.5, Stanford says that was trained on child sexual abuse material, why let someone upload something called Stable Diffusion 1.5 today? After it was taken down, more people uploaded dozens more versions of it.\n[Interviewer] (Chair Blumenthal) I'm not suggesting that it's a simple issue, but there is a need for action. And I think all of you have made the point that we can't rely on the companies alone to take action because of the incentives that they have and that they communicate to their employees, which are, get to the market as soon as possible, and let's worry about hindsight afterward.\nSomeone mentioned open source. Is that a consideration for us? What should we think about open source in this context of protecting the public? Dr. Mitchell?\n[Respondent] If I could?\n[Interviewer] (Chair Blumenthal) Sure.\n[Respondent] So, I've written extensively on this topic of open source, and I think there are a number of important points.\nThe first one that I would like to caution you of, in advance, is that in the European Union, in the lead up to the signing and the finalization of the EU AI Act, a number of companies pushed very, very hard to get full exemptions for open-source AI from the provisions of the EU AI Act.\nI would expect, if I were in your position, that you will receive these types of requests here, if you have not already.\nExempting open-source AI from AI regulation is not appropriate. That's because once you release an OpenAI system, some people now, even including the Federal Government, are using a different term, ``open weights''--that's perhaps a more appropriate term.\nThe Executive order on AI uses the term, ``dual use models,'' foundation models with widely available model weights. There's a lot of terminology issues here. I'll go with open weights, because I think that's the clearest one right now. Also, ``unsecured'' is a way to think about it.\nSo, when you release open weights, unsecured models, you never get them back.\nIf they're trained on thousands of images of CSAM and they can produce CSAM, child sexual abuse material, you will never retrieve that. It will live on.\nYou can do things to make it hide out in only the hidden corners of the internet. You can make it less available. And that's the case with all of these open weights or unsecured models.\nAnd unfortunately, we've seen a number of companies take that strategy without doing significant safety testing on models.\nAnd that's why I'm very concerned about this, and I believe that there should be no exemptions to any AI laws for open weights, or unsecured AI systems.\n[Interviewer] (Chair Blumenthal) Thank you. Mr. Harris?\n[Respondent] Thank you so much, Senator, for the question. In anticipation of this line of questioning, I actually included a sampling of quotes from AI companies--CEOs asking for more regulation. There are so many. It appears that almost all of the CEOs of all the major AI companies have called for this.\nNow, I do want to caution that I see some kind of disconnect.\nI suspect that the disconnect is that the lobbyists are not--the lobbyists that work for these tech companies are, perhaps, not in direct communication with the CEOs, maybe something gets lost in communication, maybe they're actually automated themselves and they're still in an old version of their operating systems.\nBut they come in with a goal to kill or hobble every piece of legislation about AI.\nSeems like it's autopilot, because I think if they thought more deeply, talked to the CEOs who said those quotes that I've given you in the written testimony, they would be more thoughtful about collaborating on these efforts to regulate.\nBut I would also submit to you that in addition to that evidence, CEOs are calling for it, I think if they're calling for it, that probably doesn't mean they think it's in all cases going to impede innovation.\nAlso, it's advantageous to tech companies to have clear rules of the road upon which they are racing.\nOtherwise, they're going to end up parked at the--in the parking lot of the courthouse, depending on regulations that stem from decades-old laws that are brought to bear on them, or tort law, which will just lead to more cost and confusion, or States with many different laws. And that itself is more costly.\nSo, I do believe that clear regulation is advantageous to innovation and to the tech companies, and we should take their CEOs' word for it.\n[Interviewer] (Chair Blumenthal) I think these points are very, very important. If there's a disaster on AI, it's equivalent to a food company taking the issue of food safety, having a major outbreak of Listeria food poisoning. It has to recall products, its credibility is undermined, it's a major marketing disaster.\nAnd this kind of AI catastrophe would impact not only that company, but possibly others, as well. So, there's a very rational and powerful argument for regulation that makes sure that everybody is abiding by commonsense, rational standards that are good for the industry.\nAnd the idea of some certainty. You know, one after another, for 20, 30 years, businesses have told me, give us the rules. We may disagree with you, but just tell us the rules. And don't change them from year to year. We need some stability. We can work with whatever rules you give us, but we need to know what they are, and they need to be clear, and they need to be stable.\nAnd frankly, I take them at their word, because I think, again, in their rational interests, that ought to be their attitude. Unless we do something crazy.\nNobody here wants to do something crazy because we recognize the immense good that can come from AI. And this goes back to the point that you made, Ms. Toner, that it would be easy to say, let's ban AI, but it has enormous potential for good. Take the medical area, you know, the potential for research, as well as for treatment and diagnosis--immense.\nAnd it's a little bit like, and forgive me for being over simplistic, but I've been doing some reading on COVID, the origins of COVID. The debate about, did it start in a lab? Was there a release, was there research that tried to develop a more potent evil virus, or did it come from the wild?\nWe, at this point, we don't know, at least, there are equally--or I shouldn't say equally, there are theories that have credibility that argue for all of it. But we do know that there are dangers in research on gain of function, trying to develop more lethal viruses.\nNow, the argument for that research is, then we'll know how to deal with them. The argument against it is, why would you develop a virus that is more destructive and damaging? The argument is not exactly the same. It's analogous, not the same.\nBut with every advance in technology, there are also potential downsides. And the point here is to deal with the downsides and not rely only on the creators to oversee what they're doing, but impose some rules of the road that protect them and the industry, as well as the public.\nAnd I think you have been enormously enlightening today to us. I hope we can continue this conversation because our goal is to achieve the promise with what you have called, Ms. Toner, a light touch.\nWe won't all agree on what a light touch is. But if we are honest with each other, I think we can develop some standards, as well as enforcement mechanisms that make sure that we impose accountability, as well as criteria for judging whether or not a particular form of AI is safe and effective--just as we would impose that standard on new drug development. Safety and efficacy are the standard for the FDA.\nI am not going to ask you the $64 billion question, when will we have generative AI that is as smart as people? Unless you want to answer that question.\nI'll open the floor to you if you would like to give us your prediction, because that's a horse-is-out-of-the-barn issue, in a sense. Once it's there and we don't have standards, you know, it's going to be put on the market. So maybe you want to address it? You don't have to. Mr. Saunders.\n[Respondent] I'm happy to answer that one.\n[Interviewer] (Chair Blumenthal) Mr. Harris.\n[Respondent] Thank you so much. I think the good news I have for you is that the answer to that question might not be that important for you.\nThe reason I say that is that my background working on AI is in other areas, not about artificial general intelligence, but about AI and bias, AI and deepfakes and elections, and, more recently, AI and harm to children.\nThat said, I'm lucky to have an excellent colleague at U.C., Berkeley, Stuart Russell, who's also appeared before this Committee.\nStuart has invited me to a couple of his conferences, of his lab, where I am in a room surrounded by hundreds of people with computer science degrees, Ph.D.s, who've dedicated their lives and their careers to stopping artificial intelligence from eliminating our species.\nIt was a little bit difficult for me, trained sociologist, to decide where I came down on this issue.\nBut as the conversation moved to policy and what policies we need, what I found was that there was almost no disagreement between me thinking about the problems that I've focused on in my work and theirs.\nThe same issues--liability, licensing, registration. Many of them are also actually quite concerned about deepfakes and deception.\nSo, provenance, those key solutions are the solutions that we need to address the issues of AI bias, discrimination, disinfor-mation, interference in elections, harm to children, and the specter of AI, artificial general intelligence, or superintelligent AI being abused by bad actors to harm us in catastrophic ways.",
+ "_bench": {
+  "seconds": 306.2,
+  "chars": 40331
+ }
+}

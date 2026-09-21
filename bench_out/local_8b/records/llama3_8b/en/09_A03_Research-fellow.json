@@ -1,0 +1,70 @@
+{
+ "respondent": "Research fellow, urban data science centre",
+ "descriptors": {
+  "institution_type": "research_institute",
+  "role_level": "rnd_staff",
+  "sector": "ict_ai",
+  "experience": "over_20y",
+  "descriptor_basis": "the interview transcript does not state it"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Anticipation of potential biases in data",
+   "quote": "the people most likely to be waiting longer for a crossing signal are also the people least likely to own a car",
+   "full_text": "the headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipates potential biases in the data and acknowledges the limitations of the findings."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reflexivity on assumptions and knowledge limits",
+   "quote": "it is not a law of nature",
+   "full_text": "I want to be careful: that's an association in one city over eleven months, it is not a law of nature.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent shows epistemic humility by acknowledging the limitations of the findings and the potential for biases."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Engagement with stakeholders and users",
+   "quote": "I didn't think to",
+   "full_text": "In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent recognizes the importance of engaging with stakeholders and users but did not do so in this case."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Responsiveness to external signals",
+   "quote": "it turned into a street-lighting upgrade at nine junctions",
+   "full_text": "The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent's findings led to a tangible outcome, demonstrating responsiveness to external signals."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent demonstrates anticipation of potential biases in data, reflexivity on assumptions and knowledge limits, and responsiveness to external signals. However, they show a lack of engagement with stakeholders and users, recognizing the importance of doing so but not doing so in this case.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A03 — Research fellow, urban data science centre\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | You audited the system's performance. How did you approach it?\nRespondent | I asked for the raw detection logs and I was given aggregates. That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked. Once I had the logs the audit itself took three weeks.\nInterviewer | What did the audit show?\nRespondent | Two things. The headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards. So the people most likely to be waiting longer for a crossing signal are also the people least likely to own a car. I want to be careful: that's an association in one city over eleven months, it is not a law of nature.\nInterviewer | What happened when you reported it?\nRespondent | Better than I expected, actually. The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That's a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported. So the symptom got fixed in the cheapest available place.\nInterviewer | Should performance reporting be different?\nRespondent | Yes, and it's not complicated. Report the worst decile, not the mean. Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about. It costs nothing to add a column.\nInterviewer | Were residents involved in the audit at any point?\nRespondent | No. It was a data exercise. In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to."
+}

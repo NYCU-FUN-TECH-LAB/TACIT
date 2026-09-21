@@ -1,0 +1,96 @@
+{
+ "respondent": "G02",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "unspecified",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Governance of the system",
+   "quote": "Through the standard route. It's on the corporate risk register, it has a senior responsible owner, it reports into the digital board quarterly.",
+   "full_text": "Through the standard route. It's on the corporate risk register, it has a senior responsible owner, it reports into the digital board quarterly. That's the same governance any major system gets and I'd resist the idea that it needs something special. Once you start creating bespoke oversight for anything with a model in it, you end up with forty committees and no capacity.",
+   "open_codes": [
+    {
+     "code_id": "c026",
+     "label": "[8x] Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The respondent mentions the potential risks of creating bespoke oversight for systems with models"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Expertise of the digital board",
+   "quote": "It has me. And a non-executive with a technology background.",
+   "full_text": "It has me. And a non-executive with a technology background. Is that enough to interrogate a detection model in detail? No, probably not. What we do instead is rely on the vendor's assurance documentation and on the acceptance testing.",
+   "open_codes": [
+    {
+     "code_id": "c027",
+     "label": "Shifting responsibility — The way in which actors avoid taking responsibility for the long-term effects of the system",
+     "rationale": "The respondent implies that the digital board may not have the necessary expertise to take responsibility for the system's long-term effects"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Public feedback and transparency",
+   "quote": "We've had — I want to say six or seven freedom of information requests.",
+   "full_text": "We've had — I want to say six or seven freedom of information requests. Most were about camera locations and we answered those. Two asked for the algorithm and we refused those on commercial confidentiality grounds, which is the vendor's position and legally sound.",
+   "open_codes": [
+    {
+     "code_id": "c028",
+     "label": "Public feedback — The comments and concerns raised by the public",
+     "rationale": "The respondent mentions the public's requests for information about the system"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Negotiating transparency terms",
+   "quote": "I don't believe transparency terms were in the specification.",
+   "full_text": "I don't believe transparency terms were in the specification. That's a fair criticism and I'd expect it to be in the next one. The honest position is that in 2022 we weren't thinking about it, and by the time you're arguing about disclosure you've already signed.",
+   "open_codes": [
+    {
+     "code_id": "c021",
+     "label": "New code: Transparency in system goals — The importance of transparency in the system's goals and objectives",
+     "rationale": "The respondent highlights the importance of transparency in the system's goals and objectives"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Challenging how a junction behaves",
+   "quote": "There's the general complaints process.",
+   "full_text": "There's the general complaints process. It routes to transport, not to us. Whether transport can then change a parameter depends on the change-control terms, which — I'd have to look. I don't know the answer to that off the top of my head, which I appreciate is not a great answer.",
+   "open_codes": [
+    {
+     "code_id": "c020",
+     "label": "New code: Measuring impact — The challenges of measuring the impact of the system",
+     "rationale": "The respondent mentions the challenges of measuring the impact of the system"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260914_193235",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 1,
+   "n_ok": 1
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 3,
+    "created": 2,
+    "chunk": 0
+   }
+  ]
+ },
+ "transcript": "Interview transcript G02 — Chief information officer, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does a system like this get governed once it's running?\n[Respondent] Through the standard route. It's on the corporate risk register, it has a senior responsible owner, it reports into the digital board quarterly. That's the same governance any major system gets and I'd resist the idea that it needs something special. Once you start creating bespoke oversight for anything with a model in it, you end up with forty committees and no capacity.\n[Interviewer] Does the digital board have the expertise to interrogate a model?\n[Respondent] It has me. And a non-executive with a technology background. Is that enough to interrogate a detection model in detail? No, probably not. What we do instead is rely on the vendor's assurance documentation and on the acceptance testing.\n[Interviewer] Has the public asked for information about the system?\n[Respondent] We've had — I want to say six or seven freedom of information requests. Most were about camera locations and we answered those. Two asked for the algorithm and we refused those on commercial confidentiality grounds, which is the vendor's position and legally sound.\n[Interviewer] Did the council consider negotiating that at procurement?\n[Respondent] I don't believe transparency terms were in the specification. That's a fair criticism and I'd expect it to be in the next one. The honest position is that in 2022 we weren't thinking about it, and by the time you're arguing about disclosure you've already signed.\n[Interviewer] Is there a route for a resident to challenge how a junction behaves?\n[Respondent] There's the general complaints process. It routes to transport, not to us. Whether transport can then change a parameter depends on the change-control terms, which — I'd have to look. I don't know the answer to that off the top of my head, which I appreciate is not a great answer."
+}

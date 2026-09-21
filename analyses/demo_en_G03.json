@@ -1,0 +1,109 @@
+{
+  "respondent": "G03 (Ward councillor, city council)",
+  "descriptors": {
+    "institution_type": "government",
+    "role_level": "policy_maker",
+    "sector": "other",
+    "experience": "6_10y",
+    "descriptor_basis": "Interview transcript: G03 (Ward councillor, city council)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "Open surgery as a standing channel for residents",
+      "quote": "Through my surgery, every other Saturday, three hours, anybody can come.",
+      "full_text": "Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "P",
+          "rationale": "A low-barrier, sustained route by which affected residents reach a decision-maker."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "Most reliable signal absent from formal reporting",
+      "quote": "That's the most reliable data I get about anything and it doesn't appear in any report.",
+      "full_text": "Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "N",
+          "rationale": "The project's monitoring design does not capture the information the respondent considers most trustworthy."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "Safety-relevant behaviour change not foreseen",
+      "quote": "so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing",
+      "full_text": "Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "N",
+          "rationale": "An adaptive behaviour with direct safety implications that no part of the assessment anticipated."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "Escalation produced access to evidence",
+      "quote": "The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go",
+      "full_text": "Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "P",
+          "rationale": "Persistence through a formal channel produced a concrete outcome."
+        },
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "The effective channel depends on institutional position rather than on the merit of the observation."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "Names his own scrutiny capacity honestly",
+      "quote": "I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+      "full_text": "No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Explicit assessment of the limits of the respondent's own oversight role."
+        },
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "Those formally charged with scrutiny are not equipped to perform it."
+        }
+      ]
+    },
+    {
+      "segment_id": "S006",
+      "title": "Proposes an audit function for algorithmic systems",
+      "quote": "Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+      "full_text": "Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Institutional proposal aimed at building standing scrutiny capacity for future systems."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "The elected scrutineer's view. His fortnightly surgery is the most reliable signal he receives and appears in no report; through it he learned of pedestrians stepping forward to be noticed, a safety-relevant behaviour nobody anticipated. His escalation eventually produced the raw logs the university needed, which he is quick to point out worked only because he had a committee to stand up in. He is candid that he cannot say how the model weighs a bus against a pedestrian and has never been offered a briefing that would tell him.",
+  "transcript": "Interview transcript G03 — Ward councillor, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n【Interviewer】How does this reach you as a councillor?\n【Respondent】Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.\n【Interviewer】What did people describe?\n【Respondent】Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.\n【Interviewer】What did you do with it?\n【Respondent】Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.\n【Interviewer】Do you feel you understand the system well enough to scrutinise it?\n【Respondent】No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.\n【Interviewer】What would help?\n【Respondent】Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+  "transcript_file": "15_G03_Ward-councillor.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

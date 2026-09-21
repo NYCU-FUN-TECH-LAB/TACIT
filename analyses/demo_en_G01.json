@@ -1,0 +1,127 @@
+{
+  "respondent": "G01 (Section chief, city transport department)",
+  "descriptors": {
+    "institution_type": "government",
+    "role_level": "middle_management",
+    "sector": "ict_ai",
+    "experience": "11_20y",
+    "descriptor_basis": "Interview transcript: G01 (Section chief, city transport department)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "Names the real sequence behind the stated rationale",
+      "quote": "The commitment came first. Then we went looking for the intervention that fitted it.",
+      "full_text": "Congestion numbers and a manifesto commitment, in that order of how it's talked about and the reverse order of how it actually worked. The commitment came first. Then we went looking for the intervention that fitted it. I don't think that's unusual and I don't think it's illegitimate — that's what elections are for — but it does mean the question 'is this the right thing to do' was settled before my department was involved.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Candid examination of how the problem definition was arrived at, against the official account."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "Option appraisal foreclosed by prior commitment",
+      "quote": "the question 'is this the right thing to do' was settled before my department was involved",
+      "full_text": "Congestion numbers and a manifesto commitment, in that order of how it's talked about and the reverse order of how it actually worked. The commitment came first. Then we went looking for the intervention that fitted it. I don't think that's unusual and I don't think it's illegitimate — that's what elections are for — but it does mean the question 'is this the right thing to do' was settled before my department was involved.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "N",
+          "rationale": "The space in which alternatives could have been considered was closed before technical assessment began."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "Differentiated consultation collapsed into one session",
+      "quote": "We ran one combined session because I have four staff and two of them were on the tram project. It's a resourcing answer, not a values answer, but the effect on residents is identical either way.",
+      "full_text": "Badly, and I'll explain why rather than defend it. Ideally you run several sessions for different groups — disability organisations one evening, ward councillors another, commuters another. Each one takes about two weeks of preparation. We ran one combined session because I have four staff and two of them were on the tram project. It's a resourcing answer, not a values answer, but the effect on residents is identical either way.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "Engagement reduced to a single generic event, with the respondent clear that the cause is capacity."
+        },
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Refuses to let the explanation function as an excuse — a reflexive move about his own account."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "Undertaking to report back not fulfilled",
+      "quote": "The answer is yes, under a specific statutory route, and I never went back and told the room. Nobody chased me. That's the bit I'm not comfortable with — the absence of anyone chasing me is not the same as it being fine",
+      "full_text": "Crossing times, mostly, and one long argument about cameras that I handled poorly. Somebody asked whether the footage could be requested by police and I said I'd check. I did check. The answer is yes, under a specific statutory route, and I never went back and told the room. Nobody chased me. That's the bit I'm not comfortable with — the absence of anyone chasing me is not the same as it being fine.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "A concrete commitment made in a consultation setting was not honoured."
+        },
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Self-scrutiny that does not depend on external challenge."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "Concrete changes made in response to external requests",
+      "quote": "The pedestrian minimum went up at five junctions. We added an audible confirmation at two crossings after the sight-loss charity asked for it — that one took eleven months and it should have taken three",
+      "full_text": "Yes, three things. The pedestrian minimum went up at five junctions. We added an audible confirmation at two crossings after the sight-loss charity asked for it — that one took eleven months and it should have taken three. And we publish a monthly summary now, which nobody reads, but it exists and when a councillor asks a question I can point at it.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "P",
+          "rationale": "Documented adaptation traceable to specific external input."
+        },
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "The respondent's own judgement that the response, while real, was too slow to count as adequate."
+        }
+      ]
+    },
+    {
+      "segment_id": "S006",
+      "title": "Structural fix applied to the delay itself",
+      "quote": "I've since written a standing note about who owns crossing-parameter changes, which removes the first two months next time.",
+      "full_text": "Two of it was us not knowing who owned the decision. Three was the vendor's change-control process. The rest was that it needed a small budget line and small budget lines are harder than large ones because nobody has a process for them. I've since written a standing note about who owns crossing-parameter changes, which removes the first two months next time.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "P",
+          "rationale": "Learning converted into a procedural change rather than remaining an individual insight."
+        }
+      ]
+    },
+    {
+      "segment_id": "S007",
+      "title": "Identifies inter-organisational gaps as the failure locus",
+      "quote": "Everything that went wrong here went wrong in the gaps between organisations, and none of those gaps were technical.",
+      "full_text": "Written down who has to be told what, and by when, before anything was switched on. Everything that went wrong here went wrong in the gaps between organisations, and none of those gaps were technical.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Forward-looking diagnosis directed at the coordination design rather than the technology."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "A candid departmental account. Consultation was collapsed into a single session for capacity reasons, which the respondent explains without allowing the explanation to function as a defence. He reports a specific broken undertaking — checking whether police could request footage, and never returning to the room with the answer — and refuses to treat the absence of complaint as absolution. Three real changes followed go-live, one of them eleven months late, and he has since written a standing note that removes two of those months next time.",
+  "transcript": "Interview transcript G01 — Section chief, city transport department\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Where did the pressure to do this project come from?\n[Respondent] Congestion numbers and a manifesto commitment, in that order of how it's talked about and the reverse order of how it actually worked. The commitment came first. Then we went looking for the intervention that fitted it. I don't think that's unusual and I don't think it's illegitimate — that's what elections are for — but it does mean the question 'is this the right thing to do' was settled before my department was involved.\n[Interviewer] How did you approach consultation?\n[Respondent] Badly, and I'll explain why rather than defend it. Ideally you run several sessions for different groups — disability organisations one evening, ward councillors another, commuters another. Each one takes about two weeks of preparation. We ran one combined session because I have four staff and two of them were on the tram project. It's a resourcing answer, not a values answer, but the effect on residents is identical either way.\n[Interviewer] What was raised at that session?\n[Respondent] Crossing times, mostly, and one long argument about cameras that I handled poorly. Somebody asked whether the footage could be requested by police and I said I'd check. I did check. The answer is yes, under a specific statutory route, and I never went back and told the room. Nobody chased me. That's the bit I'm not comfortable with — the absence of anyone chasing me is not the same as it being fine.\n[Interviewer] Has anything about the system changed since it went live?\n[Respondent] Yes, three things. The pedestrian minimum went up at five junctions. We added an audible confirmation at two crossings after the sight-loss charity asked for it — that one took eleven months and it should have taken three. And we publish a monthly summary now, which nobody reads, but it exists and when a councillor asks a question I can point at it.\n[Interviewer] What made the eleven months?\n[Respondent] Two of it was us not knowing who owned the decision. Three was the vendor's change-control process. The rest was that it needed a small budget line and small budget lines are harder than large ones because nobody has a process for them. I've since written a standing note about who owns crossing-parameter changes, which removes the first two months next time.\n[Interviewer] What do you wish you had done at the start?\n[Respondent] Written down who has to be told what, and by when, before anything was switched on. Everything that went wrong here went wrong in the gaps between organisations, and none of those gaps were technical.",
+  "transcript_file": "13_G01_Section-chief.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

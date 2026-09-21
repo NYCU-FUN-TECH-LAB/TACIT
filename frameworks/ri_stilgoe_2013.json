@@ -1,0 +1,332 @@
+{
+  "framework_id": "ri_stilgoe_2013",
+  "version": "1.0",
+  "provenance": "builtin",
+  "name": {
+    "en": "Responsible Innovation (AIRR)",
+    "zh": "負責任創新（AIRR 四維度）"
+  },
+  "citation": "Stilgoe, J., Owen, R., & Macnaghten, P. (2013). Developing a framework for responsible innovation. Research Policy, 42(9), 1568-1580.",
+  "description": {
+    "en": "The four-dimension framework for Responsible Innovation (Anticipation, Reflexivity, Engagement, Responsiveness), extended with Foley's positive/negative polarity model.",
+    "zh": "負責任創新四維度框架（預期、反思性、參與、回應性），並以 Foley 的正負極性模型擴充。"
+  },
+  "polarity": {
+    "enabled": true,
+    "values": [
+      "P",
+      "N"
+    ],
+    "labels": {
+      "P": {
+        "en": "Positive",
+        "zh": "正向"
+      },
+      "N": {
+        "en": "Negative",
+        "zh": "負向"
+      }
+    },
+    "citation": "Foley's positive/negative polarity model"
+  },
+  "dimensions": [
+    {
+      "id": "anticipation",
+      "short": "ANT",
+      "label": {
+        "en": "Anticipation",
+        "zh": "預期"
+      },
+      "definition": {
+        "en": "Systematic foresight: exploring plausible futures, handling uncertainty, and keeping design options open before the technology stabilises.",
+        "zh": "系統性的前瞻：探索多重可能的未來、處理不確定性，並在技術定型之前保留設計彈性。"
+      },
+      "labels": {
+        "P": {
+          "en": "Long-term / Exploratory (+)",
+          "zh": "長期／探索式 (+)"
+        },
+        "N": {
+          "en": "Short / Deterministic (−)",
+          "zh": "短視／決定論 (−)"
+        }
+      },
+      "indicators": {
+        "P": {
+          "en": [
+            "scenario planning",
+            "upstream intervention",
+            "acknowledging uncertainty",
+            "avoiding lock-in"
+          ],
+          "zh": [
+            "情境規劃",
+            "上游介入",
+            "承認不確定性",
+            "迴避技術鎖定"
+          ]
+        },
+        "N": {
+          "en": [
+            "single deterministic forecast",
+            "deferring foresight",
+            "reducing anticipation to KPI tracking"
+          ],
+          "zh": [
+            "單一確定性預測",
+            "延後前瞻",
+            "把預期降格為 KPI 追蹤"
+          ]
+        }
+      },
+      "literature": [
+        {
+          "citation": "Stilgoe, Owen & Macnaghten (2013), Research Policy 42(9)",
+          "role": "grounding",
+          "year": 2013,
+          "included": true,
+          "note": "",
+          "openalex_id": null,
+          "doi": null,
+          "cited_by_count": null
+        },
+        {
+          "citation": "Muiderman et al. (2020) — four anticipatory approaches",
+          "role": "supporting",
+          "year": 2020,
+          "included": true,
+          "note": "",
+          "openalex_id": null,
+          "doi": null,
+          "cited_by_count": null
+        },
+        {
+          "citation": "Collingridge dilemma — control problem in early design",
+          "role": "supporting",
+          "year": null,
+          "included": true,
+          "note": "",
+          "openalex_id": null,
+          "doi": null,
+          "cited_by_count": null
+        }
+      ]
+    },
+    {
+      "id": "reflexivity",
+      "short": "REF",
+      "label": {
+        "en": "Reflexivity",
+        "zh": "反思性"
+      },
+      "definition": {
+        "en": "Scrutiny of one's own values, assumptions and knowledge limits; epistemic humility rather than the assumption that technical expertise settles ethical questions.",
+        "zh": "檢視自身的價值、假設與知識邊界；展現認識論謙遜，而非把技術專業當成倫理判斷的答案。"
+      },
+      "labels": {
+        "P": {
+          "en": "Humility (+)",
+          "zh": "謙遜 (+)"
+        },
+        "N": {
+          "en": "Hubris / Over-confident (−)",
+          "zh": "自負／過度自信 (−)"
+        }
+      },
+      "indicators": {
+        "P": {
+          "en": [
+            "questioning own assumptions",
+            "epistemic humility",
+            "acknowledging limits",
+            "second-order reflection"
+          ],
+          "zh": [
+            "質疑自身假設",
+            "認知謙遜",
+            "承認侷限",
+            "二階反思"
+          ]
+        },
+        "N": {
+          "en": [
+            "techno-optimism",
+            "we-know-best framing",
+            "reflexivity reduced to compliance"
+          ],
+          "zh": [
+            "技術樂觀主義",
+            "we-know-best 框架",
+            "反思淪為合規程序"
+          ]
+        }
+      },
+      "literature": [
+        {
+          "citation": "Stilgoe, Owen & Macnaghten (2013), Research Policy 42(9)",
+          "role": "grounding",
+          "year": 2013,
+          "included": true,
+          "note": "",
+          "openalex_id": null,
+          "doi": null,
+          "cited_by_count": null
+        },
+        {
+          "citation": "Owen et al. (2012) — responsible innovation framework",
+          "role": "supporting",
+          "year": 2012,
+          "included": true,
+          "note": "",
+          "openalex_id": null,
+          "doi": null,
+          "cited_by_count": null
+        }
+      ]
+    },
+    {
+      "id": "engagement",
+      "short": "ENG",
+      "label": {
+        "en": "Public Engagement",
+        "zh": "參與"
+      },
+      "definition": {
+        "en": "Relations with external actors: upstream, two-way and consequential participation, as against one-way communication or consultation after decisions are already fixed.",
+        "zh": "與外部行動者的關係：上游、雙向且能實質影響決策的參與，而非單向傳播或決策定案後才進行的諮詢。"
+      },
+      "labels": {
+        "P": {
+          "en": "Open / Inclusive (+)",
+          "zh": "開放／包容 (+)"
+        },
+        "N": {
+          "en": "Closed / Exclusive (−)",
+          "zh": "封閉／排他 (−)"
+        }
+      },
+      "indicators": {
+        "P": {
+          "en": [
+            "upstream participation",
+            "two-way dialogue",
+            "co-creation",
+            "including non-expert voices"
+          ],
+          "zh": [
+            "上游參與",
+            "雙向對話",
+            "共創",
+            "納入非專家聲音"
+          ]
+        },
+        "N": {
+          "en": [
+            "participation washing",
+            "deficit-model communication",
+            "downstream notification"
+          ],
+          "zh": [
+            "參與清洗",
+            "缺乏模型式傳播",
+            "下游知會"
+          ]
+        }
+      },
+      "literature": [
+        {
+          "citation": "Stilgoe, Owen & Macnaghten (2013), Research Policy 42(9)",
+          "role": "grounding",
+          "year": 2013,
+          "included": true,
+          "note": "",
+          "openalex_id": null,
+          "doi": null,
+          "cited_by_count": null
+        },
+        {
+          "citation": "Stilgoe et al. (2014) — why should we promote public engagement with science?",
+          "role": "supporting",
+          "year": 2014,
+          "included": true,
+          "note": "",
+          "openalex_id": null,
+          "doi": null,
+          "cited_by_count": null
+        }
+      ]
+    },
+    {
+      "id": "responsiveness",
+      "short": "RES",
+      "label": {
+        "en": "Responsiveness",
+        "zh": "回應性"
+      },
+      "definition": {
+        "en": "Capacity to change the innovation trajectory in response to external signals — including the capacity to stop — rather than treating the trajectory as fixed.",
+        "zh": "依外部訊號實質改變創新軌跡的能力（包含終止的能力），而非把軌跡視為既定。"
+      },
+      "labels": {
+        "P": {
+          "en": "Adaptive (+)",
+          "zh": "調適 (+)"
+        },
+        "N": {
+          "en": "Obdurate (−)",
+          "zh": "僵固 (−)"
+        }
+      },
+      "indicators": {
+        "P": {
+          "en": [
+            "substantive modification after feedback",
+            "iterative learning",
+            "institutionalised mechanisms",
+            "capacity to halt"
+          ],
+          "zh": [
+            "依回饋實質修改",
+            "迭代學習",
+            "機制制度化",
+            "有能力喊停"
+          ]
+        },
+        "N": {
+          "en": [
+            "refusal to change course",
+            "sunk-cost lock-in",
+            "regulation framed as obstacle"
+          ],
+          "zh": [
+            "拒絕改變路徑",
+            "沉沒成本鎖定",
+            "視法規為障礙"
+          ]
+        }
+      },
+      "literature": [
+        {
+          "citation": "Stilgoe, Owen & Macnaghten (2013), Research Policy 42(9)",
+          "role": "grounding",
+          "year": 2013,
+          "included": true,
+          "note": "",
+          "openalex_id": null,
+          "doi": null,
+          "cited_by_count": null
+        },
+        {
+          "citation": "von Schomberg (2011) — mutual responsiveness",
+          "role": "supporting",
+          "year": 2011,
+          "included": true,
+          "note": "",
+          "openalex_id": null,
+          "doi": null,
+          "cited_by_count": null
+        }
+      ]
+    }
+  ]
+}

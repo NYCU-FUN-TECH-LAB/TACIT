@@ -1,0 +1,750 @@
+{
+ "respondent": "CHRG-118hhrg53382_Prabhakar",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "policy_maker",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Opening statement and expressions of gratitude",
+   "quote": "Thank you so much, Chairwoman Mace. And thanks to you, Ranking Member Connolly, Members of the Subcommittee. I have really appreciated the work that you all are doing on artificial intelligence, and it is great to be here with my colleagues to be able to spend this time to focus on these important issues.",
+   "full_text": "Thank you so much, Chairwoman Mace. And thanks to you, Ranking Member Connolly, Members of the Subcommittee. I have really appreciated the work that you all are doing on artificial intelligence, and it is great to be here with my colleagues to be able to spend this time to focus on these important issues.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "expressing gratitude and institutional affiliation",
+     "rationale": "Witness opens by thanking committee members and acknowledging their work."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Presidential priority and global competition",
+   "quote": "I have three messages today, and the first one is that AI is a top priority for President Biden. He is very clear that this is one of the most powerful technologies of our times.",
+   "full_text": "I have three messages today, and the first one is that AI is a top priority for President Biden. He is very clear that this is one of the most powerful technologies of our times. When we look around the world, we can see that every Nation is racing to use AI to build a future that is imbued with their own values, and I think we can all agree that we do not want to live in a future that is defined by technology shaped by authoritarian regimes. And that is why the President is very clear that American leadership in the world today requires American leadership in artificial intelligence.",
+   "open_codes": [
+    {
+     "code_id": "c024",
+     "label": "U.S. leadership in responsible AI and global standard-setting",
+     "rationale": "Emphasizes American leadership in AI to counter authoritarian tech futures."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Government responsibilities in managing AI risks",
+   "quote": "Second, for America to lead in AI, government has some core responsibilities, and one of those, one set of those responsibilities is to manage the risks of AI.",
+   "full_text": "Second, for America to lead in AI, government has some core responsibilities, and one of those, one set of those responsibilities is to manage the risks of AI. And as both of your opening statements have noted, AI's risks are broad because its applications are so broad, and these risks range from risks related to fraud and information integrity. They include risks related to safety and security, risks associated with privacy, civil rights, civil liberties, and risks to jobs and the economy.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Outlines broad categories of AI risks that need government oversight and management."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Regulatory approaches and legislative needs",
+   "quote": "Now, some of these risks can be addressed under existing laws and regulations. Some of these risks can be managed by making sure that government uses AI responsibly, and in some cases, we do expect that legislation will be required.",
+   "full_text": "Now, some of these risks can be addressed under existing laws and regulations. Some of these risks can be managed by making sure that government uses AI responsibly, and in some cases, we do expect that legislation will be required. That is about mitigating risks.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "need for comprehensive AI legislation",
+     "rationale": "Discusses using existing laws, government practices, and new legislation to mitigate risks."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Seizing technology promise and government responsibility",
+   "quote": "The reason we are doing all of this work to manage risks is so that our country can seize this technology to build the future.",
+   "full_text": "The reason we are doing all of this work to manage risks is so that our country can seize this technology to build the future. And if you look at what companies are doing, they are racing to build better products and services to transform industries using AI, and this is a technology that holds equally great promise for the work that government does for the American people. And that then becomes a second core responsibility of government. I think both of you have spoken to that as well in your opening remarks.",
+   "open_codes": [
+    {
+     "code_id": "c025",
+     "label": "prioritizing federal investment in responsible AI",
+     "rationale": "Focuses on leveraging AI technology for national benefit and government operations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "government adoption of AI to improve public services",
+   "quote": "And if you look at what companies are doing, they are racing to build better products and services to transform industries using AI, and this is a technology that holds equally great promise for the work that government does for the American people.",
+   "full_text": "The reason we are doing all of this work to manage risks is so that our country can seize this technology to build the future. And if you look at what companies are doing, they are racing to build better products and services to transform industries using AI, and this is a technology that holds equally great promise for the work that government does for the American people. And that then becomes a second core responsibility of government. I think both of you have spoken to that as well in your opening remarks. You are going to hear from my colleagues about national security and homeland security, and there is a lot to be said there. I will also just briefly touch on the many other important services and the public purposes that are government's responsibility. And when you look across Federal Government today, you will see that agencies are starting to use the insights that they can glean from these vast troves of data that they generate in the doing of their business.",
+   "open_codes": [
+    {
+     "code_id": "c025",
+     "label": "prioritizing federal investment in responsible AI",
+     "rationale": "Focuses on government leveraging AI to improve public services and nation-building."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "examples of AI improving government efficiency and services",
+   "quote": "AI technology is also changing the way government agencies interact with their citizens. They can speed it up. It can simplify it. It can just make those administrative processes work much better.",
+   "full_text": "AI technology is also changing the way government agencies interact with their citizens. They can speed it up. It can simplify it. It can just make those administrative processes work much better. The examples are very wide-ranging. They include AI for weather prediction. They include AI to help us keep air travel safer. AI is being used to speed up the processing of disability determinations. It is being used to improve how we process patent applications, and those are just an example today.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "need for domain-specific guidance and policy in federal AI",
+     "rationale": "Describes specific agency applications like disability determinations, patents, and air travel safety."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "AI in federal R&D and clean energy",
+   "quote": "If you take a peek inside of labs around the country and look at what is happening with federally funded R&D, in the world of research and development you will get a glimpse of where the future is going, and AI is playing a huge role there as well because AI can enable the design of the materials that we need for advanced batteries, for hydrogen storage, the things that are critical to our clean energy future.",
+   "full_text": "If you take a peek inside of labs around the country and look at what is happening with federally funded R&D, in the world of research and development you will get a glimpse of where the future is going, and AI is playing a huge role there as well because AI can enable the design of the materials that we need for advanced batteries, for hydrogen storage, the things that are critical to our clean energy future.",
+   "open_codes": [
+    {
+     "code_id": "c025",
+     "label": "prioritizing federal investment in responsible AI",
+     "rationale": "Discusses federally funded R&D and advanced material design for clean energy."
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "AI transforming healthcare and disaster prediction",
+   "quote": "AI can change the way that we predict disasters, the way that we implement plans for resilience as the climate changes. AI can transform drug design. It can allow us to tailor clinical care to each individual patient's needs. It can enable major advances in population health.",
+   "full_text": "AI can change the way that we predict disasters, the way that we implement plans for resilience as the climate changes. AI can transform drug design. It can allow us to tailor clinical care to each individual patient's needs. It can enable major advances in population health. Used responsibly, AI can help us deliver better outcomes and to create new possibilities for the American people.",
+   "open_codes": [
+    {
+     "code_id": "c025",
+     "label": "prioritizing federal investment in responsible AI",
+     "rationale": "Highlights beneficial applications of AI in disaster prediction, healthcare, and population health."
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "administration action and the AI Bill of Rights",
+   "quote": "My third message for you, and I will end with this, is that the Biden-Harris Administration is taking action to meet this moment. We have moved with urgency on a series of steps that started with the AI Bill of Rights that we published almost a year ago, and I want to emphasize that, especially in a time when technology is moving as fast as it is, it is so important to be clear about our values, about the importance of rights, about safety and security, about privacy.",
+   "full_text": "My third message for you, and I will end with this, is that the Biden-Harris Administration is taking action to meet this moment. We have moved with urgency on a series of steps that started with the AI Bill of Rights that we published almost a year ago, and I want to emphasize that, especially in a time when technology is moving as fast as it is, it is so important to be clear about our values, about the importance of rights, about safety and security, about privacy. And that was the important role of the AI Bill of Rights.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "References the administration's proactive steps and the AI Bill of Rights focusing on safety and rights."
+    },
+    {
+     "code_id": "c025",
+     "label": "prioritizing federal investment in responsible AI",
+     "rationale": "Outlines administration actions and values regarding responsible AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "voluntary commitments from AI companies",
+   "quote": "More recently, because of the President's leadership, 15 companies have now made voluntary commitments to focus on safety, security, and trustworthiness in their AI systems that they are developing and driving.",
+   "full_text": "More recently, because of the President's leadership, 15 companies have now made voluntary commitments to focus on safety, security, and trustworthiness in their AI systems that they are developing and driving. That is companies' responsibilities.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Mentions industry voluntary commitments focused on safety and security."
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "executive branch actions and international cooperation",
+   "quote": "We are working today in the White House on an executive order. The Office of Management and Budget is working on guidance for departments and agencies. That is the executive branch. We continue to work with our international allies because AI does not stop at the borders.",
+   "full_text": "We are working today in the White House on an executive order. The Office of Management and Budget is working on guidance for departments and agencies. That is the executive branch. We continue to work with our international allies because AI does not stop at the borders. And finally, we remain committed to working closely with Congress on a bipartisan basis as you consider legislation.",
+   "open_codes": [
+    {
+     "code_id": "c043",
+     "label": "international allied cooperation for AI safety and resilience",
+     "rationale": "Discusses cross-border cooperation for AI governance."
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "President's focus on AI briefings",
+   "quote": "The President has been very focused on AI. He has asked for briefings on AI at multiple junctures.",
+   "full_text": "Thank you for the question, Chairwoman. The President has been very focused on AI. He has asked for briefings on AI at multiple junctures.",
+   "open_codes": [
+    {
+     "code_id": "c025",
+     "label": "prioritizing federal investment in responsible AI",
+     "rationale": "Shows executive attention and prioritization of AI matters."
+    },
+    {
+     "code_id": "c113",
+     "label": "presidential focus and briefings on AI",
+     "rationale": "Shows executive branch attention and briefings on AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Multiple briefings and meetings with experts",
+   "quote": "Multiple times. He met with his council of advisors, PCAST, and the President's Council of Advisors on Science and Technology. I believe that was in early April.",
+   "full_text": "Multiple times. He met with his council of advisors, PCAST, and the President's Council of Advisors on Science and Technology. I believe that was in early April. We had a discussion about AI before that, and then he spent an extended period with a room full of amazing science and technology experts, people using AI, people generating AI, and had a very extensive conversation there.",
+   "open_codes": [
+    {
+     "code_id": "c114",
+     "label": "presidential engagement with science and technology advisors",
+     "rationale": "Details specific interactions between the President and technical advisors."
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "President's public and private perspective on AI",
+   "quote": "I will tell you what he has said publicly, which is very consistent, which is he recognizes how fast it is moving, how it is part of this pivot point in history, and the choices that we make are essential.",
+   "full_text": "Obviously, I am not in a position to say what he said in the Oval. I will tell you what he has said publicly, which is very consistent, which is he recognizes how fast it is moving, how it is part of this pivot point in history, and the choices that we make are essential. He is very excited about the potential----",
+   "open_codes": [
+    {
+     "code_id": "c115",
+     "label": "president's perspective on AI momentum and importance",
+     "rationale": "Describes the President's view on the significance of AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "President's comprehension and detailed questioning",
+   "quote": "I think it is excellent. The questions--he grills me, and he grills everyone else who----",
+   "full_text": "I think it is excellent. The questions--he grills me, and he grills everyone else who----",
+   "open_codes": [
+    {
+     "code_id": "c116",
+     "label": "president's deep comprehension and questioning on AI",
+     "rationale": "Highlights the President's active engagement and understanding."
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "Broad topics of presidential interest including education",
+   "quote": "He has talked about the ways that AI can be used. He has expressed concerns about the way that it can create problems. He has talked about the fact that he is married to a schoolteacher, and so he knows about how it shows up in education.",
+   "full_text": "Well, I can talk about the things that he has said publicly, and they are on many topics. He has talked about the ways that AI can be used. He has expressed concerns about the way that it can create problems. He has talked about the fact that he is married to a schoolteacher, and so he knows about how it shows up in education.",
+   "open_codes": [
+    {
+     "code_id": "c117",
+     "label": "president's awareness of AI uses, problems, and education",
+     "rationale": "Demonstrates the breadth of the President's AI concerns."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "Presidential understanding of government functions and national security",
+   "quote": "President, of all the functions of government, of the role that it plays in national security, but also in all the other functions of government. He understands, obviously, that it is clearly going to be powerful.",
+   "full_text": "President, of all the functions of government, of the role that it plays in national security, but also in all the other functions of government. He understands, obviously, that it is clearly going to be powerful.",
+   "open_codes": [
+    {
+     "code_id": "c118",
+     "label": "president's understanding of AI in government and national security",
+     "rationale": "Describes understanding of AI in a governmental and national security context."
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "OSTP role as federal R&D coordinator",
+   "quote": "And as OSTP, a core role is to be the place where the Federal R&D enterprise comes together, where we work together and make sure that people know what each other are doing in areas across research and technology but including information technology and artificial intelligence.",
+   "full_text": "We have several roles. And as OSTP, a core role is to be the place where the Federal R&D enterprise comes together, where we work together and make sure that people know what each other are doing in areas across research and technology but including information technology and artificial intelligence.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "need for domain-specific guidance and policy in federal AI",
+     "rationale": "Explains OSTP's coordination role across federal R&D and technology areas."
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "advising leadership on AI progress and risks",
+   "quote": "When a massive new shift like this great acceleration in AI happens, one of our important roles is to be clear with our colleagues in the White House, with the President, with our colleagues in departments and agencies about how the technology is progressing, what issues they will need to contend with, what the big opportunities are.",
+   "full_text": "When a massive new shift like this great acceleration in AI happens, one of our important roles is to be clear with our colleagues in the White House, with the President, with our colleagues in departments and agencies about how the technology is progressing, what issues they will need to contend with, what the big opportunities are. And that means that in the case of AI, our National AI Initiative Office, which Congress established at OSTP a couple years ago, that cadre of people in my organization have been extraordinarily busy mapping out the risks, the opportunities, and informing policy----",
+   "open_codes": [
+    {
+     "code_id": "c025",
+     "label": "prioritizing federal investment in responsible AI",
+     "rationale": "Details advising leadership and mapping risks and opportunities for AI policy."
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "working on federal AI use case inventory",
+   "quote": "The initiative to start cataloging those use cases was an important one, and it is very much work in progress. We are getting good insights from what is already in that use case inventory and working with departments and agencies----",
+   "full_text": "The initiative to start cataloging those use cases was an important one, and it is very much work in progress. We are getting good insights from what is already in that use case inventory and working with departments and agencies----",
+   "open_codes": [
+    {
+     "code_id": "c032",
+     "label": "committee inquiry on auditing federal AI systems",
+     "rationale": "Discusses federal AI inventories and cataloging use cases."
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Interrupted update on OMB guidance timeline",
+   "quote": "The Office of Management and Budget is working in a very focused manner on what they clearly understand----",
+   "full_text": "So why--and very quickly. We have 10 seconds. Why is the process stalled? When can we expect to see some guidance?\n[Respondent] The Office of Management and Budget is working in a very focused manner on what they clearly understand----",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Refers to regulatory guidance and processes being developed by OMB."
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Assurances of impending administrative guidance",
+   "quote": "We will get there.",
+   "full_text": "[Interviewer] (Ms. Mace) Thank you so much.\n[Respondent] We will get there.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Affirms that AI governance guidance is forthcoming."
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Opening remarks expressing gratitude and recognizing AI's potential in federal operations",
+   "quote": "I would like to thank all of our witnesses for being here today to continue driving the artificial intelligence conversation forward. The opportunity that the Federal Government has to implement AI into its everyday operations is potentially exciting for the future of the country and for the modern workforce.",
+   "full_text": "[Interviewer] (Mr. Langworthy) Thank you, Mr. Chairman.\nI would like to thank all of our witnesses for being here today to continue driving the artificial intelligence conversation forward. The opportunity that the Federal Government has to implement AI into its everyday operations is potentially exciting for the future of the country and for the modern workforce.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "expressing gratitude and institutional affiliation",
+     "rationale": "Representative thanks witnesses at the start of questioning."
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "Concerns regarding AI impacts on youth and generative imagery",
+   "quote": "However, I would like this Subcommittee, and all of us, to consider the impact of AI and other emerging technologies on our younger generation. While AI has numerous benefits that I am sure will be discussed here today, it has serious implications on our youth, especially when it comes to generative images and child exploitation.",
+   "full_text": "However, I would like this Subcommittee, and all of us, to consider the impact of AI and other emerging technologies on our younger generation. While AI has numerous benefits that I am sure will be discussed here today, it has serious implications on our youth, especially when it comes to generative images and child exploitation. I would be more than happy to work with Chairwoman Mace and the rest of our Oversight Committee to address these concerns.",
+   "open_codes": [
+    {
+     "code_id": "c057",
+     "label": "impact of AI on creative industries and copyright",
+     "rationale": "Discusses harms and impacts associated with generative images."
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Praising NIST framework and cybersecurity track record",
+   "quote": "Specifically, the National Institute of Standards and Technology has a well-established track record of developing frameworks and recommendations to improve cybersecurity outcomes in the Federal Government. Earlier this year, NIST published a groundbreaking AI risk management framework, which was developed at Congress' direction in an open multistakeholder process.",
+   "full_text": "But before we do that, I want to speak about some of the AI frameworks that have been developed. Specifically, the National Institute of Standards and Technology has a well-established track record of developing frameworks and recommendations to improve cybersecurity outcomes in the Federal Government. Earlier this year, NIST published a groundbreaking AI risk management framework, which was developed at Congress' direction in an open multistakeholder process.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Discusses NIST's risk management framework for AI and cybersecurity."
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "Adoption of NIST AI framework by leading companies",
+   "quote": "Leading companies are already using the NIST AI framework for managing AI risks, just as they use the NIST cybersecurity framework and other NIST cyber recommendations.",
+   "full_text": "Leading companies are already using the NIST AI framework for managing AI risks, just as they use the NIST cybersecurity framework and other NIST cyber recommendations.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Notes industry adoption of the NIST AI risk framework."
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "Inquiring about federal government adoption of NIST AI framework",
+   "quote": "With that being said, Dr. Prabhakar, I would like to ask you whether or not you see the NIST AI framework being taken up by the Federal Government in the same way that NIST cybersecurity work is being used today, and what steps, if any, that your office is taking to implement the AI framework?",
+   "full_text": "With that being said, Dr. Prabhakar, I would like to ask you whether or not you see the NIST AI framework being taken up by the Federal Government in the same way that NIST cybersecurity work is being used today, and what steps, if any, that your office is taking to implement the AI framework?",
+   "open_codes": [
+    {
+     "code_id": "c032",
+     "label": "committee inquiry on auditing federal AI systems",
+     "rationale": "Questions the witness on federal government implementation of safety frameworks."
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Personal connection to NIST and validation of its framework",
+   "quote": "NIST--I had the great pleasure of leading NIST many decades ago when my hair was still black, and I share your important point about the role that that organization has played in cybersecurity and other important areas.",
+   "full_text": "[Respondent] Thank you so much, Representative Langworthy. NIST--I had the great pleasure of leading NIST many decades ago when my hair was still black, and I share your important point about the role that that organization has played in cybersecurity and other important areas.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "professional credentials introduction",
+     "rationale": "Witness notes her past leadership role at NIST."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "NIST framework as an important step toward safe AI",
+   "quote": "In artificial intelligence, their risk management framework, when they put that out, I think that was one important step in a longer journey to getting to where we can actually have safe and effective AI, whether it is private sector use or public sector use.",
+   "full_text": "Thank you so much, Representative Langworthy. NIST--I had the great pleasure of leading NIST many decades ago when my hair was still black, and I share your important point about the role that that organization has played in cybersecurity and other important areas. In artificial intelligence, their risk management framework, when they put that out, I think that was one important step in a longer journey to getting to where we can actually have safe and effective AI, whether it is private sector use or public sector use.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Discusses the NIST framework as a milestone for safe AI across sectors."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "risk management framework as a baseline for asking safety questions",
+   "quote": "What that allows people to do is to know what questions to ask about how to make an AI system safe and effective. And again, depending on the application, the questions will be different and the process that they go through will be different.",
+   "full_text": "And as you have seen with industries' adoption of the risk management framework and its--I see that approach also starting now to be used within government. What that allows people to do is to know what questions to ask about how to make an AI system safe and effective. And again, depending on the application, the questions will be different and the process that they go through will be different. But that is a starting point. And to me it is just table stakes to know that, you know, if your organization is using that risk management framework, it is table stakes to know that you are actually asking the question.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Framework guides organizations on asking critical safety questions."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "fundamental technical uncertainty in making AI safe",
+   "quote": "I want to step back, though, and also be clear that what we all are--we all understand that what we need is a future where AI systems are safe and effective, that they do what you need them to do, that they do not do dangerous things or inappropriate things that you do not want them to do. But I think we should all be very clear that companies, researchers, nobody actually really quite knows how to do that.",
+   "full_text": "I want to step back, though, and also be clear that what we all are--we all understand that what we need is a future where AI systems are safe and effective, that they do what you need them to do, that they do not do dangerous things or inappropriate things that you do not want them to do. But I think we should all be very clear that companies, researchers, nobody actually really quite knows how to do that.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "mechanisms of AI failure",
+     "rationale": "Acknowledges that ensuring safety and preventing inappropriate behavior is unsolved."
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "need for tools to evaluate AI safety like physical products",
+   "quote": "And so, I think NIST's work and the technology community's work that is still ahead is to continue to develop tools and methods so that we can get as good at understanding whether an AI system is safe and effective as we know for physical products in many other areas, and that is some of the work that still remains to be done.",
+   "full_text": "And so, I think NIST's work and the technology community's work that is still ahead is to continue to develop tools and methods so that we can get as good at understanding whether an AI system is safe and effective as we know for physical products in many other areas, and that is some of the work that still remains to be done.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Developing tools and methods for evaluating AI safety."
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "defending AI Bill of Rights and NIST framework alignment",
+   "quote": "The AI Bill of Rights focused on our values, which are so important when we are in very choppy times and choppy waters as this technology is moving so fast. And if you go back and look at the Bill of Rights, what it talks about is how important it is to make sure that people have--are not discriminated against but have access to safe systems that are secure.",
+   "full_text": "I would be happy to address this. The AI Bill of Rights focused on our values, which are so important when we are in very choppy times and choppy waters as this technology is moving so fast. And if you go back and look at the Bill of Rights, what it talks about is how important it is to make sure that people have--are not discriminated against but have access to safe systems that are secure.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Focuses on preventing discrimination and ensuring safe systems through values."
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "consistency between OSTP blueprint and NIST framework",
+   "quote": "So, a lot of the same themes that you will find in the risk management framework and everything that we have been talking about here today, that is very consistent with the Bill of Rights. That work was developed by OSTP but working very closely with NIST and others across government with many, many inputs from private organizations, companies, civil society organizations, academics.",
+   "full_text": "So, a lot of the same themes that you will find in the risk management framework and everything that we have been talking about here today, that is very consistent with the Bill of Rights. That work was developed by OSTP but working very closely with NIST and others across government with many, many inputs from private organizations, companies, civil society organizations, academics. And then when NIST built the risk management framework on the heels of that, again, there was a lot of close communication and coordination. And to me it was--part one was values of the Bill of Rights. Part two was the initial steps of how does an organization start grappling with what are the processes that they need to put in place to manage these risks.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Emphasizes the consistency between federal frameworks and collaborative development."
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "Concluding exchange and transition to written questions",
+   "quote": "Unfortunately, I am out of time, and I yield back, but we will be following up with some questions in writing.",
+   "full_text": "[Interviewer] (Mr. Langworthy) Unfortunately, I am out of time, and I yield back, but we will be following up with some questions in writing.\n[Respondent] I look forward to it.\n[Interviewer] (Mr. Langworthy) Well, thank you very much.",
+   "open_codes": [
+    {
+     "code_id": "c031",
+     "label": "concluding statement and availability for questions",
+     "rationale": "Interviewer yields back and mentions follow-up questions."
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "Incomplete federal AI use case inventories",
+   "quote": "This is intended to give the public a view into the Administration's current and planned use of AI systems. But many of these agency inventories are missing or they are incomplete, according to a Stanford University AI Institute whitepaper which was issued last December.",
+   "full_text": "I also wanted to bring up an executive order issued by the last administration requiring Federal agencies to post for public view most of their AI use cases. This is intended to give the public a view into the Administration's current and planned use of AI systems. But many of these agency inventories are missing or they are incomplete, according to a Stanford University AI Institute whitepaper which was issued last December. Do you agree that the public has a right to know for what purposes AI is being used by the Federal agencies and that it is important that these inventories are done consistently, completely, and accurately? And will you pledge to work to continue to ensure that that is the case?",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Addresses transparency and completeness of federal AI use case inventories."
+    }
+   ]
+  },
+  {
+   "segment_id": "S038",
+   "title": "Commitment to public transparency on federal AI use cases",
+   "quote": "I share your focus on the value of those use cases for all the reasons that you mentioned. It is important for the public to know and across government for people to understand how AI is being used...",
+   "full_text": "[Respondent] Thank you very much, Mr. Langworthy, for that question.\nI share your focus on the value of those use cases for all the reasons that you mentioned. It is important for the public to know and across government for people to understand how AI is being used, and there is important progress that we are making and will continue to make as a Federal Government on those AI use cases.\nThank you.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Affirms the importance of transparency regarding federal AI use cases."
+    }
+   ]
+  },
+  {
+   "segment_id": "S039",
+   "title": "Inquiry regarding regulatory sandboxes in the EU and US",
+   "quote": "I want to see if regulatory sandboxes have been part of your conversations. The European Parliament approved its AI Act, which includes a conversation about setting up coordinated AI regulatory sandboxes to foster innovation in artificial intelligence across the EU.",
+   "full_text": "[Interviewer] (Mr. Langworthy) Transparency I think is something that we all need to fight for, especially as this emerging technology is coming at us so quickly.\nI want to see if regulatory sandboxes have been part of your conversations. The European Parliament approved its AI Act, which includes a conversation about setting up coordinated AI regulatory sandboxes to foster innovation in artificial intelligence across the EU.\nDo you see regulatory sandboxes having success in the EU and whether or not do you think they will be successful in the United States?",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Questions the witness about the potential implementation of regulatory sandboxes."
+    }
+   ]
+  },
+  {
+   "segment_id": "S040",
+   "title": "international allied cooperation on AI approaches",
+   "quote": "I will just note that we continue to work with our colleagues and allies in Europe and around the world simply because AI is happening everywhere, and different regions are taking somewhat different approaches. But we are finding that with our like-minded allies, we all share this focus on getting to a safe and effective AI future, and I think there will be some important collaborations that are possible there.",
+   "full_text": "My colleagues may have answers on that, Mr. Langworthy. I do not think I have enough information to give you a complete answer. I will just note that we continue to work with our colleagues and allies in Europe and around the world simply because AI is happening everywhere, and different regions are taking somewhat different approaches. But we are finding that with our like-minded allies, we all share this focus on getting to a safe and effective AI future, and I think there will be some important collaborations that are possible there. I do not know if others have other comments on that topic.",
+   "open_codes": [
+    {
+     "code_id": "c043",
+     "label": "international allied cooperation for AI safety and resilience",
+     "rationale": "Working with international allies on shared safety goals for AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S041",
+   "title": "benefits of language-based AI in government services",
+   "quote": "If you step back and you think about how much the government does that is about interacting with citizens, providing information, taking information, those are areas where this new generation of language-based AI, of course, can have tremendous benefits, but it has to be used thoughtfully and carefully.",
+   "full_text": "Representative Khanna, thank you for your leadership on that matter, as well as other issues related to AI. And I think you have described it very clearly. If you step back and you think about how much the government does that is about interacting with citizens, providing information, taking information, those are areas where this new generation of language-based AI, of course, can have tremendous benefits, but it has to be used thoughtfully and carefully.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "need for domain-specific guidance and policy in federal AI",
+     "rationale": "Applying generative AI to citizen interaction while emphasizing careful use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S042",
+   "title": "generative AI as a tool for accelerating workflows",
+   "quote": "And search is a great example. It is easy to imagine the use--and people are starting to do this--using generative AI to summarize complex documents, to synthesize arguments from across many different perspectives, to draft responses.",
+   "full_text": "And search is a great example. It is easy to imagine the use--and people are starting to do this--using generative AI to summarize complex documents, to synthesize arguments from across many different perspectives, to draft responses. And I emphasize draft because as anyone who has worked with these technologies knows, I think what we are seeing, private sector and public sector I think are finding that there are few cases we are simply relying on a chatbot will solve a problem, but there are many cases where that interaction might be the beginning of accelerating a workflow or improving the way that you do whatever you do.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "expansion into generative AI",
+     "rationale": "Describing practical use cases of generative AI in summarizing and drafting."
+    }
+   ]
+  },
+  {
+   "segment_id": "S043",
+   "title": "combining language AI with sensor and data applications",
+   "quote": "So, I think those are interesting examples, and they are different and distinct and build on top of the many ways that government agencies are using AI on sensor data or data that they collect that is not language-based.",
+   "full_text": "So, I think those are interesting examples, and they are different and distinct and build on top of the many ways that government agencies are using AI on sensor data or data that they collect that is not language-based. So, I think this is this next chapter that is starting to unfold, and I appreciate your focus on it.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "need for domain-specific guidance and policy in federal AI",
+     "rationale": "Discussing how language-based AI builds upon existing federal sensor and data AI use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S044",
+   "title": "uncertainty of AI impact on jobs and early stage of technology",
+   "quote": "The best understanding that many experts have in this area is that there are things that will look a lot like prior changes with technology coming in, and there are things that are not going to look the same.",
+   "full_text": "This focus on the impact of AI technology on jobs is critically important because we have a long history. We know that technology does change work in all kinds of ways. And it is, I think--let me just start by saying that it is very early, and right now we do not fully know. It has not fully played out how this new generation of language-based AI will-- how will it blossom and what impacts will it have. The best understanding that many experts have in this area is that there are things that will look a lot like prior changes with technology coming in, and there are things that are not going to look the same.",
+   "open_codes": [
+    {
+     "code_id": "c078",
+     "label": "impact of AI automation on entry-level and blue-collar jobs",
+     "rationale": "Discussing the complex and evolving impact of AI technology on work and jobs."
+    }
+   ]
+  },
+  {
+   "segment_id": "S045",
+   "title": "Uncertainty of AI impact on jobs",
+   "quote": "It is, I think--let me just start by saying that it is very early, and right now we do not fully know. It has not fully played out how this new generation of language-based AI will-- how will it blossom and what impacts will it have.",
+   "full_text": "This focus on the impact of AI technology on jobs is critically important because we have a long history. We know that technology does change work in all kinds of ways. And it is, I think--let me just start by saying that it is very early, and right now we do not fully know. It has not fully played out how this new generation of language-based AI will-- how will it blossom and what impacts will it have.",
+   "open_codes": [
+    {
+     "code_id": "c078",
+     "label": "impact of AI automation on entry-level and blue-collar jobs",
+     "rationale": "Discusses uncertainty around how AI will impact jobs and work."
+    }
+   ]
+  },
+  {
+   "segment_id": "S046",
+   "title": "Upskilling and displacement in technological waves",
+   "quote": "What I think we can expect is that some jobs may get upskilled, become more valuable, allow people to earn more for their labor, and other jobs will get displaced. That has happened with every wave of technology for not just decades but probably for millennia.",
+   "full_text": "The best understanding that many experts have in this area is that there are things that will look a lot like prior changes with technology coming in, and there are things that are not going to look the same. What I think we can expect is that some jobs may get upskilled, become more valuable, allow people to earn more for their labor, and other jobs will get displaced. That has happened with every wave of technology for not just decades but probably for millennia.",
+   "open_codes": [
+    {
+     "code_id": "c078",
+     "label": "impact of AI automation on entry-level and blue-collar jobs",
+     "rationale": "Explains how technology upskills some jobs and displaces others."
+    }
+   ]
+  },
+  {
+   "segment_id": "S047",
+   "title": "Unique impact of generative AI on professional and creative tasks",
+   "quote": "And I think what is very different about this new generation, of course, is the fact that it can be used to do administrative tasks, creative tasks, everything from graphic design and image generation to writing documents to even legal analysis, and so a lot of the kinds of professions that a few years ago I think people imagined were not going to be touched by AI technology now will come into the limelight.",
+   "full_text": "And I think what is very different about this new generation, of course, is the fact that it can be used to do administrative tasks, creative tasks, everything from graphic design and image generation to writing documents to even legal analysis, and so a lot of the kinds of professions that a few years ago I think people imagined were not going to be touched by AI technology now will come into the limelight.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "expansion into generative AI",
+     "rationale": "Highlights generative AI's capability across administrative, creative, and professional tasks."
+    }
+   ]
+  },
+  {
+   "segment_id": "S048",
+   "title": "Risks of privacy erosion and authoritarian surveillance",
+   "quote": "You point out that authoritarian governments are already using AI to censor and repress expression and abuse human rights. Is that part of your statement, ma'am?",
+   "full_text": "Madam, in your opening, in your statement, in your written statement, you say that--one of your quotes, I believe, says AI advances also bring a risk of a deepening erosion of privacy as surveillance increases and as more and more sensitive information is used to train AI systems. You point out that authoritarian governments are already using AI to censor and repress expression and abuse human rights. Is that part of your statement, ma'am?",
+   "open_codes": [
+    {
+     "code_id": "c053",
+     "label": "avoiding authoritarian censorship in AI regulation",
+     "rationale": "Discusses how authoritarian governments use AI for surveillance, censorship, and human rights abuses."
+    }
+   ]
+  },
+  {
+   "segment_id": "S049",
+   "title": "Acknowledgment of question and cybersecurity risks",
+   "quote": "Thank you for the question, Congressman Higgins. You are focusing on some of the important issues about the power of AI and the--which makes it very appealing to solve hard problems but then comes with these risks that you have highlighted.",
+   "full_text": "Thank you for the question, Congressman Higgins. You are focusing on some of the important issues about the power of AI and the--which makes it very appealing to solve hard problems but then comes with these risks that you have highlighted. Many threads in some of your comments. Let me focus for a moment on the cybersecurity element, because I think it is a great example of the bright and the dark side of AI technology.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "mechanisms of AI failure",
+     "rationale": "Acknowledges risks and the dark side of AI technology."
+    }
+   ]
+  },
+  {
+   "segment_id": "S050",
+   "title": "Dual-use nature of AI in software and cyber attacks",
+   "quote": "What we are seeing with the advances in AI is the ability to write software code more quickly, more securely, more robustly. Those are some of the bright-side advantages. And at the same time, this is a technology that can be used for cyber- attacks to generate--to look for vulnerabilities, to generate attacks more efficiently.",
+   "full_text": "What we are seeing with the advances in AI is the ability to write software code more quickly, more securely, more robustly. Those are some of the bright-side advantages. And at the same time, this is a technology that can be used for cyber- attacks to generate--to look for vulnerabilities, to generate attacks more efficiently. And so, I think that is the landscape. And then the choices that all of our work focuses on, of course, is how do we mitigate those risks and secure it. For example, securing our systems--our cybersecurity systems as well as we can.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "mechanisms of AI failure",
+     "rationale": "Discusses AI being used for cyber-attacks and finding vulnerabilities."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_165059",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 12,
+   "n_ok": 12
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 2
+   },
+   {
+    "reused": 0,
+    "created": 6,
+    "chunk": 3
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 4
+   },
+   {
+    "reused": 9,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 6
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 8
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 9
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 10
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 11
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118hhrg53382 — Arati Prabhakar, Director, White House Office Of Science And Technology Policy\nSource: https://www.govinfo.gov/app/details/CHRG-118hhrg53382  |  How Are Federal Agencies Harnessing Artificial Intelligence?  |  House, Subcommittee On Cybersecurity, Information Technology, And Government Innovation / Committee On Oversight And Accountability  |  2023-09-14  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Ms. Mace) Thank you, Mr. Connolly.\nI ask unanimous consent for Representative Clay Higgins from Louisiana to be waived on to the Subcommittee for today's hearing for the purpose of asking questions.\nSo, without objection, so ordered.\nI would now like to recognize Dr. Prabhakar to please begin your opening statement.\nDIRECTOR\nPOLICY\n[Respondent] Thank you so much, Chairwoman Mace. And thanks to you, Ranking Member Connolly, Members of the Subcommittee. I have really appreciated the work that you all are doing on artificial intelligence, and it is great to be here with my colleagues to be able to spend this time to focus on these important issues.\nI have three messages today, and the first one is that AI is a top priority for President Biden. He is very clear that this is one of the most powerful technologies of our times. When we look around the world, we can see that every Nation is racing to use AI to build a future that is imbued with their own values, and I think we can all agree that we do not want to live in a future that is defined by technology shaped by authoritarian regimes. And that is why the President is very clear that American leadership in the world today requires American leadership in artificial intelligence.\nSecond, for America to lead in AI, government has some core responsibilities, and one of those, one set of those responsibilities is to manage the risks of AI. And as both of your opening statements have noted, AI's risks are broad because its applications are so broad, and these risks range from risks related to fraud and information integrity. They include risks related to safety and security, risks associated with privacy, civil rights, civil liberties, and risks to jobs and the economy.\nNow, some of these risks can be addressed under existing laws and regulations. Some of these risks can be managed by making sure that government uses AI responsibly, and in some cases, we do expect that legislation will be required. That is about mitigating risks.\nThe reason we are doing all of this work to manage risks is so that our country can seize this technology to build the future. And if you look at what companies are doing, they are racing to build better products and services to transform industries using AI, and this is a technology that holds equally great promise for the work that government does for the American people. And that then becomes a second core responsibility of government.\nI think both of you have spoken to that as well in your opening remarks.\nYou are going to hear from my colleagues about national security and homeland security, and there is a lot to be said there. I will also just briefly touch on the many other important services and the public purposes that are government's responsibility. And when you look across Federal Government today, you will see that agencies are starting to use the insights that they can glean from these vast troves of data that they generate in the doing of their business.\nAI technology is also changing the way government agencies interact with their citizens. They can speed it up. It can simplify it. It can just make those administrative processes work much better. The examples are very wide-ranging. They include AI for weather prediction. They include AI to help us keep air travel safer. AI is being used to speed up the processing of disability determinations. It is being used to improve how we process patent applications, and those are just an example today.\nIf you take a peek inside of labs around the country and look at what is happening with federally funded R&D, in the world of research and development you will get a glimpse of where the future is going, and AI is playing a huge role there as well because AI can enable the design of the materials that we need for advanced batteries, for hydrogen storage, the things that are critical to our clean energy future.\nAI can change the way that we predict disasters, the way that we implement plans for resilience as the climate changes. AI can transform drug design. It can allow us to tailor clinical care to each individual patient's needs. It can enable major advances in population health.\nUsed responsibly, AI can help us deliver better outcomes and to create new possibilities for the American people.\nMy third message for you, and I will end with this, is that the Biden-Harris Administration is taking action to meet this moment. We have moved with urgency on a series of steps that started with the AI Bill of Rights that we published almost a year ago, and I want to emphasize that, especially in a time when technology is moving as fast as it is, it is so important to be clear about our values, about the importance of rights, about safety and security, about privacy. And that was the important role of the AI Bill of Rights.\nMore recently, because of the President's leadership, 15 companies have now made voluntary commitments to focus on safety, security, and trustworthiness in their AI systems that they are developing and driving. That is companies' responsibilities.\nToday, the White House is working----\n[Interviewer] (Ms. Mace) We are running out of time. I apologize. We are going to be voting soon, so if you can----\n[Respondent] I will wrap up.\n[Interviewer] (Ms. Mace) Yes.\n[Respondent] Absolutely.\n[Interviewer] (Ms. Mace) Thank you.\n[Respondent] We are working today in the White House on an executive order. The Office of Management and Budget is working on guidance for departments and agencies. That is the executive branch. We continue to work with our international allies because AI does not stop at the borders. And finally, we remain committed to working closely with Congress on a bipartisan basis as you consider legislation.\nI will just finish by saying this work is urgent, it is important, and I very much look forward to working with you on it.\n[Interviewer] (Ms. Mace) Thank you, Mr. Hysen.\nI know votes have just been called. I am going to, before I gavel out--and my colleagues can leave to go vote. I am just going to ask my questions before we go and gavel out.\nDr. Prabhakar--I am going to recognize myself for 5 minutes.\nMy first question is to you, Dr. Prabhakar. As the President's science advisor, you are the President's top artificial intelligence advisor, I expect you regularly brief him on AI. The Associated Press has quoted you as saying in a recent interview you have had several conversations with him about AI.\nHow many times have you been able to brief him thus far in this position?\n[Respondent] Thank you for the question, Chairwoman. The President has been very focused on AI. He has asked for briefings on AI at multiple junctures.\n[Interviewer] (Ms. Mace) How many times have you been able to brief him?\n[Respondent] I would have to stop and count. Let me give you a couple of examples. He met----\n[Interviewer] (Ms. Mace) Is it more than one?\n[Respondent] Multiple times. He met with his council of advisors, PCAST, and the President's Council of Advisors on Science and Technology. I believe that was in early April. We had a discussion about AI before that, and then he spent an extended period with a room full of amazing science and technology experts, people using AI, people generating AI, and had a very extensive conversation there.\nAnother occasion was----\n[Interviewer] (Ms. Mace) What did President Biden say to you about AI?\n[Respondent] President Biden has spoken publicly many times about AI and----\n[Interviewer] (Ms. Mace) What has he said to you in these conversations about AI?\n[Respondent] Obviously, I am not in a position to say what he said in the Oval. I will tell you what he has said publicly, which is very consistent, which is he recognizes how fast it is moving, how it is part of this pivot point in history, and the choices that we make are essential. He is very excited about the potential----\n[Interviewer] (Ms. Mace) How would you characterize his level of understanding of AI? Do you think he understands?\n[Respondent] I think it is excellent. The questions--he grills me, and he grills everyone else who----\n[Interviewer] (Ms. Mace) He grills you?\n[Respondent] Yes.\n[Interviewer] (Ms. Mace) What does he grill you on?\n[Respondent] Well, I can talk about the things that he has said publicly, and they are on many topics. He has talked about the ways that AI can be used. He has expressed concerns about the way that it can create problems. He has talked about the fact that he is married to a schoolteacher, and so he knows about how it shows up in education.\n[Interviewer] (Ms. Mace) Does he understand its uses within the Federal Government? That is sort of outside, I mean, education. I mean, in the Federal agencies and how it can be utilized, does he understand that? Does he talk about anything relevant to the progressive AI?\n[Respondent] The President is very clear about the breadth of applications of artificial intelligence, and his vast understanding, of course, is many years as a legislator and now as----\n[Interviewer] (Ms. Mace) Vast.\n[Respondent] President, of all the functions of government, of the role that it plays in national security, but also in all the other functions of government. He understands, obviously, that it is clearly going to be powerful.\n[Interviewer] (Ms. Mace) The Office of Science and Technology Policy is not a regulatory agency. It is a White House policy shop. So, can you explain what role you and your office play with respect to Federal AI policy? How does that work?\n[Respondent] We have several roles. And as OSTP, a core role is to be the place where the Federal R&D enterprise comes together, where we work together and make sure that people know what each other are doing in areas across research and technology but including information technology and artificial intelligence.\nWhen a massive new shift like this great acceleration in AI happens, one of our important roles is to be clear with our colleagues in the White House, with the President, with our colleagues in departments and agencies about how the technology is progressing, what issues they will need to contend with, what the big opportunities are.\nAnd that means that in the case of AI, our National AI Initiative Office, which Congress established at OSTP a couple years ago, that cadre of people in my organization have been extraordinarily busy mapping out the risks, the opportunities, and informing policy----\n[Interviewer] (Ms. Mace) So, a question about some of that. What are some of the operations of your office? It maintains governmentwide AI use case inventory. Is that correct?\n[Respondent] Working with the Office of Management and Budget.\n[Interviewer] (Ms. Mace) That inventory has been appropriately criticized in the press as being inconsistent and incomplete. The inventory is lacking uniformity, and some significant AI use cases have been omitted.\nSo, is your office doing anything to improve the inventories, to improve transparency with the public? What does that look like?\n[Respondent] The initiative to start cataloging those use cases was an important one, and it is very much work in progress. We are getting good insights from what is already in that use case inventory and working with departments and agencies----\n[Interviewer] (Ms. Mace) And then one last question. I have got 25 seconds.\nOMB is more than 2 years late in complying with a congressional mandate to give Federal agencies guidance on the acquisition and use of AI. The law requires OMB to coordinate with your office in drafting that guidance.\nSo why--and very quickly. We have 10 seconds. Why is the process stalled? When can we expect to see some guidance?\n[Respondent] The Office of Management and Budget is working in a very focused manner on what they clearly understand----\n[Interviewer] (Ms. Mace) Thank you so much.\n[Respondent] We will get there.\n[Interviewer] (Mr. Langworthy) Thank you, Mr. Chairman.\nI would like to thank all of our witnesses for being here today to continue driving the artificial intelligence conversation forward. The opportunity that the Federal Government has to implement AI into its everyday operations is potentially exciting for the future of the country and for the modern workforce.\nHowever, I would like this Subcommittee, and all of us, to consider the impact of AI and other emerging technologies on our younger generation. While AI has numerous benefits that I am sure will be discussed here today, it has serious implications on our youth, especially when it comes to generative images and child exploitation. I would be more than happy to work with Chairwoman Mace and the rest of our Oversight Committee to address these concerns.\nBut before we do that, I want to speak about some of the AI frameworks that have been developed. Specifically, the National Institute of Standards and Technology has a well-established track record of developing frameworks and recommendations to improve cybersecurity outcomes in the Federal Government. Earlier this year, NIST published a groundbreaking AI risk management framework, which was developed at Congress' direction in an open multistakeholder process.\nLeading companies are already using the NIST AI framework for managing AI risks, just as they use the NIST cybersecurity framework and other NIST cyber recommendations.\nWith that being said, Dr. Prabhakar, I would like to ask you whether or not you see the NIST AI framework being taken up by the Federal Government in the same way that NIST cybersecurity work is being used today, and what steps, if any, that your office is taking to implement the AI framework?\n[Respondent] Thank you so much, Representative Langworthy. NIST--I had the great pleasure of leading NIST many decades ago when my hair was still black, and I share your important point about the role that that organization has played in cybersecurity and other important areas. In artificial intelligence, their risk management framework, when they put that out, I think that was one important step in a longer journey to getting to where we can actually have safe and effective AI, whether it is private sector use or public sector use.\nAnd as you have seen with industries' adoption of the risk management framework and its--I see that approach also starting now to be used within government. What that allows people to do is to know what questions to ask about how to make an AI system safe and effective. And again, depending on the application, the questions will be different and the process that they go through will be different. But that is a starting point. And to me it is just table stakes to know that, you know, if your organization is using that risk management framework, it is table stakes to know that you are actually asking the question.\nI want to step back, though, and also be clear that what we all are--we all understand that what we need is a future where AI systems are safe and effective, that they do what you need them to do, that they do not do dangerous things or inappropriate things that you do not want them to do. But I think we should all be very clear that companies, researchers, nobody actually really quite knows how to do that.\nAnd so, I think NIST's work and the technology community's work that is still ahead is to continue to develop tools and methods so that we can get as good at understanding whether an AI system is safe and effective as we know for physical products in many other areas, and that is some of the work that still remains to be done.\n[Interviewer] (Mr. Langworthy) I wanted to follow up and ask about criticism toward the AI blueprint that OSTP has produced, the blueprint that has been criticized for being in conflict with the NIST framework. Could you address this?\n[Respondent] I would be happy to address this. The AI Bill of Rights focused on our values, which are so important when we are in very choppy times and choppy waters as this technology is moving so fast. And if you go back and look at the Bill of Rights, what it talks about is how important it is to make sure that people have--are not discriminated against but have access to safe systems that are secure.\nSo, a lot of the same themes that you will find in the risk management framework and everything that we have been talking about here today, that is very consistent with the Bill of Rights. That work was developed by OSTP but working very closely with NIST and others across government with many, many inputs from private organizations, companies, civil society organizations, academics.\nAnd then when NIST built the risk management framework on the heels of that, again, there was a lot of close communication and coordination. And to me it was--part one was values of the Bill of Rights. Part two was the initial steps of how does an organization start grappling with what are the processes that they need to put in place to manage these risks.\n[Interviewer] (Mr. Langworthy) Unfortunately, I am out of time, and I yield back, but we will be following up with some questions in writing.\n[Respondent] I look forward to it.\n[Interviewer] (Mr. Langworthy) Well, thank you very much.\nI also wanted to bring up an executive order issued by the last administration requiring Federal agencies to post for public view most of their AI use cases. This is intended to give the public a view into the Administration's current and planned use of AI systems. But many of these agency inventories are missing or they are incomplete, according to a Stanford University AI Institute whitepaper which was issued last December.\nDo you agree that the public has a right to know for what purposes AI is being used by the Federal agencies and that it is important that these inventories are done consistently, completely, and accurately? And will you pledge to work to continue to ensure that that is the case?\n[Respondent] Thank you very much, Mr. Langworthy, for that question.\nI share your focus on the value of those use cases for all the reasons that you mentioned. It is important for the public to know and across government for people to understand how AI is being used, and there is important progress that we are making and will continue to make as a Federal Government on those AI use cases.\nThank you.\n[Interviewer] (Mr. Langworthy) Transparency I think is something that we all need to fight for, especially as this emerging technology is coming at us so quickly.\nI want to see if regulatory sandboxes have been part of your conversations. The European Parliament approved its AI Act, which includes a conversation about setting up coordinated AI regulatory sandboxes to foster innovation in artificial intelligence across the EU.\nDo you see regulatory sandboxes having success in the EU and whether or not do you think they will be successful in the United States?\n[Respondent] My colleagues may have answers on that, Mr. Langworthy. I do not think I have enough information to give you a complete answer. I will just note that we continue to work with our colleagues and allies in Europe and around the world simply because AI is happening everywhere, and different regions are taking somewhat different approaches. But we are finding that with our like-minded allies, we all share this focus on getting to a safe and effective AI future, and I think there will be some important collaborations that are possible there.\nI do not know if others have other comments on that topic.\n[Interviewer] (Mr. Khanna) Well, I appreciate it, because I think--you know, I do not always agree with Noam Chomsky, but I thought his op-ed in the New York Times where he talked about human intelligence and what that entails and how that is so different than a predictive model that is taking a lot of data and putting probabilistic outcomes was very thoughtful.\nAnd one of the concerns I have is that there is been an overhyping of AI as a form of human intelligence, which I just think is giving our species less credit than we deserve. So, I appreciated your clarification.\nDr. Prabhakar, Chairwoman Nancy Mace and I have a bill called the SEARCH Act, which would basically require government agencies to use AI technology to help improve the search functions in their own websites in collecting data. Could you help describe what the benefits of having AI do that kind of search for government agencies could be?\n[Respondent] Representative Khanna, thank you for your leadership on that matter, as well as other issues related to AI.\nAnd I think you have described it very clearly. If you step back and you think about how much the government does that is about interacting with citizens, providing information, taking information, those are areas where this new generation of language-based AI, of course, can have tremendous benefits, but it has to be used thoughtfully and carefully.\nAnd search is a great example. It is easy to imagine the use--and people are starting to do this--using generative AI to summarize complex documents, to synthesize arguments from across many different perspectives, to draft responses. And I emphasize draft because as anyone who has worked with these technologies knows, I think what we are seeing, private sector and public sector I think are finding that there are few cases we are simply relying on a chatbot will solve a problem, but there are many cases where that interaction might be the beginning of accelerating a workflow or improving the way that you do whatever you do.\nSo, I think those are interesting examples, and they are different and distinct and build on top of the many ways that government agencies are using AI on sensor data or data that they collect that is not language-based. So, I think this is this next chapter that is starting to unfold, and I appreciate your focus on it.\n[Interviewer] (Mr. Khanna) I appreciate that.\nAnd, Dr. Prabhakar, when you look at AI--and obviously these things are hard to predict--how do you think over the next 10 years it will have an impact on jobs? Is it a case of augmenting people's talent?\nI have often said to Hollywood, my concern is not that if they had AI bots write all the scripts, that it is not able-- that they would not be able to do it. My concern is it will just be terrible. You know, they are not going to produce Hamlet. It will just be the further devolution of entertainment.\nMany a times I have used ChatGPT, and I have challenged my staff to use it for a speech, and it is not as good as Cliff's Notes. And if professors are having students use it and not getting good grades, it is probably because they are not asking the right questions. I mean, probably the class is not challenging enough.\nBut my point is that, where is it that it is going to displace things? How do we prepare for it? Where is it that it is going to create opportunity as you see it?\n[Respondent] This focus on the impact of AI technology on jobs is critically important because we have a long history. We know that technology does change work in all kinds of ways. And it is, I think--let me just start by saying that it is very early, and right now we do not fully know. It has not fully played out how this new generation of language-based AI will-- how will it blossom and what impacts will it have.\nThe best understanding that many experts have in this area is that there are things that will look a lot like prior changes with technology coming in, and there are things that are not going to look the same.\nWhat I think we can expect is that some jobs may get upskilled, become more valuable, allow people to earn more for their labor, and other jobs will get displaced. That has happened with every wave of technology for not just decades but probably for millennia.\nAnd I think what is very different about this new generation, of course, is the fact that it can be used to do administrative tasks, creative tasks, everything from graphic design and image generation to writing documents to even legal analysis, and so a lot of the kinds of professions that a few years ago I think people imagined were not going to be touched by AI technology now will come into the limelight.\n[Interviewer] (Mr. Khanna) My time has expired. I am still waiting for ChatGPT to come up with something as eloquent as statistics with scale, but we will see.\n[Respondent] That is right.\n[Interviewer] (Mr. Higgins) Thank you, Mr. Chairman. I appreciate the Subcommittee waiving me on for me to address this topic.\nLadies and gentlemen, thank you for being here.\nDr. Prabhakar, that is a lovely name, and we appreciate you being here.\nMadam, in your opening, in your statement, in your written statement, you say that--one of your quotes, I believe, says AI advances also bring a risk of a deepening erosion of privacy as surveillance increases and as more and more sensitive information is used to train AI systems. You point out that authoritarian governments are already using AI to censor and repress expression and abuse human rights.\nIs that part of your statement, ma'am?\n[Respondent] Yes, sir, it is.\n[Interviewer] (Mr. Higgins) OK. I am just clarifying.\nI have a broader concern I would like to focus on in my limited time here regarding government's use of AI in the enforcement of laws and regulations, and I think I am strongly against that. And I am going to ask you, Mr. Hysen, regarding law enforcement. That is my background. You may not know. But I appreciate the work that has done on the ground at the enforcement level, and I have my concerns there.\nBut for you, Doctor, you referenced the authoritarian government's use of AI. Talk to us about criminal enterprise or state-sponsored cyber threat enterprise and how that would relate to AI. For instance, like malware AI or Trojan horse AI. We have all--we have seen major compromises of cyber systems at the government level and in the private sector.\nIn my state of Louisiana, all driver's licenses--if you have a driver's license in Louisiana, your data was compromised. That is pretty much everybody. So, we have stories like this across the country, it affects us all. Seems to me that AI is a tremendous threat in that arena.\nCan you address that?\n[Respondent] Thank you for the question, Congressman Higgins. You are focusing on some of the important issues about the power of AI and the--which makes it very appealing to solve hard problems but then comes with these risks that you have highlighted.\nMany threads in some of your comments. Let me focus for a moment on the cybersecurity element, because I think it is a great example of the bright and the dark side of AI technology.\nWhat we are seeing with the advances in AI is the ability to write software code more quickly, more securely, more robustly. Those are some of the bright-side advantages. And at the same time, this is a technology that can be used for cyber- attacks to generate--to look for vulnerabilities, to generate attacks more efficiently.\nAnd so, I think that is the landscape. And then the choices that all of our work focuses on, of course, is how do we mitigate those risks and secure it. For example, securing our systems--our cybersecurity systems as well as we can.",
+ "_bench": {
+  "seconds": 60.9,
+  "chars": 27615
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "respondent": "Board member, neighbourhood residents' association",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "other",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript N02 — Board member, neighbourhood residents' association"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "One-Way Communication and Tokenistic Questioning",
+   "quote": "we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.",
+   "full_text": "Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Top-down presentation with minimal Q&A dominated by a supplier reflects downstream notification rather than inclusive dialogue."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Unverifiable Assurances and Breakdown of Trust Mediation",
+   "quote": "And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.",
+   "full_text": "I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Deficit-model communication providing unprovable verbal assertions rather than transparent, open documentation for community scrutiny."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Respondent reflects critically on the limitations of verbal claims and their inability to foster trust without demonstrable proof."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Post-Consultation Silence and Mutual Abandonment",
+   "quote": "There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.",
+   "full_text": "No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Total absence of follow-up or institutional feedback loops after consultation shows obdurate trajectory without ongoing adaptation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Strategic Self-Reflection for Future Engagement",
+   "quote": "The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand",
+   "full_text": "Yes. Lower expectations, but yes. The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Humility and critical self-appraisal of past group performance, adjusting community strategy for potential future consultations."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This interview transcript strongly illustrates negative Public Engagement (Engagement −) and negative Responsiveness (Responsiveness −) from the project organizers' side, contrasted with high positive Reflexivity (Reflexivity +) from the civic participant. The council’s engagement session is described as a classic deficit-model, top-down presentation (\"ninety minutes being told how it worked\") with minimal, supplier-dominated question time. Furthermore, the lack of verifiable evidence regarding camera privacy renders the communication unconvincing to local residents, highlighting how information delivery without transparent proof fails to build public trust. Responsiveness is entirely absent over a fourteen-month post-session period, leading to a silent termination of interaction where neither party seeks further input or trajectory modifications. Conversely, the board member demonstrates strong epistemic humility and self-reflection. The multi-coded segment regarding privacy assurances captures both the failure of top-down public engagement and the respondent's reflexive realization of their inability to bridge the credibility gap without material evidence. Additionally, the respondent critically evaluates their association’s own organizational shortcomings during the event, outlining concrete tactical adaptations for future engagement despite lowered expectations.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N02 — Board member, neighbourhood residents' association\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How did your association get involved?\n[Respondent] We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.\n[Interviewer] What was the session like?\n[Respondent] Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.\n[Interviewer] Did you raise anything?\n[Respondent] I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.\n[Interviewer] Has anyone from the council been back since?\n[Respondent] No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.\n[Interviewer] Would you go to the next one?\n[Respondent] Yes. Lower expectations, but yes. The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 30.0,
+  "seconds_source": "estimated: gap between saved files",
+  "absence": null,
+  "note": "written by bench_models.py before resume support; completeness verified (no chunk_errors) and marker added afterwards"
+ }
+}

@@ -1,0 +1,53 @@
+{
+  "generated": "2026-09-14T19:22:09",
+  "framework": "ri_stilgoe_2013",
+  "results": [
+    {
+      "model": "gemini-3.6-flash",
+      "endpoint": "gemini/gemini-3.6-flash",
+      "framework": "ri_stilgoe_2013",
+      "at": "2026-09-14T19:17:15",
+      "contract": {
+        "compliance": 1.0,
+        "verdict": "ok",
+        "answered": 6,
+        "asked": 6,
+        "valid_json": true,
+        "non_conforming": [],
+        "error": "",
+        "seconds": 15.0
+      },
+      "coding": {
+        "en": {
+          "transcripts": 24,
+          "completed": 24,
+          "resumed": 20,
+          "stopped_on_quota": null,
+          "chunk_errors": 0,
+          "failed": 0,
+          "segments": 124,
+          "codes": 189,
+          "chars": 53075,
+          "per_10k": 23.36,
+          "verbatim_rate": 1.0,
+          "absence_codes": 0,
+          "degenerate_titles": 0,
+          "window_chars": 3000,
+          "overlap_chars": 300,
+          "minutes": 10.6
+        }
+      },
+      "themes": {
+        "first_order": 124,
+        "themes": 8,
+        "unassigned": 1,
+        "dimensions_covered": 4,
+        "dimensions_total": 4,
+        "empty_dimensions": [],
+        "unrecognised_dimensions": [],
+        "note_written": true,
+        "minutes": 2.3
+      }
+    }
+  ]
+}

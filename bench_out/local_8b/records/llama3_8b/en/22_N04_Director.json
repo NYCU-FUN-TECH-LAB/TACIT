@@ -1,0 +1,57 @@
+{
+ "respondent": "Director, older people's community service",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "over_20y",
+  "descriptor_basis": "self-introduction"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Unpredictability of pedestrian detection system",
+   "quote": "When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.",
+   "full_text": "We run a day centre and we started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipates the consequences of the unpredictable pedestrian detection system, describing how it affects people's daily lives."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Engagement with the councillor",
+   "quote": "Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "full_text": "Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "The respondent engages with the councillor to effect change, highlighting the importance of having a strong advocate for organisations like theirs."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Concerns about transparency",
+   "quote": "What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+   "full_text": "What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent reflects on the importance of transparency, acknowledging the need to provide clear explanations to users about the reasons behind delays or changes."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent's account highlights the importance of anticipation, responsiveness, and engagement in addressing the needs of older people. The respondent's concerns about the unpredictability of the pedestrian detection system and the lack of transparency in the transport department's response demonstrate the need for a more proactive and transparent approach. The respondent's experience also underscores the importance of having a strong advocate, such as a councillor, to effect change.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N04 — Director, older people's community service\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does this show up in your work?\n[Respondent] In cancelled appointments, mostly. We run a day centre and we started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.\n[Interviewer] Did you report it?\n[Respondent] I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.\n[Interviewer] What would have been a useful reply?\n[Respondent] Anything that engaged with unpredictability. 'We measure accuracy, we don't measure consistency, we'll look at whether we can.' That would have been a good answer and it costs nothing to write. I don't need them to fix it in a fortnight. I need to know the problem I described has been understood.\n[Interviewer] Have you found any other route?\n[Respondent] Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.\n[Interviewer] Do the people who use your centre know any of this happened?\n[Respondent] Some do. I told the ones who'd told me, because that seemed like the least I could do. What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it."
+}

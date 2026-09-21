@@ -1,0 +1,91 @@
+{
+  "respondent": "P06 (Business development lead, consortium partner)",
+  "descriptors": {
+    "institution_type": "industry",
+    "role_level": "senior_management",
+    "sector": "ict_ai",
+    "experience": "11_20y",
+    "descriptor_basis": "Interview transcript: P06 (Business development lead, consortium partner)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "Framework language adopted for scoring",
+      "quote": "That language is in the bid because the evaluation matrix had a section for it worth eight percent. We wrote what scored well.",
+      "full_text": "I'll be straight with you because I don't think there's much point otherwise. That language is in the bid because the evaluation matrix had a section for it worth eight percent. We wrote what scored well. I'm not saying nobody believes it, I'm saying the reason it's in the document is the eight percent.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "N",
+          "rationale": "The vocabulary of responsible innovation is treated as a procurement instrument. Coded negative for reflexivity, though the candour itself is a reflexive act — a genuinely arguable case for the review interface."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "Engagement commitment met at minimum viable level",
+      "quote": "It committed us to a launch event and a feedback email address. Both happened. The email address got nine messages in eighteen months",
+      "full_text": "There was a stakeholder engagement plan. It was two pages. It committed us to a launch event and a feedback email address. Both happened. The email address got nine messages in eighteen months, seven of them about a pothole.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "Formal commitments are discharged in a form that predictably produces almost no input."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "No mechanism to detect or correct failure",
+      "quote": "There was no review point in the contract. Contracts have review points for things somebody intends to check.",
+      "full_text": "No. There was no review point in the contract. Contracts have review points for things somebody intends to check.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "Absence of any feedback loop by which the engagement commitment could be found wanting and adjusted."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "Locates the problem in procurement incentives",
+      "quote": "If you want a different outcome you have to change the matrix, not lecture the bidders.",
+      "full_text": "Differently, probably. Would a different consortium have done it better? I doubt it. Everybody bidding on municipal AI work is structured the same way, with the same incentives, answering the same matrix. If you want a different outcome you have to change the matrix, not lecture the bidders.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "A structural diagnosis rather than an individual one. Coded positive: it examines the conditions producing the behaviour, even though it also deflects personal responsibility."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "Proposes a verifiable procurement test",
+      "quote": "Don't ask me what my engagement plan is, ask me for the minutes of the last three times a plan like this changed a design decision. I couldn't produce them. Neither could my competitors.",
+      "full_text": "Evidence, not intentions. Don't ask me what my engagement plan is, ask me for the minutes of the last three times a plan like this changed a design decision. I couldn't produce them. Neither could my competitors. That would be a real filter.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Forward-looking proposal aimed at changing the conditions of future projects rather than the present one."
+        },
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "Direct admission that engagement has never influenced design across the sector as the respondent knows it."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "The most openly instrumental account in the corpus: responsible innovation language entered the bid because it carried eight percent of the evaluation score. Engagement commitments were met at the minimum that could be called met, with no review point to notice they were not working. The respondent's candour produces a structural diagnosis — change the procurement matrix, not the bidders — and a concrete, testable proposal for doing so.",
+  "transcript": "Interview transcript P06 — Business development lead, consortium partner\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] The bid documents mention responsible innovation. How did that shape the work?\n[Respondent] I'll be straight with you because I don't think there's much point otherwise. That language is in the bid because the evaluation matrix had a section for it worth eight percent. We wrote what scored well. I'm not saying nobody believes it, I'm saying the reason it's in the document is the eight percent.\n[Interviewer] Was there anything behind the language?\n[Respondent] There was a stakeholder engagement plan. It was two pages. It committed us to a launch event and a feedback email address. Both happened. The email address got nine messages in eighteen months, seven of them about a pothole.\n[Interviewer] Did anyone review whether the plan was working?\n[Respondent] No. There was no review point in the contract. Contracts have review points for things somebody intends to check.\n[Interviewer] Do you think the project should have been done differently?\n[Respondent] Differently, probably. Would a different consortium have done it better? I doubt it. Everybody bidding on municipal AI work is structured the same way, with the same incentives, answering the same matrix. If you want a different outcome you have to change the matrix, not lecture the bidders.\n[Interviewer] What would a better matrix ask for?\n[Respondent] Evidence, not intentions. Don't ask me what my engagement plan is, ask me for the minutes of the last three times a plan like this changed a design decision. I couldn't produce them. Neither could my competitors. That would be a real filter.",
+  "transcript_file": "06_P06_Business-development-lead.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

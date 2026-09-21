@@ -1,0 +1,104 @@
+{
+ "respondent": "Campaigner, digital rights organisation",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "other",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Stated as Campaigner at digital rights organisation working on digital rights and traffic signal technology."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Anticipating long-term function creep and institutional turnover",
+   "quote": "Function creep, mainly. A camera installed to count pedestrians is a camera. The counting is a software decision and software decisions get revisited.",
+   "full_text": "Function creep, mainly. A camera installed to count pedestrians is a camera. The counting is a software decision and software decisions get revisited. Our position isn't that anyone here intends to do anything else with it — I've met these officers, they don't — it's that intent isn't a control. The people who make the decision in 2031 haven't been hired yet.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Explores long-term plausible risk of function creep beyond present intentions over a ten-year horizon."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Contractual and technical controls to avoid future lock-in",
+   "quote": "A purpose limitation clause in the contract with a technical control behind it — not just 'we won't', but a configuration the vendor cannot change without a council resolution.",
+   "full_text": "A purpose limitation clause in the contract with a technical control behind it — not just 'we won't', but a configuration the vendor cannot change without a council resolution. And an annual public statement of every purpose the data has been used for, including refused requests. Both are ordinary in other sectors.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Proposes technical and contractual measures upstream to prevent unscrutinised software configuration changes in future."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Evasive pro forma correspondence and institutional obduracy",
+   "quote": "We got a two-page letter which restated the existing data protection position and did not address either request. I want to be precise: it wasn't a refusal. Nobody said no. The letter simply answered a different question.",
+   "full_text": "We got a two-page letter which restated the existing data protection position and did not address either request. I want to be precise: it wasn't a refusal. Nobody said no. The letter simply answered a different question. That's the most common response we get and it's the hardest to escalate, because on paper we were answered.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Council demonstrated institutional obduracy by ignoring requests and refusing to adapt its position."
+    },
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Communication reduced to evasive pro forma correspondence rather than addressing stakeholder concerns."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Grassroots co-creation and adaptive advocacy",
+   "quote": "We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides. We learned more in two hours than in a year of correspondence, and the disability group's point about slower pedestrians is now in everything we write, which it wasn't before.",
+   "full_text": "Yes, and that's been the more productive part. We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides. We learned more in two hours than in a year of correspondence, and the disability group's point about slower pedestrians is now in everything we write, which it wasn't before.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Facilitated two-way, open dialogue in a community hall with local residents and disability groups."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Substantively modified advocacy materials and campaign priorities based directly on community input."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Demonstrates epistemic humility by acknowledging previous knowledge limits regarding slower pedestrians."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Self-scrutiny regarding campaigner bias and oversight roles",
+   "quote": "Not us — we're not neutral and we shouldn't be trusted with it either. That's the part campaigners get wrong: we ask for oversight and then assume we're the oversight.",
+   "full_text": "A published purpose register that somebody outside the council updates. Not us — we're not neutral and we shouldn't be trusted with it either. That's the part campaigners get wrong: we ask for oversight and then assume we're the oversight.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Exhibits self-scrutiny and epistemic humility by recognizing campaign group non-neutrality and role boundaries."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent demonstrates strong positive Anticipation, Reflexivity, and Engagement, while highlighting negative Responsiveness and Engagement from the council. In terms of Anticipation, the campaigner explores long-term futures (looking forward to 2031) and structural risks like function creep, advocating for technical and contractual safeguards rather than relying on current intent. The respondent displays notable Reflexivity (+), exercising epistemic humility by recognizing their own organisation's bias (\"we're not neutral\") and acknowledging knowledge limits regarding slower pedestrians. Engagement (+) is strongly shown in collaborative, two-way sessions with disability and resident groups, which led to adaptive changes in campaign framing—a clear instance of positive Responsiveness (+) within the campaigner's own practice. Conversely, the council's response illustrates negative Responsiveness (−) and Engagement (−), characterised by evasive pro forma correspondence that restated standard positions without addressing stakeholder demands. Multi-coded segments reveal how inclusive public engagement directly fuels organizational learning and reflexivity, contrasting community-driven adaptation with institutional obduracy.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N03 — Campaigner, digital rights organisation\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | What's your organisation's interest here?\nRespondent | Function creep, mainly. A camera installed to count pedestrians is a camera. The counting is a software decision and software decisions get revisited. Our position isn't that anyone here intends to do anything else with it — I've met these officers, they don't — it's that intent isn't a control. The people who make the decision in 2031 haven't been hired yet.\nInterviewer | What have you asked for?\nRespondent | A purpose limitation clause in the contract with a technical control behind it — not just 'we won't', but a configuration the vendor cannot change without a council resolution. And an annual public statement of every purpose the data has been used for, including refused requests. Both are ordinary in other sectors.\nInterviewer | What response did you get?\nRespondent | We got a two-page letter which restated the existing data protection position and did not address either request. I want to be precise: it wasn't a refusal. Nobody said no. The letter simply answered a different question. That's the most common response we get and it's the hardest to escalate, because on paper we were answered.\nInterviewer | Have you worked with other groups on this?\nRespondent | Yes, and that's been the more productive part. We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides. We learned more in two hours than in a year of correspondence, and the disability group's point about slower pedestrians is now in everything we write, which it wasn't before.\nInterviewer | What would count as success?\nRespondent | A published purpose register that somebody outside the council updates. Not us — we're not neutral and we shouldn't be trusted with it either. That's the part campaigners get wrong: we ask for oversight and then assume we're the oversight.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 23.2,
+  "absence": 0
+ }
+}

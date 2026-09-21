@@ -1,0 +1,779 @@
+{
+  "codebook_id": "cb_20260914_193235",
+  "language": "en",
+  "created": "2026-09-14T19:32:35",
+  "codes": [
+    {
+      "code_id": "c001",
+      "label": "Technical assessment",
+      "definition": "A thorough evaluation of the system's technical capabilities",
+      "examples": [
+        {
+          "quote": "On the technical side, absolutely, we ran a full assessment. False positive rate, detection accuracy under rain, night performance, we have an internal acceptance standard that's frankly stricter than what the city asked for.",
+          "respondent": "Project director, systems integration contractor"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c002",
+      "label": "Contractor's role",
+      "definition": "The contractor's responsibilities and limitations",
+      "examples": [
+        {
+          "quote": "But social impact, what it does to the city as a city — honestly, that's not our remit. We're a contractor. The city writes a specification, we build to the specification.",
+          "respondent": "Project director, systems integration contractor"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c003",
+      "label": "Unintended consequences",
+      "definition": "The potential risks and unforeseen outcomes of the system",
+      "examples": [
+        {
+          "quote": "Sitting around imagining what might go wrong is, in my experience, a way of not shipping anything. Build it, see what breaks, fix what breaks.",
+          "respondent": "Project director, systems integration contractor"
+        },
+        {
+          "quote": "the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night.",
+          "respondent": "Product manager, roadside camera hardware vendor"
+        },
+        {
+          "quote": "The difference is that the box used to do what the timing plan said, and now the box decides.",
+          "respondent": "Senior engineer, traffic signal manufacturer"
+        },
+        {
+          "quote": "What they don't cover is how the model should trade off a bus against six pedestrians.",
+          "respondent": "Senior engineer, traffic signal manufacturer"
+        },
+        {
+          "quote": "A man standing at a junction with a stopwatch because something looked wrong to him.",
+          "respondent": "Senior engineer, traffic signal manufacturer"
+        }
+      ],
+      "count": 10,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c004",
+      "label": "Community engagement",
+      "definition": "The efforts to inform and involve the community in the project",
+      "examples": [
+        {
+          "quote": "Yes, there was a public information session. The city organised it — March last year, I think, in the council building.",
+          "respondent": "Project director, systems integration contractor"
+        },
+        {
+          "quote": "I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.",
+          "respondent": "Product manager, roadside camera hardware vendor"
+        },
+        {
+          "quote": "The pedestrian minimum, yes.",
+          "respondent": "Senior engineer, traffic signal manufacturer"
+        },
+        {
+          "quote": "It was two pages. It committed us to a launch event and a feedback email address. Both happened. The email address got nine messages in eighteen months, seven of them about a pothole.",
+          "respondent": "Business development lead, consortium partner"
+        },
+        {
+          "quote": "We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides.",
+          "respondent": "Campaigner, digital rights organisation"
+        }
+      ],
+      "count": 5,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c005",
+      "label": "Design and procurement",
+      "definition": "The process of designing and procuring the system",
+      "examples": [
+        {
+          "quote": "The specification was locked by then, it had to be, because you can't tender against a moving target.",
+          "respondent": "Project director, systems integration contractor"
+        },
+        {
+          "quote": "Placement was decided on traffic engineering grounds — sight lines, pole availability, power.",
+          "respondent": "Product manager, roadside camera hardware vendor"
+        },
+        {
+          "quote": "Evidence, not intentions. Don't ask me what my engagement plan is, ask me for the minutes of the last three times a plan like this changed a design decision. I couldn't produce them. Neither could my competitors.",
+          "respondent": "Business development lead, consortium partner"
+        },
+        {
+          "quote": "Sixty-one street intercepts and nine longer interviews, over four months, at eight junctions chosen to vary by ward income and footfall. I did evenings and weekends as well because the daytime sample was retired people and parents, which is a real population but not the whole one.",
+          "respondent": "Doctoral researcher and project research assistant"
+        }
+      ],
+      "count": 4,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c006",
+      "label": "Public feedback",
+      "definition": "The comments and concerns raised by the public",
+      "examples": [
+        {
+          "quote": "One woman, a wheelchair user, said the pedestrian crossing interval wasn't long enough for her.",
+          "respondent": "Project director, systems integration contractor"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c007",
+      "label": "Reflection and lessons learned",
+      "definition": "The respondent's thoughts on what they would do differently in hindsight",
+      "examples": [
+        {
+          "quote": "Looking back, is there anything you'd do differently?",
+          "respondent": "Project director, systems integration contractor"
+        },
+        {
+          "quote": "Maybe the documentation, we could have written the user-facing documentation better.",
+          "respondent": "the project director"
+        },
+        {
+          "quote": "Signal engineering has a hundred years of standards behind it and they were written in blood, most of them.",
+          "respondent": "Senior engineer, traffic signal manufacturer"
+        },
+        {
+          "quote": "Differently, probably. Would a different consortium have done it better? I doubt it. Everybody bidding on municipal AI work is structured the same way, with the same incentives, answering the same matrix.",
+          "respondent": "Business development lead, consortium partner"
+        }
+      ],
+      "count": 4,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c008",
+      "label": "Data management and sharing",
+      "definition": "The process of managing and sharing data, including agreements and retention periods.",
+      "examples": [
+        {
+          "quote": "The city holds it. We process it.",
+          "respondent": "the project director"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 1,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c009",
+      "label": "Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+      "definition": "The respondent reflects on their experience and what they would do differently in hindsight.",
+      "examples": [
+        {
+          "quote": "We model failure modes in a lot of detail — occlusion, low light, unusual gaits, people pushing strollers, cyclists dismounting.",
+          "respondent": "Chief technology officer, AI perception startup"
+        },
+        {
+          "quote": "Our worst subgroup was people using mobility aids, and that number was materially lower.",
+          "respondent": "Chief technology officer, AI perception startup"
+        },
+        {
+          "quote": "Someone would have had to put it in the contract and pay for it.",
+          "respondent": "Chief technology officer, AI perception startup"
+        },
+        {
+          "quote": "In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive.",
+          "respondent": "Head of compliance, mobility technology group"
+        },
+        {
+          "quote": "I wrote it up. It went into the risk register. The risk register is where things go to be filed.",
+          "respondent": "Head of compliance, mobility technology group"
+        }
+      ],
+      "count": 8,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c010",
+      "label": "Unintended consequences — The potential risks and unforeseen outcomes of the system",
+      "definition": "The system's evaluation process was flawed, leading to unforeseen outcomes.",
+      "examples": [
+        {
+          "quote": "Ten-year urban effects is a question for someone with tenure. I don't say that dismissively, it's genuinely a different job from mine and I'm not equipped for it.",
+          "respondent": "Chief technology officer, AI perception startup"
+        },
+        {
+          "quote": "A version of 'why would we'. Which isn't an answer.",
+          "respondent": "Head of compliance, mobility technology group"
+        },
+        {
+          "quote": "I was going to study something else entirely and then I moved to Port Calder and started noticing that the junction outside my flat behaved differently on different days.",
+          "respondent": "Postdoctoral researcher, science and technology studies"
+        },
+        {
+          "quote": "The system optimises flow. Flow is measured in vehicles. So when the model has a choice between holding twelve cars and holding one person with a walking frame, the arithmetic is not close.",
+          "respondent": "Postdoctoral researcher, science and technology studies"
+        },
+        {
+          "quote": "No. And I want to be careful here because there's a genre of research where the conclusion is 'more participation is needed' and everyone nods and nothing happens.",
+          "respondent": "Postdoctoral researcher, science and technology studies"
+        }
+      ],
+      "count": 10,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c011",
+      "label": "Community engagement — The efforts to inform and involve the community in the project",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "No. We had the city's requirements document and we built to it.",
+          "respondent": "Chief technology officer, AI perception startup"
+        },
+        {
+          "quote": "No. It's me and a junior analyst.",
+          "respondent": "Head of compliance, mobility technology group"
+        },
+        {
+          "quote": "We set up a group with a disability advocacy organisation and a residents' association — eleven people, meeting monthly, and they set the agenda, not me.",
+          "respondent": "Postdoctoral researcher, science and technology studies"
+        },
+        {
+          "quote": "They answer emails.",
+          "respondent": "Postdoctoral researcher, science and technology studies"
+        }
+      ],
+      "count": 4,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c012",
+      "label": "Lessons learned and change",
+      "definition": "The respondent's thoughts on what they would do differently in hindsight",
+      "examples": [
+        {
+          "quote": "A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+          "respondent": "Product manager, roadside camera hardware vendor"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c013",
+      "label": "Design and procurement — The process of designing and procuring the system",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong.",
+          "respondent": "Head of compliance, mobility technology group"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c014",
+      "label": "[7x] Unintended consequences — The potential risks and unforeseen outcomes of the system",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "Two things, and I got one of them. The one I got was a baseline measurement period — six months of data before anything was switched on, at all thirty junctions and at twelve control junctions elsewhere in the city.",
+          "respondent": "Professor of transport engineering"
+        },
+        {
+          "quote": "Spend the six months. Write down what failure looks like. And budget for someone whose job is to be wrong about the thing — not a critic, a person inside the project whose performance review rewards finding problems.",
+          "respondent": "Professor of transport engineering"
+        },
+        {
+          "quote": "I asked for the raw detection logs and I was given aggregates.",
+          "respondent": "Research fellow, urban data science centre"
+        },
+        {
+          "quote": "Two things. The headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards.",
+          "respondent": "Research fellow, urban data science centre"
+        },
+        {
+          "quote": "Report the worst decile, not the mean.",
+          "respondent": "Research fellow, urban data science centre"
+        }
+      ],
+      "count": 8,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c015",
+      "label": "[4x] Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "Uncomfortably. I'm in the acknowledgements of the annual report, which means my name lends the thing credibility whether or not I agree with what it says.",
+          "respondent": "Professor of transport engineering"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c016",
+      "label": "[4x] Community engagement — The efforts to inform and involve the community in the project",
+      "definition": "The respondent describes the efforts to inform and involve the community in the project",
+      "examples": [
+        {
+          "quote": "We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them.",
+          "respondent": "Professor of transport engineering"
+        },
+        {
+          "quote": "No. It was a data exercise.",
+          "respondent": "Research fellow, urban data science centre"
+        },
+        {
+          "quote": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category.",
+          "respondent": "Chair, university research ethics committee"
+        },
+        {
+          "quote": "Badly, and I'll explain why rather than defend it. Ideally you run several sessions for different groups — disability organisations one evening, ward councillors another, commuters another.",
+          "respondent": "Section chief, city transport department"
+        },
+        {
+          "quote": "A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it.",
+          "respondent": "Policy analyst, national transport ministry"
+        }
+      ],
+      "count": 6,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c017",
+      "label": "[2x] Unintended consequences — The potential risks and unforeseen outcomes of the system",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "It's in a paper. Whether a paper reaches a city is a separate question and the honest answer is usually no.",
+          "respondent": "Professor of transport engineering"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c018",
+      "label": "New code: Shifting responsibility — The way in which actors avoid taking responsibility for the long-term effects of the system",
+      "definition": "The respondent describes how actors in the system avoid taking responsibility for the long-term effects",
+      "examples": [
+        {
+          "quote": "Every actor here has a defensible reason why the long-term question belongs to someone else, and the sum of those defensible reasons is that it belongs to nobody.",
+          "respondent": "Associate professor of urban planning"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c019",
+      "label": "New code: The value of scenario planning — The benefits of using scenario planning in the system",
+      "definition": "The respondent highlights the benefits of using scenario planning in the system",
+      "examples": [
+        {
+          "quote": "The useful part wasn't the scenarios, it was that the freight association and the disability group ended up agreeing about kerb space, which neither of them expected and neither would have discovered in a consultation questionnaire.",
+          "respondent": "Associate professor of urban planning"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c020",
+      "label": "New code: Measuring impact — The challenges of measuring the impact of the system",
+      "definition": "The respondent discusses the challenges of measuring the impact of the system",
+      "examples": [
+        {
+          "quote": "I've stopped measuring impact on a three-year cycle because nothing in planning works on a three-year cycle.",
+          "respondent": "Associate professor of urban planning"
+        },
+        {
+          "quote": "There's the general complaints process.",
+          "respondent": "Chief information officer, city council"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c021",
+      "label": "New code: Transparency in system goals — The importance of transparency in the system's goals and objectives",
+      "definition": "The respondent emphasizes the importance of transparency in the system's goals and objectives",
+      "examples": [
+        {
+          "quote": "Publish the objective function. One page, plain language: here is what the system is trying to maximise, here is what it treats as a cost, here is who decided.",
+          "respondent": "Associate professor of urban planning"
+        },
+        {
+          "quote": "I don't believe transparency terms were in the specification.",
+          "respondent": "Chief information officer, city council"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c022",
+      "label": "[1x] Shifting responsibility — The way in which actors avoid taking responsibility for the long-term effects of the system",
+      "definition": "The respondent describes how actors in the system avoid taking responsibility for the long-term effects",
+      "examples": [
+        {
+          "quote": "We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind.",
+          "respondent": "Chair, university research ethics committee"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c023",
+      "label": "[5x] Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+      "definition": "The respondent's thoughts on what they would do differently in hindsight",
+      "examples": [
+        {
+          "quote": "I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.",
+          "respondent": "Chair, university research ethics committee"
+        },
+        {
+          "quote": "Written down who has to be told what, and by when, before anything was switched on.",
+          "respondent": "Section chief, city transport department"
+        },
+        {
+          "quote": "I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+          "respondent": "Ward councillor, city council"
+        },
+        {
+          "quote": "The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong.",
+          "respondent": "Policy analyst, national transport ministry"
+        },
+        {
+          "quote": "It's guidance. Authorities must have regard to it.",
+          "respondent": "Policy analyst, national transport ministry"
+        }
+      ],
+      "count": 9,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c024",
+      "label": "Shifting responsibility",
+      "definition": "The way in which actors avoid taking responsibility for the long-term effects of the system",
+      "examples": [
+        {
+          "quote": "Officially I do the fieldwork. Unofficially I'm the person who sits in the community meetings and then writes the paragraph that gets cut from the report. I've counted. Four times now.",
+          "respondent": "Doctoral researcher and project research assistant"
+        },
+        {
+          "quote": "We got a two-page letter which restated the existing data protection position and did not address either request.",
+          "respondent": "Campaigner, digital rights organisation"
+        },
+        {
+          "quote": "Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school.",
+          "respondent": "Volunteer coordinator, walking and cycling advocacy group"
+        }
+      ],
+      "count": 3,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c025",
+      "label": "Measuring impact",
+      "definition": "The challenges of measuring the impact of the system",
+      "examples": [
+        {
+          "quote": "Put it in the thesis, where four people will read it. I know how that sounds. I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+          "respondent": "Doctoral researcher and project research assistant"
+        },
+        {
+          "quote": "A purpose limitation clause in the contract with a technical control behind it — not just 'we won't', but a configuration the vendor cannot change without a council resolution.",
+          "respondent": "Campaigner, digital rights organisation"
+        },
+        {
+          "quote": "We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions.",
+          "respondent": "Volunteer coordinator, walking and cycling advocacy group"
+        }
+      ],
+      "count": 3,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c026",
+      "label": "[8x] Unintended consequences — The potential risks and unforeseen outcomes of the system",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "Congestion numbers and a manifesto commitment, in that order of how it's talked about and the reverse order of how it actually worked. The commitment came first. Then we went looking for the intervention that fitted it.",
+          "respondent": "Section chief, city transport department"
+        },
+        {
+          "quote": "Through the standard route. It's on the corporate risk register, it has a senior responsible owner, it reports into the digital board quarterly.",
+          "respondent": "Chief information officer, city council"
+        },
+        {
+          "quote": "people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+          "respondent": "Ward councillor, city council"
+        },
+        {
+          "quote": "In practice as a thing that happened which we now have to write guidance about retrospectively.",
+          "respondent": "Policy analyst, national transport ministry"
+        },
+        {
+          "quote": "Open tender, three bidders, evaluated on price at sixty percent and quality at forty.",
+          "respondent": "Procurement manager, city council"
+        }
+      ],
+      "count": 7,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c027",
+      "label": "Shifting responsibility — The way in which actors avoid taking responsibility for the long-term effects of the system",
+      "definition": "The system's actors avoid taking responsibility for its long-term effects.",
+      "examples": [
+        {
+          "quote": "It has me. And a non-executive with a technology background.",
+          "respondent": "Chief information officer, city council"
+        },
+        {
+          "quote": "We were invited to a launch event, which I didn't attend, and to a 'community reference group' which met twice and then stopped.",
+          "respondent": "the Chief executive, local community foundation"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c028",
+      "label": "Public feedback — The comments and concerns raised by the public",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "We've had — I want to say six or seven freedom of information requests.",
+          "respondent": "Chief information officer, city council"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c029",
+      "label": "[2x] Measuring impact — The challenges of measuring the impact of the system",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "That's the most reliable data I get about anything and it doesn't appear in any report.",
+          "respondent": "Ward councillor, city council"
+        },
+        {
+          "quote": "I don't need them to fix it in a fortnight. I need to know the problem I described has been understood.",
+          "respondent": "Director, older people's community service"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c030",
+      "label": "[2x] Transparency in system goals — The importance of transparency in the system's goals and objectives",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things.",
+          "respondent": "Ward councillor, city council"
+        },
+        {
+          "quote": "What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+          "respondent": "Director, older people's community service"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c031",
+      "label": "[2x] New code: Shifting responsibility — The way in which actors avoid taking responsibility for the long-term effects of the system",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents.",
+          "respondent": "Policy analyst, national transport ministry"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c032",
+      "label": "[5x] Unintended consequences — The potential risks and unforeseen outcomes of the system",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "Seventy-two hours for the raw video, indefinite for the derived counts.",
+          "respondent": "Data protection officer, city council"
+        },
+        {
+          "quote": "Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway.",
+          "respondent": "Data protection officer, city council"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c033",
+      "label": "[2x] New code: Measuring impact — The challenges of measuring the impact of the system",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity.",
+          "respondent": "Board member, neighbourhood residents' association"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c034",
+      "label": "[1x] New code: Shifting responsibility — The way in which actors avoid taking responsibility for the long-term effects of the system",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway.",
+          "respondent": "Board member, neighbourhood residents' association"
+        },
+        {
+          "quote": "No. And in fairness we haven't asked them to.",
+          "respondent": "Board member, neighbourhood residents' association"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c035",
+      "label": "Transparency in system goals",
+      "definition": "The importance of transparency in the system's goals and objectives",
+      "examples": [
+        {
+          "quote": "A published purpose register that somebody outside the council updates.",
+          "respondent": "Campaigner, digital rights organisation"
+        },
+        {
+          "quote": "An officer emailed and asked for our raw sheets, which we sent.",
+          "respondent": "Volunteer coordinator, walking and cycling advocacy group"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c036",
+      "label": "[9x] Unintended consequences — The potential risks and unforeseen outcomes of the system",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "We run a day centre and we started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.",
+          "respondent": "Director, older people's community service"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c037",
+      "label": "[2x] Shifting responsibility — The way in which actors avoid taking responsibility for the long-term effects of the system",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.",
+          "respondent": "Director, older people's community service"
+        },
+        {
+          "quote": "I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+          "respondent": "Director, older people's community service"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    }
+  ],
+  "provenance": {}
+}

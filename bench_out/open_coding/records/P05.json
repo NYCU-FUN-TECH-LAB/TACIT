@@ -1,0 +1,96 @@
+{
+ "respondent": "P05",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "unspecified",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Adaptive control and standards",
+   "quote": "The difference is that the box used to do what the timing plan said, and now the box decides.",
+   "full_text": "The difference is that the box used to do what the timing plan said, and now the box decides. That sounds dramatic but operationally it's a big change, because when somebody complains about a junction I used to be able to open the plan and show them the numbers. Now the answer is 'the model decided', and I can't show anybody anything.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Unintended consequences",
+     "rationale": "The respondent expresses concerns about the lack of transparency and accountability in the adaptive control system"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Adaptive control and standards",
+   "quote": "Signal engineering has a hundred years of standards behind it and they were written in blood, most of them.",
+   "full_text": "Signal engineering has a hundred years of standards behind it and they were written in blood, most of them. If we build to standard the safety case is sound. I don't lie awake about it.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Reflection and lessons learned",
+     "rationale": "The respondent reflects on the importance of standards and the safety case"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Adaptive control and standards",
+   "quote": "What they don't cover is how the model should trade off a bus against six pedestrians.",
+   "full_text": "What they don't cover is how the model should trade off a bus against six pedestrians. There's no standard for that. We just — implemented something. The weights came from a workshop. Four of us in a room.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Unintended consequences",
+     "rationale": "The respondent highlights the lack of standards for adaptive control decision-making"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Pedestrian minimum and adjustments",
+   "quote": "The pedestrian minimum, yes.",
+   "full_text": "The pedestrian minimum, yes. It came up that the crossing at Alder and Third was clearing people too tight when the adaptive logic was pushing throughput. We raised the floor at that junction and then at four others with similar geometry. It wasn't a regulation issue, we just set the floor higher than the regulation requires.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Community engagement",
+     "rationale": "The respondent mentions the importance of human observation and intervention in the adaptive control system"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Pedestrian minimum and adjustments",
+   "quote": "A man standing at a junction with a stopwatch because something looked wrong to him.",
+   "full_text": "A man standing at a junction with a stopwatch because something looked wrong to him. I don't have a system that replaces that and it bothers me.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Unintended consequences",
+     "rationale": "The respondent expresses concerns about the limitations of the adaptive control system and the importance of human oversight"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260914_193235",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 1,
+   "n_ok": 1
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 0
+   }
+  ]
+ },
+ "transcript": "Interview transcript P05 — Senior engineer, traffic signal manufacturer\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You've been in signals a long time. How is this project different?\n[Respondent] Twenty-six years. The difference is that the box used to do what the timing plan said, and now the box decides. That sounds dramatic but operationally it's a big change, because when somebody complains about a junction I used to be able to open the plan and show them the numbers. Now the answer is 'the model decided', and I can't show anybody anything.\n[Interviewer] Does that worry you?\n[Respondent] It bothers me more than it worries me, if that distinction makes sense. The standards are good. Signal engineering has a hundred years of standards behind it and they were written in blood, most of them. If we build to standard the safety case is sound. I don't lie awake about it.\n[Interviewer] Do the standards cover adaptive control?\n[Respondent] Partly. They cover the physical layer, the fail-safe behaviour, conflict monitoring — all of that still applies and it's what keeps people alive. What they don't cover is how the model should trade off a bus against six pedestrians. There's no standard for that. We just — implemented something. The weights came from a workshop. Four of us in a room.\n[Interviewer] Has anything been changed since go-live?\n[Respondent] The pedestrian minimum, yes. It came up that the crossing at Alder and Third was clearing people too tight when the adaptive logic was pushing throughput. We raised the floor at that junction and then at four others with similar geometry. It wasn't a regulation issue, we just set the floor higher than the regulation requires.\n[Interviewer] Who noticed it was too tight?\n[Respondent] One of our own technicians, on site for something else. Not a complaint, not the monitoring dashboard. A man standing at a junction with a stopwatch because something looked wrong to him. I don't have a system that replaces that and it bothers me."
+}

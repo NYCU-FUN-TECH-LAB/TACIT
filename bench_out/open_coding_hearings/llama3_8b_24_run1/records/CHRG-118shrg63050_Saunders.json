@@ -1,0 +1,436 @@
+{
+ "respondent": "CHRG-118shrg63050_Saunders",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "other",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Introduction and background",
+   "quote": "For 3 years, I worked as a member of technical staff at OpenAI. Companies like OpenAI are working toward building artificial general intelligence, AGI. They're raising billions of dollars toward this goal.",
+   "full_text": "For 3 years, I worked as a member of technical staff at OpenAI. Companies like OpenAI are working toward building artificial general intelligence, AGI. They're raising billions of dollars toward this goal. OpenAI's charter defines AGI as highly autonomous systems that outperform humans at most economically valuable work, that this means AI systems that could act on their own over long periods of time and do most jobs that humans can do.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent provides background information on their experience and expertise at OpenAI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "AGI and its potential impact",
+   "quote": "AGI would cause significant changes to society, including radical changes to the economy and employment. AGI could also cause catastrophic harm via systems autonomously conducting cyber-attacks or assisting in the creation of novel biological weapons.",
+   "full_text": "AGI would cause significant changes to society, including radical changes to the economy and employment. AGI could also cause catastrophic harm via systems autonomously conducting cyber-attacks or assisting in the creation of novel biological weapons. OpenAI's new AI system is the first system to show steps toward biological weapons risk as it is capable of helping experts in planning to reproduce a known biological threat.",
+   "open_codes": [
+    {
+     "code_id": "c265",
+     "label": "[Impact of AGI]",
+     "rationale": "The respondent discusses the potential impact of AGI on society, including economic and employment changes, as well as catastrophic harm"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Concerns about OpenAI's testing and security",
+   "quote": "Without rigorous testing, developers might miss this kind of dangerous capability. While OpenAI has pioneered aspects of this testing, they've also repeatedly prioritized speed of deployment over rigor.",
+   "full_text": "Without rigorous testing, developers might miss this kind of dangerous capability. While OpenAI has pioneered aspects of this testing, they've also repeatedly prioritized speed of deployment over rigor. I believe there is a real risk they will miss important dangerous capabilities in future AI systems. AGI will also be a valuable target for theft, including by foreign adversaries of the United States. While OpenAI publicly took claims to take security seriously, their internal security was not prioritized.",
+   "open_codes": [
+    {
+     "code_id": "c284",
+     "label": "Concerns about OpenAI's testing and security",
+     "rationale": "The respondent expresses concerns about OpenAI's testing and security practices, including prioritizing speed over rigor"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Concerns about AGI security",
+   "quote": "AGI will also be a valuable target for theft, including by foreign adversaries of the United States. While OpenAI publicly took claims to take security seriously, their internal security was not prioritized.",
+   "full_text": "AGI will also be a valuable target for theft, including by foreign adversaries of the United States. While OpenAI publicly took claims to take security seriously, their internal security was not prioritized. When I was at OpenAI, there were long periods of time where there were vulnerabilities that would've allowed me, or hundreds of other employees at the company, to bypass access controls and steal the company's most advanced AI systems, including GPT-4.",
+   "open_codes": [
+    {
+     "code_id": "c285",
+     "label": "AGI security concerns",
+     "rationale": "The passage highlights the vulnerability of AGI systems to theft and the need for improved security measures"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Lack of accountability in AI development",
+   "quote": "No one knows how to ensure that AGI systems will be safe and controlled.",
+   "full_text": "No one knows how to ensure that AGI systems will be safe and controlled. Current AI systems are trained by human supervisors giving them a reward when they appear to be doing the right thing. We will need new approaches when handling systems that can find novel ways to manipulate their supervisors or hide misbehavior until deployed.",
+   "open_codes": [
+    {
+     "code_id": "c286",
+     "label": "Lack of accountability in AI development",
+     "rationale": "The passage highlights the uncertainty and lack of accountability in the development of AGI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Importance of policy response",
+   "quote": "This is why a policy response is needed.",
+   "full_text": "Today, that team no longer exists. Its leaders and many key researchers resigned after struggling to get the resources they needed to be successful. OpenAI will say that they're improving. I, and other employees who resigned, doubt they will be ready in time. This is true, not just with OpenAI, the incentives to prioritize rapid deployment applies to the entire industry. This is why a policy response is needed.",
+   "open_codes": [
+    {
+     "code_id": "c287",
+     "label": "Importance of policy response",
+     "rationale": "The passage emphasizes the importance of a policy response to ensure responsible development and deployment of AGI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Need for transparency and oversight",
+   "quote": "Creating an independent oversight organization and mandated transparency requirements, as in Senator Blumenthal and Senator Hawley's proposed framework, would be important steps toward these goals.",
+   "full_text": "Creating an independent oversight organization and mandated transparency requirements, as in Senator Blumenthal and Senator Hawley's proposed framework, would be important steps toward these goals. Regulation must also prioritize requirements for third-party testing, both before and after deployment. Results from these tests must be shared.",
+   "open_codes": [
+    {
+     "code_id": "c288",
+     "label": "Need for transparency and oversight",
+     "rationale": "The passage highlights the importance of transparency and oversight in ensuring the responsible development and deployment of AGI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Concerns about OpenAI's commitment to safety",
+   "quote": "I resigned from OpenAI because I lost faith that by themselves they will make responsible decisions about AGI.",
+   "full_text": "I resigned from OpenAI because I lost faith that by themselves they will make responsible decisions about AGI. If any organization builds technology that imposes significant risks on everyone, the public must be involved in deciding how to avoid or minimize those risks.",
+   "open_codes": [
+    {
+     "code_id": "c289",
+     "label": "Concerns about OpenAI's commitment to safety",
+     "rationale": "The passage expresses concerns about OpenAI's commitment to safety and responsible development of AGI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Concerns about OpenAI's commitment to safety",
+   "quote": "All of the witnesses that we have before us today have left companies, AI companies, based on concerns about commitment to safety.",
+   "full_text": "All of the witnesses that we have before us today have left companies, AI companies, based on concerns about commitment to safety. You're not alone, obviously. OpenAI, in particular, has experienced a number of high-profile departures, including the head of its Superalignment Team, Jan Leike, who left to join rival Anthropic.",
+   "open_codes": [
+    {
+     "code_id": "c290",
+     "label": "Concerns about AI company's commitment to safety",
+     "rationale": "Witnesses have left AI companies due to concerns about safety"
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Jan Leike's concerns about OpenAI's priorities",
+   "quote": "I have been disagreeing with OpenAI leadership about the company's core priorities for some time until we finally reached a breaking point.'",
+   "full_text": "He also wrote that he, quote, ``believes much more of our bandwidth should be spent getting ready for the next generation of models on security monitoring, preparedness, safety, adversarial robustness, superalignment, confidentiality, social impact, and related topics. These problems are quite hard to get right, and I'm concerned that we aren't on a trajectory to get there.'",
+   "open_codes": [
+    {
+     "code_id": "c291",
+     "label": "Concerns about AI company's priorities",
+     "rationale": "Jan Leike's concerns about OpenAI's priorities"
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "Need for security and preparedness",
+   "quote": "So, things that could actually, like, start to, you know, assist novices in, like, creating biological weapons, or, like, you know, the systems that could start conducting unprecedented kinds of cyber attacks.",
+   "full_text": "So, things that could actually, like, start to, you know, assist novices in, like, creating biological weapons, or, like, you know, the systems that could start conducting unprecedented kinds of cyber attacks. And so, for those kinds of systems, first we're going to need to nail security, so that we make sure that those systems aren't stolen before we figure out what they can do and used by people to cause harm.",
+   "open_codes": [
+    {
+     "code_id": "c292",
+     "label": "Need for security and preparedness",
+     "rationale": "Need to prevent catastrophic risks"
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Vulnerability of AI systems",
+   "quote": "And so, we're going to need to have solutions to hard problems like these. And then we're going to need to, you know, have a--have some way to deal with, you know, models that, again, might be, you know, smarter than people supervising them and might, you know, start to, like, autonomously cause certain kinds of risks.",
+   "full_text": "And so, we're going to need to have solutions to hard problems like these. And then we're going to need to, you know, have a--have some way to deal with, you know, models that, again, might be, you know, smarter than people supervising them and might, you know, start to, like, autonomously cause certain kinds of risks. And so, I think yes, I think he was speaking to, you know, again, just, like, a number of areas where the company was not being rigorous with the systems that we currently have, which, you know, again, can maybe, can amplify some kinds of problems.",
+   "open_codes": [
+    {
+     "code_id": "c293",
+     "label": "Vulnerability of AI systems",
+     "rationale": "AI systems are vulnerable to risks"
+    },
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about the potential risks and consequences of AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Importance of legal protections for whistleblowers",
+   "quote": "And, you know, I think this really opened my eyes to the kinds of legal situation that, you know, employees face if they want to talk about problems at the company.",
+   "full_text": "And, you know, I think this really opened my eyes to the kinds of legal situation that, you know, employees face if they want to talk about problems at the company. And I think, you know, there's a number of important things that, like, employees want in this situation.",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The respondent highlights the importance of legal protections for whistleblowers in AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Importance of legal protections",
+   "quote": "And this is where I think it's important to define protections that, you know, don't just apply when there's a, you know, suspected violation of law, but when there's a, you know, sort of, suspected, like, harm or risk imposed on society.",
+   "full_text": "And then you also want, you know, legal protections. And this is where I think it's important to define protections that, you know, don't just apply when there's a, you know, suspected violation of law, but when there's a, you know, sort of, suspected, like, harm or risk imposed on society. And, you know, so that's why I think--yes, legislation needs to include, you know, yes, establishing, you know, whistleblower points of contact and these protections.",
+   "open_codes": [
+    {
+     "code_id": "c294",
+     "label": "Importance of legal protections",
+     "rationale": "The passage highlights the importance of defining protections that address potential harm or risk to society."
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "OpenAI's goals and priorities",
+   "quote": "So, I think there were, like, a couple of, like, significant, like--I don't know, like, goals that, like, OpenAI as an organization has, you know.",
+   "full_text": "So, I think there were, like, a couple of, like, significant, like--I don't know, like, goals that, like, OpenAI as an organization has, you know. So, one of these is, like, called, like, maintaining research velocity. And so, you know, on things like security, OpenAI is reluctant to do things that will, you know, require additional work from researchers or might slow them down to, like, you know, use a more secure system.",
+   "open_codes": [
+    {
+     "code_id": "c295",
+     "label": "OpenAI's goals and priorities",
+     "rationale": "The passage highlights OpenAI's focus on research velocity and its reluctance to prioritize security measures."
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "Challenges in AI development and regulation",
+   "quote": "And so, like, this is because companies just face, you know, an enormous incentive to be, you know, seen as the company that's, like, leading in the AI space.",
+   "full_text": "And so, like, this is because companies just face, you know, an enormous incentive to be, you know, seen as the company that's, like, leading in the AI space. And so, this is why we need to have, you know, some kinds-- there needs to be some kind of, you know, regulation to be, like, doing the right thing, because otherwise it's going against the grain.",
+   "open_codes": [
+    {
+     "code_id": "c296",
+     "label": "Challenges in AI development and regulation",
+     "rationale": "The passage emphasizes the importance of regulation to ensure responsible AI development and innovation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "Potential risks and consequences of AI development",
+   "quote": "And I think another way to, like, you know, sort of, like, lose the race for everyone, frankly, is if we develop cutting- edge AI systems and then they're stolen by a foreign government before we understand, you know, that they're dangerous, and now, like, you know, you end up at a situation where both America and some--and another country are sort of in a standoff where they're both afraid of each other using the systems.",
+   "full_text": "And I think another way to, like, you know, sort of, like, lose the race for everyone, frankly, is if we develop cutting-edge AI systems and then they're stolen by a foreign government before we understand, you know, that they're dangerous, and now, like, you know, you end up at a situation where both America and some--and another country are sort of in a standoff where they're both afraid of each other using the systems. This is a way that, like, we would all lose. So, I don't think, you know, you could have a lead without, you know, being really careful about security.",
+   "open_codes": [
+    {
+     "code_id": "c297",
+     "label": "Potential risks and consequences of AI development",
+     "rationale": "The passage highlights the potential risks and consequences of AI development, including the threat of AI systems being stolen and used against each other."
+    },
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about the potential risks and consequences of developing and using AI systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "Importance of security in AI development",
+   "quote": "So, I don't think, you know, you could have a lead without, you know, being really careful about security.",
+   "full_text": "So, I don't think, you know, you could have a lead without, you know, being really careful about security.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of security measures in AI development to prevent potential risks and consequences."
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "Regulatory frameworks for AI",
+   "quote": "And then I think, you know, the sort of kind of frameworks are, like--and ideas that are emerging are, sort of, tied around regulat--you know, testing systems to figure out when they reach levels where they have certain dangerous capabilities.",
+   "full_text": "And then I think, you know, the sort of kind of frameworks are, like--and ideas that are emerging are, sort of, tied around regulat--you know, testing systems to figure out when they reach levels where they have certain dangerous capabilities. And then, you know, adding requirements only when that point is reached. And then, you know, if that testing is done rigorously, like, you know, then you can, like, respond before the horse leaves the barn.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent discusses the need for regulatory frameworks and testing systems to ensure the safe development and use of AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Voluntary frameworks for AI",
+   "quote": "And, like, companies are starting to agree to some sort of, like, voluntary frameworks that have this character.",
+   "full_text": "And, like, companies are starting to agree to some sort of, like, voluntary frameworks that have this character. But there aren't, you know, like, laws in place that would enforce that. And so it will be--it'll come to some, you know, very difficult decisions where, you know, there are sort of, like, on one hand there is some system that has, you know, maybe billions of dollars put into it. And on other hand there are, like, you know, unresolved safety concerns or, like, testing that is rushed or something.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent discusses the emergence of voluntary frameworks for AI and the need for laws to enforce them."
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Challenges in AI development",
+   "quote": "And so I do think both that we, like, need to have standards around that. But I also do think--I also do believe we can figure out how to make this technology safe.",
+   "full_text": "And so I do think both that we, like, need to have standards around that. But I also do think--I also do believe we can figure out how to make this technology safe. And, you know, I think it's, like, the worst problems they're going to have, is if the companies don't take the time to prepare, and then they wait until the last minute, and, you know, it's not clear what the--what the rules and restrictions will be. And so then again, they end up in a situation where they really want to ship something that really hasn't been ready.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent discusses the challenges in AI development, including the need for standards and the potential risks of rushing the process."
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Importance of advance planning in AI development",
+   "quote": "And so, it's much better if, sort of, the rules and guidance are laid out in advance.",
+   "full_text": "And so, it's much better if, sort of, the rules and guidance are laid out in advance. And companies know that if they build something that, you know, is capable of causing catastrophe, you know, here's what the requirements they'll have to meet are. That's, yes, that's what I think the best path for legislation to both protect the public and preserve innovation.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent emphasizes the importance of advance planning and clear guidelines in AI development to ensure the safe and responsible development of AI technology."
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "AI regulation and stability",
+   "quote": "give us the rules. We may disagree with you, but just tell us the rules. And don't change them from year to year. We need some stability.",
+   "full_text": "I think these points are very, very important. If there's a disaster on AI, it's equivalent to a food company taking the issue of food safety, having a major outbreak of Listeria food poisoning. It has to recall products, its credibility is undermined, it's a major marketing disaster. And this kind of AI catastrophe would impact not only that company, but possibly others, as well. So, there's a very rational and powerful argument for regulation that makes sure that everybody is abiding by commonsense, rational standards that are good for the industry. And the idea of some certainty. You know, one after another, for 20, 30 years, businesses have told me, give us the rules. We may disagree with you, but just tell us the rules. And don't change them from year to year. We need some stability. We can work with whatever rules you give us, but we need to know what they are, and they need to be clear, and they need to be stable.",
+   "open_codes": [
+    {
+     "code_id": "c298",
+     "label": "Importance of regulation",
+     "rationale": "The respondent emphasizes the need for regulation to prevent AI disasters and ensure industry stability."
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "AI's potential for good",
+   "quote": "it would be easy to say, let's ban AI, but it has enormous potential for good. Take the medical area, you know, the potential for research, as well as for treatment and diagnosis--immense.",
+   "full_text": "And it's a little bit like, and forgive me for being over simplistic, but I've been doing some reading on COVID, the origins of COVID. The debate about, did it start in a lab? Was there a release, was there research that tried to develop a more potent evil virus, or did it come from the wild? We, at this point, we don't know, at least, there are equally--or I shouldn't say equally, there are theories that have credibility that argue for all of it. But we do know that there are dangers in research on gain of function, trying to develop more lethal viruses. Now, the argument for that research is, then we'll know how to deal with them. The argument against it is, why would you develop a virus that is more destructive and damaging? The argument is not exactly the same. It's analogous, not the same.",
+   "open_codes": [
+    {
+     "code_id": "c299",
+     "label": "AI's potential for good",
+     "rationale": "The respondent highlights the potential for AI to improve medical research, treatment, and diagnosis."
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "Need for rules of the road",
+   "quote": "But with every advance in technology, there are also potential downsides. And the point here is to deal with the downsides and not rely only on the creators to oversee what they're doing, but impose some rules of the road that protect them and the industry, as well as the public.",
+   "full_text": "But with every advance in technology, there are also potential downsides. And the point here is to deal with the downsides and not rely only on the creators to oversee what they're doing, but impose some rules of the road that protect them and the industry, as well as the public.",
+   "open_codes": [
+    {
+     "code_id": "c300",
+     "label": "Need for rules of the road",
+     "rationale": "The respondent emphasizes the need for rules of the road to protect the industry, the public, and the creators themselves."
+    },
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage highlights the need to consider the potential negative consequences of AI advancements."
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Importance of regulation",
+   "quote": "I think we should figure out regulation to prepare for that.",
+   "full_text": "I think, you know, that--I did not feel comfortable continuing to work for an organization that wasn't going to like, take that seriously and do as much work as possible to deal with that possibility. And I think we should figure out regulation to prepare for that.",
+   "open_codes": [
+    {
+     "code_id": "c298",
+     "label": "Importance of regulation",
+     "rationale": "The passage highlights the importance of establishing rules and safeguards for AI development and use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "Timeframe for AI advancements",
+   "quote": "I think, you know, that--if it's not 3 years, it's going to be 5 years or 10 years, you know, the stuff is coming down the road",
+   "full_text": "I think, you know, that--I did not feel comfortable continuing to work for an organization that wasn't going to like, take that seriously and do as much work as possible to deal with that possibility. And I think we should figure out regulation to prepare for that. Because, I think, you know, again, it's--if it's not 3 years, it's going to be 5 years or 10 years, you know, the stuff is coming down the road and we need to have some guardrails in place.",
+   "open_codes": [
+    {
+     "code_id": "c301",
+     "label": "Timeframe for AI advancements",
+     "rationale": "The passage highlights the importance of considering the timeframe for AI advancements and preparing for potential risks."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_015911",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 8,
+   "n_ok": 8
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 2,
+    "created": 1,
+    "chunk": 0
+   },
+   {
+    "reused": 0,
+    "created": 5,
+    "chunk": 1
+   },
+   {
+    "reused": 0,
+    "created": 4,
+    "chunk": 2
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 3
+   },
+   {
+    "reused": 0,
+    "created": 4,
+    "chunk": 4
+   },
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 6
+   },
+   {
+    "reused": 2,
+    "created": 1,
+    "chunk": 7
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg63050 — William Saunders, Former Member, Technical Staff, Openai\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg63050  |  Oversight Of Ai: Insiders' Perspectives  |  Senate, ?  |  2024-09-17  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chair Blumenthal) Thanks very much, Ms. Toner. Mr. Saunders.\n[Respondent] Mr. Chairman, Ranking Member Hawley, and distinguished Members, thank you for the opportunity to address this Committee.\nFor 3 years, I worked as a member of technical staff at OpenAI. Companies like OpenAI are working toward building artificial general intelligence, AGI. They're raising billions of dollars toward this goal.\nOpenAI's charter defines AGI as highly autonomous systems that outperform humans at most economically valuable work, that this means AI systems that could act on their own over long periods of time and do most jobs that humans can do.\nAI companies are making rapid progress toward building AGI. A few days before this hearing, OpenAI announced a new system GPT o1 that passed significant milestones, including one that was personally significant for me.\nWhen I was in high school, I spent years training for a prestigious international computer science competition. OpenAI's new system leaps from failing to qualify to winning a gold medal doing better than me in an area relevant to my own job. There are still significant gaps to close, but I believe it is plausible that an AGI system could be built in as little as 3 years.\nAGI would cause significant changes to society, including radical changes to the economy and employment. AGI could also cause catastrophic harm via systems autonomously conducting cyber-attacks or assisting in the creation of novel biological weapons.\nOpenAI's new AI system is the first system to show steps toward biological weapons risk as it is capable of helping experts in planning to reproduce a known biological threat.\nWithout rigorous testing, developers might miss this kind of dangerous capability. While OpenAI has pioneered aspects of this testing, they've also repeatedly prioritized speed of deployment over rigor. I believe there is a real risk they will miss important dangerous capabilities in future AI systems.\nAGI will also be a valuable target for theft, including by foreign adversaries of the United States. While OpenAI publicly took claims to take security seriously, their internal security was not prioritized.\nWhen I was at OpenAI, there were long periods of time where there were vulnerabilities that would've allowed me, or hundreds of other employees at the company, to bypass access controls and steal the company's most advanced AI systems, including GPT-4.\nNo one knows how to ensure that AGI systems will be safe and controlled. Current AI systems are trained by human supervisors giving them a reward when they appear to be doing the right thing. We will need new approaches when handling systems that can find novel ways to manipulate their supervisors or hide misbehavior until deployed.\nThe Superalignment Team at OpenAI was tasked with developing these approaches, but ultimately, we had to figure out as we went along--a terrifying prospect when catastrophic harm is possible.\nToday, that team no longer exists. Its leaders and many key researchers resigned after struggling to get the resources they needed to be successful.\nOpenAI will say that they're improving. I, and other employees who resigned, doubt they will be ready in time. This is true, not just with OpenAI, the incentives to prioritize rapid deployment applies to the entire industry. This is why a policy response is needed.\nMy fellow witnesses and I may have different specific concerns with the AI industry, but I believe we can find common ground in addressing them. If you want insiders to communicate about problems within AI companies, you need to make such communications safe and easy. That means a clear point of contact and legal protections for whistleblowing employees.\nRegulation must also prioritize requirements for third- party testing, both before and after deployment. Results from these tests must be shared.\nCreating an independent oversight organization and mandated transparency requirements, as in Senator Blumenthal and Senator Hawley's proposed framework, would be important steps toward these goals.\nI resigned from OpenAI because I lost faith that by themselves they will make responsible decisions about AGI. If any organization builds technology that imposes significant risks on everyone, the public must be involved in deciding how to avoid or minimize those risks.\nThat was true before AI. It needs to be true today with AI. Thank you for your work on these issues and I look forward to your questions.\n[Interviewer] (Chair Blumenthal) Thank you very much, Senator Padilla.\nAll of the witnesses that we have before us today have left companies, AI companies, based on concerns about commitment to safety.\nYou're not alone, obviously. OpenAI, in particular, has experienced a number of high-profile departures, including the head of its Superalignment Team, Jan Leike, who left to join rival Anthropic.\nAnd upon departing, he wrote on X, quote, ``I have been disagreeing with OpenAI leadership about the company's core priorities for some time until we finally reached a breaking point.'' He also wrote that he, quote, ``believes much more of our bandwidth should be spent getting ready for the next generation of models on security monitoring, preparedness, safety, adversarial robustness, superalignment, confidentiality, social impact, and related topics. These problems are quite hard to get right, and I'm concerned that we aren't on a trajectory to get there.''\nLet me ask all of you, based on your firsthand experiences, would you agree essentially with those points? Let me begin with you, Mr. Saunders, and go to the others if you have responses.\n[Respondent] Yes, thank you, Senator. Dr. Jan Leike was my manager for a lot of my time at OpenAI. And, you know, I really respected his opinions and judgment.\nAnd I think, you know, what he was talking about were, sort of, a number of issues where OpenAI is not ready to deal with models that, you know, have some significant catastrophic risks, such as high-risk models under the preparedness framework.\nSo, things that could actually, like, start to, you know, assist novices in, like, creating biological weapons, or, like, you know, the systems that could start conducting unprecedented kinds of cyber attacks.\nAnd so, for those kinds of systems, first we're going to need to nail security, so that we make sure that those systems aren't stolen before we figure out what they can do and used by people to cause harm.\nThen we're going to need to figure out, how do you actually, like, deploy some system that under some circumstances will, you know, could help someone construct a biological weapon. But lots of people want to use it for other--for a bunch of other things that are good.\nSo, every AI system today is vulnerable to something called ``jailbreaking,'' where people can come up with some way to, you know, convince the system to provide advice and assistance on anything they want, no matter what the companies, like, you know, have tried to do so far.\nAnd so, we're going to need to have solutions to hard problems like these. And then we're going to need to, you know, have a--have some way to deal with, you know, models that, again, might be, you know, smarter than people supervising them and might, you know, start to, like, autonomously cause certain kinds of risks.\nAnd so, I think yes, I think he was speaking to, you know, again, just, like, a number of areas where the company was not being rigorous with the systems that we currently have, which, you know, again, can maybe, can amplify some kinds of problems.\nBut once we reach the point where, like, you know, catastrophic risk is possible, we're really going to need to have our shit together. Um----\n[Interviewer] (Chair Blumenthal) Thank you very much, Senator Blackburn.\nA number of you have mentioned whistleblowers and the need for protecting them. Maybe anyone who would like, could expand on that point?\nYou are all insiders who have left companies or disassociated yourself with them in one way or another. And I'd be interested in your thoughts. Mr. Saunders?\n[Respondent] Yes. Thank you, Senator. So when I resigned from OpenAI, I, sort of, found that, you know, they gave to every departing employee a, like, restrictive non-disparagement agreement. And you would lose, you know, all of the equity you had in the company if you didn't sign this agreement where you had to effectively not criticize the company and not tell anybody that you'd signed this agreement.\nAnd, you know, I think this really opened my eyes to the kinds of legal situation that, you know, employees face if they want to talk about problems at the company. And I think, you know, there's a number of important things that, like, employees want in this situation.\nSo there's like, knowing who you can talk--knowing who you can talk to, it's very unclear, sort of, like, what parts of the Government would, you know, be--have expertise in, you know, specific kinds of issues you want to know. And you want to know that you're going to talk to somebody who understands, you know, the issues that you have, and, you know, that has some ability to act on them.\nAnd then you also want, you know, legal protections. And this is where I think it's important to define protections that, you know, don't just apply when there's a, you know, suspected violation of law, but when there's a, you know, sort of, suspected, like, harm or risk imposed on society. And, you know, so that's why I think--yes, legislation needs to include, you know, yes, establishing, you know, whistleblower points of contact and these protections.\n[Interviewer] (Chair Blumenthal) Thank you. Mr. Saunders?\n[Respondent] So, I think there were, you know, a couple of, like, significant, like--I don't know, like, goals that, like, OpenAI as an organization has, you know. So, one of these is, like, called, like, maintaining research velocity. And so, you know, on things like security, OpenAI is reluctant to do things that will, you know, require additional work from researchers or might slow them down to, like, you know, use a more secure system.\nAnd then, you know, on more of the, like, testing side, there's, like, often, like, you know, release dates that are set where, like, the company starts, you know, talking to a bunch of, you know, customers and saying, like, oh, yes, we're going to ship by this date.\nAnd then, sort of, like, the amount of safety work is, you know, determined after, like, you know, picking off, like, how quickly you want to ship, you know, and subject to, like, you know, office politics and these kinds of things.\nAnd so, like, this is because companies just face, you know, an enormous incentive to be, you know, seen as the company that's, like, leading in the AI space.\nAnd so, this is why we need to have, you know, some kinds-- there needs to be some kind of, you know, regulation to be, like, doing the right thing, because otherwise it's going against the grain.\n[Interviewer] (Chair Blumenthal) Mr. Saunders?\n[Respondent] So yes, I think this is, you know, an important a question to consider in any regulation. And then I think there are approaches, you know, I think the things that are going to really harm innovation is if there is a large- scale AI disaster, you know, in the way that, you know, like, nuclear power was kept back on after Chernobyl. Right? That will really lose trust in the industry.\nAnd I think another way to, like, you know, sort of, like, lose the race for everyone, frankly, is if we develop cutting- edge AI systems and then they're stolen by a foreign government before we understand, you know, that they're dangerous, and now, like, you know, you end up at a situation where both America and some--and another country are sort of in a standoff where they're both afraid of each other using the systems. This is a way that, like, we would all lose. So, I don't think, you know, you could have a lead without, you know, being really careful about security.\nAnd then I think, you know, the sort of kind of frameworks are, like--and ideas that are emerging are, sort of, tied around regulat--you know, testing systems to figure out when they reach levels where they have certain dangerous capabilities.\nAnd then, you know, adding requirements only when that point is reached. And then, you know, if that testing is done rigorously, like, you know, then you can, like, respond before the horse leaves the barn.\nAnd, like, companies are starting to agree to some sort of, like, voluntary frameworks that have this character. But there aren't, you know, like, laws in place that would enforce that. And so it will be--it'll come to some, you know, very difficult decisions where, you know, there are sort of, like, on one hand there is some system that has, you know, maybe billions of dollars put into it. And on other hand there are, like, you know, unresolved safety concerns or, like, testing that is rushed or something.\nAnd so I do think both that we, like, need to have standards around that. But I also do think--I also do believe we can figure out how to make this technology safe. And, you know, I think it's, like, the worst problems they're going to have, is if the companies don't take the time to prepare, and then they wait until the last minute, and, you know, it's not clear what the--what the rules and restrictions will be. And so then again, they end up in a situation where they really want to ship something that really hasn't been ready.\nAnd so, it's much better if, sort of, the rules and guidance are laid out in advance. And companies know that if they build something that, you know, is capable of causing catastrophe, you know, here's what the requirements they'll have to meet are. That's, yes, that's what I think the best path for legislation to both protect the public and preserve innovation.\n[Interviewer] (Chair Blumenthal) I think these points are very, very important. If there's a disaster on AI, it's equivalent to a food company taking the issue of food safety, having a major outbreak of Listeria food poisoning. It has to recall products, its credibility is undermined, it's a major marketing disaster.\nAnd this kind of AI catastrophe would impact not only that company, but possibly others, as well. So, there's a very rational and powerful argument for regulation that makes sure that everybody is abiding by commonsense, rational standards that are good for the industry.\nAnd the idea of some certainty. You know, one after another, for 20, 30 years, businesses have told me, give us the rules. We may disagree with you, but just tell us the rules. And don't change them from year to year. We need some stability. We can work with whatever rules you give us, but we need to know what they are, and they need to be clear, and they need to be stable.\nAnd frankly, I take them at their word, because I think, again, in their rational interests, that ought to be their attitude. Unless we do something crazy.\nNobody here wants to do something crazy because we recognize the immense good that can come from AI. And this goes back to the point that you made, Ms. Toner, that it would be easy to say, let's ban AI, but it has enormous potential for good. Take the medical area, you know, the potential for research, as well as for treatment and diagnosis--immense.\nAnd it's a little bit like, and forgive me for being over simplistic, but I've been doing some reading on COVID, the origins of COVID. The debate about, did it start in a lab? Was there a release, was there research that tried to develop a more potent evil virus, or did it come from the wild?\nWe, at this point, we don't know, at least, there are equally--or I shouldn't say equally, there are theories that have credibility that argue for all of it. But we do know that there are dangers in research on gain of function, trying to develop more lethal viruses.\nNow, the argument for that research is, then we'll know how to deal with them. The argument against it is, why would you develop a virus that is more destructive and damaging? The argument is not exactly the same. It's analogous, not the same.\nBut with every advance in technology, there are also potential downsides. And the point here is to deal with the downsides and not rely only on the creators to oversee what they're doing, but impose some rules of the road that protect them and the industry, as well as the public.\nAnd I think you have been enormously enlightening today to us. I hope we can continue this conversation because our goal is to achieve the promise with what you have called, Ms. Toner, a light touch.\nWe won't all agree on what a light touch is. But if we are honest with each other, I think we can develop some standards, as well as enforcement mechanisms that make sure that we impose accountability, as well as criteria for judging whether or not a particular form of AI is safe and effective--just as we would impose that standard on new drug development. Safety and efficacy are the standard for the FDA.\nI am not going to ask you the $64 billion question, when will we have generative AI that is as smart as people? Unless you want to answer that question.\nI'll open the floor to you if you would like to give us your prediction, because that's a horse-is-out-of-the-barn issue, in a sense. Once it's there and we don't have standards, you know, it's going to be put on the market. So maybe you want to address it? You don't have to. Mr. Saunders.\n[Respondent] Yes. I think there's--yes, when I thought about this, there was, like, a, you know, at least a 10 percent chance of something that, you know, could be catastrophically dangerous within about 3 years. And I think, you know, a lot of people inside of OpenAI also, you know, would talk about similar things. And then I think, right, without knowing the exact details, you know, it's probably going to be longer.\nI think, you know, that--I did not feel comfortable continuing to work for an organization that wasn't going to like, take that seriously and do as much work as possible to deal with that possibility. And I think we should figure out regulation to prepare for that.\nBecause, I think, you know, again, it's--if it's not 3 years, it's going to be 5 years or 10 years, you know, the stuff is coming down the road and we need to have some guardrails in place.",
+ "_bench": {
+  "seconds": 176.7,
+  "chars": 18658
+ }
+}

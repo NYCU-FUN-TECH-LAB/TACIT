@@ -1,0 +1,596 @@
+{
+ "respondent": "CHRG-118shrg53707_Li",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "researcher",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Opening Remarks",
+   "quote": "Thank you. Thank you, Chair Peters, Ranking Member Paul, Members of the Committee. Thank you for the privilege of appearing before this prestigious body. It is truly an honor.",
+   "full_text": "Thank you. Thank you, Chair Peters, Ranking Member Paul, Members of the Committee. Thank you for the privilege of appearing before this prestigious body. It is truly an honor.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent expresses gratitude for the privilege of appearing before the Committee, indicating a sense of responsibility and accountability."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Introduction to AI",
+   "quote": "I have spent my life working in the field of artificial intelligence, over 20 plus years, studying, developing, and understanding the technology that has entered the public consciousness due to recent breakthroughs.",
+   "full_text": "I have spent my life working in the field of artificial intelligence, over 20 plus years, studying, developing, and understanding the technology that has entered the public consciousness due to recent breakthroughs. There is no doubt that we have arrived at an inflection point in AI, largely powered by generative AI, including large language models (LLM) and my own field of computer vision, where we essentially teach computers to see.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent discusses the significance of AI and machine learning in various aspects of life, highlighting its impact."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Applications of AI",
+   "quote": "For example, a notable application is health care, where AI is augmenting the capabilities of caretakers and medical professionals by detecting anomalies in medical imagery such as X-rays or MRI scans, thereby aiding early diagnosis and treatment.",
+   "full_text": "For example, a notable application is health care, where AI is augmenting the capabilities of caretakers and medical professionals by detecting anomalies in medical imagery such as X-rays or MRI scans, thereby aiding early diagnosis and treatment. Most importantly, AI presents many opportunities to the U.S. Government.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent shares their experience and expertise in the field of AI, highlighting its applications."
+    },
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "AI is being used to detect anomalies in medical imagery"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Streamlining government efficiency",
+   "quote": "Many Federal agencies are already experimenting with AI powered tools.",
+   "full_text": "One area is to streamline the efficiency of government. Many Federal agencies are already experimenting with AI powered tools. For example, HHS has initiated a pilot program that employs AI to enhance the efficiency of fraud detection within the Centers for Medicare and Medicaid Services (CMS).",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "AI is being used to enhance fraud detection"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "AI in healthcare reduces burden on public health care resources",
+   "quote": "Medical AI tools can decrease the frequency of unneeded emergency medical interventions and hospital readmissions, which are significant cost drivers in health care expenditures.",
+   "full_text": "Second, AI in health care reduces the burden on public health care resources, including Medicare and Medicaid. Medical AI tools can decrease the frequency of unneeded emergency medical interventions and hospital readmissions, which are significant cost drivers in health care expenditures.",
+   "open_codes": [
+    {
+     "code_id": "c037",
+     "label": "Impact of AI systems",
+     "rationale": "AI is being used to decrease emergency medical interventions and hospital readmissions"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Concerns about AI misuse",
+   "quote": "it can also be misused to cause harm and carry unintended consequences.",
+   "full_text": "However, while AI, like most technologies, promises to solve many problems for the common good, it can also be misused to cause harm and carry unintended consequences. Let me just give you two examples of when the harms of AI can affect how the government approaches it.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "AI can be used to cause harm and carry unintended consequences"
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Bias in AI",
+   "quote": "research shows that predictive tools used to approve or reject loans are less accurate for low income minority groups in the United States due to the lack of data in their credit histories.",
+   "full_text": "First, bias in AI is well-documented. For example, in credit risk scoring, research shows that predictive tools used to approve or reject loans are less accurate for low income minority groups in the United States due to the lack of data in their credit histories. To ensure that AI applications deliver reliable results for all Americans, the availability of high quality representative datasets is crucial.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "AI can be less accurate for low income minority groups due to lack of data"
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Importance of privacy and security protocols",
+   "quote": "we must integrate strong privacy and security protocols into these applications from the beginning.",
+   "full_text": "Second, in an area of heightened public concern over data collection and misuse, we must integrate strong privacy and security protocols into these applications from the beginning. To build Privacy-preserving technology, we must engage diverse stakeholders in health care. This includes AI developers, public sector, health care professionals, patients, and more.",
+   "open_codes": [
+    {
+     "code_id": "c044",
+     "label": "Transparency",
+     "rationale": "AI applications require strong privacy and security protocols"
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Importance of multidisciplinary approach",
+   "quote": "This is why I founded Stanford Institute for Human Centered Artificial Intelligence, where we study AI and its impact not as a field exclusive to computer science, but instead as a multidisciplinary field that includes the social sciences, engineering, law, medicine, humanities, and more.",
+   "full_text": "This is why I founded Stanford Institute for Human Centered Artificial Intelligence, where we study AI and its impact not as a field exclusive to computer science, but instead as a multidisciplinary field that includes the social sciences, engineering, law, medicine, humanities, and more.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "AI requires a multidisciplinary approach"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Establishing a multidisciplinary approach to AI research"
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Government's role in AI development",
+   "quote": "The Federal Government should adopt a similar approach to properly understood the future of AI. It falls upon the U.S. Government to spearhead the ethical procurement and deployment of these systems, setting norms for AI development and ultimately shaping the field of responsible AI.",
+   "full_text": "The Federal Government should adopt a similar approach to properly understood the future of AI. It falls upon the U.S. Government to spearhead the ethical procurement and deployment of these systems, setting norms for AI development and ultimately shaping the field of responsible AI.",
+   "open_codes": [
+    {
+     "code_id": "c045",
+     "label": "Government's role",
+     "rationale": "The government should spearhead ethical procurement and deployment of AI systems"
+    },
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The need for ethical procurement and deployment of AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "Appreciation for the Committee's work on AI",
+   "quote": "I applaud this Committee and the work that has been done thus far on AI, including the AI Training Act and the AI Lead Act, which create powerful tools for Federal Government to set such norms.",
+   "full_text": "I applaud this Committee and the work that has been done thus far on AI, including the AI Training Act and the AI Lead Act, which create powerful tools for Federal Government to set such norms.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "Appreciation for challenges and uncertainty",
+     "rationale": "Acknowledging the Committee's efforts on AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Evaluation and transparency in AI development",
+   "quote": "Having created one of the most consequential evaluation datasets for AI models, ImageNet, I firmly believe that evaluation should consider every factor in a holistic way, from accuracy, to fairness, to the reliability of models performing under real world conditions. Second, we must build-in transparency measures.",
+   "full_text": "Having created one of the most consequential evaluation datasets for AI models, ImageNet, I firmly believe that evaluation should consider every factor in a holistic way, from accuracy, to fairness, to the reliability of models performing under real world conditions. Second, we must build-in transparency measures.",
+   "open_codes": [
+    {
+     "code_id": "c044",
+     "label": "Transparency",
+     "rationale": "The importance of transparency in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Public sector investment in AI",
+   "quote": "For the United States to maintain its leadership in AI, the Federal Government must make the needed critical public investments in AI. Due to the vast amount of compute and data required to train these systems, only a select few industry players can shape the future of AI, leaving an imbalance in the innovation ecosystem that lacks the diverse voices of public sector and government labs.",
+   "full_text": "For the United States to maintain its leadership in AI, the Federal Government must make the needed critical public investments in AI. Due to the vast amount of compute and data required to train these systems, only a select few industry players can shape the future of AI, leaving an imbalance in the innovation ecosystem that lacks the diverse voices of public sector and government labs.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The importance of public sector investment in AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Create AI Act",
+   "quote": "This is why I am unequivocally a strong supporter of the Create AI Act, a strong bipartisan legislation introduced this summer in both chambers. The Create AI Act will establish a national AI research resource that provides the needed resources to allow public sector researchers to innovate and train the next generation of AI leaders.",
+   "full_text": "This is why I am unequivocally a strong supporter of the Create AI Act, a strong bipartisan legislation introduced this summer in both chambers. The Create AI Act will establish a national AI research resource that provides the needed resources to allow public sector researchers to innovate and train the next generation of AI leaders.",
+   "open_codes": [
+    {
+     "code_id": "c053",
+     "label": "Create AI Act",
+     "rationale": "The importance of the Create AI Act in promoting public sector investment in AI"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent supports the Create AI Act, which establishes a national AI research resource"
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "Concerns about AI development and use",
+   "quote": "What we need right now is a coordinated moonshot effort for the Nation to ensure America's leadership in AI for the good of humanity.",
+   "full_text": "In June, I personally shared with President Biden how I believe the United States is not prepared for this imminent AI moment. What we need right now is a coordinated moonshot effort for the Nation to ensure America's leadership in AI for the good of humanity.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "Prioritizing explainability in AI systems",
+   "quote": "Actually, explainability is a very much used word in the talks of AI. If we think about it, it is actually a very nuanced word.",
+   "full_text": "Actually, explainability is a very much used word in the talks of AI. If we think about it, it is actually a very nuanced word. I will give you an example that is not AI. For example, you talk about math. When a bottle drops, we can actually use a Newtonian mathematical equation to explain why the bottom drops. But when it comes to the usage of Tylenol, other than some doctors and biomedical researchers, even as a consumer, I do not know how to explain how Tylenol works, yet there is an explainable process of how the Federal Government has regulated it so that I can trust it.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "The respondent provides a nuanced definition of AI and explainability"
+    },
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent highlights the limitations of AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "Advocating for systematic approach to explainability",
+   "quote": "We have to think about it carefully. Again, I advocate for a systematic approach in thinking about explainability, but do put the human values, as well as our society's value at the foreground of this, and depending on how we use it, will require a different kind of explainability.",
+   "full_text": "We have to think about it carefully. Again, I advocate for a systematic approach in thinking about explainability, but do put the human values, as well as our society's value at the foreground of this, and depending on how we use it, will require a different kind of explainability.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent is advocating for a systematic approach to ensure the responsible use of AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "Personal experience with Medicare Advantage",
+   "quote": "I have to say, when you talk about Medicare Advantage, this is the life I live in, home caring two elderly parents who are chronically ill, and I have personally experienced claim denials and getting on the phone forever to talk about all these cases.",
+   "full_text": "I have to say, when you talk about Medicare Advantage, this is the life I live in, home caring two elderly parents who are chronically ill, and I have personally experienced claim denials and getting on the phone forever to talk about all these cases.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is sharing their personal experience with Medicare Advantage."
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "Importance of disclosure and responsible use",
+   "quote": "Yes, I think disclosure is part of a systematic approach to how to use these powerful tools intelligently and also responsibly. It is really important to recognize AI is a tool, and every tool can be used to our advantage but can also have unintended consequences.",
+   "full_text": "Yes, I think disclosure is part of a systematic approach to how to use these powerful tools intelligently and also responsibly. It is really important to recognize AI is a tool, and every tool can be used to our advantage but can also have unintended consequences.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of disclosure and responsible use of AI."
+    },
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent expresses concerns about the potential unintended consequences of AI behavior."
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Comparison to airplane autopilot",
+   "quote": "Yet we know there is enough regulation and disclosure and responsible use to feel safe to a large degree about this. Right now, this technology is so new, we, multistakeholders, need to get on the table and have a nuanced approach to these critical issues in high risk areas, like disclosure, trustworthiness, privacy preserving, all these issues.",
+   "full_text": "Yet we know there is enough regulation and disclosure and responsible use to feel safe to a large degree about this. Right now, this technology is so new, we, multistakeholders, need to get on the table and have a nuanced approach to these critical issues in high risk areas, like disclosure, trustworthiness, privacy preserving, all these issues.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent compares the regulation of AI to the regulation of airplane autopilot."
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Importance of values in AI development",
+   "quote": "In the procurement process, again, I think we must take a systematic approach to ensure that the kind of investment and support of the AI systems we want to develop and deploy reflect our values. This includes starting from procurement of data, the privacy issues, the bias issues, the trustworthiness issues, all the way to the development of the system itself.",
+   "full_text": "In the procurement process, again, I think we must take a systematic approach to ensure that the kind of investment and support of the AI systems we want to develop and deploy reflect our values. This includes starting from procurement of data, the privacy issues, the bias issues, the trustworthiness issues, all the way to the development of the system itself. All the way to what in machine learning we call inference, which is when you have developed the algorithm, now you are ready to deploy it and do things. Here you, again, have privacy issues, bias issues, and trustworthy issues, and the whole ethical framework.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent emphasizes the importance of values in AI development and deployment."
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the need for a systematic approach to ensure AI development and deployment reflect values, highlighting the importance of guardrails to prevent failures and ensure benefits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "AI as a tool",
+   "quote": "AI is a tool, just like many tools. When we ask about responsible AI, I personally start with a responsible tool use.",
+   "full_text": "AI is a tool, just like many tools. When we ask about responsible AI, I personally start with a responsible tool use. It is not just AI. I do believe there is no one size fits all answer.",
+   "open_codes": [
+    {
+     "code_id": "c005",
+     "label": "Characteristics of machine learning systems",
+     "rationale": "The respondent views AI as a tool, highlighting its ability to create other algorithms, similar to machine learning systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Multi-stakeholder approach",
+   "quote": "I personally believe in multi-stakeholder approach.",
+   "full_text": "I personally believe in multi-stakeholder approach. I think, for example, going back to health care, right, if it comes to drugs and food and all that, FDA should be a huge part of it. So does the consumers and the industry, as well as public sector.",
+   "open_codes": [
+    {
+     "code_id": "c016",
+     "label": "Impact of AI on job loss",
+     "rationale": "The respondent suggests a multi-stakeholder approach to define responsibility, which may involve considering the impact of AI on job loss."
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Concerns about AI development and use",
+   "quote": "We cannot have a situation where we are that far out of date, especially with something like this.",
+   "full_text": "We cannot have a situation where we are that far out of date, especially with something like this. But the other challenge is, when we do security checks for most Federal systems, we are trying to inspect to make sure that there is nothing within the system that is a problem.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage highlights the importance of keeping AI technology up-to-date and secure."
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "AI as a tool",
+   "quote": "AI is a tool, and I totally agree.",
+   "full_text": "AI is a tool, and I totally agree. There has been some dialog even here in this Committee, about putting an AI representative in every agency.",
+   "open_codes": [
+    {
+     "code_id": "c054",
+     "label": "AI as a tool",
+     "rationale": "The passage emphasizes the importance of treating AI as a tool, rather than a standalone entity."
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Verification of AI security",
+   "quote": "We need to have some ways to be able to verify security, verify on the updating, verifying the IP address, and then verifying what is not the IP, but who owns the IP on it, and then verifying the whole process of updating it, using it, and then also what is responsible use of it.",
+   "full_text": "We need to have some ways to be able to verify security, verify on the updating, verifying the IP address, and then verifying what is not the IP, but who owns the IP on it, and then verifying the whole process of updating it, using it, and then also what is responsible use of it.",
+   "open_codes": [
+    {
+     "code_id": "c055",
+     "label": "Verification of AI security",
+     "rationale": "The passage highlights the need for verification to ensure the responsible use of AI technology."
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "AI office in each Federal entity",
+   "quote": "I do not think we should have an AI office in each one of our Federal entities.",
+   "full_text": "I do not think we should have an AI office in each one of our Federal entities. I think we have AI specialists within our technology folks, but not focused on trying to get more of it.",
+   "open_codes": [
+    {
+     "code_id": "c056",
+     "label": "AI office in each Federal entity",
+     "rationale": "The passage highlights the potential drawbacks of having an AI office in each Federal entity."
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "AI's power and importance",
+   "quote": "AI is very powerful and it is a horizontal technology. It is really important that many of us leaders of our society have that knowledge.",
+   "full_text": "I want to respond by saying AI is very powerful and it is a horizontal technology. It is really important that many of us leaders of our society have that knowledge. This is why under the AI Training Act, Stanford HHI is actually committed to creating educational opportunities to our policy leaders and policy members of the policy world, because it is not just one person or one person per agency's responsibility. It is our collective responsibility, and having that basic level knowledge, and also in some cases, specialized knowledge. It is really important to recognize that.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of having knowledge about AI to ensure its responsible use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Senator Carper's introduction",
+   "quote": "Welcome, everybody. We are delighted that you are here. We had this big seminar yesterday, as some of you probably participated in, or at least followed it.",
+   "full_text": "I was asked by the press, the press stakeout after it was over and I was leaving, and they said, well, what do you think? Do you know a lot about AI? I told him earlier this year, when we started getting really focused on this, I said I could barely spell AI. Another reporter said to me, how do you feel? Do you feel like you are coming along on AI now? I said, I quoted the wife of Albert Einstein. She allegedly was asked a long time ago if she understood her husband's theory of relativity. She was very smart woman. She said, I understand the words, but not the sentences. I feel that pretty well sums up my approach released earlier this year on AI. Hope I am coming along a little bit, taking baby steps, but we will eventually get there. I just remind us all that our members tend to have broad and different backgrounds. I got an MBA a long time ago, became a naval flight officer (NFO) in Vietnam War, and many years retired Navy captain. I have been Delaware's Treasurer, Congressman, Governor, and Senator. So, I should be able to spell AI. I am not going to give up and will eventually hopefully be able to make some real contributions through this Committee and others as well. Among the questions I would like to ask you, I have a couple of them, and we will just see how much time we have. Dr. Li.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "Senator Carper is defining AI and its importance, highlighting the need for knowledge about AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "Dr. Li's background",
+   "quote": "New Jersey.",
+   "full_text": "Where was your family from originally?",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "Dr. Li is providing information about his background, highlighting his expertise and experience."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Senator Carper's closing remarks",
+   "quote": "Thank you for your testimony and your thoughtful testimony on the impact of AI.",
+   "full_text": "Dr. Li, let me just begin by thanking, again, all of you for being here and for your efforts to help make us, I like to say guided missiles as opposed to unguided missiles. But thank you for your testimony and your thoughtful testimony on the impact of AI.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Senator Carper is emphasizing the importance of having knowledge about AI and its impact, highlighting the need for responsible use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "AI's potential to improve service delivery",
+   "quote": "AI can help productivity greatly. It can greatly help our Federal Government to become much more efficient in handling claims and all that.",
+   "full_text": "Thank you, Senator, for the question. First of all, this is actually one of the upsides of this technology, is that it can help productivity greatly. I want to continue on the example earlier that, for example, Medicare Advantage Services, right. As a user of that for my elderly parents, it is actually highly inefficient right now to have a conversation talking about claims. You can just imagine, especially with these language model technology, that it actually can greatly help our Federal Government to become much more efficient in handling claims and all that.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Dr. Li emphasizes the importance of responsible framework for AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "AI as a copilot",
+   "quote": "This technology can serve as a companion and working assistant to many aspects of our Federal Government's work.",
+   "full_text": "When I say efficient, I do not mean replacing humans. I mean augmenting humans. This technology can serve as a companion and working assistant to many aspects of our Federal Government's work.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Dr. Li emphasizes the importance of responsible framework for AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "Machine in the loop of human work",
+   "quote": "There are what we can call machine in the loop of human work.",
+   "full_text": "Also, there are what we can call machine in the loop of human work.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Dr. Li emphasizes the importance of responsible framework for AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "AI as a copilot",
+   "quote": "Copilot is actually the fantastic term. Even in software engineering now, we call it co-pilot.",
+   "full_text": "Copilot is actually the fantastic term. Even in software engineering now, we call it co-pilot. This is, absolutely there is opportunity for a co-piloting. Also, there are what we can call machine in the loop of human work.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent mentions the importance of responsible framework for AI adoption"
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "AI as a tool for knowledge work",
+   "quote": "A lot of Federal Government work is knowledge based. Again, whether we are processing documents, making decisions, and AI right now, especially in the recent breakthroughs, a lot of these language based models are extremely helpful in knowledge work, as a copilot.",
+   "full_text": "A lot of Federal Government work is knowledge based. Again, whether we are processing documents, making decisions, and AI right now, especially in the recent breakthroughs, a lot of these language based models are extremely helpful in knowledge work, as a copilot.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent highlights the potential impact of AI on knowledge work"
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "Empowering Federal workers",
+   "quote": "Like my colleague here just said, if we empower our Federal workers, if we continue to educate them, train them, their productivity at work can be really elevated, and that is what I personally hope to see.",
+   "full_text": "Like my colleague here just said, if we empower our Federal workers, if we continue to educate them, train them, their productivity at work can be really elevated, and that is what I personally hope to see.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent shares their personal hope for the impact of AI on Federal workers"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_015911",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 10,
+   "n_ok": 10
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 8,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 5,
+    "created": 1,
+    "chunk": 2
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 3
+   },
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 4
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 1,
+    "created": 3,
+    "chunk": 6
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 8
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 9
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg53707 — Fei-Fei Li, Sequoia Professor, Computer Science Department And Co-Director\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg53707  |  Governing Ai Through Acquisition And Procurement  |  Senate, Committee On Homeland Security And Governmental Affairs  |  2023-09-14  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chairman Peters) It is the practice of the Homeland Security and Governmental Affairs Committee (HSGAC) to swear in witnesses. If each of you would please rise and raise your right hand. Do you swear that the testimony that you will give before this Committee will be the truth, the whole truth, and nothing but the truth, so help you, God?\n[Respondent] I do.\n[Interviewer] (Chairman Peters) Dr. Li is the Sequoia Professor of Computer Science at Stanford University, and Co- Director of the Stanford Institute for Human Centered Artificial Intelligence (HAI). Before that, Dr. Li spent five years as the Director of Stanford's AI Lab. During that time, she was also Vice President at Google and the Chief Scientist of AI-ML for Google Cloud.\nDr. Li is the inventor of ImageNet and the ImageNet Challenge, a large scale data set effort that contributed to significant advances in deep learning and computer vision. Dr. Li, thank you for being here today. We look forward to your opening comments. TESTIMONY OF FEI-FEI LI, PH.D., SEQUOIA PROFESSOR, COMPUTER\n[Respondent] Thank you. Thank you, Chair Peters, Ranking Member Paul, Members of the Committee. Thank you for the privilege of appearing before this prestigious body. It is truly an honor.\nThe prepared statement of Dr. Li appears in the Appendix on page 53.\nI have spent my life working in the field of artificial intelligence, over 20 plus years, studying, developing, and understanding the technology that has entered the public consciousness due to recent breakthroughs. There is no doubt that we have arrived at an inflection point in AI, largely powered by generative AI, including large language models (LLM) and my own field of computer vision, where we essentially teach computers to see.\nFor example, a notable application is health care, where AI is augmenting the capabilities of caretakers and medical professionals by detecting anomalies in medical imagery such as X-rays or MRI scans, thereby aiding early diagnosis and treatment. Most importantly, AI presents many opportunities to the U.S. Government.\nOne area is to streamline the efficiency of government. Many Federal agencies are already experimenting with AI powered tools. For example, HHS has initiated a pilot program that employs AI to enhance the efficiency of fraud detection within the Centers for Medicare and Medicaid Services (CMS).\nSecond, AI in health care reduces the burden on public health care resources, including Medicare and Medicaid. Medical AI tools can decrease the frequency of unneeded emergency medical interventions and hospital readmissions, which are significant cost drivers in health care expenditures.\nHowever, while AI, like most technologies, promises to solve many problems for the common good, it can also be misused to cause harm and carry unintended consequences. Let me just give you two examples of when the harms of AI can affect how the government approaches it.\nFirst, bias in AI is well-documented. For example, in credit risk scoring, research shows that predictive tools used to approve or reject loans are less accurate for low income minority groups in the United States due to the lack of data in their credit histories. To ensure that AI applications deliver reliable results for all Americans, the availability of high quality representative datasets is crucial.\nSecond, in an area of heightened public concern over data collection and misuse, we must integrate strong privacy and security protocols into these applications from the beginning. To build Privacy-preserving technology, we must engage diverse stakeholders in health care. This includes AI developers, public sector, health care professionals, patients, and more.\nThis is why I founded Stanford Institute for Human Centered Artificial Intelligence, where we study AI and its impact not as a field exclusive to computer science, but instead as a multidisciplinary field that includes the social sciences, engineering, law, medicine, humanities, and more.\nThe Federal Government should adopt a similar approach to properly understood the future of AI. It falls upon the U.S. Government to spearhead the ethical procurement and deployment of these systems, setting norms for AI development and ultimately shaping the field of responsible AI.\nI applaud this Committee and the work that has been done thus far on AI, including the AI Training Act and the AI Lead Act, which create powerful tools for Federal Government to set such norms. In the United States, government spending on AI related contracts--as the U.S. Government's funding has surged in AI related contracts, it is more crucial than ever to closely examine these vendors to ensure their goals align with those of the Federal Government. One key component is evaluation, especially in key areas like health care, education, agriculture, finance, and more.\nHaving created one of the most consequential evaluation datasets for AI models, ImageNet, I firmly believe that evaluation should consider every factor in a holistic way, from accuracy, to fairness, to the reliability of models performing under real world conditions. Second, we must build-in transparency measures.\nVendors should disclose key information about their systems, including how they collect and annotate datasets, what potential risks their systems pose, and how they mitigate those risks. But the procurement is just one piece of the puzzle.\nFor the United States to maintain its leadership in AI, the Federal Government must make the needed critical public investments in AI. Due to the vast amount of compute and data required to train these systems, only a select few industry players can shape the future of AI, leaving an imbalance in the innovation ecosystem that lacks the diverse voices of public sector and government labs.\nThe lack of public sector investment in AI hampers not only in thoughtful regulation, but also proper Federal procurement. Without the ability to train AI talents, the Federal Government will not have the necessary human capital to create meaningful regulation, ensure ethical AI procurement, and be the true AI leader it has the potential to be.\nThis is why I am unequivocally a strong supporter of the Create AI Act, a strong bipartisan legislation introduced this summer in both chambers. The Create AI Act will establish a national AI research resource that provides the needed resources to allow public sector researchers to innovate and train the next generation of AI leaders.\nIn June, I personally shared with President Biden how I believe the United States is not prepared for this imminent AI moment. What we need right now is a coordinated moonshot effort for the Nation to ensure America's leadership in AI for the good of humanity.\nThis task will be no small feat, but with meticulous coordination, significant investment in scientific AI research, and robust collaboration across government, public sector, and industry, we can rise to meet this challenge and ensure America's leadership in AI is both impactful and enduring.\nThank you to the Chairman, Ranking Member, and all the Members of the Committee for allowing me to testify today.\n[Interviewer] (Chairman Peters) All right. Thank you. Dr. Li, as legislators work to establish key values for the American use of AI, the idea of explainability has received substantial attention. However, building responsibility and trust into the use of AI seems like it is going to require more than just an understanding of the math behind a model.\nCould you offer some specific suggestions as to how we ought to prioritize when evaluating AI systems for potential use by Federal agencies?\n[Respondent] Yes, thank you for the question. Actually, explainability is a very much used word in the talks of AI. If we think about it, it is actually a very nuanced word. I will give you an example that is not AI. For example, you talk about math.\nWhen a bottle drops, we can actually use a Newtonian mathematical equation to explain why the bottom drops. But when it comes to the usage of Tylenol, other than some doctors and biomedical researchers, even as a consumer, I do not know how to explain how Tylenol works, yet there is an explainable process of how the Federal Government has regulated it so that I can trust it.\nOr another example of using Google Map to go from point A to point B. There, the explainability is not in mathematical equations nor in regulatory framework. It is more about the options it has provided to me, the fastest route, or the avoid the tolls, and so on. I am using these three examples to show you explainability is a very nuanced term and depend on the use cases. It depends on the system approach.\nWe have to think about it carefully. Again, I advocate for a systematic approach in thinking about explainability, but do put the human values, as well as our society's value at the foreground of this, and depending on how we use it, will require a different kind of explainability.\n[Interviewer] (Senator Blumenthal) Thank you. Dr. Li.\n[Respondent] Thank you, Senator. I have to say, when you talk about Medicare Advantage, this is the life I live in, home caring two elderly parents who are chronically ill, and I have personally experienced claim denials and getting on the phone forever to talk about all these cases.\nYes, I think disclosure is part of a systematic approach to how to use these powerful tools intelligently and also responsibly. It is really important to recognize AI is a tool, and every tool can be used to our advantage but can also have unintended consequences. For example, we all take airplane rides, and we know there is autopilot in the airplane.\nYet we know there is enough regulation and disclosure and responsible use to feel safe to a large degree about this. Right now, this technology is so new, we, multistakeholders, need to get on the table and have a nuanced approach to these critical issues in high risk areas, like disclosure, trustworthiness, privacy preserving, all these issues.\nYes, thank you for your effort.\n[Interviewer] (Senator Hassan) Thank you, Senator Paul. I am now going to recognize myself for the next round of questions. I am really glad we are having this hearing. I am really grateful to all of you for being here and being a part of it.\nI want to start with a question to you, Dr. Li. I am Chair of the Subcommittee on Emerging Threats and Spending Oversight (ETSO), and I am concerned about potential public safety and national security ramifications of AI. Dr. Li, you have raised concerns about AI behaving in unintended or unpredictable ways that could be detrimental to Americans.\nWhat are the key considerations for Federal acquisition and procurement policy to ensure the safety of AI?\n[Respondent] Thank you, Senator. I have been known to say there is no independent machine values. Machine values are human values. Especially when it comes to U.S. Government, I think we really need to care about, as Senator Paul said, our Constitutional values, our Bill of Rights, and all that.\nIn the procurement process, again, I think we must take a systematic approach to ensure that the kind of investment and support of the AI systems we want to develop and deploy reflect our values. This includes starting from procurement of data, the privacy issues, the bias issues, the trustworthiness issues, all the way to the development of the system itself.\nAll the way to what in machine learning we call inference, which is when you have developed the algorithm, now you are ready to deploy it and do things. Here you, again, have privacy issues, bias issues, and trustworthy issues, and the whole ethical framework.\nAgain and again, I want to say that this is a powerful tool, and it has good and bad sides. We need to take a systematic approach, and every step of the way we should apply responsible and ethical values to this----\n[Interviewer] (Senator Hassan) Acquisition--to the standards that we use in acquiring this technology.\n[Respondent] Yes.\n[Interviewer] (Senator Carper) If I could interrupt for just a moment. I am going to Chair this Committee for just a little while. He is asking a great question. Do not be afraid to answer--and even if you are going to change your answer later on, but give it a shot, if you would, please. Go back to Senator Lankford.\n[Respondent] Can I answer that?\n[Interviewer] (Senator Lankford) Yes, ma'am.\n[Respondent] First of all, great question. AI is a tool, just like many tools. When we ask about responsible AI, I personally start with a responsible tool use. It is not just AI. I do believe there is no one size fits all answer.\nA responsible drug is different from a piece of financial service product because every use case when rubber meets the road is different, and when we think about these, we start with the value.\nThere are very high level, Constitutional values America represents, and within that framework, it is important to look at the different use cases and define responsibility, responsible, and trustworthiness within those framework.\n[Interviewer] (Senator Lankford) Who would you suggest actually sets that framework for what is responsible AI in each one of those categories?\n[Respondent] I personally believe in multi-stakeholder approach. I think, for example, going back to health care, right, if it comes to drugs and food and all that, FDA should be a huge part of it. So does the consumers and the industry, as well as public sector.\n[Interviewer] (Senator Lankford) Yes, we have a weapon system that was delivered about five years ago that was delivered with Microsoft 7 on board five years ago, and the entire system was built on Microsoft's 7, and all the software that connects to it is all built on Microsoft 7, which is not even updated anymore.\nWe cannot have a situation where we are that far out of date, especially with something like this. But the other challenge is, when we do security checks for most Federal systems, we are trying to inspect to make sure that there is nothing within the system that is a problem.\nThat is uniquely challenging with AI, because we have to get into how has it been trained, what is the decisionmaking and the process, how do we verify that decisionmaking process when we are verifying it for security, for biases, for all those things?\nIf there are ideas that are out there that you have seen for that type of verification, that would be exceptionally important to us because we are not going to buy an off the shelf item for AI and just assume it has good ethics that is built into it, or it has good security built into it.\nOne of the thing that I want to be able to mention, then I want to pass this on to other colleagues who want to be able to ask questions. You had mentioned before about AI is a tool, and I totally agree. There has been some dialog even here in this Committee, about putting an AI representative in every agency.\nI have real concerns on that because if you have an AI representative in each agency, their job is to increase AI usage. That would be like having a screwdriver representative in each agency to find a way to increase the screwdriver uses. It is a tool.\nWe need to treat it as a tool. I have concerns when there is a focus on, it is the latest thing we talk about, so let us proliferate that in the Federal Government. If it is a tool that works, fine, but we need to have some ways to be able to verify security, verify on the updating, verifying the IP address, and then verifying what is not the IP, but who owns the IP on it, and then verifying the whole process of updating it, using it, and then also what is responsible use of it.\nBut I just have to be able to tell this body, I do not think we should have an AI office in each one of our Federal entities. I think we have AI specialists within our technology folks, but not focused on trying to get more of it. Did you want to make a quick comment on that, Ms. Li?\n[Respondent] I want to respond by saying AI is very powerful and it is a horizontal technology. It is really important that many of us leaders of our society have that knowledge.\nThis is why under the AI Training Act, Stanford HHI is actually committed to creating educational opportunities to our policy leaders and policy members of the policy world, because it is not just one person or one person per agency's responsibility.\nIt is our collective responsibility, and having that basic level knowledge, and also in some cases, specialized knowledge. It is really important to recognize that.\n[Interviewer] (Senator Carper) God, it was fun doing that again. I used to be him. Now I am me.\nRight. I got to Chair a Committee on Environment Public Works (EPW), which is pretty good gig as well.\nAll right. My name is Senator Carper. I have been called worse. Welcome, everybody. We are delighted that you are here. We had this big seminar yesterday, as some of you probably participated in, or at least followed it.\nI was asked by the press, the press stakeout after it was over and I was leaving, and they said, well, what do you think? Do you know a lot about AI? I told him earlier this year, when we started getting really focused on this, I said I could barely spell AI.\nAnother reporter said to me, how do you feel? Do you feel like you are coming along on AI now? I said, I quoted the wife of Albert Einstein. She allegedly was asked a long time ago if she understood her husband's theory of relativity. She was very smart woman.\nShe said, I understand the words, but not the sentences. I feel that pretty well sums up my approach released earlier this year on AI. Hope I am coming along a little bit, taking baby steps, but we will eventually get there. I just remind us all that our members tend to have broad and different backgrounds. I got an MBA a long time ago, became a naval flight officer (NFO) in Vietnam War, and many years retired Navy captain.\nI have been Delaware's Treasurer, Congressman, Governor, and Senator. So, I should be able to spell AI. I am not going to give up and will eventually hopefully be able to make some real contributions through this Committee and others as well. Among the questions I would like to ask you, I have a couple of them, and we will just see how much time we have. Dr. Li.\nWhere was your family from originally?\n[Respondent] New Jersey.\n[Interviewer] (Senator Carper) New Jersey. West Virginia, here, so.\n[Respondent] Oh, great. I was a small town. Parsippany, New Jersey.\n[Interviewer] (Senator Carper) All right, good. Very good. Dr. Li, let me just begin by thanking, again, all of you for being here and for your efforts to help make us, I like to say guided missiles as opposed to unguided missiles. But thank you for your testimony and your thoughtful testimony on the impact of AI.\nAs we heard this morning, AI has a potential to transform many aspects, not all aspects, but many aspects of our lives, including the speed and effectiveness of government services. We are servants. Our job is to serve the people of this country.\nThe question here is for me is--how can AI help us to be better servants and to serve the people in this country in a wide variety of ways? Along with helping us with the spread of information, helping us with respect to economic competitiveness as a Nation, and help us with respect to other changing worker responsibilities.\nI am curious about how AI will be incorporated throughout the Federal Government, specifically with regards to efforts to streamline service delivery and waste reduction. I do not like to waste my money. I do not like the waste of the taxpayer money. I think that is probably true for all of us who serve here.\nDr. Li, my question. What are some of the ways that you can see artificial intelligence improving the delivery of services to our constituents? That is pretty broad range because we want to provide services in a broad range of ways, but just a couple of examples, Dr. Li, of how AI can help us improve delivery of services to our constituents.\n[Respondent] Thank you, Senator, for the question. First of all, this is actually one of the upsides of this technology, is that it can help productivity greatly. I want to continue on the example earlier that, for example, Medicare Advantage Services, right.\nAs a user of that for my elderly parents, it is actually highly inefficient right now to have a conversation talking about claims. You can just imagine, especially with these language model technology, that it actually can greatly help our Federal Government to become much more efficient in handling claims and all that.\nWhen I say efficient, I do not mean replacing humans. I mean augmenting humans. This technology can serve as a companion and working assistant to many aspects of our Federal Government's work.\n[Interviewer] (Senator Carper) If I could use an aviation term, it is more as a copilot.\n[Respondent] Copilot is actually the fantastic term. Even in software engineering now, we call it co-pilot. This is, absolutely there is opportunity for a co-piloting. Also, there are what we can call machine in the loop of human work.\nFor example, there are a vast amount of documents and knowledge we have to sort through. Sometimes AI can become that kind of copilot to help to preliminarily sorting that. These are just simple examples, as long as we adhere to our responsible framework.\n[Interviewer] (Senator Carper) Doctor, thanks for that. Can you also discuss for us how the adoption of artificial intelligence tools will impact the Federal workforce on a daily basis, and how these tools will impact how Federal agencies plan for the future.\n[Respondent] A lot of Federal Government work is knowledge based. Again, whether we are processing documents, making decisions, and AI right now, especially in the recent breakthroughs, a lot of these language based models are extremely helpful in knowledge work, as a copilot.\nIn Stanford, we have colleagues working with the Internal Revenue Service (IRS), looking at, for example, tax and looking at fraud detections. I can imagine EPA looking at environmental issues, understanding different aspect of environmental problems. We can use this for example, firefighting and climate help.\nThere are many ways that AI can help in Federal work. Like my colleague here just said, if we empower our Federal workers, if we continue to educate them, train them, their productivity at work can be really elevated, and that is what I personally hope to see. That is part of American leadership.",
+ "_bench": {
+  "seconds": 210.7,
+  "chars": 22903
+ }
+}

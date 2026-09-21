@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+title: "TACIT: theory-anchored qualitative coding with researcher-held interpretive authority"
+message: "If you use this software, please cite it as below."
+type: software
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/NYCU-FUN-TECH-LAB/TACIT"
+authors:
+  - family-names: Chang
+    given-names: Hung-Chi
+    affiliation: "Institute of Technology Management, National Yang Ming Chiao Tung University"
+    email: "chang.hung-chi.mg11@nycu.edu.tw"
+abstract: >-
+  A Streamlit application for theory-driven qualitative coding of interview
+  transcripts. Coding frameworks are pluggable and can be constructed from
+  literature retrieved via OpenAlex, with a guard that rejects citations
+  absent from the retrieved corpus and per-dimension researcher approval.
+  Model coding is treated as a draft: the model's original judgement is
+  retained alongside every researcher revision, so the correction rate is
+  reportable. Inter-rater reliability is computed over a sampling frame that
+  contains unmarked units, so model recall is estimable, and statistics whose
+  assumptions fail are withheld rather than printed. Language models may be
+  served locally through Ollama or any OpenAI-compatible endpoint, so
+  transcripts need not leave the researcher's machine.
+keywords:
+  - qualitative research
+  - computer-assisted qualitative data analysis
+  - deductive coding
+  - thematic analysis
+  - inter-rater reliability
+  - large language models
+  - local inference
+  - research ethics
+  - reproducibility
+  - responsible innovation
+references:
+  - type: article
+    authors:
+      - family-names: Stilgoe
+        given-names: Jack
+      - family-names: Owen
+        given-names: Richard
+      - family-names: Macnaghten
+        given-names: Phil
+    title: "Developing a framework for responsible innovation"
+    journal: "Research Policy"
+    volume: 42
+    issue: 9
+    start: 1568
+    end: 1580
+    year: 2013
+    doi: "10.1016/j.respol.2013.05.008"
+    notes: "The coding framework that ships as the built-in worked example."

@@ -1,0 +1,70 @@
+{
+ "respondent": "Chief information officer, city council",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "over_20y",
+  "descriptor_basis": "the interview transcript does not state it"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Standard governance route",
+   "quote": "Through the standard route. It's on the corporate risk register, it has a senior responsible owner, it reports into the digital board quarterly.",
+   "full_text": "Through the standard route. It's on the corporate risk register, it has a senior responsible owner, it reports into the digital board quarterly. That's the same governance any major system gets and I'd resist the idea that it needs something special. Once you start creating bespoke oversight for anything with a model in it, you end up with forty committees and no capacity.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent describes the standard governance route and its capacity to change the innovation trajectory in response to external signals."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Relying on vendor's assurance",
+   "quote": "What we do instead is rely on the vendor's assurance documentation and on the acceptance testing.",
+   "full_text": "What we do instead is rely on the vendor's assurance documentation and on the acceptance testing.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent describes relying on the vendor's assurance documentation and acceptance testing, which may indicate a lack of responsiveness to external signals."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Freedom of information requests",
+   "quote": "We've had — I want to say six or seven freedom of information requests.",
+   "full_text": "We've had — I want to say six or seven freedom of information requests. Most were about camera locations and we answered those. Two asked for the algorithm and we refused those on commercial confidentiality grounds, which is the vendor's position and legally sound.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "The respondent describes the public's request for information about the system, indicating engagement with the innovation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "General complaints process",
+   "quote": "There's the general complaints process.",
+   "full_text": "There's the general complaints process. It routes to transport, not to us. Whether transport can then change a parameter depends on the change-control terms, which — I'd have to look. I don't know the answer to that off the top of my head, which I appreciate is not a great answer.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent describes the general complaints process, which may indicate a capacity to change the innovation trajectory in response to external signals."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits a strong sense of responsiveness, particularly in the standard governance route and the reliance on vendor's assurance documentation. The engagement dimension is also evident in the public's request for information about the system. However, the respondent's lack of knowledge about the change-control terms may indicate a limitation in their responsiveness. The reflexive dimension is not explicitly evident in this excerpt, but the respondent's recognition of the need for transparency terms in procurement may suggest a degree of self-reflection.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G02 — Chief information officer, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does a system like this get governed once it's running?\n[Respondent] Through the standard route. It's on the corporate risk register, it has a senior responsible owner, it reports into the digital board quarterly. That's the same governance any major system gets and I'd resist the idea that it needs something special. Once you start creating bespoke oversight for anything with a model in it, you end up with forty committees and no capacity.\n[Interviewer] Does the digital board have the expertise to interrogate a model?\n[Respondent] It has me. And a non-executive with a technology background. Is that enough to interrogate a detection model in detail? No, probably not. What we do instead is rely on the vendor's assurance documentation and on the acceptance testing.\n[Interviewer] Has the public asked for information about the system?\n[Respondent] We've had — I want to say six or seven freedom of information requests. Most were about camera locations and we answered those. Two asked for the algorithm and we refused those on commercial confidentiality grounds, which is the vendor's position and legally sound.\n[Interviewer] Did the council consider negotiating that at procurement?\n[Respondent] I don't believe transparency terms were in the specification. That's a fair criticism and I'd expect it to be in the next one. The honest position is that in 2022 we weren't thinking about it, and by the time you're arguing about disclosure you've already signed.\n[Interviewer] Is there a route for a resident to challenge how a junction behaves?\n[Respondent] There's the general complaints process. It routes to transport, not to us. Whether transport can then change a parameter depends on the change-control terms, which — I'd have to look. I don't know the answer to that off the top of my head, which I appreciate is not a great answer."
+}

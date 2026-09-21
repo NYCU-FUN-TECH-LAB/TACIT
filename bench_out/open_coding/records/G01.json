@@ -1,0 +1,70 @@
+{
+ "respondent": "G01",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "unspecified",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Pressure to do the project",
+   "quote": "Congestion numbers and a manifesto commitment, in that order of how it's talked about and the reverse order of how it actually worked. The commitment came first. Then we went looking for the intervention that fitted it.",
+   "full_text": "Congestion numbers and a manifesto commitment, in that order of how it's talked about and the reverse order of how it actually worked. The commitment came first. Then we went looking for the intervention that fitted it. I don't think that's unusual and I don't think it's illegitimate — that's what elections are for — but it does mean the question 'is this the right thing to do' was settled before my department was involved.",
+   "open_codes": [
+    {
+     "code_id": "c026",
+     "label": "[8x] Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The commitment came first, and the intervention was chosen later, which may have unintended consequences."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Approach to consultation",
+   "quote": "Badly, and I'll explain why rather than defend it. Ideally you run several sessions for different groups — disability organisations one evening, ward councillors another, commuters another.",
+   "full_text": "Badly, and I'll explain why rather than defend it. Ideally you run several sessions for different groups — disability organisations one evening, ward councillors another, commuters another. Each one takes about two weeks of preparation. We ran one combined session because I have four staff and two of them were on the tram project. It's a resourcing answer, not a values answer, but the effect on residents is identical either way.",
+   "open_codes": [
+    {
+     "code_id": "c016",
+     "label": "[4x] Community engagement — The efforts to inform and involve the community in the project",
+     "rationale": "The respondent describes the efforts to inform and involve the community in the project, but notes that it was done badly."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Lessons learned",
+   "quote": "Written down who has to be told what, and by when, before anything was switched on.",
+   "full_text": "Everything that went wrong here went wrong in the gaps between organisations, and none of those gaps were technical. Written down who has to be told what, and by when, before anything was switched on.",
+   "open_codes": [
+    {
+     "code_id": "c023",
+     "label": "[5x] Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+     "rationale": "The respondent reflects on what they would do differently in hindsight, specifically mentioning the importance of clear communication and planning."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260914_193235",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 1,
+   "n_ok": 1
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 2,
+    "created": 1,
+    "chunk": 0
+   }
+  ]
+ },
+ "transcript": "Interview transcript G01 — Section chief, city transport department\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Where did the pressure to do this project come from?\n[Respondent] Congestion numbers and a manifesto commitment, in that order of how it's talked about and the reverse order of how it actually worked. The commitment came first. Then we went looking for the intervention that fitted it. I don't think that's unusual and I don't think it's illegitimate — that's what elections are for — but it does mean the question 'is this the right thing to do' was settled before my department was involved.\n[Interviewer] How did you approach consultation?\n[Respondent] Badly, and I'll explain why rather than defend it. Ideally you run several sessions for different groups — disability organisations one evening, ward councillors another, commuters another. Each one takes about two weeks of preparation. We ran one combined session because I have four staff and two of them were on the tram project. It's a resourcing answer, not a values answer, but the effect on residents is identical either way.\n[Interviewer] What was raised at that session?\n[Respondent] Crossing times, mostly, and one long argument about cameras that I handled poorly. Somebody asked whether the footage could be requested by police and I said I'd check. I did check. The answer is yes, under a specific statutory route, and I never went back and told the room. Nobody chased me. That's the bit I'm not comfortable with — the absence of anyone chasing me is not the same as it being fine.\n[Interviewer] Has anything about the system changed since it went live?\n[Respondent] Yes, three things. The pedestrian minimum went up at five junctions. We added an audible confirmation at two crossings after the sight-loss charity asked for it — that one took eleven months and it should have taken three. And we publish a monthly summary now, which nobody reads, but it exists and when a councillor asks a question I can point at it.\n[Interviewer] What made the eleven months?\n[Respondent] Two of it was us not knowing who owned the decision. Three was the vendor's change-control process. The rest was that it needed a small budget line and small budget lines are harder than large ones because nobody has a process for them. I've since written a standing note about who owns crossing-parameter changes, which removes the first two months next time.\n[Interviewer] What do you wish you had done at the start?\n[Respondent] Written down who has to be told what, and by when, before anything was switched on. Everything that went wrong here went wrong in the gaps between organisations, and none of those gaps were technical."
+}

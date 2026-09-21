@@ -1,0 +1,111 @@
+{
+ "respondent": "Data protection officer, city council",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview header identifies respondent as Data protection officer, city council."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Limitations of template-based risk assessments for real-time AI decision-making",
+   "quote": "Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.",
+   "full_text": "Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms. Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Displays epistemic humility and self-scrutiny by recognizing limitations of past impact assessment templates."
+    },
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Foresight was reduced to standard compliance templates, overlooking real-time automated decision-making implications upstream."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Absence of institutional triggers to review risk assessments post-sign-off",
+   "quote": "There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.",
+   "full_text": "No. It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Lacks institutionalized triggers or review mechanisms to update assessments or change direction over time."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Candidly acknowledges personal inaction and the discrepancy between stated policy and actual practice."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Unquestioned privacy assumptions regarding long-term aggregate derived data",
+   "quote": "They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.",
+   "full_text": "Seventy-two hours for the raw video, indefinite for the derived counts. The derived counts are the interesting part and nobody asks about them because they're described as anonymous. They are anonymous. They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Questions standard institutional assumptions regarding data anonymity and privacy protection limits."
+    },
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Explores long-term surveillance implications of indefinite aggregate data retention across city junctions."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Self-criticism regarding overly cautious internal risk communication",
+   "quote": "I think the honest position is that I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.",
+   "full_text": "In a footnote. I know how that sounds after what I just said about the risk register. I think the honest position is that I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Shows high second-order self-scrutiny regarding personal communication strategy and over-caution."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Inaccessible pathways for residents to exercise data rights",
+   "quote": "So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+   "full_text": "Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Public access channels are nominally available but functionally closed and unexercisable for residents."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "System arrangements prevent institutional adaptation to successfully process and fulfill public requests."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent exhibits exceptional positive Reflexivity paired with structural negative Responsiveness and Public Engagement. Throughout the transcript, the Data Protection Officer displays deep second-order self-scrutiny, explicitly questioning institutional assumptions around 'anonymous' data, recognizing the flaws in past template-driven risk assessments, and candidly admitting personal communication biases and inaction regarding review triggers. However, this high level of internal reflexivity contrasts sharply with institutional deficits across other dimensions. Anticipation is initially restricted to tick-box compliance templates, leaving real-time automated decision-making and long-term data tracking unexamined upstream. Responsiveness is severely constrained: the impact assessment functions as a static document lacking operational review triggers, and institutional mechanisms fail to adapt to fulfill data subject rights. Similarly, Public Engagement is marked by negative polarity, as formal channels like Subject Access Requests exist only nominally while remaining practically unexercisable for residents. The multi-coded segments reveal a poignant dynamic: an individual officer possesses acute epistemic humility and critical awareness, yet remains embedded within rigid bureaucratic administrative structures that impede dynamic adaptation and meaningful public recourse.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G06 — Data protection officer, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Was a data protection impact assessment done?\n[Respondent] Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms. Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.\n[Interviewer] Has the assessment been revisited?\n[Respondent] No. It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.\n[Interviewer] How is retention handled in practice?\n[Respondent] Seventy-two hours for the raw video, indefinite for the derived counts. The derived counts are the interesting part and nobody asks about them because they're described as anonymous. They are anonymous. They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.\n[Interviewer] Have you raised that?\n[Respondent] In a footnote. I know how that sounds after what I just said about the risk register. I think the honest position is that I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.\n[Interviewer] Do residents have a route to see what data concerns them?\n[Respondent] Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 30.9,
+  "seconds_source": "estimated: gap between saved files",
+  "absence": null,
+  "note": "written by bench_models.py before resume support; completeness verified (no chunk_errors) and marker added afterwards"
+ }
+}

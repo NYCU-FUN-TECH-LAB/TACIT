@@ -1,0 +1,70 @@
+{
+ "respondent": "Board member, neighbourhood residents' association",
+ "descriptors": {
+  "institution_type": "other",
+  "role_level": "other",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": "self-introduction"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Initial curiosity and attendance",
+   "quote": "Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity.",
+   "full_text": "We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent mentions the group chat and the curiosity-driven attendance, showing an openness to exploring the topic."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Professional session",
+   "quote": "Professional. Slides, a model of a junction, sandwiches. Everyone was polite.",
+   "full_text": "Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent describes the session as professional, indicating a willingness to engage and learn."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Limited participation and lack of follow-up",
+   "quote": "I couldn't show her anything.",
+   "full_text": "I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent's inability to provide a satisfactory answer to the neighbour's question and the lack of follow-up from the council indicate a lack of responsiveness."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Mixed feelings about future engagement",
+   "quote": "Yes. Lower expectations, but yes.",
+   "full_text": "Would you go to the next one? Yes. Lower expectations, but yes. The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "The respondent expresses willingness to attend the next session, albeit with lower expectations, indicating a willingness to engage."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent's association got involved in the project through curiosity-driven attendance. The session was professional, but the respondent's ability to pass on information was limited. The respondent is willing to attend the next session, but with lower expectations. The association's engagement is mixed, with a willingness to participate but also a recognition of the limitations of their involvement.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N02 — Board member, neighbourhood residents' association\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How did your association get involved?\n[Respondent] We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.\n[Interviewer] What was the session like?\n[Respondent] Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.\n[Interviewer] Did you raise anything?\n[Respondent] I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.\n[Interviewer] Has anyone from the council been back since?\n[Respondent] No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.\n[Interviewer] Would you go to the next one?\n[Respondent] Yes. Lower expectations, but yes. The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask."
+}

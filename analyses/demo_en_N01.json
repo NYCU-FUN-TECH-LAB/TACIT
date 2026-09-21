@@ -1,0 +1,122 @@
+{
+  "respondent": "N01 (General secretary, disability rights organisation)",
+  "descriptors": {
+    "institution_type": "nonprofit",
+    "role_level": "senior_management",
+    "sector": "other",
+    "experience": "over_20y",
+    "descriptor_basis": "Interview transcript: N01 (General secretary, disability rights organisation)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "Organisation not invited to the consultation",
+      "quote": "We then found out there had been a consultation event eight months earlier that we hadn't been invited to.",
+      "full_text": "From a member, not from the council. She rang the office because the crossing she uses every day to get to dialysis had changed and she couldn't work out the pattern. That was three weeks after switch-on at her junction. We then found out there had been a consultation event eight months earlier that we hadn't been invited to.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "The most directly affected constituency was absent from the engagement because it was never contacted."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "Public advertisement treated as equivalent to invitation",
+      "quote": "Advertising publicly and inviting are different acts.",
+      "full_text": "That it was advertised publicly. Which it was — in the council newsletter and on the website. I've stopped being angry about this particular thing because I've heard it forty times in twenty-six years. Advertising publicly and inviting are different acts. If you want disabled people in the room you write to the six organisations in this city that have disabled members, and there are six, and we all know each other, and it takes an afternoon.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "Names the specific mechanism by which formally open engagement systematically excludes."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "Specifies exactly what adequate outreach would cost",
+      "quote": "you write to the six organisations in this city that have disabled members, and there are six, and we all know each other, and it takes an afternoon",
+      "full_text": "That it was advertised publicly. Which it was — in the council newsletter and on the website. I've stopped being angry about this particular thing because I've heard it forty times in twenty-six years. Advertising publicly and inviting are different acts. If you want disabled people in the room you write to the six organisations in this city that have disabled members, and there are six, and we all know each other, and it takes an afternoon.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "P",
+          "rationale": "Constructive specification of a workable alternative, making the omission harder to justify as impractical."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "Structured evidence gathered from members",
+      "quote": "we had thirty-one members describing specific junctions within a month, with times and dates",
+      "full_text": "What we always do. We collected accounts — we had thirty-one members describing specific junctions within a month, with times and dates, because our members are extremely used to documenting things nobody believes. We put it into a submission with photographs and a map. We asked for a meeting.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "P",
+          "rationale": "Systematic, documented engagement work producing evidence the project's own monitoring did not have."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "Partial response to a minor item after long delay",
+      "quote": "two crossings got audible confirmation, which was one of nine things we asked for and not one of the top three",
+      "full_text": "Yes, after four months. It was a good meeting, I want to say that. Two officers, both engaged, both took notes. And then nothing happened for seven months, and then two crossings got audible confirmation, which was one of nine things we asked for and not one of the top three.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "Adaptation occurred, but on the least demanding item, which leaves the substantive requests unaddressed."
+        },
+        {
+          "dimension": "responsiveness",
+          "polarity": "P",
+          "rationale": "A documented, if minimal, change traceable to the organisation's engagement. Deliberately coded alongside the negative reading of the same quote so the review interface has a genuine disagreement to resolve."
+        }
+      ]
+    },
+    {
+      "segment_id": "S006",
+      "title": "Requests framed as specific and actionable",
+      "quote": "A published statement of how the system treats slower pedestrians. And a named person we can contact who has authority to change a junction. Nothing on that list is technically hard. The third one costs nothing at all.",
+      "full_text": "Longer minimum crossing intervals as a floor the model cannot go below. A published statement of how the system treats slower pedestrians. And a named person we can contact who has authority to change a junction. Nothing on that list is technically hard. The third one costs nothing at all.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "P",
+          "rationale": "Engagement expressed as concrete asks rather than general objection, removing ambiguity about what response would count."
+        },
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "The failure to act cannot be attributed to resource constraint in at least one instance."
+        }
+      ]
+    },
+    {
+      "segment_id": "S007",
+      "title": "Seeks involvement upstream of consultation",
+      "quote": "We now ask to be on the distribution list before there is a project. Not for consultations — for the list of things being considered.",
+      "full_text": "We now ask to be on the distribution list before there is a project. Not for consultations — for the list of things being considered. Consultation is too late by definition. I've said that in every submission I've written for a decade and I'll keep saying it until somebody puts it in a procedure.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Anticipatory strategy aimed at the point where influence is still possible."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "The most affected constituency, and the one that learned of the system from a member rather than the council. The account turns on a distinction the respondent has made for twenty-six years: advertising publicly and inviting are different acts, and adequate outreach here would have taken an afternoon. Her organisation produced thirty-one documented member accounts within a month. Of nine requests, one was met — audible confirmation at two crossings — after eleven months, and not one of the top three, including one that costs nothing.",
+  "transcript": "Interview transcript N01 — General secretary, disability rights organisation\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] When did your organisation first hear about this system?\n[Respondent] From a member, not from the council. She rang the office because the crossing she uses every day to get to dialysis had changed and she couldn't work out the pattern. That was three weeks after switch-on at her junction. We then found out there had been a consultation event eight months earlier that we hadn't been invited to.\n[Interviewer] How did the council explain that?\n[Respondent] That it was advertised publicly. Which it was — in the council newsletter and on the website. I've stopped being angry about this particular thing because I've heard it forty times in twenty-six years. Advertising publicly and inviting are different acts. If you want disabled people in the room you write to the six organisations in this city that have disabled members, and there are six, and we all know each other, and it takes an afternoon.\n[Interviewer] What did you do once you knew?\n[Respondent] What we always do. We collected accounts — we had thirty-one members describing specific junctions within a month, with times and dates, because our members are extremely used to documenting things nobody believes. We put it into a submission with photographs and a map. We asked for a meeting.\n[Interviewer] Did you get the meeting?\n[Respondent] Yes, after four months. It was a good meeting, I want to say that. Two officers, both engaged, both took notes. And then nothing happened for seven months, and then two crossings got audible confirmation, which was one of nine things we asked for and not one of the top three.\n[Interviewer] What were the top three?\n[Respondent] Longer minimum crossing intervals as a floor the model cannot go below. A published statement of how the system treats slower pedestrians. And a named person we can contact who has authority to change a junction. Nothing on that list is technically hard. The third one costs nothing at all.\n[Interviewer] Has this changed how you approach the next project?\n[Respondent] We now ask to be on the distribution list before there is a project. Not for consultations — for the list of things being considered. Consultation is too late by definition. I've said that in every submission I've written for a decade and I'll keep saying it until somebody puts it in a procedure.",
+  "transcript_file": "19_N01_General-secretary.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

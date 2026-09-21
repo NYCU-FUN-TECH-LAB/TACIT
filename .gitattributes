@@ -1,0 +1,5 @@
+# shell 啟動器一定要 LF：CRLF 會讓 bash 在第一行就失敗（bad interpreter）。
+*.sh       text eol=lf
+*.command  text eol=lf
+# Windows 批次檔相反，要 CRLF
+*.bat      text eol=crlf

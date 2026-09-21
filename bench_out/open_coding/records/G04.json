@@ -1,0 +1,96 @@
+{
+ "respondent": "G04",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "unspecified",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Unintended consequences",
+   "quote": "In practice as a thing that happened which we now have to write guidance about retrospectively.",
+   "full_text": "As a pilot we can learn from, officially. In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.",
+   "open_codes": [
+    {
+     "code_id": "c026",
+     "label": "[8x] Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The respondent mentions that the guidance is being written retrospectively, implying that the system's consequences were not anticipated."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Lessons learned and change",
+   "quote": "The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong.",
+   "full_text": "There was a submission in 2021 recommending exactly that and it wasn't prioritised. I've read it. It's a good submission. The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.",
+   "open_codes": [
+    {
+     "code_id": "c023",
+     "label": "[5x] Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+     "rationale": "The respondent reflects on why the submission was not prioritized and how the ministry's attention is allocated."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Guidance and compliance",
+   "quote": "A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it.",
+   "full_text": "What's going into the guidance? A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.",
+   "open_codes": [
+    {
+     "code_id": "c016",
+     "label": "[4x] Community engagement — The efforts to inform and involve the community in the project",
+     "rationale": "The respondent mentions the requirements for the guidance, which may involve community engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Guidance and compliance",
+   "quote": "It's guidance. Authorities must have regard to it.",
+   "full_text": "Will it have teeth? It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.",
+   "open_codes": [
+    {
+     "code_id": "c023",
+     "label": "[5x] Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+     "rationale": "The respondent reflects on the effectiveness of the guidance and how authorities will respond to it."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Involvement and consultation",
+   "quote": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents.",
+   "full_text": "Was anyone outside government involved in drafting? A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+   "open_codes": [
+    {
+     "code_id": "c031",
+     "label": "[2x] New code: Shifting responsibility — The way in which actors avoid taking responsibility for the long-term effects of the system",
+     "rationale": "The respondent mentions that there was no public consultation, which may indicate a lack of accountability or responsibility."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260914_193235",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 1,
+   "n_ok": 1
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 4,
+    "created": 1,
+    "chunk": 0
+   }
+  ]
+ },
+ "transcript": "Interview transcript G04 — Policy analyst, national transport ministry\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does central government see deployments like Port Calder's?\n[Respondent] As a pilot we can learn from, officially. In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.\n[Interviewer] Could the ministry have moved earlier?\n[Respondent] Yes. There was a submission in 2021 recommending exactly that and it wasn't prioritised. I've read it. It's a good submission. The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.\n[Interviewer] What's going into the guidance?\n[Respondent] A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.\n[Interviewer] Will it have teeth?\n[Respondent] It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.\n[Interviewer] Was anyone outside government involved in drafting?\n[Respondent] A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline."
+}

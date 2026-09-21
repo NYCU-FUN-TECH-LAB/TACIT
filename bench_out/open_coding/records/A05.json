@@ -1,0 +1,83 @@
+{
+ "respondent": "A05",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "unspecified",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Unintended consequences — The potential risks and unforeseen outcomes of the system",
+   "quote": "Nobody thinks this is strange except the people who say it out loud.",
+   "full_text": "Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.",
+   "open_codes": [
+    {
+     "code_id": "c014",
+     "label": "[7x] Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The respondent highlights the potential risks and unforeseen outcomes of the system"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Shifting responsibility — The way in which actors avoid taking responsibility for the long-term effects of the system",
+   "quote": "We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind.",
+   "full_text": "Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.",
+   "open_codes": [
+    {
+     "code_id": "c022",
+     "label": "[1x] Shifting responsibility — The way in which actors avoid taking responsibility for the long-term effects of the system",
+     "rationale": "The respondent highlights how the system's actors avoid taking responsibility for the long-term effects"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+   "quote": "I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.",
+   "full_text": "What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.",
+   "open_codes": [
+    {
+     "code_id": "c023",
+     "label": "[5x] Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+     "rationale": "The respondent reflects on what they would do differently in hindsight"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Community engagement — The efforts to inform and involve the community in the project",
+   "quote": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category.",
+   "full_text": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+   "open_codes": [
+    {
+     "code_id": "c016",
+     "label": "[4x] Community engagement — The efforts to inform and involve the community in the project",
+     "rationale": "The respondent highlights the community engagement efforts"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260914_193235",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 1,
+   "n_ok": 1
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 2,
+    "created": 2,
+    "chunk": 0
+   }
+  ]
+ },
+ "transcript": "Interview transcript A05 — Chair, university research ethics committee\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Did any part of this deployment come before your committee?\n[Respondent] Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.\n[Interviewer] Could your committee's remit cover deployments?\n[Respondent] Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.\n[Interviewer] What have you seen change in the studies that do come to you?\n[Respondent] More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.\n[Interviewer] Do affected communities have any voice in your process?\n[Respondent] We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway."
+}

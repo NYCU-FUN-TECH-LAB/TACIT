@@ -1,0 +1,101 @@
+{
+  "respondent": "N02 (Board member, neighbourhood residents' association)",
+  "descriptors": {
+    "institution_type": "nonprofit",
+    "role_level": "other",
+    "sector": "other",
+    "experience": "6_10y",
+    "descriptor_basis": "Interview transcript: N02 (Board member, neighbourhood residents' association)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "Local body attends because no one else will",
+      "quote": "we're the only organised body in this part of town, so if we don't turn up nobody from here does",
+      "full_text": "We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "P",
+          "rationale": "Voluntary engagement filling a structural gap in who is represented."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "Session structured overwhelmingly as transmission",
+      "quote": "we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier",
+      "full_text": "Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "The format allocated almost all available time to explanation rather than to hearing."
+        },
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Reflective observation about whose participation the setting was equipped to handle."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "Recognises the limit of his own intermediary role",
+      "quote": "I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.",
+      "full_text": "I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Examines what his participation could and could not actually achieve for the person who sent him."
+        },
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "Engagement fails at the point of transmission back to the community, leaving the representative without standing."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "Relationship lapsed without either side ending it",
+      "quote": "There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.",
+      "full_text": "No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "No standing mechanism keeps the connection alive, so it decays by default."
+        },
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Refuses to place the failure entirely on the institution."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "Concrete tactical learning for the next engagement",
+      "quote": "bring three people instead of six and give each of them one question written down beforehand",
+      "full_text": "Yes. Lower expectations, but yes. The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "P",
+          "rationale": "Engagement capability developed through reflection on what went wrong last time."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "A residents' association that attends because nobody else from the area will. The account is precise about format: ninety minutes of explanation, eleven minutes of questions, and the two questions answered in detail came from a supplier. His central difficulty is that he was given an answer he could not pass on — no document, nothing to show the neighbour who sent him. Fourteen months on, neither side has ended the relationship and neither has continued it, which he attributes partly to himself.",
+  "transcript": "Interview transcript N02 — Board member, neighbourhood residents' association\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How did your association get involved?\n[Respondent] We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.\n[Interviewer] What was the session like?\n[Respondent] Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.\n[Interviewer] Did you raise anything?\n[Respondent] I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.\n[Interviewer] Has anyone from the council been back since?\n[Respondent] No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.\n[Interviewer] Would you go to the next one?\n[Respondent] Yes. Lower expectations, but yes. The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+  "transcript_file": "20_N02_Board-member.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

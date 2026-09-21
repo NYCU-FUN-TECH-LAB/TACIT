@@ -1,0 +1,70 @@
+{
+ "respondent": "Associate professor of urban planning",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "over_20y",
+  "descriptor_basis": "self-introduction"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Induced demand and the city's capacity",
+   "quote": "It makes driving slightly better, which over ten years makes driving slightly more attractive, which puts more cars on the road, which uses up the capacity the system created.",
+   "full_text": "It makes driving slightly better, which over ten years makes driving slightly more attractive, which puts more cars on the road, which uses up the capacity the system created. Traffic engineers have known this since the sixties and it has a name, induced demand, and it gets left out of every business case I have ever read including this one.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent highlights the potential long-term consequences of the system, showing an adaptive capacity to change the innovation trajectory."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Workshop outcomes and the role of stakeholders",
+   "quote": "The useful part wasn't the scenarios, it was that the freight association and the disability group ended up agreeing about kerb space, which neither of them expected and neither would have discovered in a consultation questionnaire.",
+   "full_text": "We did, with about thirty people — planners, two councillors, a bus operator, four residents, a freight association. Three scenarios out to 2040. The useful part wasn't the scenarios, it was that the freight association and the disability group ended up agreeing about kerb space, which neither of them expected and neither would have discovered in a consultation questionnaire.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "The respondent highlights the value of stakeholder participation and the unexpected outcomes that can emerge from inclusive decision-making processes."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Measuring impact and the city's planning cycle",
+   "quote": "I've stopped measuring impact on a three-year cycle because nothing in planning works on a three-year cycle.",
+   "full_text": "I'd call that neither success nor failure. It's in the record. Sometimes things in the record get picked up years later by someone you've never met. I've stopped measuring impact on a three-year cycle because nothing in planning works on a three-year cycle.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent acknowledges the limitations of measuring impact on a short-term cycle, showing an adaptive capacity to change the innovation trajectory."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Publishing the objective function",
+   "quote": "Publish the objective function. One page, plain language: here is what the system is trying to maximise, here is what it treats as a cost, here is who decided.",
+   "full_text": "If the city asked you what to change tomorrow, what would you say? Publish the objective function. One page, plain language: here is what the system is trying to maximise, here is what it treats as a cost, here is who decided. Nobody can argue with a system whose goals are undisclosed, and at the moment nobody outside the vendor knows what it is optimising.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent advocates for transparency and openness in the decision-making process, showing an awareness of the importance of epistemic humility."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits a strong sense of responsiveness, acknowledging the potential long-term consequences of the system and the need for adaptive capacity. They also demonstrate engagement, highlighting the value of stakeholder participation and the unexpected outcomes that can emerge from inclusive decision-making processes. Additionally, they show reflexivity, advocating for transparency and openness in the decision-making process. Overall, the respondent's account suggests a nuanced understanding of the complexities involved in responsible innovation.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A04 — Associate professor of urban planning\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What's your reading of what this system does to the city?\n[Respondent] It makes driving slightly better, which over ten years makes driving slightly more attractive, which puts more cars on the road, which uses up the capacity the system created. Traffic engineers have known this since the sixties and it has a name, induced demand, and it gets left out of every business case I have ever read including this one.\n[Interviewer] Was that raised during planning?\n[Respondent] I raised it at a workshop. The response was that the system is signal timing, not transport policy, and induced demand is a policy question. Which is true and also a way of ensuring nobody owns it. Every actor here has a defensible reason why the long-term question belongs to someone else, and the sum of those defensible reasons is that it belongs to nobody.\n[Interviewer] You ran a scenario workshop yourself, I think?\n[Respondent] We did, with about thirty people — planners, two councillors, a bus operator, four residents, a freight association. Three scenarios out to 2040. The useful part wasn't the scenarios, it was that the freight association and the disability group ended up agreeing about kerb space, which neither of them expected and neither would have discovered in a consultation questionnaire.\n[Interviewer] Did the workshop output go anywhere?\n[Respondent] Into the local plan consultation, where it sits alongside four hundred other submissions. I'd call that neither success nor failure. It's in the record. Sometimes things in the record get picked up years later by someone you've never met. I've stopped measuring impact on a three-year cycle because nothing in planning works on a three-year cycle.\n[Interviewer] If the city asked you what to change tomorrow, what would you say?\n[Respondent] Publish the objective function. One page, plain language: here is what the system is trying to maximise, here is what it treats as a cost, here is who decided. Nobody can argue with a system whose goals are undisclosed, and at the moment nobody outside the vendor knows what it is optimising."
+}

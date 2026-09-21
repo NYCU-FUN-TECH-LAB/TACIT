@@ -1,0 +1,104 @@
+{
+ "respondent": "Chief executive, local community foundation",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript header states: 'Chief executive, local community foundation'."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Unconsented inclusion as community partner in project bid",
+   "quote": "I found out we were a community partner when I read it in the bid summary after the award. Somebody had listed us. Nobody had asked us.",
+   "full_text": "Being named. I mean that literally — I found out we were a community partner when I read it in the bid summary after the award. Somebody had listed us. Nobody had asked us. We'd had one phone call eighteen months earlier about something adjacent.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Listing community partners without consent or interaction constitutes participation washing."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Contract evaluation based on false community partnership claims",
+   "quote": "The bid was evaluated partly on community partnership that didn't exist.",
+   "full_text": "I wrote and asked to be removed, and we were, from the next version. But the version with our name in it is the one that won the contract, and there's no mechanism to unwind that. The bid was evaluated partly on community partnership that didn't exist.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Winning contracts using non-existent community partnerships exemplifies performative, fake engagement."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Absence of mechanisms to unwind or adjust contract trajectories when bid commitments are invalid."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Abandonment of community reference groups without communication",
+   "quote": "We were invited to a launch event, which I didn't attend, and to a 'community reference group' which met twice and then stopped.",
+   "full_text": "We were invited to a launch event, which I didn't attend, and to a 'community reference group' which met twice and then stopped. I don't know that it was cancelled. It simply stopped being scheduled. Nobody wrote to say it had ended.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Abruptly halting community reference groups without communication reduces engagement to tokenistic consultation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Structural prerequisites for meaningful engagement and responsiveness",
+   "quote": "Without those two things a reference group is a mailing list with sandwiches.",
+   "full_text": "Possibly, with two changes. Somebody senior in the room, and a written response to whatever it produced within a fixed period. Without those two things a reference group is a mailing list with sandwiches. I've sat on eleven of them in this job and three worked, and all three had those two features.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Demands senior decision-maker presence to ensure true two-way dialogue with community stakeholders."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Advocates institutionalized feedback mechanisms requiring written responses to community input."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Dilemma of participation washing and moral co-optation",
+   "quote": "If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve.",
+   "full_text": "Probably not, and I've thought about whether that's the right call. My concern is that our attendance is what makes the process look legitimate. If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve. Declining is also a bad option. There isn't a good one.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Critical reflection on how organization presence risks legitimizing superficial engagement without community benefits."
+    },
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Foresight into plausible futures where presence is weaponized against vulnerable community stakeholders."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This interview provides a compelling external perspective on the failure of responsible innovation governance, primarily highlighting negative Public Engagement and negative Responsiveness from the project developers, contrasted with high positive Reflexivity and Anticipation from the community partner. The respondent's account is dominated by critiques of participation washing, where their foundation was fraudulently listed to win a public bid without prior engagement or downstream accountability. The multi-coded segments expose how structural deficits in engagement and responsiveness are intrinsically linked: without senior decision-makers in the room and formal, mandatory response mechanisms, engagement structures deteriorate into meaningless performative rituals ('a mailing list with sandwiches'). Furthermore, the final multi-coded segment reveals a sophisticated ethical reflexivity and anticipatory foresight, wherein the respondent weighs the dilemma of participation. The respondent anticipates that attending nominal advisory groups risks conferring unearned legitimacy on flawed innovations, thereby weaponizing their presence against the community they represent. Overall, while the project exhibits severe negative engagement and obdurate responsiveness, the community leader demonstrates strong positive reflexivity and anticipatory ethics in navigating institutional co-optation.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N06 — Chief executive, local community foundation\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Your foundation was named as a community partner. What did that involve?\n[Respondent] Being named. I mean that literally — I found out we were a community partner when I read it in the bid summary after the award. Somebody had listed us. Nobody had asked us. We'd had one phone call eighteen months earlier about something adjacent.\n[Interviewer] Did you object?\n[Respondent] I wrote and asked to be removed, and we were, from the next version. But the version with our name in it is the one that won the contract, and there's no mechanism to unwind that. The bid was evaluated partly on community partnership that didn't exist.\n[Interviewer] Has anything happened since?\n[Respondent] We were invited to a launch event, which I didn't attend, and to a 'community reference group' which met twice and then stopped. I don't know that it was cancelled. It simply stopped being scheduled. Nobody wrote to say it had ended.\n[Interviewer] Do you think the reference group could have worked?\n[Respondent] Possibly, with two changes. Somebody senior in the room, and a written response to whatever it produced within a fixed period. Without those two things a reference group is a mailing list with sandwiches. I've sat on eleven of them in this job and three worked, and all three had those two features.\n[Interviewer] Would you take part in the next one?\n[Respondent] Probably not, and I've thought about whether that's the right call. My concern is that our attendance is what makes the process look legitimate. If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve. Declining is also a bad option. There isn't a good one.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 29.4,
+  "absence": 0
+ }
+}

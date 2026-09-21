@@ -1,0 +1,447 @@
+{
+ "respondent": "CHRG-118hhrg55220_Chilson",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "other",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "executive order resource allocation and overreach",
+   "quote": "The executive order will generate sweeping activity across the Federal Government, redirecting at least tens of millions of tax dollars and hundreds of thousands of hours of government effort. Some of that activity will be productive and appropriate, particularly where it focuses on the government's own use of AI, but the executive order overreaches in at least two ways.",
+   "full_text": "The executive order will generate sweeping activity across the Federal Government, redirecting at least tens of millions of tax dollars and hundreds of thousands of hours of government effort. Some of that activity will be productive and appropriate, particularly where it focuses on the government's own use of AI, but the executive order overreaches in at least two ways.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Discusses executive order regulations and requirements for AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "questioning presidential authority under the defense production act",
+   "quote": "First, the President lacks the authority to impose the executive order's Section 4.2's obligations on private companies. The executive order claims authority under the Defense Production Act, which is a Korean War-era law intended to reduce one very specific type of national security risk-- threats to ``the ability of the domestic industrial base to supply materials and services that are needed for national defense and disaster recovery.''",
+   "full_text": "First, the President lacks the authority to impose the executive order's Section 4.2's obligations on private companies. The executive order claims authority under the Defense Production Act, which is a Korean War-era law intended to reduce one very specific type of national security risk-- threats to ``the ability of the domestic industrial base to supply materials and services that are needed for national defense and disaster recovery.''",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Argues the President lacks legal authority under the DPA to impose Section 4.2 obligations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "absence of domestic industrial base threat for ai",
+   "quote": "First, there is no threat to the ability of the domestic industrial base to supply AI capabilities. The U.S. leads the world in supplying AI capabilities. Indeed, the White House, if anything, seems concerned with an oversupply of AI capabilities. As the EO itself notes, AI capabilities are advancing at rapid speed.",
+   "full_text": "But the DPA does not authorize Section 4.2 for three reasons. First, there is no threat to the ability of the domestic industrial base to supply AI capabilities. The U.S. leads the world in supplying AI capabilities. Indeed, the White House, if anything, seems concerned with an oversupply of AI capabilities. As the EO itself notes, AI capabilities are advancing at rapid speed.",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Explains why the DPA criteria of industrial threat are not met by the AI sector."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "section 4.2 does not increase AI production",
+   "quote": "Second, even if there were such a threat, Section 4.2 will not increase production of AI capability. Section 4.2 surveils an entire industry segment for various potential risks unrelated to production. The only production Section 4.2 will promote will be the production of highly sensitive commercial and cybersecurity information from companies to the government.",
+   "full_text": "Second, even if there were such a threat, Section 4.2 will not increase production of AI capability. Section 4.2 surveils an entire industry segment for various potential risks unrelated to production. The only production Section 4.2 will promote will be the production of highly sensitive commercial and cybersecurity information from companies to the government.",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Argues that Section 4.2 fails to fulfill the production mandates of the DPA."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "dpa cannot shortcut democratic lawmaking by congress",
+   "quote": "Third, and most fundamentally, the DPA simply cannot shortcut the constitutionally established method of democratic lawmaking in the U.S. As we have heard, Congress is actively considering 28 AI-related bills. The DPA does not empower the President to skip ahead of Congress on this.",
+   "full_text": "Third, and most fundamentally, the DPA simply cannot shortcut the constitutionally established method of democratic lawmaking in the U.S. As we have heard, Congress is actively considering 28 AI-related bills. The DPA does not empower the President to skip ahead of Congress on this.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "need for comprehensive AI legislation",
+     "rationale": "Stresses that Congress rather than executive action should legislate on AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "overly broad definition of artificial intelligence in executive order",
+   "quote": "The EO overreaches in a second way. The executive order's definition of ``artificial intelligence'' is so broad that it covers common everyday software, from social media content moderation algorithms, to insurance models, to common consumer and business financial tools.",
+   "full_text": "The EO overreaches in a second way. The executive order's definition of ``artificial intelligence'' is so broad that it covers common everyday software, from social media content moderation algorithms, to insurance models, to common consumer and business financial tools. This broad definition means that many of the regulatory actions spurred by the executive order could apply not just to AI companies, but to any software developer in industries, such as transportation, education, healthcare, or energy.",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Highlights how an overly broad definition expands regulatory scope improperly."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "regulatory impact on standard software developers",
+   "quote": "This broad definition means that many of the regulatory actions spurred by the executive order could apply not just to AI companies, but to any software developer in industries, such as transportation, education, healthcare, or energy.",
+   "full_text": "This broad definition means that many of the regulatory actions spurred by the executive order could apply not just to AI companies, but to any software developer in industries, such as transportation, education, healthcare, or energy.",
+   "open_codes": [
+    {
+     "code_id": "c103",
+     "label": "distinguishing developers and deployers in AI regulation",
+     "rationale": "Notes the broad application of rules to general software developers across various industries."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "software regulation changes should be decided by congress",
+   "quote": "Even were it desirable to revise the U.S.'s highly successful approach to software regulation, doing so through a Presidential executive order is inappropriate. Such a change deserves to be considered, refined, and decided by Congress.",
+   "full_text": "Even were it desirable to revise the U.S.'s highly successful approach to software regulation, doing so through a Presidential executive order is inappropriate. Such a change deserves to be considered, refined, and decided by Congress.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "need for comprehensive AI legislation",
+     "rationale": "Argues that significant regulatory revisions require congressional legislation instead of executive orders."
+    },
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Argues regulatory changes should be decided by Congress rather than executive orders."
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "concluding statement criticizing executive order overreach",
+   "quote": "In conclusion, the executive order could have focused on establishing a positive vision for a future of AI while protecting civil rights from government misuse of these technologies. Instead, it usurps Congress, abusing the DPA to impose new regulations, and spurring regulatory action that will affect the entire software industry.",
+   "full_text": "In conclusion, the executive order could have focused on establishing a positive vision for a future of AI while protecting civil rights from government misuse of these technologies. Instead, it usurps Congress, abusing the DPA to impose new regulations, and spurring regulatory action that will affect the entire software industry. This overreach calls for continued congressional oversight, democratic accountability, and potentially legislative or judicial course correction. Thank you, and I look forward to your questions.",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Summarizes the usurpation of Congress and abuse of the DPA in the EO."
+    },
+    {
+     "code_id": "c031",
+     "label": "concluding statement and availability for questions",
+     "rationale": "Witness concludes testimony and transitions to Q&A."
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "chilling effect on free speech from government regulation",
+   "quote": "I think one of the other big effects other than the government misuse would be the chilling effects it would have on people using tools like this to say things that they think the government might not want them to say.",
+   "full_text": "I think one of the other big effects other than the government misuse would be the chilling effects it would have on people using tools like this to say things that they think the government might not want them to say.",
+   "open_codes": [
+    {
+     "code_id": "c053",
+     "label": "avoiding authoritarian censorship in AI regulation",
+     "rationale": "Discusses the chilling effect of regulations on free expression."
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "lack of limiting principles in using the DPA",
+   "quote": "The EO offers no limiting principle on the use of the DPA, and so I think we could expect that people will continue to walk down this road.",
+   "full_text": "[Interviewer] (Ms. Huddleston) Yes, and it is concerning with the power that would give to the administrative state over technology, more generally. [Respondent] The EO offers no limiting principle on the use of the DPA, and so I think we could expect that people will continue to walk down this road.",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Criticizes the absence of limits on executive power via the DPA."
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "concerns about the unprecedented length and legislative nature of the EO",
+   "quote": "What concerns me about the length of the EO is its unprecedented nature because it looks like legislation. If you slap the bill number on top of it----",
+   "full_text": "[Interviewer] (Mr. Connolly) Thank you. Mr. Chilson, I am a little puzzled. You spent a lot of time criticizing the EO because it was too long, and I guess sitting up here looking at a very complex subject that has never been addressed before, and that many other people sat where you are sitting, Republican witnesses, chosen witnesses, all praise the EO as, yes, it gives us a framework we can work with, and they were not worried too much about overreach, you know. They felt it gave us a platform we can build on as we learn more, as we experience more. Why are you so bothered by the fact of its length? [Respondent] So, I cannot speak for what other people might think about the EO. I can only speak for my experience in Federal Government and watching the regulatory process. What concerns me about the length of the EO is its unprecedented nature because it looks like legislation. If you slap the bill number on top of it----",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Witness explains that the executive order oversteps by mimicking legislation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "authorship of the complex executive order",
+   "quote": "I mean, it went through a White House process. I do not know many details about that process. It looks like a bunch of people wrote it.",
+   "full_text": "[Interviewer] (Mr. Timmons) [...] That said, we do need to address AI, and just because Congress is unable to address AI as quickly as we should does not give the President the right to legislate for us. It is just a really bad idea. You know, this has been tried again and again. I guess first, Mr. Chilson, who wrote this? I mean, this is very technical. It is very long as we keep saying, and, I mean, who wrote this? [Respondent] I mean, it went through a White House process. I do not know many details about that process. It looks like a bunch of people wrote it.",
+   "open_codes": [
+    {
+     "code_id": "c137",
+     "label": "executive branch drafting process for AI regulation",
+     "rationale": "Describes the White House process behind drafting the technical executive order."
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "criticism of executive branch legislation on AI",
+   "quote": "That said, we do need to address AI, and just because Congress is unable to address AI as quickly as we should does not give the President the right to legislate for us. It is just a really bad idea.",
+   "full_text": "That said, we do need to address AI, and just because Congress is unable to address AI as quickly as we should does not give the President the right to legislate for us. It is just a really bad idea. You know, this has been tried again and again. I guess first, Mr. Chilson, who wrote this? I mean, this is very technical. It is very long as we keep saying, and, I mean, who wrote this?",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Criticizes executive branch action as an improper substitute for congressional legislation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "lack of transparency in drafting executive actions",
+   "quote": "I do not. I think that is a good question for Congress to ask and an oversight committee to ask, and I do not have good information on that. I know there were a lot of participants. There were probably a lot of people who are asking for different things to be included in this, and that is, in part, why it ended up so long.",
+   "full_text": "[Respondent] I mean, it went through a White House process. I do not know many details about that process. It looks like a bunch of people wrote it.\n[Interviewer] (Mr. Timmons) It is extremely technical, right? I mean, it is extremely technical, so, I mean, people that have expertise that probably have an interest in a regulatory structure being placed on this. I mean, do you have any idea what groups were involved? Is there any transparency to that?\n[Respondent] I do not. I think that is a good question for Congress to ask and an oversight committee to ask, and I do not have good information on that. I know there were a lot of participants. There were probably a lot of people who are asking for different things to be included in this, and that is, in part, why it ended up so long.",
+   "open_codes": [
+    {
+     "code_id": "c138",
+     "label": "opacity of executive drafting process",
+     "rationale": "Witness notes a lack of information on participants in the White House process."
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "reporting requirements chilling innovation and growth",
+   "quote": "One, companies, when they are thinking about what sensitive data that they are going to have to report to the government, they are going to have to make a tradeoff. Like, are we going to grow big enough to meet the caps that put us over this reporting threshold, or are we going to stay under that and limit ourselves artificially in order to not have to comply with these specific rules? And I think that would be to the detriment of U.S. leadership in AI.",
+   "full_text": "[Interviewer] (Mr. Timmons) So, all the reporting requirements, does that not chill innovation? I mean, there are a lot of proprietary approaches to this. Is it going to chill innovation?\n[Respondent] I think it could chill innovation in a couple of different ways. One, companies, when they are thinking about what sensitive data that they are going to have to report to the government, they are going to have to make a tradeoff. Like, are we going to grow big enough to meet the caps that put us over this reporting threshold, or are we going to stay under that and limit ourselves artificially in order to not have to comply with these specific rules? And I think that would be to the detriment of U.S. leadership in AI.",
+   "open_codes": [
+    {
+     "code_id": "c139",
+     "label": "regulatory reporting thresholds chilling company growth and innovation",
+     "rationale": "Explains how companies might limit themselves to stay under reporting thresholds."
+    },
+    {
+     "code_id": "c024",
+     "label": "U.S. leadership in responsible AI and global standard-setting",
+     "rationale": "Mentions potential harm to U.S. leadership in AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "risk of companies moving development overseas",
+   "quote": "They absolutely could move overseas, and I know that there are jurisdictions that are actively recruiting AI startups and AI companies to move to their jurisdictions, promising them less constraining regulatory environments.",
+   "full_text": "[Interviewer] (Mr. Timmons) A lot of these companies are global. I mean, could they not just move their development overseas outside the jurisdiction of the U.S., or does the Defense Production Act somehow extend beyond our borders?\n[Respondent] They absolutely could move overseas, and I know that there are jurisdictions that are actively recruiting AI startups and AI companies to move to their jurisdictions, promising them less constraining regulatory environments.",
+   "open_codes": [
+    {
+     "code_id": "c140",
+     "label": "regulatory flight of AI companies overseas",
+     "rationale": "Describes companies moving overseas due to active recruitment by other jurisdictions offering less constraints."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "sensitive commercial data demanded by executive order",
+   "quote": "Documents containing highly sensitive commercial and cybersecurity information.",
+   "full_text": "[Interviewer] (Mr. Burchett) OK. What materials or goods does Executive Order 14110 direct companies to produce?\n[Respondent] Documents containing highly sensitive commercial and cybersecurity information.",
+   "open_codes": [
+    {
+     "code_id": "c141",
+     "label": "mandated disclosure of sensitive commercial and security data",
+     "rationale": "Identifies the specific sensitive materials required by the Executive Order."
+    },
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Discusses reporting requirements mandated by Executive Order."
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "Defense Production Act used for regulation rather than production",
+   "quote": "And the executive order uses the DPA in order to discourage production on some levels, in part by imposing additional regulatory burdens on people who are producing at the highest level.",
+   "full_text": "[Interviewer] (Mr. Burchett) OK. And what national security concerns exist regarding AI that justifies using the Defense Production Act?\n[Respondent] Well, I think there are national security concerns around AI. We have heard a lot of talk about, you know, the rivalry with China and the importance of staying ahead, so there are concerns there. But as for ones that directly address the kinds of threats to interrupted production that the Defense Production Act is looking for, again, as Adam said, it turned the DPA on its head, which the DPA is to allow the government to spur production. And the executive order uses the DPA in order to discourage production on some levels, in part by imposing additional regulatory burdens on people who are producing at the highest level.",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Critiques the executive order for turning the DPA on its head to impose burdens."
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Past application of the Defense Production Act",
+   "quote": "I have heard that there has been already an immediate request based on this use of the Defense Production Act, but I think in the past, I am not aware of another one.",
+   "full_text": "[Interviewer] (Mr. Burchett) Has the Defense Production Act been used to extract information from companies rather than to encourage production? Either one of you all.\n[Respondent] I have heard that there has been already an immediate request based on this use of the Defense Production Act, but I think in the past, I am not aware of another one.",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Discusses novel use of DPA for information extraction."
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Executive order stifling AI innovation",
+   "quote": "I do, and I think the use of the DPA here undermines some of the other important goals that Congresswoman Pressley was pointing out about government uses and the risks of government use of AI.",
+   "full_text": "[Interviewer] (Mr. Burchett) Do you all think that this executive order could stifle artificial intelligence innovation?\n[Respondent] I do, and I think the use of the DPA here undermines some of the other important goals that Congresswoman Pressley was pointing out about government uses and the risks of government use of AI.",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Argues the EO and DPA implementation stifle innovation and conflict with other goals."
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Department of Commerce rulemakings and proceedings under executive order",
+   "quote": "There are several rulemakings and other proceedings that are ongoing. NTIA, which is part of the Department of Commerce, has a rulemaking on open-source models, and so there is a lot of swirl at NTIA, and I think across Commerce, so yes.",
+   "full_text": "[Interviewer] (Ms. Mace) So, the executive order came out at the end of October, and it said that Commerce would have to implement and get moving after 90 days, which would have been the end of January. Does anyone on the panel know if Commerce is doing anything related to this executive order at this juncture today, middle to end of March, soon to be April? Does anybody know?\n[Respondent] They certainly are doing a lot, actually.\n[Interviewer] (Ms. Mace) Mm-hmm.\n[Respondent] There are several rulemakings and other proceedings that are ongoing. NTIA, which is part of the Department of Commerce, has a rulemaking on open-source models, and so there is a lot of swirl at NTIA, and I think across Commerce, so yes.",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Witness notes active rulemakings across the Department of Commerce stemming from the executive order."
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Defense Production Act information requests and reporting thresholds",
+   "quote": "I have only heard that there was a request to some companies in mid-December that they start filing information. The understanding of the DPA provisions as the executive order came out was that none of the current models met the threshold for reporting yet, and so that request that I have heard has gone out, it is not quite clear why that request had gone out, and so----",
+   "full_text": "I have only heard that there was a request to some companies in mid-December that they start filing information. The understanding of the DPA provisions as the executive order came out was that none of the current models met the threshold for reporting yet, and so that request that I have heard has gone out, it is not quite clear why that request had gone out, and so----",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Addresses questions around DPA reporting requests under executive orders."
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "ambiguity and broad data requests in executive orders",
+   "quote": "I do not know what the exact procedure is. The executive order does not lay that out in specific detail. I think it would be up to whatever the requests are that are coming in. In fact, the executive order does not give a ton of detail about what specific information. It gives general categories, but I am hearing that they are asking for quite a lot, including a lot of sensitive information.",
+   "full_text": "I do not know what the exact procedure is. The executive order does not lay that out in specific detail. I think it would be up to whatever the requests are that are coming in. In fact, the executive order does not give a ton of detail about what specific information. It gives general categories, but I am hearing that they are asking for quite a lot, including a lot of sensitive information.",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Highlights the vagueness and broad authority granted by executive orders."
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "vague definitions of AI sweeping in everyday software",
+   "quote": "So, in addition to the DPA chilling effects that will happen under the authorities there to some of the largest models, I really do think, and to the earlier Congressman's point, that the very vague definition of ``artificial intelligence,'' which to my reading and I think some other experts' readings, could sweep in things like formulas in complicated spreadsheets.",
+   "full_text": "So, in addition to the DPA chilling effects that will happen under the authorities there to some of the largest models, I really do think, and to the earlier Congressman's point, that the very vague definition of ``artificial intelligence,'' which to my reading and I think some other experts' readings, could sweep in things like formulas in complicated spreadsheets. This is not ChatGPT-style AI. We are talking about software that people use every day and that industries use every day. The Federal Government has now been told, including HHS, hey, go make sure that all of these AI pieces of software are working well, that they are meeting the appropriate levels of quality. That has the potential to unleash a lot of regulation, not just on what we think of as AI, but software development generally, which would be really a sea change in how the U.S. approaches software development.",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Criticizes overbroad regulatory definitions that capture routine software."
+    },
+    {
+     "code_id": "c142",
+     "label": "unprecedented regulatory expansion into general software development",
+     "rationale": "Warns of regulation expanding beyond AI to general software."
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "unprecedented use of Defense Production Act for regulation",
+   "quote": "We have never seen it applied to AI, and we have never seen it applied not to ensure that there is sufficient production for defense, but more for a regulatory purpose, like it is being used here, to make sure it is safer or that it is more limited than it is. So, this is a very unprecedented use of the DPA.",
+   "full_text": "[Interviewer] (Ms. Mace) With regards to DPA, do we see this applied to any other technology? Is that a thing?\n[Respondent] The DPA has been used to ensure the supply of materials that are needed for defense and for disaster recovery on a wide range of technologies. We have never seen it applied to AI, and we have never seen it applied not to ensure that there is sufficient production for defense, but more for a regulatory purpose, like it is being used here, to make sure it is safer or that it is more limited than it is. So, this is a very unprecedented use of the DPA.",
+   "open_codes": [
+    {
+     "code_id": "c136",
+     "label": "legal overreach of executive actions on AI",
+     "rationale": "Discusses the unprecedented use of the DPA for regulatory purposes rather than defense supply."
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "precedent of letting the market lead in internet technology",
+   "quote": "Well, we do have a template for how the last disruptive technology, the last major disruptive sea change technology of the internet was treated by the U.S. Government. And there was a very specific choice, both in legislation and at the executive level, to let the market lead, to let innovators lead, to let them drive this technology forward because they can explore a lot of different approaches and uses in a way that we could never envision in the early 90s when some of these decisions were made.",
+   "full_text": "Well, we do have a template for how the last disruptive technology, the last major disruptive sea change technology of the internet was treated by the U.S. Government. And there was a very specific choice, both in legislation and at the executive level, to let the market lead, to let innovators lead, to let them drive this technology forward because they can explore a lot of different approaches and uses in a way that we could never envision in the early 90s when some of these decisions were made. And so, I do think that that template, which requires action both by the White House, it can require action by the White House, and also it could be done by Congress as well, to take an open look at a structure that would allow for a lot of variation. Let us focus on some specific targeted harms but not tech specific. All the bad things that we have heard about AI, those things are bad whether or not they have been done with AI or with another tool. We should target those harms, we should treat those seriously, and we should deal with them, but there is no reason to target AI on these specifically.",
+   "open_codes": [
+    {
+     "code_id": "c143",
+     "label": "market-led regulatory approach based on internet precedent",
+     "rationale": "Proposes using the internet's market-led regulatory template for AI."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_165059",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 8,
+   "n_ok": 7
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 7,
+    "created": 1,
+    "chunk": 1
+   },
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 2
+   },
+   {
+    "reused": 2,
+    "created": 1,
+    "chunk": 3
+   },
+   {
+    "reused": 2,
+    "created": 4,
+    "chunk": 4
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 6
+   },
+   {
+    "reused": 2,
+    "created": 2,
+    "chunk": 7
+   }
+  ],
+  "chunk_errors": [
+   {
+    "chunk": 0,
+    "error": "JSONDecodeError: Invalid \\escape: line 43 column 837 (char 4887)"
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118hhrg55220 — Neil Chilson, Head Of Ai Policy, The Abundance Institute\nSource: https://www.govinfo.gov/app/details/CHRG-118hhrg55220  |  White House Overreach On Ai  |  House, Subcommittee On Cybersecurity, Information Technology, And Government Innovation / Committee On Oversight And Accountability U.S.  |  2024-03-21  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Ms. Mace) Thank you. I now recognize Mr. Chilson to begin your opening statement.\n[Respondent] Chair Mace, Ranking Member Connolly, and Subcommittee Members, good morning. I am Neil Chilson, the head of AI policy at the Abundance Institute. The Abundance Institute is a mission-driven, nonprofit (c)(3) dedicated to fostering widespread human prosperity by creating an environment where emerging technologies, including AI, can thrive. Thank you for having me here today to talk about the executive order on artificial intelligence.\nThe artificial intelligence EO, as noted by the Chair, is long. In fact, it is the longest regulatory EO in history. According to data from the American Presidency Project, the AI EO is 88 times longer than the median executive order. By the numbers, it is the third longest executive order in American history, but the two EOs that are longer are a 1951 executive order containing the entire manual for the military court martial procedures and a 1980 EO revising that manual. The AI EO is also unusually regulatory because it directs actions by dozens of agencies and Federal officials. It mandates 136 different deliverables, such as reports, guidance documents, and dozens of new projects, processes, and plans.\nIn short, the AI executive order is unprecedented. Our country's history includes many dramatic developments, including civil war, mass industrialization, two world wars, globalization, and global pandemics, yet no President has ever issued such a long and detailed executive order to reorient the Federal Government on a policy issue.\nThe executive order will generate sweeping activity across the Federal Government, redirecting at least tens of millions of tax dollars and hundreds of thousands of hours of government effort. Some of that activity will be productive and appropriate, particularly where it focuses on the government's own use of AI, but the executive order overreaches in at least two ways. First, the President lacks the authority to impose the executive order's Section 4.2's obligations on private companies. The executive order claims authority under the Defense Production Act, which is a Korean War-era law intended to reduce one very specific type of national security risk-- threats to ``the ability of the domestic industrial base to supply materials and services that are needed for national defense and disaster recovery.''\nBut the DPA does not authorize Section 4.2 for three reasons. First, there is no threat to the ability of the domestic industrial base to supply AI capabilities. The U.S. leads the world in supplying AI capabilities. Indeed, the White House, if anything, seems concerned with an oversupply of AI capabilities. As the EO itself notes, AI capabilities are advancing at rapid speed. Second, even if there were such a threat, Section 4.2 will not increase production of AI capability. Section 4.2 surveils an entire industry segment for various potential risks unrelated to production. The only production Section 4.2 will promote will be the production of highly sensitive commercial and cybersecurity information from companies to the government. Third, and most fundamentally, the DPA simply cannot shortcut the constitutionally established method of democratic lawmaking in the U.S. As we have heard, Congress is actively considering 28 AI-related bills. The DPA does not empower the President to skip ahead of Congress on this.\nThe EO overreaches in a second way. The executive order's definition of ``artificial intelligence'' is so broad that it covers common everyday software, from social media content moderation algorithms, to insurance models, to common consumer and business financial tools. This broad definition means that many of the regulatory actions spurred by the executive order could apply not just to AI companies, but to any software developer in industries, such as transportation, education, healthcare, or energy. Even were it desirable to revise the U.S.'s highly successful approach to software regulation, doing so through a Presidential executive order is inappropriate. Such a change deserves to be considered, refined, and decided by Congress.\nIn conclusion, the executive order could have focused on establishing a positive vision for a future of AI while protecting civil rights from government misuse of these technologies. Instead, it usurps Congress, abusing the DPA to impose new regulations, and spurring regulatory action that will affect the entire software industry. This overreach calls for continued congressional oversight, democratic accountability, and potentially legislative or judicial course correction. Thank you, and I look forward to your questions.\n[Interviewer] (Ms. Huddleston) I think we have seen that there is a need for a greater discussion of improving cybersecurity, both in the government and beyond.\n[Respondent] No, and we should not have to.\n[Interviewer] (Ms. Huddleston) No, and we should be concerned about the First Amendment approach of doing such.\n[Respondent] Absolutely not.\n[Interviewer] (Ms. Huddleston) I think it is a highly concerning proposal with significant consequences for innovation.\n[Respondent] No.\n[Interviewer] (Ms. Huddleston) Similarly, I think there are concerns about how this could have an impact on speech as well as innovation more generally, with the idea that innovators would have to seek permission from the government before engaging in their innovation, rather than having it play out in the marketplace of ideas.\n[Respondent] I think one of the other big effects other than the government misuse would be the chilling effects it would have on people using tools like this to say things that they think the government might not want them to say.\n[Interviewer] (Ms. Huddleston) Yes, and it is concerning with the power that would give to the administrative state over technology, more generally.\n[Respondent] The EO offers no limiting principle on the use of the DPA, and so I think we could expect that people will continue to walk down this road.\n[Interviewer] (Mr. Connolly) Thank you. Mr. Chilson, I am a little puzzled. You spent a lot of time criticizing the EO because it was too long, and I guess sitting up here looking at a very complex subject that has never been addressed before, and that many other people sat where you are sitting, Republican witnesses, chosen witnesses, all praise the EO as, yes, it gives us a framework we can work with, and they were not worried too much about overreach, you know. They felt it gave us a platform we can build on as we learn more, as we experience more. Why are you so bothered by the fact of its length?\n[Respondent] So, I cannot speak for what other people might think about the EO. I can only speak for my experience in Federal Government and watching the regulatory process. What concerns me about the length of the EO is its unprecedented nature because it looks like legislation. If you slap the bill number on top of it----\n[Interviewer] (Mr. Timmons) Thank you, Madam Chair. I guess, first, I just want to respond to my colleague's, across the aisle, indictment of this Congress. Us not doing anything this Congress is a response to my colleagues across the aisle spending about $7 trillion last Congress, and it has really caused my constituents a lot of problems. Inflation is through the roof. The cost of energy, groceries, interest rates are up. It is really costing Americans a lot. And so, we are struggling with our $34 trillion in debt. We are struggling with the fact that every hundred days we add a trillion dollars to our national debt, and really, our fiscal situation is out of control. So, we are very concerned about that, and we are going to try to find a path forward that is sustainable for the American people, that will give our kids and grandkids the American Dream for generations to come, but I am very fearful that that is not going to work out. So, we are going to focus on that.\nThat said, we do need to address AI, and just because Congress is unable to address AI as quickly as we should does not give the President the right to legislate for us. It is just a really bad idea. You know, this has been tried again and again. I guess first, Mr. Chilson, who wrote this? I mean, this is very technical. It is very long as we keep saying, and, I mean, who wrote this?\n[Respondent] I mean, it went through a White House process. I do not know many details about that process. It looks like a bunch of people wrote it.\n[Interviewer] (Mr. Timmons) It is extremely technical, right? I mean, it is extremely technical, so, I mean, people that have expertise that probably have an interest in a regulatory structure being placed on this. I mean, do you have any idea what groups were involved? Is there any transparency to that?\n[Respondent] I do not. I think that is a good question for Congress to ask and an oversight committee to ask, and I do not have good information on that. I know there were a lot of participants. There were probably a lot of people who are asking for different things to be included in this, and that is, in part, why it ended up so long.\n[Interviewer] (Mr. Timmons) So, all the reporting requirements, does that not chill innovation? I mean, there are a lot of proprietary approaches to this. Is it going to chill innovation?\n[Respondent] I think it could chill innovation in a couple of different ways. One, companies, when they are thinking about what sensitive data that they are going to have to report to the government, they are going to have to make a tradeoff. Like, are we going to grow big enough to meet the caps that put us over this reporting threshold, or are we going to stay under that and limit ourselves artificially in order to not have to comply with these specific rules? And I think that would be to the detriment of U.S. leadership in AI.\n[Interviewer] (Mr. Timmons) A lot of these companies are global. I mean, could they not just move their development overseas outside the jurisdiction of the U.S., or does the Defense Production Act somehow extend beyond our borders?\n[Respondent] They absolutely could move overseas, and I know that there are jurisdictions that are actively recruiting AI startups and AI companies to move to their jurisdictions, promising them less constraining regulatory environments.\n[Interviewer] (Mr. Burchett) OK. What materials or goods does Executive Order 14110 direct companies to produce?\n[Respondent] Documents containing highly sensitive commercial and cybersecurity information.\n[Interviewer] (Mr. Burchett) OK. And what national security concerns exist regarding AI that justifies using the Defense Production Act?\n[Respondent] Well, I think there are national security concerns around AI. We have heard a lot of talk about, you know, the rivalry with China and the importance of staying ahead, so there are concerns there. But as for ones that directly address the kinds of threats to interrupted production that the Defense Production Act is looking for, again, as Adam said, it turned the DPA on its head, which the DPA is to allow the government to spur production. And the executive order uses the DPA in order to discourage production on some levels, in part by imposing additional regulatory burdens on people who are producing at the highest level.\n[Interviewer] (Mr. Burchett) Has the Defense Production Act been used to extract information from companies rather than to encourage production? Either one of you all.\n[Respondent] I have heard that there has been already an immediate request based on this use of the Defense Production Act, but I think in the past, I am not aware of another one.\n[Interviewer] (Mr. Burchett) Do you all think that this executive order could stifle artificial intelligence innovation?\n[Respondent] I do, and I think the use of the DPA here undermines some of the other important goals that Congresswoman Pressley was pointing out about government uses and the risks of government use of AI.\n[Interviewer] (Ms. Mace) All right. We are waiting on one more Member who is coming, so I am going to ask a few questions that I did not get to ask earlier, so I will now recognize myself for 5 minutes.\nSo, the executive order came out at the end of October, and it said that Commerce would have to implement and get moving after 90 days, which would have been the end of January. Does anyone on the panel know if Commerce is doing anything related to this executive order at this juncture today, middle to end of March, soon to be April? Does anybody know?\n[Respondent] They certainly are doing a lot, actually.\n[Interviewer] (Ms. Mace) Mm-hmm.\n[Respondent] There are several rulemakings and other proceedings that are ongoing. NTIA, which is part of the Department of Commerce, has a rulemaking on open-source models, and so there is a lot of swirl at NTIA, and I think across Commerce, so yes.\n[Interviewer] (Ms. Mace) Any movement on the DPA provisions of the EO?\n[Respondent] I have only heard that there was a request to some companies in mid-December that they start filing information. The understanding of the DPA provisions as the executive order came out was that none of the current models met the threshold for reporting yet, and so that request that I have heard has gone out, it is not quite clear why that request had gone out, and so----\n[Interviewer] (Ms. Mace) Because they had not met the threshold.\n[Respondent] There is language in the DPA provision----\n[Interviewer] (Ms. Mace) Mm-hmm.\n[Respondent] That says if you are even thinking of getting over the threshold, you also have to report, and maybe that is----\n[Interviewer] (Ms. Mace) And how do they report? How are companies----\n[Respondent] I do not know what the exact procedure is. The executive order does not lay that out in specific detail. I think it would be up to whatever the requests are that are coming in. In fact, the executive order does not give a ton of detail about what specific information. It gives general categories, but I am hearing that they are asking for quite a lot, including a lot of sensitive information.\n[Interviewer] (Ms. Mace) It gives them, basically, broad authority to do whatever. Mr. Chilson, it gives them broad authority, then because of that vagueness?\n[Respondent] I think so.\n[Interviewer] (Ms. Mace) Mm-hmm.\n[Respondent] Broad authority to request the information that fits into those buckets that are in the executive order.\n[Interviewer] (Ms. Mace) Mr. Chilson?\n[Respondent] So, in addition to the DPA chilling effects that will happen under the authorities there to some of the largest models, I really do think, and to the earlier Congressman's point, that the very vague definition of ``artificial intelligence,'' which to my reading and I think some other experts' readings, could sweep in things like formulas in complicated spreadsheets. This is not ChatGPT-style AI. We are talking about software that people use every day and that industries use every day. The Federal Government has now been told, including HHS, hey, go make sure that all of these AI pieces of software are working well, that they are meeting the appropriate levels of quality. That has the potential to unleash a lot of regulation, not just on what we think of as AI, but software development generally, which would be really a sea change in how the U.S. approaches software development.\n[Interviewer] (Ms. Mace) With regards to DPA, do we see this applied to any other technology? Is that a thing?\n[Respondent] The DPA has been used to ensure the supply of materials that are needed for defense and for disaster recovery on a wide range of technologies. We have never seen it applied to AI, and we have never seen it applied not to ensure that there is sufficient production for defense, but more for a regulatory purpose, like it is being used here, to make sure it is safer or that it is more limited than it is. So, this is a very unprecedented use of the DPA.\n[Interviewer] (Ms. Mace) Mr. Chilson?\n[Respondent] Well, we do have a template for how the last disruptive technology, the last major disruptive sea change technology of the internet was treated by the U.S. Government. And there was a very specific choice, both in legislation and at the executive level, to let the market lead, to let innovators lead, to let them drive this technology forward because they can explore a lot of different approaches and uses in a way that we could never envision in the early 90s when some of these decisions were made. And so, I do think that that template, which requires action both by the White House, it can require action by the White House, and also it could be done by Congress as well, to take an open look at a structure that would allow for a lot of variation. Let us focus on some specific targeted harms but not tech specific. All the bad things that we have heard about AI, those things are bad whether or not they have been done with AI or with another tool. We should target those harms, we should treat those seriously, and we should deal with them, but there is no reason to target AI on these specifically.",
+ "_bench": {
+  "seconds": 42.3,
+  "chars": 17557
+ }
+}

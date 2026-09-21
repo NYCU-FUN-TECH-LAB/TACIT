@@ -1,0 +1,114 @@
+{
+  "respondent": "A06 (Doctoral researcher and project research assistant)",
+  "descriptors": {
+    "institution_type": "academia",
+    "role_level": "researcher",
+    "sector": "ict_ai",
+    "experience": "under_5y",
+    "descriptor_basis": "Interview transcript: A06 (Doctoral researcher and project research assistant)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "Community input systematically removed at write-up",
+      "quote": "I'm the person who sits in the community meetings and then writes the paragraph that gets cut from the report. I've counted. Four times now.",
+      "full_text": "Officially I do the fieldwork. Unofficially I'm the person who sits in the community meetings and then writes the paragraph that gets cut from the report. I've counted. Four times now.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "A specific, countable mechanism by which engagement fails to reach the output."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "Findings suppressed to avoid providing ammunition",
+      "quote": "'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.",
+      "full_text": "Length, usually. Sometimes 'this belongs in the appendix'. Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "Explicit refusal to let evidence circulate where it might support opposition."
+        },
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Reflexive attention to the respondent's own participation in the practice she is describing."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "Sampling designed to reach beyond convenient hours",
+      "quote": "I did evenings and weekends as well because the daytime sample was retired people and parents, which is a real population but not the whole one.",
+      "full_text": "Sixty-one street intercepts and nine longer interviews, over four months, at eight junctions chosen to vary by ward income and footfall. I did evenings and weekends as well because the daytime sample was retired people and parents, which is a real population but not the whole one.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "P",
+          "rationale": "Engagement designed against the grain of what is easy to collect."
+        },
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Examination of how the method shapes whose voice is captured."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "Public awareness never treated as a design variable",
+      "quote": "Roughly two in three had no idea the junctions had changed at all.",
+      "full_text": "How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all. Which reframes the whole consultation question, doesn't it — you can't consult people about a thing they don't know exists, and the consultation was advertised in the places you'd look if you already knew.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "N",
+          "rationale": "The project did not anticipate that the population it intended to consult would not know the system existed."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "Consultation reached only the already-informed",
+      "quote": "the consultation was advertised in the places you'd look if you already knew",
+      "full_text": "How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all. Which reframes the whole consultation question, doesn't it — you can't consult people about a thing they don't know exists, and the consultation was advertised in the places you'd look if you already knew.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "The engagement channel systematically excluded the majority who were unaware of the system."
+        }
+      ]
+    },
+    {
+      "segment_id": "S006",
+      "title": "Unsettled about whether the practice is appropriate",
+      "quote": "I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it",
+      "full_text": "Put it in the thesis, where four people will read it. I know how that sounds. I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Ongoing scrutiny of her own decision rather than settled self-justification."
+        },
+        {
+          "dimension": "engagement",
+          "polarity": "P",
+          "rationale": "Reciprocity toward participants enacted as a practice, not merely endorsed."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "The junior member of the project team, and the one with the most direct contact with residents. Her fieldwork found that two in three people did not know the system existed, which undercuts the premise of the consultation that was run. She reports a countable mechanism of suppression — four community paragraphs cut from reports, once explicitly to avoid giving opponents ammunition — and holds herself to account for not objecting. She now returns plain-language findings to participants directly, while remaining unsettled about whether that is her call to make.",
+  "transcript": "Interview transcript A06 — Doctoral researcher and project research assistant\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What's your role on the project?\n[Respondent] Officially I do the fieldwork. Unofficially I'm the person who sits in the community meetings and then writes the paragraph that gets cut from the report. I've counted. Four times now.\n[Interviewer] On what grounds is it cut?\n[Respondent] Length, usually. Sometimes 'this belongs in the appendix'. Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.\n[Interviewer] Tell me about the fieldwork itself.\n[Respondent] Sixty-one street intercepts and nine longer interviews, over four months, at eight junctions chosen to vary by ward income and footfall. I did evenings and weekends as well because the daytime sample was retired people and parents, which is a real population but not the whole one.\n[Interviewer] Did anything surprise you?\n[Respondent] How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all. Which reframes the whole consultation question, doesn't it — you can't consult people about a thing they don't know exists, and the consultation was advertised in the places you'd look if you already knew.\n[Interviewer] What will you do with the material that gets cut?\n[Respondent] Put it in the thesis, where four people will read it. I know how that sounds. I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+  "transcript_file": "12_A06_Doctoral-researcher-and-project-research-assistant.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

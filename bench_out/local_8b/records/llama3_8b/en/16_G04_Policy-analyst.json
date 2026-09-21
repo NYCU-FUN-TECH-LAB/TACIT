@@ -1,0 +1,57 @@
+{
+ "respondent": "Policy analyst, national transport ministry",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "other",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "based on the respondent's self-introduction"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Anticipation of potential issues",
+   "quote": "nothing had gone wrong yet, and our attention is allocated by what has gone wrong.",
+   "full_text": "The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipates potential issues by acknowledging that attention is allocated by what has gone wrong, implying a proactive approach to addressing problems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reflexivity on the role of government",
+   "quote": "Authorities must have regard to it.",
+   "full_text": "It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent reflects on the role of government, acknowledging that guidance is not mandatory but rather advisory, and that authorities may choose to follow it or not."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Engagement with stakeholders",
+   "quote": "No disability organisations, no residents.",
+   "full_text": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent notes the absence of certain stakeholders, such as disability organisations and residents, from the working group, indicating a lack of engagement with these groups."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits a mix of anticipation and reflexivity, acknowledging the potential for issues to arise and the limitations of government guidance. However, they also demonstrate a lack of engagement with certain stakeholders, such as disability organisations and residents, which may be a weakness in the account.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G04 — Policy analyst, national transport ministry\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does central government see deployments like Port Calder's?\n[Respondent] As a pilot we can learn from, officially. In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.\n[Interviewer] Could the ministry have moved earlier?\n[Respondent] Yes. There was a submission in 2021 recommending exactly that and it wasn't prioritised. I've read it. It's a good submission. The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.\n[Interviewer] What's going into the guidance?\n[Respondent] A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.\n[Interviewer] Will it have teeth?\n[Respondent] It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.\n[Interviewer] Was anyone outside government involved in drafting?\n[Respondent] A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline."
+}

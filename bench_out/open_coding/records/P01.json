@@ -1,0 +1,153 @@
+{
+ "respondent": "P01",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "unspecified",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Assessing the system's potential impact",
+   "quote": "On the technical side, absolutely, we ran a full assessment. False positive rate, detection accuracy under rain, night performance, we have an internal acceptance standard that's frankly stricter than what the city asked for.",
+   "full_text": "On the technical side, absolutely, we ran a full assessment. False positive rate, detection accuracy under rain, night performance, we have an internal acceptance standard that's frankly stricter than what the city asked for. That part I'm confident about.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Technical assessment",
+     "rationale": "The respondent emphasizes the thoroughness of the technical assessment"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Contractor's role and limitations",
+   "quote": "But social impact, what it does to the city as a city — honestly, that's not our remit. We're a contractor. The city writes a specification, we build to the specification.",
+   "full_text": "But social impact, what it does to the city as a city — honestly, that's not our remit. We're a contractor. The city writes a specification, we build to the specification. That's the arrangement.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Contractor's role",
+     "rationale": "The respondent clarifies the contractor's role and responsibilities"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Unintended consequences and risk management",
+   "quote": "Sitting around imagining what might go wrong is, in my experience, a way of not shipping anything. Build it, see what breaks, fix what breaks.",
+   "full_text": "Unintended consequences. Look, I'll probably sound naive saying this, but smart infrastructure is where everything is going. Every city in the region is doing it. If we don't do it someone else will, so it's a question of when, not whether. Sitting around imagining what might go wrong is, in my experience, a way of not shipping anything. Build it, see what breaks, fix what breaks. And a lot of the concerns people raise, with respect, come from not understanding the technology.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Unintended consequences",
+     "rationale": "The respondent discusses the approach to unintended consequences"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Community engagement and public information",
+   "quote": "Yes, there was a public information session. The city organised it — March last year, I think, in the council building.",
+   "full_text": "Yes, there was a public information session. The city organised it — March last year, I think, in the council building. We presented the system, what it does, the expected benefits. Turnout was modest, twenty-five, thirty people.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Community engagement",
+     "rationale": "The respondent mentions the public information session"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Design and procurement",
+   "quote": "The specification was locked by then, it had to be, because you can't tender against a moving target.",
+   "full_text": "The specification was locked by then, it had to be, because you can't tender against a moving target. Once the tender documents go out, that's it. So the session was more about — letting people know what was coming. Changing the design in that room wasn't realistic. The whole procurement would have to start again and somebody would have to answer for that.",
+   "open_codes": [
+    {
+     "code_id": "c005",
+     "label": "Design and procurement",
+     "rationale": "The respondent explains the design and procurement process"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Public feedback and concerns",
+   "quote": "One woman, a wheelchair user, said the pedestrian crossing interval wasn't long enough for her.",
+   "full_text": "One woman, a wheelchair user, said the pedestrian crossing interval wasn't long enough for her. That stuck with me, actually. But the interval is set by national regulation — we can't just change it. So we explained that this was a regulatory matter, not a system matter, and that she should raise it with the ministry.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Public feedback",
+     "rationale": "The respondent shares a specific example of public feedback"
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Reflection and lessons learned",
+   "quote": "Looking back, is there anything you'd do differently?",
+   "full_text": "Looking back, is there anything you'd do differently?",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Reflection and lessons learned",
+     "rationale": "The respondent is asked to reflect on the project"
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Reflection and lessons learned",
+   "quote": "Maybe the documentation, we could have written the user-facing documentation better.",
+   "full_text": "Maybe the documentation, we could have written the user-facing documentation better. But the engineering, no. The system does what it was specified to do, within tolerance, on budget. I'd sign the same contract tomorrow.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Reflection and lessons learned",
+     "rationale": "The respondent is reflecting on past decisions and actions."
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Data management and sharing",
+   "quote": "The city holds it. We process it.",
+   "full_text": "The city holds it. We process it. There's a data-sharing agreement, it went through their legal team and ours. I couldn't tell you the retention period off the top of my head, it's in the schedule. That's genuinely not something I get asked about often, which now that you say it out loud is maybe a bit odd.",
+   "open_codes": [
+    {
+     "code_id": "c008",
+     "label": "Data management and sharing",
+     "rationale": "The respondent discusses the city's role in holding and processing data."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260914_193235",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 2,
+   "n_ok": 2
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 0,
+    "created": 7,
+    "chunk": 0
+   },
+   {
+    "reused": 1,
+    "created": 1,
+    "chunk": 1
+   }
+  ]
+ },
+ "transcript": "Interview transcript P01 — Project director, systems integration contractor\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Let's start with the beginning of the project. When Port Calder brought you in, how did you assess what this system might do to the city?\n[Respondent] Right, so — I want to split that into two parts, because people conflate them. On the technical side, absolutely, we ran a full assessment. False positive rate, detection accuracy under rain, night performance, we have an internal acceptance standard that's frankly stricter than what the city asked for. That part I'm confident about. But social impact, what it does to the city as a city — honestly, that's not our remit. We're a contractor. The city writes a specification, we build to the specification. That's the arrangement.\n[Interviewer] Was there any discussion early on about unintended consequences?\n[Respondent] Unintended consequences. Look, I'll probably sound naive saying this, but smart infrastructure is where everything is going. Every city in the region is doing it. If we don't do it someone else will, so it's a question of when, not whether. Sitting around imagining what might go wrong is, in my experience, a way of not shipping anything. Build it, see what breaks, fix what breaks. And a lot of the concerns people raise, with respect, come from not understanding the technology. Once the thing is running and people's commutes get shorter, that noise dies down on its own.\n[Interviewer] Were community groups or residents involved in the design?\n[Respondent] Yes, there was a public information session. The city organised it — March last year, I think, in the council building. We presented the system, what it does, the expected benefits. Turnout was modest, twenty-five, thirty people.\n[Interviewer] Was that before or after the design was finalised?\n[Respondent] After. The specification was locked by then, it had to be, because you can't tender against a moving target. Once the tender documents go out, that's it. So the session was more about — letting people know what was coming. Changing the design in that room wasn't realistic. The whole procurement would have to start again and somebody would have to answer for that.\n[Interviewer] Did anyone at that session raise an objection?\n[Respondent] One woman, a wheelchair user, said the pedestrian crossing interval wasn't long enough for her. That stuck with me, actually. But the interval is set by national regulation — we can't just change it. So we explained that this was a regulatory matter, not a system matter, and that she should raise it with the ministry.\n[Interviewer] Looking back, is there anything you'd do differently?\n[Respondent] Differently. Hmm. Maybe the documentation, we could have written the user-facing documentation better. But the engineering, no. The system does what it was specified to do, within tolerance, on budget. I'd sign the same contract tomorrow.\n[Interviewer] One more — the camera data. Who holds it?\n[Respondent] The city holds it. We process it. There's a data-sharing agreement, it went through their legal team and ours. I couldn't tell you the retention period off the top of my head, it's in the schedule. That's genuinely not something I get asked about often, which now that you say it out loud is maybe a bit odd."
+}

@@ -1,0 +1,18 @@
+PUBLIC HEARING CORPUS — AI governance hearings of the United States Congress
+
+Source: U.S. Government Publishing Office, govinfo.gov, collection CHRG
+        (Congressional Hearings). Every file names its hearing package id; the
+        official record is at https://www.govinfo.gov/app/details/<id> with
+        HTML and PDF renditions under https://www.govinfo.gov/content/pkg/<id>/.
+Licence: works of the United States Government are not subject to copyright
+        (17 U.S.C. § 105). Only the spoken proceedings transcribed by the
+        official reporter are included. Witnesses' written statements submitted
+        for the record are excluded, because a non-government author may hold
+        copyright in a prepared text.
+Shape:  one file per witness. The first [Respondent] block is the witness's
+        oral opening statement; each later pair is a member's question
+        ([Interviewer], with the member named) followed by that witness's answer.
+        Members of Congress are questioners, not respondents, in this corpus.
+Built:  2026-09-18 by make_hearing_corpus.py from the package ids listed in
+        manifest.json. Sector and role assignments in manifest.json were
+        suggested by keyword rules and then reviewed by hand.

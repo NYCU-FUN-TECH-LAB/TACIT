@@ -1,0 +1,112 @@
+{
+  "respondent": "A04 (Associate professor of urban planning)",
+  "descriptors": {
+    "institution_type": "academia",
+    "role_level": "researcher",
+    "sector": "energy_sustainability",
+    "experience": "11_20y",
+    "descriptor_basis": "Interview transcript: A04 (Associate professor of urban planning)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "Applies induced demand to the ten-year horizon",
+      "quote": "It makes driving slightly better, which over ten years makes driving slightly more attractive, which puts more cars on the road, which uses up the capacity the system created.",
+      "full_text": "It makes driving slightly better, which over ten years makes driving slightly more attractive, which puts more cars on the road, which uses up the capacity the system created. Traffic engineers have known this since the sixties and it has a name, induced demand, and it gets left out of every business case I have ever read including this one.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Long-horizon systemic reasoning about second-order effects, grounded in an established mechanism."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "Known mechanism omitted from the business case",
+      "quote": "it gets left out of every business case I have ever read including this one",
+      "full_text": "It makes driving slightly better, which over ten years makes driving slightly more attractive, which puts more cars on the road, which uses up the capacity the system created. Traffic engineers have known this since the sixties and it has a name, induced demand, and it gets left out of every business case I have ever read including this one.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "N",
+          "rationale": "A well-established effect is absent from the project's own forward assessment."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "Long-term question distributed until unowned",
+      "quote": "Every actor here has a defensible reason why the long-term question belongs to someone else, and the sum of those defensible reasons is that it belongs to nobody.",
+      "full_text": "I raised it at a workshop. The response was that the system is signal timing, not transport policy, and induced demand is a policy question. Which is true and also a way of ensuring nobody owns it. Every actor here has a defensible reason why the long-term question belongs to someone else, and the sum of those defensible reasons is that it belongs to nobody.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "N",
+          "rationale": "Diagnoses how a division of scope systematically produces an absence of anticipation."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "Scenario workshop across conflicting interests",
+      "quote": "We did, with about thirty people — planners, two councillors, a bus operator, four residents, a freight association.",
+      "full_text": "We did, with about thirty people — planners, two councillors, a bus operator, four residents, a freight association. Three scenarios out to 2040. The useful part wasn't the scenarios, it was that the freight association and the disability group ended up agreeing about kerb space, which neither of them expected and neither would have discovered in a consultation questionnaire.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "P",
+          "rationale": "Engagement designed to bring differently-positioned actors into the same deliberation."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "Scenarios surfaced an unexpected alignment",
+      "quote": "the freight association and the disability group ended up agreeing about kerb space, which neither of them expected",
+      "full_text": "We did, with about thirty people — planners, two councillors, a bus operator, four residents, a freight association. Three scenarios out to 2040. The useful part wasn't the scenarios, it was that the freight association and the disability group ended up agreeing about kerb space, which neither of them expected and neither would have discovered in a consultation questionnaire.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "The anticipatory exercise produced knowledge that no party held beforehand."
+        }
+      ]
+    },
+    {
+      "segment_id": "S006",
+      "title": "Treats the record as a slow-acting channel",
+      "quote": "Sometimes things in the record get picked up years later by someone you've never met.",
+      "full_text": "Into the local plan consultation, where it sits alongside four hundred other submissions. I'd call that neither success nor failure. It's in the record. Sometimes things in the record get picked up years later by someone you've never met. I've stopped measuring impact on a three-year cycle because nothing in planning works on a three-year cycle.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "P",
+          "rationale": "A weak but genuine account of how adaptation happens on planning timescales. A second coder might reasonably code this as neutral or negative — the deliberate ambiguity is retained."
+        }
+      ]
+    },
+    {
+      "segment_id": "S007",
+      "title": "Publication of the objective function as a precondition",
+      "quote": "Publish the objective function. One page, plain language: here is what the system is trying to maximise, here is what it treats as a cost, here is who decided.",
+      "full_text": "Publish the objective function. One page, plain language: here is what the system is trying to maximise, here is what it treats as a cost, here is who decided. Nobody can argue with a system whose goals are undisclosed, and at the moment nobody outside the vendor knows what it is optimising.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "P",
+          "rationale": "Proposes the informational condition without which meaningful public deliberation is impossible."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "A long-horizon account built on induced demand: the system makes driving marginally better and therefore, over a decade, consumes the capacity it created. The respondent's sharpest observation is structural — every actor has a defensible reason why the long-term question belongs to someone else, and the sum of those reasons is that it belongs to nobody. His scenario workshop produced an alignment between freight and disability interests that no questionnaire would have found.",
+  "transcript": "Interview transcript A04 — Associate professor of urban planning\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What's your reading of what this system does to the city?\n[Respondent] It makes driving slightly better, which over ten years makes driving slightly more attractive, which puts more cars on the road, which uses up the capacity the system created. Traffic engineers have known this since the sixties and it has a name, induced demand, and it gets left out of every business case I have ever read including this one.\n[Interviewer] Was that raised during planning?\n[Respondent] I raised it at a workshop. The response was that the system is signal timing, not transport policy, and induced demand is a policy question. Which is true and also a way of ensuring nobody owns it. Every actor here has a defensible reason why the long-term question belongs to someone else, and the sum of those defensible reasons is that it belongs to nobody.\n[Interviewer] You ran a scenario workshop yourself, I think?\n[Respondent] We did, with about thirty people — planners, two councillors, a bus operator, four residents, a freight association. Three scenarios out to 2040. The useful part wasn't the scenarios, it was that the freight association and the disability group ended up agreeing about kerb space, which neither of them expected and neither would have discovered in a consultation questionnaire.\n[Interviewer] Did the workshop output go anywhere?\n[Respondent] Into the local plan consultation, where it sits alongside four hundred other submissions. I'd call that neither success nor failure. It's in the record. Sometimes things in the record get picked up years later by someone you've never met. I've stopped measuring impact on a three-year cycle because nothing in planning works on a three-year cycle.\n[Interviewer] If the city asked you what to change tomorrow, what would you say?\n[Respondent] Publish the objective function. One page, plain language: here is what the system is trying to maximise, here is what it treats as a cost, here is who decided. Nobody can argue with a system whose goals are undisclosed, and at the moment nobody outside the vendor knows what it is optimising.",
+  "transcript_file": "10_A04_Associate-professor-of-urban-planning.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

@@ -1,0 +1,398 @@
+{
+ "respondent": "CHRG-118shrg52785_Ariga",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "researcher",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Opening Remarks",
+   "quote": "Chairman Peters, Ranking Member Paul, and distinguished Members of the Committee, thank you for inviting me to participate in today's hearing on artificial intelligence in the Federal Government.",
+   "full_text": "Chairman Peters, Ranking Member Paul, and distinguished Members of the Committee, thank you for inviting me to participate in today's hearing on artificial intelligence in the Federal Government. The prepared statement of Mr. Ariga appears in the Appendix on page 48.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "introducing AI as a topic"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "AI's Potential and Risks",
+   "quote": "As GAO's Chief Data Scientist and Director of our Innovation Lab, I see AI's potential in action every day. But as you noted in your March 8th hearing, significant risks and challenges exist wherever AI is assisting or replacing discretionary decisionmaking.",
+   "full_text": "As GAO's Chief Data Scientist and Director of our Innovation Lab, I see AI's potential in action every day. But as you noted in your March 8th hearing, significant risks and challenges exist wherever AI is assisting or replacing discretionary decisionmaking. AI is undeniably an integral part of a functioning digital fabric.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "need for guardrails in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "AI's Impact on Government",
+   "quote": "The Federal Government is certainly not immune from consequences of this powerful technology. The need to promote responsible and accountable use of AI is even more striking now in the face of growing dangers from unfair, unintended, or misleading outcomes that carry cascading societal impacts.",
+   "full_text": "The Federal Government is certainly not immune from consequences of this powerful technology. The need to promote responsible and accountable use of AI is even more striking now in the face of growing dangers from unfair, unintended, or misleading outcomes that carry cascading societal impacts.",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Bias Mitigation",
+     "rationale": "need to mitigate biases in AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Addressing Challenges",
+   "quote": "We must address both challenges at pace with, and perhaps even anticipate, rapid advances in AI capabilities.",
+   "full_text": "We must address both challenges at pace with, and perhaps even anticipate, rapid advances in AI capabilities.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "Best Practices for AI Training",
+     "rationale": "need for best practices in AI training"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "AI's impact on digital fabric and government",
+   "quote": "AI is undeniably an integral part of a functioning digital fabric. However, the Federal Government is certainly not immune from consequences of this powerful technology.",
+   "full_text": "AI is undeniably an integral part of a functioning digital fabric. However, the Federal Government is certainly not immune from consequences of this powerful technology. The need to promote responsible and accountable use of AI is even more striking now in the face of growing dangers from unfair, unintended, or misleading outcomes that carry cascading societal impacts.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "defining AI's role in digital fabric"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Challenges in implementing accountability practices",
+   "quote": "agencies continue to face acute short of Federal digital talent needed to implement accountability practices",
+   "full_text": "Paradoxically, agencies continue to face acute short of Federal digital talent needed to implement accountability practices. We must address both challenges at pace with, and perhaps even anticipate, rapid advances in AI capabilities.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI",
+     "rationale": "shortage of digital talent hinders accountability practices"
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "GAO's AI Accountability Framework",
+   "quote": "introduction of our AI Accountability Framework in summer of 2021",
+   "full_text": "One of the most notable moments is the introduction of our AI Accountability Framework in summer of 2021. This first-of-its-kind blueprint moved beyond high-level aspirations and laid out 33 key implementation practices across four pillars for Federal agencies to consider as they navigate the AI development lifecycle.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "GAO's framework provides guardrails for AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Workforce challenges in S&T",
+   "quote": "the Federal Government, as a whole, continues to face barriers in hiring, managing, and retaining staff with advanced technical skills",
+   "full_text": "The Federal Government, as a whole, continues to face barriers in hiring, managing, and retaining staff with advanced technical skills, the very skills needed to design, develop, deploy, and monitor AI systems.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI",
+     "rationale": "workforce challenges hinder AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Establishing a U.S. Digital Services Academy",
+   "quote": "the aim is to improve the Federal pipeline of highly trained digital talent",
+   "full_text": "In our November 2021 report, GAO gathered perspective from technology leaders across Federal, academic, and nonprofit entities to explore the concept of establishing a U.S. Digital Services Academy (USDSA). The aim is to improve the Federal pipeline of highly trained digital talent that can effectively and responsibly modernize government, including implementation of AI systems.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "Best Practices for AI Training",
+     "rationale": "improving digital talent pipeline for AI implementation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "GAO's commitment to AI accountability",
+   "quote": "We have formed an internal AI community of practice that includes every GAO mission team",
+   "full_text": "GAO remains committed to supporting Congress on the ``trust but verify'' part of the AI accountability equation. We have formed an internal AI community of practice that includes every GAO mission team. We have established internal training resources to enhance data literacy and data science. We have hired more data scientists. Our Innovation Lab is actively exploring a variety of impactful machine learning techniques to transform audit function.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "GAO's commitment to AI accountability"
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "GAO's commitment to AI accountability",
+   "quote": "GAO remains committed to supporting Congress on the ``trust but verify'' part of the AI accountability equation.",
+   "full_text": "GAO remains committed to supporting Congress on the ``trust but verify'' part of the AI accountability equation. We have formed an internal AI community of practice that includes every GAO mission team. We have established internal training resources to enhance data literacy and data science. We have hired more data scientists. Our Innovation Lab is actively exploring a variety of impactful machine learning techniques to transform audit function. We remain engaged with a network of oversight partners, academic, and governmental entities at all levels to exchange insights. All of these efforts give GAO hands-on experience to stay at the forefront of AI technology, with which to offer technical assistance and strengthen oversight capacity.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "GAO's commitment to supporting Congress on AI accountability"
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Need for specific guidance on AI implementation",
+   "quote": "Realizing accountable AI is a continuing journey that requires a whole-of-government approach, Federal agencies need more specific guidance on effective implementation of AI.",
+   "full_text": "Realizing accountable AI is a continuing journey that requires a whole-of-government approach, Federal agencies need more specific guidance on effective implementation of AI. At the same time, we need practical policy solutions that address interconnected challenges on privacy, civil liberties, and workforce readiness.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Need for specific guidance on AI implementation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "GAO's role in AI governance",
+   "quote": "GAO believes that the Federal Government can, and must, simultaneously realize opportunities afforded by AI and be leaders in good governance, transparency, and compliance in this age of algorithmic renaissance.",
+   "full_text": "GAO believes that the Federal Government can, and must, simultaneously realize opportunities afforded by AI and be leaders in good governance, transparency, and compliance in this age of algorithmic renaissance.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Defining AI",
+     "rationale": "GAO's role in AI governance"
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Pilot of AI toolkit",
+   "quote": "You mentioned the Government Accountability Office, so this question is for you, Mr. Ariga. In your testimony you mentioned how the GAO has created a toolkit to audit the AI system used by government, and that you are piloting that toolkit right now with one agency.",
+   "full_text": "You mentioned the Government Accountability Office, so this question is for you, Mr. Ariga. In your testimony you mentioned how the GAO has created a toolkit to audit the AI system used by government, and that you are piloting that toolkit right now with one agency. My question for you is, can you tell us more about how the pilot is going, what roadblocks you may be facing, and at this time would it be feasible for all agencies to use the GAO Accountability Framework to audit their AI systems, and if not, why?",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI",
+     "rationale": "Pilot of AI toolkit"
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "GAO's AI Accountability Framework",
+   "quote": "GAO published our AI Accountability Framework back in the summer of 2021, and it is really a first-of-its-kind blueprint for agencies to consider as they navigate the AI development lifecycle.",
+   "full_text": "GAO published our AI Accountability Framework back in the summer of 2021, and it is really a first-of-its-kind blueprint for agencies to consider as they navigate the AI development lifecycle. The basic premise is that if agencies can implement practices, entities like GAO can then come afterwards to identify and evaluate those, and point out any findings and recommendations there may be needed.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "GAO's AI Accountability Framework"
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "Challenges in AI Development",
+   "quote": "There are three challenges that particularly, I think, hamper the AI development within the Federal Government space.",
+   "full_text": "There are three challenges that particularly, I think, hamper the AI development within the Federal Government space. One is that while our framework looks at the AI development lifecycle, agencies can use more domain-specific guidance. For example, the ingredient list for transparency in medical diagnostics may look very different than facial recognition or even autonomous vehicles.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Agencies face challenges in AI development, including the need for domain-specific guidance"
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "AI Shield for Kids (ASK) Act",
+   "quote": "Today I am introducing my AI Shield for Kids (ASK) Act, to prevent children from accessing artificial intelligence features on social media sites without the consent of a parent or guardian.",
+   "full_text": "Today I am introducing my AI Shield for Kids (ASK) Act, to prevent children from accessing artificial intelligence features on social media sites without the consent of a parent or guardian. I have long been a supporter of doing more to keep our kids safe online. There is no doubt that we must do more to combat the emerging threats our children face each and every day on the Internet. Like probably some other people here, I have a bunch of grandkids, and I do not ever want to put them at risk.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The AI Shield for Kids (ASK) Act aims to prevent children from accessing AI features on social media sites without parental consent"
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "Need for Guardrails in AI Development",
+   "quote": "What guardrails are needed to protect vulnerable Americans from threats from intrusive AI, such as Snapchat's chatbot?",
+   "full_text": "What guardrails are needed to protect vulnerable Americans from threats from intrusive AI, such as Snapchat's chatbot? Mr. Ariga, AI poses significant risks to Americans, particularly vulnerable Americans such as children and youth. There are threats to privacy, user manipulation, and safety concerns. We know that AI regulation is lagging behind the speed of AI development and use.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The need for guardrails in AI development is highlighted by the risks posed by intrusive AI, such as Snapchat's chatbot"
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "GAO's role in AI oversight",
+   "quote": "GAO's role is to provide rigorous oversight.",
+   "full_text": "GAO's role is to provide rigorous oversight. Should agencies decide to use any AI technology, including Snapchat, we certainly stand by, ready to do the rigorous programmatic assessments of those programs, in line with what we have laid out in our Accountability Framework.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "GAO emphasizes the importance of oversight in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Concerns about Snapchat's AI features",
+   "quote": "If you don't want it, you have to pay to get it off, if you want to keep using Snapchat.",
+   "full_text": "Yes, I will answer that. GAO's role is to provide rigorous oversight. Should agencies decide to use any AI technology, including Snapchat, we certainly stand by, ready to do the rigorous programmatic assessments of those programs, in line with what we have laid out in our Accountability Framework. It is hard to believe. If you do not want it, you have to pay to get it off, if you want to keep using Snapchat.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Concerns about the lack of guardrails in Snapchat's AI features"
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "GAO's approach to AI oversight",
+   "quote": "Certainly GAO has done a number of work around education, around childhood development, and so we would sort of take that similar approach at looking at programmatic implementation to see how that aligns with what we have laid out in the Accountability Framework.",
+   "full_text": "Certainly GAO has done a number of work around education, around childhood development, and so we would sort of take that similar approach at looking at programmatic implementation to see how that aligns with what we have laid out in the Accountability Framework.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "GAO's approach to AI oversight emphasizes the importance of aligning with established frameworks"
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Personal experience with AI",
+   "quote": "Yes, I do, two.",
+   "full_text": "Yes, I do, two. [Interviewer] (Senator Scott) OK. Do you watch what they look at?",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent's personal experience with AI is not directly relevant to the topic of AI oversight"
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Parental concerns about AI",
+   "quote": "For sure. When my daughter looks at YouTube videos I certainly want to make sure that the content is appropriate for her age.",
+   "full_text": "For sure. When my daughter looks at YouTube videos I certainly want to make sure that the content is appropriate for her age. As a parent I certainly share the same concerns that you do have. But from a GAO perspective, we try to be specific with our oversight role to say as agencies implement these capabilities there are specific sort of guardrails and expectations from internal controls that GAO will be looking at.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of guardrails in AI development, highlighting the need for specific expectations and internal controls."
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Prioritizing AI safety",
+   "quote": "Increasing the safety and predictability of AI systems requires more technical research into the methods used to create these systems.",
+   "full_text": "Increasing the safety and predictability of AI systems requires more technical research into the methods used to create these systems. What can the Federal Government do to support or coordinate research that would help improve the safety of AI systems?",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent highlights the importance of technical research into AI methods to improve safety and predictability."
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "AI Accountability Framework",
+   "quote": "In our AI Accountability Framework we laid out specific governance practices where agencies can adopt to really consider, for example, is AI even necessary in this particular use case?",
+   "full_text": "In our AI Accountability Framework we laid out specific governance practices where agencies can adopt to really consider, for example, is AI even necessary in this particular use case? In fact, if it is, what are some of the organizational structures that are in place to assess the legality, the compliance factor, as well as driving some of these inherently governmental functions?",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent references the AI Accountability Framework, which outlines governance practices for AI development and use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Digital-ready workforce",
+   "quote": "I will echo with Dr. Ho's recommendation in terms of developing a Federal digital-ready workforce.",
+   "full_text": "I will echo with Dr. Ho's recommendation in terms of developing a Federal digital-ready workforce.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of developing a digital-ready workforce to support AI development and use."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_192719",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 6,
+   "n_ok": 6
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 2
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 3
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 4
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 5
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg52785 — Taka Ariga, Chief Data Scientist, U.S. Government Accountability Office\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg52785  |  Artificial Intelligence In Government  |  Senate, ?  |  2023-05-16  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chairman Peters) Thank you, Ranking Member Paul.\nIt is the practice of the Homeland Security and Governmental Affairs Committee (HSGAC) to swear in witnesses, so if each of you would please stand and raise your right hand.\nDo you swear that the testimony that you will give before this Committee will be the truth, the whole truth, and nothing but the truth, so help you, God?\n[Respondent] I do.\n[Interviewer] (Chairman Peters) Thank you. Thank you, Dr. Parker.\nOur next witness is Taka Ariga. Mr. Ariga is the Chief Data Scientist and Director of the Innovation Lab at the U.S. Government Accountability Office (GAO). As an integral part of the Science, Technology, Assessment, and Analytics team, he helps GAO develop and implement advanced analytical capabilities for its auditing processes.\nPrior to joining GAO, he held executive positions at Deloitte, Ernst & Young and Booz Allen Hamilton, where he worked with audit, compliance, legal, and regulated entities.\nWelcome to the Committee, and we look forward to your testimony.\nTESTIMONY OF TAKA ARIGA, CHIEF DATA SCIENTIST, U.S.\n[Respondent] Chairman Peters, Ranking Member Paul, and distinguished Members of the Committee, thank you for inviting me to participate in today's hearing on artificial intelligence in the Federal Government.\nThe prepared statement of Mr. Ariga appears in the Appendix on page 48.\nAs GAO's Chief Data Scientist and Director of our Innovation Lab, I see AI's potential in action every day. But as you noted in your March 8th hearing, significant risks and challenges exist wherever AI is assisting or replacing discretionary decisionmaking.\nAI is undeniably an integral part of a functioning digital fabric. However, the Federal Government is certainly not immune from consequences of this powerful technology. The need to promote responsible and accountable use of AI is even more striking now in the face of growing dangers from unfair, unintended, or misleading outcomes that carry cascading societal impacts.\nParadoxically, agencies continue to face acute short of Federal digital talent needed to implement accountability practices. We must address both challenges at pace with, and perhaps even anticipate, rapid advances in AI capabilities.\nGAO has issued more than two dozen reports over the past several years to promote responsible and accountable use of AI. One of the most notable moments is the introduction of our AI Accountability Framework in summer of 2021. This first-of-its- kind blueprint moved beyond high-level aspirations and laid out 33 key implementation practices across four pillars for Federal agencies to consider as they navigate the AI development lifecycle. In this framework, we also stress the importance of taking a team sport approach that integrates perspectives from an ecosystem of stakeholders.\nBeyond GAO's own use across our audit engagements, we are seeing adoption of the framework by the broader oversight community to conduct AI evaluations.\nOn the workforce front, GAO has steadfastly reported on mission-critical gaps for Federal expertise in science and technology (S&T) since 2001. The Federal Government, as a whole, continues to face barriers in hiring, managing, and retaining staff with advanced technical skills, the very skills needed to design, develop, deploy, and monitor AI systems.\nIn our November 2021 report, GAO gathered perspective from technology leaders across Federal, academic, and nonprofit entities to explore the concept of establishing a U.S. Digital Services Academy (USDSA). The aim is to improve the Federal pipeline of highly trained digital talent that can effectively and responsibly modernize government, including implementation of AI systems. Ultimately, having a robust cadre of a digital- ready, Federal workforce ensures humans can successfully remain in, and never out of the AI loop.\nGAO remains committed to supporting Congress on the ``trust but verify'' part of the AI accountability equation. We have formed an internal AI community of practice that includes every GAO mission team. We have established internal training resources to enhance data literacy and data science. We have hired more data scientists. Our Innovation Lab is actively exploring a variety of impactful machine learning techniques to transform audit function. We remain engaged with a network of oversight partners, academic, and governmental entities at all levels to exchange insights. All of these efforts give GAO hands-on experience to stay at the forefront of AI technology, with which to offer technical assistance and strengthen oversight capacity.\nRealizing accountable AI is a continuing journey that requires a whole-of-government approach, Federal agencies need more specific guidance on effective implementation of AI. At the same time, we need practical policy solutions that address interconnected challenges on privacy, civil liberties, and workforce readiness.\nWe know AI capabilities will evolve at an incredible speed, and the use of AI will continue to diffuse across facets of governmental functions. GAO believes that the Federal Government can, and must, simultaneously realize opportunities afforded by AI and be leaders in good governance, transparency, and compliance in this age of algorithmic renaissance.\nChairman Peters, Ranking Member Paul, and Members of the Committee, this concludes my prepared statement. I will be happy to answer any questions you may have.\n[Interviewer] (Chairman Peters) Thank you, Dr. Parker. You mentioned the Government Accountability Office, so this question is for you, Mr. Ariga. In your testimony you mentioned how the GAO has created a toolkit to audit the AI system used by government, and that you are piloting that toolkit right now with one agency.\nMy question for you is, can you tell us more about how the pilot is going, what roadblocks you may be facing, and at this time would it be feasible for all agencies to use the GAO Accountability Framework to audit their AI systems, and if not, why?\n[Respondent] Thank you, Chairman Peters, for that question. GAO published our AI Accountability Framework back in the summer of 2021, and it is really a first-of-its-kind blueprint for agencies to consider as they navigate the AI development lifecycle. The basic premise is that if agencies can implement practices, entities like GAO can then come afterwards to identify and evaluate those, and point out any findings and recommendations there may be needed.\nCertainly GAO has a number of ongoing audits using the AI Accountability Framework, and we are also hearing that other oversight entities are also using the framework itself to conduct their AI evaluations.\nThere are three challenges that particularly, I think, hamper the AI development within the Federal Government space. One is that while our framework looks at the AI development lifecycle, agencies can use more domain-specific guidance. For example, the ingredient list for transparency in medical diagnostics may look very different than facial recognition or even autonomous vehicles.\nWe also need policies around the notion of privacy, transparency, and compliance. And then last, we certainly need a digital-ready workforce to implement those practices in a way that keeps humans in the loop.\n[Interviewer] (Senator Scott) First, thank you, Chairman Peters, for holding this hearing.\nArtificial intelligence surely has productive uses, but it can also present great threats, especially to our children. Today I am introducing my AI Shield for Kids (ASK) Act, to prevent children from accessing artificial intelligence features on social media sites without the consent of a parent or guardian.\nI have long been a supporter of doing more to keep our kids safe online. There is no doubt that we must do more to combat the emerging threats our children face each and every day on the Internet. Like probably some other people here, I have a bunch of grandkids, and I do not ever want to put them at risk.\nMr. Ariga, AI poses significant risks to Americans, particularly vulnerable Americans such as children and youth. There are threats to privacy, user manipulation, and safety concerns. We know that AI regulation is lagging behind the speed of AI development and use. What guardrails are needed to protect vulnerable Americans from threats from intrusive AI, such as Snapchat's chatbot?\n[Respondent] Thank you, Senator Scott, for that question. For us at GAO, we certainly believe in the ``trust but verify'' part of that equation. We want to be able to assess implemented practices that agencies have adopted to make sure that they are in line with the internal control principles as well as in the areas of privacy protection and safeguards that you have mentioned.\nWithin our AI Accountability Framework we have actually laid out specific practices in the areas of governance, data, performance, and continuous monitoring to make sure that the agencies themselves have infrastructure as well as evidence of those implementations, and in areas where we find potential recommendations and areas of improvement we will certainly issue findings in our report as well.\n[Interviewer] (Senator Scott) Snapchat admitted that their AI technology is experimental, so do you agree that it is alarming and problematic that Snapchat would force their users, which comprise almost 60 percent of American teens, to use their chatbot features unless they paid to disable it with a subscription service?\nIt is hard to believe. If you do not want it, you have to pay to get it off, if you want to keep using Snapchat.\n[Respondent] Yes, I will answer that. GAO's role is to provide rigorous oversight. Should agencies decide to use any AI technology, including Snapchat, we certainly stand by, ready to do the rigorous programmatic assessments of those programs, in line with what we have laid out in our Accountability Framework.\n[Interviewer] (Senator Scott) Do you think you ought to have to pay to get Snapchat off, The AI off your app that you want to use?\n[Respondent] We will be interested in hearing the legal rationale and any other governance structures that arrive at that decision.\n[Interviewer] (Senator Scott) How about parents? Do you think parents and guardians have the right to protect their children and revoke consent without being charged a fee?\n[Respondent] Certainly GAO has done a number of work around education, around childhood development, and so we would sort of take that similar approach at looking at programmatic implementation to see how that aligns with what we have laid out in the Accountability Framework.\n[Interviewer] (Senator Scott) Do you agree that you ought to get consent of parents for teenagers?\n[Respondent] Again, I will go back to whether those legal rationales were done in a deliberately and sound way.\n[Interviewer] (Senator Scott) Do you have kids?\n[Respondent] Yes, I do, two.\n[Interviewer] (Senator Scott) OK. Do you watch what they look at?\n[Respondent] For sure. When my daughter looks at YouTube videos I certainly want to make sure that the content is appropriate for her age. As a parent I certainly share the same concerns that you do have. But from a GAO perspective, we try to be specific with our oversight role to say as agencies implement these capabilities there are specific sort of guardrails and expectations from internal controls that GAO will be looking at.\n[Interviewer] (Senator Scott) As a parent, do you think that you ought to have to pay to get AI off something that your teenager uses? Forget your job. Just as a parent, what do you think?\n[Respondent] Fortunately, I do not have a teenage kid just yet. But eventually I think I will have to grapple with that reality, in addition to all the subscription fees that we have already paid for.\n[Interviewer] (Senator Hassan) Thank you very much for that.\nTo Mr. Ariga, AI researchers have highlighted some of the potential public safety risks posed by AI systems. These safety concerns include AI systems providing dangerous information to bad actors or potentially acting in unpredictable ways that run counter to the intent of designers. Increasing the safety and predictability of AI systems requires more technical research into the methods used to create these systems. What can the Federal Government do to support or coordinate research that would help improve the safety of AI systems?\n[Respondent] Thank you, Senator Hassan. In our AI Accountability Framework we laid out specific governance practices where agencies can adopt to really consider, for example, is AI even necessary in this particular use case? In fact, if it is, what are some of the organizational structures that are in place to assess the legality, the compliance factor, as well as driving some of these inherently governmental functions?\nWe go back to our framework itself that lays out not only governance but looking at data performance, as well as the important topic of continuous monitoring when it comes to AI.\n[Interviewer] (Chairman Peters) Thank you. Mr. Ariga.\n[Respondent] Thank you, Chairman. My No. 1 priority, and you might indulge me in the hyphenated response, one is on disclosure where discretionary decisionmaking is being impacted. The use of it, the process, and any redress. But fundamentally it is the digital-ready workforce that will make such disclosure effective. I will echo with Dr. Ho's recommendation in terms of developing a Federal digital-ready workforce.",
+ "_bench": {
+  "seconds": 115.2,
+  "chars": 13785
+ }
+}

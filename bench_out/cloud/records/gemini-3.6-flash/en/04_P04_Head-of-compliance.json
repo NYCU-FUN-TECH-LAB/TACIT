@@ -1,0 +1,106 @@
+{
+ "respondent": "Head of compliance, mobility technology group",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript P04 — Head of compliance, mobility technology group"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Distinguishing legal compliance from ethics",
+   "quote": "The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.",
+   "full_text": "In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive. I've made peace with being unpopular. The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Acknowledges limits of compliance role, distinguishing legal risk management from genuine ethical analysis."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Questioning algorithmic bias, privacy, and reversibility",
+   "quote": "Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong.",
+   "full_text": "Three things, mainly. What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong. The third one is the one nobody has a good answer to, ever.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Foreseeing algorithmic bias across mobility aids and long-term uncertainty around system reversibility."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Infrastructure lock-in through decaying fallback mechanisms",
+   "quote": "In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.",
+   "full_text": "A version of 'why would we'. Which isn't an answer. Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Exploring long-term systemic scenarios and lock-in caused by unmaintained fallback infrastructure."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Highlights structural obduracy and lock-in that prevents the city from halting or turning off the system."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Risk registers as bureaucratic dead ends",
+   "quote": "I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.",
+   "full_text": "I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Risk register fails as a mechanism for change, resulting in design obduracy despite documented risks."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Demonstrates personal accountability and self-scrutiny regarding failure to push critical questions further."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Lack of community input and institutional support for ethical oversight",
+   "quote": "We don't have an ethics board, we don't have community input, we have me reading and worrying.",
+   "full_text": "No. It's me and a junior analyst. We don't have an ethics board, we don't have community input, we have me reading and worrying. For a system that watches thirty intersections that is a thin basis and I would say that on the record.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Affirmatively notes total lack of public engagement or community input for civic technology."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Shows epistemic humility in recognising that internal compliance alone is an inadequate basis for public deployment."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits strong positive Reflexivity alongside sharp Anticipation, but describes severe structural deficits in Responsiveness and Public Engagement. As Head of Compliance, the respondent demonstrates notable epistemic humility and self-scrutiny, explicitly acknowledging the limits of legal compliance compared to ethics, and taking personal ownership for failing to push critical concerns beyond the corporate risk register. The respondent's anticipatory capacity is highly developed regarding systemic risk, particularly in forecasting technological lock-in and the gradual decay of fallback traffic systems. However, this foresight fails to translate into organizational responsiveness; the risk register functions as an administrative sink rather than a catalyst for design changes, reflecting systemic obduracy and an inability to switch off or alter trajectory. Public Engagement is explicitly negative, with the respondent directly confirming the complete absence of community participation or external oversight for a city-wide surveillance technology. Multi-coded segments highlight the painful tension where high individual reflexivity and anticipatory foresight are neutralized by institutional obduracy and a total lack of public engagement mechanisms.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P04 — Head of compliance, mobility technology group\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What does responsible deployment mean in your role?\n[Respondent] In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive. I've made peace with being unpopular. The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.\n[Interviewer] What did you ask on this project?\n[Respondent] Three things, mainly. What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong. The third one is the one nobody has a good answer to, ever.\n[Interviewer] What answer did you get on switching it off?\n[Respondent] A version of 'why would we'. Which isn't an answer. Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.\n[Interviewer] Did that get escalated?\n[Respondent] I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.\n[Interviewer] Was there any external input into these questions?\n[Respondent] No. It's me and a junior analyst. We don't have an ethics board, we don't have community input, we have me reading and worrying. For a system that watches thirty intersections that is a thin basis and I would say that on the record.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 23.6,
+  "seconds_source": "estimated: gap between saved files",
+  "absence": null,
+  "note": "written by bench_models.py before resume support; completeness verified (no chunk_errors) and marker added afterwards"
+ }
+}

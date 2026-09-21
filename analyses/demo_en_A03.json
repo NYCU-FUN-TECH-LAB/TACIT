@@ -1,0 +1,117 @@
+{
+  "respondent": "A03 (Research fellow, urban data science centre)",
+  "descriptors": {
+    "institution_type": "academia",
+    "role_level": "rnd_staff",
+    "sector": "ict_ai",
+    "experience": "6_10y",
+    "descriptor_basis": "Interview transcript: A03 (Research fellow, urban data science centre)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "Access to evidence required political leverage",
+      "quote": "That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked.",
+      "full_text": "I asked for the raw detection logs and I was given aggregates. That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked. Once I had the logs the audit itself took three weeks.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "Independent scrutiny was possible only through an escalation route unavailable to most parties."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "Distributional audit across wards",
+      "quote": "detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards",
+      "full_text": "Two things. The headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards. So the people most likely to be waiting longer for a crossing signal are also the people least likely to own a car. I want to be careful: that's an association in one city over eleven months, it is not a law of nature.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Systematic examination of how the system's performance is distributed across a population, not only in aggregate."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "States the limits of the inference",
+      "quote": "that's an association in one city over eleven months, it is not a law of nature",
+      "full_text": "Two things. The headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards. So the people most likely to be waiting longer for a crossing signal are also the people least likely to own a car. I want to be careful: that's an association in one city over eleven months, it is not a law of nature.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Careful scrutiny of what the respondent's own evidence can and cannot support."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "Audit produced a concrete lighting upgrade",
+      "quote": "The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions.",
+      "full_text": "Better than I expected, actually. The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That's a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported. So the symptom got fixed in the cheapest available place.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "P",
+          "rationale": "Documented adaptation in response to external evidence."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "Reporting practice left unchanged",
+      "quote": "What it didn't turn into was any change to the detection model or to how performance gets reported.",
+      "full_text": "Better than I expected, actually. The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That's a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported. So the symptom got fixed in the cheapest available place.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "The response addresses the instance without altering the mechanism that allowed the disparity to go unnoticed."
+        }
+      ]
+    },
+    {
+      "segment_id": "S006",
+      "title": "Proposes a reporting change that surfaces harm",
+      "quote": "Report the worst decile, not the mean.",
+      "full_text": "Yes, and it's not complicated. Report the worst decile, not the mean. Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about. It costs nothing to add a column.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "A concrete, low-cost proposal aimed at making future problems visible before they accumulate."
+        }
+      ]
+    },
+    {
+      "segment_id": "S007",
+      "title": "Audit conducted without contact with affected residents",
+      "quote": "It was a data exercise. In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards",
+      "full_text": "No. It was a data exercise. In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "Independent scrutiny reproduced the project's own exclusion of the affected population."
+        },
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Reflexive assessment of how the respondent's own method delayed the finding."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "An audit account with an unusually clear outcome: a distributional finding linking detection latency, street lighting and ward income produced a lighting upgrade at nine junctions. The respondent is careful about what one city over eleven months can support, and pointed about what did not change — the detection model and the reporting practice that let the disparity go unnoticed. He notes that his own data-only method took three months to find what twenty conversations would have surfaced in a week.",
+  "transcript": "Interview transcript A03 — Research fellow, urban data science centre\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n【Interviewer】You audited the system's performance. How did you approach it?\n【Respondent】I asked for the raw detection logs and I was given aggregates. That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked. Once I had the logs the audit itself took three weeks.\n【Interviewer】What did the audit show?\n【Respondent】Two things. The headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards. So the people most likely to be waiting longer for a crossing signal are also the people least likely to own a car. I want to be careful: that's an association in one city over eleven months, it is not a law of nature.\n【Interviewer】What happened when you reported it?\n【Respondent】Better than I expected, actually. The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That's a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported. So the symptom got fixed in the cheapest available place.\n【Interviewer】Should performance reporting be different?\n【Respondent】Yes, and it's not complicated. Report the worst decile, not the mean. Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about. It costs nothing to add a column.\n【Interviewer】Were residents involved in the audit at any point?\n【Respondent】No. It was a data exercise. In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+  "transcript_file": "09_A03_Research-fellow.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

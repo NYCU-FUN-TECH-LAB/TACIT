@@ -1,0 +1,70 @@
+{
+ "respondent": "Data protection officer, city council",
+ "descriptors": {
+  "institution_type": "other",
+  "role_level": "other",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "the interview transcript does not state the basis for these descriptors"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Assessment of data protection impact",
+   "quote": "Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms.",
+   "full_text": "Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms. Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipates the need for a more comprehensive assessment, acknowledging the limitations of the current template."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Lack of review and revision",
+   "quote": "Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again.",
+   "full_text": "Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent acknowledges the lack of review and revision, but does not take proactive steps to address this issue."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Retention and anonymization",
+   "quote": "Seventy-two hours for the raw video, indefinite for the derived counts. The derived counts are the interesting part and nobody asks about them because they're described as anonymous.",
+   "full_text": "Seventy-two hours for the raw video, indefinite for the derived counts. The derived counts are the interesting part and nobody asks about them because they're described as anonymous. They are anonymous. They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipates potential concerns about the retention and anonymization of the data."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Subject access and requests",
+   "quote": "Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway.",
+   "full_text": "Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent acknowledges the limitations of the subject access process, but does not take proactive steps to address these issues."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits a mix of anticipation and responsiveness, acknowledging potential concerns and limitations in the data protection impact assessment and subject access process. However, they do not take proactive steps to address these issues, indicating a lack of responsiveness. The respondent's tone is generally cautious and defensive, suggesting a focus on justifying the current approach rather than exploring alternative solutions.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G06 — Data protection officer, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Was a data protection impact assessment done?\n[Respondent] Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms. Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.\n[Interviewer] Has the assessment been revisited?\n[Respondent] No. It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.\n[Interviewer] How is retention handled in practice?\n[Respondent] Seventy-two hours for the raw video, indefinite for the derived counts. The derived counts are the interesting part and nobody asks about them because they're described as anonymous. They are anonymous. They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.\n[Interviewer] Have you raised that?\n[Respondent] In a footnote. I know how that sounds after what I just said about the risk register. I think the honest position is that I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.\n[Interviewer] Do residents have a route to see what data concerns them?\n[Respondent] Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "tacit-manuscript",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Builds the SoftwareX manuscript .docx from build_paper.js. Not part of the TACIT application; the software itself has no Node dependency.",
+  "scripts": {
+    "build": "node build_paper.js TACIT_SoftwareX_manuscript.docx"
+  },
+  "dependencies": {
+    "docx": "^9.0.0"
+  }
+}

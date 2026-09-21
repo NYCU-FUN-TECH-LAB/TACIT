@@ -1,0 +1,12 @@
+文件：P01, P02, P03, P04, P05, P06, A01, A02, A03, A04, A05, A06, G01, G02, G03, G04, G05, G06, N01, N02, N03, N04, N05, N06，53,121 字元；提示詞約 3,390 token；num_ctx 32768
+  run 1 single   → 5 段  92.7s
+  run 1 windowed → 94 段  1034.7s  ! [{'chunk': 19, 'error': 'JSONDecodeError: Unterminated string starting at: line 14 column 20 (char 675)'}]
+  run 2 single   → 16 段  175.1s
+  run 2 windowed → 90 段  1070.3s  ! [{'chunk': 19, 'error': 'JSONDecodeError: Unterminated string starting at: line 14 column 20 (char 656)'}]
+  run 3 single   → 3 段  56.7s
+  run 3 windowed → 84 段  1007.9s  ! [{'chunk': 19, 'error': 'JSONDecodeError: Unterminated string starting at: line 14 column 20 (char 662)'}]
+
+參考編碼：148 段
+single   中位數 5（3–16）
+windowed 中位數 90（84–94）
+已寫入 bench_out\yield/yield.json

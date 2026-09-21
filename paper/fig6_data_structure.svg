@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="745" viewBox="0 0 960 745" font-family="Noto Sans TC, Microsoft JhengHei, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="34" font-size="19" font-weight="700" text-anchor="start" fill="#333">1st-Order Concepts</text>
+<text x="370" y="34" font-size="19" font-weight="700" text-anchor="start" fill="#333">2nd-Order Themes</text>
+<text x="940" y="34" font-size="19" font-weight="700" text-anchor="end" fill="#333">Aggregate Dimensions</text>
+<line x1="20" y1="48" x2="940" y2="48" stroke="#ccc" stroke-width="1"/>
+<rect x="20" y="64" width="300" height="104" rx="4" fill="#f7f7f9" stroke="#bbb"/>
+<text x="30" y="90.3" font-size="16" fill="#333">Requires a plan for</text>
+<text x="30" y="111.3" font-size="16" fill="#333">inconvenient findings (A05</text>
+<text x="30" y="132.3" font-size="16" fill="#333">(Chair, university research</text>
+<text x="30" y="153.3" font-size="16" fill="#333">ethics committee))</text>
+<path d="M320 116.0 C345 116.0, 345 255.5, 370 255.5" fill="none" stroke="#823545" stroke-width="1.2" opacity="0.5"/>
+<rect x="20" y="178" width="300" height="104" rx="4" fill="#f7f7f9" stroke="#bbb"/>
+<text x="30" y="204.3" font-size="16" fill="#333">Community input systematically</text>
+<text x="30" y="225.3" font-size="16" fill="#333">removed at write-up (A06</text>
+<text x="30" y="246.3" font-size="16" fill="#333">(Doctoral researcher and</text>
+<text x="30" y="267.3" font-size="16" fill="#333">project research assistant))</text>
+<path d="M320 230.0 C345 230.0, 345 255.5, 370 255.5" fill="none" stroke="#823545" stroke-width="1.2" opacity="0.5"/>
+<rect x="20" y="292" width="300" height="104" rx="4" fill="#f7f7f9" stroke="#bbb"/>
+<text x="30" y="318.3" font-size="16" fill="#333">Consultation reached only the</text>
+<text x="30" y="339.3" font-size="16" fill="#333">already-informed (A06 (Doctoral</text>
+<text x="30" y="360.3" font-size="16" fill="#333">researcher and project research</text>
+<text x="30" y="381.3" font-size="16" fill="#333">assistant))</text>
+<path d="M320 344.0 C345 344.0, 345 255.5, 370 255.5" fill="none" stroke="#823545" stroke-width="1.2" opacity="0.5"/>
+<rect x="20" y="406" width="300" height="41" rx="4" fill="#fbfbfb" stroke="#bbb" stroke-dasharray="3 3"/>
+<text x="30" y="432.3" font-size="16" fill="#333">…and 1 more</text>
+<path d="M320 426.5 C345 426.5, 345 255.5, 370 255.5" fill="none" stroke="#823545" stroke-width="1.2" opacity="0.5"/>
+<rect x="370" y="223.5" width="330" height="64" rx="5" fill="#ffffff" stroke="#823545" stroke-width="1.8"/>
+<text x="380" y="250.6" font-size="17" font-weight="600" fill="#222">T01 Public engagement and</text>
+<text x="380" y="272.6" font-size="17" font-weight="600" fill="#222">representation</text>
+<rect x="20" y="475" width="300" height="104" rx="4" fill="#f7f7f9" stroke="#bbb"/>
+<text x="30" y="501.3" font-size="16" fill="#333">Engagement carried 2.5% of the</text>
+<text x="30" y="522.3" font-size="16" fill="#333">evaluation weight (G05</text>
+<text x="30" y="543.3" font-size="16" fill="#333">(Procurement manager, city</text>
+<text x="30" y="564.3" font-size="16" fill="#333">council))</text>
+<path d="M320 527.0 C345 527.0, 345 584.0, 370 584.0" fill="none" stroke="#823545" stroke-width="1.2" opacity="0.5"/>
+<rect x="20" y="589" width="300" height="104" rx="4" fill="#f7f7f9" stroke="#bbb"/>
+<text x="30" y="615.3" font-size="16" fill="#333">Promised engagement never</text>
+<text x="30" y="636.3" font-size="16" fill="#333">entered the monitored schedule</text>
+<text x="30" y="657.3" font-size="16" fill="#333">(G05 (Procurement manager, city</text>
+<text x="30" y="678.3" font-size="16" fill="#333">council))</text>
+<path d="M320 641.0 C345 641.0, 345 584.0, 370 584.0" fill="none" stroke="#823545" stroke-width="1.2" opacity="0.5"/>
+<rect x="370" y="552.5" width="330" height="63" rx="5" fill="#ffffff" stroke="#823545" stroke-width="1.8"/>
+<text x="380" y="579.6" font-size="17" font-weight="600" fill="#222">T02 Engagement as a formality</text>
+<text x="690" y="599.5" font-size="15" font-style="italic" text-anchor="end" fill="#823545">Challenges</text>
+<rect x="750" y="223.5" width="190" height="392.0" rx="6" fill="#823545" fill-opacity="0.08" stroke="#823545" stroke-width="1.8"/>
+<path d="M700 255.5 C722 255.5, 728 419.5, 750 419.5" fill="none" stroke="#823545" stroke-width="1.4" opacity="0.6"/>
+<path d="M700 584.0 C722 584.0, 728 419.5, 750 419.5" fill="none" stroke="#823545" stroke-width="1.4" opacity="0.6"/>
+<text x="845.0" y="414.5" font-size="18" font-weight="700" text-anchor="middle" fill="#823545">Public</text>
+<text x="845.0" y="437.5" font-size="18" font-weight="700" text-anchor="middle" fill="#823545">Engagement</text>
+</svg>

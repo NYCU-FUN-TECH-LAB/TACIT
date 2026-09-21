@@ -1,0 +1,226 @@
+{
+  "framework_id": "utaut_venkatesh_2003",
+  "version": "1.0",
+  "provenance": "manual",
+  "name": {
+    "en": "Technology Acceptance (UTAUT)",
+    "zh": "科技接受模型（UTAUT）"
+  },
+  "citation": "Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly, 27(3), 425-478.",
+  "description": {
+    "en": "The four determinants of behavioural intention and use behaviour in the Unified Theory of Acceptance and Use of Technology, used here as a DEDUCTIVE CODING TEMPLATE whose a priori codes are taken from an existing theory (King, 2012, on a priori themes in template analysis). One caveat must be kept in view: UTAUT is a variance theory whose constructs are latent magnitudes measured with Likert items — 'the degree to which…'. Coding whether a passage TALKS ABOUT a construct is a different operation from measuring the level of that construct, and the exclusion criteria on each dimension say so explicitly. Coded counts are not construct scores. Structurally, this framework also has no polarity model, so codes collapse from DIM-P / DIM-N to DIM and the polarity sub-tab disappears.",
+    "zh": "UTAUT 對行為意圖與使用行為的四個決定因素。這裡把它當成一份**演繹式編碼模板**使用，先驗碼取自既有理論（先驗主題取自理論的正當性見 King, 2012 對 template analysis 的討論）。有一個前提必須始終擺在眼前：UTAUT 是變異數取向的理論，構念是用 Likert 題項測量的潛在量——定義寫的是「the degree to which…」。編碼「段落有沒有**談到**這個構念」與測量「這個構念的**水準**」是兩回事，每個維度的排除條件都把這一點寫明了。編碼次數不是構念分數。結構上，這個框架也沒有極性模型，因此編碼會從 DIM-P／DIM-N 收合成 DIM，極性子頁籤會消失。"
+  },
+  "polarity": {
+    "enabled": false,
+    "values": [],
+    "labels": {},
+    "citation": ""
+  },
+  "dimensions": [
+    {
+      "id": "performance_expectancy",
+      "short": "PE",
+      "label": {
+        "en": "Performance expectancy",
+        "zh": "績效期望"
+      },
+      "definition": {
+        "en": "The degree to which the individual believes that using the system will help them attain gains in job performance. Subsumes perceived usefulness, extrinsic motivation, job fit, relative advantage and outcome expectations.",
+        "zh": "個人相信使用該系統能提升工作績效的程度。涵蓋知覺有用性、外在動機、工作適配、相對優勢與結果期望等既有構念。"
+      },
+      "indicators": {
+        "en": [
+          "expected gains in speed, accuracy or output",
+          "usefulness for the tasks the respondent actually does",
+          "comparison with the previous way of working",
+          "expected effect on how the respondent's work is evaluated"
+        ],
+        "zh": [
+          "預期在速度、準確度或產出上的提升",
+          "對受訪者實際工作內容的有用性",
+          "與原本作法的比較",
+          "預期對自身工作評價的影響"
+        ]
+      },
+      "exclusions": {
+        "en": [
+          "This code marks passages that TALK ABOUT expected performance gains. It does not measure the LEVEL of performance expectancy. Venkatesh et al. define the construct as 'the degree to which' — a latent magnitude measured with Likert items. Coding presence in talk is a different operation; do not report coded counts as if they were construct scores.",
+          "A statement that the system works, or is fast, is not performance expectancy unless the speaker links it to their own job performance.",
+          "Expected ease of use is Effort expectancy, not Performance expectancy.",
+          "Availability of training or equipment is Facilitating conditions."
+        ],
+        "zh": [
+          "這個碼標記的是**談到**績效期望的段落，不是在測量績效期望的**高低**。Venkatesh 等人對這個構念的定義是「the degree to which」——那是用 Likert 題項測量的潛在量。編碼「有沒有談到」是另一回事；編碼次數不可以當成構念分數來報告。",
+          "說系統能用、說它很快，不算績效期望，除非說話者把它連到自己的工作績效。",
+          "預期好不好用屬於努力期望，不是績效期望。",
+          "有沒有訓練或設備屬於配合條件。"
+        ]
+      },
+      "literature": [
+        {
+          "citation": "Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly, 27(3), 425-478.",
+          "doi": "10.2307/30036540",
+          "year": 2003,
+          "role": "grounding",
+          "included": true
+        },
+        {
+          "citation": "Davis, F. D. (1989). Perceived usefulness, perceived ease of use, and user acceptance of information technology. MIS Quarterly, 13(3), 319-340.",
+          "doi": "10.2307/249008",
+          "year": 1989,
+          "role": "grounding",
+          "included": true
+        }
+      ]
+    },
+    {
+      "id": "effort_expectancy",
+      "short": "EE",
+      "label": {
+        "en": "Effort expectancy",
+        "zh": "努力期望"
+      },
+      "definition": {
+        "en": "The degree of ease associated with use of the system. Subsumes perceived ease of use and complexity.",
+        "zh": "使用該系統的容易程度。涵蓋知覺易用性與複雜性等既有構念。"
+      },
+      "indicators": {
+        "en": [
+          "learning effort described as small or large",
+          "clarity or opacity of the interface and its outputs",
+          "time cost of becoming competent",
+          "comparison with tools the respondent already knows"
+        ],
+        "zh": [
+          "描述學習成本高或低",
+          "介面與其輸出是否清楚易懂",
+          "熟練所需的時間成本",
+          "與受訪者既有工具的比較"
+        ]
+      },
+      "exclusions": {
+        "en": [
+          "As above, this marks talk about ease of use, not a measured level of effort expectancy.",
+          "Lack of time to use the system at all is Facilitating conditions, not effort.",
+          "Finding the OUTPUT hard to trust is not effort expectancy; effort is about operating the system."
+        ],
+        "zh": [
+          "同上：這標記的是談到易用性，不是測出來的努力期望水準。",
+          "根本沒時間用這個系統屬於配合條件，不是努力期望。",
+          "覺得**產出**難以信任不算努力期望；努力期望談的是操作系統本身。"
+        ]
+      },
+      "literature": [
+        {
+          "citation": "Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly, 27(3), 425-478.",
+          "doi": "10.2307/30036540",
+          "year": 2003,
+          "role": "grounding",
+          "included": true
+        }
+      ]
+    },
+    {
+      "id": "social_influence",
+      "short": "SI",
+      "label": {
+        "en": "Social influence",
+        "zh": "社會影響"
+      },
+      "definition": {
+        "en": "The degree to which the individual perceives that important others believe they should use the system. Subsumes subjective norm, social factors and image.",
+        "zh": "個人認為重要他人期待自己使用該系統的程度。涵蓋主觀規範、社會因素與形象等既有構念。"
+      },
+      "indicators": {
+        "en": [
+          "expectations attributed to managers, colleagues or clients",
+          "use described as normal or expected in the respondent's field",
+          "concern with how using or not using it is perceived",
+          "peer practice cited as a reason"
+        ],
+        "zh": [
+          "歸因於主管、同事或客戶的期待",
+          "把使用描述為業界常態或理所當然",
+          "在意使用或不使用會被如何看待",
+          "以同儕作法作為理由"
+        ]
+      },
+      "exclusions": {
+        "en": [
+          "A formal organisational mandate with consequences is Facilitating conditions (or, in other frameworks, reinforcement) — social influence is about perceived expectation, not enforcement.",
+          "Merely mentioning colleagues or customers is not social influence; the passage must connect them to the speaker's own use.",
+          "As above, this marks talk about social expectation, not a measured level of it."
+        ],
+        "zh": [
+          "帶有後果的正式組織要求屬於配合條件（在別的框架裡則是增強）——社會影響談的是知覺到的期待，不是強制。",
+          "只是提到同事或客戶不算社會影響；段落必須把他們連到說話者自己的使用行為。",
+          "同上：這標記的是談到社會期待，不是測出來的水準。"
+        ]
+      },
+      "literature": [
+        {
+          "citation": "Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly, 27(3), 425-478.",
+          "doi": "10.2307/30036540",
+          "year": 2003,
+          "role": "grounding",
+          "included": true
+        }
+      ]
+    },
+    {
+      "id": "facilitating_conditions",
+      "short": "FC",
+      "label": {
+        "en": "Facilitating conditions",
+        "zh": "配合條件"
+      },
+      "definition": {
+        "en": "The degree to which the individual believes that organisational and technical infrastructure exists to support use of the system. Subsumes perceived behavioural control, facilitating conditions and compatibility.",
+        "zh": "個人相信組織與技術基礎設施足以支持系統使用的程度。涵蓋知覺行為控制、配合條件與相容性等既有構念。"
+      },
+      "indicators": {
+        "en": [
+          "availability of training, support or documentation",
+          "hardware, licensing or budget constraints",
+          "fit with existing workflows and systems",
+          "who the respondent turns to when it does not work"
+        ],
+        "zh": [
+          "是否有訓練、支援或文件",
+          "硬體、授權或預算限制",
+          "與既有工作流程及系統的相容性",
+          "出問題時受訪者找誰"
+        ]
+      },
+      "exclusions": {
+        "en": [
+          "The speaker's own skill is Effort expectancy; facilitating conditions are about resources and support outside the person.",
+          "General complaints about the organisation are not facilitating conditions unless tied to using this system.",
+          "As above, this marks talk about supporting conditions, not a measured level of them."
+        ],
+        "zh": [
+          "說話者自身的熟練度屬於努力期望；配合條件談的是人以外的資源與支援。",
+          "泛泛抱怨組織不算配合條件，除非連到使用這個系統。",
+          "同上：這標記的是談到配合條件，不是測出來的水準。"
+        ]
+      },
+      "literature": [
+        {
+          "citation": "Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. MIS Quarterly, 27(3), 425-478.",
+          "doi": "10.2307/30036540",
+          "year": 2003,
+          "role": "grounding",
+          "included": true
+        },
+        {
+          "citation": "Venkatesh, V., Thong, J. Y. L., & Xu, X. (2012). Consumer acceptance and use of information technology: Extending the unified theory of acceptance and use of technology. MIS Quarterly, 36(1), 157-178.",
+          "doi": "10.2307/41410412",
+          "year": 2012,
+          "role": "supporting",
+          "included": true
+        }
+      ]
+    }
+  ]
+}

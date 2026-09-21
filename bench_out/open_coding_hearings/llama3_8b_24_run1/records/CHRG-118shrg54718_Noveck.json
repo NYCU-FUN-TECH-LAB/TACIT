@@ -1,0 +1,602 @@
+{
+ "respondent": "CHRG-118shrg54718_Noveck",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "policy_maker",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Introduction to AI in government services",
+   "quote": "Our citizens turn to the government for all sorts of critical services. As elected officials, we must ensure that agencies provide those services as effectively as possible, and artificial intelligence (AI) can help succeed in doing that work.",
+   "full_text": "The prepared statement of Senator Peters appears in the Appendix on page 25. Our citizens turn to the government for all sorts of critical services. As elected officials, we must ensure that agencies provide those services as effectively as possible, and artificial intelligence (AI) can help succeed in doing that work.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is providing background information on their expertise and experience"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Potential benefits of AI in government services",
+   "quote": "It can operate 24/7 chatbots that provide our citizens with interactive assistance. It can allow employees to tackle more requests in less time with greater accuracy. AI can make complex processes easier to navigate.",
+   "full_text": "This technology has the potential to make government services more efficient, effective, and accessible for all Americans. For instance, AI can easily translate crucial documents into multiple languages. It can operate 24/7 chatbots that provide our citizens with interactive assistance. It can allow employees to tackle more requests in less time with greater accuracy. AI can make complex processes easier to navigate.",
+   "open_codes": [
+    {
+     "code_id": "c037",
+     "label": "Impact of AI systems",
+     "rationale": "The respondent is discussing the various applications and uses of AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "History of AI in government services",
+   "quote": "The government's use of AI to deliver services is certainly not new. Three decades ago, the U.S. Postal Service (USPS) used it to create faster mail delivery services.",
+   "full_text": "The government's use of AI to deliver services is certainly not new. Three decades ago, the U.S. Postal Service (USPS) used it to create faster mail delivery services. Today, in my home State of Michigan, AI tools are providing translation services for citizens applying for permits and for licenses.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is providing background information on their expertise and experience"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Current state of AI in government services",
+   "quote": "This technology is already making a difference in the lives of countless American civilians.",
+   "full_text": "This technology is already making a difference in the lives of countless American civilians. But this is a watershed moment for AI. These technologies grow more advanced nearly every day, reaching more and more aspects of American life.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent is discussing the various applications and uses of AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Legislative efforts to promote AI in government services",
+   "quote": "This Congress, our Committee has passed my bipartisan Improving Government Services Act to encourage Federal agencies to adopt proven customer service tools to help ensure Americans get the assistance that they need.",
+   "full_text": "This Congress, our Committee has passed my bipartisan Improving Government Services Act to encourage Federal agencies to adopt proven customer service tools to help ensure Americans get the assistance that they need. This bill builds upon the hearing we convened last Congress to explore ways agencies can build trust by improving the customer experience (CX). This is a key moment to understand the capabilities of AI, and how it can benefit both government employees and the citizens that they serve, and under what circumstances. This hearing will help us do just that.",
+   "open_codes": [
+    {
+     "code_id": "c034",
+     "label": "Legislation on AI",
+     "rationale": "The respondent is discussing the need for legislation to regulate the use of AI technology"
+    },
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "Dr. Noveck establishes her credibility and expertise in the field of AI and government"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Opening Remarks",
+   "quote": "Thank you, Chair Peter, and thank you so much for this opportunity to appear before the Committee, especially in the company of such a distinguished panel.",
+   "full_text": "Thank you, Chair Peter, and thank you so much for this opportunity to appear before the Committee, especially in the company of such a distinguished panel. Despite having funded the creation of the Internet, the public sector, we can all agree, I think has really lagged in its adoption.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "Appreciation for challenges and uncertainty",
+     "rationale": "Dr. Noveck acknowledges the challenges and uncertainty in the public sector's adoption of AI"
+    },
+    {
+     "code_id": "c144",
+     "label": "Appreciation for the opportunity",
+     "rationale": "The respondent is showing appreciation for the opportunity to appear before the Committee"
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Government leading in AI use",
+   "quote": "But now I think government can lead in the use of artificial intelligence for public good.",
+   "full_text": "But now I think government can lead in the use of artificial intelligence for public good. Because especially of the power of AI to sort, to organize, and to summarize vast amounts of data and text, AI has the potential to make government more effective, more efficient, and more responsive to residents.",
+   "open_codes": [
+    {
+     "code_id": "c145",
+     "label": "Government leading in AI use",
+     "rationale": "The respondent believes government can lead in AI use for public benefit"
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "AI in government services",
+   "quote": "AI is already helping us to create what I would call a more conversational government, where we can supply information and benefits and services, as you alluded to, 24/7.",
+   "full_text": "AI is already helping us to create what I would call a more conversational government, where we can supply information and benefits and services, as you alluded to, 24/7. In New Jersey, we are using AI enabled chat bots to answer resident questions via the web.",
+   "open_codes": [
+    {
+     "code_id": "c146",
+     "label": "AI in government services",
+     "rationale": "The respondent mentions AI being used in government services"
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "AI in call centers",
+   "quote": "We also support our call centers with AI, which helps staff quickly write menu options and answers to questions in response to public demand.",
+   "full_text": "We also support our call centers with AI, which helps staff quickly write menu options and answers to questions in response to public demand. That means the public is getting accurate answers faster, and that allows our call center operators to increase the resolution of calls now by 50 percent by human operators.",
+   "open_codes": [
+    {
+     "code_id": "c147",
+     "label": "AI in call centers",
+     "rationale": "The respondent mentions AI being used in call centers"
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "AI in accessible government",
+   "quote": "We are able to create now a more accessible government as well, with AI driven translation and summarization.",
+   "full_text": "We are able to create now a more accessible government as well, with AI driven translation and summarization. My wonderful students at Northeastern University and the AI for Impact co-op program, where students are doing a six-month full time paid internship working for governments on AI projects.",
+   "open_codes": [
+    {
+     "code_id": "c148",
+     "label": "AI in accessible government",
+     "rationale": "The respondent mentions AI being used to make government more accessible"
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "AI in education",
+   "quote": "Students, for example, have been working with the California nonprofit Innovate Public Schools to help families of schoolchildren with disabilities translate and summarize the child's individualized education program (IEP).",
+   "full_text": "Students, for example, have been working with the California nonprofit Innovate Public Schools to help families of schoolchildren with disabilities translate and summarize the child's individualized education program (IEP). For most families, that is a 50 to 100 page portable document format (PDF) of inscrutable legalese and government speak.",
+   "open_codes": [
+    {
+     "code_id": "c149",
+     "label": "AI in education",
+     "rationale": "The respondent mentions AI being used in education"
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "AI in public workers support",
+   "quote": "AI is also helping us to support public workers in their effort to do a better job serving residents.",
+   "full_text": "AI is also helping us to support public workers in their effort to do a better job serving residents. In New Jersey, our innovation team engineers have integrated AI copilot tools.",
+   "open_codes": [
+    {
+     "code_id": "c150",
+     "label": "AI in public workers support",
+     "rationale": "The respondent mentions AI being used to support public workers"
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "AI in data processing",
+   "quote": "Governments are also using AI to process data, as we have heard, more efficiently.",
+   "full_text": "Governments are also using AI to process data, as we have heard, more efficiently.",
+   "open_codes": [
+    {
+     "code_id": "c151",
+     "label": "AI in data processing",
+     "rationale": "The respondent mentions AI being used to process data efficiently"
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "AI-enabled public administration",
+   "quote": "That is to say, tools that suggest to them which line of code to write next, and that is enabling us to write code 55 percent faster, creating a wide array of digital benefits much faster than we were able to do before.",
+   "full_text": "That is to say, tools that suggest to them which line of code to write next, and that is enabling us to write code 55 percent faster, creating a wide array of digital benefits much faster than we were able to do before. Governments are also using AI to process data, as we have heard, more efficiently. In New Jersey, where we design government operations with residents rather than for them, we actively invite citizen comment. That is to say, we often receive thousands of comment, for example, from unemployment claimants telling us what their questions are, what they would like to see next, what information they need, and then an AI can help us parse those comments in a way that we could not do with the current staff that we have. We can then, based on that understanding, put front and center the information that people want, and as a result of which, over the last year, we have brought down the time it takes to apply for unemployment benefits by 48 minutes per application. Governments are also turning to AI to improve how we do public engagement more broadly.",
+   "open_codes": [
+    {
+     "code_id": "c152",
+     "label": "AI-enabled public administration",
+     "rationale": "The respondent discusses the benefits of AI-enabled public administration, including faster code writing and improved public engagement"
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "Citizen engagement and AI",
+   "quote": "In New Jersey, where we design government operations with residents rather than for them, we actively invite citizen comment.",
+   "full_text": "In New Jersey, where we design government operations with residents rather than for them, we actively invite citizen comment. That is to say, we often receive thousands of comment, for example, from unemployment claimants telling us what their questions are, what they would like to see next, what information they need, and then an AI can help us parse those comments in a way that we could not do with the current staff that we have.",
+   "open_codes": [
+    {
+     "code_id": "c153",
+     "label": "Citizen engagement and AI",
+     "rationale": "The respondent discusses the use of AI to parse citizen comments and improve public engagement"
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "AI in public administration",
+   "quote": "To realize this vision of AI enabled public administration, where residents do not have to wait on hold, do not have to go to a government office, and do not have to, frankly, go from website to websites searching for the information they need, let me just end with a couple of recommendations.",
+   "full_text": "To realize this vision of AI enabled public administration, where residents do not have to wait on hold, do not have to go to a government office, and do not have to, frankly, go from website to websites searching for the information they need, let me just end with a couple of recommendations. I have a much longer list in my written submission. You can support Federal efforts to implement AI systems to provide this kind of round the clock information services, about policies, about benefits, about services, again, 24/7 and in multiple languages. We need to employ AI for more robust public engagement--first to improve services. We can turn to AI to help us synthesize comments in a human centered design process.",
+   "open_codes": [
+    {
+     "code_id": "c154",
+     "label": "AI in public administration",
+     "rationale": "The respondent discusses the vision of AI-enabled public administration and the benefits of using AI in government services"
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "Importance of public engagement and AI governance",
+   "quote": "I would add, we can also engage the public using AI to talk about how we are using AI and how we are governing the use of AI in agencies.",
+   "full_text": "I would add, we can also engage the public using AI to talk about how we are using AI and how we are governing the use of AI in agencies. We need to intensify efforts to open government data, ensuring that it is in machine readable formats, to facilitate the training of better AI models, and, frankly, to build and grow the American AI industry.",
+   "open_codes": [
+    {
+     "code_id": "c155",
+     "label": "Public engagement and AI governance",
+     "rationale": "The respondent emphasizes the need for public engagement and transparency in AI governance"
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "AI training for Federal employees",
+   "quote": "Finally, we need to build on the success of the AI Leadership Training Act that came out of this Committee by implementing free, accessible training not just for leadership, but for all Federal employees, going beyond senior officials, focusing not just on knowledge of what AI is, but on practical applications in government services, ensuring that we collect data and evaluate impact about how such upskilling translates into better public service efficiency and better innovation.",
+   "full_text": "Finally, we need to build on the success of the AI Leadership Training Act that came out of this Committee by implementing free, accessible training not just for leadership, but for all Federal employees, going beyond senior officials, focusing not just on knowledge of what AI is, but on practical applications in government services, ensuring that we collect data and evaluate impact about how such upskilling translates into better public service efficiency and better innovation.",
+   "open_codes": [
+    {
+     "code_id": "c156",
+     "label": "AI training for Federal employees",
+     "rationale": "The respondent emphasizes the importance of AI training for Federal employees to improve public service efficiency and innovation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "AI applications in government services",
+   "quote": "The ability to use AI to help us write better, clearer instructions and directions, again, will help people get customer service faster. The ability for us to use AI to bring information together across agencies, across departments, across those 10,000 regulations that you talked about, that ability to now synthesize information, I think can help us to create this more conversational ethos where we are responding to people's questions and then reducing the need for them to call in, to wait, etcetera.",
+   "full_text": "The ability to use AI to help us write better, clearer instructions and directions, again, will help people get customer service faster. The ability for us to use AI to bring information together across agencies, across departments, across those 10,000 regulations that you talked about, that ability to now synthesize information, I think can help us to create this more conversational ethos where we are responding to people's questions and then reducing the need for them to call in, to wait, etcetera.",
+   "open_codes": [
+    {
+     "code_id": "c157",
+     "label": "AI applications in government services",
+     "rationale": "The respondent highlights the potential benefits of AI applications in government services"
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Data protection and AI",
+   "quote": "But we also then need to speed up how we do that work, and that is where some of these copilot techniques, this ability to use AI to help us write code faster, really comes into play. But I do want to respond to the second half, and as Beth alluded to already, this ensuring that we are not using, and we do not need to in most cases, use PII or sensitive information, and how we do this, I think, is really crucial.",
+   "full_text": "But we also then need to speed up how we do that work, and that is where some of these copilot techniques, this ability to use AI to help us write code faster, really comes into play. But I do want to respond to the second half, and as Beth alluded to already, this ensuring that we are not using, and we do not need to in most cases, use PII or sensitive information, and how we do this, I think, is really crucial.",
+   "open_codes": [
+    {
+     "code_id": "c158",
+     "label": "Data protection and AI",
+     "rationale": "The respondent emphasizes the need for data protection when using AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "AI supplementing customer service",
+   "quote": "What we want to do is by listening to residents and understanding what it is that they need to know and want to know.",
+   "full_text": "We are not looking to offload people to phone trees and to put you in an endless loop of pushing buttons. What we want to do is by listening to residents and understanding what it is that they need to know and want to know. Looking at what they are searching for on the web, what are the questions that they are asking. They call in and then we can put that information front and center, first of all.",
+   "open_codes": [
+    {
+     "code_id": "c159",
+     "label": "Human-centered AI design",
+     "rationale": "The respondent emphasizes the importance of listening to residents and understanding their needs"
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "AI improving customer service",
+   "quote": "By reducing by 15 percent the number of queries coming through, we have increased by 50 percent the number of people that were then able to serve with that phone service.",
+   "full_text": "But also for more vulnerable residents, whether they are non-native English speakers, whether they are elderly, etcetera, the more that we design things in a human centered way that is talking to and listening to residents about what do they need and what do they want, the more we can then take advantage of AI to do things like provide multilingual services, or for example, translate language, complex government speaking legalese into something at a ninth grade level or in simple terms.",
+   "open_codes": [
+    {
+     "code_id": "c160",
+     "label": "AI improving customer service",
+     "rationale": "The respondent highlights the benefits of using AI to improve customer service"
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Designing for vulnerable residents",
+   "quote": "the more that we design things in a human centered way that is talking to and listening to residents about what do they need and what do they want",
+   "full_text": "But also for more vulnerable residents, whether they are non-native English speakers, whether they are elderly, etcetera, the more that we design things in a human centered way that is talking to and listening to residents about what do they need and what do they want, the more we can then take advantage of AI to do things like provide multilingual services, or for example, translate language, complex government speaking legalese into something at a ninth grade level or in simple terms.",
+   "open_codes": [
+    {
+     "code_id": "c161",
+     "label": "Human-centered design",
+     "rationale": "The passage emphasizes the importance of designing with the needs and wants of vulnerable residents"
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Streamlining procurement",
+   "quote": "Streamlining and simplicity is going to be incredibly important in this space if we are going to enable smaller people to compete",
+   "full_text": "One needs to not simply have mastered the General Service Administration (GSA) schedules which should not be the sole threshold to being able to do business with the Federal Government. Streamlining and simplicity is going to be incredibly important in this space if we are going to enable smaller people to compete.",
+   "open_codes": [
+    {
+     "code_id": "c162",
+     "label": "Streamlining procurement",
+     "rationale": "The passage highlights the importance of streamlining procurement to promote competition"
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "Agile procurement",
+   "quote": "not trying to anticipate every single requirement that we are going to have five years ahead of time in advance",
+   "full_text": "That is to say, not trying to anticipate every single requirement that we are going to have five years ahead of time in advance. These technologies are so new, our uses and experiences with them are so new, and designing tools correctly means actually doing it in little increments, testing what is working, and improving.",
+   "open_codes": [
+    {
+     "code_id": "c163",
+     "label": "Agile procurement",
+     "rationale": "The passage describes agile procurement as a way to design and refine tools in small increments"
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Streamlining and refining AI procurement",
+   "quote": "The more that we are streamlining by going smaller in the scope, being more agile, and ensuring that we are actually then refining as we go, I think the more that we are going to both open things up to procurement, but also ensure that the tools that we are procuring translate into better services and better customer experience.",
+   "full_text": "The more that we are streamlining by going smaller in the scope, being more agile, and ensuring that we are actually then refining as we go, I think the more that we are going to both open things up to procurement, but also ensure that the tools that we are procuring translate into better services and better customer experience. Where we make the mistake is that, again, I am going to anticipate everything that we need five, 10 years down the road, again, on technologies that are changing now really by the day, if not by the week, and there are new capabilities emerging all the time. We can use again AI to help us in conceptualizing and drafting some of those requirements, but we need to be able to make more agile procurement the norm rather than the exception.",
+   "open_codes": [
+    {
+     "code_id": "c164",
+     "label": "Streamlining AI procurement",
+     "rationale": "To ensure better services and customer experience through more agile procurement"
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "Importance of Chief Data Officers in AI efforts",
+   "quote": "I think the question suggests the answer, which is ensuring that they do. As we have all talked about, data is of course integral to training AI models. Without data to analyze, the AI becomes fairly useless.",
+   "full_text": "I think the question suggests the answer, which is ensuring that they do. As we have all talked about, data is of course integral to training AI models. Without data to analyze, the AI becomes fairly useless. What we are trying to do is actually use data to ensure that we are proactively delivering services in the way that Ms. Blauer already talked about. I think having Chief Data Officers at the table is really essential and mandating that their role includes, again, the proactive publication and availability of data, as is already required by law, and ensuring that we do more of that.",
+   "open_codes": [
+    {
+     "code_id": "c165",
+     "label": "Importance of Chief Data Officers in AI efforts",
+     "rationale": "Data is integral to training AI models, and Chief Data Officers are crucial in making data available"
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "Training and collaboration for AI",
+   "quote": "That is going to require then more training, I think, for chief data officers and for data professionals in government around AI to talk about where those collaborations can occur.",
+   "full_text": "That is going to require then more training, I think, for chief data officers and for data professionals in government around AI to talk about where those collaborations can occur. Ensuring that agencies do create those cross-functional teams and that cross-agency collaboration, as well as within agencies and then across agencies to ensure that these new AI officers, data officers, policy people, everywhere that we can bring disparate disciplines together to talk about how we can better serve residents, I think the better job that we are going to do.",
+   "open_codes": [
+    {
+     "code_id": "c166",
+     "label": "Training and collaboration for AI",
+     "rationale": "Training and collaboration are required to bring disparate disciplines together and improve AI implementation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Importance of collaboration and data sharing",
+   "quote": "Ensuring that agencies do create those cross-functional teams and that cross-agency collaboration, as well as within agencies and then across agencies to ensure that these new AI officers, data officers, policy people, everywhere that we can bring disparate disciplines together to talk about how we can better serve residents, I think the better job that we are going to do.",
+   "full_text": "Ensuring that agencies do create those cross-functional teams and that cross-agency collaboration, as well as within agencies and then across agencies to ensure that these new AI officers, data officers, policy people, everywhere that we can bring disparate disciplines together to talk about how we can better serve residents, I think the better job that we are going to do. I think the question is really vital because it suggests the answer, which is we need the data people to be at the table, and we need to invest in the proactive publication and availability of data is really integral.",
+   "open_codes": [
+    {
+     "code_id": "c167",
+     "label": "Importance of collaboration and data sharing",
+     "rationale": "The passage highlights the need for cross-functional teams and data sharing to achieve better outcomes."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "Mental health crisis and chatbots",
+   "quote": "Across the country, there is both a mental health crisis as well as a mental health worker crisis. I was reading, Los Angeles being one of the largest mental health providers in the country, that they also have more than 1,800 vacancies in mental health provision.",
+   "full_text": "Across the country, there is both a mental health crisis as well as a mental health worker crisis. I was reading, Los Angeles being one of the largest mental health providers in the country, that they also have more than 1,800 vacancies in mental health provision. But have been reading a lot, I have, about chat bots that are being able to be deployed to offer initial support, where we may not have a worker at the ready to support the kind of one on one interaction that is required during mental health counseling and services.",
+   "open_codes": [
+    {
+     "code_id": "c168",
+     "label": "Mental health crisis and chatbots",
+     "rationale": "The passage highlights the challenges in mental health provision and the potential for chatbots to fill gaps."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Multimodal AI and customer service",
+   "quote": "I think one of the exciting things about these technologies is that they are what is sometimes referred to now as multimodal. That is to say, they talk as well as they type.",
+   "full_text": "I think one of the exciting things about these technologies is that they are what is sometimes referred to now as multimodal. That means we have conversational agents, a tool I am thinking of like Pie, which was designed by the person who actually created the United Kingdom (UKs) largest helpline for Muslim youth, precisely in order to offer that responsiveness, that sense of talking to a person, which can really provide a lot of psychological support for people in the first instance. We are seeing this ability not only to give people chat bots in the sense of typed responses to questions, whether it is for residents or whether it is for employees, but also spoken responses to questions to provide that added level of customer service.",
+   "open_codes": [
+    {
+     "code_id": "c169",
+     "label": "Multimodal AI and customer service",
+     "rationale": "The passage highlights the capabilities of multimodal AI in providing responsive and supportive interactions."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "Conversational agents and AI-powered customer service",
+   "quote": "That means we have conversational agents, a tool I am thinking of like Pie, which was designed by the person who actually created the United Kingdom (UKs) largest helpline for Muslim youth, precisely in order to offer that responsiveness, that sense of talking to a person, which can really provide a lot of psychological support for people in the first instance.",
+   "full_text": "That means we have conversational agents, a tool I am thinking of like Pie, which was designed by the person who actually created the United Kingdom (UKs) largest helpline for Muslim youth, precisely in order to offer that responsiveness, that sense of talking to a person, which can really provide a lot of psychological support for people in the first instance. We are seeing this ability not only to give people chat bots in the sense of typed responses to questions, whether it is for residents or whether it is for employees, but also spoken responses to questions to provide that added level of customer service. I think that is hugely important, whether it is in the mental health space, which is outside my area of expertise, or whether it is in the government customer support area. This ability now to provide people with that kind of responsiveness, I think is a hugely important and we are going to see the use of these tools only grow.",
+   "open_codes": [
+    {
+     "code_id": "c170",
+     "label": "AI-powered customer service",
+     "rationale": "The passage discusses the importance of AI-powered customer service in providing psychological support and responsiveness."
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "Importance of guardrails for AI-powered customer service",
+   "quote": "Of course, we need those guardrails to ensure that we are confident about what the information is that is being provided to people, that we are not taking advantage of people in a vulnerable state.",
+   "full_text": "Of course, we need those guardrails to ensure that we are confident about what the information is that is being provided to people, that we are not taking advantage of people in a vulnerable state.",
+   "open_codes": [
+    {
+     "code_id": "c171",
+     "label": "Guardrails for AI-powered customer service",
+     "rationale": "The passage emphasizes the importance of guardrails to prevent the misuse of AI-powered customer service."
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "Human-centered approach to AI-powered customer service",
+   "quote": "That is why doing things in a human centered way, whether that is with residents or whether that is also with government workers and government employees, talking to them about what do they need and what will actually help them is really crucial.",
+   "full_text": "That is why doing things in a human centered way, whether that is with residents or whether that is also with government workers and government employees, talking to them about what do they need and what will actually help them is really crucial.",
+   "open_codes": [
+    {
+     "code_id": "c172",
+     "label": "Human-centered approach to AI-powered customer service",
+     "rationale": "The passage emphasizes the need for a human-centered approach to ensure the responsible use of AI-powered customer service."
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "Training AI-powered customer service tools",
+   "quote": "It is not the world of ChatGPT and the open web that we know where it might pull from anywhere on the Internet. But rather the idea now, for example, that my students are working with the Massachusetts Department of Transportation (MassDOT) to say, let us upload their manuals, their procedures, their policies, and then provide a tool so that new engineers coming into the agency can ask a question like, what is the rule on this or what is the policy about that, and to pull the answers only from those documents.",
+   "full_text": "It is not the world of ChatGPT and the open web that we know where it might pull from anywhere on the Internet. But rather the idea now, for example, that my students are working with the Massachusetts Department of Transportation (MassDOT) to say, let us upload their manuals, their procedures, their policies, and then provide a tool so that new engineers coming into the agency can ask a question like, what is the rule on this or what is the policy about that, and to pull the answers only from those documents.",
+   "open_codes": [
+    {
+     "code_id": "c173",
+     "label": "Training AI-powered customer service tools",
+     "rationale": "The passage discusses the importance of training AI-powered customer service tools to ensure they provide accurate and relevant information."
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "New Jersey's guidance on AI use",
+   "quote": "I am very excited, and Governor Murphy gave his State of the State speech yesterday, in which the topic of use of AI, responsible and ethical use of AI featured very front and center.",
+   "full_text": "Thank you. I am very excited, and Governor Murphy gave his State of the State speech yesterday, in which the topic of use of AI, responsible and ethical use of AI featured very front and center. I am very proud that we are one of the first States to actually have clear guidance, which says we want people to go out and try these things. It is not to say that we will not revise that guidance, and we will not upgrade it, and we will not change it as we learn better what these tools do and as they evolve, but the fact that we are going out and saying we want people to actually try this to the end of improving how we deliver services to residents.",
+   "open_codes": [
+    {
+     "code_id": "c174",
+     "label": "Encouragement to try AI",
+     "rationale": "The respondent is proud that New Jersey is one of the first states to provide clear guidance on AI use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "Training and responsible AI use",
+   "quote": "We are coupling, however, that encouragement to try things with broad scale availability of training.",
+   "full_text": "We are coupling, however, that encouragement to try things with broad scale availability of training. I lead a partnership of multiple States, including California, called Innovate US, run by public servants for public servants, where we are providing free training in responsible AI and other technology use to government workers.",
+   "open_codes": [
+    {
+     "code_id": "c175",
+     "label": "Training for responsible AI use",
+     "rationale": "The respondent emphasizes the importance of training for responsible AI use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S038",
+   "title": "Guidelines for AI use",
+   "quote": "Please factcheck anything that comes out of these tools.",
+   "full_text": "Please factcheck anything that comes out of these tools. We do not want to see those instances like the lawyer who filed the brief that still said in it, written by ChatGPT. We want to be sure that you are actually fact checking what is coming out of these things in the way that you would if you asked an intern to write something.",
+   "open_codes": [
+    {
+     "code_id": "c176",
+     "label": "Guidelines for AI use",
+     "rationale": "The respondent emphasizes the importance of guidelines for AI use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S039",
+   "title": "Supplementing government workers",
+   "quote": "We want to ensure that people are taking advantage of these tools in ways that are actually supplemental to and aiding, as Senator Butler referred to, actually aiding government workers in how they do their work, not supplanting them.",
+   "full_text": "We want to ensure that people are taking advantage of these tools in ways that are actually supplemental to and aiding, as Senator Butler referred to, actually aiding government workers in how they do their work, not supplanting them.",
+   "open_codes": [
+    {
+     "code_id": "c177",
+     "label": "Supplementing government workers",
+     "rationale": "The respondent emphasizes the importance of using AI to support government workers"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_015911",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 11,
+   "n_ok": 11
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 0,
+    "created": 8,
+    "chunk": 2
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 3
+   },
+   {
+    "reused": 0,
+    "created": 4,
+    "chunk": 4
+   },
+   {
+    "reused": 0,
+    "created": 2,
+    "chunk": 5
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 6
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 7
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 8
+   },
+   {
+    "reused": 0,
+    "created": 4,
+    "chunk": 9
+   },
+   {
+    "reused": 0,
+    "created": 4,
+    "chunk": 10
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg54718 — Beth Simone Noveck, Chief Innovation Officer, State Of New Jersey\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg54718  |  Harnessing Ai To Improve Government Services And Customer Experience  |  Senate, ?  |  2024-01-10  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chairman Peters) The Committee will come to order. We all interact with the government throughout our lives, whether it is applying for a small business loan, receiving financial aid to pursue an education, accessing essential health care, or applying for Social Security.\nThe prepared statement of Senator Peters appears in the Appendix on page 25.\nOur citizens turn to the government for all sorts of critical services. As elected officials, we must ensure that agencies provide those services as effectively as possible, and artificial intelligence (AI) can help succeed in doing that work.\nThis technology has the potential to make government services more efficient, effective, and accessible for all Americans. For instance, AI can easily translate crucial documents into multiple languages.\nIt can operate 24/7 chatbots that provide our citizens with interactive assistance. It can allow employees to tackle more requests in less time with greater accuracy. AI can make complex processes easier to navigate. The government's use of AI to deliver services is certainly not new.\nThree decades ago, the U.S. Postal Service (USPS) used it to create faster mail delivery services. Today, in my home State of Michigan, AI tools are providing translation services for citizens applying for permits and for licenses.\nThis technology is already making a difference in the lives of countless American civilians. But this is a watershed moment for AI. These technologies grow more advanced nearly every day, reaching more and more aspects of American life.\nThat is why, in the last year, I have convened five hearings on artificial intelligence, and we have passed legislation out of this Committee to address the challenges as well as the opportunities posed by AI.\nThis builds on my previous legislation to provide educational opportunities on AI, establish adequate training resources, and provide agencies with guidance on how to implement AI tools most effectively.\nThis Congress, our Committee has passed my bipartisan Improving Government Services Act to encourage Federal agencies to adopt proven customer service tools to help ensure Americans get the assistance that they need. This bill builds upon the hearing we convened last Congress to explore ways agencies can build trust by improving the customer experience (CX).\nThis is a key moment to understand the capabilities of AI, and how it can benefit both government employees and the citizens that they serve, and under what circumstances. This hearing will help us do just that.\nWe will examine the ways that AI can help deliver critical services and improve the public's experience in receiving them. We will outline the guardrails that this technology requires, the training resources, privacy standards, and performance metrics we need to properly implement AI tools, and our expert panel of witnesses will help us understand how this can happen at all levels of government.\nWe have a responsibility to do everything we can to ensure government provides the most effective and efficient government services. Succeeding in that work will help our constituents.\nIt will improve trust in government and strengthen our democratic institutions. This hearing is an opportunity to examine how artificial intelligence can achieve that mission. It is the practice of the Homeland Security and Governmental Affairs Committee (HSGAC) to swear in witnesses.\nIf each of you would please stand and raise your right hand. Do you swear that the testimony that you will give before this Committee will be the truth, the whole truth, and nothing but the truth, so help you, God?\n[Respondent] I do.\n[Interviewer] (Chairman Peters) Thank you, Ms. Blauer. Our final witness is Dr. Beth Noveck. Yesterday, Governor Murphy appointed Dr. Noveck as the first Chief AI Strategist of New Jersey, where she also currently serves as the State's first Chief Innovation Officer (CINO).\nPrior to that post, she served as a founding U.S. Deputy Chief Technology Officer and head of the White House Open Government Initiative under President Obama.\nOutside of her dedicated public service, Dr. Noveck works as a Professor of Experimental AI at Northeastern University, where she directs the Burn Center for Social Change, as well as its partner project, the Governance Lab.\nFor the last 20 years, Dr. Noveck has designed and built public tools to improve governance and strengthen our democracy. Dr. Noveck, you are now recognized for your opening comments.\nTESTIMONY OF BETH SIMONE NOVECK, PH.D., CHIEF INNO-\n[Respondent] Thank you, Chair Peter, and thank you so much for this opportunity to appear before the Committee, especially in the company of such a distinguished panel. Despite having funded the creation of the Internet, the public sector, we can all agree, I think has really lagged in its adoption.\nThe prepared statement of Dr. Noveck appears in the Appendix on page 46.\nBut now I think government can lead in the use of artificial intelligence for public good. Because especially of the power of AI to sort, to organize, and to summarize vast amounts of data and text, AI has the potential to make government more effective, more efficient, and more responsive to residents.\nAI is already helping us to create what I would call a more conversational government, where we can supply information and benefits and services, as you alluded to, 24/7. In New Jersey, we are using AI enabled chat bots to answer resident questions via the web.\nWe also support our call centers with AI, which helps staff quickly write menu options and answers to questions in response to public demand. That means the public is getting accurate answers faster, and that allows our call center operators to increase the resolution of calls now by 50 percent by human operators.\nWe are able to create now a more accessible government as well, with AI driven translation and summarization. My wonderful students at Northeastern University and the AI for Impact co-op program, where students are doing a six-month full time paid internship working for governments on AI projects.\nStudents, for example, have been working with the California nonprofit Innovate Public Schools to help families of schoolchildren with disabilities translate and summarize the child's individualized education program (IEP). For most families, that is a 50 to 100 page portable document format (PDF) of inscrutable legalese and government speak.\nStudents in this, as we call it, Apex International Education Partners (AIEP) project team worked with a network of parents now to design a tool that enables families to upload their IEP and then securely and privately ask questions of the documents, such as what are the accommodations to which my child is entitled.\nBecause generative AI makes it so much faster to write code, students built a fully functional product in just one semester. AI is also helping us to support public workers in their effort to do a better job serving residents. In New Jersey, our innovation team engineers have integrated AI copilot tools.\nThat is to say, tools that suggest to them which line of code to write next, and that is enabling us to write code 55 percent faster, creating a wide array of digital benefits much faster than we were able to do before. Governments are also using AI to process data, as we have heard, more efficiently.\nIn New Jersey, where we design government operations with residents rather than for them, we actively invite citizen comment. That is to say, we often receive thousands of comment, for example, from unemployment claimants telling us what their questions are, what they would like to see next, what information they need, and then an AI can help us parse those comments in a way that we could not do with the current staff that we have.\nWe can then, based on that understanding, put front and center the information that people want, and as a result of which, over the last year, we have brought down the time it takes to apply for unemployment benefits by 48 minutes per application. Governments are also turning to AI to improve how we do public engagement more broadly.\nI am working now with the Museum of Science to run a national consultation to understand why it is, shockingly, that only 33 percent of fourth graders were proficient readers last year.\nThe free and open source tool, Policy Synth, that we designed together with the nonprofit Citizens Foundation automated the creation of thousands of research questions, allowing us to synthesize then 150 root causes of the problem of illiteracy.\nNow at unlockingliteracy.ai, we are asking parents and students and educators around the country, what do they think is the real cause of the problem, and to tell us how we can do things better.\nTo realize this vision of AI enabled public administration, where residents do not have to wait on hold, do not have to go to a government office, and do not have to, frankly, go from website to websites searching for the information they need, let me just end with a couple of recommendations.\nI have a much longer list in my written submission. You can support Federal efforts to implement AI systems to provide this kind of round the clock information services, about policies, about benefits, about services, again, 24/7 and in multiple languages. We need to employ AI for more robust public engagement--first to improve services. We can turn to AI to help us synthesize comments in a human centered design process.\nI would add, we can also engage the public using AI to talk about how we are using AI and how we are governing the use of AI in agencies. We need to intensify efforts to open government data, ensuring that it is in machine readable formats, to facilitate the training of better AI models, and, frankly, to build and grow the American AI industry.\nFinally, we need to build on the success of the AI Leadership Training Act that came out of this Committee by implementing free, accessible training not just for leadership, but for all Federal employees, going beyond senior officials, focusing not just on knowledge of what AI is, but on practical applications in government services, ensuring that we collect data and evaluate impact about how such upskilling translates into better public service efficiency and better innovation. I look forward to your questions. Thank you very much.\n[Interviewer] (Chairman Peters) Thank you. Dr. Noveck.\n[Respondent] Thank you. Let me also take this in two parts then. The discussion that we have already begun to have and that you have alluded to around using chat bots and the ability to use AI to help answer people's questions 24/7 will help us begin to reduce the backlog.\nThe ability to use AI to help us write better, clearer instructions and directions, again, will help people get customer service faster. The ability for us to use AI to bring information together across agencies, across departments, across those 10,000 regulations that you talked about, that ability to now synthesize information, I think can help us to create this more conversational ethos where we are responding to people's questions and then reducing the need for them to call in, to wait, etcetera.\nBut we also then need to speed up how we do that work, and that is where some of these copilot techniques, this ability to use AI to help us write code faster, really comes into play. But I do want to respond to the second half, and as Beth alluded to already, this ensuring that we are not using, and we do not need to in most cases, use PII or sensitive information, and how we do this, I think, is really crucial.\nIt is one of the guidelines that we have put out in our policy in New Jersey as we have embraced and encouraged people to responsibly use AI in order to improve customer service, but we said, be very careful.\nDo not type personally identifiable information into these tools, not that of residents, not that of yourselves, in order to ensure that we are protecting privacy, even at the same time as we are improving customer service.\n[Interviewer] (Senator Hassan) Thank you. I think we could talk about this a great deal more, but I have a question for each of the other witnesses that I want to get to. To Dr. Noveck, we know the public expects better digital customer service from their government.\nHowever, many Americans, including retirees, older individuals on Medicare or Social Security, veterans, or those who have just complex cases actually need to speak to a customer service representative to address these issues.\nThe whole panel has touched on this a little, but what are some of the ways that AI could supplement or complement the work of Federal customer service representatives so that they can focus on the people who actually need the human one-on-one case management or solving?\n[Respondent] I think it is a great question. That is why in New Jersey, we are really using AI to support our call center workforce. We are not looking to offload people to phone trees and to put you in an endless loop of pushing buttons.\nQuite the opposite. What we want to do is by listening to residents and understanding what it is that they need to know and want to know. Looking at what they are searching for on the web, what are the questions that they are asking. They call in and then we can put that information front and center, first of all.\nSecond of all, we can provide good responses to people on the web, and that is going to offload some of the easy questions such that they are not passing through to humans. If we can get rid of your simple question about when is this open or closed, or which form do I use, etcetera, and we are putting that front and center, that means that fewer people are needing to actually talk to a person, and as a result--so for example, on just one service, by reducing by 15 percent the number of queries coming through, we have increased by 50 percent the number of people that were then able to serve with that phone service.\nBut also for more vulnerable residents, whether they are non-native English speakers, whether they are elderly, etcetera, the more that we design things in a human centered way that is talking to and listening to residents about what do they need and what do they want, the more we can then take advantage of AI to do things like provide multilingual services, or for example, translate language, complex government speaking legalese into something at a ninth grade level or in simple terms.\nListening to residents using the data we have from what they tell us to then improve what we are putting forward, then means we are putting fewer things through to the call center and having more responsive, more human, and more conversational interactions.\n[Interviewer] (Chairman Peters) Thank you, Dr. Noveck and Ms. Pahlka. We are going to ask both of you to respond to this question. Competition is absolutely critical to ensuring that the Federal Government uses the latest technology and gets good value for its purchasers as well.\nMy question to you is, what are some of the measures that we can take in Federal procurement to promote competition with these advanced technologies? Dr. Noveck, I will start with you, and then Ms. Pahlka.\n[Respondent] I think Ms. Pahlka has already begun to touch on this question, the need for greater simplicity and greater streamlining to enable smaller vendors to be able to compete in this space.\nOne needs to not simply have mastered the General Service Administration (GSA) schedules which should not be the sole threshold to being able to do business with the Federal Government. Streamlining and simplicity is going to be incredibly important in this space if we are going to enable smaller people to compete.\nI think, and GSA has been making strides on this with their wonderful guide on agile procurement that they have put out, also really trying to push forward what is known as agile procurement.\nThat is to say, not trying to anticipate every single requirement that we are going to have five years ahead of time in advance. These technologies are so new, our uses and experiences with them are so new, and designing tools correctly means actually doing it in little increments, testing what is working, and improving.\nThe more that we are streamlining by going smaller in the scope, being more agile, and ensuring that we are actually then refining as we go, I think the more that we are going to both open things up to procurement, but also ensure that the tools that we are procuring translate into better services and better customer experience.\nWhere we make the mistake is that, again, I am going to anticipate everything that we need five, 10 years down the road, again, on technologies that are changing now really by the day, if not by the week, and there are new capabilities emerging all the time.\nWe can use again AI to help us in conceptualizing and drafting some of those requirements, but we need to be able to make more agile procurement the norm rather than the exception.\n[Interviewer] (Chairman Peters) Wonderful. The next question is going to be for all three of you. I will start with Dr. Noveck and then Ms. Pahlka, and then Ms. Blauer, you can wrap it up for this question. Studies have indicated that roughly 45 percent of chief data officers believe that they do not have the responsibilities for AI at their individual agencies.\nYet, quality data is absolutely key to quality outcomes, as we all three have already discussed and we are well aware of. My question for you is, how can the Federal Government ensure that Federal Chief Data Officers (CDOs) are involved in the efforts to actually improve the delivery of services with AI? Dr. Noveck.\n[Respondent] I think the question suggests the answer, which is ensuring that they do. As we have all talked about, data is of course integral to training AI models. Without data to analyze, the AI becomes fairly useless.\nWhat we are trying to do is actually use data to ensure that we are proactively delivering services in the way that Ms. Blauer already talked about. I think having Chief Data Officers at the table is really essential and mandating that their role includes, again, the proactive publication and availability of data, as is already required by law, and ensuring that we do more of that.\nThat is going to require then more training, I think, for chief data officers and for data professionals in government around AI to talk about where those collaborations can occur.\nEnsuring that agencies do create those cross-functional teams and that cross-agency collaboration, as well as within agencies and then across agencies to ensure that these new AI officers, data officers, policy people, everywhere that we can bring disparate disciplines together to talk about how we can better serve residents, I think the better job that we are going to do.\nI think the question is really vital because it suggests the answer, which is we need the data people to be at the table, and we need to invest in the proactive publication and availability of data is really integral.\n[Interviewer] (Senator Butler) Very responsive to the question, and a continued incredible example for California. My last question, I want to quickly move from maybe customer service to thinking about helping you help us to think about how to better create the guardrails, enable the tools to also supplement direct services, and challenges that we have as a Nation.\nAcross the country, there is both a mental health crisis as well as a mental health worker crisis. I was reading, Los Angeles being one of the largest mental health providers in the country, that they also have more than 1,800 vacancies in mental health provision.\nBut have been reading a lot, I have, about chat bots that are being able to be deployed to offer initial support, where we may not have a worker at the ready to support the kind of one on one interaction that is required during mental health counseling and services.\nNationally we have is, at the Federal level, a national health care worker task force, understanding that we have a shortage around the country and a challenge that we have to address.\nCan you talk more, either of you, about the deployment of artificial intelligence, the usage of chat bots in a way to support the existing workers and their work, even as we have these sort of challenges of attracting more and creating more opportunities for workers in the space.\n[Respondent] It is such a wonderful question and I want to combine it with some of our focus also on government customer service here. I think one of the exciting things about these technologies is that they are what is sometimes referred to now as multimodal. That is to say, they talk as well as they type.\nThat means we have conversational agents, a tool I am thinking of like Pie, which was designed by the person who actually created the United Kingdom (UKs) largest helpline for Muslim youth, precisely in order to offer that responsiveness, that sense of talking to a person, which can really provide a lot of psychological support for people in the first instance.\nWe are seeing this ability not only to give people chat bots in the sense of typed responses to questions, whether it is for residents or whether it is for employees, but also spoken responses to questions to provide that added level of customer service.\nI think that is hugely important, whether it is in the mental health space, which is outside my area of expertise, or whether it is in the government customer support area. This ability now to provide people with that kind of responsiveness, I think is a hugely important and we are going to see the use of these tools only grow.\nOf course, we need those guardrails to ensure that we are confident about what the information is that is being provided to people, that we are not taking advantage of people in a vulnerable state.\nThat is why doing things in a human centered way, whether that is with residents or whether that is also with government workers and government employees, talking to them about what do they need and what will actually help them is really crucial. Last point here is, what is exciting about a lot of these tools is you can also train them to respond on a specific corpus of information.\nIt is not the world of ChatGPT and the open web that we know where it might pull from anywhere on the Internet. But rather the idea now, for example, that my students are working with the Massachusetts Department of Transportation (MassDOT) to say, let us upload their manuals, their procedures, their policies, and then provide a tool so that new engineers coming into the agency can ask a question like, what is the rule on this or what is the policy about that, and to pull the answers only from those documents.\nThat helps provide an added level of safety and security, to be sure that we know what the answers that people are going to get. Provides that conversational element. Again, it provides that opportunity, though, to make it a much easier than reading 1,000 documents and having to pore through them, enabling those new employees that we are bringing in not to burn out quite so fast, but instead to be excited about the opportunity to do public service.\n[Interviewer] (Chairman Peters) Thank you, Senator Butler. Dr. Noveck, New Jersey is one of the first States to develop guidance on how employees should use AI. If you would, for the Committee's benefit, kind of describe that guidance. More importantly, perhaps, how is it actually working in practice?\n[Respondent] Thank you. I am very excited, and Governor Murphy gave his State of the State speech yesterday, in which the topic of use of AI, responsible and ethical use of AI featured very front and center.\nI am very proud that we are one of the first States to actually have clear guidance, which says we want people to go out and try these things. It is not to say that we will not revise that guidance, and we will not upgrade it, and we will not change it as we learn better what these tools do and as they evolve, but the fact that we are going out and saying we want people to actually try this to the end of improving how we deliver services to residents.\nWe are coupling, however, that encouragement to try things with broad scale availability of training. I lead a partnership of multiple States, including California, called Innovate US, run by public servants for public servants, where we are providing free training in responsible AI and other technology use to government workers.\nI might say my co-panelists here have been or will be soon, speakers who have been helping us to train government workers at no cost to public servants. I think that is really important. Right now, OPM has a mandate whereby they have to use fee recovery to charge for training that they provide to government workers.\nWe want to ensure that the training we are providing is actually free, so that there is no disincentive to using it. But coming back to the policy question, we are telling people, go out and try these tools, but ensure that when you are trying them, please do not enter any personally identifiable information.\nPlease factcheck anything that comes out of these tools. We do not want to see those instances like the lawyer who filed the brief that still said in it, written by ChatGPT. We want to be sure that you are actually fact checking what is coming out of these things in the way that you would if you asked an intern to write something.\nWe want to also be sure that people are taking advantage of these tools in ways that are actually supplemental to and aiding, as Senator Butler referred to, actually aiding government workers in how they do their work, not supplanting them.\nEnsuring that we are using AI as an auxiliary to workers is very important. But again, undergirding all of that is training, training, training, and training.",
+ "_bench": {
+  "seconds": 230.1,
+  "chars": 26289
+ }
+}

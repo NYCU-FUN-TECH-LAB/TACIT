@@ -1,0 +1,83 @@
+{
+ "respondent": "Volunteer coordinator, walking and cycling advocacy group",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "other",
+  "sector": "ict_ai",
+  "experience": "over_20y",
+  "descriptor_basis": "the interview transcript does not state it"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Measuring wait times",
+   "quote": "We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions.",
+   "full_text": "We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done. We measured wait time from arrival at the kerb to green, which is the number that matters to a person and is not the number anybody publishes.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipates the need for a representative dataset and acknowledges the weakness of measuring only on Saturdays."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Comparing wait times",
+   "quote": "Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds.",
+   "full_text": "Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipates the potential for misinterpretation of the data and highlights the importance of considering the ninetieth percentile."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Sharing results",
+   "quote": "Better than the campaigning stuff we've sent before, honestly, and I think it's because we led with the good news.",
+   "full_text": "Better than the campaigning stuff we've sent before, honestly, and I think it's because we led with the good news. An officer emailed and asked for our raw sheets, which we sent. Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "The respondent engages with the audience by sharing the results and acknowledging the positive response."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Repeating the survey",
+   "quote": "Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak.",
+   "full_text": "Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak. That's frustrating and it's the right call.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent is responsive to the limitations of the method and acknowledges the need to repeat the survey to maintain the comparison."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Acknowledging the weakness",
+   "quote": "Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school.",
+   "full_text": "Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school. Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipates the potential criticism of the dataset and acknowledges the weakness of measuring only on Saturdays."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent demonstrates a strong sense of anticipation, particularly in acknowledging the limitations of the dataset and the need to repeat the survey. They also show engagement by sharing the results and responsiveness by acknowledging the need to maintain the comparison. The respondent's reflexive nature is evident in their willingness to acknowledge the weakness of the method and the potential for misinterpretation of the data.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N05 — Volunteer coordinator, walking and cycling advocacy group\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You did your own measurement, I understand.\n[Respondent] We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done. We measured wait time from arrival at the kerb to green, which is the number that matters to a person and is not the number anybody publishes.\n[Interviewer] What did you find?\n[Respondent] Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.\n[Interviewer] How was that received?\n[Respondent] Better than the campaigning stuff we've sent before, honestly, and I think it's because we led with the good news. An officer emailed and asked for our raw sheets, which we sent. Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before.\n[Interviewer] Will you repeat the survey?\n[Respondent] Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak. That's frustrating and it's the right call.\n[Interviewer] What's the weakness you'd fix if you could?\n[Respondent] Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school. Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it."
+}

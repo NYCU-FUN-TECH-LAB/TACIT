@@ -1,0 +1,83 @@
+{
+ "respondent": "G06",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "unspecified",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Data protection impact assessment",
+   "quote": "Yes, and it's a decent one, I'll defend it.",
+   "full_text": "Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms. Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.",
+   "open_codes": [
+    {
+     "code_id": "c026",
+     "label": "[8x] Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The assessment doesn't fully account for the system's real-time decision-making capabilities."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Retention and review of data protection impact assessment",
+   "quote": "It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off.",
+   "full_text": "It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.",
+   "open_codes": [
+    {
+     "code_id": "c026",
+     "label": "[8x] Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The lack of review and update of the data protection impact assessment may lead to unforeseen consequences."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Retention and handling of data",
+   "quote": "Seventy-two hours for the raw video, indefinite for the derived counts.",
+   "full_text": "Seventy-two hours for the raw video, indefinite for the derived counts. The derived counts are the interesting part and nobody asks about them because they're described as anonymous. They are anonymous. They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.",
+   "open_codes": [
+    {
+     "code_id": "c032",
+     "label": "[5x] Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The retention and handling of data may lead to unforeseen consequences, such as the creation of a complete record of individuals' movements."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Subject access and data concerns",
+   "quote": "Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway.",
+   "full_text": "Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+   "open_codes": [
+    {
+     "code_id": "c032",
+     "label": "[5x] Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The subject access process may not be effective in practice, leading to unforeseen consequences for individuals' data concerns."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260914_193235",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 1,
+   "n_ok": 1
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 3,
+    "created": 1,
+    "chunk": 0
+   }
+  ]
+ },
+ "transcript": "Interview transcript G06 — Data protection officer, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Was a data protection impact assessment done?\n[Respondent] Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms. Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.\n[Interviewer] Has the assessment been revisited?\n[Respondent] No. It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.\n[Interviewer] How is retention handled in practice?\n[Respondent] Seventy-two hours for the raw video, indefinite for the derived counts. The derived counts are the interesting part and nobody asks about them because they're described as anonymous. They are anonymous. They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.\n[Interviewer] Have you raised that?\n[Respondent] In a footnote. I know how that sounds after what I just said about the risk register. I think the honest position is that I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.\n[Interviewer] Do residents have a route to see what data concerns them?\n[Respondent] Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either."
+}

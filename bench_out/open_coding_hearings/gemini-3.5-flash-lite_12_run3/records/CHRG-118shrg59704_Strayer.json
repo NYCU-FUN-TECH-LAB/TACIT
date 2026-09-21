@@ -1,0 +1,617 @@
+{
+ "respondent": "CHRG-118shrg59704_Strayer",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "expressing gratitude and stating affiliation",
+   "quote": "Thank you. Chair Hickenlooper, Ranking Member Blackburn, and Members of the Committee; thank you for the opportunity to testify today. My name is Rob Strayer, and I lead the Global Policy Team, at the Information Technology Industry Council, or ITI.",
+   "full_text": "Thank you. Chair Hickenlooper, Ranking Member Blackburn, and Members of the Committee; thank you for the opportunity to testify today. My name is Rob Strayer, and I lead the Global Policy Team, at the Information Technology Industry Council, or ITI. ITI represents companies from all corners of the technology sector, and from across the AI ecosystem, including those involved in both developing AI models, and deploying cutting-edge AI applications.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "expressing gratitude and stating affiliation",
+     "rationale": "The speaker thanks the committee and introduces himself and his organization."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "rapid progress toward AGI and massive economic upside",
+   "quote": "The development and adoption of AI technology will be transformational across all sectors of the economy, estimates the total global economic benefits of AI in the years ahead range from $14 trillion to $25 trillion. That is absolutely massive.",
+   "full_text": "The development and adoption of AI technology will be transformational across all sectors of the economy, estimates the total global economic benefits of AI in the years ahead range from $14 trillion to $25 trillion. That is absolutely massive.",
+   "open_codes": [
+    {
+     "code_id": "c055",
+     "label": "rapid progress toward AGI and massive economic upside",
+     "rationale": "Highlights the massive estimated economic benefits and transformational nature of AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "AI in cybersecurity defense",
+   "quote": "And just one example of the transformational nature of AI, the cybersecurity industry is able to deploy machine learning to detect and stop the most sophisticated attacks, using zero- day exploits.",
+   "full_text": "And just one example of the transformational nature of AI, the cybersecurity industry is able to deploy machine learning to detect and stop the most sophisticated attacks, using zero- day exploits. AI can defeat these pernicious attacks using insights about activity rather than having to rely only on known malware signatures.",
+   "open_codes": [
+    {
+     "code_id": "c109",
+     "label": "use of AI in cybersecurity and national security defense",
+     "rationale": "Describes how AI machine learning is used to detect sophisticated cybersecurity attacks."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "global AI leadership and competitive threat",
+   "quote": "The good news is that today, the United States is leading AI development, deployment, and innovation globally. Nonetheless, foreign competitors are working hard on AI breakthroughs and to deploy AI and new use cases in their markets.",
+   "full_text": "The good news is that today, the United States is leading AI development, deployment, and innovation globally. Nonetheless, foreign competitors are working hard on AI breakthroughs and to deploy AI and new use cases in their markets. And with access to open source models, and decreasing model training compute costs, AI developers and deployers will be able to move anywhere in the world with interconnections to avoid stifling regulations.",
+   "open_codes": [
+    {
+     "code_id": "c032",
+     "label": "US opportunity to lead in innovative and responsible AI",
+     "rationale": "Discusses US leadership in AI and the competitive pressure from foreign rivals."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "US global leadership in AI and risks of flight from regulation",
+   "quote": "And with access to open source models, and decreasing model training compute costs, AI developers and deployers will be able to move anywhere in the world with interconnections to avoid stifling regulations.",
+   "full_text": "The good news is that today, the United States is leading AI development, deployment, and innovation globally. Nonetheless, foreign competitors are working hard on AI breakthroughs and to deploy AI and new use cases in their markets. And with access to open source models, and decreasing model training compute costs, AI developers and deployers will be able to move anywhere in the world with interconnections to avoid stifling regulations.",
+   "open_codes": [
+    {
+     "code_id": "c032",
+     "label": "US opportunity to lead in innovative and responsible AI",
+     "rationale": "Discusses US leadership and the global context of AI deployment."
+    },
+    {
+     "code_id": "c054",
+     "label": "international collaboration and resilient alliances for AI governance",
+     "rationale": "Addresses international competition and movement of developers to evade regulations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "US policymaking in a global context",
+   "quote": "Therefore, U.S. policymaking involving AI needs to be understood in a global context to consider how new policies affecting AI will help the United States maintain its technological leadership rather than cede it to competitors, including authoritarian states.",
+   "full_text": "Therefore, U.S. policymaking involving AI needs to be understood in a global context to consider how new policies affecting AI will help the United States maintain its technological leadership rather than cede it to competitors, including authoritarian states.",
+   "open_codes": [
+    {
+     "code_id": "c032",
+     "label": "US opportunity to lead in innovative and responsible AI",
+     "rationale": "Focuses on maintaining US technological leadership against competitors and authoritarian states."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Two primary components of pro-innovation AI policy",
+   "quote": "U.S. AI policies should have two primary components; one, promoting innovation and investment, and two, building public trust and accountability.",
+   "full_text": "So how does the United States create a pro-innovation AI policy framework that manages risk? U.S. AI policies should have two primary components; one, promoting innovation and investment, and two, building public trust and accountability. My written testimony covers the importance of investment, and so I will focus on public trust and accountability here.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Outlines a policy framework balancing innovation with public trust and accountability."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Transparency and model cards to build consumer trust",
+   "quote": "ITI companies also are producing AI model cards, so that consumers have access to the information about features and limitations of AI models in clear, plain language.",
+   "full_text": "Transparency is a key means by which to establish public trust. Consumer trust will increase adoption of AI and expand the AI ecosystem in the United States. ITI companies are working to ensure that users understand when they are interacting with an AI system, and generally how the system works. ITI companies also are producing AI model cards, so that consumers have access to the information about features and limitations of AI models in clear, plain language.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Highlights industry practices like model cards and transparency to build trust."
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Risk-based regulation tied to specific use cases",
+   "quote": "To avoid regulations being overly broad, risk should be identified in the context of a specific AI use case.",
+   "full_text": "So what is the government's role? To avoid regulations being overly broad, risk should be identified in the context of a specific AI use case. With risk identified it is then imperative that the government review the existing regulatory landscape. Legal regimes such fraud, criminal law, as well as statutes like the Civil Rights Act, can address AI-related risk.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Argues for tailoring government regulation to specific AI use cases and reviewing existing laws."
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Assessing existing legal regimes before new legislation",
+   "quote": "It is critical to understand how these legal regimes function, and where they may not be fit for purpose to address AI risk before creating new legislation or regulatory frameworks.",
+   "full_text": "It is critical to understand how these legal regimes function, and where they may not be fit for purpose to address AI risk before creating new legislation or regulatory frameworks.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Advocates checking if current laws cover AI risks before inventing new frameworks."
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "Role of international consensus-based standards",
+   "quote": "Finally, before adopting new AI regulatory requirements, policymakers should understand the status of international consensus-based standards, and the ability of those standards to meet regulatory requirements.",
+   "full_text": "Finally, before adopting new AI regulatory requirements, policymakers should understand the status of international consensus-based standards, and the ability of those standards to meet regulatory requirements. Without specific standards for risk management processes, such as the measurement and evaluation of the risk in models, it will not be possible to implement regulations effectively, or harmonize rules globally.",
+   "open_codes": [
+    {
+     "code_id": "c054",
+     "label": "international collaboration and resilient alliances for AI governance",
+     "rationale": "Stresses the importance of international consensus-based standards for effective and harmonized rules."
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Economic growth and conclusion",
+   "quote": "To wrap up, Congress and private sector stakeholders can work together to ensure the United States builds on its competitive lead in AI, as AI transforms all sectors of the economy, and generates trillions of dollars in economic growth.",
+   "full_text": "To wrap up, Congress and private sector stakeholders can work together to ensure the United States builds on its competitive lead in AI, as AI transforms all sectors of the economy, and generates trillions of dollars in economic growth. This will benefit U.S. companies and citizens for decades into the future. Thank you. And I look forward to your questions.",
+   "open_codes": [
+    {
+     "code_id": "c032",
+     "label": "US opportunity to lead in innovative and responsible AI",
+     "rationale": "Emphasizes maintaining the competitive lead and economic upside of AI through collaboration."
+    },
+    {
+     "code_id": "c002",
+     "label": "expressing gratitude and stating affiliation",
+     "rationale": "Closing remarks thanking the committee and indicating readiness for questions."
+    },
+    {
+     "code_id": "c055",
+     "label": "rapid progress toward AGI and massive economic upside",
+     "rationale": "Discusses trillions in economic growth and U.S. competitive lead."
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "importance of national privacy law before AI regulation",
+   "quote": "We believe a comprehensive national privacy law is absolutely critical, that ensures a lot of the issues that will come about, about data training sets, and other data that emerges from AI systems that are being used by businesses every day.",
+   "full_text": "[Interviewer] (Senator Blackburn) Absolutely. Mr. Strayer, when you are working with your members, the National Data Privacy Law, how did they put importance on that before we move forward with some of these other components dealing with AI?\n[Respondent] We believe a comprehensive national privacy law is absolutely critical, that ensures a lot of the issues that will come about, about data training sets, and other data that emerges from AI systems that are being used by businesses every day. So we pretty much support that--you know, acting quickly, we don't think those need to be done--but needs to be done first before moving on AI regulation, but we think both have to be done.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Advocating for a comprehensive national privacy law prior to AI regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "international standards for AI management systems",
+   "quote": "The thing I would say about standards is, U.S.-based companies and western companies, generally, are leading in developing standards through the International Standards Organization. They are working now on an AI management system standard.",
+   "full_text": "The thing I would say about standards is, U.S.-based companies and western companies, generally, are leading in developing standards through the International Standards Organization. They are working now on an AI management system standard. Those will be, hopefully, the bedrock for when EU finishes their legislation, the standards that should apply globally, but that has not been fully resolved by the European Union. But those standards should be to harmonize global standards for the future.",
+   "open_codes": [
+    {
+     "code_id": "c054",
+     "label": "international collaboration and resilient alliances for AI governance",
+     "rationale": "Discusses global standards through the International Standards Organization."
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "model cards and transparency requirements for AI",
+   "quote": "I would just add that companies are also setting up fact sheets for what they call model cards that explain the features and limitations, to talk about where the datasets came from, intended uses.",
+   "full_text": "[Interviewer] (Senator Blackburn) Mr. Strayer.\n[Respondent] I would just add that companies are also setting up fact sheets for what they call model cards that explain the features and limitations, to talk about where the datasets came from, intended uses. So these are, you know, pretty fulsome explanations. It is important in the area of transparency to think about who the intended audience is, and for what purpose.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Discusses transparency mechanisms like model cards and fact sheets."
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "acknowledging long state department titles with humor",
+   "quote": "They give you long titles at the State Department.",
+   "full_text": "[Interviewer] (Senator Moran) Thank you. Mr. Strayer, I am going to go to you based upon your past history at--as Deputy Assistant Secretary for Cyber and International Communications and Information Policy at the State Department. That is a long title.\n[Respondent] They give you long titles at the State Department.",
+   "open_codes": [
+    {
+     "code_id": "c017",
+     "label": "establishing informal conversational rapport",
+     "rationale": "Lighthearted exchange about bureaucratic titles."
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "focusing on domestic innovation and running faster",
+   "quote": "So first is, to maintain our leadership, we really also--we need to focus on running faster, that is how we innovate and make it to the next cycle of R&D in a position that puts us ahead of our adversaries, the United States, that is.",
+   "full_text": "So first is, to maintain our leadership, we really also--we need to focus on running faster, that is how we innovate and make it to the next cycle of R&D in a position that puts us ahead of our adversaries, the United States, that is. So we need to continue to develop the best technology for all purposes, which will obviously benefit our military and national security uses for those.",
+   "open_codes": [
+    {
+     "code_id": "c032",
+     "label": "US opportunity to lead in innovative and responsible AI",
+     "rationale": "Emphasizes the need to maintain US leadership by running faster in R&D."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "balancing export controls and outbound investments with private sector R&D",
+   "quote": "And that is, we really need to have a strong discussion with the private sector about how you can do the minimum amount of damage to future R&D and revenues for U.S.-based companies, while ensuring that none of these tools end up in the hands of adversaries, where we are going to use those for military purposes.",
+   "full_text": "There is a very important issue, though, with these. And that is, we really need to have a strong discussion with the private sector about how you can do the minimum amount of damage to future R&D and revenues for U.S.-based companies, while ensuring that none of these tools end up in the hands of adversaries, where we are going to use those for military purposes. So really sharpen your focus on where it might be used for dual use or military purposes, while benefiting U.S. and Western companies to our asymmetric advantage, because they need to keep maintaining those revenues over the long term.",
+   "open_codes": [
+    {
+     "code_id": "c110",
+     "label": "balancing national security restrictions with US private sector R&D",
+     "rationale": "Discusses minimizing damage to US R&D while preventing technology from reaching adversaries."
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "balancing national security controls with commercial competitiveness",
+   "quote": "So really sharpen your focus on where it might be used for dual use or military purposes, while benefiting U.S. and Western companies to our asymmetric advantage, because they need to keep maintaining those revenues over the long term.",
+   "full_text": "So really sharpen your focus on where it might be used for dual use or military purposes, while benefiting U.S. and Western companies to our asymmetric advantage, because they need to keep maintaining those revenues over the long term. So I think we need a stronger focus on working with the private sector to get that balance, right, that is stopping the military uses of other countries, and enhancing our own use and market competitive development of the technology.",
+   "open_codes": [
+    {
+     "code_id": "c054",
+     "label": "international collaboration and resilient alliances for AI governance",
+     "rationale": "Discusses balancing dual-use export controls to maintain US competitive advantage and corporate revenues."
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "evaluating export controls and outbound investment restrictions",
+   "quote": "So these restrictions are quite robust, in the case of export controls from the October 7th regulation that the Commerce Department issued on more advanced semiconductors. With regard to the outbound investment restrictions, they are starting more narrow, and they are doing rulemaking through the Treasury Department on these.",
+   "full_text": "So these restrictions are quite robust, in the case of export controls from the October 7th regulation that the Commerce Department issued on more advanced semiconductors. With regard to the outbound investment restrictions, they are starting more narrow, and they are doing rulemaking through the Treasury Department on these. I think that is a smart way to start, and then start to expand if they need to beyond that.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Describes robust export controls and outbound investment restrictions on advanced semiconductors."
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "the need for multilateral alignment on outbound investment",
+   "quote": "That has not yet occurred on the outbound investment restriction, so I think one needs to think about how that is done in a multilateral way, so that we are not making United States a place where you don't do investments in these areas, and we are ceding that leadership to other--even Western countries.",
+   "full_text": "The really key issue with these restrictions is that we don't want to force all technology--or key innovative technology to move outside the United States, so we need to bring allies and partners along with the United States, in the case of export--and the export controls for semiconductors, Japan, and others have come along, Taiwan, come along with the United States, the Netherlands, on the equipment as well. That has not yet occurred on the outbound investment restriction, so I think one needs to think about how that is done in a multilateral way, so that we are not making United States a place where you don't do investments in these areas, and we are ceding that leadership to other--even Western countries.",
+   "open_codes": [
+    {
+     "code_id": "c054",
+     "label": "international collaboration and resilient alliances for AI governance",
+     "rationale": "Emphasizes the need for multilateral alignment with allies on outbound investments to avoid losing leadership."
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "enforcement and risk management for malicious actors",
+   "quote": "Well, on the true malicious actors out there, there is going to need to be, you know, law enforcement cooperation and also enforcement of some of our existing laws. When it comes to standard risk management, a number of the appropriate risk management tools are going to make the model more resilient, more robust, less susceptible to compromise and manipulation.",
+   "full_text": "Well, on the true malicious actors out there, there is going to need to be, you know, law enforcement cooperation and also enforcement of some of our existing laws. When it comes to standard risk management, a number of the appropriate risk management tools are going to make the model more resilient, more robust, less susceptible to compromise and manipulation. So those are important steps.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "need for regulatory guardrails for AI technology",
+     "rationale": "Discusses law enforcement cooperation and standard risk management tools to prevent compromise and manipulation."
+    },
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Discusses law enforcement and risk management tools to make AI models robust."
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "scaling risk requirements for use cases and small businesses",
+   "quote": "The other thing just to keep in mind is, at these risk management steps, you know, there should be higher risk management for the highest risk use cases, and lesser requirements on something that is just doing predictive text in an email. And then finally, also to think a little bit about how small businesses and those that might be just doing experimentation that aren't planning for commercial deployment might be required at a lower standard than those that are going to make massive commercial deployments of things.",
+   "full_text": "The other thing just to keep in mind is, at these risk management steps, you know, there should be higher risk management for the highest risk use cases, and lesser requirements on something that is just doing predictive text in an email. And then finally, also to think a little bit about how small businesses and those that might be just doing experimentation that aren't planning for commercial deployment might be required at a lower standard than those that are going to make massive commercial deployments of things.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Proposes tiered risk management requirements based on use case risk and commercial scale."
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "technical standards for provenance and digital literacy",
+   "quote": "I won't repeat what has already been said, but two things on the technical side very much to emphasize the importance of having an open standard for provenance. And secondly on the social dimension, you know, digital literacy is going to be really important for these things to be implemented.",
+   "full_text": "I won't repeat what has already been said, but two things on the technical side very much to emphasize the importance of having an open standard for provenance. And secondly on the social dimension, you know, digital literacy is going to be really important for these things to be implemented. So bringing it to other stakeholders that include the media platforms, consumers, on the digital literacy side, for how these tools will be implemented effectively.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Suggests technical provenance standards and digital literacy initiatives to address deepfakes."
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "role of NIST in developing technical standards",
+   "quote": "I also think that NIST is a place where, over time, we have seen them deal with some very difficult problems, come up with new profiles for addressing very specific challenges and developing standards that are universally accepted, through in this process.",
+   "full_text": "I will just add. Congress obviously has a very important role to play. I also think that NIST is a place where, over time, we have seen them deal with some very difficult problems, come up with new profiles for addressing very specific challenges and developing standards that are universally accepted, through in this process. And so I think NIST has a key role to play here too.",
+   "open_codes": [
+    {
+     "code_id": "c037",
+     "label": "designating specific federal agencies for private and public AI oversight",
+     "rationale": "Proposes NIST as a key agency for developing universally accepted standards."
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Chair referencing NAIAC for US government role recommendations",
+   "quote": "Well that is why in the original legislation that we did with the NAIAC was to establish, you know, getting everybody together and figure out what we think the U.S. Government's role and responsibility should be. And while they haven't finished, you know, all of their findings, they have certainly made a list of the directions and recommendations.",
+   "full_text": "The Chair. Well that is why in the original legislation that we did with the NAIAC was to establish, you know, getting everybody together and figure out what we think the U.S. Government's role and responsibility should be. And while they haven't finished, you know, all of their findings, they have certainly made a list of the directions and recommendations. And so I think they are a good place to look for on this issue as well, at least from a discussion perspective.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Citing NAIAC legislation and recommendations regarding the U.S. Government's role in AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "Need for a federal privacy bill to prevent algorithmic discrimination",
+   "quote": "It is one of the reasons why I support getting a big--privacy bill that establishes a hard line against discriminatory action because then you could always take that action, again when somebody has had substantial harm given by a direction.",
+   "full_text": "But today's hearing was about stimulating some input about the issues around that. And what you basically are saying is there is no fail-safe way to do this. It is going to need constant participation, both on the side of making sure there is not mistakes; it is one of the reasons why I support getting a big--privacy bill that establishes a hard line against discriminatory action because then you could always take that action, again when somebody has had substantial harm given by a direction.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Advocating for a privacy bill establishing a hard line against discriminatory action."
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "Concerns over permanent online redlining in machine learning systems",
+   "quote": "We have heard a lot from the civil liberties community about this, about what you might see as online redlining, and you worry about something in the machine learning environment just putting that into a system, and then it being there for years and years without anybody even understanding that there was a discriminatory tactic against somebody.",
+   "full_text": "I think the privacy framework we have already laid out to basically stop that kind of activity and protect people. We have heard a lot from the civil liberties community about this, about what you might see as online redlining, and you worry about something in the machine learning environment just putting that into a system, and then it being there for years and years without anybody even understanding that there was a discriminatory tactic against somebody.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "specific failure modes of AI systems",
+     "rationale": "Discussing online redlining embedded in machine learning systems over long periods without detection."
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Call for strong laws to stop discriminatory AI activities",
+   "quote": "And so this is something we definitely want to have a forceful bright line, in my opinion, against, and say that if these kinds of activities do exist, that we will stop them, and that we have a strong law on the books to prevent them from happening.",
+   "full_text": "And all of a sudden, you know, all of these people don't have the same kind of thing, alone, that they wanted. And so this is something we definitely want to have a forceful bright line, in my opinion, against, and say that if these kinds of activities do exist, that we will stop them, and that we have a strong law on the books to prevent them from happening.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Calling for a strong law and a bright line against discriminatory algorithmic activities."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "Inquiring about international collaboration on deepfakes and communication",
+   "quote": "What do you think on the collaboration level, from an international basis, as it relates to deepfakes and communication? Anybody given that thought about how that framework should operate?",
+   "full_text": "What do you think on the collaboration level, from an international basis, as it relates to deepfakes and communication? Anybody given that thought about how that framework should operate?",
+   "open_codes": [
+    {
+     "code_id": "c054",
+     "label": "international collaboration and resilient alliances for AI governance",
+     "rationale": "Asking about international collaboration frameworks regarding deepfakes."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Senator Hickenlooper noting small business aspect and leaving Chair Cantwell in charge",
+   "quote": "[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often. I am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell...",
+   "full_text": "[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often.\nI am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "expressing gratitude and stating affiliation",
+     "rationale": "Senator managing procedural transition due to voting and praising a colleague."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "Chair thanking senators and witnesses for a robust hearing",
+   "quote": "The Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.",
+   "full_text": "The Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "expressing gratitude and stating affiliation",
+     "rationale": "The Chair expresses thanks to colleagues and witnesses for the hearing."
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "Chair transition and praise",
+   "quote": "I am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate.",
+   "full_text": "[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often. I am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.",
+   "open_codes": [
+    {
+     "code_id": "c016",
+     "label": "transition to committee questioning on algorithmic opacity",
+     "rationale": "Senator transitions out due to voting duty."
+    },
+    {
+     "code_id": "c111",
+     "label": "committee chair leaving for vote",
+     "rationale": "Senator departs for vote"
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "Chair thanking participants and introducing deepfakes",
+   "quote": "I wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information.",
+   "full_text": "The Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts. I wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information. What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Discussing specific federal tools like watermarks and alerts for deepfakes."
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "Multi-stakeholder groups for extremist content and deepfakes",
+   "quote": "And so some kind of multi-stakeholder group coming together to do this is probably one of the best ways we can see this addressed expeditiously, as the problem will grow very quickly as well.",
+   "full_text": "[Respondent] Just to point out, one analogy of the past was there was a lot of challenge with extremist -- violent extremist content online in the--roughly in the mid-2000s post- 9/11, there was something formed called the Global Internet Forum to Counter Terrorism, and that was really the major platforms. But then many other players came together to form practices and procedures for getting this extremist content off the internet. And so some kind of multi-stakeholder group coming together to do this is probably one of the best ways we can see this addressed expeditiously, as the problem will grow very quickly as well.",
+   "open_codes": [
+    {
+     "code_id": "c054",
+     "label": "international collaboration and resilient alliances for AI governance",
+     "rationale": "Proposing multi-stakeholder groups modeled on past coalitions to tackle deepfakes."
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "Interpol historical policing role",
+   "quote": "Didn't Interpol play a big role in the early days of the internet in trying to do a similar thing? Trying to police against pornography online, and catching, you know, bad actors who were perpetrating content?",
+   "full_text": "The Chair. Didn't Interpol play a big role in the early days of the internet in trying to do a similar thing? Trying to police against pornography online, and catching, you know, bad actors who were perpetrating content?",
+   "open_codes": [
+    {
+     "code_id": "c054",
+     "label": "international collaboration and resilient alliances for AI governance",
+     "rationale": "Discussing international law enforcement roles in policing online content."
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "Federal role in deepfake identification and response",
+   "quote": "What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.",
+   "full_text": "I wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information. What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Discusses watermarks and alerts for deepfakes"
+    }
+   ]
+  },
+  {
+   "segment_id": "S038",
+   "title": "Clearinghouse model for deepfakes",
+   "quote": "Yeah. Sort of a Clearinghouse model, I think that is how they pursued.",
+   "full_text": "What do you all see as the key tools for effectiveness in developing a system to respond to deepfakes? And we will just go right down the---- [Respondent] Yeah. Sort of a Clearinghouse model, I think that is how they pursued.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "proposing specific guardrails and legislation for AI",
+     "rationale": "Suggests a clearinghouse model for deepfake response"
+    }
+   ]
+  },
+  {
+   "segment_id": "S039",
+   "title": "US leadership in international cybersecurity and safety",
+   "quote": "They were, I think, a big component of it. I think the United States shouldn't shy away from taking credit for a lot of work that it did, bilaterally, through the Department of Justice to educate foreign partners about the ways that they can address things like pornography that rise to that level that is criminal.",
+   "full_text": "They were, I think, a big component of it. I think the United States shouldn't shy away from taking credit for a lot of work that it did, bilaterally, through the Department of Justice to educate foreign partners about the ways that they can address things like pornography that rise to that level that is criminal. So I think the United States has been a real leader in ensuring security and safety on the internet.",
+   "open_codes": [
+    {
+     "code_id": "c054",
+     "label": "international collaboration and resilient alliances for AI governance",
+     "rationale": "Highlighting US bilateral efforts and leadership with foreign partners on digital safety."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_175930",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 11,
+   "n_ok": 11
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 3,
+    "created": 1,
+    "chunk": 0
+   },
+   {
+    "reused": 10,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 2
+   },
+   {
+    "reused": 1,
+    "created": 1,
+    "chunk": 3
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 4
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 6
+   },
+   {
+    "reused": 7,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 8
+   },
+   {
+    "reused": 3,
+    "created": 1,
+    "chunk": 9
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 10
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg59704 — Rob Strayer, Executive Vice President Of Policy, Information Technology Industry Council (Iti)\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg59704  |  The Need For Transparency In Artificial Intelligence  |  Senate, Subcommittee On Consumer Protection, Product Safety, And Data Security / Committee On Commerce, Science, And Transportation  |  2023-09-12  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Senator Hickenlooper) Thank you, Mr. Gregory.\nMr. Stair--Strayer, I am sorry.\n[Respondent] Thank you. Chair Hickenlooper, Ranking Member Blackburn, and Members of the Committee; thank you for the opportunity to testify today.\nMy name is Rob Strayer, and I lead the Global Policy Team, at the Information Technology Industry Council, or ITI. ITI represents companies from all corners of the technology sector, and from across the AI ecosystem, including those involved in both developing AI models, and deploying cutting-edge AI applications.\nITI was pleased to provide a very detailed response to the Subcommittee's inquiry earlier this year, about how our companies are operationalizing the NIST AI Risk Management Framework, as a means of building public trust.\nWe are encouraged by the bipartisan efforts in Congress to address the challenges and opportunities from AI. In my remaining time, I will address the competitive, global context for AI, and then turn to transparency and accountability.\nThe development and adoption of AI technology will be transformational across all sectors of the economy, estimates the total global economic benefits of AI in the years ahead range from $14 trillion to $25 trillion. That is absolutely massive.\nAnd just one example of the transformational nature of AI, the cybersecurity industry is able to deploy machine learning to detect and stop the most sophisticated attacks, using zero- day exploits. AI can defeat these pernicious attacks using insights about activity rather than having to rely only on known malware signatures.\nAdversaries will certainly be using AI to improve their attacks. And we need to be able to leverage AI to protect our critical infrastructure and IT systems; AI also will play an essential role in future national security applications for the military and for the intelligence community.\nThe good news is that today, the United States is leading AI development, deployment, and innovation globally. Nonetheless, foreign competitors are working hard on AI breakthroughs and to deploy AI and new use cases in their markets. And with access to open source models, and decreasing model training compute costs, AI developers and deployers will be able to move anywhere in the world with interconnections to avoid stifling regulations.\nTherefore, U.S. policymaking involving AI needs to be understood in a global context to consider how new policies affecting AI will help the United States maintain its technological leadership rather than cede it to competitors, including authoritarian states.\nSo how does the United States create a pro-innovation AI policy framework that manages risk? U.S. AI policies should have two primary components; one, promoting innovation and investment, and two, building public trust and accountability. My written testimony covers the importance of investment, and so I will focus on public trust and accountability here.\nTransparency is a key means by which to establish public trust. Consumer trust will increase adoption of AI and expand the AI ecosystem in the United States. ITI companies are working to ensure that users understand when they are interacting with an AI system, and generally how the system works. ITI companies also are producing AI model cards, so that consumers have access to the information about features and limitations of AI models in clear, plain language.\nSo what is the government's role? To avoid regulations being overly broad, risk should be identified in the context of a specific AI use case. With risk identified it is then imperative that the government review the existing regulatory landscape. Legal regimes such fraud, criminal law, as well as statutes like the Civil Rights Act, can address AI-related risk.\nIt is critical to understand how these legal regimes function, and where they may not be fit for purpose to address AI risk before creating new legislation or regulatory frameworks.\nFinally, before adopting new AI regulatory requirements, policymakers should understand the status of international consensus-based standards, and the ability of those standards to meet regulatory requirements. Without specific standards for risk management processes, such as the measurement and evaluation of the risk in models, it will not be possible to implement regulations effectively, or harmonize rules globally.\nTo wrap up, Congress and private sector stakeholders can work together to ensure the United States builds on its competitive lead in AI, as AI transforms all sectors of the economy, and generates trillions of dollars in economic growth. This will benefit U.S. companies and citizens for decades into the future.\nThank you. And I look forward to your questions.\n[Interviewer] (Senator Blackburn) Absolutely. Mr. Strayer, when you are working with your members, the National Data Privacy Law, how did they put importance on that before we move forward with some of these other components dealing with AI?\n[Respondent] We believe a comprehensive national privacy law is absolutely critical, that ensures a lot of the issues that will come about, about data training sets, and other data that emerges from AI systems that are being used by businesses every day. So we pretty much support that--you know, acting quickly, we don't think those need to be done--but needs to be done first before moving on AI regulation, but we think both have to be done.\nThe thing I would say about standards is, U.S.-based companies and western companies, generally, are leading in developing standards through the International Standards Organization. They are working now on an AI management system standard. Those will be, hopefully, the bedrock for when EU finishes their legislation, the standards that should apply globally, but that has not been fully resolved by the European Union. But those standards should be to harmonize global standards for the future.\n[Interviewer] (Senator Blackburn) Mr. Strayer.\n[Respondent] I would just add that companies are also setting up fact sheets for what they call model cards that explain the features and limitations, to talk about where the datasets came from, intended uses. So these are, you know, pretty fulsome explanations. It is important in the area of transparency to think about who the intended audience is, and for what purpose.\nSo is it a consumer, is it business as well on the chain? Is it for the deployer? So one should think about all those when they think about what requirements should be set in this area.\n[Interviewer] (Senator Moran) Thank you. Mr. Strayer, I am going to go to you based upon your past history at--as Deputy Assistant Secretary for Cyber and International Communications and Information Policy at the State Department. That is a long title.\n[Respondent] They give you long titles at the State Department.\n[Interviewer] (Senator Moran) Let me suggest the story to you of Huawei launching a phone last week, containing a suspected homegrown semiconductor that represents a leap forward in their ability to produce advanced microprocessors. Despite the efforts by the U.S. Department of Commerce to deprive that company of U.S. and partner technology to develop and manufacture advanced semiconductors, a lot of details yet to be known about that.\nAs part of that related effort to deny China the ability to develop these technologies, in August, President Biden issued an Executive Order limiting outbound investment of Chinese companies that develop advanced technologies, including AI. What are the national security implications for the U.S. if adversarial nations take a leading position in the advancement of artificial intelligence? Do you believe the U.S. can appropriately mitigate this risk through the current strategy of denying access to key technologies and investments? And what can we learn from our past and present efforts at restriction in the development of semiconductors?\n[Respondent] Thanks Senator. That is quite a compound question I will try to do my best job to----\n[Interviewer] (Senator Moran) It goes with your title.\n[Respondent] Touche. So first is, to maintain our leadership, we really also--we need to focus on running faster, that is how we innovate and make it to the next cycle of R&D in a position that puts us ahead of our adversaries, the United States, that is. So we need to continue to develop the best technology for all purposes, which will obviously benefit our military and national security uses for those.\nOn the defensive side, we have seen the October 7th, of last year, export control executive order regulation, and now this most recent outbound investment restriction.\nWe are still seeing those play out, there is open comment periods on these, they are trying to tighten them up. So we will see all those play out. There is a very important issue, though, with these. And that is, we really need to have a strong discussion with the private sector about how you can do the minimum amount of damage to future R&D and revenues for U.S.-based companies, while ensuring that none of these tools end up in the hands of adversaries, where we are going to use those for military purposes.\nSo really sharpen your focus on where it might be used for dual use or military purposes, while benefiting U.S. and Western companies to our asymmetric advantage, because they need to keep maintaining those revenues over the long term. So I think we need a stronger focus on working with the private sector to get that balance, right, that is stopping the military uses of other countries, and enhancing our own use and market competitive development of the technology.\n[Interviewer] (Senator Moran) Good.\n[Respondent] So these restrictions are quite robust, in the case of export controls from the October 7th regulation that the Commerce Department issued on more advanced semiconductors. With regard to the outbound investment restrictions, they are starting more narrow, and they are doing rulemaking through the Treasury Department on these. I think that is a smart way to start, and then start to expand if they need to beyond that.\nThe really key issue with these restrictions is that we don't want to force all technology--or key innovative technology to move outside the United States, so we need to bring allies and partners along with the United States, in the case of export--and the export controls for semiconductors, Japan, and others have come along, Taiwan, come along with the United States, the Netherlands, on the equipment as well.\nThat has not yet occurred on the outbound investment restriction, so I think one needs to think about how that is done in a multilateral way, so that we are not making United States a place where you don't do investments in these areas, and we are ceding that leadership to other--even Western countries.\n[Interviewer] (Senator Hickenlooper) Couldn't agree more. I am going to sneak in one last question before the Chair comes back. I don't know if you guys play bridge, but the Chair trumps every suit. To be clear.\nMr. Gregory, let me go to my--switch to my question for Mr. Strayer. The AI ecosystem can be generally viewed as those that develop AI and those that use AI. As we have heard data is nuanced--there is a lot of nuance around that; risk management principles should be tailored both to developers and users, employers, and certainly there is not going to be any one-size- fits-all; there is no silver bullet. How can we create an oversight and enforcement framework to make sure that we can hold bad actors accountable? You know, people that use the AI systems maliciously?\n[Respondent] Well, on the true malicious actors out there, there is going to need to be, you know, law enforcement cooperation and also enforcement of some of our existing laws. When it comes to standard risk management, a number of the appropriate risk management tools are going to make the model more resilient, more robust, less susceptible to compromise and manipulation. So those are important steps.\nThe other thing just to keep in mind is, at these risk management steps, you know, there should be higher risk management for the highest risk use cases, and lesser requirements on something that is just doing predictive text in an email.\nAnd then finally, also to think a little bit about how small businesses and those that might be just doing experimentation that aren't planning for commercial deployment might be required at a lower standard than those that are going to make massive commercial deployments of things.\n[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often.\nI am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.\nThe Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.\nI wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information. What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.\nWhat do you all see as the key tools for effectiveness in developing a system to respond to deepfakes? And we will just go right down the----\n[Respondent] I won't repeat what has already been said, but two things on the technical side very much to emphasize the importance of having an open standard for provenance. And secondly on the social dimension, you know, digital literacy is going to be really important for these things to be implemented. So bringing it to other stakeholders that include the media platforms, consumers, on the digital literacy side, for how these tools will be implemented effectively.\nThe Chair. So who do you think should be in charge of this; anybody? Mr. Gregory, you look like you are going to volunteer here.\n[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often.\nI am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.\nThe Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.\nI wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information. What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.\nWhat do you all see as the key tools for effectiveness in developing a system to respond to deepfakes? And we will just go right down the----\n[Respondent] I will just add. Congress obviously has a very important role to play. I also think that NIST is a place where, over time, we have seen them deal with some very difficult problems, come up with new profiles for addressing very specific challenges and developing standards that are universally accepted, through in this process. And so I think NIST has a key role to play here too.\nThe Chair. Well that is why in the original legislation that we did with the NAIAC was to establish, you know, getting everybody together and figure out what we think the U.S. Government's role and responsibility should be. And while they haven't finished, you know, all of their findings, they have certainly made a list of the directions and recommendations. And so I think they are a good place to look for on this issue as well, at least from a discussion perspective.\nBut today's hearing was about stimulating some input about the issues around that. And what you basically are saying is there is no fail-safe way to do this. It is going to need constant participation, both on the side of making sure there is not mistakes; it is one of the reasons why I support getting a big--privacy bill that establishes a hard line against discriminatory action because then you could always take that action, again when somebody has had substantial harm given by a direction.\nI think the privacy framework we have already laid out to basically stop that kind of activity and protect people. We have heard a lot from the civil liberties community about this, about what you might see as online redlining, and you worry about something in the machine learning environment just putting that into a system, and then it being there for years and years without anybody even understanding that there was a discriminatory tactic against somebody.\nAnd all of a sudden, you know, all of these people don't have the same kind of thing, alone, that they wanted. And so this is something we definitely want to have a forceful bright line, in my opinion, against, and say that if these kinds of activities do exist, that we will stop them, and that we have a strong law on the books to prevent them from happening.\nWhat do you think on the collaboration level, from an international basis, as it relates to deepfakes and communication? Anybody given that thought about how that framework should operate?\n[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often.\nI am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.\nThe Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.\nI wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information. What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.\nWhat do you all see as the key tools for effectiveness in developing a system to respond to deepfakes? And we will just go right down the----\n[Respondent] Just to point out, one analogy of the past was there was a lot of challenge with extremist -- violent extremist content online in the--roughly in the mid-2000s post- 9/11, there was something formed called the Global Internet Forum to Counter Terrorism, and that was really the major platforms. But then many other players came together to form practices and procedures for getting this extremist content off the internet.\nAnd so some kind of multi-stakeholder group coming together to do this is probably one of the best ways we can see this addressed expeditiously, as the problem will grow very quickly as well.\nThe Chair. Didn't Interpol play a big role in the early days of the internet in trying to do a similar thing? Trying to police against pornography online, and catching, you know, bad actors who were perpetrating content?\n[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often.\nI am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.\nThe Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.\nI wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information. What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.\nWhat do you all see as the key tools for effectiveness in developing a system to respond to deepfakes? And we will just go right down the----\n[Respondent] Absolutely, yeah.\nThe Chair. And so that was a--where an international organization was working, and organizations working with them to try to police, I guess, or create standards or information for people to stop those activities?\n[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often.\nI am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.\nThe Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.\nI wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information. What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.\nWhat do you all see as the key tools for effectiveness in developing a system to respond to deepfakes? And we will just go right down the----\n[Respondent] Yeah. Sort of a Clearinghouse model, I think that is how they pursued.\nThe Chair. And do you think that was successful?\n[Interviewer] (Senator Hickenlooper) That is such a good point; the small business aspect gets overlooked so often.\nI am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.\nThe Chair. Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.\nI wanted to go back to the particulars of what you all think we should do on the deepfake side, as we see technology being developed, and DARPA playing a pretty key role as it is today, in looking at deepfakes and deepfake information. What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.\nWhat do you all see as the key tools for effectiveness in developing a system to respond to deepfakes? And we will just go right down the----\n[Respondent] They were, I think, a big component of it. I think the United States shouldn't shy away from taking credit for a lot of work that it did, bilaterally, through the Department of Justice to educate foreign partners about the ways that they can address things like pornography that rise to that level that is criminal. So I think the United States has been a real leader in ensuring security and safety on the internet.\nThe Chair. Thank you. Mr. Gregory.",
+ "_bench": {
+  "seconds": 62.1,
+  "chars": 25169
+ }
+}

@@ -1,0 +1,99 @@
+{
+  "respondent": "P03 (Product manager, roadside camera hardware vendor)",
+  "descriptors": {
+    "institution_type": "industry",
+    "role_level": "middle_management",
+    "sector": "manufacturing",
+    "experience": "6_10y",
+    "descriptor_basis": "Interview transcript: P03 (Product manager, roadside camera hardware vendor)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "Everyday lived effects absent from specification",
+      "quote": "the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it.",
+      "full_text": "Yes, and it's the thing I always tell people about now. About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it. It's not in any specification anywhere.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "N",
+          "rationale": "A mundane but real impact on residents that no part of the process anticipated, illustrating how narrow the foresight frame was."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "Substantive fix extended beyond the reported case",
+      "quote": "a crew went round and retrofitted every unit in the city, not just that street. I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet.",
+      "full_text": "We fixed it. Took about six weeks. We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street. I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "P",
+          "rationale": "Concrete adaptation that goes beyond the specific complaint, treating the report as evidence of a general problem."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "Learning fed back into standing practice",
+      "quote": "we changed the mounting guidance for future installs",
+      "full_text": "We fixed it. Took about six weeks. We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street. I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "P",
+          "rationale": "The response is institutionalised rather than treated as a one-off remedy."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "No direct channel between residents and builders",
+      "quote": "There's no direct line from a resident to the people who can actually fix the thing.",
+      "full_text": "Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us. I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "Structural absence of a route from affected residents to the party with technical capacity to act."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "Consultation dismissed as unanswerable",
+      "quote": "I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them.",
+      "full_text": "Placement was decided on traffic engineering grounds — sight lines, pole availability, power. I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them. 'Do you mind a camera here' — most people would say yes they mind, and then what?",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "Engagement is not merely absent but treated as having no workable form, which forecloses looking for one."
+        }
+      ]
+    },
+    {
+      "segment_id": "S006",
+      "title": "Incident converted into a standing design question",
+      "quote": "We now have a line in our design review that says 'what does this look like to somebody who lives next to it'.",
+      "full_text": "A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Modest but genuine change to how the team examines its own assumptions, with the respondent honest about its limits."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "The clearest case of responsiveness in the industry group. An unanticipated everyday impact — light spill from status LEDs — was fixed thoroughly, extended to unreported sites and written into standing guidance. The same account shows why it took so long: there is no direct route from residents to the people who can act, and pre-installation consultation was dismissed as having no workable form.",
+  "transcript": "Interview transcript P03 — Product manager, roadside camera hardware vendor\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n【Interviewer】Tell me about your part of the deployment.\n【Respondent】We supply the roadside units — the housing, the sensor, the local compute. Thirty intersections, two units each, some with three where the geometry is awkward. My job is that they work in the weather and don't need a truck roll every month.\n【Interviewer】Did anything come up after installation that you hadn't expected?\n【Respondent】Yes, and it's the thing I always tell people about now. About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it. It's not in any specification anywhere.\n【Interviewer】What happened then?\n【Respondent】We fixed it. Took about six weeks. We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street. I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.\n【Interviewer】How did those residents reach you?\n【Respondent】Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us. I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.\n【Interviewer】Was there consultation before installation about where units went?\n【Respondent】Placement was decided on traffic engineering grounds — sight lines, pole availability, power. I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them. 'Do you mind a camera here' — most people would say yes they mind, and then what?\n【Interviewer】Has the LED episode changed how you think about new products?\n【Respondent】A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+  "transcript_file": "03_P03_Product-manager.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

@@ -1,0 +1,83 @@
+{
+ "respondent": "P03",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "unspecified",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Unintended consequences — The potential risks and unforeseen outcomes of the system",
+   "quote": "the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night.",
+   "full_text": "About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it. It's not in any specification anywhere.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Unintended consequences",
+     "rationale": "The respondent discusses an unforeseen issue with the system's design"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Design and procurement — The process of designing and procuring the system",
+   "quote": "Placement was decided on traffic engineering grounds — sight lines, pole availability, power.",
+   "full_text": "Placement was decided on traffic engineering grounds — sight lines, pole availability, power. I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them. 'Do you mind a camera here' — most people would say yes they mind, and then what?",
+   "open_codes": [
+    {
+     "code_id": "c005",
+     "label": "Design and procurement",
+     "rationale": "The respondent discusses the design and procurement process of the system"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Community engagement — The efforts to inform and involve the community in the project",
+   "quote": "I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.",
+   "full_text": "I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Community engagement",
+     "rationale": "The respondent discusses the lack of direct community engagement in the project"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Lessons learned and change — The respondent's thoughts on what they would do differently in hindsight",
+   "quote": "A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+   "full_text": "A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "Lessons learned and change",
+     "rationale": "The respondent reflects on what they have learned from the experience and how it has changed their approach"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260914_193235",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 1,
+   "n_ok": 1
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 3,
+    "created": 1,
+    "chunk": 0
+   }
+  ]
+ },
+ "transcript": "Interview transcript P03 — Product manager, roadside camera hardware vendor\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | Tell me about your part of the deployment.\nRespondent | We supply the roadside units — the housing, the sensor, the local compute. Thirty intersections, two units each, some with three where the geometry is awkward. My job is that they work in the weather and don't need a truck roll every month.\nInterviewer | Did anything come up after installation that you hadn't expected?\nRespondent | Yes, and it's the thing I always tell people about now. About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it. It's not in any specification anywhere.\nInterviewer | What happened then?\nRespondent | We fixed it. Took about six weeks. We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street. I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.\nInterviewer | How did those residents reach you?\nRespondent | Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us. I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.\nInterviewer | Was there consultation before installation about where units went?\nRespondent | Placement was decided on traffic engineering grounds — sight lines, pole availability, power. I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them. 'Do you mind a camera here' — most people would say yes they mind, and then what?\nInterviewer | Has the LED episode changed how you think about new products?\nRespondent | A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it."
+}

@@ -1,0 +1,70 @@
+{
+ "respondent": "Ward councillor, city council",
+ "descriptors": {
+  "institution_type": "other",
+  "role_level": "other",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "the interview transcript does not state the respondent's experience"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Residents' concerns and councillor's response",
+   "quote": "In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use.",
+   "full_text": "Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipates the concerns of residents and acknowledges the importance of their feedback"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Uncertainty and lack of understanding",
+   "quote": "people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+   "full_text": "Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent acknowledges the uncertainty and lack of understanding among residents, showing epistemic humility"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Councillor's limitations",
+   "quote": "I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask.",
+   "full_text": "I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent acknowledges the limitations of their role and the lack of transparency in decision-making"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Need for independent scrutiny",
+   "quote": "Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things.",
+   "full_text": "Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent advocates for independent scrutiny and transparency in decision-making"
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent, a ward councillor, exhibits a strong sense of anticipation, acknowledging the concerns of residents and the importance of their feedback. They also demonstrate reflexive thinking, acknowledging the uncertainty and lack of understanding among residents. However, they acknowledge the limitations of their role and the lack of transparency in decision-making, which hinders their ability to scrutinise the system. The respondent advocates for independent scrutiny and transparency in decision-making, highlighting the need for a more responsive approach.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G03 — Ward councillor, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | How does this reach you as a councillor?\nRespondent | Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.\nInterviewer | What did people describe?\nRespondent | Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.\nInterviewer | What did you do with it?\nRespondent | Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.\nInterviewer | Do you feel you understand the system well enough to scrutinise it?\nRespondent | No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.\nInterviewer | What would help?\nRespondent | Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day."
+}

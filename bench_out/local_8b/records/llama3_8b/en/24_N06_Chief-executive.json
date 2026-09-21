@@ -1,0 +1,57 @@
+{
+ "respondent": "Chief executive, local community foundation",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "senior_management",
+  "sector": "unspecified",
+  "experience": "over_20y",
+  "descriptor_basis": "the interview transcript does not state it"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "No engagement, no anticipation",
+   "quote": "Somebody had listed us. Nobody had asked us.",
+   "full_text": "Being named. I mean that literally — I found out we were a community partner when I read it in the bid summary after the award. Somebody had listed us. Nobody had asked us. We'd had one phone call eighteen months earlier about something adjacent.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent describes being listed as a community partner without being asked, indicating a lack of engagement"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "No responsiveness",
+   "quote": "There isn't a good one.",
+   "full_text": "Declining is also a bad option. There isn't a good one.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent describes the lack of a good option, indicating a lack of responsiveness"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Reflexivity on assumptions",
+   "quote": "If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve.",
+   "full_text": "My concern is that our attendance is what makes the process look legitimate. If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent questions their own assumptions about the effectiveness of the reference group and the potential negative consequences of their participation"
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent's account highlights a lack of engagement and responsiveness, particularly in the context of the reference group. They also demonstrate reflexivity by questioning their own assumptions about the effectiveness of the group and the potential negative consequences of their participation.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N06 — Chief executive, local community foundation\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Your foundation was named as a community partner. What did that involve?\n[Respondent] Being named. I mean that literally — I found out we were a community partner when I read it in the bid summary after the award. Somebody had listed us. Nobody had asked us. We'd had one phone call eighteen months earlier about something adjacent.\n[Interviewer] Did you object?\n[Respondent] I wrote and asked to be removed, and we were, from the next version. But the version with our name in it is the one that won the contract, and there's no mechanism to unwind that. The bid was evaluated partly on community partnership that didn't exist.\n[Interviewer] Has anything happened since?\n[Respondent] We were invited to a launch event, which I didn't attend, and to a 'community reference group' which met twice and then stopped. I don't know that it was cancelled. It simply stopped being scheduled. Nobody wrote to say it had ended.\n[Interviewer] Do you think the reference group could have worked?\n[Respondent] Possibly, with two changes. Somebody senior in the room, and a written response to whatever it produced within a fixed period. Without those two things a reference group is a mailing list with sandwiches. I've sat on eleven of them in this job and three worked, and all three had those two features.\n[Interviewer] Would you take part in the next one?\n[Respondent] Probably not, and I've thought about whether that's the right call. My concern is that our attendance is what makes the process look legitimate. If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve. Declining is also a bad option. There isn't a good one."
+}

@@ -1,0 +1,457 @@
+{
+  "corpus": "demo",
+  "model": "ollama/llama3:8b@http://localhost:11434",
+  "provenance": {
+    "endpoint": "ollama/llama3:8b@http://localhost:11434",
+    "provider": "ollama",
+    "model": "llama3:8b",
+    "base_url": "http://localhost:11434",
+    "num_ctx": 32768,
+    "max_tokens": 8192,
+    "recorded_at": "2026-09-18T21:39:40",
+    "quantization_level": "Q4_0",
+    "parameter_size": "8.0B",
+    "family": "llama",
+    "context_length": 8192,
+    "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+    "temperature": 0.2
+  },
+  "order": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06"
+  ],
+  "transcripts": 24,
+  "chars": 53075,
+  "windows": 25,
+  "windows_ok": 25,
+  "transcripts_with_chunk_errors": 0,
+  "coding_minutes": 8.5,
+  "open_segments": 114,
+  "codes_initial": 37,
+  "applications_initial": 114,
+  "singletons_initial": 15,
+  "merge_suggestions": 40,
+  "codes_after_merge": 19,
+  "saturation": [
+    {
+      "n": 1,
+      "created": 7,
+      "reused": 0,
+      "cumulative": 7
+    },
+    {
+      "n": 2,
+      "created": 1,
+      "reused": 1,
+      "cumulative": 8
+    },
+    {
+      "n": 3,
+      "created": 3,
+      "reused": 2,
+      "cumulative": 11
+    },
+    {
+      "n": 4,
+      "created": 1,
+      "reused": 3,
+      "cumulative": 12
+    },
+    {
+      "n": 5,
+      "created": 1,
+      "reused": 4,
+      "cumulative": 13
+    },
+    {
+      "n": 6,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 13
+    },
+    {
+      "n": 7,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 13
+    },
+    {
+      "n": 8,
+      "created": 4,
+      "reused": 1,
+      "cumulative": 17
+    },
+    {
+      "n": 9,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 17
+    },
+    {
+      "n": 10,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 17
+    },
+    {
+      "n": 11,
+      "created": 4,
+      "reused": 1,
+      "cumulative": 21
+    },
+    {
+      "n": 12,
+      "created": 2,
+      "reused": 2,
+      "cumulative": 23
+    },
+    {
+      "n": 13,
+      "created": 2,
+      "reused": 2,
+      "cumulative": 25
+    },
+    {
+      "n": 14,
+      "created": 1,
+      "reused": 2,
+      "cumulative": 26
+    },
+    {
+      "n": 15,
+      "created": 2,
+      "reused": 3,
+      "cumulative": 28
+    },
+    {
+      "n": 16,
+      "created": 2,
+      "reused": 2,
+      "cumulative": 30
+    },
+    {
+      "n": 17,
+      "created": 1,
+      "reused": 4,
+      "cumulative": 31
+    },
+    {
+      "n": 18,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 31
+    },
+    {
+      "n": 19,
+      "created": 1,
+      "reused": 3,
+      "cumulative": 32
+    },
+    {
+      "n": 20,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 32
+    },
+    {
+      "n": 21,
+      "created": 2,
+      "reused": 3,
+      "cumulative": 34
+    },
+    {
+      "n": 22,
+      "created": 1,
+      "reused": 4,
+      "cumulative": 35
+    },
+    {
+      "n": 23,
+      "created": 2,
+      "reused": 3,
+      "cumulative": 37
+    },
+    {
+      "n": 24,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 37
+    },
+    {
+      "n": 25,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 37
+    }
+  ],
+  "top_codes": [
+    {
+      "label": "Unintended consequences — The potential risks and unforeseen outcomes of the system",
+      "count": 29
+    },
+    {
+      "label": "[5x] Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+      "count": 18
+    },
+    {
+      "label": "Unintended consequences",
+      "count": 10
+    },
+    {
+      "label": "[4x] Community engagement — The efforts to inform and involve the community in the project",
+      "count": 10
+    },
+    {
+      "label": "Shifting responsibility — The way in which actors avoid taking responsibility for the long-term effects of the system",
+      "count": 9
+    },
+    {
+      "label": "Community engagement",
+      "count": 5
+    },
+    {
+      "label": "Design and procurement",
+      "count": 5
+    },
+    {
+      "label": "Reflection and lessons learned",
+      "count": 5
+    },
+    {
+      "label": "New code: Measuring impact — The challenges of measuring the impact of the system",
+      "count": 5
+    },
+    {
+      "label": "New code: Transparency in system goals — The importance of transparency in the system's goals and objectives",
+      "count": 4
+    },
+    {
+      "label": "Shifting responsibility",
+      "count": 3
+    },
+    {
+      "label": "Measuring impact",
+      "count": 3
+    },
+    {
+      "label": "Transparency in system goals",
+      "count": 2
+    },
+    {
+      "label": "Technical assessment",
+      "count": 1
+    },
+    {
+      "label": "Contractor's role",
+      "count": 1
+    },
+    {
+      "label": "Public feedback",
+      "count": 1
+    },
+    {
+      "label": "Data management and sharing",
+      "count": 1
+    },
+    {
+      "label": "New code: The value of scenario planning — The benefits of using scenario planning in the system",
+      "count": 1
+    },
+    {
+      "label": "Public feedback — The comments and concerns raised by the public",
+      "count": 1
+    }
+  ],
+  "failed": [],
+  "frame_units": 299,
+  "reference_marked_units": 125,
+  "open_marked_units": 105,
+  "position_recall": 0.832,
+  "position_precision": 0.99,
+  "mapping": {
+    "mapped": 15,
+    "mixed": 4
+  },
+  "mapped_by_dimension": {
+    "anticipation": 5,
+    "reflexivity": 3,
+    "engagement": 4,
+    "responsiveness": 3
+  },
+  "codes": [
+    {
+      "code_id": "c001",
+      "label": "Technical assessment",
+      "count": 1,
+      "units": 1,
+      "kind": "mapped",
+      "dimension": "anticipation"
+    },
+    {
+      "code_id": "c002",
+      "label": "Contractor's role",
+      "count": 1,
+      "units": 1,
+      "kind": "mapped",
+      "dimension": "anticipation"
+    },
+    {
+      "code_id": "c003",
+      "label": "Unintended consequences",
+      "count": 10,
+      "units": 9,
+      "kind": "mapped",
+      "dimension": "reflexivity"
+    },
+    {
+      "code_id": "c004",
+      "label": "Community engagement",
+      "count": 5,
+      "units": 5,
+      "kind": "mapped",
+      "dimension": "engagement"
+    },
+    {
+      "code_id": "c005",
+      "label": "Design and procurement",
+      "count": 5,
+      "units": 4,
+      "kind": "mapped",
+      "dimension": "engagement"
+    },
+    {
+      "code_id": "c006",
+      "label": "Public feedback",
+      "count": 1,
+      "units": 1,
+      "kind": "mapped",
+      "dimension": "responsiveness"
+    },
+    {
+      "code_id": "c007",
+      "label": "Reflection and lessons learned",
+      "count": 5,
+      "units": 4,
+      "kind": "mixed",
+      "dimension": null
+    },
+    {
+      "code_id": "c008",
+      "label": "Data management and sharing",
+      "count": 1,
+      "units": 1,
+      "kind": "mapped",
+      "dimension": "reflexivity"
+    },
+    {
+      "code_id": "c010",
+      "label": "Unintended consequences — The potential risks and unforeseen outcomes of the system",
+      "count": 29,
+      "units": 29,
+      "kind": "mapped",
+      "dimension": "anticipation"
+    },
+    {
+      "code_id": "c016",
+      "label": "[4x] Community engagement — The efforts to inform and involve the community in the project",
+      "count": 10,
+      "units": 9,
+      "kind": "mapped",
+      "dimension": "engagement"
+    },
+    {
+      "code_id": "c019",
+      "label": "New code: The value of scenario planning — The benefits of using scenario planning in the system",
+      "count": 1,
+      "units": 1,
+      "kind": "mapped",
+      "dimension": "anticipation"
+    },
+    {
+      "code_id": "c020",
+      "label": "New code: Measuring impact — The challenges of measuring the impact of the system",
+      "count": 5,
+      "units": 5,
+      "kind": "mapped",
+      "dimension": "responsiveness"
+    },
+    {
+      "code_id": "c021",
+      "label": "New code: Transparency in system goals — The importance of transparency in the system's goals and objectives",
+      "count": 4,
+      "units": 4,
+      "kind": "mixed",
+      "dimension": null
+    },
+    {
+      "code_id": "c023",
+      "label": "[5x] Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+      "count": 18,
+      "units": 15,
+      "kind": "mapped",
+      "dimension": "reflexivity"
+    },
+    {
+      "code_id": "c024",
+      "label": "Shifting responsibility",
+      "count": 3,
+      "units": 3,
+      "kind": "mapped",
+      "dimension": "responsiveness"
+    },
+    {
+      "code_id": "c025",
+      "label": "Measuring impact",
+      "count": 3,
+      "units": 3,
+      "kind": "mapped",
+      "dimension": "anticipation"
+    },
+    {
+      "code_id": "c027",
+      "label": "Shifting responsibility — The way in which actors avoid taking responsibility for the long-term effects of the system",
+      "count": 9,
+      "units": 8,
+      "kind": "mixed",
+      "dimension": null
+    },
+    {
+      "code_id": "c028",
+      "label": "Public feedback — The comments and concerns raised by the public",
+      "count": 1,
+      "units": 1,
+      "kind": "mapped",
+      "dimension": "engagement"
+    },
+    {
+      "code_id": "c035",
+      "label": "Transparency in system goals",
+      "count": 2,
+      "units": 2,
+      "kind": "mixed",
+      "dimension": null
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+ "respondent": "Research fellow, urban data science centre",
+ "descriptors": {
+  "institution_type": "research_institute",
+  "role_level": "researcher",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript A03 — Research fellow, urban data science centre"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Institutional delay in releasing raw system detection logs",
+   "quote": "I asked for the raw detection logs and I was given aggregates. That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked.",
+   "full_text": "I asked for the raw detection logs and I was given aggregates. That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked. Once I had the logs the audit itself took three weeks.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Initial organizational reluctance to provide raw data until external political pressure occurred."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Qualified claims regarding lighting-driven latency disparities in low-income wards",
+   "quote": "I want to be careful: that's an association in one city over eleven months, it is not a law of nature.",
+   "full_text": "Two things. The headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards. So the people most likely to be waiting longer for a crossing signal are also the people least likely to own a car. I want to be careful: that's an association in one city over eleven months, it is not a law of nature.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Demonstrates epistemic humility by explicitly identifying the methodological limits and bounded scope of findings."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Infrastructure lighting remediation alongside model and reporting inertia",
+   "quote": "The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That's a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported.",
+   "full_text": "Better than I expected, actually. The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That's a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported. So the symptom got fixed in the cheapest available place.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Substantive infrastructure modification implemented by transport department following audit findings."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Refusal to alter the core algorithm or performance metrics, treating root system mechanics as obdurate."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Critique of mean-based metric dashboards masking vulnerable populations",
+   "quote": "Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about.",
+   "full_text": "Yes, and it's not complicated. Report the worst decile, not the mean. Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about. It costs nothing to add a column.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Questions prevailing technical assumptions behind standard performance reporting metrics in public systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Exclusion of resident voices and retrospective recognition of engagement efficiency",
+   "quote": "In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+   "full_text": "No. It was a data exercise. In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Complete absence of public or resident participation in the audit, treating it purely as data."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Scrutinises own past oversight and acknowledges limitations of relying solely on quantitative data."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent, an independent academic auditor, displays strong positive Reflexivity throughout the account, paired with a critical evaluation of institutional Responsiveness and Public Engagement. Reflexivity is particularly prominent in the researcher's self-scrutiny: they explicitly bound their empirical claims to avoid overgeneralisation, critique standard public-sector dashboard conventions (such as reporting mean performance rather than equity-sensitive worst deciles), and candidly reflect on their own failure to involve residents directly during the audit process. Public Engagement is explicitly coded as negative regarding the audit's methodology, which relied exclusively on quantitative data logs without consulting local citizens—a shortcoming the respondent acknowledges retrospectively. Responsiveness presents a complex dual picture: while the transport department demonstrated positive responsiveness by fixing physical street lighting at impacted junctions, it exhibited negative responsiveness by failing to alter the underlying AI detection model or reporting frameworks. Systematic Anticipation is largely absent from the narrative, as foresight regarding equity impacts was only addressed post-implementation through secondary auditing rather than upstream system design.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A03 — Research fellow, urban data science centre\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | You audited the system's performance. How did you approach it?\nRespondent | I asked for the raw detection logs and I was given aggregates. That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked. Once I had the logs the audit itself took three weeks.\nInterviewer | What did the audit show?\nRespondent | Two things. The headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards. So the people most likely to be waiting longer for a crossing signal are also the people least likely to own a car. I want to be careful: that's an association in one city over eleven months, it is not a law of nature.\nInterviewer | What happened when you reported it?\nRespondent | Better than I expected, actually. The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That's a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported. So the symptom got fixed in the cheapest available place.\nInterviewer | Should performance reporting be different?\nRespondent | Yes, and it's not complicated. Report the worst decile, not the mean. Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about. It costs nothing to add a column.\nInterviewer | Were residents involved in the audit at any point?\nRespondent | No. It was a data exercise. In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 25.6,
+  "seconds_source": "estimated: gap between saved files",
+  "absence": null,
+  "note": "written by bench_models.py before resume support; completeness verified (no chunk_errors) and marker added afterwards"
+ }
+}

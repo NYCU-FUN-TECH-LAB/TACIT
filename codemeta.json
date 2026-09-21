@@ -1,0 +1,193 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "@type": "SoftwareSourceCode",
+  "name": "TACIT",
+  "description": "Theory-anchored qualitative coding with interpretive transparency. A Streamlit application that codes interview transcripts against a pluggable theoretical framework, keeps interpretive authority with the researcher, and reports the agreement statistics a qualitative study is expected to report. Coding frameworks can be constructed from literature retrieved via OpenAlex, with a guard that rejects citations absent from the retrieved corpus and per-dimension researcher approval. Model coding is treated as a draft: the model's original judgement is retained alongside every researcher revision, so the correction rate is reportable. Inter-rater reliability is computed over a sampling frame that includes unmarked units, so model recall is estimable. Language models may be served locally (Ollama, LM Studio, llama.cpp, vLLM, any OpenAI-compatible endpoint) so that transcripts need not leave the researcher's machine.",
+  "identifier": "TACIT",
+  "codeRepository": "https://github.com/NYCU-FUN-TECH-LAB/TACIT",
+  "issueTracker": "https://github.com/NYCU-FUN-TECH-LAB/TACIT/issues",
+  "license": "https://spdx.org/licenses/MIT",
+  "version": "1.0.0",
+  "softwareVersion": "1.0.0",
+  "programmingLanguage": [
+    {
+      "@type": "ComputerLanguage",
+      "name": "Python",
+      "version": ">=3.9"
+    }
+  ],
+  "runtimePlatform": [
+    "Python 3.9",
+    "Python 3.10",
+    "Python 3.11",
+    "Python 3.12"
+  ],
+  "operatingSystem": [
+    "Windows",
+    "macOS",
+    "Linux"
+  ],
+  "applicationCategory": "Research software",
+  "developmentStatus": "active",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Hung-Chi",
+      "familyName": "Chang",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Institute of Technology Management, National Yang Ming Chiao Tung University"
+      },
+      "email": "chang.hung-chi.mg11@nycu.edu.tw"
+    }
+  ],
+  "maintainer": [
+    {
+      "@type": "Person",
+      "givenName": "Hung-Chi",
+      "familyName": "Chang",
+      "email": "chang.hung-chi.mg11@nycu.edu.tw"
+    }
+  ],
+  "keywords": [
+    "qualitative research",
+    "computer-assisted qualitative data analysis",
+    "CAQDAS",
+    "deductive coding",
+    "thematic analysis",
+    "inter-rater reliability",
+    "large language models",
+    "local inference",
+    "research ethics",
+    "reproducibility",
+    "responsible innovation",
+    "OpenAlex"
+  ],
+  "softwareRequirements": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "streamlit",
+      "name": "streamlit",
+      "version": ">=1.31",
+      "provider": {
+        "@type": "Organization",
+        "name": "PyPI"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "python-docx",
+      "name": "python-docx",
+      "version": ">=1.1",
+      "provider": {
+        "@type": "Organization",
+        "name": "PyPI"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "pandas",
+      "name": "pandas",
+      "version": ">=2.0",
+      "provider": {
+        "@type": "Organization",
+        "name": "PyPI"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "numpy",
+      "name": "numpy",
+      "version": ">=1.24",
+      "provider": {
+        "@type": "Organization",
+        "name": "PyPI"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "openpyxl",
+      "name": "openpyxl",
+      "version": ">=3.1",
+      "provider": {
+        "@type": "Organization",
+        "name": "PyPI"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "google-genai",
+      "name": "google-genai",
+      "version": ">=1.0",
+      "description": "Google Gemini provider. Installed with the requirements so that Gemini works without a local model server. Local providers use the Python standard library.",
+      "provider": {
+        "@type": "Organization",
+        "name": "PyPI"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "plotly",
+      "name": "plotly",
+      "version": ">=5.18",
+      "runtime": "optional",
+      "description": "Charts. Without it the interface falls back to tables.",
+      "provider": {
+        "@type": "Organization",
+        "name": "PyPI"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "scipy",
+      "name": "scipy",
+      "version": ">=1.11",
+      "runtime": "optional",
+      "description": "Chi-square tests and Cramer's V. Without it those statistics are disabled and the rest of the analysis is unaffected.",
+      "provider": {
+        "@type": "Organization",
+        "name": "PyPI"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "ckip-transformers",
+      "name": "ckip-transformers",
+      "runtime": "optional",
+      "description": "Traditional Chinese word segmentation. Installed by the launchers as a separate step because it pulls in PyTorch; without it the lexicon module falls back to an n-gram heuristic.",
+      "provider": {
+        "@type": "Organization",
+        "name": "PyPI"
+      }
+    }
+  ],
+  "referencePublication": {
+    "@type": "ScholarlyArticle",
+    "name": "TACIT: an auditable, locally-deployable Python tool for LLM-assisted qualitative coding with codebook provenance",
+    "author": [
+      {
+        "@type": "Person",
+        "givenName": "Hung-Chi",
+        "familyName": "Chang"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Shih-Hsin",
+        "familyName": "Chen"
+      }
+    ],
+    "isPartOf": {
+      "@type": "Periodical",
+      "name": "SoftwareX",
+      "issn": "2352-7110"
+    }
+  },
+  "readme": "https://github.com/NYCU-FUN-TECH-LAB/TACIT/blob/main/README.md",
+  "buildInstructions": "https://github.com/NYCU-FUN-TECH-LAB/TACIT/blob/main/README.md#install",
+  "continuousIntegration": "",
+  "downloadUrl": "https://github.com/NYCU-FUN-TECH-LAB/TACIT/releases",
+  "relatedLink": [
+    "https://openalex.org",
+    "https://ollama.com"
+  ]
+}

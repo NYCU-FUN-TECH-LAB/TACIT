@@ -1,0 +1,553 @@
+{
+ "respondent": "CHRG-118shrg53707_Ghani",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "researcher",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Opening Remarks",
+   "quote": "Thank you. Thank you, Chair Peters, Ranking Member Paul, and other Members of the Committee. Thanks for hosting this hearing today and for giving me the opportunity to present this testimony.",
+   "full_text": "Thank you. Thank you, Chair Peters, Ranking Member Paul, and other Members of the Committee. Thanks for hosting this hearing today and for giving me the opportunity to present this testimony.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Opening Remarks",
+     "rationale": "Introduction and welcome by the respondent"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Introduction of Self",
+   "quote": "As Chair Peters mentioned, my name is Rayid Ghani. I am a Professor of Machine Learning and Public Policy at Carnegie Mellon.",
+   "full_text": "As Chair Peters mentioned, my name is Rayid Ghani. I am a Professor of Machine Learning and Public Policy at Carnegie Mellon.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is providing background information on their expertise and experience"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Purpose of Testimony",
+   "quote": "I am here today because I believe that AI has enormous potential in helping us tackle critical societal problems that our governments are focused on.",
+   "full_text": "I am here today because I believe that AI has enormous potential in helping us tackle critical societal problems that our governments are focused on.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "machine learning has a significant impact on various aspects of life"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Experience with AI",
+   "quote": "Much of the work I have done over the last decade has been in this space through working extensively with governments at the Federal, State, and local level, including helping and using AI systems to tackle problem across health, criminal justice, education, public safety, human services, workforce development, particularly on supporting fair and equitable outcomes.",
+   "full_text": "Much of the work I have done over the last decade has been in this space through working extensively with governments at the Federal, State, and local level, including helping and using AI systems to tackle problem across health, criminal justice, education, public safety, human services, workforce development, particularly on supporting fair and equitable outcomes. Based on my experience, I believe that I can benefit every Federal, State and local agency. However, any AI system, or any other type of system affecting people's lives, has to be explicitly designed to promote our societal values, such as equity, and not just narrowly optimized for efficiency.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is providing background information on their expertise and experience"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Principles for AI Design",
+   "quote": "any AI system, or any other type of system affecting people's lives, has to be explicitly designed to promote our societal values, such as equity, and not just narrowly optimized for efficiency.",
+   "full_text": "any AI system, or any other type of system affecting people's lives, has to be explicitly designed to promote our societal values, such as equity, and not just narrowly optimized for efficiency.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "There are legitimate concerns about AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Importance of AI Design",
+   "quote": "I think it is critical for us, Government agencies, policymakers, to ensure that these systems are designed in a way that they do result in promoting our values.",
+   "full_text": "I think it is critical for us, Government agencies, policymakers, to ensure that these systems are designed in a way that they do result in promoting our values. Now, while the entire lifecycle of AI systems, from scoping, to procurement, to designing, to testing, to deploying needs to have those guidelines in place that maximizes societal benefits and minimize potential harms, there has been a lack of attention to the earlier phases of this process, particularly on the problem scoping and procurement parts.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent is discussing the various applications and uses of AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "AI Procurement",
+   "quote": "Many problems and harms discovered downstream can be avoided by a more effective procurement process.",
+   "full_text": "As Chairman Peters mentioned, many of the AI systems being used in government are not built in-house. They are procured through vendors, consultants, and researchers. That makes getting the procurement phase correct critical. Many problems and harms discovered downstream can be avoided by a more effective procurement process. We need to make sure that the government procurement of AI follows a responsible process and in turn makes the AI vendors accountable for the systems they design. They themselves have to promote accountability, transparency, and fairness.",
+   "open_codes": [
+    {
+     "code_id": "c005",
+     "label": "Characteristics of machine learning systems",
+     "rationale": "The respondent is discussing the various applications and uses of AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "AI Design Choices",
+   "quote": "One, AI algorithms are neither inherently biased or unbiased, nor have inherent fixed values.",
+   "full_text": "AI algorithms are neither inherently biased or unbiased, nor have inherent fixed values. The design of these systems requires making hundreds and sometimes thousands of choices that determine the behavior of the system. If these choices explicitly focus on outcomes we care about and we evaluate the systems against those intended outcomes, the AI system can help us achieve what we want to achieve.",
+   "open_codes": [
+    {
+     "code_id": "c005",
+     "label": "Characteristics of machine learning systems",
+     "rationale": "The respondent is discussing the various applications and uses of AI systems"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the need for guardrails to ensure AI systems are designed and used responsibly"
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Define goals and values explicitly",
+   "quote": "If these choices explicitly focus on outcomes we care about and we evaluate the systems against those intended outcomes, the AI system can help us achieve what we want to achieve.",
+   "full_text": "Unfortunately, today, those decisions are too often left typically to the AI system developer who defines those values implicitly or explicitly. The procurement process needs to define these goals and values very explicitly. AI requires that. Society requires that.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Opening Remarks",
+     "rationale": "The respondent introduces the topic of AI and its importance"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the need for explicit goal-setting and value-definition in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Structured approach for responsible AI",
+   "quote": "Building responsible AI systems requires a structured approach, and the procurement process needs to set expectations, enforce transparency and accountability from vendors in each of these steps.",
+   "full_text": "Building responsible AI systems requires a structured approach, and the procurement process needs to set expectations, enforce transparency and accountability from vendors in each of these steps.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the need for a structured approach to ensure responsible AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "Recommendations for AI procurement",
+   "quote": "As initial steps, here are some of my recommendations.",
+   "full_text": "As initial steps, here are some of my recommendations. No. 1, focusing the AI procurement process on specific use cases rather than general purpose, one size fits all AI, both to support intended outcomes around that use case, as well as to prevent harm through misuse.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent provides recommendations for AI procurement, emphasizing the importance of specific use cases and preventing harm through misuse"
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Recommendations for AI procurement",
+   "quote": "I recommend creating a set of trainings and processes and collaboration mechanisms and tools to help them achieve that.",
+   "full_text": "I recommend creating a set of trainings and processes and collaboration mechanisms and tools to help them achieve that. The overall goal behind these recommendations is to set some standards around procurement of AI by government agencies, and to support and enable the agencies to implement those standards effectively and procure AI systems that can help us achieve their policy and societal goals. Thank you.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Recommendations for AI procurement include setting standards and supporting government agencies to implement them effectively"
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Framework for protecting the public against AI perils",
+   "quote": "Senator Hawley and I have authored a framework for protecting the public against some of the perils, I would like to think all the perils, of AI through an oversight entity that would license new models, would require testing and red teaming, require transparency, a notice when AI is used, but also accountability on the part of AI companies, and a means of enforcement.",
+   "full_text": "That is a very rough summary. But the point is that we have been working through the Judiciary committee, the subcommittee of the Judiciary committee on Privacy, Technology and Law, and I want to thank Senator Peters for his focus on AI in this Committee as well. But we had a very useful and productive forum yesterday.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The framework aims to protect the public against AI perils through oversight, testing, transparency, and accountability"
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Importance of transparency in AI",
+   "quote": "Transparency in our process is as important as transparency in the disclosure of how algorithms work, how AI works, so the public has a better understanding of it.",
+   "full_text": "Transparency in our process is as important as transparency in the disclosure of how algorithms work, how AI works, so the public has a better understanding of it. I think we are going to be pursuing our framework, putting it into legislative form.",
+   "open_codes": [
+    {
+     "code_id": "c044",
+     "label": "Transparency",
+     "rationale": "The importance of transparency in AI development and use is emphasized"
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "Progress on AI framework",
+   "quote": "We have gotten tremendously positive response. I would say that almost all the provisions of our framework, in fact, all of them were endorsed by one member of that group yesterday or another, and the vast majority of the group endorsed the core provisions of our framework.",
+   "full_text": "We have gotten tremendously positive response. I would say that almost all the provisions of our framework, in fact, all of them were endorsed by one member of that group yesterday or another, and the vast majority of the group endorsed the core provisions of our framework.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The positive response to the AI framework suggests that it is effective in establishing guardrails for AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "Introduction of the Transparent Automated Governance Act",
+   "quote": "What it requires is more disclosure to the public about when they encounter AI.",
+   "full_text": "What it requires is more disclosure to the public about when they encounter AI. In fact, a Subcommittee of this Committee, which I chair, the Permanent Subcommittee on Investigations (PSI), held a hearing recently on Medicare Advantage, which is a government program, health insurance, that provides key coverage for people who are eligible for Medicare, and they can choose to go into this program.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The introduction of the Transparent Automated Governance Act aims to address concerns about AI development and use by increasing transparency"
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "AI in Medicare Advantage",
+   "quote": "Medicare Advantage insurance companies are using AI to make decisions about what they will cover or not.",
+   "full_text": "In fact, a Subcommittee of this Committee, which I chair, the Permanent Subcommittee on Investigations (PSI), held a hearing recently on Medicare Advantage, which is a government program, health insurance, that provides key coverage for people who are eligible for Medicare, and they can choose to go into this program. I am vastly oversimplifying, but not in any way diminishing the key point here, which is, Medicare Advantage insurance companies are using AI to make decisions about what they will cover or not. Some of these decisions cause denial of coverage to people who then have to try to access the system to get overruled a decision which essentially is made through AI.",
+   "open_codes": [
+    {
+     "code_id": "c050",
+     "label": "Impact of AI on people's lives",
+     "rationale": "The passage highlights the significant impact AI can have on individuals' lives"
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "Disclosure of AI use",
+   "quote": "I think it has to be critical. I think more than that, it is not just disclosing when you are interacting with the system, because you might be interacting with a human that is informed by an AI.",
+   "full_text": "I will just ask you, perhaps beginning with Dr. Ghani, will you support a legal obligation for AI companies to disclose when a person is interacting with an AI or decisions being made about them using AI? [Respondent] Absolutely. I think it has to be critical. I think more than that, it is not just disclosing when you are interacting with the system, because you might be interacting with a human that is informed by an AI. It is nuanced, but you want to make sure that if a decision is being supported by AI, it is not just the person knows but I think even more importantly, they need to have recourse.",
+   "open_codes": [
+    {
+     "code_id": "c051",
+     "label": "Importance of transparency in AI use",
+     "rationale": "The respondent highlights the importance of transparency in AI use, especially when AI is making decisions that affect individuals"
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "Federal AI workforce",
+   "quote": "But then we need a Federal AI workforce, one that is trained.",
+   "full_text": "I appreciate all the work that you have done and being here today, and I am just going to get right into it because I know we think AI, it is all iterative and it is going to learn on its own and do all of that. But then we need a Federal AI workforce, one that is trained. The White House Select Committee on AI has worked to enhance the overall effectiveness and productivity of the Federal Government's efforts, of course, related to AI. Earlier this year, the Select Committee on AI released the Strategic Plan for AI, which identified significant challenges with the AI workforce.",
+   "open_codes": [
+    {
+     "code_id": "c052",
+     "label": "Need for a trained Federal AI workforce",
+     "rationale": "The respondent emphasizes the importance of a trained Federal AI workforce to ensure the effective use of AI technologies"
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Importance of a trained Federal AI workforce",
+   "quote": "But then we know it does not all build itself, and so we need a Federal AI workforce, one that is trained.",
+   "full_text": "But then we know it does not all build itself, and so we need a Federal AI workforce, one that is trained. The White House Select Committee on AI has worked to enhance the overall effectiveness and productivity of the Federal Government's efforts, of course, related to AI. Earlier this year, the Select Committee on AI released the Strategic Plan for AI, which identified significant challenges with the AI workforce.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is providing context about the Federal AI workforce"
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Existing Federal AI workforce skills",
+   "quote": "how do we ensure the existing Federal AI workforce has the necessary skills to buy, procure as we are talking about, build, and field these AI enabled technologies?",
+   "full_text": "I have a two part question for you, Mr. Ghani, and then a follow up for you, Ms. Raj. Mr. Ghani, to that point, how do we ensure the existing Federal AI workforce has the necessary skills to buy, procure as we are talking about, build, and field these AI enabled technologies?",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent is expressing concerns about the existing Federal AI workforce skills"
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Upskilling the Federal workforce",
+   "quote": "Are there programs that currently exist to upskill our Federal workforce?",
+   "full_text": "Are there programs that currently exist to upskill our Federal workforce? You can think about it, Ms. Raj, your follow up will be, if you can speak to it, how can academia and industry talent be leveraged to meet these dynamic needs? Because it is not a static industry for sure.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent is discussing the need for upskilling the Federal workforce"
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Augmenting existing trainings",
+   "quote": "I think in my mind, the way to do this is to augment the existing trainings of people within different departments, within agencies, and enable them to do their work in an AI augmented world rather than AI first training.",
+   "full_text": "If you are bringing in tech people in a centralized way, you need to now have them be trained in every single thing that every single agency might do. That is not possible. I think in my mind, the way to do this is to augment the existing trainings of people within different departments, within agencies, and enable them to do their work in an AI augmented world rather than AI first training.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is discussing the need to augment existing trainings"
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Lack of existing programs",
+   "quote": "Not exactly. There are programs that exist in pockets. The majority of programs that exist are in upskilling and in several universities and several nonprofits, including Carnegie Mellon, and Coleridge Initiative that I have been part of.",
+   "full_text": "To your question, Senator Rosen, on do these types of programs exist? Not exactly. There are programs that exist in pockets. The majority of programs that exist are in upskilling and in several universities and several nonprofits, including Carnegie Mellon, and Coleridge Initiative that I have been part of.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent is expressing concerns about the lack of existing programs"
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "Importance of training government agencies",
+   "quote": "We have created programs to train government agencies and workers in the use of these types of technologies. But not enough of them exist and they are not at the scale that we need very quickly.",
+   "full_text": "We have created programs to train government agencies and workers in the use of these types of technologies. But not enough of them exist and they are not at the scale that we need very quickly. We need to enhance the training, but I think there are two pieces there, and I will echo some of the things my colleagues have said.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "Professor Ghani shares his experience in training government agencies"
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Need for data access and expertise",
+   "quote": "They need to be kind of experience centered, grounded in real problems, and have people solve these things, which requires access to data, which requires access to real problems and access to experts who can help.",
+   "full_text": "They need to be kind of experience centered, grounded in real problems, and have people solve these things, which requires access to data, which requires access to real problems and access to experts who can help.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The need for data access and expertise is highlighted as crucial for solving real-world problems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "Challenges in training government agencies",
+   "quote": "These programs are expensive, and these programs do not scale because you cannot just put them up and have Massive Open Online Courses (MOOCs).",
+   "full_text": "These programs are expensive, and these programs do not scale because you cannot just put them up and have Massive Open Online Courses (MOOCs). I think we need an investment in training government agencies and not just in using them but being at the forefront of helping design them. Because, again, the needs are very different for governments than they are for the private sector.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The challenges in training government agencies are discussed, highlighting the need for investment"
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "Essential provisions of contracts involving AI systems",
+   "quote": "I think simply what the majority of the procurement process I have seen, it over focuses on the mechanics of the system being procured.",
+   "full_text": "I think simply what the majority of the procurement process I have seen, it over focuses on the mechanics of the system being procured. I will give you an example. Many years ago, I was working with police departments on these systems called early intervention systems that were designed to identify police officers who were going to use unjustified force in shootings and detect them early.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The importance of focusing on functional requirements in AI system procurement is highlighted"
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Standardization of procurement process",
+   "quote": "We need to create a much more holistic procurement process that has both requirements around what did you designed the system to do, how did you validate that it did what you wanted it to do, and how are you developing a continuous monitoring process that is continuing to do so?",
+   "full_text": "There are many such other examples where we have contracts that we get stuck into that are unnecessarily long term. We do not allow the systems to get data out and put more data in. We do not have them interoperate, because as we talked about, AI systems do not work in isolation, they are connected to different pieces. There is a lack of customization and configuration. I think there is a whole set of things. What we need to do is create a much more holistic procurement process...",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The passage highlights the limitations of AI systems, which can fail to achieve their goals."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "Standardization of requirements",
+   "quote": "What we can standardize on is what do we ask for. We can standardize if we need to figure out what values this system is built on.",
+   "full_text": "I think it is going to have to be an 80-20 thing here, where there is a series of things that we can standardize, and what we can standardize on is what do we ask for. We can standardize if we need to figure out what values this system is built on. We need to figure out how you built it. What design choices did you build? What artifacts were produced? Does it work for people? Who does it work for? Who does it not work for? How is it validated?",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The passage highlights the importance of standardizing requirements to ensure the successful implementation of AI systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Customization and standardization",
+   "quote": "But everything, the process that was used to design that system, to come up with those values, and to validate it, and all the other things, those can be standardized.",
+   "full_text": "But everything, the process that was used to design that system, to come up with those values, and to validate it, and all the other things, those can be standardized. Again, I think it is going to be an 80-20 thing, where 80 percent can be standardized, and 20 percent will need to be customized.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Opening Remarks",
+     "rationale": "The passage provides a clear explanation of the importance of standardization and customization in AI development."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "Service delivery goals",
+   "quote": "What is the goal of that service? Is it to improve people's lives or is to save money?",
+   "full_text": "We are talking about service delivery. What is the goal of that service? Is it to improve people's lives or is to save money? When there is a tradeoff, who decides that? The questions that we were talking about earlier, those are the things that are not going to be standard. They are going to depend on the specific use case and specific policy and the specific service.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent discusses the importance of setting goals for AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "Auditing AI systems",
+   "quote": "what procedures should be put in place to audit the government and these AI systems within the government, and should this need be accounted for upfront in the procurement process?",
+   "full_text": "[Interviewer] (Chairman Peters) Very good. Mr. Ghani, back to you. We have heard previously about the need to audit AI systems to account for drift and unintended consequences. The question for you is, what procedures should be put in place to audit the government and these AI systems within the government, and should this need be accounted for upfront in the procurement process? And if so, how?",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent discusses the need to audit AI systems to account for drift and unintended consequences"
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "Values audit",
+   "quote": "When we are designing a system, the procurement has to ask for a system to help achieve certain values.",
+   "full_text": "If so, absolutely, yes. I think the audit has to be there. I think there are, in my mind there are three stages of this audit, right. The first audit, and I think I keep going back to and we are all sort of saying the same word, values, right. When we are designing a system, the procurement has to ask for a system to help achieve certain values. We need to audit those and validate whether those are the values we should care about. That is the first audit.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent discusses the importance of auditing values in AI system design"
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "Technical audit",
+   "quote": "when a system is being procured, we need to audit how did the vendor, consultant, researcher build this system to help it achieve those values?",
+   "full_text": "Two, when a system is being procured, we need to audit how did the vendor, consultant, researcher build this system to help it achieve those values? That is a technical audit.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent discusses the importance of auditing the technical aspects of AI system design"
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "Human-AI interaction audit",
+   "quote": "once it is deployed, it is not going to work in isolation. In most cases it is informing, especially high stakes decision, it is informing humans.",
+   "full_text": "Once it is deployed, it is not going to work in isolation. In most cases it is informing, especially high stakes decision, it is informing humans. You can audit the system for what it outputs, but we need to audit, how does it interact with this person, and how does this human decision change? Because that is eventually what we care about, is this impact on people.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent discusses the importance of auditing the interaction between AI systems and humans"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_015911",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 9,
+   "n_ok": 9
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 2
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 3
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 4
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 6
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 8
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg53707 — Rayid Ghani, Distinguished Career Professor, Machine Learning Department And The Heinz College Of Information Systems And Public Policy, Carnegie Mellon University\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg53707  |  Governing Ai Through Acquisition And Procurement  |  Senate, Committee On Homeland Security And Governmental Affairs  |  2023-09-14  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chairman Peters) It is the practice of the Homeland Security and Governmental Affairs Committee (HSGAC) to swear in witnesses. If each of you would please rise and raise your right hand. Do you swear that the testimony that you will give before this Committee will be the truth, the whole truth, and nothing but the truth, so help you, God?\n[Respondent] I do.\n[Interviewer] (Chairman Peters) Thank you. You may be seated. Our first witness is Professor Rayid Ghani. Professor Ghani is a Distinguished Career Professor in the Machine Learning Department at the Heinz College of Information Systems and Public Policy at Carnegie Mellon University (CMU). At CMU, he leads the Data Science and Public Policy Group, and the Data Science for Social Good program, as well as the Responsible AI Initiative, which he co-leads. Professor Ghani, it is great to have you here at the Committee. You are recognized for your opening statement. TESTIMONY OF RAYID GHANI, DISTINGUISHED CAREER PROFESSOR,\nUNIVERSITY\n[Respondent] Thank you. Thank you, Chair Peters, Ranking Member Paul, and other Members of the Committee. Thanks for hosting this hearing today and for giving me the opportunity to present this testimony.\nThe prepared statement of Mr. Ghani appears in the Appendix on page 46.\nAs Chair Peters mentioned, my name is Rayid Ghani. I am a Professor of Machine Learning and Public Policy at Carnegie Mellon. I am here today because I believe that AI has enormous potential in helping us tackle critical societal problems that our governments are focused on.\nMuch of the work I have done over the last decade has been in this space through working extensively with governments at the Federal, State, and local level, including helping and using AI systems to tackle problem across health, criminal justice, education, public safety, human services, workforce development, particularly on supporting fair and equitable outcomes.\nBased on my experience, I believe that I can benefit every Federal, State and local agency. However, any AI system, or any other type of system affecting people's lives, has to be explicitly designed to promote our societal values, such as equity, and not just narrowly optimized for efficiency.\nI think it is critical for us, Government agencies, policymakers, to ensure that these systems are designed in a way that they do result in promoting our values. Now, while the entire lifecycle of AI systems, from scoping, to procurement, to designing, to testing, to deploying needs to have those guidelines in place that maximizes societal benefits and minimize potential harms, there has been a lack of attention to the earlier phases of this process, particularly on the problem scoping and procurement parts.\nAs Chairman Peters mentioned, many of the AI systems being used in government are not built in-house. They are procured through vendors, consultants, and researchers. That makes getting the procurement phase correct critical. Many problems and harms discovered downstream can be avoided by a more effective procurement process.\nWe need to make sure that the government procurement of AI follows a responsible process and in turn makes the AI vendors accountable for the systems they design. They themselves have to promote accountability, transparency, and fairness.\nGovernment agencies often go on the market to buy AI without understanding and defining and scoping the problem they want to tackle, without assessing whether AI is even the right tool, and without including individuals and communities that will be affected. AI systems are not one size fits all.\nProcuring AI is first and foremost procuring a solution that is helping solve a problem and should be assessed in the ability to better solve the problem at hand. In that respect, procuring AI is not that different from procuring other technologies. Now, there are a few areas where it is different.\nOne, AI algorithms are neither inherently biased or unbiased, nor have inherent fixed values. The design of these systems requires making hundreds and sometimes thousands of choices that determine the behavior of the system. If these choices explicitly focus on outcomes we care about and we evaluate the systems against those intended outcomes, the AI system can help us achieve what we want to achieve.\nUnfortunately, today, those decisions are too often left typically to the AI system developer who defines those values implicitly or explicitly. The procurement process needs to define these goals and values very explicitly. AI requires that. Society requires that. Ensure that the vendors address those appropriately in the system being procured and provide evidence of that.\nBuilding responsible AI systems requires a structured approach, and the procurement process needs to set expectations, enforce transparency and accountability from vendors in each of these steps.\nThat includes defining goals, translating them into requirements that the vendors to design the system to achieve, and setting up a continuous monitoring and evaluation process, because the system will both itself change, as well as have to live and function in an ever changing world.\nIt is critical and urgent for policymakers to act and provide guidelines and regulations for procuring, developing, and using AI, in order to ensure that these systems are built in a transparent and accountable manner, and result in fair and equitable outcomes for our society.\nAs initial steps, here are some of my recommendations. No. 1, focusing the AI procurement process on specific use cases rather than general purpose, one size fits all AI, both to support intended outcomes around that use case, as well as to prevent harm through misuse.\nNo. 2, development of common procurement requirements for AI and templates the government agencies can start from. That does not exist today. No. 3, create guidelines that ensure meaningful involvement of the communities that will be impacted by the AI system, right from the inception stage and continuously.\nNo. 4, and last, creating trainings, processes, and tools to support the procurement teams within government agencies. As the government teams expand their role and start procuring AI augment the systems more regularly, they will need to be supported by increasing their capacity to fulfill this role.\nI recommend creating a set of trainings and processes and collaboration mechanisms and tools to help them achieve that. The overall goal behind these recommendations is to set some standards around procurement of AI by government agencies, and to support and enable the agencies to implement those standards effectively and procure AI systems that can help us achieve their policy and societal goals. Thank you.\n[Interviewer] (Senator Blumenthal) Thanks very much, Mr. Chair. As you may know, Senator Hawley and I have authored a framework for protecting the public against some of the perils, I would like to think all the perils, of AI through an oversight entity that would license new models, would require testing and red teaming, require transparency, a notice when AI is used, but also accountability on the part of AI companies, and a means of enforcement.\nThat is a very rough summary. But the point is that we have been working through the Judiciary committee, the subcommittee of the Judiciary committee on Privacy, Technology and Law, and I want to thank Senator Peters for his focus on AI in this Committee as well. But we had a very useful and productive forum yesterday.\nMy hope is that many of the people who came before us in that forum will agree to come before our Subcommittee and testify in public, under oath, and give us the benefit of their views, which they expressed to us privately as Senators, because I think the public has a right to know, and we should be putting these views on the record.\nTransparency in our process is as important as transparency in the disclosure of how algorithms work, how AI works, so the public has a better understanding of it. I think we are going to be pursuing our framework, putting it into legislative form.\nWe have gotten tremendously positive response. I would say that almost all the provisions of our framework, in fact, all of them were endorsed by one member of that group yesterday or another, and the vast majority of the group endorsed the core provisions of our framework.\nWe are making progress. I think what is important about the chair's actions here is he has sponsored a bill called the Transparent Automated Governance Act. I do not know whether he has mentioned it yet, but I am going to be joining as a co- sponsor. What it requires is more disclosure to the public about when they encounter AI.\nIn fact, a Subcommittee of this Committee, which I chair, the Permanent Subcommittee on Investigations (PSI), held a hearing recently on Medicare Advantage, which is a government program, health insurance, that provides key coverage for people who are eligible for Medicare, and they can choose to go into this program.\nI am vastly oversimplifying, but not in any way diminishing the key point here, which is, Medicare Advantage insurance companies are using AI to make decisions about what they will cover or not. Some of these decisions cause denial of coverage to people who then have to try to access the system to get overruled a decision which essentially is made through AI.\nI know that I am somewhat simplifying, but the key here is that AI is making decisions that hugely impact people's lives, often without their knowing it. That is why the chairman's bill I think is so important. I see a number of you nodding, I hope it is in agreement, with my basic point, which is that disclosure is very important here.\nI will just ask you, perhaps beginning with Dr. Ghani, will you support a legal obligation for AI companies to disclose when a person is interacting with an AI or decisions being made about them using AI?\n[Respondent] Absolutely. I think it has to be critical. I think more than that, it is not just disclosing when you are interacting with the system, because you might be interacting with a human that is informed by an AI.\nIt is nuanced, but you want to make sure that if a decision is being supported by AI, it is not just the person knows but I think even more importantly, they need to have recourse. That exists in other areas. In financial services, we have these things called adverse action notices.\nWhen a decision is made against you for denying you a loan, the bank is supposed to tell you why, and then allow you to change those characteristics, and then give you the loan if you changed that. I think the same thing needs to be present as one example of extending the current AI systems. I think procurement, again, is the perfect vehicle to force that.\n[Interviewer] (Senator Rosen) thank you, Senator Carper. Thank you to everyone here. I appreciate all the work that you have done and being here today, and I am just going to get right into it because I know we think AI, it is all iterative and it is going to learn on its own and do all of that.\nBut then we know it does not all build itself, and so we need a Federal AI workforce, one that is trained. The White House Select Committee on AI has worked to enhance the overall effectiveness and productivity of the Federal Government's efforts, of course, related to AI. Earlier this year, the Select Committee on AI released the Strategic Plan for AI, which identified significant challenges with the AI workforce.\nI have a two part question for you, Mr. Ghani, and then a follow up for you, Ms. Raj. Mr. Ghani, to that point, how do we ensure the existing Federal AI workforce has the necessary skills to buy, procure as we are talking about, build, and field these AI enabled technologies?\nAre there programs that currently exist to upskill our Federal workforce? You can think about it, Ms. Raj, your follow up will be, if you can speak to it, how can academia and industry talent be leveraged to meet these dynamic needs? Because it is not a static industry for sure.\n[Respondent] Thank you for the question. It is a little bit related to the previous conversation on, do you train everyone on everything, or do you have specialized people? I think this is a dilemma that even the private sector has been focusing on for the last 20 years in this space.\nWhere do you build one central team that is a tech team, an IT team, an AI team, and then you have them help everybody else? Or do you enable each agency, each department, upskill them? For me to answer that--what has worked is the latter. It is because, again, AI is not a generic tool, it is not Microsoft Office, it is not Windows, it is not a word processor. It is different. Then what you need to have is you need to have it de-configured and used for specific applications, specific programs, specific policy areas.\nIf you are bringing in tech people in a centralized way, you need to now have them be trained in every single thing that every single agency might do.\nThat is not possible. I think in my mind, the way to do this is to augment the existing trainings of people within different departments, within agencies, and enable them to do their work in an AI augmented world rather than AI first training.\nTo your question, Senator Rosen, on do these types of programs exist? Not exactly. There are programs that exist in pockets. The majority of programs that exist are in upskilling and in several universities and several nonprofits, including Carnegie Mellon, and Coleridge Initiative that I have been part of.\nWe have created programs to train government agencies and workers in the use of these types of technologies. But not enough of them exist and they are not at the scale that we need very quickly.\nWe need to enhance the training, but I think there are two pieces there, and I will echo some of the things my colleagues have said.\n[Interviewer] (Senator Rosen) I am a former coder. I wrote software for a living. I get it.\n[Respondent] They need to be kind of experience centered, grounded in real problems, and have people solve these things, which requires access to data, which requires access to real problems and access to experts who can help.\nThese programs are expensive, and these programs do not scale because you cannot just put them up and have Massive Open Online Courses (MOOCs).\nI think we need an investment in training government agencies and not just in using them but being at the forefront of helping design them. Because, again, the needs are very different for governments than they are for the private sector.\n[Interviewer] (Chairman Peters) Thank you, Senator Carper. Professor Ghani, a couple of questions. We are going to wrap this up. All of you have been great, but we are starting to wrap this up with just a few more questions. Mr. Ghani, what do you see as essential provisions of contracts involving AI systems that governments are not currently incorporating and should be required?\n[Respondent] I think simply what the majority of the procurement process I have seen, it over focuses on the mechanics of the system being procured.\nI will give you an example. Many years ago, I was working with police departments on these systems called early intervention systems that were designed to identify police officers who were going to use unjustified force in shootings and detect them early.\nWhen you look at procurement documents, request for proposals (RFPs) for systems, what they talked about was measuring what is the uptime of the system? Can people log into the system? Does it show up? As opposed to the truly functional requirements, which are, does it reduce police shootings? Does it prevent those shootings? Does it help save people's lives?\nWhat is happening is that the focus has been on the mechanics, because that is easy to do. It is easy to measure. It does not require that much thinking and effort, and so we do the easy thing, and we forget the hard stuff.\nThere are many such other examples where we have contracts that we get stuck into that are unnecessarily long term. We do not allow the systems to get data out and put more data in. We do not have them interoperate, because as we talked about, AI systems do not work in isolation, they are connected to different pieces.\nThere is a lack of customization and configuration. I think there is a whole set of things. What we need to do is create a much more holistic procurement process that has both requirements around what did you designed the system to do, how did you validate that it did what you wanted it to do, and how are you developing a continuous monitoring process that is continuing to do so? Most of those things, there are no standards that exist today for that procurement, and we need to create those.\n[Interviewer] (Chairman Peters) A follow up on that. Many others were nodding their head. This is important. What those requirements are. The other question is, can we standardize those requirements across a variety of government agencies, or does it have to be more niche? You want to take the first stab at that.\nThen I see Ms. Raj, you are nodding your head, too, so your thoughts on that. Then any others want to jump in. But, Mr. Ghani.\n[Respondent] I think it is going to have to be an 80-20 thing here, where there is a series of things that we can standardize, and what we can standardize on is what do we ask for. We can standardize if we need to figure out what values this system is built on.\nWe need to figure out how you built it. What design choices did you build? What artifacts were produced? Does it work for people? Who does it work for? Who does it not work for? How is it validated? Those are kind of high level questions that we can standardize that need to be there.\nData in, data out, interoperability, configuration. What we cannot standardize on is what specific values it should have. That needs to come from the use case. That is where that collaboration is going to happen, is people with expertise in understanding the policy issue.\nWe are talking about service delivery. What is the goal of that service? Is it to improve people's lives or is to save money? When there is a tradeoff, who decides that? The questions that we were talking about earlier, those are the things that are not going to be standard. They are going to depend on the specific use case and specific policy and the specific service.\nBut everything, the process that was used to design that system, to come up with those values, and to validate it, and all the other things, those can be standardized. Again, I think it is going to be an 80-20 thing, where 80 percent can be standardized, and 20 percent will need to be customized.\n[Interviewer] (Chairman Peters) Very good. Mr. Ghani, back to you. We have heard previously about the need to audit AI systems to account for drift and unintended consequences. The question for you is, what procedures should be put in place to audit the government and these AI systems within the government, and should this need be accounted for upfront in the procurement process? And if so, how?\n[Respondent] If so, absolutely, yes. I think the audit has to be there. I think there are, in my mind there are three stages of this audit, right. The first audit, and I think I keep going back to and we are all sort of saying the same word, values, right.\nWhen we are designing a system, the procurement has to ask for a system to help achieve certain values. We need to audit those and validate whether those are the values we should care about. That is the first audit.\nThat is not a technical audit, that is a values audit. Two, when a system is being procured, we need to audit how did the vendor, consultant, researcher build this system to help it achieve those values? That is a technical audit. Three, once it is deployed, it is not going to work in isolation.\nIn most cases it is informing, especially high stakes decision, it is informing humans. You can audit the system for what it outputs, but we need to audit, how does it interact with this person, and how does this human decision change? Because that is eventually what we care about, is this impact on people.\nWe need to audit the interaction between the AI system and the human system, and then audit the outcomes that it produces. So those are the four pieces. It is not a one-off. It is a continuous thing because it is going to change.",
+ "_bench": {
+  "seconds": 182.4,
+  "chars": 20910
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "respondent": "G03",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "unspecified",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Unintended consequences — The potential risks and unforeseen outcomes of the system",
+   "quote": "people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+   "full_text": "people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+   "open_codes": [
+    {
+     "code_id": "c026",
+     "label": "[8x] Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The respondent describes the uncertainty and potential risks of the system"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+   "quote": "I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "full_text": "I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "open_codes": [
+    {
+     "code_id": "c023",
+     "label": "[5x] Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+     "rationale": "The respondent reflects on their experience and what they would do differently in hindsight"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Measuring impact — The challenges of measuring the impact of the system",
+   "quote": "That's the most reliable data I get about anything and it doesn't appear in any report.",
+   "full_text": "That's the most reliable data I get about anything and it doesn't appear in any report.",
+   "open_codes": [
+    {
+     "code_id": "c029",
+     "label": "[2x] Measuring impact — The challenges of measuring the impact of the system",
+     "rationale": "The respondent highlights the challenges of measuring the impact of the system"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Transparency in system goals — The importance of transparency in the system's goals and objectives",
+   "quote": "Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things.",
+   "full_text": "Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "[2x] Transparency in system goals — The importance of transparency in the system's goals and objectives",
+     "rationale": "The respondent emphasizes the importance of transparency in the system's goals and objectives"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260914_193235",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 1,
+   "n_ok": 1
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 2,
+    "created": 2,
+    "chunk": 0
+   }
+  ]
+ },
+ "transcript": "Interview transcript G03 — Ward councillor, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | How does this reach you as a councillor?\nRespondent | Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.\nInterviewer | What did people describe?\nRespondent | Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.\nInterviewer | What did you do with it?\nRespondent | Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.\nInterviewer | Do you feel you understand the system well enough to scrutinise it?\nRespondent | No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.\nInterviewer | What would help?\nRespondent | Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day."
+}

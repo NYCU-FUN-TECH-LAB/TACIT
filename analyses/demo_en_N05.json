@@ -1,0 +1,117 @@
+{
+  "respondent": "N05 (Volunteer coordinator, walking and cycling advocacy group)",
+  "descriptors": {
+    "institution_type": "nonprofit",
+    "role_level": "other",
+    "sector": "other",
+    "experience": "under_5y",
+    "descriptor_basis": "Interview transcript: N05 (Volunteer coordinator, walking and cycling advocacy group)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "Volunteer measurement designed to be checkable",
+      "quote": "Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done.",
+      "full_text": "We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done. We measured wait time from arrival at the kerb to green, which is the number that matters to a person and is not the number anybody publishes.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "P",
+          "rationale": "Engagement that produces evidence and, by design, makes the evidence contestable by others."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "Measures the quantity that matters to pedestrians",
+      "quote": "We measured wait time from arrival at the kerb to green, which is the number that matters to a person and is not the number anybody publishes.",
+      "full_text": "We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done. We measured wait time from arrival at the kerb to green, which is the number that matters to a person and is not the number anybody publishes.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Identifies the gap between the published metric and the experienced one before any harm is formally recognised."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "Reports the finding that contradicted expectation",
+      "quote": "Median wait went down. I'll say that first because it's what we found and it wasn't what we expected.",
+      "full_text": "Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Willingness to lead with evidence against the group's own prior position."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "Distributional finding in the tail",
+      "quote": "The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse",
+      "full_text": "Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Surfaces the concentration of harm that an aggregate measure conceals."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "No junction changed as a result",
+      "quote": "Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before",
+      "full_text": "Better than the campaigning stuff we've sent before, honestly, and I think it's because we led with the good news. An officer emailed and asked for our raw sheets, which we sent. Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "The substantive conditions the survey documented were not altered."
+        },
+        {
+          "dimension": "responsiveness",
+          "polarity": "P",
+          "rationale": "A durable change to what the institution measures and publishes, which affects every future assessment."
+        }
+      ]
+    },
+    {
+      "segment_id": "S006",
+      "title": "Method held constant to preserve comparability",
+      "quote": "the point is the comparison, so we can't improve the method even where we now know it's weak",
+      "full_text": "Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak. That's frustrating and it's the right call.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Forward-looking design choice that trades present quality for the ability to detect change over time."
+        }
+      ]
+    },
+    {
+      "segment_id": "S007",
+      "title": "States the sampling limitation unprompted",
+      "quote": "Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+      "full_text": "Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school. Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Critical scrutiny of the group's own evidence, disclosed in advance of challenge."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "The most methodologically self-aware of the community accounts. Twenty-two volunteers with stopwatches measured kerb-to-green wait time — the quantity that matters to a pedestrian and that nobody publishes — and found the median improved by nine seconds while the ninetieth percentile worsened by twenty-six. The group led with the finding that contradicted its own expectations, and got a durable result: the ninetieth percentile now appears in the monthly summary. No junction changed. He volunteers the sampling weakness before anyone can find it.",
+  "transcript": "Interview transcript N05 — Volunteer coordinator, walking and cycling advocacy group\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You did your own measurement, I understand.\n[Respondent] We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done. We measured wait time from arrival at the kerb to green, which is the number that matters to a person and is not the number anybody publishes.\n[Interviewer] What did you find?\n[Respondent] Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.\n[Interviewer] How was that received?\n[Respondent] Better than the campaigning stuff we've sent before, honestly, and I think it's because we led with the good news. An officer emailed and asked for our raw sheets, which we sent. Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before.\n[Interviewer] Will you repeat the survey?\n[Respondent] Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak. That's frustrating and it's the right call.\n[Interviewer] What's the weakness you'd fix if you could?\n[Respondent] Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school. Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+  "transcript_file": "23_N05_Volunteer-coordinator.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

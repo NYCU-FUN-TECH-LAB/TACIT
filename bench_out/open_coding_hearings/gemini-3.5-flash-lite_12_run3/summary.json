@@ -1,0 +1,1057 @@
+{
+  "corpus": "hearings",
+  "model": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+    "endpoint": "gemini/gemini-3.5-flash-lite",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "base_url": null,
+    "data_locality": "remote",
+    "num_ctx": null,
+    "max_tokens": 65536,
+    "recorded_at": "2026-09-22T03:24:51",
+    "sdk": "google-genai",
+    "temperature": 0.2
+  },
+  "order": [
+    "CHRG-118shrg52483_Venkatasubramanian",
+    "CHRG-118shrg52785_Ariga",
+    "CHRG-118shrg52785_Eppink",
+    "CHRG-118shrg53503_Bengio",
+    "CHRG-118shrg53503_Russell",
+    "CHRG-118shrg53879_Smith",
+    "CHRG-118shrg59704_Espinel",
+    "CHRG-118shrg59704_Strayer",
+    "CHRG-118hhrg53382_Prabhakar",
+    "CHRG-118hhrg53382_Hysen",
+    "CHRG-118shrg54718_Pahlka",
+    "CHRG-118hhrg55220_Chilson"
+  ],
+  "transcripts": 12,
+  "chars": 337689,
+  "windows": 149,
+  "windows_ok": 144,
+  "transcripts_with_chunk_errors": 5,
+  "coding_minutes": 16.5,
+  "open_segments": 590,
+  "codes_initial": 156,
+  "applications_initial": 726,
+  "singletons_initial": 110,
+  "merge_suggestions": 72,
+  "codes_after_merge": 119,
+  "saturation": [
+    {
+      "n": 1,
+      "created": 6,
+      "reused": 0,
+      "cumulative": 6
+    },
+    {
+      "n": 2,
+      "created": 6,
+      "reused": 2,
+      "cumulative": 12
+    },
+    {
+      "n": 3,
+      "created": 5,
+      "reused": 2,
+      "cumulative": 17
+    },
+    {
+      "n": 4,
+      "created": 2,
+      "reused": 4,
+      "cumulative": 19
+    },
+    {
+      "n": 5,
+      "created": 2,
+      "reused": 2,
+      "cumulative": 21
+    },
+    {
+      "n": 6,
+      "created": 4,
+      "reused": 3,
+      "cumulative": 25
+    },
+    {
+      "n": 7,
+      "created": 4,
+      "reused": 0,
+      "cumulative": 29
+    },
+    {
+      "n": 8,
+      "created": 4,
+      "reused": 0,
+      "cumulative": 33
+    },
+    {
+      "n": 9,
+      "created": 3,
+      "reused": 2,
+      "cumulative": 36
+    },
+    {
+      "n": 10,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 36
+    },
+    {
+      "n": 11,
+      "created": 4,
+      "reused": 0,
+      "cumulative": 40
+    },
+    {
+      "n": 12,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 40
+    },
+    {
+      "n": 13,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 40
+    },
+    {
+      "n": 14,
+      "created": 4,
+      "reused": 3,
+      "cumulative": 44
+    },
+    {
+      "n": 15,
+      "created": 1,
+      "reused": 6,
+      "cumulative": 45
+    },
+    {
+      "n": 16,
+      "created": 0,
+      "reused": 9,
+      "cumulative": 45
+    },
+    {
+      "n": 17,
+      "created": 0,
+      "reused": 8,
+      "cumulative": 45
+    },
+    {
+      "n": 18,
+      "created": 1,
+      "reused": 4,
+      "cumulative": 46
+    },
+    {
+      "n": 19,
+      "created": 1,
+      "reused": 5,
+      "cumulative": 47
+    },
+    {
+      "n": 20,
+      "created": 0,
+      "reused": 8,
+      "cumulative": 47
+    },
+    {
+      "n": 21,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 47
+    },
+    {
+      "n": 22,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 47
+    },
+    {
+      "n": 23,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 47
+    },
+    {
+      "n": 24,
+      "created": 1,
+      "reused": 2,
+      "cumulative": 48
+    },
+    {
+      "n": 25,
+      "created": 2,
+      "reused": 1,
+      "cumulative": 50
+    },
+    {
+      "n": 26,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 50
+    },
+    {
+      "n": 27,
+      "created": 2,
+      "reused": 4,
+      "cumulative": 52
+    },
+    {
+      "n": 28,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 52
+    },
+    {
+      "n": 29,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 52
+    },
+    {
+      "n": 30,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 52
+    },
+    {
+      "n": 31,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 52
+    },
+    {
+      "n": 32,
+      "created": 2,
+      "reused": 3,
+      "cumulative": 54
+    },
+    {
+      "n": 33,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 54
+    },
+    {
+      "n": 34,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 54
+    },
+    {
+      "n": 35,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 54
+    },
+    {
+      "n": 36,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 54
+    },
+    {
+      "n": 37,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 54
+    },
+    {
+      "n": 38,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 54
+    },
+    {
+      "n": 39,
+      "created": 3,
+      "reused": 4,
+      "cumulative": 57
+    },
+    {
+      "n": 40,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 57
+    },
+    {
+      "n": 41,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 57
+    },
+    {
+      "n": 42,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 57
+    },
+    {
+      "n": 43,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 57
+    },
+    {
+      "n": 44,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 57
+    },
+    {
+      "n": 45,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 57
+    },
+    {
+      "n": 46,
+      "created": 4,
+      "reused": 3,
+      "cumulative": 61
+    },
+    {
+      "n": 47,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 61
+    },
+    {
+      "n": 48,
+      "created": 1,
+      "reused": 2,
+      "cumulative": 62
+    },
+    {
+      "n": 49,
+      "created": 1,
+      "reused": 5,
+      "cumulative": 63
+    },
+    {
+      "n": 50,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 63
+    },
+    {
+      "n": 51,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 63
+    },
+    {
+      "n": 52,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 63
+    },
+    {
+      "n": 53,
+      "created": 0,
+      "reused": 8,
+      "cumulative": 63
+    },
+    {
+      "n": 54,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 63
+    },
+    {
+      "n": 55,
+      "created": 3,
+      "reused": 1,
+      "cumulative": 66
+    },
+    {
+      "n": 56,
+      "created": 2,
+      "reused": 2,
+      "cumulative": 68
+    },
+    {
+      "n": 57,
+      "created": 3,
+      "reused": 1,
+      "cumulative": 71
+    },
+    {
+      "n": 58,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 71
+    },
+    {
+      "n": 59,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 71
+    },
+    {
+      "n": 60,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 71
+    },
+    {
+      "n": 61,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 71
+    },
+    {
+      "n": 62,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 71
+    },
+    {
+      "n": 63,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 71
+    },
+    {
+      "n": 64,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 71
+    },
+    {
+      "n": 65,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 71
+    },
+    {
+      "n": 66,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 71
+    },
+    {
+      "n": 67,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 71
+    },
+    {
+      "n": 68,
+      "created": 3,
+      "reused": 0,
+      "cumulative": 74
+    },
+    {
+      "n": 69,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 74
+    },
+    {
+      "n": 70,
+      "created": 5,
+      "reused": 1,
+      "cumulative": 79
+    },
+    {
+      "n": 71,
+      "created": 7,
+      "reused": 0,
+      "cumulative": 86
+    },
+    {
+      "n": 72,
+      "created": 5,
+      "reused": 1,
+      "cumulative": 91
+    },
+    {
+      "n": 73,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 91
+    },
+    {
+      "n": 74,
+      "created": 5,
+      "reused": 0,
+      "cumulative": 96
+    },
+    {
+      "n": 75,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 96
+    },
+    {
+      "n": 76,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 96
+    },
+    {
+      "n": 77,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 96
+    },
+    {
+      "n": 78,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 96
+    },
+    {
+      "n": 79,
+      "created": 1,
+      "reused": 2,
+      "cumulative": 97
+    },
+    {
+      "n": 80,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 97
+    },
+    {
+      "n": 81,
+      "created": 8,
+      "reused": 0,
+      "cumulative": 105
+    },
+    {
+      "n": 82,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 105
+    },
+    {
+      "n": 83,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 105
+    },
+    {
+      "n": 84,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 105
+    },
+    {
+      "n": 85,
+      "created": 0,
+      "reused": 8,
+      "cumulative": 105
+    },
+    {
+      "n": 86,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 105
+    },
+    {
+      "n": 87,
+      "created": 2,
+      "reused": 1,
+      "cumulative": 107
+    },
+    {
+      "n": 88,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 107
+    },
+    {
+      "n": 89,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 107
+    },
+    {
+      "n": 90,
+      "created": 1,
+      "reused": 4,
+      "cumulative": 108
+    },
+    {
+      "n": 91,
+      "created": 0,
+      "reused": 8,
+      "cumulative": 108
+    },
+    {
+      "n": 92,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 108
+    },
+    {
+      "n": 93,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 108
+    },
+    {
+      "n": 94,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 108
+    },
+    {
+      "n": 95,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 108
+    },
+    {
+      "n": 96,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 108
+    },
+    {
+      "n": 97,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 108
+    },
+    {
+      "n": 98,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 108
+    },
+    {
+      "n": 99,
+      "created": 1,
+      "reused": 3,
+      "cumulative": 109
+    },
+    {
+      "n": 100,
+      "created": 0,
+      "reused": 10,
+      "cumulative": 109
+    },
+    {
+      "n": 101,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 109
+    },
+    {
+      "n": 102,
+      "created": 1,
+      "reused": 1,
+      "cumulative": 110
+    },
+    {
+      "n": 103,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 110
+    },
+    {
+      "n": 104,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 110
+    },
+    {
+      "n": 105,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 110
+    },
+    {
+      "n": 106,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 110
+    },
+    {
+      "n": 107,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 110
+    },
+    {
+      "n": 108,
+      "created": 1,
+      "reused": 3,
+      "cumulative": 111
+    },
+    {
+      "n": 109,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 111
+    },
+    {
+      "n": 110,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 111
+    },
+    {
+      "n": 111,
+      "created": 2,
+      "reused": 2,
+      "cumulative": 113
+    },
+    {
+      "n": 112,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 113
+    },
+    {
+      "n": 113,
+      "created": 2,
+      "reused": 5,
+      "cumulative": 115
+    },
+    {
+      "n": 114,
+      "created": 4,
+      "reused": 3,
+      "cumulative": 119
+    },
+    {
+      "n": 115,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 119
+    },
+    {
+      "n": 116,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 119
+    },
+    {
+      "n": 117,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 119
+    },
+    {
+      "n": 118,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 119
+    },
+    {
+      "n": 119,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 119
+    },
+    {
+      "n": 120,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 119
+    },
+    {
+      "n": 121,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 119
+    },
+    {
+      "n": 122,
+      "created": 0,
+      "reused": 10,
+      "cumulative": 119
+    },
+    {
+      "n": 123,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 119
+    },
+    {
+      "n": 124,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 119
+    },
+    {
+      "n": 125,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 119
+    },
+    {
+      "n": 126,
+      "created": 5,
+      "reused": 4,
+      "cumulative": 124
+    },
+    {
+      "n": 127,
+      "created": 5,
+      "reused": 2,
+      "cumulative": 129
+    },
+    {
+      "n": 128,
+      "created": 6,
+      "reused": 0,
+      "cumulative": 135
+    },
+    {
+      "n": 129,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 135
+    },
+    {
+      "n": 130,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 135
+    },
+    {
+      "n": 131,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 135
+    },
+    {
+      "n": 132,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 135
+    },
+    {
+      "n": 133,
+      "created": 6,
+      "reused": 0,
+      "cumulative": 141
+    },
+    {
+      "n": 134,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 141
+    },
+    {
+      "n": 135,
+      "created": 1,
+      "reused": 2,
+      "cumulative": 142
+    },
+    {
+      "n": 136,
+      "created": 3,
+      "reused": 1,
+      "cumulative": 145
+    },
+    {
+      "n": 137,
+      "created": 6,
+      "reused": 0,
+      "cumulative": 151
+    },
+    {
+      "n": 138,
+      "created": 2,
+      "reused": 1,
+      "cumulative": 153
+    },
+    {
+      "n": 139,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 153
+    },
+    {
+      "n": 140,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 153
+    },
+    {
+      "n": 141,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 153
+    },
+    {
+      "n": 142,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 153
+    },
+    {
+      "n": 143,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 153
+    },
+    {
+      "n": 144,
+      "created": 3,
+      "reused": 2,
+      "cumulative": 156
+    }
+  ],
+  "top_codes": [
+    {
+      "label": "proposing specific guardrails and legislation for AI",
+      "count": 142
+    },
+    {
+      "label": "need for regulatory guardrails for AI technology",
+      "count": 92
+    },
+    {
+      "label": "specific failure modes of AI systems",
+      "count": 56
+    },
+    {
+      "label": "international collaboration and resilient alliances for AI governance",
+      "count": 42
+    },
+    {
+      "label": "expressing gratitude and stating affiliation",
+      "count": 31
+    },
+    {
+      "label": "identifying model federal agencies for responsible AI adoption",
+      "count": 31
+    },
+    {
+      "label": "US opportunity to lead in innovative and responsible AI",
+      "count": 19
+    },
+    {
+      "label": "federal government comparative advantage in public service",
+      "count": 15
+    },
+    {
+      "label": "need for proactive regulation due to rapid AI advancement",
+      "count": 15
+    },
+    {
+      "label": "GAO AI Accountability Framework",
+      "count": 15
+    },
+    {
+      "label": "envisioning a positive, human-centric future for AI",
+      "count": 13
+    },
+    {
+      "label": "deferring to other experts on specific topics",
+      "count": 13
+    },
+    {
+      "label": "transition to committee questioning on algorithmic opacity",
+      "count": 12
+    },
+    {
+      "label": "federal talent shortage for AI implementation",
+      "count": 12
+    },
+    {
+      "label": "Presidential engagement and briefings on artificial intelligence",
+      "count": 11
+    },
+    {
+      "label": "worker displacement driven by AI overpromising",
+      "count": 9
+    },
+    {
+      "label": "emergence of large language models",
+      "count": 7
+    },
+    {
+      "label": "establishing informal conversational rapport",
+      "count": 7
+    },
+    {
+      "label": "rapid progress toward AGI and massive economic upside",
+      "count": 7
+    },
+    {
+      "label": "AI exploitation of creative works and artists' livelihoods",
+      "count": 7
+    },
+    {
+      "label": "disputing claims of workforce ties to foreign state entities",
+      "count": 7
+    },
+    {
+      "label": "prioritizing current algorithmic harms over speculative AGI risks",
+      "count": 6
+    },
+    {
+      "label": "lack of on-the-ground enforcement for AI frameworks",
+      "count": 6
+    },
+    {
+      "label": "black box nature and failures of AI",
+      "count": 5
+    },
+    {
+      "label": "risks of predictive behavioral modeling in law enforcement",
+      "count": 5
+    }
+  ],
+  "failed": [
+    {
+      "respondent": "CHRG-118shrg52483_Venkatasubramanian",
+      "errors": [
+        {
+          "chunk": 3,
+          "error": "LLMError: [Errno 11004] getaddrinfo failed"
+        }
+      ]
+    },
+    {
+      "respondent": "CHRG-118shrg53503_Russell",
+      "errors": [
+        {
+          "chunk": 2,
+          "error": "JSONDecodeError: Expecting property name enclosed in double quotes — model wrote: ...ndustry coalitions and varying standards that require centralized leadership.\",\\n          s\\n          \"rationale\": \"Highlights the chaotic state of mu...: line 36 column 11 (char 4138)"
+        }
+      ]
+    },
+    {
+      "respondent": "CHRG-118shrg59704_Espinel",
+      "errors": [
+        {
+          "chunk": 13,
+          "error": "empty"
+        }
+      ]
+    },
+    {
+      "respondent": "CHRG-118hhrg53382_Prabhakar",
+      "errors": [
+        {
+          "chunk": 6,
+          "error": "JSONDecodeError: Expecting property name enclosed in double quotes — model wrote: ... in many other areas, and that is some of the work that still remains to be done.\",\\n      _open_codes: [\\n        {\\n          \"label\": \"specific failur...: line 32 column 7 (char 3680)"
+        }
+      ]
+    },
+    {
+      "respondent": "CHRG-118hhrg55220_Chilson",
+      "errors": [
+        {
+          "chunk": 7,
+          "error": "LLMError: [WinError 10053] 連線已被您主機上的軟體中止。"
+        }
+      ]
+    }
+  ]
+}

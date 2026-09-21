@@ -1,0 +1,372 @@
+name: CI
+
+# 這個工作流程要回答的是第一次拿到這個 repo 的人會問的四個問題，不是「測試有沒有通過」：
+#
+#   1. 從一個乾淨的機器開始，照 README 做，跑得起來嗎？
+#   2. 論文裡 Table 6 的每一個數字，重跑一次還會是同一個嗎？
+#   3. 論文說 scipy / plotly 是選配、Gemini SDK 裝完就能用——真的嗎？
+#   4. 論文說支援 Windows / macOS / Linux 與 Python 3.9+——真的嗎？
+#
+# 每一個 job 對應其中一題，job 名稱就是那一題。
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # 介面訊息、示範語料的檔名與測試輸出都含中文。Windows runner 的
+  # stdout 預設不是 UTF-8，不設這兩個變數會在印出中文檔名時
+  # UnicodeEncodeError——那跟程式本身無關，純粹是主控台編碼。
+  PYTHONUTF8: "1"
+  PYTHONIOENCODING: "utf-8"
+
+jobs:
+
+  # ===================================================================
+  # 問題 1 + 2 + 4：乾淨機器、跨平台、跨 Python 版本，重現論文數字
+  # ===================================================================
+  reproduce:
+    name: 重現 (${{ matrix.os }}, py${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python: ["3.9", "3.13"]
+        # C7 宣稱 Python ≥ 3.9、S5 宣稱三個平台都支援。矩陣就是那兩句話的
+        # 檢驗。3.9 這一格若哪天失敗，代表相依套件不再支援它——那時該改的
+        # 是 C7 的措辭，不是把這一格刪掉。
+        exclude:
+          # macos-latest 是 arm64，setup-python 沒有為它提供 3.9。
+          # 這是 runner 的限制，不是程式的限制，所以改用 x86 的 macos-13
+          # 補上這一格，而不是silently 少測一個平台。
+          - os: macos-latest
+            python: "3.9"
+        include:
+          - os: macos-13
+            python: "3.9"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      # 啟動器的前兩步。使用者按下 launch_*.{bat,command,sh} 之後，
+      # 第一個執行的就是這兩個子命令；它們壞掉，程式根本打不開。
+      - name: 啟動器 · Python 版本檢查
+        run: python _launch_common.py check
+
+      - name: 安裝相依
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 啟動器 · 相依齊全檢查
+        run: python _launch_common.py deps
+
+      - name: 啟動器 · 挑一個可用的埠
+        shell: bash
+        run: |
+          PORT=$(python _launch_common.py port)
+          echo "picked port: $PORT"
+          # stdout 必須只有埠號——批次檔直接拿它當變數
+          [[ "$PORT" =~ ^[0-9]+$ ]] || { echo "port 子命令污染了 stdout"; exit 1; }
+
+      # 論文 §3 明文列出這兩行指令。它們必須能在全新的機器上跑完。
+      - name: 從零產生示範語料
+        run: python make_demo_data.py
+
+      - name: 全部測試
+        run: python run_tests.py
+
+      # ---------------------------------------------------------------
+      # 漂移守門：Table 6 的每一個數字都在這裡重算一次。
+      # 這些值同時出現在 README.md 與論文裡，
+      # 任何一次改動若動到它們，這一步會失敗並把新舊值都印出來。
+      # ---------------------------------------------------------------
+      - name: 核對論文 Table 6 的數字
+        shell: bash
+        run: |
+          python - <<'PY'
+          import glob, json, sys
+          import tacit_framework as F, tacit_schema as S, tacit_analysis as A
+
+          F.activate_by_id("ri_stilgoe_2013")
+          recs = [S.migrate_record(json.load(open(p, encoding="utf-8")))
+                  for p in sorted(glob.glob("analyses/demo_en_*.json"))]
+          ldf = A.build_long_df(recs)
+
+          segs  = sum(len(r[S.SEGMENTS]) for r in recs)
+          multi = sum(1 for r in recs for s in r[S.SEGMENTS] if len(s[S.CODES_F]) > 1)
+          codes = sum(len(s[S.CODES_F]) for r in recs for s in r[S.SEGMENTS])
+
+          def chi(unit):
+              ct, _ = A.crosstab_by_descriptor(ldf, "institution_type", row_unit=unit)
+              return A.chi_square_report(ct)
+
+          pol, dim, code = chi("polarity"), chi("dimension"), chi("code")
+
+          # 論文 Table 6 / README「With 24 respondents the corpus produces」
+          expected = {
+              "respondents":        (len(recs), 24),
+              "coded segments":     (segs, 148),
+              "multi-coded":        (multi, 36),
+              "codes assigned":     (codes, 184),
+              "analysis units":     (len(ldf), 181),
+              "polarity chi2":      (round(pol["chi2"], 2), 10.04),
+              "polarity p":         (round(pol["p"], 3), 0.018),
+              "polarity V":         (round(pol["cramers_v"], 3), 0.236),
+              "polarity min exp":   (round(pol["min_expected"], 1), 18.1),
+              "dimension chi2":     (round(dim["chi2"], 2), 7.19),
+              "dimension p":        (round(dim["p"], 3), 0.617),
+              "dimension V":        (round(dim["cramers_v"], 3), 0.115),
+              "full code verdict":  (code["verdict"], A.CHI_SPARSE),
+              "full code p":        (code.get("p"), None),
+          }
+          bad = {k: v for k, v in expected.items() if v[0] != v[1]}
+          for k, (got, want) in expected.items():
+              print(f"  {'OK ' if k not in bad else 'DRIFT'}  {k:20s} {got!r:>10}  (paper: {want!r})")
+          if bad:
+              print("\n論文裡發表的數字已經對不上程式跑出來的結果。")
+              print("要嘛是迴歸，要嘛是刻意的改動——刻意的話，"
+                    "README.md 與論文裡的數字都要一起更新。")
+              sys.exit(1)
+          PY
+
+      # 信度抽樣框：含未標記單元是「recall 不恆等於 1」的前提，
+      # 也是論文 §2.2 的四個設計決定之一。
+      - name: 核對信度抽樣框
+        shell: bash
+        run: |
+          python - <<'PY'
+          import glob, json, sys
+          import tacit_framework as F, tacit_schema as S, tacit_irr as IRR
+          F.activate_by_id("ri_stilgoe_2013")
+          recs = [S.migrate_record(json.load(open(p, encoding="utf-8")))
+                  for p in sorted(glob.glob("analyses/demo_en_*.json"))]
+          tr = {r[S.RESPONDENT]: r[S.TRANSCRIPT] for r in recs}
+          frame, diag = IRR.build_frame(recs, tr)
+          total, unmarked = diag["total_units"], diag["uncoded_units"]
+          print(f"  frame units = {total} (paper: 299)")
+          print(f"  unmarked    = {unmarked} (paper: 174)")
+          print(f"  unmatched quotes = {diag['unmatched_quotes']} (must be empty)")
+          bad = (total, unmarked) != (299, 174) or bool(diag["unmatched_quotes"])
+          if bad:
+              print("抽樣框漂移了。沒有未標記單元的話 recall 恆等於 1，數字沒有意義；")
+              print("有對不回去的引文，代表切分方式與參考編碼已經不同步。")
+              sys.exit(1)
+          PY
+
+  # ===================================================================
+  # 問題 3a：只裝 C7 的「必要」項，程式仍然完整可用
+  #
+  # 必要項包含 Gemini SDK：不是每個人都有 Ollama，沒有本機模型的人裝完
+  # 就要能直接用 Gemini。scipy / plotly 仍是選配，這個 job 證明少了它們
+  # 程式照樣完整可用。
+  # ===================================================================
+  minimal-deps:
+    name: 最小相依 (無 scipy / plotly)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 只裝 C7 列為必要的六個套件
+        run: |
+          python -m pip install --upgrade pip
+          pip install streamlit python-docx pandas numpy openpyxl google-genai
+
+      - name: 確認選配套件確實不存在
+        run: |
+          python - <<'PY'
+          import importlib.util as u, sys
+          absent = ["scipy", "plotly"]
+          present = [m for m in absent if u.find_spec(m) is not None]
+          if present:
+              sys.exit(f"這個 job 的前提是這些套件都沒裝，但找到了：{present}")
+          print("確認：scipy / plotly 都未安裝")
+          PY
+
+      - name: 裝完必要項，三個供應者都能用
+        run: |
+          python - <<'PY'
+          import tacit_llm as L
+          assert L.HAS_GEMINI is True, "必要清單已含 google-genai，卻沒偵測到 Gemini"
+          assert L.GEMINI_SDK == L.GENAI_NEW, L.GEMINI_SDK
+          ok, note = L.gemini_sdk_note()
+          assert ok is True and not note, note
+          # 地端供應者只用標準函式庫的 urllib
+          ep = L.Endpoint(provider=L.OLLAMA, model="llama3.1:8b")
+          assert ep.needs_key is False
+          assert ep.describe().startswith("ollama/")
+          print("確認：Gemini 與地端端點在只裝必要項時都可用")
+          PY
+
+      - name: 啟動器不會因為缺選配套件而擋住啟動
+        run: |
+          python _launch_common.py deps
+          echo "exit code 0 = 缺選配不擋啟動（缺必要才會回傳 1）"
+
+      - name: 從零產生示範語料
+        run: python make_demo_data.py
+
+      # 沒有 scipy 就算不出卡方——但**不給 p 值**這件事兩種情形完全一樣。
+      # 測試套件本身也必須兩種安裝情形都通過，否則論文說 scipy 是選配、
+      # 只裝必要項的人跑 run_tests.py 卻看到失敗。
+      - name: 全部測試（缺選配套件時一樣要全綠）
+        run: python run_tests.py
+
+  # ===================================================================
+  # 問題 3b：兩套 Gemini SDK 都不能壞
+  # 兩套 SDK 的 API 完全不同，而 Google 已停止支援舊的那一套。
+  # requirements.txt 已含新版；舊版那一格先移除新版，才真的測到舊版路徑。
+  # ===================================================================
+  with-gemini-sdk:
+    name: 裝了 Gemini SDK (${{ matrix.sdk }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        sdk: ["google-genai", "google-generativeai"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: 安裝相依與 ${{ matrix.sdk }}
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          if [ "${{ matrix.sdk }}" = "google-generativeai" ]; then
+            pip uninstall -y google-genai
+          fi
+          pip install "${{ matrix.sdk }}"
+
+      - name: 偵測到的 SDK 要與實際安裝的一致
+        env:
+          WANT: ${{ matrix.sdk }}
+        run: |
+          python - <<'PY'
+          import os, tacit_llm as L
+          want = os.environ["WANT"]
+          assert L.HAS_GEMINI is True, "裝了 SDK 卻沒偵測到"
+          # 新版優先：兩套都在時應該選 google-genai
+          if want == L.GENAI_NEW:
+              assert L.GEMINI_SDK == L.GENAI_NEW, L.GEMINI_SDK
+          ok, note = L.gemini_sdk_note()
+          assert ok is True
+          if L.GEMINI_SDK == L.GENAI_OLD:
+              assert note, "用舊 SDK 時要提醒它已停止支援"
+          print(f"偵測到 {L.GEMINI_SDK}；訊息：{note[:80] or '（無，新版正常）'}")
+          PY
+
+      # 沒有金鑰時也不能炸掉——只能回墊底清單並說明
+      - name: 沒有金鑰時仍能安全降級
+        run: |
+          python - <<'PY'
+          import tacit_llm as L
+          names, note = L.list_models(L.GEMINI, api_key="")
+          assert names == L.FALLBACK_MODELS[L.GEMINI], names
+          assert "API key" in note, note
+          print("確認：沒有金鑰時回墊底清單並說明原因")
+          PY
+
+      - run: python make_demo_data.py
+      - run: python run_tests.py
+
+  # ===================================================================
+  # 覆蓋率：只設地板，不追求數字
+  #
+  # 地板訂在「分析引擎不得低於 90%」。那幾個模組是論文拿來當賣點的東西
+  # ——假設守門、信度抽樣框、稽核軌跡、框架載入——它們掉下來要當場知道。
+  # app.py 與啟動器不設門檻：UI 與環境建置本來就有一部分無法自動化，
+  # 訂一個做不到的門檻只會讓大家習慣性忽略紅燈。
+  # ===================================================================
+  coverage:
+    name: 覆蓋率地板
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: 安裝相依
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt coverage
+
+      - run: python make_demo_data.py
+
+      - name: 逐套件量測
+        run: |
+          rm -rf .covdata && mkdir -p .covdata
+          for f in tests/test_*.py; do
+            COVERAGE_FILE=.covdata/.cov python -m coverage run -p \
+              --source=. \
+              --omit="*/tests/*,*/.venv/*,*/_demo_*,*/demo_transcripts*" \
+              "$f" > /dev/null 2>&1 || { echo "套件失敗：$f"; exit 1; }
+          done
+          COVERAGE_FILE=.covdata/.cov python -m coverage combine .covdata
+          COVERAGE_FILE=.covdata/.cov python -m coverage report -m
+
+      - name: 分析引擎不得低於 90%
+        run: |
+          COVERAGE_FILE=.covdata/.cov python - <<'PY'
+          import coverage, sys
+          FLOORS = {
+              "tacit_analysis.py": 90,   # 交叉表、共現、假設守門
+              "tacit_schema.py":   90,   # 記錄結構、遷移、框架比對
+              "tacit_irr.py":      90,   # 抽樣框與一致性係數
+              "tacit_themes.py":   90,   # 主題歸納與維度歸屬
+              "tacit_framework.py": 90,  # 可插拔框架
+              "tacit_review.py":   90,   # 稽核軌跡
+              "tacit_llm.py":      85,   # 供應者層（部分匯入分支無法觸發）
+              "tacit_openalex.py": 80,   # 文獻檢索與引用守門
+              "tacit_lexicon.py":  80,
+          }
+          cov = coverage.Coverage(data_file=".covdata/.cov")
+          cov.load()
+          bad = []
+          for name, floor in sorted(FLOORS.items()):
+              _, stmts, _, missing, _ = cov.analysis2(name)
+              pct = 100.0 * (len(stmts) - len(missing)) / len(stmts) if stmts else 100.0
+              mark = "OK " if pct >= floor else "LOW"
+              print(f"  {mark}  {name:22s} {pct:5.1f}%  (floor {floor}%)")
+              if pct < floor:
+                  bad.append(f"{name} {pct:.1f}% < {floor}%")
+          if bad:
+              print("\n覆蓋率跌破地板：\n  " + "\n  ".join(bad))
+              sys.exit(1)
+          PY
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coverage-data
+          path: .covdata/
+          retention-days: 7

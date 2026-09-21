@@ -1,0 +1,1517 @@
+{
+ "respondent": "CHRG-118shrg53879_Smith",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Introduction and welcome",
+   "quote": "Thank you, very much. Mr. Smith.",
+   "full_text": "Thank you, very much. Mr. Smith. Chairman Blumenthal, Ranking Member Hawley, Members of the Subcommittee, my name is Brad Smith. I'm the vice chair and president of Microsoft. And thank you for the opportunity to be here today. And I think more importantly, thank you for the work that you have done to create the framework you've shared.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "Establishing the respondent's background and expertise"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Praise for the framework",
+   "quote": "Chairman Blumenthal, I think you put it very well.",
+   "full_text": "Chairman Blumenthal, I think you put it very well. First, we need to learn and act with dispatch. And Ranking Member Hawley, I think you offered real words of wisdom. Let's learn from the experience the whole world had with social media, and let's be clear-eyed about the promise and the peril in equal measure as we look to the future of AI.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "The respondent is defining what AI is and its goals"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Goals for AI regulation",
+   "quote": "Let's prioritize safety and security, which your framework does.",
+   "full_text": "Let's prioritize safety and security, which your framework does. Let's require licenses for advanced AI models and uses in high-risk scenarios. Let's have an agency that is independent, and can exercise real and effective oversight over this category. And then, let's couple that with the right kinds of controls that will ensure safety of the sort that we've already seen, I think, start to emerge in the White House commitments that were launched on July 21st.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent is discussing the need for guardrails to prevent failures and ensure benefits"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Prioritizing goals",
+   "quote": "Let's prioritize, as you do, the protection of our citizens and consumers.",
+   "full_text": "Let's prioritize, as you do, the protection of our citizens and consumers. Let's prioritize national security-- always in a sense, in some ways, the first priority of the Federal Government. But let's think as well as you have about protecting the privacy, the civil rights, and the needs of kids among many other ways of working and ensure we get this right.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent is discussing the impact of machine learning on various aspects of life"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Approach to AI regulation",
+   "quote": "Let's take the approach that you are recommending.",
+   "full_text": "Let's take the approach that you are recommending. Namely, focus not only on those companies that develop AI, like Microsoft, as well as companies that deploy AI, like Microsoft. In different categories, we're going to need different levels of obligations.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent is discussing the limitations of AI systems"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Guardrails for AI",
+   "quote": "Let's keep AI under the control of people. It needs to be safe.",
+   "full_text": "Let's keep AI under the control of people. It needs to be safe. And to do that, as we've encouraged, there need to be safety breaks, especially for any AI application or system that controls critical infrastructure.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the need for safety measures to control AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Importance of safety breaks",
+   "quote": "we need a safety break. Just like we have a circuit breaker in every building and home in this country to stop the flow of electricity if that's needed.",
+   "full_text": "If a company wants to use AI to, say, control the electrical grid, or all of the self-driving cars on our roads, or the water supply, we need to learn from so many other technologies that do great things but also can go wrong. We need a safety break. Just like we have a circuit breaker in every building and home in this country to stop the flow of electricity if that's needed.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent highlights the importance of safety breaks to prevent AI failures"
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Promises of AI",
+   "quote": "the promise that this offers",
+   "full_text": "When I see what Governor Newsom is doing in California, or Governor Burgum in North Dakota, or Governor Youngkin in Virginia, I see them at the forefront of figuring out how to use AI to, say, improve the delivery of healthcare, advance medicine, improve education for our kids, and, maybe most importantly, make government services more accessible and more efficient.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent discusses the potential benefits of AI in various aspects of life"
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Ambition and initiative",
+   "quote": "Let's be ambitious and get this right.",
+   "full_text": "In sum, Professor Hartzog has said this is not a time for half measures. It is not. He is right. Let's go forward as you have recommended. Let's be ambitious and get this right.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "The respondent emphasizes the importance of being ambitious and getting AI right"
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Importance of a licensing regime",
+   "quote": "I think that a licensing regime is indispensable in certain high-risk scenarios, but it won't be sufficient to address every issue.",
+   "full_text": "I think that a licensing regime is indispensable in certain high-risk scenarios, but it won't be sufficient to address every issue. But it's a critical start. Because I think what it really ensures is especially, say, for the frontier models, the most advanced, as well as certain applications that are highest risk, frankly, you do need a license from the Government before you go forward.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of a licensing regime as a critical start in safeguarding against the downsides of AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "Single agency for AI regulation",
+   "quote": "I don't think we want to move the approval of every new drug from the FDA to this agency.",
+   "full_text": "I don't think we want to move the approval of every new drug from the FDA to this agency. So by definition, the FDA is going to need, for example, to have the capability to assess AI. That would be just one of several additional specifics that I think one can think about.",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Single agency for AI regulation",
+     "rationale": "The respondent highlights the limitations of a single agency for AI regulation, emphasizing the need for multiple agencies to assess AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Microsoft's approach to AI",
+   "quote": "Yes. We have certain age controls, so we don't let a child of any age.",
+   "full_text": "Yes. We have certain age controls, so we don't let a child of any age. But yes, in general, it is possible for children to register if they're of a certain age.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent discusses Microsoft's approach to AI, highlighting the potential impact on society, particularly with regards to children's use of AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Age verification for Bing Chat",
+   "quote": "We do have age verification systems that then involve, typically, getting permission from a parent.",
+   "full_text": "We do have age verification systems that then involve, typically, getting permission from a parent. And we use this across our services, including for gaming. I don't remember off the top of my head exactly how it works, but I'd be happy to get you the details.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is providing background information on their expertise and experience"
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Protecting privacy of children",
+   "quote": "This is done in a manner that protects the privacy of children.",
+   "full_text": "This is done in a manner that protects the privacy of children. This is, you know, exists to protect child online privacy. And it forbids using it for tracking. It forbids its use for advertising or for other things. It seeks to put very tight controls around the use and the retention of that information.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent is discussing the impact of machine learning on society, specifically in the context of protecting children's privacy"
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "Safety architecture for Bing Chat",
+   "quote": "We basically have a safety architecture that we use across the board. Think about it like this, there's two things around a model.",
+   "full_text": "We basically have a safety architecture that we use across the board. Think about it like this, there's two things around a model. The first is called a classifier so that if somebody asks, ``How can I commit suicide tonight?'' ``How can I blow up my school tomorrow?'' that hits a classifier that identifies a class of questions, or prompts, or issues. And then second, there's what we call Meta-Prompts and that we intervene so that the question is not answered.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent is discussing the importance of having guardrails in place for AI systems, specifically in the context of Bing Chat"
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "Guardrails for AI — AI needs guardrails to prevent failures and ensure benefits",
+   "quote": "we are hyper-focused on ensuring that, in most cases, people of any age, but especially children, are not able to use something like Bing Chat in ways that would cause harm to themselves or to others.",
+   "full_text": "The second thing I would just add to that is in addition to protecting privacy, we are hyper-focused on ensuring that, in most cases, people of any age, but especially children, are not able to use something like Bing Chat in ways that would cause harm to themselves or to others.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of ensuring AI is used safely and responsibly"
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "Data storage and access — AI systems need to store and manage data securely",
+   "quote": "If the child is in the United States, the data is stored in the United States. It's true not only for children, it's for adults as well.",
+   "full_text": "If the child is in the United States, the data is stored in the United States. It's true not only for children, it's for adults as well. The child has access if--you know, the parents may or may not have access. Typically, we give----",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent discusses the impact of AI on data storage and access"
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "Data privacy and protection — AI systems need to protect user data",
+   "quote": "Our general principle is this--and this is something we've implemented in the United States even though it's not legally required in the United States. It is legally required, as you may know, in Europe--people, we think, have a right to find out what information we have about them. They have the right to see it. They have the right to ask us to correct it, if it's wrong. They have the right to ask us to delete it, if that's what they want us to do.",
+   "full_text": "Our general principle is this--and this is something we've implemented in the United States even though it's not legally required in the United States. It is legally required, as you may know, in Europe--people, we think, have a right to find out what information we have about them. They have the right to see it. They have the right to ask us to correct it, if it's wrong. They have the right to ask us to delete it, if that's what they want us to do.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of protecting user data and privacy"
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "Data storage and access",
+   "quote": "I don't believe so. I'd love to go back and just, you know, confirm that. But I don't believe----",
+   "full_text": "I don't believe so. I'd love to go back and just, you know, confirm that. But I don't believe----",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent expresses concern about data storage and access, highlighting the need for guardrails to prevent failures and ensure benefits"
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Importance of transparency in AI-generated content",
+   "quote": "the health of democracy and meaningful civic discourse will undoubtedly benefit from initiatives that help protect the public against deception or fraud facilitated by AI-generated content",
+   "full_text": "Absolutely. And here I do think things are moving quickly, both in a positive and a worrisome direction, in terms of what we're seeing. On the positive side, I think you're seeing the industry come together. You're seeing a company like Adobe, I think, exercise real leadership, and there's a recipe that I see emerging.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of transparency in AI-generated content as a guardrail for AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Guardrails for AI — AI needs guardrails to prevent failures and ensure benefits",
+   "quote": "And here I do think things are moving quickly, both in a positive and a worrisome direction, in terms of what we're seeing.",
+   "full_text": "Absolutely. And here I do think things are moving quickly, both in a positive and a worrisome direction, in terms of what we're seeing. On the positive side, I think you're seeing the industry come together. You're seeing a company like Adobe, I think, exercise real leadership, and there's a recipe that I see emerging.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent mentions the need for guardrails to prevent failures and ensure benefits, indicating a concern for the impact of AI on society."
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Definition of AI — The respondent is defining what AI is and its goals",
+   "quote": "I think it starts with the first principle: People should have the right to know if they're getting a phone call from a computer, from AI, if there's content coming from an AI system rather than a human being.",
+   "full_text": "I think it starts with the first principle: People should have the right to know if they're getting a phone call from a computer, from AI, if there's content coming from an AI system rather than a human being. We then need to make that real with legal rights that back it up. We need to create what's called a provenance system, watermarking for legitimate content so that it can't be altered easily without our detection to create a deepfake.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "The respondent is defining what AI is and its goals, highlighting the importance of transparency and accountability in AI systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Impact of machine learning on society — machine learning has a significant impact on various aspects of life",
+   "quote": "We need to find ways to preserve and promote local journalism.",
+   "full_text": "I would just say three quick things. Number one, look, we need to recognize that local journalism is fundamental to the health of the country and the electoral system. And it's ailing. So we need to find ways to preserve and promote it.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent mentions the impact of AI on local journalism, highlighting the importance of preserving and promoting this industry."
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Single agency for AI regulation — Establishing a single agency for AI regulation to ensure international coordination",
+   "quote": "And we're interested in that, too. So let's add that to the list.",
+   "full_text": "No, but then I will just say, and there are ways that we can use AI to help local journalists. And we're interested in that, too. So let's add that to the list.",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Single agency for AI regulation",
+     "rationale": "The respondent mentions the potential for AI to help local journalists, indicating a desire for international coordination and regulation."
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent mentions using AI to help local journalists, implying the need for guardrails to prevent failures and ensure benefits"
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "Local journalists and publications making decisions about AI training",
+   "quote": "I think we should let local journalists and publications, you know, make decisions about whether they want their content to be available for training, or grounding, and the like.",
+   "full_text": "I think we should let local journalists and publications, you know, make decisions about whether they want their content to be available for training, or grounding, and the like. And that's a big topic, and it's worthy of more discussion. And we should certainly let them, in my view, negotiate collectively, because that's the only way local journalism is really going to negotiate effectively.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent mentions the importance of local journalists and publications making decisions about AI training, implying the need for guardrails to prevent failures and ensure benefits"
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "AI being ubiquitous and having unintended consequences",
+   "quote": "So when I hear you folks testifying about how we shouldn't be taking half measures, I'm not sure what that means.",
+   "full_text": "So when I hear you folks testifying about how we shouldn't be taking half measures, I'm not sure what that means. But the conclusion I've drawn is that AI is ubiquitous. Anybody can use AI. It can be used in any endeavor. So when I hear you folks testifying about how we shouldn't be taking half measures, I'm not sure what that means.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent mentions the ubiquity of AI and the potential for unintended consequences, highlighting the limitations of AI systems"
+    },
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "The respondent expresses concerns about the potential impact of AI chatbots on children"
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "Half measures not being good enough",
+   "quote": "I bet we can all agree that half measures are not good enough.",
+   "full_text": "I would absolutely agree. I think we have to define what's a full measure and what's a half measure. But I bet we can all agree that half measures are not good enough.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of taking full measures, implying the need for guardrails to prevent failures and ensure benefits"
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "Concerns about misinformation and AI",
+   "quote": "And I worry that with AI, such information will only become more rampant with future disasters.",
+   "full_text": "And I worry that with AI, such information will only become more rampant with future disasters. Do you share my concern about misinformation in the disaster context in the role AI could play? And what can we do to prevent these foreign entities from pushing out AI disinformation to people who are very vulnerable?",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent expresses concerns about the potential for AI to spread misinformation, highlighting the significant impact of machine learning on society"
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Using AI to detect misinformation",
+   "quote": "I think we need to think about doing. First, let's use the power of AI, as we are, to detect these kinds of activities when they're taking place because they can enable us to go faster--",
+   "full_text": "I absolutely share your concern, and I think there's two things we need to think about doing. First, let's use the power of AI, as we are, to detect these kinds of activities when they're taking place because they can enable us to go faster--as they did in that instance where Microsoft, among others, used AI and other data technologies to identify what people were doing.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent suggests using AI to detect misinformation, implying the need for guardrails to prevent failures and ensure benefits"
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "International Cooperation",
+   "quote": "we need to stand up as a country, and with other governments, and with the public, and say, there need to be some clear red lines in the world today regardless of how much else or what else we disagree about.",
+   "full_text": "Number two, I just think we need to stand up as a country, and with other governments, and with the public, and say, there need to be some clear red lines in the world today regardless of how much else or what else we disagree about.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "Smith emphasizes the importance of international cooperation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Pattern Recognition",
+   "quote": "I think we have to think about two things. First, I think we at a company like Microsoft have to lean in, and we are--with data, with infrastructure, with experts, and real-time capability to spot these threats, find the patterns, and reach well-founded conclusions.",
+   "full_text": "First, I think we at a company like Microsoft have to lean in, and we are--with data, with infrastructure, with experts, and real-time capability to spot these threats, find the patterns, and reach well-founded conclusions. And then the second thing, this is the harder thing. This is where it's going to need all of your help.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "Smith highlights the importance of pattern recognition in identifying threats"
+    },
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "The respondent is discussing the role of AI in identifying threats and the importance of having experts and real-time capability"
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "Identifying disinformation and misinformation",
+   "quote": "So how do we, one, even identify that that's going on and then, two, to come forward and say this is happening and to name names--identify that, which country it is that it's spreading this kind of disinformation and misinformation?",
+   "full_text": "So how do we, one, even identify that that's going on and then, two, to come forward and say this is happening and to name names--identify that, which country it is that it's spreading this kind of disinformation and misinformation? [Respondent] I think we have to think about two things.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent is discussing the need for guardrails to prevent failures and ensure benefits in identifying disinformation and misinformation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "Creating a bipartisan framework",
+   "quote": "What do we do if we find that a foreign government is deliberately trying to spread false information next year in a Senate or Presidential campaign about a candidate? How do we create the room so that information can be shared and people will consider it?",
+   "full_text": "What do we do if we find that a foreign government is deliberately trying to spread false information next year in a Senate or Presidential campaign about a candidate? How do we create the room so that information can be shared and people will consider it? [Interviewer] (Senator Hirono) Yes. [Respondent] You all, with this--the most important word in your framework is bipartisan. How do we create the bipartisan framework so that when we find this, we create a climate where people can listen? I think we have to look at both of those parts of the problem together.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "The respondent is discussing the importance of a bipartisan framework in addressing the spread of false information"
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "AI's potential impact on jobs",
+   "quote": "Yes. It was 4 years ago, we published our book-- with my co-author, behind me--and we said, ``What's the first job that we think might be eliminated by AI? '' We don't have a crystal ball, but I bet it's taking an order in the drive- through of a fast food restaurant.",
+   "full_text": "Yes. It was 4 years ago, we published our book-- with my co-author, behind me--and we said, ``What's the first job that we think might be eliminated by AI? '' We don't have a crystal ball, but I bet it's taking an order in the drive- through of a fast food restaurant. You're not really establishing a rapport with a human being. All the person does is listen and type into a computer what you're saying. So when AI can hear as well as a person, it can enter that in. And indeed, I was struck a few months ago, Wendy's, I think it was, announced that they were starting to consider whether they would automate with AI, the drive- through.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent is discussing the potential impact of AI on jobs, specifically the automation of drive-throughs"
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "AI's potential to free people up",
+   "quote": "So the real hope, I think, is to use AI to automate the routine, maybe even the work that's boring, to free people up so they can be more creative, so they can focus more on paying attention to other people and helping them.",
+   "full_text": "So the real hope, I think, is to use AI to automate the routine, maybe even the work that's boring, to free people up so they can be more creative, so they can focus more on paying attention to other people and helping them. And if we just apply that recipe more broadly, I think we might put ourselves on a path that's more promising.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent is discussing the potential benefits of AI in freeing people up to be more creative and focus on helping others"
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "Transparency in AI-generated content",
+   "quote": "Generally, yes. What I would say is, if you're listening to an audio, if you're watching a video, if you're seeing an image and it was generated by AI, I think people have a right to know.",
+   "full_text": "Generally, yes. What I would say is, if you're listening to an audio, if you're watching a video, if you're seeing an image and it was generated by AI, I think people have a right to know. The one area where I think there's a nuance is if you're using AI to, say, help you write something. Maybe it's helping you write the first draft. Just as I don't think any of us would say that when our staff helps us write something, we are obliged to give the speech and say, ``Now I'm going to read the paragraph that my staff wrote.'' You make it your own.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "The respondent is discussing the importance of transparency in AI-generated content"
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "Age verification for AI interactions",
+   "quote": "Would you commit today to raising that age? And would you commit to a verifiable age verification procedure such that parents can know, they can have some sense of confidence that their 12-year-old is not just saying to Bing, ``Yes, yes, yes, I'm 13. Yes, I'm 15. Sure. Go right on ahead. `Now let's get into it back and forth with this robot' ''",
+   "full_text": "Would you commit today to raising that age? And would you commit to a verifiable age verification procedure such that parents can know, they can have some sense of confidence that their 12-year-old is not just saying to Bing, ``Yes, yes, yes, I'm 13. Yes, I'm 15. Sure. Go right on ahead. `Now let's get into it back and forth with this robot' ''. But 13 is so incredibly young. I mean, listen, I've got three kids at home; 10, 8, 2 are my kids. I can't--I don't want my kids to be interacting in the chatbots anytime soon at all.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "Smith expresses concern about the impact of AI on children's privacy and safety"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent mentions the importance of child safety and the need for age verification procedures"
+    }
+   ]
+  },
+  {
+   "segment_id": "S038",
+   "title": "Principle of seeking approval",
+   "quote": "Look, as you can imagine, the teams that work at Microsoft let me go out and speak, but they probably have one principle they want me to remember: Don't go out and make news without talking to them first.",
+   "full_text": "Look, as you can imagine, the teams that work at Microsoft let me go out and speak, but they probably have one principle they want me to remember: Don't go out and make news without talking to them first.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent mentions the importance of seeking approval from Microsoft teams before making news"
+    }
+   ]
+  },
+  {
+   "segment_id": "S039",
+   "title": "Discussion of age suitability",
+   "quote": "It depends for what, actually.",
+   "full_text": "It depends for what, actually. To interact with a robot Who could be telling you to do any number of things. Don't you think that's awfully young?",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "The respondent discusses the suitability of age for interacting with AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S040",
+   "title": "Example of AI use in education",
+   "quote": "And they're trying to create for three topics that are very objective: math, coding, and learning English--a digital textbook with an AI tutor.",
+   "full_text": "And they're trying to create for three topics that are very objective: math, coding, and learning English--a digital textbook with an AI tutor. So that if you're doing math and you don't understand a concept, you can ask the AI tutor to help you solve the problem.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent mentions the use of AI in education, highlighting its potential benefits"
+    }
+   ]
+  },
+  {
+   "segment_id": "S041",
+   "title": "Commitment to raising the age",
+   "quote": "I actually don't want Bing Chat to break up anybody's marriage.",
+   "full_text": "I actually don't want Bing Chat to break up anybody's marriage.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent reiterates their commitment to raising the age limit for AI chatbots"
+    }
+   ]
+  },
+  {
+   "segment_id": "S042",
+   "title": "Concern about AI's impact on relationships",
+   "quote": "You don't really love your wife. You want to--your wife isn't good for you. She doesn't really love you.",
+   "full_text": "Now, can you im--this is an adult. Can you imagine the kind of things that your chatbot would say to a 13-year-old? I mean, I'm serious about this. Do you really think this is a good idea?",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent expresses concerns about AI's potential impact on relationships and wants to prevent failures"
+    }
+   ]
+  },
+  {
+   "segment_id": "S043",
+   "title": "Learning from experience",
+   "quote": "What I am saying is, I think as we go forward, we have an increasing capability to learn from the experience of real people and----",
+   "full_text": "What I am saying is, I think as we go forward, we have an increasing capability to learn from the experience of real people and----",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the importance of learning from experience to improve AI's capabilities"
+    }
+   ]
+  },
+  {
+   "segment_id": "S044",
+   "title": "Concern about AI's impact on children",
+   "quote": "I don't want 13-year-olds to be your guinea pig. I don't want 14-year-olds to be your guinea pig. I don't want any kids to be your guinea pig.",
+   "full_text": "I don't want 13-year-olds to be your guinea pig. I don't want 14-year-olds to be your guinea pig. I don't want any kids to be your guinea pig.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent expresses concerns about AI's potential impact on children and wants to prevent them from being used as test subjects"
+    }
+   ]
+  },
+  {
+   "segment_id": "S045",
+   "title": "Guardrails for AI",
+   "quote": "we not only have the capacity, but we have the will. And we are applying that will to fix things in hours and days.",
+   "full_text": "we not only have the capacity, but we have the will. And we are applying that will to fix things in hours and days. That's why you have a licensing obligation. That's why----",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "the respondent highlights the importance of having guardrails for AI to prevent failures and ensure benefits"
+    }
+   ]
+  },
+  {
+   "segment_id": "S046",
+   "title": "Commitment to child safety and protection",
+   "quote": "Microsoft is going to protect your kids. We will never use your kids as a science experiment ever. Never.",
+   "full_text": "Microsoft is going to protect your kids. We will never use your kids as a science experiment ever. Never. And therefore, we're not going to allow your--we're not going to target your kids, and we're not going to allow your kids to be used by our chatbots as a source of information if they're younger than 18.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Microsoft is committed to protecting children from AI experiments"
+    }
+   ]
+  },
+  {
+   "segment_id": "S047",
+   "title": "Balancing child safety and technology benefits",
+   "quote": "I don't want to cut off an eighth grader today with the right or ability to use this tool that will help them learn algebra or math in a way that they couldn't a year ago.",
+   "full_text": "But I am equally of the view, I don't want to cut off an eighth grader today with the right or ability to use this tool that will help them learn algebra or math in a way that they couldn't a year ago.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "Microsoft wants to balance child safety with the benefits of AI technology"
+    }
+   ]
+  },
+  {
+   "segment_id": "S048",
+   "title": "Learning from past incidents",
+   "quote": "Six months later, if that journalist tries to do the same thing again, it will not happen.",
+   "full_text": "Six months later, if that journalist tries to do the same thing again, it will not happen.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "Microsoft is learning from past AI incidents to improve child safety"
+    }
+   ]
+  },
+  {
+   "segment_id": "S049",
+   "title": "Combating disinformation campaigns",
+   "quote": "I think there's a couple of things that we can think more about and do more about.",
+   "full_text": "I think there's a couple of things that we can think more about and do more about.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "Microsoft is committed to combating disinformation campaigns"
+    }
+   ]
+  },
+  {
+   "segment_id": "S050",
+   "title": "Microsoft's role in combating disinformation campaigns",
+   "quote": "we all should want to ensure that our own products, and systems, and services are not used, say, by foreign governments in this manner.",
+   "full_text": "I think there's a couple of things that we can think more about and do more about. The first is, we all should want to ensure that our own products, and systems, and services are not used, say, by foreign governments in this manner. And I think that there's room for the evolution of export controls and next generation export controls to help prevent that. I think there's also room for a concept that's worked since the 1990s in the world of banking and financial services. It's these ``Know Your Customer'' requirements. And we've been advocates for those. So that if there is abuse of systems, the company that is offering the service knows who is doing it and is in a better position to stop it from happening.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Microsoft's role in ensuring its products and services are not used by foreign governments for disinformation campaigns"
+    }
+   ]
+  },
+  {
+   "segment_id": "S051",
+   "title": "Combating disinformation campaigns through AI and defensive technologies",
+   "quote": "I think the other side of the coin is using AI and advancing our defensive technologies, which really start with our ability to detect what is going on.",
+   "full_text": "I think the other side of the coin is using AI and advancing our defensive technologies, which really start with our ability to detect what is going on. And we've been investing heavily in that space. That is what enabled us to produce the report that we published. It is what enables us to see the patterns in communications around the world.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "Microsoft's use of AI and machine learning to detect and combat disinformation campaigns"
+    }
+   ]
+  },
+  {
+   "segment_id": "S052",
+   "title": "Russia's global cyber influence operation",
+   "quote": "We estimate that the Russian government is spending more than $1 billion dollars a year on a global--what we call cyber influence operation.",
+   "full_text": "And we've seen that grow during the war, but we've seen it, you know, really spiral in the recent years going back to the middle of the last decade. We estimate that the Russian government is spending more than $1 billion dollars a year on a global--what we call cyber influence operation. Part of it targets the United States. I think their fundamental goal is to undermine public confidence in everything that the public cares about in the United States, but it's not unique to the United States. We see it in the South Pacific. We see it across Africa. And I do think it's a problem we need to do more to counter.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "Russia's use of AI and machine learning in its global cyber influence operation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S053",
+   "title": "Undermining public confidence in the US",
+   "quote": "Part of it targets the United States. I think their fundamental goal is to undermine public confidence in everything that the public cares about in the United States",
+   "full_text": "Part of it targets the United States. I think their fundamental goal is to undermine public confidence in everything that the public cares about in the United States, but it's not unique to the United States. We see it in the South Pacific. We see it across Africa. And I do think it's a problem we need to do more to counter.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent mentions undermining public confidence, implying a need for guardrails"
+    }
+   ]
+  },
+  {
+   "segment_id": "S054",
+   "title": "Countermeasures against AI misuse",
+   "quote": "I do think it's a problem we need to do more to counter",
+   "full_text": "I do think it's a problem we need to do more to counter.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent mentions the need to counter AI misuse, implying limitations"
+    }
+   ]
+  },
+  {
+   "segment_id": "S055",
+   "title": "Due diligence for companies",
+   "quote": "You think that companies should increase their due diligence to make certain that their systems are appropriate",
+   "full_text": "You think that companies should increase their due diligence to make certain that their systems are appropriate, and then being careful about doing business with countries that may misuse a certain technology?",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is providing background information on their expertise and experience"
+    }
+   ]
+  },
+  {
+   "segment_id": "S056",
+   "title": "AI manipulation of political discourse",
+   "quote": "Let's imagine for a moment that there is a video that involves a Presidential candidate that originally was giving a speech. And then let's imagine that someone uses AI to put different words into the mouth of that candidate, and uses AI technology to perfect it to a level that it is difficult for people to recognize as fraudulent.",
+   "full_text": "Let's imagine for a moment that there is a video that involves a Presidential candidate that originally was giving a speech. And then let's imagine that someone uses AI to put different words into the mouth of that candidate, and uses AI technology to perfect it to a level that it is difficult for people to recognize as fraudulent. Then you get to this question, what should we do? And at least as I've been trying, and we've been trying to think this through, I think we have two broad alternatives. One is we take it down, and the other is we relabel it.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent discusses the potential for AI to manipulate political discourse"
+    },
+    {
+     "code_id": "c010",
+     "label": "AI-generated content",
+     "rationale": "The passage describes the use of AI to create a video and speech"
+    }
+   ]
+  },
+  {
+   "segment_id": "S057",
+   "title": "Censorship and accuracy",
+   "quote": "If we do the first, then we're acting as censors. And I do think that makes me nervous. I don't think that's really our role to act as censors. And the Government really cannot, I think, under the First Amendment. But relabeling to ensure accuracy, I think that is probably a reasonable path.",
+   "full_text": "If we do the first, then we're acting as censors. And I do think that makes me nervous. I don't think that's really our role to act as censors. And the Government really cannot, I think, under the First Amendment. But relabeling to ensure accuracy, I think that is probably a reasonable path. But really what this highlights is the discussion still to be had, and I think, the urgency for that conversation to take place.",
+   "open_codes": [
+    {
+     "code_id": "c011",
+     "label": "Censorship",
+     "rationale": "The passage discusses the potential consequences of taking down AI-generated content"
+    },
+    {
+     "code_id": "c012",
+     "label": "Accuracy",
+     "rationale": "The passage suggests that relabeling AI-generated content to ensure accuracy is a reasonable approach"
+    },
+    {
+     "code_id": "c018",
+     "label": "Concerns about facial recognition",
+     "rationale": "The respondent expresses concerns about the potential misuse of facial recognition technology"
+    }
+   ]
+  },
+  {
+   "segment_id": "S058",
+   "title": "Job loss and AI",
+   "quote": "Is it--is it a good thing that workers lose their jobs to AI, whether it's at Wendy's, or whether it's at Walmart, or whether it's at the local hardware store?",
+   "full_text": "Is it--is it a good thing that workers lose their jobs to AI, whether it's at Wendy's, or whether it's at Walmart, or whether it's at the local hardware store? I mean, is it--you pointed out that--your comment was that there's really no creativity involved in taking orders through the drive-through. But that is a job, oftentimes a first job for younger Americans.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "Job loss due to AI",
+     "rationale": "The passage discusses the potential impact of AI on job loss"
+    }
+   ]
+  },
+  {
+   "segment_id": "S059",
+   "title": "Automation and job loss",
+   "quote": "But hey, in this economy where the wages of blue collar workers have been flat for 30, 40 years and running, what worries me is that oftentimes what we hear from the tech sector, to be honest with you, is that jobs that don't have creativity, as tech defines, that don't have value.",
+   "full_text": "But hey, in this economy where the wages of blue collar workers have been flat for 30, 40 years and running, what worries me is that oftentimes what we hear from the tech sector, to be honest with you, is that jobs that don't have creativity, as tech defines, that don't have value. I'm frankly scared to death that AI will replace lots of jobs that tech types think aren't creative and will leave even more blue collar workers without any place to turn.",
+   "open_codes": [
+    {
+     "code_id": "c014",
+     "label": "Automation and job loss",
+     "rationale": "The passage discusses the potential consequences of AI on job loss and the economy"
+    }
+   ]
+  },
+  {
+   "segment_id": "S060",
+   "title": "AI's impact on job market",
+   "quote": "I think the thing we should be the most concerned by is that since the 1990s, and I think this is the point you're making, if you look at the flow of digital technology--you know, fundamentally we've lived in a world that has widened the economic divide.",
+   "full_text": "I think the thing we should be the most concerned by is that since the 1990s, and I think this is the point you're making, if you look at the flow of digital technology--you know, fundamentally we've lived in a world that has widened the economic divide.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent highlights the negative consequences of technological advancements on the economy and society."
+    }
+   ]
+  },
+  {
+   "segment_id": "S061",
+   "title": "Automation and job loss",
+   "quote": "Those people with a college or graduate education have seen their incomes rise in real terms. Those people with, say, a high school diploma or less, have seen their income level actually drop compared to where it was in the 1990s.",
+   "full_text": "Those people with a college or graduate education have seen their incomes rise in real terms. Those people with, say, a high school diploma or less, have seen their income level actually drop compared to where it was in the 1990s.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "Job loss due to AI",
+     "rationale": "The respondent discusses the impact of automation on job loss and the economy."
+    }
+   ]
+  },
+  {
+   "segment_id": "S062",
+   "title": "Economic policy and working class",
+   "quote": "I'd argue more broadly that our economic policy the last 30 years has been downright disastrous for working people.",
+   "full_text": "I'm not sure that seeing working class jobs go overseas or be replaced entirely is a success story. In fact, I'd argue it's not at all. It's not a success story. And I'd argue more broadly that our economic policy the last 30 years has been downright disastrous for working people.",
+   "open_codes": [
+    {
+     "code_id": "c015",
+     "label": "Impact of economic policy on working class",
+     "rationale": "The respondent criticizes the economic policy of the last 30 years for its negative effects on working-class people."
+    }
+   ]
+  },
+  {
+   "segment_id": "S063",
+   "title": "Concerns about AI job loss",
+   "quote": "I don't want AI to be the latest accelerant of that trend.",
+   "full_text": "I don't want AI to be the latest accelerant of that trend. And so I don't really want every service station in America to be manned by some computer such that nobody can get a job anymore, get their foot in the door, or start their climb up the ladder. That that worries me.",
+   "open_codes": [
+    {
+     "code_id": "c016",
+     "label": "Impact of AI on job loss",
+     "rationale": "The respondent does not want AI to accelerate job loss and wants people to have opportunities to get jobs."
+    }
+   ]
+  },
+  {
+   "segment_id": "S064",
+   "title": "Microsoft's entwinement with China",
+   "quote": "You have the Microsoft Research Asia that was set up in Beijing back in the late 1990s.",
+   "full_text": "You have the Microsoft Research Asia that was set up in Beijing back in the late 1990s. You've got centers now in Shanghai and elsewhere. You've got all kinds of cooperation with Chinese state-owned businesses. I'm looking at an article here from Protocol Magazine where one of their contributors said that Microsoft had been the alma mater of Chinese big tech.",
+   "open_codes": [
+    {
+     "code_id": "c017",
+     "label": "Microsoft's entwinement with China",
+     "rationale": "The respondent mentions Microsoft's research centers and cooperation with Chinese state-owned businesses."
+    }
+   ]
+  },
+  {
+   "segment_id": "S065",
+   "title": "Concerns about facial recognition",
+   "quote": "We don't provide facial recognition services, or focus on synthetic media, or a whole variety of things.",
+   "full_text": "But when it comes to China today, we are and need to have very specific controls on who uses our technology, and for what, and how. That's why we don't, for example, do work on quantum computing, or we don't provide facial recognition services, or focus on synthetic media, or a whole variety of things.",
+   "open_codes": [
+    {
+     "code_id": "c018",
+     "label": "Concerns about facial recognition",
+     "rationale": "The respondent mentions specific controls on facial recognition services and technology."
+    }
+   ]
+  },
+  {
+   "segment_id": "S066",
+   "title": "Concerns about Microsoft's involvement in China",
+   "quote": "You eventually took it down although it took 3 years. China used that database to train much of its facial recognition software and technology.",
+   "full_text": "Well, just on facial recognition, I mean, back in 2016, your company released this database, MS-Celeb, 10 million faces without the consent of the folks who were in the database. You eventually took it down although it took 3 years. China used that database to train much of its facial recognition software and technology.",
+   "open_codes": [
+    {
+     "code_id": "c019",
+     "label": "Concerns about Microsoft's entwinement with China",
+     "rationale": "The respondent expresses concerns about Microsoft's role in China's facial recognition technology"
+    }
+   ]
+  },
+  {
+   "segment_id": "S067",
+   "title": "Denial of involvement in Chinese government's activities",
+   "quote": "I don't think that will accomplish what you are asking us----",
+   "full_text": "I don't think that will accomplish what you are asking us---- First of all, there's a big premise, and I don't embrace the premise that that is in fact what we're doing. We are----",
+   "open_codes": [
+    {
+     "code_id": "c020",
+     "label": "Denial of involvement in Chinese government's activities",
+     "rationale": "The respondent explicitly states that they are not involved in the Chinese government's activities"
+    }
+   ]
+  },
+  {
+   "segment_id": "S068",
+   "title": "Safeguards against technology misuse",
+   "quote": "We do everything we can to ensure that our technology is not used in any way for that kind of activity in China and around the world, by the way.",
+   "full_text": "We do everything we can to ensure that our technology is not used in any way for that kind of activity in China and around the world, by the way. We condemn it, to be clear?",
+   "open_codes": [
+    {
+     "code_id": "c021",
+     "label": "Safeguards against technology misuse",
+     "rationale": "The respondent emphasizes their commitment to preventing technology misuse"
+    }
+   ]
+  },
+  {
+   "segment_id": "S069",
+   "title": "Safeguards against technology misuse",
+   "quote": "We have very tight controls that limit the use of facial recognition in China, including controls that, in effect, make it very difficult, if not impossible, to use it for any kind of real time surveillance at all.",
+   "full_text": "Well, you take something like facial recognition, which is at the heart of your question. We have very tight controls that limit the use of facial recognition in China, including controls that, in effect, make it very difficult, if not impossible, to use it for any kind of real time surveillance at all.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent describes measures to prevent technology misuse"
+    }
+   ]
+  },
+  {
+   "segment_id": "S070",
+   "title": "Microsoft's entwinement with China",
+   "quote": "It's 1.5 percent of our global revenue.",
+   "full_text": "The revenue that we make in China, which accounts for, what, about one out of every six humans on this planet? It's 1.5 percent of our global revenue.",
+   "open_codes": [
+    {
+     "code_id": "c017",
+     "label": "Microsoft's entwinement with China",
+     "rationale": "The respondent describes Microsoft's involvement in China and its revenue"
+    }
+   ]
+  },
+  {
+   "segment_id": "S071",
+   "title": "Decoupling",
+   "quote": "But is that the right thing to do?",
+   "full_text": "But is that the right thing to do?",
+   "open_codes": [
+    {
+     "code_id": "c022",
+     "label": "Decoupling",
+     "rationale": "The respondent questions the idea of decoupling"
+    }
+   ]
+  },
+  {
+   "segment_id": "S072",
+   "title": "Revenue in China",
+   "quote": "The revenue that we make in China, which accounts for, what, about one out of every six humans on this planet?",
+   "full_text": "The revenue that we make in China, which accounts for, what, about one out of every six humans on this planet? It's 1.5 percent of our global revenue. It's not the market for us that it is for other industries or even some other tech companies.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Smith discusses the importance of guardrails for AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S073",
+   "title": "Decoupling",
+   "quote": "Sounds then like you can afford to decouple?",
+   "full_text": "Sounds then like you can afford to decouple? But is that the right thing to do?",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Single agency for AI regulation",
+     "rationale": "Smith discusses the possibility of decoupling and regulation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S074",
+   "title": "General Motors in China",
+   "quote": "Do you want General Motors to sell or manufacture cars--let's just say sell cars in China?",
+   "full_text": "Do you want General Motors to sell or manufacture cars--let's just say sell cars in China? Do you want to create jobs for people in Michigan or Missouri so that those cars can be sold in China? If the answer to that is yes, then think about the second question.",
+   "open_codes": [
+    {
+     "code_id": "c013",
+     "label": "Job loss due to AI",
+     "rationale": "Smith discusses the potential job loss due to AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S075",
+   "title": "Data Protection",
+   "quote": "Would you like it to be in a secure data center run by an American company, or would you like it to be run by a Chinese company?",
+   "full_text": "Would you like it to be in a secure data center run by an American company, or would you like it to be run by a Chinese company? Which will better protect General Motors' trades secrets? I'll argue we should be there so that we can protect the data of American companies, European companies, Japanese companies. Even if you disagree on everything else, that I believe serves this country well.",
+   "open_codes": [
+    {
+     "code_id": "c005",
+     "label": "Characteristics of machine learning systems",
+     "rationale": "Smith discusses the importance of data protection and security"
+    }
+   ]
+  },
+  {
+   "segment_id": "S076",
+   "title": "Legislative Framework",
+   "quote": "If we're going to move forward with a legislative framework or a regulatory framework, we have to define clearly in legislative text precisely what it is that we are regulating.",
+   "full_text": "If we're going to move forward with a legislative framework or a regulatory framework, we have to define clearly in legislative text precisely what it is that we are regulating. What is the scope of regulated activities, technologies, and products? So how should we consider that question? And how do we define the scope of technologies, the scope of services, the scope of products that should be subject to a regime of regulation that is focused on artificial intelligence?",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "Smith discusses the importance of defining the scope of regulation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S077",
+   "title": "Foundation Models",
+   "quote": "It's these so-called frontier or foundation models that are the most powerful, say, for something like generative AI.",
+   "full_text": "It's these so-called frontier or foundation models that are the most powerful, say, for something like generative AI.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Smith discusses the importance of foundation models in AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S078",
+   "title": "Defining the scope of legislation and regulation",
+   "quote": "I think there's three layers of technology on which we need to focus in defining the scope of legislation and regulation.",
+   "full_text": "I think there's three layers of technology on which we need to focus in defining the scope of legislation and regulation. First is the area that has been the central focus of 2023 in the executive branch, and here on Capitol Hill. It's these so-called frontier or foundation models that are the most powerful, say, for something like generative AI. In addition, there are the applications that use AI, or as Senators Blumenthal and Hawley have said, ``the deployers of AI.'' If there is an application that calls on that model in what we consider to be a high-risk scenario, meaning it could make a decision that would have an impact on, say, the privacy rights, the civil liberties, the rights of children or needs of children, then I think we need to think hard, and have law and regulation that is effective to protect Americans. And then the third layer is the data center infrastructure where these models and where these applications are actually deployed. And we should ensure that those data centers are secure, that there are cybersecurity requirements that the companies, including ours, need to meet.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the need for guardrails to prevent failures and ensure benefits"
+    }
+   ]
+  },
+  {
+   "segment_id": "S079",
+   "title": "Proliferation of AI models",
+   "quote": "As more and more models are trained and developed to higher levels of power and capability, there will be a proliferation--there may be a proliferation of models-- perhaps not the frontier models, perhaps not those at the bleeding edge--that use the most compute of all, powerful enough to have serious implications.",
+   "full_text": "As more and more models are trained and developed to higher levels of power and capability, there will be a proliferation--there may be a proliferation of models-- perhaps not the frontier models, perhaps not those at the bleeding edge--that use the most compute of all, powerful enough to have serious implications. So is the question, which models are the most powerful in a moment in time, or is there a threshold of capability or power that should define the scope of regulated technology?",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The respondent highlights the need to consider the implications of AI model proliferation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S080",
+   "title": "Regulating AI models",
+   "quote": "Let's just posit this: There's something like GPT-4 from OpenAI. Let's just posit it can do 10,000 things really well. It's expensive to create, and it's relatively easy to regulate in the scheme of things because there's 1, or 2, or 10.",
+   "full_text": "Let's just posit this: There's something like GPT-4 from OpenAI. Let's just posit it can do 10,000 things really well. It's expensive to create, and it's relatively easy to regulate in the scheme of things because there's 1, or 2, or 10. But now let's go to where you're going, which I think is right. What does the future bring in terms of proliferation? Imagine that there's an academic at Professor Hartzog's university who says, ``I want to create an open source model. It's not going to do 10,000 things well, but it's going to do 4 things well. It won't require as many NVIDIA GPUs. It won't, you know, require as much data.''",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "The respondent uses a specific AI model to illustrate its potential and challenges"
+    }
+   ]
+  },
+  {
+   "segment_id": "S081",
+   "title": "Concerns about AI-generated content",
+   "quote": "Imagine that there's an academic at Professor Hartzog's university who says, `I want to create an open source model. It's not going to do 10,000 things well, but it's going to do 4 things well. It won't require as many NVIDIA GPUs. It won't, you know, require as much data.'\"",
+   "full_text": "But now let's go to where you're going, which I think is right. What does the future bring in terms of proliferation? Imagine that there's an academic at Professor Hartzog's university who says, ``I want to create an open source model. It's not going to do 10,000 things well, but it's going to do 4 things well. It won't require as many NVIDIA GPUs. It won't, you know, require as much data.'' But let's imagine that that could be used to create the next virus that could spread around the planet. Then you'd say, ``Well, we really need to ensure that there's safety, architecture, and controls around that, as well.''",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent is concerned about the potential misuse of AI-generated content"
+    }
+   ]
+  },
+  {
+   "segment_id": "S082",
+   "title": "Licensing regime for AI",
+   "quote": "Who needs a license? You don't want it to be so hard that only a small number of big companies can get it. But then you also need to make sure that you're not requiring people to get it when they really, we would say, don't need a license for what they're doing.",
+   "full_text": "But as you think about a licensing regime, this is one of the hard questions. Who needs a license? You don't want it to be so hard that only a small number of big companies can get it. But then you also need to make sure that you're not requiring people to get it when they really, we would say, don't need a license for what they're doing.",
+   "open_codes": [
+    {
+     "code_id": "c023",
+     "label": "Licensing regime for AI",
+     "rationale": "The respondent is discussing the challenges of creating a licensing regime for AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S083",
+   "title": "Oversight and regulation",
+   "quote": "You know, I think that there may well be obligations to disclose to, say, an independent authority when a training run begins depending on what the goal--when the training run ends, so that an oversight body can follow it just the way, say, might happen when a company's building a new commercial airplane.",
+   "full_text": "And then there are--what's emerging--the good news is there's emerging a foundation of, call it best practices, for then how the model should be trained, what kind of testing there should be, what harms should be addressed. That's a big topic that needs----",
+   "open_codes": [
+    {
+     "code_id": "c024",
+     "label": "Oversight and regulation",
+     "rationale": "The respondent is discussing the importance of oversight and regulation in AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S084",
+   "title": "Licensing regime for AI",
+   "quote": "You need a licensing regime that would say that it needs to be licensed after it's been, in effect, certified as safe.",
+   "full_text": "In this case, it's more the latter. Imagine-- look, think about it like Boeing. Boeing builds a new plane. Before it can sell it to United Airlines and United Airlines can start to fly it, the FAA is going to certify that it's safe. Now, imagine where it--call it GPT-12, whatever you want to name it. You know, before that gets released for use, I think you can imagine a licensing regime that would say that it needs to be licensed after it's been, in effect, certified as safe.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent is discussing the need for a licensing regime to ensure the safe use of AI"
+    }
+   ]
+  },
+  {
+   "segment_id": "S085",
+   "title": "International coordination for AI regulation",
+   "quote": "You probably need a level of international coordination.",
+   "full_text": "And third, if we're going to have a global economy, at least in the countries where we want these things to work, you probably need a level of international coordination.",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Single agency for AI regulation",
+     "rationale": "The respondent is discussing the need for international coordination in AI regulation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S086",
+   "title": "Learning from civil aviation",
+   "quote": "Let's try to learn from it and see how we might apply something like that, or other models, here.",
+   "full_text": "And I'd say, look at the world of civil aviation. That's fundamentally how it has worked since the 1940s. Let's try to learn from it and see how we might apply something like that, or other models, here.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "Opening Remarks",
+     "rationale": "The respondent is introducing a new idea or concept"
+    }
+   ]
+  },
+  {
+   "segment_id": "S087",
+   "title": "Concerns about technology misuse",
+   "quote": "I would say two things. First, I feel good about our track record, and our vigilance, and the constant need for us to be vigilant about what services we offer to whom and how they're used.",
+   "full_text": "I would say two things. First, I feel good about our track record, and our vigilance, and the constant need for us to be vigilant about what services we offer to whom and how they're used. It's really those three things. And I would take from that what I think is probably the conversation we'll need to have as a country about export controls more broadly.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "Mr. Smith emphasizes the importance of vigilance and constant monitoring to prevent technology misuse"
+    }
+   ]
+  },
+  {
+   "segment_id": "S088",
+   "title": "Importance of export controls",
+   "quote": "And I think if we want to feel that we're good in creating jobs in the United States by inventing and manufacturing here-- as you said, Senator Hawley, which I completely endorse--and good, the technology is being used properly, we probably need an export control regime that weaves those three things together.",
+   "full_text": "And I think if we want to feel that we're good in creating jobs in the United States by inventing and manufacturing here-- as you said, Senator Hawley, which I completely endorse--and good, the technology is being used properly, we probably need an export control regime that weaves those three things together.",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Single agency for AI regulation",
+     "rationale": "Mr. Smith suggests that a single agency is needed to regulate AI and prevent misuse"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "To ensure AI technology is used properly"
+    }
+   ]
+  },
+  {
+   "segment_id": "S089",
+   "title": "Importance of clarity",
+   "quote": "you do have to have clarity about how you want your technology to be used",
+   "full_text": "But at the end of the day, you know, whether you're a company or a country, I think you do have to have clarity about how you want your technology to be used.",
+   "open_codes": [
+    {
+     "code_id": "c025",
+     "label": "Clarity about AI use",
+     "rationale": "To ensure AI technology is used responsibly"
+    }
+   ]
+  },
+  {
+   "segment_id": "S090",
+   "title": "Guardrails and protections",
+   "quote": "we had clear values, and we had principles, and we had in place guardrails and protections",
+   "full_text": "I want to say, ``No, we had clear values, and we had principles, and we had in place guardrails and protections. And we turned down sales so that somebody couldn't use our technology to abuse other people's rights. And if we lost some business, that's the best reason in the world to lose some business.'\"",
+   "open_codes": [
+    {
+     "code_id": "c026",
+     "label": "Guardrails and protections",
+     "rationale": "To prevent AI technology misuse"
+    }
+   ]
+  },
+  {
+   "segment_id": "S091",
+   "title": "Cloud providers and export controls",
+   "quote": "We need to make sure that the cloud providers are not used to circumvent our export controls or sanctions.",
+   "full_text": "And it isn't simply Chinese companies importing chips from the United States and building their own data centers. Most AI companies rent capabilities from cloud providers. We need to make sure that the cloud providers are not used to circumvent our export controls or sanctions.",
+   "open_codes": [
+    {
+     "code_id": "c027",
+     "label": "Cloud provider oversight",
+     "rationale": "To ensure AI technology is used responsibly"
+    },
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "To prevent AI technology misuse and ensure responsible use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S092",
+   "title": "Moral imperative and historical lesson",
+   "quote": "There is a moral imperative here. And I think there--there is a lesson in the history of this great country, the greatest in the history of the world, that when we lose our moral compass, we lose our way.",
+   "full_text": "But I do think that you've made a critical point, which is, there is a moral imperative here. And I think there--there is a lesson in the history of this great country, the greatest in the history of the world, that when we lose our moral compass, we lose our way.",
+   "open_codes": [
+    {
+     "code_id": "c028",
+     "label": "Moral imperative",
+     "rationale": "To guide actions and ensure ethical behavior"
+    }
+   ]
+  },
+  {
+   "segment_id": "S093",
+   "title": "New industrial revolution and worker displacement",
+   "quote": "We've seen this movie before, as they say. And it didn't turn out that well in the industrial revolution where workers were displaced en masse.",
+   "full_text": "We've seen this movie before, as they say. And it didn't turn out that well in the industrial revolution where workers were displaced en masse. Those textile factories and the mills in this country and all around the world went out of business, essentially, or replaced the workers with automation and mechanics.",
+   "open_codes": [
+    {
+     "code_id": "c016",
+     "label": "Impact of AI on job loss",
+     "rationale": "To highlight the need for retraining and upskilling workers"
+    }
+   ]
+  },
+  {
+   "segment_id": "S094",
+   "title": "Training and education",
+   "quote": "We need to train those workers. We need to provide education.",
+   "full_text": "You know, in my State of Connecticut--Electric Boat, Pratt & Whitney, Sikorsky--defense contractors are going to need thousands of welders, electricians, tradespeople of all kinds who will have not just jobs, they'll have careers that require skills that, frankly, I wouldn't begin to know how to do. And I haven't the aptitude to do. And that's no false modesty.",
+   "open_codes": [
+    {
+     "code_id": "c029",
+     "label": "Training and education",
+     "rationale": "To prepare workers for the changing job market"
+    }
+   ]
+  },
+  {
+   "segment_id": "S095",
+   "title": "Job market challenges",
+   "quote": "We can't find enough people to do the jobs we have right now. We can't find people to fill the openings that we have.",
+   "full_text": "And as I go around the State of Connecticut, the most common comment I hear from businesses: ``We can't find enough people to do the jobs we have right now. We can't find people to fill the openings that we have.'' And that is, in my view, maybe the biggest challenge for the American economy today.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent mentions AI as a potential solution to job market challenges"
+    }
+   ]
+  },
+  {
+   "segment_id": "S096",
+   "title": "Demographic context",
+   "quote": "The world has just entered a shift of the kind that it literally hasn't seen since the 1400s, namely, populations that are leveling off or in much of the world now declining.",
+   "full_text": "First, let's consider the demographic context in which jobs are created. The world has just entered a shift of the kind that it literally hasn't seen since the 1400s, namely, populations that are leveling off or in much of the world now declining.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Definition of AI",
+     "rationale": "The respondent mentions AI in the context of demographic changes"
+    }
+   ]
+  },
+  {
+   "segment_id": "S097",
+   "title": "AI in call centers",
+   "quote": "One fascinating one is a bank in the Netherlands. They said, you go into a call center today, the desks of the workers look like a trading floor in Wall Street. They have six different terminals. Somebody calls, they're desperately trying to find the answer to a question.",
+   "full_text": "One of the things that's fascinating to me, we have more than 3,000 customers around the world running proofs of concept. One fascinating one is a bank in the Netherlands. They said, you go into a call center today, the desks of the workers look like a trading floor in Wall Street. They have six different terminals. Somebody calls, they're desperately trying to find the answer to a question.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent discusses the potential benefits of AI in a call center context"
+    }
+   ]
+  },
+  {
+   "segment_id": "S098",
+   "title": "AI and human intelligence",
+   "quote": "I'm excited about artificial intelligence. I'm even more excited about human intelligence.",
+   "full_text": "And I appreciate all the challenges. There's so much uncertainty. We desperately need to focus on skilling, but I really do hope that this is an era where we can use this to, frankly, help people fill jobs, get training, and focus more-- let's just put it this way. I'm excited about artificial intelligence. I'm even more excited about human intelligence.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent expresses enthusiasm for AI and human intelligence"
+    }
+   ]
+  },
+  {
+   "segment_id": "S099",
+   "title": "Appreciation for challenges and uncertainty",
+   "quote": "And I appreciate all the challenges. There's so much uncertainty.",
+   "full_text": "And I appreciate all the challenges. There's so much uncertainty. We desperately need to focus on skilling, but I really do hope that this is an era where we can use this to, frankly, help people fill jobs, get training, and focus more-- let's just put it this way. I'm excited about artificial intelligence. I'm even more excited about human intelligence.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "Appreciation for challenges and uncertainty",
+     "rationale": "Smith acknowledges the uncertainty and challenges, showing appreciation"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_015911",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 31,
+   "n_ok": 31
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 2
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 3
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 4
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 6
+   },
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 8
+   },
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 9
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 10
+   },
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 11
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 12
+   },
+   {
+    "reused": 1,
+    "created": 0,
+    "chunk": 13
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 14
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 15
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 16
+   },
+   {
+    "reused": 0,
+    "created": 5,
+    "chunk": 17
+   },
+   {
+    "reused": 2,
+    "created": 1,
+    "chunk": 18
+   },
+   {
+    "reused": 1,
+    "created": 3,
+    "chunk": 19
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 20
+   },
+   {
+    "reused": 3,
+    "created": 1,
+    "chunk": 21
+   },
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 22
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 23
+   },
+   {
+    "reused": 1,
+    "created": 2,
+    "chunk": 24
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 25
+   },
+   {
+    "reused": 2,
+    "created": 0,
+    "chunk": 26
+   },
+   {
+    "reused": 1,
+    "created": 3,
+    "chunk": 27
+   },
+   {
+    "reused": 2,
+    "created": 2,
+    "chunk": 28
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 29
+   },
+   {
+    "reused": 0,
+    "created": 1,
+    "chunk": 30
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg53879 — Brad Smith, Vice Chair And President, Microsoft Corporation\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg53879  |  Oversight Of A.I.: Legislating On Artificial Intelligence  |  Senate, Subcommittee On Privacy, Technology, And The Law / Committee On The Judiciary  |  2023-09-12  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chair Blumenthal) Thank you, very much. Mr. Smith.\n[Respondent] Chairman Blumenthal, Ranking Member Hawley, Members of the Subcommittee, my name is Brad Smith. I'm the vice chair and president of Microsoft. And thank you for the opportunity to be here today. And I think more importantly, thank you for the work that you have done to create the framework you've shared.\nChairman Blumenthal, I think you put it very well.\nFirst, we need to learn and act with dispatch. And Ranking Member Hawley, I think you offered real words of wisdom. Let's learn from the experience the whole world had with social media, and let's be clear-eyed about the promise and the peril in equal measure as we look to the future of AI.\nI would first say, I think, your framework does that. It doesn't attempt to answer every question by design. But it's a very strong and positive step in the right direction, and puts the U.S. Government on the path to be a global leader in ensuring a balanced approach that will enable innovation to go forward with the right legal guardrails in place.\nAs we all think about this more, I think it's worth keeping three goals in mind.\nFirst, let's prioritize safety and security, which your framework does. Let's require licenses for advanced AI models and uses in high-risk scenarios. Let's have an agency that is independent, and can exercise real and effective oversight over this category. And then, let's couple that with the right kinds of controls that will ensure safety of the sort that we've already seen, I think, start to emerge in the White House commitments that were launched on July 21st.\nSecond, let's prioritize, as you do, the protection of our citizens and consumers. Let's prioritize national security-- always in a sense, in some ways, the first priority of the Federal Government. But let's think as well as you have about protecting the privacy, the civil rights, and the needs of kids among many other ways of working and ensure we get this right.\nLet's take the approach that you are recommending. Namely, focus not only on those companies that develop AI, like Microsoft, as well as companies that deploy AI, like Microsoft. In different categories, we're going to need different levels of obligations.\nAnd as we go forward, let's think about the connection between, say, the role of a central agency that will be on point for certain things, as well as the obligations that, frankly, will be part of the work of many agencies and, indeed, our courts as well.\nAnd let's do one other thing, as well--maybe it's one of the most important things we need to do so that we ensure that the threats that many people worry about remain part of science fiction and don't become a new reality. Let's keep AI under the control of people. It needs to be safe. And to do that, as we've encouraged, there need to be safety breaks, especially for any AI application or system that controls critical infrastructure.\nIf a company wants to use AI to, say, control the electrical grid, or all of the self-driving cars on our roads, or the water supply, we need to learn from so many other technologies that do great things but also can go wrong. We need a safety break. Just like we have a circuit breaker in every building and home in this country to stop the flow of electricity if that's needed.\nThen I would say let's keep one third goal in mind, as well. This is the one where I would suggest you maybe consider doing a bit more to add to the framework. Let's remember the promise that this offers. Right now if you go to State capitals, you go to other countries, I think there's a lot of energy being put on that.\nWhen I see what Governor Newsom is doing in California, or Governor Burgum in North Dakota, or Governor Youngkin in Virginia, I see them at the forefront of figuring out how to use AI to, say, improve the delivery of healthcare, advance medicine, improve education for our kids, and, maybe most importantly, make government services more accessible and more efficient.\nLet's see if we can find a way to not only make government better by using this technology, but cheaper--or use the savings to provide more and better services to our people. That would be a good problem to have the opportunity to consider.\nIn sum, Professor Hartzog has said this is not a time for half measures. It is not. He is right. Let's go forward as you have recommended. Let's be ambitious and get this right. Thank you.\n[Interviewer] (Chair Blumenthal) Thank you, Professor Hartzog. And I take very much to heart your imploring us against half measures. I think listening to both Senator Hawley and myself, you have a sense of boldness and initiative.\nAnd we welcome all of the specific ideas, most especially Mr. Smith, your suggestion that we can be more engaged and proactive at the State level or Federal level in making use of AI in the public sector.\nBut taking the thought that Professor Hartzog has so importantly introduced, AI technology in general is not neutral. How do we safeguard against the downsides of AI, whether it's discrimination or surveillance? Will this licensing regime and oversight entity be sufficient? And what kind of powers do we need to give it?\n[Respondent] Well, I would say, first of all, I think that a licensing regime is indispensable in certain high-risk scenarios, but it won't be sufficient to address every issue.\nBut it's a critical start. Because I think what it really ensures is especially, say, for the frontier models, the most advanced, as well as certain applications that are highest risk, frankly, you do need a license from the Government before you go forward.\nAnd that is real accountability. You can't drive a car until you get a license. You can't make the model or the application available until you pass through that gate.\nI do think that it would be a mistake to think that one single agency or one single licensing regime would be the right recipe to address everything, especially when we think about the harms that we need to address.\nAnd that's why I think it's equally critical that every agency in the Government that is responsible for the enforcement of the law and the protection of people's rights, master the capability to assess AI. I don't think we want to move the approval of every new drug from the FDA to this agency. So by definition, the FDA is going to need, for example, to have the capability to assess AI. That would be just one of several additional specifics that I think one can think about.\n[Interviewer] (Senator Hawley) Thank you, Mr. Chairman. Thanks, again, to the witnesses for being here. I want to particularly thank you, Mr. Smith. I know that there's a group of other--your colleagues, your counterparts in industry who are gathering, I think, tomorrow. And that is what it is.\nBut I appreciate you being willing to be here in public and answer questions in front of the presses here. And this is open to anybody who wants to see it. And I think that's the way that this ought to be done. I appreciate you being willing to do that.\nYou mentioned protecting kids. I just want to start with that, if I could. I want to ask you a little bit about what Microsoft has done and is doing. Kids use your Bing chatbot. Is that fair to say?\n[Respondent] Yes. We have certain age controls, so we don't let a child of any age. But yes, in general, it is possible for children to register if they're of a certain age.\n[Interviewer] (Senator Hawley) And the age is?\n[Respondent] I'm trying to remember, as I sit here. I'll get you----\n[Interviewer] (Senator Hawley) I think it's 13.\n[Respondent] The answer.\n[Interviewer] (Senator Hawley) Does that sound right?\n[Respondent] It would----\n[Interviewer] (Senator Hawley) Maybe Senator----\n[Respondent] I was going to say 12 or 13.\n[Interviewer] (Senator Hawley) Okay.\n[Respondent] I'll take it, at 13.\n[Interviewer] (Senator Hawley) Do you have some sort of age verification? I mean, how do we know what age--I mean, obviously, the kid can put in whatever age he or she wants to. Is there some form of age verification for Bing?\n[Respondent] We do have age verification systems that then involve, typically, getting permission from a parent. And we use this across our services, including for gaming. I don't remember off the top of my head exactly how it works, but I'd be happy to get you the details.\n[Interviewer] (Senator Hawley) Great. My impression is that Bing Chat doesn't really have an enforceable age verification. I mean, there's no way really to know, but again, you correct me if that's wrong.\nLet me ask you this, what happens to all of the information that our hypothetical 13-year-old is putting into the tool as it's having this chat? You know, I mean, they could be chatting about anything and going back and forth on any number of subjects. What happens to that info that the kid puts in?\n[Respondent] Well, the most important thing I would say, first, is that it all is done in a manner that protects the privacy of children. This is----\n[Interviewer] (Senator Hawley) And how is that?\n[Respondent] Well, we follow the rules in COPPA, which is, you know, exists to protect child online privacy. And it forbids using it for tracking. It forbids its use for advertising or for other things. It seeks to put very tight controls around the use and the retention of that information.\nThe second thing I would just add to that is in addition to protecting privacy, we are hyper-focused on ensuring that, in most cases, people of any age, but especially children, are not able to use something like Bing Chat in ways that would cause harm to themselves or to others.\n[Interviewer] (Senator Hawley) And how do you do that?\n[Respondent] We basically have a safety architecture that we use across the board. Think about it like this, there's two things around a model.\nThe first is called a classifier so that if somebody asks, ``How can I commit suicide tonight?'' ``How can I blow up my school tomorrow?'' that hits a classifier that identifies a class of questions, or prompts, or issues.\nAnd then second, there's what we call Meta-Prompts and that we intervene so that the question is not answered. If someone asks how to commit suicide, we typically would provide a response that encourages someone to get mental health assistance and counseling, and tells them how. If somebody wants to know how to build a bomb, it says, no, you cannot use this to do that.\nAnd that fundamental safety architecture is going to evolve, it's going to get better. But in a sense, it's at the heart, if you will, of both what we do and, I think, the best practices in the industry. And I think part of what this is all about, that we're talking about here, is how we take that architectural element and continue to strengthen it.\n[Interviewer] (Senator Hawley) Very good. That's helpful. Let me ask you about the information--back to the kids' information for a second. Is it stored in the United States? Is it stored overseas?\n[Respondent] If the child is in the United States, the data is stored in the United States. It's true not only for children, it's for adults as well.\n[Interviewer] (Senator Hawley) And who has access to that data?\n[Respondent] The child has access if--you know, the parents may or may not have access. Typically, we give----\n[Interviewer] (Senator Hawley) In what circumstances would the parents have access?\n[Respondent] I would have to go get you the specifics on that. Our general principle is this--and this is something we've implemented in the United States even though it's not legally required in the United States. It is legally required, as you may know, in Europe--people, we think, have a right to find out what information we have about them. They have the right to see it. They have the right to ask us to correct it, if it's wrong. They have the right to ask us to delete it, if that's what they want us to do.\n[Interviewer] (Senator Hawley) And you do that? If they ask you to delete it, you delete it?\n[Respondent] We'd better. Yes. That's our promise. And we do a lot to comply with that.\n[Interviewer] (Senator Hawley) Sorry. Right.\nLet me just--before I leave this subject, last thing, just about the kids' personal data and where it's stored. I'm asking you this, as I'm sure you can intuit, because we've seen other technology companies in the social media space who have major issues about where data is stored and major access issues.\nAnd I'm thinking of it, it shouldn't be hard to guess, I'm thinking, in particular, of China, where we've seen other social media companies who say, ``Oh, well, America's data is stored in America.''\nBut guess what? Lots of people in other countries can access that data.\nSo is that true for you, Mr. Smith? Is a child's data that they've entered into the Bing Chat that's stored in the United States--you just said, if they're an American citizen--can that be accessed in, let's say, China, by a Microsoft China-based engineer?\n[Respondent] I don't believe so. I'd love to go back and just, you know, confirm that. But I don't believe----\n[Interviewer] (Senator Hawley) Would you? Would you be able to get that for me for the record?\n[Respondent] Sure.\n[Interviewer] (Senator Klobuchar) Thank you, very much. Thank you, all of you. I think I will lead with some elections questions, since I'm the Chair of the Rules Committee.\nMr. Smith, in your written testimony you talked about how watermarks could be helpful disclosure of AI material.\nAs you know, and we have talked about, I have a bill that I lead--that Representative Clark leads in the House--to require disclaimer and some kind of mark on AI-generated ads. I think we have to go further. We'll get to that in a minute, Professor Hartzog.\nBut could you talk about what you mean by in your written testimony, ``the health of democracy and meaningful civic discourse will undoubtedly benefit from initiatives that help protect the public against deception or fraud facilitated by AI-generated content'' ?\n[Respondent] Absolutely. And here I do think things are moving quickly, both in a positive and a worrisome direction, in terms of what we're seeing. On the positive side, I think you're seeing the industry come together. You're seeing a company like Adobe, I think, exercise real leadership, and there's a recipe that I see emerging.\nI think it starts with the first principle: People should have the right to know if they're getting a phone call from a computer, from AI, if there's content coming from an AI system rather than a human being.\nWe then need to make that real with legal rights that back it up. We need to create what's called a provenance system, watermarking for legitimate content so that it can't be altered easily without our detection to create a deepfake.\nWe need to create an effort that brings the industry and, I think, governments together so we know what to do and there's a consensus when we do spot deepfakes, especially, say, even deepfakes that have altered legitimate content.\n[Interviewer] (Senator Klobuchar) Thank you.\n[Respondent] So that would----\n[Interviewer] (Senator Klobuchar) And let's get to that----\n[Respondent] Be the first one.\n[Interviewer] (Senator Klobuchar) Okay. I'll ask Mr. Smith back where I started here. Some AI platforms use local news content without compensating journalists and papers, including by using their content to train AI algorithms.\nThe Journalism Competition and Preservation Act, a bill I have with Senator Kennedy, would allow local news organizations to negotiate with online platforms, including generative AI platforms, that use their content without compensation.\nCould you talk about the impacts that AI could have on local journalism? You talked about, in your testimony, about the importance of investment and quality journalism. But where we're getting at, we've got to find a way that we make sure that the people who are actually doing the work are compensated in many ways, but also in journalism. Mr. Smith.\n[Respondent] I would just say three quick things.\nNumber one, look, we need to recognize that local journalism is fundamental to the health of the country and the electoral system. And it's ailing. So we need to find ways to preserve and promote it.\nNumber two, generally, I think we should let local journalists and publications, you know, make decisions about whether they want their content to be available for training, or grounding, and the like. And that's a big topic, and it's worthy of more discussion. And we should certainly let them, in my view, negotiate collectively, because that's the only way local journalism is really going to negotiate effectively.\n[Interviewer] (Chair Blumenthal) That's alright.\n[Respondent] No, but then I will just say, and there are ways that we can use AI to help local journalists. And we're interested in that, too. So let's add that to the list.\n[Interviewer] (Senator Hirono) Thank you, Mr. Chairman. Mr. Smith, it's good to see you, again. So every time we have one of these hearings, we learn something new. But the conclusion I've drawn is that AI is ubiquitous. Anybody can use AI. It can be used in any endeavor. So when I hear you folks testifying about how we shouldn't be taking half measures, I'm not sure what that means.\nWhat does it mean not taking half measure on something as ubiquitous as AI, where there are other regulatory schemes that can touch upon those endeavors that use AI? So, you know, there's always a question I have of when we address something as complex as how AI is looking, that there are unintended consequences that we should care about. Would you agree? Anybody? Mr. Smith?\n[Respondent] I would absolutely agree. I think we have to define what's a full measure and what's a half measure. But I bet we can all agree that half measures are not good enough.\n[Interviewer] (Senator Hirono) Well, that is the thing. How to recognize, you know, going forward, what is actually going to help us with this powerful tool. So I have a question for you, Mr. Smith. It is a powerful tool that can be used for either good, or it can also be used to spread a lot of disinformation and misinformation.\nAnd that happened during the disaster on Maui. And Maui residents were subject to disinformation, some of it coming from foreign governments, i.e., Russia, looking to sow confusion and distress, including, ``Don't sign up for FEMA because they cannot be trusted.'' And I worry that with AI, such information will only become more rampant with future disasters.\nDo you share my concern about misinformation in the disaster context in the role AI could play? And what can we do to prevent these foreign entities from pushing out AI disinformation to people who are very vulnerable?\n[Respondent] I absolutely share your concern, and I think there's two things we need to think about doing.\nFirst, let's use the power of AI, as we are, to detect these kinds of activities when they're taking place because they can enable us to go faster--as they did in that instance where Microsoft, among others, used AI and other data technologies to identify what people were doing.\nNumber two, I just think we need to stand up as a country, and with other governments, and with the public, and sayc, there need to be some clear red lines in the world today regardless of how much else or what else we disagree about.\nWhen you think about what happens, typically, in the wake of an earthquake, or a hurricane, or a tsunami----\n[Interviewer] (Senator Hirono) Mm-hmm.\n[Respondent] Or a flood, the world comes together. People are generous, they help provide relief.\nAnd then, let's look at what happened after the fire in Maui. It was the opposite of that. We had some people, not necessarily directed by the Kremlin, but people who regularly spread Russian propaganda, trying to discourage the people of Lahaina from going to the agencies that could help them. That's inexcusable.\nAnd we saw what we believe is Chinese-directed activity trying to persuade the world, in multiple languages, that the fire was caused----\n[Interviewer] (Senator Hirono) Mm-hmm.\n[Respondent] By the United States Government itself using a meteorological weapon.\nThose are the things that we should all try to bring the international community together and agree they're off limits.\n[Interviewer] (Senator Hirono) Well, how do we identify that this is even occurring? That there is a, you know, a China- or Russia- directed misinformation going on? How do we--I didn't know this was happening, by the way.\nAnd even in the Energy Committee, on which I sit, we had people testify and I asked, you know, regarding the Maui disaster. I asked one of the testifiers whether he was aware that there had been disinformation put out by a foreign government in that example. And he said yes.\nBut I don't know that the people of Maui recognized that that was going on.\nSo how do we, one, even identify that that's going on and then, two, to come forward and say this is happening and to name names--identify that, which country it is that it's spreading this kind of disinformation and misinformation?\n[Respondent] I think we have to think about two things.\nFirst, I think we at a company like Microsoft have to lean in, and we are--with data, with infrastructure, with experts, and real-time capability to spot these threats, find the patterns, and reach well-founded conclusions.\nAnd then the second thing, this is the harder thing. This is where it's going to need all of your help. What do we do if we find that a foreign government is deliberately trying to spread false information next year in a Senate or Presidential campaign about a candidate? How do we create the room so that information can be shared and people will consider it?\n[Interviewer] (Senator Hirono) Yes.\n[Respondent] You all, with this--the most important word in your framework is bipartisan. How do we create the bipartisan framework so that when we find this, we create a climate where people can listen? I think we have to look at both of those parts of the problem together.\n[Interviewer] (Senator Hirono) Mr. Smith, I think you mentioned in your book, which I am listening to, that things like ordering something out of a drive-through, that those jobs could be gone through AI.\n[Respondent] Yes. It was 4 years ago, we published our book-- with my co-author, behind me--and we said, ``What's the first job that we think might be eliminated by AI? '' We don't have a crystal ball, but I bet it's taking an order in the drive- through of a fast food restaurant.\nYou're not really establishing a rapport with a human being. All the person does is listen and type into a computer what you're saying. So when AI can hear as well as a person, it can enter that in. And indeed, I was struck a few months ago, Wendy's, I think it was, announced that they were starting to consider whether they would automate with AI, the drive- through.\nI think there's a lesson, though, in that. And it should give us both pause, but I think a little bit of optimism. There's no creativity involved in a drive-through, at least, listening and entering an order. There are so many jobs that do involve creativity.\nSo the real hope, I think, is to use AI to automate the routine, maybe even the work that's boring, to free people up so they can be more creative, so they can focus more on paying attention to other people and helping them. And if we just apply that recipe more broadly, I think we might put ourselves on a path that's more promising.\n[Interviewer] (Senator Kennedy) Mr. Smith?\n[Respondent] Generally, yes. What I would say is, if you're listening to an audio, if you're watching a video, if you're seeing an image and it was generated by AI, I think people have a right to know.\nThe one area where I think there's a nuance is if you're using AI to, say, help you write something. Maybe it's helping you write the first draft. Just as I don't think any of us would say that when our staff helps us write something, we are obliged to give the speech and say, ``Now I'm going to read the paragraph that my staff wrote.'' You make it your own.\nAnd I think the written word is a little more complex. So we need to think that through. But as a broad principle, I agree with that principle.\n[Interviewer] (Senator Kennedy) How about you, Mr. Smith?\n[Respondent] I'm generally a believer in letting people know not only that it's generated by a computer, but who owns the-- --\n[Interviewer] (Senator Kennedy) Yes.\n[Respondent] Program that's doing it. The only qualification I would offer, and it's something you all should think about and would know better than me, there are certain areas in political speech where one has to decide whether you want people to act with anonymity. The Federalist Papers were first published under a pseudonym. And I think in the world today, I'd rather have everybody know who's speaking----\n[Interviewer] (Senator Kennedy) Okay.\n[Respondent] think about it.\n[Interviewer] (Senator Hawley) Yes, yes.\nLet me just--Mr. Smith, let me come back to this. We were talking about kids, and kids' privacy and safety. Thanks for the information you're going to get me. Let me give you an opportunity, though, to maybe make a little news today in the best possible way.\nThirteen, the age limit for Bing's Chat. That's such a young age. I mean, listen, I've got three kids at home; 10, 8, 2 are my kids. I can't--I don't want my kids to be interacting in the chatbots anytime soon at all. But 13 is so incredibly young.\nWould you commit today to raising that age? And would you commit to a verifiable age verification procedure such that parents can know, they can have some sense of confidence that their 12-year-old is not just saying to Bing, ``Yes, yes, yes, I'm 13. Yes, I'm 15. Sure. Go right on ahead. `Now let's get into it back and forth with this robot' ''--as Senator Kennedy said. Would you commit to those things on behalf of child safety today?\n[Respondent] Look, as you can imagine, the teams that work at Microsoft let me go out and speak, but they probably have one principle they want me to remember: Don't go out and make news without talking to them first.\n[Interviewer] (Senator Hawley) But you're the boss.\n[Respondent] Yes. Let's just say wisdom is important. And most mistakes you make, you make when you make them by yourself. I'm happy to go back and talk more about what the right age should be. That's----\n[Interviewer] (Senator Hawley) Don't you think 13 is awfully low, though?\n[Respondent] It depends for what, actually.\n[Interviewer] (Senator Hawley) To interact with a robot----\n[Respondent] No.\n[Interviewer] (Senator Hawley) Who could be telling you to do any number of things. Don't you think that's awfully young?\n[Respondent] Not necessarily. Let me describe----\n[Interviewer] (Senator Hawley) Really?\n[Respondent] It is the scenario. When I was in Seoul, Korea, a couple of months ago, we met with the deputy prime minister, who's also the minister of education. And they're trying to create for three topics that are very objective: math, coding, and learning English--a digital textbook with an AI tutor. So that if you're doing math and you don't understand a concept, you can ask the AI tutor to help you solve the problem.\nAnd by the way, I think it's useful not only for the kids, I think it's useful for the parents. And I think it's good. Let's just say a 14-year-old, let's say--what's the age of eighth grade algebra? You know, most parents say--I found when my kids were in eighth grade algebra, I tried to help them with their homework, they didn't believe I ever made it through the class. I think we want kids, in a controlled way with safeguards, to use something that way.\n[Interviewer] (Senator Hawley) But we're not talking here about tutors. Well, I'm talking about your AI chat, Bing Chat. I mean, famously, earlier this year, your chatbot--you had a technology writer for The New York Times who wrote about this. I'm looking at the article right now. Your chatbot was urging this person to break up his marriage.\n[Respondent] I'm not sure----\n[Interviewer] (Senator Hawley) Do we want 13-year-olds to be having those conversations?\n[Respondent] No, of course not.\n[Interviewer] (Senator Hawley) Okay.\n[Respondent] Which is why----\n[Interviewer] (Senator Hawley) Well, will you commit to raising the age?\n[Respondent] I actually don't want Bing Chat to break up anybody's marriage.\n[Interviewer] (Senator Hawley) I don't either.\n[Respondent] So--but, but, but that----\n[Interviewer] (Senator Kennedy) There might be some exceptions.\n[Respondent] Yes. But we're not going to make the decision on the exception. The--no, but it goes to--this is--we have multiple tools. Age is a very red line.\n[Interviewer] (Senator Hawley) It is a very red line----\n[Respondent] And there's----\n[Interviewer] (Senator Hawley) That's why I like it.\n[Respondent] And my point is, there is a safety architecture that we can apply to bring----\n[Interviewer] (Senator Hawley) But your safety architecture didn't stop an adult. Didn't stop the chatbot from having this discussion with an adult in which it said, ``You don't really love your wife. You want to--your wife isn't good for you. She doesn't really love you.''\nNow, can you im--this is an adult. Can you imagine the kind of things that your chatbot would say to a 13-year-old? I mean, I'm serious about this. Do you really think this is a good idea?\n[Respondent] Yes. But look, wait a second. Let's put that in context. At a point where the technology had been rolled out for only 20,000 people, a journalist for The New York Times spent 2 hours on the evening of Valentine's Day, ignoring his wife, and interacting with a computer, trying to break the system, which he managed to do. We didn't envision that use. And then----\n[Interviewer] (Senator Hawley) Have you----\n[Respondent] The next day we had fixed it----\n[Interviewer] (Senator Hawley) Have you--but----\n[Respondent] That's the key thing.\n[Interviewer] (Senator Hawley) Are you telling me that you've envisioned all the questions that 13-year-olds might ask, and that I, as a parent, should be--should be absolutely fine with that? Are you telling me that I should trust you in the same way that The New York Times writer did?\n[Respondent] What I am saying is, I think as we go forward, we have an increasing capability to learn from the experience of real people and----\n[Interviewer] (Senator Hawley) Yes, see, that's what----\n[Respondent] What the right----\n[Interviewer] (Senator Hawley) Worries me. That's exactly what worries me. Is what you're saying is we have to have some failures. I don't want 13-year-olds to be your guinea pig. I don't want 14-year-olds to be your guinea pig. I don't want any kids to be your guinea pig. I don't want you to learn from their failures.\nYou want to learn from the failures of your scientists, go right ahead. Let's not learn from the failures of America's kids. This is what happened with social media. We had social media who made billions of dollars giving us a mental health crisis in this country. They got rich, the kids got depressed, committed suicide. Why would we want to run that experiment again with AI? Why not raise the age? You could do it.\n[Respondent] We shouldn't want--first of all, we shouldn't want anybody to be a guinea pig. I think that, regardless of age or anything else----\n[Interviewer] (Senator Hawley) Good. Well, let's roll kids out right here. Right today, right now.\n[Respondent] No. But let's also recognize that technology does require real users. What's different about this technology and, which is so fundamentally different, in my view, from the social media experience, is that we not only have the capacity, but we have the will. And we are applying that will to fix things in hours and days.\n[Interviewer] (Senator Hawley) Well--yes, to fix things after there's been--after the fact. I mean, I'm sorry. It just sounds to me like you're boiling down and you're saying, ``Trust us. We're going to do well with this.'' I'm just asking you why we should trust you with our children.\n[Respondent] I'm not asking for trust. Although, I hope we will work every day to earn it. That's why you have a licensing obligation.\n[Interviewer] (Senator Hawley) There isn't a licensing obligation----\n[Respondent] That's why----\n[Interviewer] (Senator Hawley) Right now.\n[Respondent] In your framework, in my view----\n[Interviewer] (Senator Hawley) Well, sure. But I'm asking you as the president of this company to make a commitment now for child safety and protection to say, ``You know what? Microsoft is going to''--you can tell every parent in America now: ``Microsoft is going to protect your kids. We will never use your kids as a science experiment ever. Never. And therefore, we're not going to allow your--we're not going to target your kids, and we're not going to allow your kids to be used by our chatbots as a source of information if they're younger than 18.''\n[Respondent] But I think you're talking about--with all due respect, there's two things that you're talking about. And I think we're----\n[Interviewer] (Senator Hawley) I'm just talking about protecting kids. This is very simple. Yes.\n[Respondent] Yes. No, but we don't want to use kids as a source of information and monetizing, etc. But I am equally of the view, I don't want to cut off an eighth grader today with the right or ability to use this tool that will help them learn algebra or math in a way that they couldn't a year ago.\n[Interviewer] (Senator Hawley) Yes. Well [holds up document], with all due respect, it wasn't algebra or math that your chatbot was recommending or talking about when it was trying to break up some reporter's marriage.\n[Respondent] Of course not. But now we're mixing things and-- --\n[Interviewer] (Senator Hawley) No, we're not. We're talking about your chatbot. We're talking about Bing Chat.\n[Respondent] Of course we're talking about Bing Chat. And I'm talking about the protection of children, and how we make technology better. And yes, there was that episode back in February on Valentine's Day. Six months later, if that journalist tries to do the same thing again, it will not happen.\n[Interviewer] (Senator Klobuchar) I just don't want to miss my vote.\n[Respondent] There's other--there's other witnesses.\n[Interviewer] (Senator Klobuchar) I wanted to thank Mr. Smith for wearing a purple Vikings tie. I know that that maybe was an AI- generated message that you got to know that this would be a smart move with me after their loss on Sunday. I will remind you, they're playing Thursday night, so.\n[Respondent] As a native of Wisconsin, I can assure you it was an accident.\n[Interviewer] (Senator Blackburn) Thank you, Mr. Chairman.\nMr. Smith, I want to come to you first and talk about China and the Chinese Communist Party. The way they have gone about-- and we've seen a lot of it on TikTok. They have these influence campaigns that they are running to influence certain thought processes with the American people.\nI know you all just did a report on China. You covered some of the disinformation, some of the campaigns. So talk to me a little bit about how Microsoft, but then the industry as a whole, can combat some of these campaigns.\n[Respondent] I think there's a couple of things that we can think more about and do more about.\nThe first is, we all should want to ensure that our own products, and systems, and services are not used, say, by foreign governments in this manner.\nAnd I think that there's room for the evolution of export controls and next generation export controls to help prevent that. I think there's also room for a concept that's worked since the 1990s in the world of banking and financial services. It's these ``Know Your Customer'' requirements.\nAnd we've been advocates for those. So that if there is abuse of systems, the company that is offering the service knows who is doing it and is in a better position to stop it from happening.\nI think the other side of the coin is using AI and advancing our defensive technologies, which really start with our ability to detect what is going on. And we've been investing heavily in that space. That is what enabled us to produce the report that we published. It is what enables us to see the patterns in communications around the world.\nAnd we're seeking to be a voice with many others that really calls on governments to, I'll say, lift themselves to a higher standard so that they're not using this kind of technology to interfere in other countries, and especially in other countries' elections\n[Interviewer] (Senator Blackburn) In the report that you all did, and you were looking at China, did you look at, what I call the other members of the axis of evil, Russia, Iran, North Korea?\n[Respondent] We did. And that specific report that you're referring to was focused on what we call--it was East Asia. Yes, we see especially prolific activities, some from China, some from Iran. And really, the most global actor in this space is Russia.\nAnd we've seen that grow during the war, but we've seen it, you know, really spiral in the recent years going back to the middle of the last decade. We estimate that the Russian government is spending more than $1 billion dollars a year on a global--what we call cyber influence operation.\nPart of it targets the United States. I think their fundamental goal is to undermine public confidence in everything that the public cares about in the United States, but it's not unique to the United States. We see it in the South Pacific. We see it across Africa. And I do think it's a problem we need to do more to counter.\n[Interviewer] (Senator Blackburn) So summing it up, you would see something like a ``Know Your Customer'' or a SWIFT system, things that apply to banking, that is there to help weed it out. You think that companies should increase their due diligence to make certain that their systems are appropriate, and then being careful about doing business with countries that may misuse a certain technology?\n[Respondent] Generally, yes. I think----\n[Interviewer] (Senator Blackburn) Yes.\n[Respondent] One can look at the specific scenarios and what's more high-risk, but a ``Know Your Customer'' requirement. We've also said a ``Know Your Cloud'' requirement, in effect----\n[Interviewer] (Senator Blackburn) Okay.\n[Respondent] So that these systems are deployed in secure data centers.\n[Interviewer] (Chair Blumenthal) Mr. Smith?\n[Respondent] Three thoughts.\nNumber one, 2024 is a critical year for elections, not only in this country. But it's not only for the United States, it's for the United Kingdom, for India, across the European Union. More than two billion people will vote for who is going to represent them. And so this is a global issue for the world's democracies.\nNumber two, I think you're right to focus in particular on the First Amendment because it's such a critical cornerstone for American political life and the rights that we all enjoy. And yet, I will also be quick to add, I don't think the Russian government qualifies for protection under the First Amendment.\nAnd if they're seeking to interfere in our elections, then I think that the country needs to take a strong stand, and a lot of thought needs to be given as to how to do that effectively.\nBut then number three--and this I think goes to the heart of your question and why it's such a good one--I think it's going to require some real thought discussion and an ultimate consensus to emerge, let me say, around one specific scenario.\nLet's imagine for a moment that there is a video that involves a Presidential candidate that originally was giving a speech. And then let's imagine that someone uses AI to put different words into the mouth of that candidate, and uses AI technology to perfect it to a level that it is difficult for people to recognize as fraudulent.\nThen you get to this question, what should we do? And at least as I've been trying, and we've been trying to think this through, I think we have two broad alternatives. One is we take it down, and the other is we relabel it.\nIf we do the first, then we're acting as censors. And I do think that makes me nervous. I don't think that's really our role to act as censors. And the Government really cannot, I think, under the First Amendment. But relabeling to ensure accuracy, I think that is probably a reasonable path. But really what this highlights is the discussion still to be had, and I think, the urgency for that conversation to take place.\n[Interviewer] (Senator Hawley) Mr. Smith, let me just come back to something you said, thinking about now workers. You talked about Wendy's, I think it was, that automating the drive- through and talking about, you know, this was a good thing. I just want to press on that a little bit.\nIs it--is it a good thing that workers lose their jobs to AI, whether it's at Wendy's, or whether it's at Walmart, or whether it's at the local hardware store? I mean, is it--you pointed out that--your comment was that there's really no creativity involved in taking orders through the drive-through. But that is a job, oftentimes a first job for younger Americans.\nBut hey, in this economy where the wages of blue collar workers have been flat for 30, 40 years and running, what worries me is that oftentimes what we hear from the tech sector, to be honest with you, is that jobs that don't have creativity, as tech defines, that don't have value. I'm frankly scared to death that AI will replace lots of jobs that tech types think aren't creative and will leave even more blue collar workers without any place to turn.\nSo my question to you is, can we expect more of this? And is it really progress for folks to lose those kind of jobs that, you know--I'd suspect that's not the best paying job in the world, but at least it's a job. And do we really want to see more of these jobs lost?\n[Respondent] Well, to be clear, at first I didn't say whether it was a good or bad thing. I was asked to predict what jobs would be impacted and I identified that job as one that likely would be.\nBut let's, I think, step back, because I think your question is critically important. Let's first reflect on the fact that, you know, we've had about 200 years of automation that have impacted jobs, sometimes for the better, sometimes for the worst.\nIn Wisconsin, where I grew up, or in Missouri, where my father grew up, if you go back 150 years, it took 20 people to harvest an acre of wheat or corn. And now it takes one. So 19 people don't work on that acre anymore. And that's been an ongoing part of technology.\nThe real question is this, how do we ensure that technology advances so that we help people get better jobs, get the skills they need for those jobs, and hopefully, do it in a way that broadens economic opportunity rather than narrows it.\nI think the thing we should be the most concerned by is that since the 1990s, and I think this is the point you're making, if you look at the flow of digital technology--you know, fundamentally we've lived in a world that has widened the economic divide.\nThose people with a college or graduate education have seen their incomes rise in real terms. Those people with, say, a high school diploma or less, have seen their income level actually drop compared to where it was in the 1990s.\nSo what do we do now? Well, I'll at least say what I think our goal should be. Can we use this technology to help advance productivity for a much broader range of people, including people who didn't have the good fortune to go to, say, where you or I went to college or law school?\nAnd can we do it in a way that not only makes them more productive, but actually reaps some of the dividends of that productivity for themselves in a growing income level? I think it's that conversation that we need to have.\n[Interviewer] (Senator Hawley) Yes. I agree with you, and I hope that that is--I hope that that's what AI could do. You talked about the farm used to take 20 people to do what one person could do. It used to take thousands of people to produce textiles, or furniture, or other things in this company where now it's zero. So we can tell the tale in different ways.\nI'm not sure that seeing working class jobs go overseas or be replaced entirely is a success story. In fact, I'd argue it's not at all. It's not a success story. And I'd argue more broadly that our economic policy the last 30 years has been downright disastrous for working people.\nAnd tech companies, and financial institutions, and, certainly, banks, and Wall Street, they have reaped huge profits, but blue collar workers can barely find a good-paying job.\nI don't want AI to be the latest accelerant of that trend. And so I don't really want every service station in America to be manned by some computer such that nobody can get a job anymore, get their foot in the door, or start their climb up the ladder. That that worries me.\nLet me ask you about something else here in my expiring time. You mentioned national security.\n[Respondent] Mm-hmm.\n[Interviewer] (Senator Hawley) Critically important. Of course, there's no national security threat that is more significant for the United States than China. Let me just ask you, is Microsoft too entwined with China?\nYou have the Microsoft Research Asia that was set up in Beijing back in the late 1990s. You've got centers now in Shanghai and elsewhere. You've got all kinds of cooperation with Chinese state-owned businesses. I'm looking at an article here from Protocol Magazine where one of their contributors said that Microsoft had been the alma mater of Chinese big tech.\nAre you concerned about your degree of entwinement with the Chinese government? Do you need to be decoupling in order to make sure that our national security interests aren't fatally compromised?\n[Respondent] I think it's something that we need to be and are focused on. To some degree in some technology fields, Microsoft is the alma mater of the technology leaders in every country in the world because of the role that we've played over the last 40 years.\nBut when it comes to China today, we are and need to have very specific controls on who uses our technology, and for what, and how. That's why we don't, for example, do work on quantum computing, or we don't provide facial recognition services, or focus on synthetic media, or a whole variety of things.\nWhile at the same time, when Starbucks has stores in China, I think it's good that they can run their services in our data center rather than a Chinese company's data center.\n[Interviewer] (Senator Hawley) Well, just on facial recognition, I mean, back in 2016, your company released this database, MS-Celeb, 10 million faces without the consent of the folks who were in the database. You eventually took it down although it took 3 years. China used that database to train much of its facial recognition software and technology.\nI mean, it isn't that a problem? You said that Microsoft might be the alma mater of many companies AI, but China's unique. No? I mean, China is running concentration camps using digital technology like we've never seen before. I mean, isn't that a problem for your company to be in any way involved in that?\n[Respondent] We don't want to be involved in that in any way, and I don't believe we are. I think that----\n[Interviewer] (Senator Hawley) Are you going to close your centers in China, your Microsoft Research Asia, Beijing, or your center in Shanghai?\n[Respondent] I don't think that will accomplish what you are asking us----\n[Interviewer] (Senator Hawley) You're running thousands of people through your centers out into the Chinese government and Chinese state- owned enterprises. Isn't that a problem?\n[Respondent] First of all, there's a big premise, and I don't embrace the premise that that is in fact what we're doing. We are----\n[Interviewer] (Senator Hawley) Well, which part is wrong?\n[Respondent] The notion that we're running thousands of people through, and then they're going into the Chinese government----\n[Interviewer] (Senator Hawley) Is that not right? I thought you had 10,000 employees in China whom you've recruited from Chinese state- owned agencies, Chinese state-owned businesses. They come work for you, and then they go back to these state-owned entities.\n[Respondent] We have employees in China. In fact, we have that number. I don't--to my knowledge, that is not where they're coming from. That is not where they're going. We are not running that kind of revolving door. And it's all about what we do and who we do it with that I think is of paramount importance, and that's what we're focused on.\n[Interviewer] (Senator Hawley) You'd condemn what the Chinese government's doing to the Uyghurs, and the Xinjiang Province, and all of that?\n[Respondent] We do everything we can to ensure that our technology is not used in any way for that kind of activity in China and around the world, by the way.\n[Interviewer] (Senator Hawley) But you condemn it, to be clear?\n[Respondent] Yes.\n[Interviewer] (Senator Hawley) What are your safeguards that you have in place such that your technology is not further enabling the Chinese government, given the number of people you employ there and the technology you develop there?\n[Respondent] Well, you take something like facial recognition, which is at the heart of your question. We have very tight controls that limit the use of facial recognition in China, including controls that, in effect, make it very difficult, if not impossible, to use it for any kind of real time surveillance at all.\nAnd by the way, the thing we should remember, the U.S. is a leader in many AI fields. China's the leader in facial recognition technology and the AI for it. And----\n[Interviewer] (Senator Hawley) Well, in part because of the information that you helped them acquire. No?\n[Respondent] No. It's because they have the world's most data.\n[Interviewer] (Senator Hawley) Well, yes, but you gave them----\n[Respondent] No.\n[Interviewer] (Senator Hawley) Ten million.\n[Respondent] Well, it--I--I don't think that's----\n[Interviewer] (Senator Hawley) You don't think that had anything to do with it?\n[Respondent] I don't think--when you have a country of 1.4 billion people and you decide to have facial recognition used in so many places, it gives that country a mass of data.\n[Interviewer] (Senator Hawley) But are you saying that the database that Microsoft released in 2016, MS-Celeb, you're saying that that wasn't used by the Chinese government to train their facial recognition?\n[Respondent] I am not familiar with that, and I add it to the list. I'd be happy to provide you with information.\n[Interviewer] (Senator Hawley) Okay.\n[Respondent] But my goodness, the advance in that facial recognition technology--if you go to another country where they're using facial recognition technology, it's highly unlikely it's American technology. It's highly likely that it's Chinese technology because they are such leaders in that field.\nWhich I think is fine. I mean, if you want to pick a field where the United States doesn't want to be a technology leader, I'd put facial recognition technology on that list. But let's recognize it's homegrown.\n[Interviewer] (Senator Hawley) How much money has Microsoft invested in AI development in China?\n[Respondent] I don't know, but I will tell you this--okay. The revenue that we make in China, which accounts for, what, about one out of every six humans on this planet? It's 1.5 percent of our global revenue. It's not the market for us that it is for other industries or even some other tech companies.\n[Interviewer] (Senator Hawley) Sounds then like you can afford to decouple?\n[Respondent] But is that the right thing to do?\n[Interviewer] (Senator Hawley) Yes. And again, a regime that is fundamentally evil, that is inflicting the kind of atrocities on its own citizens that you just alluded to, that is doing to the Uyghurs, what it's doing, that it's running modern day concentration camps--yes, I think it is.\n[Respondent] But there's two questions that I think are at least are worthy of thought. Number one, do you want General Motors to sell or manufacture cars--let's just say sell cars in China? Do you want to create jobs for people in Michigan or Missouri so that those cars can be sold in China? If the answer to that is yes, then think about the second question.\nHow do you want General Motors in China to run its operations, and where would you like it to store its data? Would you like it to be in a secure data center run by an American company, or would you like it to be run by a Chinese company?\nWhich will better protect General Motors' trades secrets? I'll argue we should be there so that we can protect the data of American companies, European companies, Japanese companies. Even if you disagree on everything else, that I believe serves this country well.\n[Interviewer] (Senator Ossoff) Thank you, Mr. Chairman. And thank you, all, for your testimony. Just getting down to the fundamentals, Mr. Smith. If we're going to move forward with a legislative framework or a regulatory framework, we have to define clearly in legislative text precisely what it is that we are regulating.\nWhat is the scope of regulated activities, technologies, and products? So how should we consider that question? And how do we define the scope of technologies, the scope of services, the scope of products that should be subject to a regime of regulation that is focused on artificial intelligence?\n[Respondent] I think there's three layers of technology on which we need to focus in defining the scope of legislation and regulation.\nFirst is the area that has been the central focus of 2023 in the executive branch, and here on Capitol Hill. It's these so-called frontier or foundation models that are the most powerful, say, for something like generative AI.\nIn addition, there are the applications that use AI, or as Senators Blumenthal and Hawley have said, ``the deployers of AI.'' If there is an application that calls on that model in what we consider to be a high-risk scenario, meaning it could make a decision that would have an impact on, say, the privacy rights, the civil liberties, the rights of children or needs of children, then I think we need to think hard, and have law and regulation that is effective to protect Americans.\nAnd then the third layer is the data center infrastructure where these models and where these applications are actually deployed. And we should ensure that those data centers are secure, that there are cybersecurity requirements that the companies, including ours, need to meet.\nWe should ensure that there are safety systems at one, two, or all three levels if there is an AI system that is going to automate and control, say, something like critical infrastructure, such as the electrical grid.\nSo those are the areas where we would say start there with some clear thinking, and a lot of effort to learn and apply the details--but focus there.\n[Interviewer] (Senator Ossoff) As more and more models are trained and developed to higher levels of power and capability, there will be a proliferation--there may be a proliferation of models-- perhaps not the frontier models, perhaps not those at the bleeding edge--that use the most compute of all, powerful enough to have serious implications.\nSo is the question, which models are the most powerful in a moment in time, or is there a threshold of capability or power that should define the scope of regulated technology?\n[Respondent] I think you've just posed one of the critical questions that, frankly, a lot of people inside the tech sector, and across the Government, and in academia, are really working to answer. And I think the technology is evolving and the conversation needs to evolve with it.\nLet's just posit this: There's something like GPT-4 from OpenAI. Let's just posit it can do 10,000 things really well. It's expensive to create, and it's relatively easy to regulate in the scheme of things because there's 1, or 2, or 10.\nBut now let's go to where you're going, which I think is right. What does the future bring in terms of proliferation? Imagine that there's an academic at Professor Hartzog's university who says, ``I want to create an open source model. It's not going to do 10,000 things well, but it's going to do 4 things well. It won't require as many NVIDIA GPUs. It won't, you know, require as much data.''\nBut let's imagine that that could be used to create the next virus that could spread around the planet. Then you'd say, ``Well, we really need to ensure that there's safety, architecture, and controls around that, as well.''\nAnd that's the conundrum. That's why this is a hard problem to solve. It's why we're trying to build safety architecture in our data centers so that open-source models can, say, run in them, and still be used in ways that will prohibit that kind of harm from taking place.\nBut as you think about a licensing regime, this is one of the hard questions. Who needs a license? You don't want it to be so hard that only a small number of big companies can get it. But then you also need to make sure that you're not requiring people to get it when they really, we would say, don't need a license for what they're doing.\nAnd, you know, the beauty of the framework, in my view, is it starts to frame the issue. It starts to define the question----\n[Interviewer] (Senator Ossoff) Let me ask this question----\n[Respondent] And how we work on----\n[Interviewer] (Senator Ossoff) Is it a license to train a model to a certain level of capability? Is it a license to sell, or license access to that model? Or is it a license to purchase or deploy that model? Who is the licensed entity?\n[Respondent] That's another question that is key and may have different answers in different scenarios, but mostly I would say it should be a license to deploy that.\nYou know, I think that there may well be obligations to disclose to, say, an independent authority when a training run begins depending on what the goal--when the training run ends, so that an oversight body can follow it just the way, say, might happen when a company's building a new commercial airplane.\nAnd then there are--what's emerging--the good news is there's emerging a foundation of, call it best practices, for then how the model should be trained, what kind of testing there should be, what harms should be addressed. That's a big topic that needs----\n[Interviewer] (Senator Ossoff) When you say----\n[Respondent] Discussion.\n[Interviewer] (Senator Ossoff) Forgive me, Mr. Smith.\n[Respondent] Yes.\n[Interviewer] (Senator Ossoff) When you say, ``a license to deploy''----\n[Respondent] Yes.\n[Interviewer] (Senator Ossoff) Do you mean, for example, if a Microsoft Office product wishes to use a GPT model for some user-serving purpose within your suite, you would need a license to deploy GPT in that way? Or do you mean that GPT would require a license to offer to Microsoft?\nAnd putting aside whether or not this is a plausible commercial scenario, the question is what's the structure of the licensing arrangement?\n[Respondent] In this case, it's more the latter. Imagine-- look, think about it like Boeing. Boeing builds a new plane. Before it can sell it to United Airlines and United Airlines can start to fly it, the FAA is going to certify that it's safe.\nNow, imagine where it--call it GPT-12, whatever you want to name it. You know, before that gets released for use, I think you can imagine a licensing regime that would say that it needs to be licensed after it's been, in effect, certified as safe.\nAnd then you have to ask yourself, well, how do you make that work so that we don't have the Government slow everything down? And what I would say is you bring together three things.\nFirst, you need industry standards so that you have a common foundation and well-understood way as to how training should take place.\nSecond, you need national regulation.\nAnd third, if we're going to have a global economy, at least in the countries where we want these things to work, you probably need a level of international coordination.\nAnd I'd say, look at the world of civil aviation. That's fundamentally how it has worked since the 1940s. Let's try to learn from it and see how we might apply something like that, or other models, here.\n[Interviewer] (Senator Ossoff) Either of you want to take a stab before I get gaveled out here?\n[Respondent] I would just say you're right. There's going to need--to be a need for international coordination. I think it's more likely to come from like-minded governments than perhaps global governance, at least in the initial years. I do think there's a lot we can learn.\nWe were talking with Senator Blackburn about the SWIFT system for financial transactions.\nAnd, you know, somehow we've managed globally and especially in the United States for 30 years to have ``Know Your Customer'' requirements obligations for banks. Money has moved around the world. Nothing is perfect. I mean, that's why we have laws. But it's worked to do a lot of good to protect against, say, terrorist or criminal uses of money that would cause concern.\n[Interviewer] (Chair Blumenthal) Thank you, Senator Ossoff. I hope you are okay with a few more questions. We've been at it for a while. You've been very patient.\n[Respondent] Do we have a choice?\n[Interviewer] (Chair Blumenthal) But thank you very much. It's been very useful. I want to follow up on a number of the questions I've asked.\nFirst of all, on the international issue, there are examples and models for international cooperation. Mr. Smith, you mentioned civil aviation. The 737 MAX--I think I have it right--when it crashed, it was a plane that had to be redone in many respects.\nAnd companies' airlines around the world looked to the United States for that redesign and then approval. Civil aviation, atomic energy--not always completely effective, but it has worked in many respects.\nAnd so I think there are international models here where, frankly, the United States is a leader by example and best practices are adopted by other countries when we support them. And frankly, in this instance, the EU has been ahead of us in many respects regarding social media. And we are following their leadership by example.\nI want to come to this issue of having centers--whether they're in China or, for that matter, elsewhere in the world-- requiring safeguards so that we are not allowing our technology to be misused in China against the Uyghurs, and preventing that technology from being stolen, or people we train there from serving bad purposes.\nAre you satisfied, Mr. Smith, that it is possible, in fact, that you are doing it in China, that is preventing the evils that could resolve from doing business there in that way?\n[Respondent] I would say two things. First, I feel good about our track record, and our vigilance, and the constant need for us to be vigilant about what services we offer to whom and how they're used. It's really those three things. And I would take from that what I think is probably the conversation we'll need to have as a country about export controls more broadly.\nThere's three fundamental areas of technology where the United States is today, I would argue, the global leader.\nFirst, the GPU chips from a company like NVIDIA.\nSecond, the cloud infrastructure from a company like, say, Microsoft.\nAnd the third, is the foundation model from a firm such as OpenAI, and, of course, Google, and AWS, and other companies are global leaders as well.\nAnd I think if we want to feel that we're good in creating jobs in the United States by inventing and manufacturing here-- as you said, Senator Hawley, which I completely endorse--and good, the technology is being used properly, we probably need an export control regime that weaves those three things together.\nFor example, there might be a country in the world--let's just set aside China for a moment. Leave that out. Let's just say there's another country where you, all, in the executive branch would say, ``We have some qualms, but we want U.S. technology to be present and we want U.S. technology to be used properly,'' the way that would make you feel good.\nYou might say then we'll let NVIDIA export chips to that country to be used in, say, a data center of a company that we trust that is licensed, even here, for that use, with the model being used in a secure way in that data center with a ``Know Your Customer'' requirement, and with guardrails that put certain kinds of use off limits.\nThat may well be where Government policy needs to go, and how the tech sector needs to support the Government and work with the Government to make it a reality.\n[Interviewer] (Chair Blumenthal) Mr. Smith.\n[Respondent] Yes. It's a really important point. And what you have is the argument-counter argument. Let me for a moment channel what Senator Hawley often voices that I think is also important. Sometimes you can approach this and say, ``Look, if we don't provide this to somebody, somebody else will. So let's not worry about it.'' I get it.\nBut at the end of the day, you know, whether you're a company or a country, I think you do have to have clarity about how you want your technology to be used.\nAnd, you know, I fully recognize that there may be a day in the future after I retire from Microsoft when I look back, and I don't want to say, ``Oh, we did something bad. Because if we didn't, somebody else would have.''\nI want to say, ``No, we had clear values, and we had principles, and we had in place guardrails and protections. And we turned down sales so that somebody couldn't use our technology to abuse other people's rights. And if we lost some business, that's the best reason in the world to lose some business.''\nAnd what's true of a company is true as a country. And so I'm not trying to say that your view shouldn't be considered. It should. That's why this issue is complicated. How to strike that balance?\n[Interviewer] (Chair Blumenthal) And it isn't simply Chinese companies importing chips from the United States and building their own data centers. Most AI companies rent capabilities from cloud providers. We need to make sure that the cloud providers are not used to circumvent our export controls or sanctions.\nMr. Smith, you raised the ``Know Your Customer'' rules. Knowing your customers would require cloud AI, cloud providers whose models are deployed to know what companies are using those models.\nIf you're leasing out a supercomputer, you need to make sure that your customer isn't the People's Liberation Army. That it isn't being used to subjugate Uyghurs. That it isn't used to do facial recognitions on dissidents or opponents in Iran, for example.\nBut I do think that you've made a critical point, which is, there is a moral imperative here. And I think there--there is a lesson in the history of this great country, the greatest in the history of the world, that when we lose our moral compass, we lose our way.\nAnd when we simply do economic or political interests, sometimes it's very shortsighted, and we wander into a geopolitical swamp and quicksand. So I think these kinds of issues are very important to keep in mind when we lead by example.\nI want to just make a final point, and then if Senator Hawley has questions, we're going to let him ask. But on this issue of worker displacement, I mentioned at the very outset, I think we are on the cusp of a new industrial revolution.\nWe've seen this movie before, as they say. And it didn't turn out that well in the industrial revolution where workers were displaced en masse. Those textile factories and the mills in this country and all around the world went out of business, essentially, or replaced the workers with automation and mechanics.\nAnd I would respond by saying, we need to train those workers. We need to provide education. You've alluded to it, and it needn't be a 4-year college.\nYou know, in my State of Connecticut--Electric Boat, Pratt & Whitney, Sikorsky--defense contractors are going to need thousands of welders, electricians, tradespeople of all kinds who will have not just jobs, they'll have careers that require skills that, frankly, I wouldn't begin to know how to do. And I haven't the aptitude to do. And that's no false modesty.\nSo I think there are tremendous opportunities here, not just in the creative spheres that you have mentioned where, you know, we may think higher human talents may come into play, but in all kinds of jobs that are being created daily already in this country.\nAnd as I go around the State of Connecticut, the most common comment I hear from businesses: ``We can't find enough people to do the jobs we have right now. We can't find people to fill the openings that we have.'' And that is, in my view, maybe the biggest challenge for the American economy today.\n[Respondent] I think that is such an important point. And it's really worth putting everything we think about for jobs because I wholeheartedly endorse, Senator Hawley, what you were saying before, about let's--we need--we want people to have jobs, we want them to earn a good living, etc.\nFirst, let's consider the demographic context in which jobs are created. The world has just entered a shift of the kind that it literally hasn't seen since the 1400s, namely, populations that are leveling off or in much of the world now declining.\nOne of the things we look at is every country and measure over 5-year periods, is the working age population increasing or decreasing? And by how much?\nFrom 2020 to 2025, the working age population in this country, people aged 20 to 64, is only going to grow by one million people. The last time it grew by that smaller number, you know who was President of the United States? John Adams. That's how far back you have to go.\nAnd if you look at a country like Italy, take that group of people over the next 20 years, it's going to decline by 41 percent. And what's true of Italy is true almost to the same degree in Germany. It's already happening in Japan, in Korea.\nSo we live in a world where for many countries, we suddenly encounter what you actually find, I suspect, when you go to Hartford, or St. Louis, or Kansas City. People can't find enough police officers, enough nurses, enough teachers, and that is a problem we need to desperately focus on solving. So how do we do that? I do think AI is something that can help.\nAnd even in something like a call center. One of the things that's fascinating to me, we have more than 3,000 customers around the world running proofs of concept. One fascinating one is a bank in the Netherlands.\nThey said, you go into a call center today, the desks of the workers look like a trading floor in Wall Street. They have six different terminals. Somebody calls, they're desperately trying to find the answer to a question.\nYou know, with something like GPT-4, with our services, six terminals can become one. Somebody who's working there can ask a question, the answer comes up. And what they're finding is that the person who's answering the phone, talking to a customer, can now spend more time concentrating on the customer and what they need.\nAnd I appreciate all the challenges. There's so much uncertainty. We desperately need to focus on skilling, but I really do hope that this is an era where we can use this to, frankly, help people fill jobs, get training, and focus more-- let's just put it this way. I'm excited about artificial intelligence. I'm even more excited about human intelligence.\nAnd if we can use artificial intelligence to help people exercise more human intelligence and earn more money doing so, that would be something that would be way more exciting to pursue than everything that we've had to grapple with the last decade around, say, social media and the like.",
+ "_bench": {
+  "seconds": 2027.6,
+  "chars": 72374
+ }
+}

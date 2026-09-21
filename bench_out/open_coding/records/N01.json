@@ -1,0 +1,109 @@
+{
+ "respondent": "N01",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "unspecified",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Organisation's first awareness of the system",
+   "quote": "From a member, not from the council. She rang the office because the crossing she uses every day to get to dialysis had changed and she couldn't work out the pattern.",
+   "full_text": "From a member, not from the council. She rang the office because the crossing she uses every day to get to dialysis had changed and she couldn't work out the pattern. That was three weeks after switch-on at her junction. We then found out there had been a consultation event eight months earlier that we hadn't been invited to.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The respondent describes the impact of the system on their member's daily life"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Council's explanation for lack of consultation",
+   "quote": "That it was advertised publicly. Which it was — in the council newsletter and on the website.",
+   "full_text": "That it was advertised publicly. Which it was — in the council newsletter and on the website. I've stopped being angry about this particular thing because I've heard it forty times in twenty-six years. Advertising publicly and inviting are different acts.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The respondent highlights the difference between public advertising and actual consultation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Organisation's response to lack of consultation",
+   "quote": "What we always do. We collected accounts — we had thirty-one members describing specific junctions within a month, with times and dates, because our members are extremely used to documenting things nobody believes.",
+   "full_text": "What we always do. We collected accounts — we had thirty-one members describing specific junctions within a month, with times and dates, because our members are extremely used to documenting things nobody believes. We put it into a submission with photographs and a map. We asked for a meeting.",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+     "rationale": "The respondent describes their organisation's typical response to lack of consultation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Meeting with council officers",
+   "quote": "Yes, after four months. It was a good meeting, I want to say that. Two officers, both engaged, both took notes.",
+   "full_text": "Yes, after four months. It was a good meeting, I want to say that. Two officers, both engaged, both took notes. And then nothing happened for seven months, and then two crossings got audible confirmation, which was one of nine things we asked for and not one of the top three.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The respondent describes the outcome of the meeting with council officers"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Top three requests",
+   "quote": "Longer minimum crossing intervals as a floor the model cannot go below. A published statement of how the system treats slower pedestrians. And a named person we can contact who has authority to change a junction.",
+   "full_text": "Longer minimum crossing intervals as a floor the model cannot go below. A published statement of how the system treats slower pedestrians. And a named person we can contact who has authority to change a junction. Nothing on that list is technically hard. The third one costs nothing at all.",
+   "open_codes": [
+    {
+     "code_id": "c010",
+     "label": "Unintended consequences — The potential risks and unforeseen outcomes of the system",
+     "rationale": "The respondent highlights the importance of these specific requests"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Impact on future projects",
+   "quote": "We now ask to be on the distribution list before there is a project. Not for consultations — for the list of things being considered.",
+   "full_text": "We now ask to be on the distribution list before there is a project. Not for consultations — for the list of things being considered. Consultation is too late by definition. I've said that in every submission I've written for a decade and I'll keep saying it until somebody puts it in a procedure.",
+   "open_codes": [
+    {
+     "code_id": "c009",
+     "label": "Reflection and lessons learned — The respondent's thoughts on what they would do differently in hindsight",
+     "rationale": "The respondent describes the changes their organisation will make in response to this experience"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260914_193235",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 1,
+   "n_ok": 1
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 0
+   }
+  ]
+ },
+ "transcript": "Interview transcript N01 — General secretary, disability rights organisation\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] When did your organisation first hear about this system?\n[Respondent] From a member, not from the council. She rang the office because the crossing she uses every day to get to dialysis had changed and she couldn't work out the pattern. That was three weeks after switch-on at her junction. We then found out there had been a consultation event eight months earlier that we hadn't been invited to.\n[Interviewer] How did the council explain that?\n[Respondent] That it was advertised publicly. Which it was — in the council newsletter and on the website. I've stopped being angry about this particular thing because I've heard it forty times in twenty-six years. Advertising publicly and inviting are different acts. If you want disabled people in the room you write to the six organisations in this city that have disabled members, and there are six, and we all know each other, and it takes an afternoon.\n[Interviewer] What did you do once you knew?\n[Respondent] What we always do. We collected accounts — we had thirty-one members describing specific junctions within a month, with times and dates, because our members are extremely used to documenting things nobody believes. We put it into a submission with photographs and a map. We asked for a meeting.\n[Interviewer] Did you get the meeting?\n[Respondent] Yes, after four months. It was a good meeting, I want to say that. Two officers, both engaged, both took notes. And then nothing happened for seven months, and then two crossings got audible confirmation, which was one of nine things we asked for and not one of the top three.\n[Interviewer] What were the top three?\n[Respondent] Longer minimum crossing intervals as a floor the model cannot go below. A published statement of how the system treats slower pedestrians. And a named person we can contact who has authority to change a junction. Nothing on that list is technically hard. The third one costs nothing at all.\n[Interviewer] Has this changed how you approach the next project?\n[Respondent] We now ask to be on the distribution list before there is a project. Not for consultations — for the list of things being considered. Consultation is too late by definition. I've said that in every submission I've written for a decade and I'll keep saying it until somebody puts it in a procedure."
+}

@@ -1,0 +1,57 @@
+{
+ "respondent": "Chair, university research ethics committee",
+ "descriptors": {
+  "institution_type": "other",
+  "role_level": "senior_management",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": "self-introduction"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Anticipation P",
+   "quote": "If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form.",
+   "full_text": "If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipates the need for consent forms and spends time on them, showing a proactive approach to handling uncertainty."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reflexivity P",
+   "quote": "What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder.",
+   "full_text": "What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent questions their own assumptions and acknowledges the limitations of their process, showing a reflective approach."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Responsiveness N",
+   "quote": "We should not proceed anyway.",
+   "full_text": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent recognizes the importance of considering the public perspective, but acknowledges that it is often absent from the decision-making process."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits a proactive approach to anticipation, reflected in their attention to consent forms. They also demonstrate a reflective approach to their own process, questioning their assumptions and acknowledging limitations. However, they recognize the limitations of their process and the need for greater responsiveness to the public perspective, but acknowledge that this is often absent from the decision-making process.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A05 — Chair, university research ethics committee\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Did any part of this deployment come before your committee?\n[Respondent] Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.\n[Interviewer] Could your committee's remit cover deployments?\n[Respondent] Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.\n[Interviewer] What have you seen change in the studies that do come to you?\n[Respondent] More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.\n[Interviewer] Do affected communities have any voice in your process?\n[Respondent] We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway."
+}

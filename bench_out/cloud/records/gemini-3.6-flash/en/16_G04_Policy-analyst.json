@@ -1,0 +1,116 @@
+{
+ "respondent": "Policy analyst, national transport ministry",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "policy_maker",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Header states: 'Policy analyst, national transport ministry'."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Retrospective Guidance Drafting and Early Governance Deficit",
+   "quote": "In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.",
+   "full_text": "[Interviewer] How does central government see deployments like Port Calder's?\n[Respondent] As a pilot we can learn from, officially. In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Governance deferred until multiple deployments established momentum without prior national position."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Frankly critiques institutional weakness and the compromised nature of retrospective harmonization."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reactive Policy Prioritisation Driven by Failure",
+   "quote": "The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong.",
+   "full_text": "[Interviewer] Could the ministry have moved earlier?\n[Respondent] Yes. There was a submission in 2021 recommending exactly that and it wasn't prioritised. I've read it. It's a good submission. The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Rejection of early foresight submission, relying on reactive crisis management rather than proactive governance."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Scrutinises institutional habits, exposing the ministry's reactive priority-setting mechanisms."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Challenging Nominal Compliance in Technical Fallbacks and Disaggregated Metrics",
+   "quote": "A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.",
+   "full_text": "[Interviewer] What's going into the guidance?\n[Respondent] A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Exposes superficial paper compliance and demands scrutiny of hidden equity impacts across pedestrian groups."
+    },
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Mandates testing fallbacks and disaggregated reporting to identify and mitigate unexpected system impacts early."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Non-Statutory Guidance and Governance Impotence",
+   "quote": "In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.",
+   "full_text": "[Interviewer] Will it have teeth?\n[Respondent] It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Lack of statutory powers leaves governance incapable of altering non-compliant local trajectories."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Acknowledges that non-binding guidance results in symbolic compliance without real behavioral steering."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Exclusion of Vulnerable Stakeholders via Institutional Constraints",
+   "quote": "No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+   "full_text": "[Interviewer] Was anyone outside government involved in drafting?\n[Respondent] A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Key public and vulnerable groups excluded from guidance drafting in favor of institutional insiders."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Second-order reflection calling out self-imposed administrative constraints used to excuse public exclusion."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent exhibits strong internal Reflexivity (+), offering an unusually candid, second-order critique of the national ministry's governance deficits. However, this high level of personal reflexivity contrasts sharply with negative structural dimensions across the rest of the account. Anticipation (-) is marked by reactive policy-making that ignored early 2021 foresight submissions and waited until uncoordinated local deployments occurred. Public Engagement (-) is severely constrained, featuring a closed working group of authorities, vendors, and academics that explicitly excluded disability groups and residents under self-manufactured timeline pressure. Responsiveness (-) is similarly compromised by the non-statutory nature of guidance, which lacks political slot capacity and enforcement power to alter local authority trajectories. Multi-coded segments consistently highlight a persistent structural tension: individual actors within policy institutions may clearly recognize systemic blind spots, tick-box compliance, and excluded voices (Reflexivity +), yet remain constrained by institutional inertia, lack of statutory backing, and reactive organizational cultures (Anticipation -, Engagement -, Responsiveness -).",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G04 — Policy analyst, national transport ministry\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does central government see deployments like Port Calder's?\n[Respondent] As a pilot we can learn from, officially. In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.\n[Interviewer] Could the ministry have moved earlier?\n[Respondent] Yes. There was a submission in 2021 recommending exactly that and it wasn't prioritised. I've read it. It's a good submission. The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.\n[Interviewer] What's going into the guidance?\n[Respondent] A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.\n[Interviewer] Will it have teeth?\n[Respondent] It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.\n[Interviewer] Was anyone outside government involved in drafting?\n[Respondent] A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 26.5,
+  "seconds_source": "estimated: gap between saved files",
+  "absence": null,
+  "note": "written by bench_models.py before resume support; completeness verified (no chunk_errors) and marker added afterwards"
+ }
+}

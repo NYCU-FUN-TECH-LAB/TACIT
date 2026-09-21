@@ -1,0 +1,1037 @@
+{
+  "corpus": "hearings",
+  "model": "ollama/llama3:8b@http://localhost:11434",
+  "provenance": {
+    "endpoint": "ollama/llama3:8b@http://localhost:11434",
+    "provider": "ollama",
+    "model": "llama3:8b",
+    "base_url": "http://localhost:11434",
+    "data_locality": "local",
+    "num_ctx": 32768,
+    "max_tokens": 8192,
+    "recorded_at": "2026-09-22T03:25:01",
+    "quantization_level": "Q4_0",
+    "parameter_size": "8.0B",
+    "family": "llama",
+    "context_length": 8192,
+    "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+    "temperature": 0.2
+  },
+  "order": [
+    "CHRG-118shrg52483_Venkatasubramanian",
+    "CHRG-118shrg52785_Ariga",
+    "CHRG-118shrg52785_Eppink",
+    "CHRG-118shrg53503_Bengio",
+    "CHRG-118shrg53503_Russell",
+    "CHRG-118shrg53879_Smith",
+    "CHRG-118shrg59704_Espinel",
+    "CHRG-118shrg59704_Strayer",
+    "CHRG-118hhrg53382_Prabhakar",
+    "CHRG-118hhrg53382_Hysen",
+    "CHRG-118shrg54718_Pahlka",
+    "CHRG-118hhrg55220_Chilson"
+  ],
+  "transcripts": 12,
+  "chars": 337689,
+  "windows": 149,
+  "windows_ok": 149,
+  "transcripts_with_chunk_errors": 0,
+  "coding_minutes": 45.1,
+  "open_segments": 475,
+  "codes_initial": 27,
+  "applications_initial": 539,
+  "singletons_initial": 15,
+  "merge_suggestions": 8,
+  "codes_after_merge": 23,
+  "saturation": [
+    {
+      "n": 1,
+      "created": 3,
+      "reused": 0,
+      "cumulative": 3
+    },
+    {
+      "n": 2,
+      "created": 4,
+      "reused": 1,
+      "cumulative": 7
+    },
+    {
+      "n": 3,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 7
+    },
+    {
+      "n": 4,
+      "created": 1,
+      "reused": 2,
+      "cumulative": 8
+    },
+    {
+      "n": 5,
+      "created": 2,
+      "reused": 1,
+      "cumulative": 10
+    },
+    {
+      "n": 6,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 10
+    },
+    {
+      "n": 7,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 10
+    },
+    {
+      "n": 8,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 10
+    },
+    {
+      "n": 9,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 10
+    },
+    {
+      "n": 10,
+      "created": 1,
+      "reused": 2,
+      "cumulative": 11
+    },
+    {
+      "n": 11,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 11
+    },
+    {
+      "n": 12,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 11
+    },
+    {
+      "n": 13,
+      "created": 0,
+      "reused": 1,
+      "cumulative": 11
+    },
+    {
+      "n": 14,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 11
+    },
+    {
+      "n": 15,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 11
+    },
+    {
+      "n": 16,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 11
+    },
+    {
+      "n": 17,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 11
+    },
+    {
+      "n": 18,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 11
+    },
+    {
+      "n": 19,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 11
+    },
+    {
+      "n": 20,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 11
+    },
+    {
+      "n": 21,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 11
+    },
+    {
+      "n": 22,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 11
+    },
+    {
+      "n": 23,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 11
+    },
+    {
+      "n": 24,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 11
+    },
+    {
+      "n": 25,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 11
+    },
+    {
+      "n": 26,
+      "created": 1,
+      "reused": 2,
+      "cumulative": 12
+    },
+    {
+      "n": 27,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 12
+    },
+    {
+      "n": 28,
+      "created": 2,
+      "reused": 1,
+      "cumulative": 14
+    },
+    {
+      "n": 29,
+      "created": 0,
+      "reused": 1,
+      "cumulative": 14
+    },
+    {
+      "n": 30,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 14
+    },
+    {
+      "n": 31,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 32,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 14
+    },
+    {
+      "n": 33,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 14
+    },
+    {
+      "n": 34,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 14
+    },
+    {
+      "n": 35,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 36,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 14
+    },
+    {
+      "n": 37,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 38,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 14
+    },
+    {
+      "n": 39,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 40,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 14
+    },
+    {
+      "n": 41,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 14
+    },
+    {
+      "n": 42,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 14
+    },
+    {
+      "n": 43,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 14
+    },
+    {
+      "n": 44,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 14
+    },
+    {
+      "n": 45,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 46,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 14
+    },
+    {
+      "n": 47,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 14
+    },
+    {
+      "n": 48,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 14
+    },
+    {
+      "n": 49,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 14
+    },
+    {
+      "n": 50,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 14
+    },
+    {
+      "n": 51,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 14
+    },
+    {
+      "n": 52,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 53,
+      "created": 0,
+      "reused": 1,
+      "cumulative": 14
+    },
+    {
+      "n": 54,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 14
+    },
+    {
+      "n": 55,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 56,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 14
+    },
+    {
+      "n": 57,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 58,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 14
+    },
+    {
+      "n": 59,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 60,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 61,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 62,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 63,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 64,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 65,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 14
+    },
+    {
+      "n": 66,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 67,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 14
+    },
+    {
+      "n": 68,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 69,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 14
+    },
+    {
+      "n": 70,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 14
+    },
+    {
+      "n": 71,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 14
+    },
+    {
+      "n": 72,
+      "created": 3,
+      "reused": 1,
+      "cumulative": 17
+    },
+    {
+      "n": 73,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 17
+    },
+    {
+      "n": 74,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 17
+    },
+    {
+      "n": 75,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 17
+    },
+    {
+      "n": 76,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 17
+    },
+    {
+      "n": 77,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 17
+    },
+    {
+      "n": 78,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 17
+    },
+    {
+      "n": 79,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 17
+    },
+    {
+      "n": 80,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 17
+    },
+    {
+      "n": 81,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 17
+    },
+    {
+      "n": 82,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 17
+    },
+    {
+      "n": 83,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 17
+    },
+    {
+      "n": 84,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 17
+    },
+    {
+      "n": 85,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 17
+    },
+    {
+      "n": 86,
+      "created": 0,
+      "reused": 7,
+      "cumulative": 17
+    },
+    {
+      "n": 87,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 17
+    },
+    {
+      "n": 88,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 17
+    },
+    {
+      "n": 89,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 17
+    },
+    {
+      "n": 90,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 17
+    },
+    {
+      "n": 91,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 17
+    },
+    {
+      "n": 92,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 17
+    },
+    {
+      "n": 93,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 17
+    },
+    {
+      "n": 94,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 17
+    },
+    {
+      "n": 95,
+      "created": 0,
+      "reused": 1,
+      "cumulative": 17
+    },
+    {
+      "n": 96,
+      "created": 0,
+      "reused": 1,
+      "cumulative": 17
+    },
+    {
+      "n": 97,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 17
+    },
+    {
+      "n": 98,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 17
+    },
+    {
+      "n": 99,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 17
+    },
+    {
+      "n": 100,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 17
+    },
+    {
+      "n": 101,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 17
+    },
+    {
+      "n": 102,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 17
+    },
+    {
+      "n": 103,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 17
+    },
+    {
+      "n": 104,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 17
+    },
+    {
+      "n": 105,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 17
+    },
+    {
+      "n": 106,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 17
+    },
+    {
+      "n": 107,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 17
+    },
+    {
+      "n": 108,
+      "created": 1,
+      "reused": 1,
+      "cumulative": 18
+    },
+    {
+      "n": 109,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 18
+    },
+    {
+      "n": 110,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 18
+    },
+    {
+      "n": 111,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 18
+    },
+    {
+      "n": 112,
+      "created": 0,
+      "reused": 2,
+      "cumulative": 18
+    },
+    {
+      "n": 113,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 18
+    },
+    {
+      "n": 114,
+      "created": 3,
+      "reused": 1,
+      "cumulative": 21
+    },
+    {
+      "n": 115,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 21
+    },
+    {
+      "n": 116,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 21
+    },
+    {
+      "n": 117,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 21
+    },
+    {
+      "n": 118,
+      "created": 0,
+      "reused": 1,
+      "cumulative": 21
+    },
+    {
+      "n": 119,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 21
+    },
+    {
+      "n": 120,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 21
+    },
+    {
+      "n": 121,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 21
+    },
+    {
+      "n": 122,
+      "created": 0,
+      "reused": 8,
+      "cumulative": 21
+    },
+    {
+      "n": 123,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 21
+    },
+    {
+      "n": 124,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 21
+    },
+    {
+      "n": 125,
+      "created": 1,
+      "reused": 3,
+      "cumulative": 22
+    },
+    {
+      "n": 126,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 22
+    },
+    {
+      "n": 127,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 22
+    },
+    {
+      "n": 128,
+      "created": 0,
+      "reused": 1,
+      "cumulative": 22
+    },
+    {
+      "n": 129,
+      "created": 0,
+      "reused": 1,
+      "cumulative": 22
+    },
+    {
+      "n": 130,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 22
+    },
+    {
+      "n": 131,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 22
+    },
+    {
+      "n": 132,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 22
+    },
+    {
+      "n": 133,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 22
+    },
+    {
+      "n": 134,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 22
+    },
+    {
+      "n": 135,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 22
+    },
+    {
+      "n": 136,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 22
+    },
+    {
+      "n": 137,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 22
+    },
+    {
+      "n": 138,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 22
+    },
+    {
+      "n": 139,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 22
+    },
+    {
+      "n": 140,
+      "created": 0,
+      "reused": 6,
+      "cumulative": 22
+    },
+    {
+      "n": 141,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 22
+    },
+    {
+      "n": 142,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 22
+    },
+    {
+      "n": 143,
+      "created": 0,
+      "reused": 1,
+      "cumulative": 22
+    },
+    {
+      "n": 144,
+      "created": 0,
+      "reused": 4,
+      "cumulative": 22
+    },
+    {
+      "n": 145,
+      "created": 0,
+      "reused": 3,
+      "cumulative": 22
+    },
+    {
+      "n": 146,
+      "created": 3,
+      "reused": 1,
+      "cumulative": 25
+    },
+    {
+      "n": 147,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 25
+    },
+    {
+      "n": 148,
+      "created": 0,
+      "reused": 5,
+      "cumulative": 25
+    },
+    {
+      "n": 149,
+      "created": 2,
+      "reused": 1,
+      "cumulative": 27
+    }
+  ],
+  "top_codes": [
+    {
+      "label": "Guardrails for AI",
+      "count": 301
+    },
+    {
+      "label": "Defining AI",
+      "count": 64
+    },
+    {
+      "label": "Limitations of AI",
+      "count": 42
+    },
+    {
+      "label": "Best Practices for AI Training",
+      "count": 31
+    },
+    {
+      "label": "Bias Mitigation",
+      "count": 24
+    },
+    {
+      "label": "Biographical Context",
+      "count": 23
+    },
+    {
+      "label": "Inclusive AI development",
+      "count": 20
+    },
+    {
+      "label": "Opening Remarks",
+      "count": 10
+    },
+    {
+      "label": "Impact of Machine Learning",
+      "count": 4
+    },
+    {
+      "label": "Bias in, Bias out",
+      "count": 3
+    },
+    {
+      "label": "Risk of Predictive Modeling",
+      "count": 3
+    },
+    {
+      "label": "AI's potential in research and development",
+      "count": 2
+    },
+    {
+      "label": "Concerns about AI innovation",
+      "count": 2
+    },
+    {
+      "label": "Effective Computing Concerns",
+      "count": 1
+    },
+    {
+      "label": "Experts on AI decision-making",
+      "count": 1
+    },
+    {
+      "label": "Widening economic divide",
+      "count": 1
+    },
+    {
+      "label": "Critique of economic policy",
+      "count": 1
+    },
+    {
+      "label": "NIST's role in developing standards for deepfake identification",
+      "count": 1
+    },
+    {
+      "label": "AI's impact on government services",
+      "count": 1
+    },
+    {
+      "label": "Responsibly using AI",
+      "count": 1
+    },
+    {
+      "label": "DHS's AI Use Cases",
+      "count": 1
+    },
+    {
+      "label": "Unprecedented use of DPA",
+      "count": 1
+    },
+    {
+      "label": "Template for AI regulation",
+      "count": 1
+    }
+  ],
+  "failed": []
+}

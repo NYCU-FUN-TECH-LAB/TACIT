@@ -1,0 +1,682 @@
+{
+ "respondent": "CHRG-118hhrg55220_Lee",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "researcher",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Introduction and Context",
+   "quote": "Thank you, Chairwoman Mace, Ranking Member Connolly, and distinguished Members of the Subcommittee, for the invitation to testify on President's Biden's executive order on safe, secure, and trustworthy development and use of AI.",
+   "full_text": "Thank you, Chairwoman Mace, Ranking Member Connolly, and distinguished Members of the Subcommittee, for the invitation to testify on President's Biden's executive order on safe, secure, and trustworthy development and use of AI. I am Dr. Nicol Turner Lee, Senior Fellow at the Brookings Institution, which has a 100 year history of evidence-based, nonpartisan research, and I thank you, Chairwoman, for the mention.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent is discussing concerns about AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Importance of AI regulation",
+   "quote": "Congress must act quickly on many of these proposals in our decision to maintain our status as leaders in the global economy.",
+   "full_text": "I want to also share that Congress must act quickly on many of these proposals in our decision to maintain our status as leaders in the global economy. Rather than say that this is overreach, I consider these efforts to be preparation toward a more responsible, inclusive AI ecosystem. This first formidable action on AI under the Blueprint for an AI Bill of Rights shared a nonbinding roadmap for the responsible use of artificial intelligence. We then proceeded to have NIST, who gave us the risk management framework as a multi-tool for organizations to design and manage trustworthy and responsible technologies that are meant to be voluntary, rights preserving, nonspecific, use case agnostic. NIST is also going to release a playbook that will be a companion to this, and we recently launched the AI Safety Institute Consortium to bring stakeholders together to jointly develop and diffuse best practices, standards, and other things.",
+   "open_codes": [
+    {
+     "code_id": "c200",
+     "label": "Importance of AI regulation",
+     "rationale": "The passage highlights the importance of AI regulation in maintaining the country's status as a leader in the global economy."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "White House's efforts on AI regulation",
+   "quote": "The White House secured voluntary commitments from some of the leading U.S.-based AI companies that want to equally ensure safety, security, trust with advanced systems.",
+   "full_text": "A few months later, as it was mentioned, the White House secured voluntary commitments from some of the leading U.S.-based AI companies that want to equally ensure safety, security, trust with advanced systems. They are willing to not only look at their own business models, but to find ways to engage in public reporting of their system capabilities, limitations, and guidelines for use. The most notable advancement, so far, is the Robust Watermarking Solution that these companies are working on together to ensure that we can authenticate AI-generated content.",
+   "open_codes": [
+    {
+     "code_id": "c201",
+     "label": "White House's efforts on AI regulation",
+     "rationale": "The passage describes the White House's efforts to regulate AI, highlighting the importance of public reporting and guidelines for AI use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Executive order's purpose",
+   "quote": "The EO will not only pursue the eight benchmarks that are outlined in its mandate, it also, on a cumulative level, has pursued us to look at best practice for AI use in criminal justice, education, healthcare, and other thoughtful processes that develop an astute and ready workforce.",
+   "full_text": "While the executive order may appear to be a variety of issues packaged into one, it is intentionally designed to be such. We have put in the work to make sure we have gotten to this point, and the EO will not only pursue the eight benchmarks that are outlined in its mandate, it also, on a cumulative level, has pursued us to look at best practice for AI use in criminal justice, education, healthcare, and other thoughtful processes that develop an astute and ready workforce. The actions to engage the Federal Government is probably the most ambitious, yet necessary, action to confirm our resilience among foreign actors and others who want to leverage malicious attacks.",
+   "open_codes": [
+    {
+     "code_id": "c202",
+     "label": "Executive order's purpose",
+     "rationale": "The passage explains the purpose of the executive order, highlighting its focus on AI use in different sectors and its goal of developing a ready workforce."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "AI development and innovation",
+   "quote": "AI can be developed with positive intentions, such as saving the climate, and simultaneously lean into negative uses, such as a large-scale generation and dissemination of misinformation and deepfakes",
+   "full_text": "AI can be developed with positive intentions, such as saving the climate, and simultaneously lean into negative uses, such as a large-scale generation and dissemination of misinformation and deepfakes, activities that are quickly appending important democratic institutions, like voting and elections infrastructure.",
+   "open_codes": [
+    {
+     "code_id": "c041",
+     "label": "AI development and innovation",
+     "rationale": "AI can be used for various purposes, including both positive and negative uses"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Importance of responsible AI development",
+   "quote": "if the U.S. wants to be a leader in innovation, we must be responsibly prepared to manage those risks",
+   "full_text": "if the U.S. wants to be a leader in innovation, we must be responsibly prepared to manage those risks.",
+   "open_codes": [
+    {
+     "code_id": "c203",
+     "label": "Importance of responsible AI development",
+     "rationale": "AI development can have negative consequences if not managed responsibly"
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Concerns about AI misuse",
+   "quote": "activities that are quickly appending important democratic institutions, like voting and elections infrastructure",
+   "full_text": "activities that are quickly appending important democratic institutions, like voting and elections infrastructure.",
+   "open_codes": [
+    {
+     "code_id": "c204",
+     "label": "Concerns about AI misuse",
+     "rationale": "AI can be used to manipulate or disrupt democratic processes"
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Urgency of AI legislation",
+   "quote": "we have urgent assignment to move and legislate on what is actually in the EO",
+   "full_text": "we have urgent assignment to move and legislate on what is actually in the EO.",
+   "open_codes": [
+    {
+     "code_id": "c205",
+     "label": "Urgency of AI legislation",
+     "rationale": "AI technology is advancing rapidly and requires immediate regulation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Importance of national AI leadership",
+   "quote": "we want to be the leaders in this technology",
+   "full_text": "we want to be the leaders in this technology.",
+   "open_codes": [
+    {
+     "code_id": "c206",
+     "label": "Importance of national AI leadership",
+     "rationale": "the U.S. has a responsibility to lead in AI development and innovation"
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Concerns about AI regulation",
+   "quote": "Yes, especially in high stakes.",
+   "full_text": "Especially in high stakes.",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The respondent's statement highlights the importance of careful consideration in AI regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "Distinguishing between surveillance and AI regulation",
+   "quote": "I would just suggest that I think we are conflating surveillance technology and how we actually look at government on the surveillance side versus what the EO is actually dictating, which is accountability, and the AI training data, and the test beds as we look at high-stakes applications.",
+   "full_text": "I would just suggest that I think we are conflating surveillance technology and how we actually look at government on the surveillance side versus what the EO is actually dictating, which is accountability, and the AI training data, and the test beds as we look at high-stakes applications.",
+   "open_codes": [
+    {
+     "code_id": "c207",
+     "label": "Distinguishing between surveillance and AI regulation",
+     "rationale": "The respondent's statement highlights the complexity of AI regulation and the need for careful consideration."
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Role of Congress in AI regulation",
+   "quote": "If Congress were to provide some parameters on how we exercise some of the, you know, principles that are embedded in the EO, as well as things like congressional activities that we want to actually foster, I do not think we would have that problem.",
+   "full_text": "If Congress were to provide some parameters on how we exercise some of the, you know, principles that are embedded in the EO, as well as things like congressional activities that we want to actually foster, I do not think we would have that problem.",
+   "open_codes": [
+    {
+     "code_id": "c208",
+     "label": "Role of Congress in AI regulation",
+     "rationale": "The respondent's statement emphasizes the need for congressional involvement in AI regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Balancing legislative and executive powers",
+   "quote": "You know, we do have a government with three branches, and we are a co-equal branch of government. So is the executive. And when one of those branches fails to act, that creates a vacuum that almost demands the others act, depending on the urgency of the situation.",
+   "full_text": "You know, we do have a government with three branches, and we are a co-equal branch of government. So is the executive. And when one of those branches fails to act, that creates a vacuum that almost demands the others act, depending on the urgency of the situation.",
+   "open_codes": [
+    {
+     "code_id": "c209",
+     "label": "Balancing legislative and executive powers",
+     "rationale": "The respondent's statement emphasizes the need for effective governance and the importance of each branch of government."
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Defending the executive branch",
+   "quote": "We are not doing anything, and when that happens, it seems to me the President has an obligation to address an urgent and imminent subject like AI.",
+   "full_text": "So, in the first session of the 117th Congress, we signed into law about a hundred bills, very far reaching in some cases, very visionary. In this Congress, 31, and half of them are post office namings. This is not a serious Congress. You mentioned, I think, 28 bills addressing AI. Not one has become law, and given our pace, it is unlikely any of them will become law in this Congress. We are not doing anything, and when that happens, it seems to me the President has an obligation to address an urgent and imminent subject like AI. And so, even though I share your passion about the prerogatives and responsibilities of the legislative branch, in this particular case, I have to defend the executive branch. They have not usurped Congress. They have actually done what Congress ought to do but is not going to do because we are not doing our jobs up here.",
+   "open_codes": [
+    {
+     "code_id": "c210",
+     "label": "Defending the executive branch",
+     "rationale": "Mr. Connolly believes the executive branch has an obligation to address urgent and imminent issues like AI when Congress fails to act."
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "Disagreeing with overreach critique",
+   "quote": "I would disagree with it being overreach.",
+   "full_text": "When I started in this space back in the early 2000's--I have been in technology since then when we were looking at regular data bases and stuff--we did not have any framework for predictive decisionmaking, and we had many conversations on algorithmic bias. We were seeing that people were having equal opportunities foreclosed simply because an algorithm made a decision. That was the very first basic step at looking at algorithmic discrimination and stuff like that. Now we have advanced capabilities through frontier models that are actually extracting data-text, voice, images--in ways that actually are so opaque and less transparent that we need more guidance. The technology continues to outpace policy in that matter. With that being the case, to your point, I think we have had many congressional bills that have come to the Floor, but they have been too late, so we have had to relitigate and remitigate what those bills are. In addition to that, we have been slow to the pace when it comes to data privacy protections, reevaluating our civil rights framework, things like that. I, in no way, think this is overreach.",
+   "open_codes": [
+    {
+     "code_id": "c211",
+     "label": "Technology outpacing policy",
+     "rationale": "The respondent highlights the need for more guidance due to the technology's pace."
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "Preparation for AI regulation",
+   "quote": "As a scholar at Brookings who is interested in trying to figure out proactive, evidence-based strategies to move forward, this is actually preparation.",
+   "full_text": "Without such preparation, as I said in my testimony orally as well as written, other countries are going to define the landscape for AI regulation, and we will be subjected to their rules, not just on the behavioral aspects, but also on those sides of the technical cadence.",
+   "open_codes": [
+    {
+     "code_id": "c212",
+     "label": "Preparation for AI regulation",
+     "rationale": "The respondent emphasizes the importance of preparation to avoid being subject to other countries' rules."
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "Nonbinding reference",
+   "quote": "In terms of the nonbinding reference, we know that much of the content that was in the AI Bill of Rights was nonbinding.",
+   "full_text": "It was more voluntary. And up until the executive order, as you all are aware, we really do not have any binding requirements unless the DPA is used for the test bed.",
+   "open_codes": [
+    {
+     "code_id": "c213",
+     "label": "Nonbinding reference",
+     "rationale": "The respondent clarifies the nature of the nonbinding reference."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "AI's potential for marginalized groups",
+   "quote": "AI poses significant risks to people from marginalized backgrounds",
+   "full_text": "AI presents opportunities for progress, but also poses significant risks, from undermining our privacy, to inciting political violence, to spreading disinformation",
+   "open_codes": [
+    {
+     "code_id": "c214",
+     "label": "AI's disproportionate threats",
+     "rationale": "AI's potential for infringement on privacy and civil rights of marginalized groups"
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "AI poses disproportionate threats to people from marginalized backgrounds",
+   "quote": "the effects on marginalized populations are a couple of things",
+   "full_text": "the lack of transparency of AI systems, and particularly how they factor into predictive decisionmaking or eligibility concerns, can foreclose on equal opportunities. People do not know what those factors are that are going into credit decisions, housing decisions, criminal justice decisions, and the like. I would also say that people of color are disproportionately impacted by deepfakes and misinformation. The lack of transparency, actually, which is an issue. Deepfakes affect anybody in any state and any party when you actually look at it, but the lack of transparency particularly affects communities of color who have less agency. And then finally, I would just say criminal justice. I just spent a year and a half with the National Academies on facial recognition use in law enforcement, and in that application of AI, we also see a lot of vulnerabilities as well.",
+   "open_codes": [
+    {
+     "code_id": "c215",
+     "label": "AI poses disproportionate threats to people from marginalized backgrounds",
+     "rationale": "AI systems can perpetuate existing biases and have a negative impact on marginalized populations"
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "AI algorithms trained on skewed data",
+   "quote": "AI algorithms trained on skewed, inaccurate, or unrepresentative data magnify human biases, lead to discriminatory outcomes.",
+   "full_text": "AI algorithms trained on skewed, inaccurate, or unrepresentative data magnify human biases, lead to discriminatory outcomes. The previous Administration, for example, has an abysmal record of using technology to incarcerate and to persecute communities of color.",
+   "open_codes": [
+    {
+     "code_id": "c216",
+     "label": "AI's role in perpetuating biases",
+     "rationale": "The passage highlights the potential for AI to exacerbate existing biases."
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Biden-Harris Administration's EO",
+   "quote": "President Biden's executive order takes unprecedented action to allow innovation while protecting people's privacy and civil rights.",
+   "full_text": "President Biden's executive order takes unprecedented action to allow innovation while protecting people's privacy and civil rights. Dr. Turner Lee, are the steps outlined in the Biden-Harris Administration's EO sufficient to address biases in AI that can lead to discriminatory outcomes?",
+   "open_codes": [
+    {
+     "code_id": "c217",
+     "label": "Government's role in AI development",
+     "rationale": "The passage highlights the government's responsibility in AI development."
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Congress's role in AI regulation",
+   "quote": "I think Congress can take some steps, and there has been some bipartisan support around the use of facial recognition technology and how we actually not necessarily ban it, but we have some guardrails that make sense for various communities.",
+   "full_text": "I think Congress can take some steps, and there has been some bipartisan support around the use of facial recognition technology and how we actually not necessarily ban it, but we have some guardrails that make sense for various communities. I think Congress can also act on data privacy legislation.",
+   "open_codes": [
+    {
+     "code_id": "c218",
+     "label": "Congress's role in AI regulation",
+     "rationale": "The passage highlights Congress's role in AI regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Guardrails for AI",
+   "quote": "Congress can take some steps and have some guardrails that make sense for various communities.",
+   "full_text": "Congress can take some steps, and there has been some bipartisan support around the use of facial recognition technology and how we actually not necessarily ban it, but we have some guardrails that make sense for various communities.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent suggests that Congress can take steps to establish guardrails for AI use, ensuring that it benefits various communities"
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Data privacy legislation",
+   "quote": "Congress can also act on data privacy legislation.",
+   "full_text": "Congress can also act on data privacy legislation. That legislation will allow some sense of guidance on what data can be collected, and in the area of biometric collection that can also safeguard communities of color.",
+   "open_codes": [
+    {
+     "code_id": "c219",
+     "label": "Data privacy legislation",
+     "rationale": "The respondent suggests that data privacy legislation can provide guidance on data collection and safeguard communities"
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "Transparency and disclosure",
+   "quote": "It actually just requires transparency, disclosure, that kind of stuff.",
+   "full_text": "I think what the Congresswoman was talking about does not require the use of the DPA, in all honesty. It actually just requires transparency, disclosure, that kind of stuff.",
+   "open_codes": [
+    {
+     "code_id": "c220",
+     "label": "Transparency and disclosure",
+     "rationale": "The respondent suggests that transparency and disclosure are necessary for AI technology use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Maintaining the US's lead over China",
+   "quote": "I do, and, again, responding to my colleagues, when we talk about stifling innovation and invention in this country when it comes to AI, I think we have two different conversations going on.",
+   "full_text": "I do, and, again, responding to my colleagues, when we talk about stifling innovation and invention in this country when it comes to AI, I think we have two different conversations going on.",
+   "open_codes": [
+    {
+     "code_id": "c221",
+     "label": "Maintaining the US's lead over China",
+     "rationale": "The respondent suggests that the US's ability to maintain its lead over China in AI development is important"
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "Public interest and AI",
+   "quote": "How does the public interest benefit from the use of AI?",
+   "full_text": "And I would just urge us to sort of not conflate those two areas. How does the public interest benefit from the use of AI?",
+   "open_codes": [
+    {
+     "code_id": "c222",
+     "label": "Public interest and AI",
+     "rationale": "The respondent suggests that the public's interest in AI technology use and its benefits is important"
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "Democracy and AI",
+   "quote": "Yes. Democracy is important in the United States.",
+   "full_text": "Yes. Democracy is important in the United States.",
+   "open_codes": [
+    {
+     "code_id": "c223",
+     "label": "Democracy and AI",
+     "rationale": "The respondent suggests that democracy is important in the United States and is related to AI technology use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Importance of informed populace",
+   "quote": "When we have an informed populace that understands that technology is embedded in basically everything that we are doing today, our informed populace can make decisions that actually benefit their quality of life.",
+   "full_text": "When we have an informed populace that understands that technology is embedded in basically everything that we are doing today, our informed populace can make decisions that actually benefit their quality of life. When they do not know that these technologies or AI-generated content is happening, we are actually stifling our ability to move this Nation into a space where, to your point, we can stay competitive with our rivals.",
+   "open_codes": [
+    {
+     "code_id": "c051",
+     "label": "Importance of transparency in AI use",
+     "rationale": "The respondent highlights the importance of transparency in AI use to ensure informed decision-making and prevent stifling innovation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "Democracy and authoritarian states",
+   "quote": "Yes, I am happy I do not live in an authoritarian state, in a democracy that we have here in the United States, so I cannot tell you from personal experience.",
+   "full_text": "Yes. Would you say at times it is a threat? Yes. I am happy I do not live in an authoritarian state, in a democracy that we have here in the United States, so I cannot tell you from personal experience.",
+   "open_codes": [
+    {
+     "code_id": "c224",
+     "label": "Concerns about authoritarian states",
+     "rationale": "The respondent highlights the importance of democracy and the potential threat of authoritarian states to it."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Federal agencies' transparency",
+   "quote": "And just respectfully, we are also finding, though, with the progress report as well as my own research, that various Federal agencies, including NTIA, are becoming more transparent with their processes.",
+   "full_text": "And just respectfully, we are also finding, though, with the progress report as well as my own research, that various Federal agencies, including NTIA, are becoming more transparent with their processes. So, I assume that we are actually going to see much more openness around what is happening around the executive order as they have been charged to take on certain aspects of that, Chairwoman.",
+   "open_codes": [
+    {
+     "code_id": "c225",
+     "label": "Importance of transparency in government processes",
+     "rationale": "The respondent highlights the importance of transparency in government processes to promote openness and accountability."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "Certainty and baselines for companies",
+   "quote": "I think in this case, what we are going to see is improved certainty and baselines for companies to better participate in the AI economy.",
+   "full_text": "I think in this case, what we are going to see is improved certainty and baselines for companies to better participate in the AI economy. Right now, it will provide some behavioral guidance as well as some product design guidance that I think will be helpful as we actually, again, leverage AI as a national security interest.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "Appreciation for challenges and uncertainty",
+     "rationale": "The respondent acknowledges the challenges and uncertainty in the AI economy"
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "AI workforce and research",
+   "quote": "It is about creating an AI workforce. It is about making sure that we have the right research.",
+   "full_text": "It is about creating an AI workforce. It is about making sure that we have the right research. It is about ensuring that our Federal agencies are resilient, and it is about making sure consumers are protected at any time, at any point in which they are engaging these technologies.",
+   "open_codes": [
+    {
+     "code_id": "c039",
+     "label": "Importance of transparency",
+     "rationale": "The respondent emphasizes the importance of transparency in AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "Comparing AI and 5G revolutions",
+   "quote": "I think we can go back and look at the 5G revolution, right, as an example of where we sort of stood back on where we wanted to go as a Nation when it came to mobile wireless leadership, right?",
+   "full_text": "I think we can go back and look at the 5G revolution, right, as an example of where we sort of stood back on where we wanted to go as a Nation when it came to mobile wireless leadership, right? And we eventually had to catch up with China--I write a lot about that--and create our own regulatory guardrails ourselves to ensure that not only were we catching up with China, but we were also imparting in the United States a type of social capital and economic capital and innovation to actually expand those networks.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about AI development and use, drawing parallels with the 5G revolution"
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "EU AI Act and regulatory guidance",
+   "quote": "The same thing should be said about how we look at the AI Act from the EU recently. I do not think anyone is really saying in the EO that we need to come up with this broad regulatory guidance that we all need to adhere to.",
+   "full_text": "The same thing should be said about how we look at the AI Act from the EU recently. I do not think anyone is really saying in the EO that we need to come up with this broad regulatory guidance that we all need to adhere to. I think what we are seeing in the EO is here are some areas that we need to take precaution with. Here are some areas where we need to advance leadership, whether it is in the workforce or whether it is in innovation, whether it is in the adjacent products and services that go with the supply chain.",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The respondent expresses concerns about AI regulation, emphasizing the need for caution and leadership"
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "Velocity of change and AI",
+   "quote": "This is one of those areas that we are really grappling with. The velocity of change has been incredible, and I think we are racing to catch up.",
+   "full_text": "This is one of those areas that we are really grappling with. The velocity of change has been incredible, and I think we are racing to catch up.",
+   "open_codes": [
+    {
+     "code_id": "c226",
+     "label": "Concerns about AI's impact on society",
+     "rationale": "The respondent notes the incredible velocity of change brought about by AI, suggesting a need to catch up and adapt."
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "Malign influence operations and AI",
+   "quote": "As reported by the United States intelligence community in its Worldwide Threat Assessment recently, Russia, China, North Korea, and other state actors are continuing to conduct malign influence operations aimed at disseminating disinformation and magnifying U.S. societal divisions and interfering with the upcoming U.S. elections.",
+   "full_text": "As reported by the United States intelligence community in its Worldwide Threat Assessment recently, Russia, China, North Korea, and other state actors are continuing to conduct malign influence operations aimed at disseminating disinformation and magnifying U.S. societal divisions and interfering with the upcoming U.S. elections. They are doing this in other countries as well, but we are principally concerned about this country and this election right now. So, as you might imagine, the introduction of generative AI sort of amplifies the possibilities of this exacerbated threat.",
+   "open_codes": [
+    {
+     "code_id": "c227",
+     "label": "Concerns about AI's role in malign influence operations",
+     "rationale": "The respondent notes the introduction of generative AI as a factor that amplifies the threat of malign influence operations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S038",
+   "title": "AI-generated deepfakes and misinformation",
+   "quote": "AI-generated deepfakes and misinformation to have on Americans' trust, their trust in the election process?",
+   "full_text": "Thank you for that, and I am very happy that you brought this up as part of this conversation. As the Brennan Center has reported on a variety of their reports, we definitely need to address AI-generated content that is leading into misinformation and disinformation to ensure that we have an informed electorate and to also have electoral infrastructure in process that is not harmed by malicious actors or other malfeasances that are relying on synthetic media or artificially generated content that will dissuade voters. And that, I think, applies to everybody in this room, regardless of your party, your residents, et cetera. You know, we all need to make sure we are going to the polls with that kind of information.",
+   "open_codes": [
+    {
+     "code_id": "c228",
+     "label": "Concerns about AI-generated deepfakes and misinformation",
+     "rationale": "The respondent highlights the need to address AI-generated content that leads to misinformation and disinformation, emphasizing the importance of an informed electorate and electoral infrastructure."
+    }
+   ]
+  },
+  {
+   "segment_id": "S039",
+   "title": "Importance of addressing AI-generated content",
+   "quote": "it is really important for us to get a handle on this",
+   "full_text": "With that being said, it is really important for us to get a handle on this. I think one of the things that we did not do in this panel that we often do in others is we sort of talk about AI and generative AI as if they are the same thing. You know, generative AI has more advanced capabilities of extraction of voice, image, text in ways that we cannot often find out where it originated from. And so having, as we see in the executive order, these industries commit to helping us with a better digital watermarking system, being able to have conversations around copyright protections, really determining ways in which we engage the public in general education so that they are more informed about misinformation, I think are particularly important.",
+   "open_codes": [
+    {
+     "code_id": "c229",
+     "label": "Importance of addressing AI-generated content",
+     "rationale": "The respondent highlights the need to get a handle on AI-generated content and its impact on the election process."
+    },
+    {
+     "code_id": "c231",
+     "label": "Importance of understanding generative AI",
+     "rationale": "The respondent emphasizes the importance of grasping generative AI's advanced capabilities."
+    }
+   ]
+  },
+  {
+   "segment_id": "S040",
+   "title": "Distinguishing between AI and generative AI",
+   "quote": "You know, generative AI has more advanced capabilities of extraction of voice, image, text in ways that we cannot often find out where it originated from",
+   "full_text": "I think one of the things that we did not do in this panel that we often do in others is we sort of talk about AI and generative AI as if they are the same thing. You know, generative AI has more advanced capabilities of extraction of voice, image, text in ways that we cannot often find out where it originated from.",
+   "open_codes": [
+    {
+     "code_id": "c230",
+     "label": "Distinguishing between AI and generative AI",
+     "rationale": "The respondent notes that generative AI has more advanced capabilities than AI, making it important to understand the differences between the two."
+    }
+   ]
+  },
+  {
+   "segment_id": "S041",
+   "title": "Distinguishing between AI and generative AI",
+   "quote": "we sort of talk about AI and generative AI as if they are the same thing",
+   "full_text": "I think one of the things that we did not do in this panel that we often do in others is we sort of talk about AI and generative AI as if they are the same thing.",
+   "open_codes": [
+    {
+     "code_id": "c230",
+     "label": "Distinguishing between AI and generative AI",
+     "rationale": "The respondent notes that AI and generative AI are often discussed as if they are the same thing."
+    }
+   ]
+  },
+  {
+   "segment_id": "S042",
+   "title": "Importance of digital watermarking",
+   "quote": "these industries commit to helping us with a better digital watermarking system",
+   "full_text": "And so having, as we see in the executive order, these industries commit to helping us with a better digital watermarking system, being able to have conversations around copyright protections, really determining ways in which we engage the public in general education so that they are more informed about misinformation.",
+   "open_codes": [
+    {
+     "code_id": "c232",
+     "label": "Importance of digital watermarking",
+     "rationale": "The respondent emphasizes the importance of digital watermarking in ensuring public trust and addressing misinformation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S043",
+   "title": "Role of Congress in addressing AI",
+   "quote": "Congress has actually had some bipartisan action on this",
+   "full_text": "And Congress has actually had some bipartisan action on this that I think we should take heed of if we are going to get these elections right now and into the future.",
+   "open_codes": [
+    {
+     "code_id": "c233",
+     "label": "Role of Congress in addressing AI",
+     "rationale": "The respondent notes that Congress has taken bipartisan action on AI-related issues."
+    }
+   ]
+  },
+  {
+   "segment_id": "S044",
+   "title": "Importance of state-level action",
+   "quote": "states are also taking this very seriously",
+   "full_text": "I would just also suggest to you, Congressman, that states are also taking this very seriously. My colleagues at Brookings, we are looking at, you know, what states are doing, and I think there are some synergies between Federal action and concern and state action and concern.",
+   "open_codes": [
+    {
+     "code_id": "c234",
+     "label": "Importance of state-level action",
+     "rationale": "The respondent emphasizes the importance of state-level action in addressing AI-related issues."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_015911",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 15,
+   "n_ok": 15
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 1,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 1
+   },
+   {
+    "reused": 1,
+    "created": 4,
+    "chunk": 2
+   },
+   {
+    "reused": 1,
+    "created": 3,
+    "chunk": 3
+   },
+   {
+    "reused": 0,
+    "created": 1,
+    "chunk": 4
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 5
+   },
+   {
+    "reused": 0,
+    "created": 1,
+    "chunk": 6
+   },
+   {
+    "reused": 0,
+    "created": 1,
+    "chunk": 7
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 8
+   },
+   {
+    "reused": 1,
+    "created": 5,
+    "chunk": 9
+   },
+   {
+    "reused": 1,
+    "created": 2,
+    "chunk": 10
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 11
+   },
+   {
+    "reused": 1,
+    "created": 2,
+    "chunk": 12
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 13
+   },
+   {
+    "reused": 1,
+    "created": 4,
+    "chunk": 14
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118hhrg55220 — Nicol Turner Lee, Senior Fellow, Brookings Institution\nSource: https://www.govinfo.gov/app/details/CHRG-118hhrg55220  |  White House Overreach On Ai  |  House, Subcommittee On Cybersecurity, Information Technology, And Government Innovation / Committee On Oversight And Accountability U.S.  |  2024-03-21  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Ms. Mace) Thank you. I now recognize Dr. Lee for her 5- minute opening statement.\n[Respondent] Thank you, Chairwoman Mace, Ranking Member Connolly, and distinguished Members of the Subcommittee, for the invitation to testify on President's Biden's executive order on safe, secure, and trustworthy development and use of AI. I am Dr. Nicol Turner Lee, Senior Fellow at the Brookings Institution, which has a 100 year history of evidence-based, nonpartisan research, and I thank you, Chairwoman, for the mention.\nWith that being said in my brief remarks, I just want to remind people that getting to the EO has been a long, deliberate, participatory process, and it has been one in which we have had several government actions proceeding and surrounding it, such as the Blueprint for an AI Bill of Rights released in October 2022, the National Institute of Standards and Technologies AI Risk Management Framework released in 2023, the securing of voluntary commitments by some of the top companies in July 2023, and the OMB guidance released shortly after October in November 2023. These actions reflect a whole- of-governance governance approach, and they are really important for us to achieve national guidance as AI becomes both an asset and concern for our national security interests.\nI want to also share that Congress must act quickly on many of these proposals in our decision to maintain our status as leaders in the global economy. Rather than say that this is overreach, I consider these efforts to be preparation toward a more responsible, inclusive AI ecosystem. This first formidable action on AI under the Blueprint for an AI Bill of Rights shared a nonbinding roadmap for the responsible use of artificial intelligence. We then proceeded to have NIST, who gave us the risk management framework as a multi-tool for organizations to design and manage trustworthy and responsible technologies that are meant to be voluntary, rights preserving, nonspecific, use case agnostic. NIST is also going to release a playbook that will be a companion to this, and we recently launched the AI Safety Institute Consortium to bring stakeholders together to jointly develop and diffuse best practices, standards, and other things.\nA few months later, as it was mentioned, the White House secured voluntary commitments from some of the leading U.S.- based AI companies that want to equally ensure safety, security, trust with advanced systems. They are willing to not only look at their own business models, but to find ways to engage in public reporting of their system capabilities, limitations, and guidelines for use. The most notable advancement, so far, is the Robust Watermarking Solution that these companies are working on together to ensure that we can authenticate AI-generated content.\nWhile the executive order may appear to be a variety of issues packaged into one, it is intentionally designed to be such. We have put in the work to make sure we have gotten to this point, and the EO will not only pursue the eight benchmarks that are outlined in its mandate, it also, on a cumulative level, has pursued us to look at best practice for AI use in criminal justice, education, healthcare, and other thoughtful processes that develop an astute and ready workforce. The actions to engage the Federal Government is probably the most ambitious, yet necessary, action to confirm our resilience among foreign actors and others who want to leverage malicious attacks.\nIn my written statement, I opine more on the January 24 progress report issued by the White House, which suggests that we actually are meeting many of those benchmarks, even in light of some of the concerns of my colleagues. Going forward, if the U.S. wants to be a leader in innovation, we must be responsibly prepared to manage those risks. AI can be developed with positive intentions, such as saving the climate, and simultaneously lean into negative uses, such as a large-scale generation and dissemination of misinformation and deepfakes, activities that are quickly appending important democratic institutions, like voting and elections infrastructure. Moreover, the advanced capabilities of frontier models, like generative AI, will only deepen these effects, particularly if our government does not act quickly to get ahead of this technology. Again, instead of seeing this as overreach, this is a whole-of-government approach that is thoughtful, participatory, coordinated, and have been percolating for a matter of years.\nMore importantly, if Congress does not act, states will, China will, and other nations who are not only leading us in comprehensive legislation, but will soon be the standards that are going to develop the AI ecosystem. That is why we have urgent assignment to move and legislate on what is actually in the EO. More so, instead of having a patchwork of state laws and local provisions, it is important that Congress be concerned about these interests of AI simply on the national security interests, simply on the public consumer protection concerns, and more so because we want to be the leaders in this technology.\nI urge Congress to consider that we already have many proposals that have some bipartisan support, like the National AI Commission Act, the Protect Elections from Deceptive AI Act, and let us move so that we do not have to continue this conversation again.\n[Interviewer] (Ms. Huddleston) I think we have seen that there is a need for a greater discussion of improving cybersecurity, both in the government and beyond.\n[Respondent] Yes.\n[Interviewer] (Ms. Huddleston) No, and we should be concerned about the First Amendment approach of doing such.\n[Respondent] I will say yes, and government, with our civil society, industry partners, alongside of us.\n[Interviewer] (Ms. Huddleston) I think it is a highly concerning proposal with significant consequences for innovation.\n[Respondent] You know what I am going to say.\n[Interviewer] (Ms. Mace) You are going to say yes.\n[Respondent] Especially in high----\n[Interviewer] (Ms. Mace) You are going to be the one dissenter this morning.\n[Respondent] Yes, especially in high stakes.\n[Interviewer] (Ms. Huddleston) Similarly, I think there are concerns about how this could have an impact on speech as well as innovation more generally, with the idea that innovators would have to seek permission from the government before engaging in their innovation, rather than having it play out in the marketplace of ideas.\n[Respondent] And I would just suggest that I think we are conflating surveillance technology and how we actually look at government on the surveillance side versus what the EO is actually dictating, which is accountability, and the AI training data, and the test beds as we look at high-stakes applications. So, I would like us just to clarify that.\n[Interviewer] (Ms. Huddleston) Yes, and it is concerning with the power that would give to the administrative state over technology, more generally.\n[Respondent] And I would just suggest that the invocation of the DPA is coming in absence of congressional action. If Congress were to provide some parameters on how we exercise some of the, you know, principles that are embedded in the EO, as well as things like congressional activities that we want to actually foster, I do not think we would have that problem. Congress just needs to act and legislate.\n[Interviewer] (Mr. Connolly) OK. Can I interrupt you because I get that point, too, and I made a note of that. You went on to say it actually usurps the role of Congress. You said that. Well, you know, we do have a government with three branches, and we are a co-equal branch of government. So is the executive. And when one of those branches fails to act, that creates a vacuum that almost demands the others act, depending on the urgency of the situation. Now, it is nice to say, and I am a big champion of legislative prerogatives, and I believe Article I is Article I for a reason, and Article II is Article II for a reason, namely we are supposed to be the predominant arbiter of government. That was certainly what was in Madison's mind, but that is a different conversation.\nSo, in the first session of the 117th Congress, we signed into law about a hundred bills, very far reaching in some cases, very visionary. In this Congress, 31, and half of them are post office namings. This is not a serious Congress. You mentioned, I think, 28 bills addressing AI. Not one has become law, and given our pace, it is unlikely any of them will become law in this Congress. We are not doing anything, and when that happens, it seems to me the President has an obligation to address an urgent and imminent subject like AI. And so, even though I share your passion about the prerogatives and responsibilities of the legislative branch, in this particular case, I have to defend the executive branch. They have not usurped Congress. They have actually done what Congress ought to do but is not going to do because we are not doing our jobs up here. In fact, we are not only not doing our jobs, we are actually regressing.\nSo, in the appropriations bill, Nancy and I and others are going to vote on this week, apparently, they have zeroed out a congressionally created fund--by the way, I worked with Will Hurd on this, a Republican--the technology management fund, because apparently we do not need any more investment in technology. You know, we do not need more cyber capability. We do not need more AI training. We do not need any of that stuff. We do not need to protect data bases that you are worried about being compromised. And so, we are going to zero out the technology management fund created by Congress. So, we are going backward, we are not going forwards, and I just respectfully disagree with you. I do not think the executive order, I do not care how long it is myself, and I do not think that is a particularly viable critique. And with respect to usurping Congress, I do not think so.\nNow, the third critique I think you had in your testimony was overreach and echoed by your two colleagues on the other side of the panel. I want to give Dr. Turner Lee an opportunity to address that one. So, is it overreach? I mean, should we be worried that they have gone too far, and they are intruding in our lives, and they are going to compromise the ability of AI and all of its promise?\n[Respondent] I would disagree with it being overreach. When I started in this space back in the early 2000's--I have been in technology since then when we were looking at regular data bases and stuff--we did not have any framework for predictive decisionmaking, and we had many conversations on algorithmic bias. We were seeing that people were having equal opportunities foreclosed simply because an algorithm made a decision. That was the very first basic step at looking at algorithmic discrimination and stuff like that. Now we have advanced capabilities through frontier models that are actually extracting data-text, voice, images--in ways that actually are so opaque and less transparent that we need more guidance. The technology continues to outpace policy in that matter. With that being the case, to your point, I think we have had many congressional bills that have come to the Floor, but they have been too late, so we have had to relitigate and remitigate what those bills are. In addition to that, we have been slow to the pace when it comes to data privacy protections, reevaluating our civil rights framework, things like that. I, in no way, think this is overreach.\nAs a scholar at Brookings who is interested in trying to figure out proactive, evidence-based strategies to move forward, this is actually preparation. Without such preparation, as I said in my testimony orally as well as written, other countries are going to define the landscape for AI regulation, and we will be subjected to their rules, not just on the behavioral aspects, but also on those sides of the technical cadence.\n[Interviewer] (Mr. Timmons) Dr. Lee, you used the term ``nonbinding.'' You were not referencing this executive order, were you?\n[Respondent] In terms of the nonbinding reference, we know that much of the content that was in the AI Bill of Rights was nonbinding. It was more voluntary. And up until the executive order, as you all are aware, we really do not have any binding requirements unless the DPA is used for the test bed.\n[Interviewer] (Mr. Timmons) But----\n[Respondent] It only applies to certain aspects of the EO, as we know.\n[Interviewer] (Mr. Timmons) OK. So, my understanding is that there are criminal penalties for not abiding by the DPA, and this is using those authorities, so would it not be a criminal offense that would result in jail and a fine should a company not comply? And I guess another question is, who would that even apply to? Would that be, like, the CEO? Would it be the board members of the company? How does that work?\n[Respondent] So, I am with you. There actually has to be more clarification on how that enforcement strategy looks like, but remember, the regime of the DPA applies to only specific aspects of the EO itself. And to your question, if I may, respectfully, who wrote this was the American people, right? It was accumulation of all these activities leading up to the actual EO itself. So, I wanted to clarify because I kind of have some insight into some of the stakeholders that participated.\n[Interviewer] (Mr. Timmons) I mean, I think some of the technical expertise of this--look, I got a master's degree in cybersecurity, and I understand this as well as anybody.\n[Respondent] Yes.\n[Interviewer] (Ms. Pressley) Thank you, Madam Chair, and thank you to our witnesses for being here today. As a Member of the Financial Services Committee's bipartisan Working Group on Artificial Intelligence, I have no doubt that while AI presents opportunities for progress, it also poses significant risks, from undermining our privacy, to inciting political violence, to spreading disinformation. Congress has been slow to act, forcing the Biden-Harris Administration to take executive action to enforce standards and guardrails. The AI EO does just that, and to suggest that the White House is overstepping, especially when just last week, this Subcommittee heard devastating testimony on AI's infringement on the privacy and civil rights of women and girls. So that overreach characterization is absurd, in my opinion.\nDr. Turner Lee, in what ways can AI pose disproportionate threats to people from marginalized backgrounds?\n[Respondent] That is an area that I spend a lot of time with, and I think the effects on marginalized populations are a couple of things. One, the lack of transparency of AI systems, and particularly how they factor into predictive decisionmaking or eligibility concerns, can foreclose on equal opportunities. People do not know what those factors are that are going into credit decisions, housing decisions, criminal justice decisions, and the like. I would also say that people of color are disproportionately impacted by deepfakes and misinformation. The lack of transparency, actually, which is an issue. Deepfakes affect anybody in any state and any party when you actually look at it, but the lack of transparency particularly affects communities of color who have less agency. And then finally, I would just say criminal justice. I just spent a year and a half with the National Academies on facial recognition use in law enforcement, and in that application of AI, we also see a lot of vulnerabilities as well.\n[Interviewer] (Ms. Pressley) Thank you. Yes, AI algorithms trained on skewed, inaccurate, or unrepresentative data magnify human biases, lead to discriminatory outcomes. The previous Administration, for example, has an abysmal record of using technology to incarcerate and to persecute communities of color. The Trump Administration used AI to identify legal protesters during the George Floyd protest, to employ racist algorithms with Immigration and Customs Enforcement to profile Muslims entering the country, and haphazardly arrest Chinese Americans during its China initiative. Meanwhile, President Biden's executive order takes unprecedented action to allow innovation while protecting people's privacy and civil rights. Dr. Turner Lee, are the steps outlined in the Biden-Harris Administration's EO sufficient to address biases in AI that can lead to discriminatory outcomes?\n[Respondent] I wholeheartedly agree. I applaud this Administration for including words like ``equity'' and ``parity'' as part of the EO in very outright ways so that we address this issue front hand. I also think, to your point and to the earlier conversation from my colleagues around the government use of AI, it is very clear in the EO this distinction between government surveillance that is used for malicious intent by government, versus resiliency, which is the Federal agencies just having clearer pathways on their use of AI generally, whether it is in benefits decisions, criminal justice decisions and actions, and so forth.\n[Interviewer] (Ms. Pressley) Thank you. And, Dr. Turner Lee, what elements of the EO can Congress strengthen to ensure that advances in AI technology are not used to further involve people with the criminal legal system?\n[Respondent] I think that Congress can take some steps, and there has been some bipartisan support around the use of facial recognition technology and how we actually not necessarily ban it, but we have some guardrails that make sense for various communities. I think Congress can also act on data privacy legislation. That legislation will allow some sense of guidance on what data can be collected, and in the area of biometric collection that can also safeguard communities of color. I think conversations on election and AI infrastructure and architecture should be of concern, and it has been on a bipartisan level. I think all of us are concerned about the integrity of our elections based on artificial intelligence and generative AI. So, I think there is a host of them. I am happy to share more of those with you, Congresswoman, going forward.\n[Interviewer] (Mr. Burchett) Ma'am, you were shaking your head.\n[Respondent] May I respond? Yes. I actually disagree with that. I think, and going to my colleague here, who I have known for many years, I think what the Congresswoman was talking about does not require the use of the DPA, in all honesty. It actually just requires transparency, disclosure, that kind of stuff. I think the DPA was actually exercised based on just giving some push to us to do something as a national economy so that we make sure we are not behind others, particularly China, when it comes to AI.\n[Interviewer] (Mr. Burchett) Do you all think that the executive order strengthens the U.S.'s ability to maintain its lead over China? Ma'am?\n[Respondent] I do, and, again, responding to my colleagues, when we talk about stifling innovation and invention in this country when it comes to AI, I think we have two different conversations going on. One is a conversation around the efficiency and use of AI in areas like, you know, occupational careers, different sub-stacks, technological applications. The other was around the sociotechnical application. How does the public interest benefit from the use of AI?\n[Interviewer] (Mr. Burchett) Right.\n[Respondent] And I would just urge us to sort of not conflate those two areas.\n[Interviewer] (Mr. Burchett) Well, how does it do that?\n[Respondent] When we have an informed populace that understands that technology is embedded in basically everything that we are doing today, our informed populace can make decisions that actually benefit their quality of life. When they do not know that these technologies or AI-generated content is happening, we are actually stifling our ability to move this Nation into a space where, to your point, we can stay competitive with our rivals.\n[Interviewer] (Mr. Burlison) Thank you. Dr. Lee, would you say that democracy is important in the United States?\n[Respondent] Yes.\n[Interviewer] (Mr. Burlison) Would you say at times it is a threat?\n[Respondent] Yes.\n[Interviewer] (Mr. Burlison) I would agree. Let me ask you this. Would you think that an authoritarian state that does not represent the elected people is a threat to democracy?\n[Respondent] I am happy I do not live in an authoritarian state, in a democracy that we have here in the United States, so I cannot tell you from personal experience.\n[Interviewer] (Ms. Mace) Mm-hmm.\n[Respondent] And I would echo that, Chairwoman, that Commerce has actually started, like other Federal agencies, to go deeper into these issues. So, there are activities as well as comments that will come out shortly, I am sure, on that.\n[Interviewer] (Ms. Mace) Gotcha. I think Dr. Lee wanted to chime in.\n[Respondent] And just respectfully, we are also finding, though, with the progress report as well as my own research, that various Federal agencies, including NTIA, are becoming more transparent with their processes. So, I assume that we are actually going to see much more openness around what is happening around the executive order as they have been charged to take on certain aspects of that, Chairwoman.\n[Interviewer] (Ms. Mace) I know Dr. Lee is going to disagree here. So why does it not, in your opinion, because to me it is so obvious. I am just curious on your perspective, why it would not stifle innovation or not stifle investment.\n[Respondent] Well, as one who has been in the technology space for more than 30 years, I clearly know when we see these technology disruptors stifle innovation. I think in this case, what we are going to see is improved certainty and baselines for companies to better participate in the AI economy. Right now, it will provide some behavioral guidance as well as some product design guidance that I think will be helpful as we actually, again, leverage AI as a national security interest. The other thing I want to just continue to refresh and remind us, that this is just not about the DPA, right? It is about creating an AI workforce. It is about making sure that we have the right research. It is about ensuring that our Federal agencies are resilient, and it is about making sure consumers are protected at any time, at any point in which they are engaging these technologies. So, with that, I think the certainty will definitely not stifle innovation in many respects and will actually help us to innovate better.\n[Interviewer] (Ms. Mace) Dr. Lee?\n[Respondent] Yes, and I will just say, just with my colleagues here, I think we can go back and look at the 5G revolution, right, as an example of where we sort of stood back on where we wanted to go as a Nation when it came to mobile wireless leadership, right? And we eventually had to catch up with China--I write a lot about that--and create our own regulatory guardrails ourselves to ensure that not only were we catching up with China, but we were also imparting in the United States a type of social capital and economic capital and innovation to actually expand those networks.\nThe same thing should be said about how we look at the AI Act from the EU recently. I do not think anyone is really saying in the EO that we need to come up with this broad regulatory guidance that we all need to adhere to. I think what we are seeing in the EO is here are some areas that we need to take precaution with. Here are some areas where we need to advance leadership, whether it is in the workforce or whether it is in innovation, whether it is in the adjacent products and services that go with the supply chain.\nAt the end of the day, we are the United States, right, and we are going to do things a little differently than everybody else, but without making this a Wild West when it comes to innovation and having some certainty that redeposits back into our American economy, you know, we are going to find ourselves in the same similar situations we have had with other technology disruptions.\n[Interviewer] (Mr. Lynch) Thank you very much, Madam Chair, and thank you for your relentless leadership on this issue. Much appreciated. I had a couple of hearings at the same time. That is how they do everything here. Everything happens at once, but I apologize. I was in a hearing down the corridor on Financial Services. I want to thank the witnesses. I have read your bios, and I appreciate the expertise and the intellect that you bring to this hearing. So, thank you very much for helping the Committee with its work. This is one of those areas that we are really grappling with. The velocity of change has been incredible, and I think we are racing to catch up.\nAs reported by the United States intelligence community in its Worldwide Threat Assessment recently, Russia, China, North Korea, and other state actors are continuing to conduct malign influence operations aimed at disseminating disinformation and magnifying U.S. societal divisions and interfering with the upcoming U.S. elections. They are doing this in other countries as well, but we are principally concerned about this country and this election right now. So, as you might imagine, the introduction of generative AI sort of amplifies the possibilities of this exacerbated threat.\nI know that FBI Director Chris Wray recently testified to the Select Committee on the Chinese Communist Party. He said that, ``This election cycle, the U.S. will face more adversaries moving at a faster pace and enabled by new technology,'' speaking of AI. He also went on to say that advances in generative AI make it ``easier for both more and less sophisticated foreign adversaries to engage in malign influence.''\nAnd today, virtually, as you know, anyone can weaponize AI to create fake but convincing photos, videos, and audio clips with the purpose of election interference or manipulation. Just recently, 2 days before the New Hampshire Presidential primary--I am sure you heard of it--thousands of residents of New Hampshire received robocalls that used an AI voice cloning software to imitate President Biden. It was rather convincing as well. The robocall encouraged recipients not to vote in the primary election and ``save your vote for the November election,'' so you can easily see how, you know, this technology might be used for nefarious purposes.\nDr. Turner Lee, what effect can we expect AI-generated deepfakes and misinformation to have on Americans' trust, their trust in the election process?\n[Respondent] Thank you for that, and I am very happy that you brought this up as part of this conversation. As the Brennan Center has reported on a variety of their reports, we definitely need to address AI-generated content that is leading into misinformation and disinformation to ensure that we have an informed electorate and to also have electoral infrastructure in process that is not harmed by malicious actors or other malfeasances that are relying on synthetic media or artificially generated content that will dissuade voters. And that, I think, applies to everybody in this room, regardless of your party, your residents, et cetera. You know, we all need to make sure we are going to the polls with that kind of information.\nWith that being said, it is really important for us to get a handle on this. I think one of the things that we did not do in this panel that we often do in others is we sort of talk about AI and generative AI as if they are the same thing. You know, generative AI has more advanced capabilities of extraction of voice, image, text in ways that we cannot often find out where it originated from. And so having, as we see in the executive order, these industries commit to helping us with a better digital watermarking system, being able to have conversations around copyright protections, really determining ways in which we engage the public in general education so that they are more informed about misinformation, I think are particularly important. And Congress has actually had some bipartisan action on this that I think we should take heed of if we are going to get these elections right now and into the future.\nI would just also suggest to you, Congressman, that states are also taking this very seriously. My colleagues at Brookings, we are looking at, you know, what states are doing, and I think there are some synergies between Federal action and concern and state action and concern. And so again, broadening the scope of making sure that this is a priority for Congress, I think, is key.",
+ "_bench": {
+  "seconds": 244.6,
+  "chars": 29000
+ }
+}

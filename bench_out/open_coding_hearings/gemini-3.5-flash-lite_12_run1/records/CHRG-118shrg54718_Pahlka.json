@@ -1,0 +1,902 @@
+{
+ "respondent": "CHRG-118shrg54718_Pahlka",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "other",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Opening remarks on the scope of government services",
+   "quote": "We all interact with the government throughout our lives, whether it is applying for a small business loan, receiving financial aid to pursue an education, accessing essential health care, or applying for Social Security.",
+   "full_text": "The Committee will come to order. We all interact with the government throughout our lives, whether it is applying for a small business loan, receiving financial aid to pursue an education, accessing essential health care, or applying for Social Security. The prepared statement of Senator Peters appears in the Appendix on page 25.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "expressing gratitude and institutional affiliation",
+     "rationale": "Opening remarks establishing committee order and routine public touchpoints."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Potential of AI in improving government service delivery",
+   "quote": "This technology has the potential to make government services more efficient, effective, and accessible for all Americans. For instance, AI can easily translate crucial documents into multiple languages.",
+   "full_text": "Our citizens turn to the government for all sorts of critical services. As elected officials, we must ensure that agencies provide those services as effectively as possible, and artificial intelligence (AI) can help succeed in doing that work. This technology has the potential to make government services more efficient, effective, and accessible for all Americans. For instance, AI can easily translate crucial documents into multiple languages.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "need for domain-specific guidance and policy in federal AI",
+     "rationale": "Discussing the application of AI to improve government services."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Specific examples of AI use in government services",
+   "quote": "It can operate 24/7 chatbots that provide our citizens with interactive assistance. It can allow employees to tackle more requests in less time with greater accuracy. AI can make complex processes easier to navigate. The government's use of AI to deliver services is certainly not new.",
+   "full_text": "It can operate 24/7 chatbots that provide our citizens with interactive assistance. It can allow employees to tackle more requests in less time with greater accuracy. AI can make complex processes easier to navigate. The government's use of AI to deliver services is certainly not new. Three decades ago, the U.S. Postal Service (USPS) used it to create faster mail delivery services. Today, in my home State of Michigan, AI tools are providing translation services for citizens applying for permits and for licenses.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "need for domain-specific guidance and policy in federal AI",
+     "rationale": "Outlining practical use cases for AI within public sector agencies."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Legislative actions and committee hearings on AI",
+   "quote": "That is why, in the last year, I have convened five hearings on artificial intelligence, and we have passed legislation out of this Committee to address the challenges as well as the opportunities posed by AI.",
+   "full_text": "This technology is already making a difference in the lives of countless American civilians. But this is a watershed moment for AI. These technologies grow more advanced nearly every day, reaching more and more aspects of American life. That is why, in the last year, I have convened five hearings on artificial intelligence, and we have passed legislation out of this Committee to address the challenges as well as the opportunities posed by AI.",
+   "open_codes": [
+    {
+     "code_id": "c025",
+     "label": "prioritizing federal investment in responsible AI",
+     "rationale": "Mentioning congressional hearings and legislative efforts addressing AI opportunities and challenges."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Bipartisan legislation to improve customer service in agencies",
+   "quote": "This Congress, our Committee has passed my bipartisan Improving Government Services Act to encourage Federal agencies to adopt proven customer service tools to help ensure Americans get the assistance that they need.",
+   "full_text": "This builds on my previous legislation to provide educational opportunities on AI, establish adequate training resources, and provide agencies with guidance on how to implement AI tools most effectively. This Congress, our Committee has passed my bipartisan Improving Government Services Act to encourage Federal agencies to adopt proven customer service tools to help ensure Americans get the assistance that they need. This bill builds upon the hearing we convened last Congress to explore ways agencies can build trust by improving the customer experience (CX).",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "need for domain-specific guidance and policy in federal AI",
+     "rationale": "Describing specific legislation aimed at improving federal agency service delivery and customer experience."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Chairman opening remarks on government services and AI",
+   "quote": "This is a key moment to understand the capabilities of AI, and how it can benefit both government employees and the citizens that they serve, and under what circumstances.",
+   "full_text": "This Congress, our Committee has passed my bipartisan Improving Government Services Act to encourage Federal agencies to adopt proven customer service tools to help ensure Americans get the assistance that they need. This bill builds upon the hearing we convened last Congress to explore ways agencies can build trust by improving the customer experience (CX). This is a key moment to understand the capabilities of AI, and how it can benefit both government employees and the citizens that they serve, and under what circumstances. This hearing will help us do just that.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "need for domain-specific guidance and policy in federal AI",
+     "rationale": "Discusses understanding AI capabilities and circumstances for benefiting government employees and citizens."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Examining AI guardrails and service delivery in government",
+   "quote": "We will outline the guardrails that this technology requires, the training resources, privacy standards, and performance metrics we need to properly implement AI tools, and our expert panel of witnesses will help us understand how this can happen at all levels of government.",
+   "full_text": "We will examine the ways that AI can help deliver critical services and improve the public's experience in receiving them. We will outline the guardrails that this technology requires, the training resources, privacy standards, and performance metrics we need to properly implement AI tools, and our expert panel of witnesses will help us understand how this can happen at all levels of government.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Outlining necessary guardrails, training, privacy, and performance metrics for AI tools."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Swearing in the witness",
+   "quote": "Do you swear that the testimony that you will give before this Committee will be the truth, the whole truth, and nothing but the truth, so help you, God? [Respondent] I do.",
+   "full_text": "It is the practice of the Homeland Security and Governmental Affairs Committee (HSGAC) to swear in witnesses. If each of you would please stand and raise your right hand. Do you swear that the testimony that you will give before this Committee will be the truth, the whole truth, and nothing but the truth, so help you, God? [Respondent] I do.",
+   "open_codes": [
+    {
+     "code_id": "c001",
+     "label": "swearing in witness",
+     "rationale": "The formal administrative process of administering an oath to a hearing witness."
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Witness professional credentials introduction",
+   "quote": "Our first witness is Jennifer Pahlka, and she is a renowned author and expert on public digital services. She has served in a range of roles across all levels of Government, including the U.S. Deputy Chief Technology Officer.",
+   "full_text": "Our first witness is Jennifer Pahlka, and she is a renowned author and expert on public digital services. She has served in a range of roles across all levels of Government, including the U.S. Deputy Chief Technology Officer. And during her time in Government, she helped found the United States Digital Service, fix healthcare.gov, and improve the functionality of California's unemployment insurance program.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "professional credentials introduction",
+     "rationale": "Introducing the witness by highlighting her academic position, expertise, and prior government service."
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Witness opening remarks expression of gratitude",
+   "quote": "Thank you so much, Chair Peters and Members of the Committee. Thank you for inviting me here today.",
+   "full_text": "Thank you so much, Chair Peters and Members of the Committee. Thank you for inviting me here today.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "expressing gratitude and institutional affiliation",
+     "rationale": "Opening remarks thanking the committee."
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "Choosing between command-and-control and enablement frameworks",
+   "quote": "My message today is simple, a powerful body like the U.S. Senate has many tools at its disposal to shape the future of the country. Those tools can be used to create mandates and controls on the institutions that deliver for the American people, or they can be used to enable these institutions to use their judgment in the service of agreed upon goals.",
+   "full_text": "My message today is simple, a powerful body like the U.S. Senate has many tools at its disposal to shape the future of the country. Those tools can be used to create mandates and controls on the institutions that deliver for the American people, or they can be used to enable these institutions to use their judgment in the service of agreed upon goals.",
+   "open_codes": [
+    {
+     "code_id": "c124",
+     "label": "governance frameworks of mandate versus enablement in government AI",
+     "rationale": "Introduces the core governance choice between mandates and enablement for public institutions."
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Advocating for enablement and capacity building",
+   "quote": "A mandate and control framework will add rules and processes. An enablement framework will focus on building capacity, both by strengthening the workforce and reducing the burdens on everyone in it. This critical AI moment calls for enablement.",
+   "full_text": "A mandate and control framework will add rules and processes. An enablement framework will focus on building capacity, both by strengthening the workforce and reducing the burdens on everyone in it. This critical AI moment calls for enablement. The recent Executive Order (EO) on AI already provides some new controls and safeguards.",
+   "open_codes": [
+    {
+     "code_id": "c124",
+     "label": "governance frameworks of mandate versus enablement in government AI",
+     "rationale": "Elaborates on the specific features of an enablement framework versus mandate and control."
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Balancing caution and inappropriate application of executive order guidance",
+   "quote": "The order strikes a reasonable balance between encouragement and caution, but I worry that some of its guidance will be applied inappropriately. For example, some government agencies have long been using AI for day to day functions like handwriting recognition on envelopes, and agencies may now subject these benign, low risk uses to red tape.",
+   "full_text": "The order strikes a reasonable balance between encouragement and caution, but I worry that some of its guidance will be applied inappropriately. For example, some government agencies have long been using AI for day to day functions like handwriting recognition on envelopes, and agencies may now subject these benign, low risk uses to red tape.",
+   "open_codes": [
+    {
+     "code_id": "c125",
+     "label": "risk of over-regulation on benign government AI uses",
+     "rationale": "Warns against applying regulatory caution inappropriately to benign, low-risk government technologies."
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Flaws in the current status quo of government service delivery",
+   "quote": "Caution is merited in some places and dangerous in others, where we risk moving backward, not forward. Moreover, in many areas of government service delivery, the status quo is frankly not worth protecting.",
+   "full_text": "Caution is merited in some places and dangerous in others, where we risk moving backward, not forward. Moreover, in many areas of government service delivery, the status quo is frankly not worth protecting.",
+   "open_codes": [
+    {
+     "code_id": "c126",
+     "label": "deficiencies of the current status quo in government service delivery",
+     "rationale": "Argues that current government service delivery is deeply flawed and should not be protected by default."
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "High error rates in government benefit determinations",
+   "quote": "We understandably want to make sure, for instance, that applicants for government benefits are not unfairly denied by-- because of bias in algorithms. The reality is that to take just one benefit, 1 in 6 determinations of eligibility for Supplemental Nutrition Assistance Program (SNAP) is substantially incorrect today. If you count procedural errors, the error rate is 44 percent.",
+   "full_text": "We understandably want to make sure, for instance, that applicants for government benefits are not unfairly denied by-- because of bias in algorithms. The reality is that to take just one benefit, 1 in 6 determinations of eligibility for Supplemental Nutrition Assistance Program (SNAP) is substantially incorrect today. If you count procedural errors, the error rate is 44 percent.",
+   "open_codes": [
+    {
+     "code_id": "c127",
+     "label": "high error rates and backlogs in current government benefit systems",
+     "rationale": "Presents statistical evidence of widespread errors in current government benefits administration."
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "Backlogs and distress caused by administrative failures",
+   "quote": "Worse are the applications and adjudications that have not been decided at all, the ones sitting in backlogs, causing enormous distress to the public and wasting taxpayer dollars. Poor application of AI in these context could indeed make a bad situation worse.",
+   "full_text": "Worse are the applications and adjudications that have not been decided at all, the ones sitting in backlogs, causing enormous distress to the public and wasting taxpayer dollars. Poor application of AI in these context could indeed make a bad situation worse.",
+   "open_codes": [
+    {
+     "code_id": "c127",
+     "label": "high error rates and backlogs in current government benefit systems",
+     "rationale": "Describes the compounding negative impacts of administrative backlogs and unaddressed applications."
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "Urgent need for change over outdated internet-age remedies",
+   "quote": "But for people who are fed up and just want someone to get back to them about their tax return, their unemployment insurance check, or even their company's permit to build infrastructure, something has to change. We cannot double down on the remedies that failed in the Internet age, and hope that somehow it would work out in the age of AI.",
+   "full_text": "But for people who are fed up and just want someone to get back to them about their tax return, their unemployment insurance check, or even their company's permit to build infrastructure, something has to change. We cannot double down on the remedies that failed in the Internet age, and hope that somehow it would work out in the age of AI.",
+   "open_codes": [
+    {
+     "code_id": "c128",
+     "label": "inadequacy of internet-era administrative remedies for modern government",
+     "rationale": "Argues against relying on outdated internet-age regulatory remedies for modern governance challenges."
+    },
+    {
+     "code_id": "c124",
+     "label": "governance frameworks of mandate versus enablement in government AI",
+     "rationale": "Highlights the inadequacy of old remedies and the need for new digital capacity for government services."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "Commitment to building digital capacity and workforce",
+   "quote": "We must finally commit to the hard work of building digital capacity. the Office of Personnel Management (OPM) and the White House have stated their intentions to build that capacity by hiring tech talent. This is a case where strengthening the workforce is also a matter of reducing burdens.",
+   "full_text": "We must finally commit to the hard work of building digital capacity. the Office of Personnel Management (OPM) and the White House have stated their intentions to build that capacity by hiring tech talent. This is a case where strengthening the workforce is also a matter of reducing burdens.",
+   "open_codes": [
+    {
+     "code_id": "c129",
+     "label": "building digital capacity and tech talent in government",
+     "rationale": "Emphasizes the necessity of building federal digital capacity and recruiting tech talent."
+    },
+    {
+     "code_id": "c030",
+     "label": "federal government workforce challenges in AI",
+     "rationale": "Discusses the necessity of building digital capacity and hiring tech talent within federal agencies."
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "Hiring authorities and procedural bottlenecks at OPM",
+   "quote": "OPM's recent memo, for instance, will grant direct hire authority for several AI related job classifications, and that will remove a bit of the red tape agencies need to bring on experts. That direct hire authority does not allow for the use of pooled hiring across agencies, despite the fact that pooled hiring has gotten us many excellent data scientists and other tech roles much more quickly.",
+   "full_text": "OPM's recent memo, for instance, will grant direct hire authority for several AI related job classifications, and that will remove a bit of the red tape agencies need to bring on experts. That direct hire authority does not allow for the use of pooled hiring across agencies, despite the fact that pooled hiring has gotten us many excellent data scientists and other tech roles much more quickly.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "federal government workforce challenges in AI",
+     "rationale": "Addresses red tape and hiring authorities like pooled hiring for AI and tech roles."
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Congressional action needed for OPM hiring authorities",
+   "quote": "Agencies will have to run separate hiring processes for each open position, which will take enormous amounts of time and paperwork even with the direct hire authority. Congress should ask OPM what authorities they need in order to change this, and what resources they need to scale programs like this highly successful Subject Matter Expertise Qualifying Assessments (SME-QA) program. Then ask, what is the next obstacle that they need removed.",
+   "full_text": "Agencies will have to run separate hiring processes for each open position, which will take enormous amounts of time and paperwork even with the direct hire authority. Congress should ask OPM what authorities they need in order to change this, and what resources they need to scale programs like this highly successful Subject Matter Expertise Qualifying Assessments (SME-QA) program. Then ask, what is the next obstacle that they need removed.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "federal government workforce challenges in AI",
+     "rationale": "Outlines hiring obstacles and recommends specific congressional inquiries to scale technical assessment programs."
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Constrained government environment and customer service goals",
+   "quote": "I do not presume to know everything that is needed, only that they operate in a highly constrained environment no longer fit to the purpose it must serve. We must reduce burdens in other areas as well. What the public wants from customer service is answers, where is my check? Why did I get this Internal Revenue Service (IRS) notice?",
+   "full_text": "I do not presume to know everything that is needed, only that they operate in a highly constrained environment no longer fit to the purpose it must serve. We must reduce burdens in other areas as well. What the public wants from customer service is answers, where is my check? Why did I get this Internal Revenue Service (IRS) notice?",
+   "open_codes": [
+    {
+     "code_id": "c124",
+     "label": "governance frameworks of mandate versus enablement in government AI",
+     "rationale": "Discusses operating in a constrained environment and meeting public expectations for government customer service."
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "AI must deliver real answers, not just communication",
+   "quote": "If we use AI to make it easier to talk to government, but not to get those answers, we fail. The key reason those answers are hard to come by is the enormous complexity of government programs.",
+   "full_text": "If we use AI to make it easier to talk to government, but not to get those answers, we fail. The key reason those answers are hard to come by is the enormous complexity of government programs.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "need for domain-specific guidance and policy in federal AI",
+     "rationale": "Warns against superficial AI use that doesn't solve underlying complexity issues in government."
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Accumulated regulatory complexity in unemployment insurance",
+   "quote": "I worked on the pandemic unemployment insurance crisis and encountered what is close to 10,000 pages of regulation governing what should be a relatively simple program. A claims processor working with my colleague kept calling himself the new guy because he was still learning the ropes. He had been with the agency for 17 years.",
+   "full_text": "I worked on the pandemic unemployment insurance crisis and encountered what is close to 10,000 pages of regulation governing what should be a relatively simple program. A claims processor working with my colleague kept calling himself the new guy because he was still learning the ropes. He had been with the agency for 17 years.",
+   "open_codes": [
+    {
+     "code_id": "c127",
+     "label": "high error rates and backlogs in current government benefit systems",
+     "rationale": "Describes extreme regulatory accumulation and complexity in government benefit programs like unemployment insurance."
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "Decades of unremoved mandates collapsing government programs",
+   "quote": "Recall that unemployment insurance dates back to the 1935 Social Security Act. We have been adding rule upon rule and mandate upon mandate for close to 90 years now. We almost never remove them. It is no wonder the program is still in peril. It is collapsing under its own weight that Federal and State agencies cannot shed on their own. It is tempting to say that AI will help us by understanding those 90 years of accumulated policy cruft for us.",
+   "full_text": "Recall that unemployment insurance dates back to the 1935 Social Security Act. We have been adding rule upon rule and mandate upon mandate for close to 90 years now. We almost never remove them. It is no wonder the program is still in peril. It is collapsing under its own weight that Federal and State agencies cannot shed on their own. It is tempting to say that AI will help us by understanding those 90 years of accumulated policy cruft for us.",
+   "open_codes": [
+    {
+     "code_id": "c127",
+     "label": "high error rates and backlogs in current government benefit systems",
+     "rationale": "Discusses decades of accumulated rules and mandates causing government benefit programs to collapse under their own weight."
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "Dangers of algorithms managing government complexity",
+   "quote": "This is appealing in the short term, but dangerous in the long run. We cannot have a government so complex that one algorithm talks to the other at such a level of complexity that humans are out of the loop.",
+   "full_text": "This is appealing in the short term, but dangerous in the long run. We cannot have a government so complex that one algorithm talks to the other at such a level of complexity that humans are out of the loop. But we can and should use AI to suggest dramatic simplifications to those overwrought frameworks, and make those new, leaner frameworks the law of the land.",
+   "open_codes": [
+    {
+     "code_id": "c012",
+     "label": "proposed regulatory guardrails for high-impact AI",
+     "rationale": "Warns against removing humans from the loop in complex automated systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Call for policy decluttering enabled by AI",
+   "quote": "The greatest gift this body could give to the agencies and the American public they serve is a massive, thorough decluttering. AI makes it possible, but only the people in this chamber can make it happen.",
+   "full_text": "The greatest gift this body could give to the agencies and the American public they serve is a massive, thorough decluttering. AI makes it possible, but only the people in this chamber can make it happen. Thank you very much.",
+   "open_codes": [
+    {
+     "code_id": "c130",
+     "label": "policy simplification through AI",
+     "rationale": "Proposes using AI to help simplify overwrought government frameworks."
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "State of government service delivery compared to private sector",
+   "quote": "It is lower, but it is getting better. I think what we need to recognize is that now it must get better, faster. It has to get better faster in part because the gap between public and private sector is about to widen as private sector actors adopt AI.",
+   "full_text": "[Interviewer] (Chairman Peters) Thank you, Dr. Noveck. Ms. Pahlka, numerous surveys suggest that satisfaction with government services is a lot lower than it is in the private sector. My question for you is, what is your assessment of the State of Government service delivery today? What should we be striving for?\n[Respondent] It is lower, but it is getting better. I think what we need to recognize is that now it must get better, faster. It has to get better faster in part because the gap between public and private sector is about to widen as private sector actors adopt AI.",
+   "open_codes": [
+    {
+     "code_id": "c131",
+     "label": "government service delivery versus private sector",
+     "rationale": "Addresses the gap in service delivery and AI adoption between public and private sectors."
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "Stakes of government services for citizens",
+   "quote": "Very often when you are engaging with the private sector, you are getting your cable bill or getting a car, it may be critical to you in that moment it but it is nowhere near as critical if you are doing something like expecting a tax return check or getting your unemployment insurance, when that may be really life changing for you. The level of service should be appropriate to how critical it is to the human on the other end.",
+   "full_text": "The goal is a good question. I think many people will say that we need to be on par with the private sector. There are, of course, differences between the public sector and the private sector. I think the way I would put it is that the level of service needs to recognize what is at stake for the citizen. Very often when you are engaging with the private sector, you are getting your cable bill or getting a car, it may be critical to you in that moment it but it is nowhere near as critical if you are doing something like expecting a tax return check or getting your unemployment insurance, when that may be really life changing for you. The level of service should be appropriate to how critical it is to the human on the other end.",
+   "open_codes": [
+    {
+     "code_id": "c132",
+     "label": "high stakes of public services for citizens",
+     "rationale": "Argues government service quality must match the critical, life-changing impact on citizens."
+    },
+    {
+     "code_id": "c033",
+     "label": "need for domain-specific guidance and policy in federal AI",
+     "rationale": "Stresses tailoring service levels to the critical nature of government benefits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "pairing mandates with administrative enablement",
+   "quote": "In other words, agencies want to do these things. They want to improve government service delivery, and there are many things that often stand in their way that make them take a long time to do things, jump through a lot of hoops. As you say, as you direct them to take these actions, also ask them what can we remove to make this easier.",
+   "full_text": "[Interviewer] (Chairman Peters) Thank you. Ms. Pahlka. [Respondent] Wise words from my co-witnesses here. I support everything that they just said and simply add that I guess from the perspective of the pair mandates and directives with enablement. In other words, agencies want to do these things. They want to improve government service delivery, and there are many things that often stand in their way that make them take a long time to do things, jump through a lot of hoops. As you say, as you direct them to take these actions, also ask them what can we remove to make this easier.",
+   "open_codes": [
+    {
+     "code_id": "c124",
+     "label": "governance frameworks of mandate versus enablement in government AI",
+     "rationale": "Advocates pairing directives with removing administrative hurdles for agencies."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "confirming name pronunciation during hearing",
+   "quote": "[Interviewer] (Senator Carper) Thank you, Mr. Chair. To our witnesses, welcome. Is it Pahlka? [Respondent] Yes.",
+   "full_text": "[Interviewer] (Senator Carper) Thank you, Mr. Chair. To our witnesses, welcome. Is it Pahlka? [Respondent] Yes.",
+   "open_codes": [
+    {
+     "code_id": "c015",
+     "label": "informal preferred address",
+     "rationale": "Brief administrative exchange confirming correct pronunciation of the witness's name."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "lighthearted response about brief questioning",
+   "quote": "[Interviewer] (Senator Carper) Pahlka, right, Noveck, and Blauer. Those were my only questions. [Respondent] That was easy.",
+   "full_text": "[Interviewer] (Senator Carper) Pahlka, right, Noveck, and Blauer. Those were my only questions. [Respondent] That was easy.",
+   "open_codes": [
+    {
+     "code_id": "c015",
+     "label": "informal preferred address",
+     "rationale": "Witness makes a lighthearted joke about the senator's brief questions."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "acknowledging customer service and democratic trust",
+   "quote": "I just want to honor your focus on AI--focus on customer service in State of Delaware. I think that does so much to contribute to people's trust and faith in government and in democracy.",
+   "full_text": "I just want to honor your focus on AI--focus on customer service in State of Delaware. I think that does so much to contribute to people's trust and faith in government and in democracy. Thank you for sharing that.",
+   "open_codes": [
+    {
+     "code_id": "c027",
+     "label": "federal government advantage in attracting talent through public service",
+     "rationale": "Connecting government customer service to rebuilding trust and faith in democracy."
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "emphasizing foundational basics over AI hype",
+   "quote": "We are not necessarily going to succeed or fail because of AI. We are going to succeed or fail because we have the right foundation to build on. We do not quite yet have that entire foundation.",
+   "full_text": "I think what you said about the successes in customer service without AI actually speak to something that each of us are trying to say, which is it is really about the foundation and the basics. Ms. Blauer mentioned leadership. Dr. Noveck mentioned the infrastructure. We are not necessarily going to succeed or fail because of AI. We are going to succeed or fail because we have the right foundation to build on. We do not quite yet have that entire foundation. We need to keep building it. We need to build it faster.",
+   "open_codes": [
+    {
+     "code_id": "c124",
+     "label": "governance frameworks of mandate versus enablement in government AI",
+     "rationale": "Focuses on building the necessary institutional and infrastructural foundations rather than relying solely on AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "lagging behind public expectations in government tech",
+   "quote": "There are all sorts of things that we should have done in the past decade or two, to bring customer service from the Federal Government into the Internet age and meet the expectations of the American public as they have been able to use services that become much more convenient for them.",
+   "full_text": "There are all sorts of things that we should have done in the past decade or two, to bring customer service from the Federal Government into the Internet age and meet the expectations of the American public as they have been able to use services that become much more convenient for them. You do not have to go stand in line anymore to deposit a check, you use your phone to do it. Expectations are risen, and we have to meet those rising expectations. Those things that are good to move us effectively into the Internet era they are unfinished business.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "federal government workforce challenges in AI",
+     "rationale": "Notes the delay in bringing federal government services into the internet age to match public expectations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "basics of human capital and procurement for AI readiness",
+   "quote": "Those things that are basic have to do with our human capital strategy. They have to do with procurement. They have to do with the kind of leadership that Ms. Blauer talked about.",
+   "full_text": "We still have to do them. We now have to do them quite quickly so that we can be set up to be a great customer service organization in the age of AI. Those things that are basic have to do with our human capital strategy. They have to do with procurement. They have to do with the kind of leadership that Ms. Blauer talked about. I think we agree, and I very much appreciate your comments and your perspective.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "federal government workforce challenges in AI",
+     "rationale": "Highlights human capital and procurement as the foundational baselines required for AI readiness."
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "heavy reliance on contractors and loss of agency delivery pulse",
+   "quote": "If you go into any agency today and you ask who is actually doing the customer service, who is doing the delivery, who is, say, creating the website that people are using, and I am sort of speaking in an Internet era answer right now rather than the AI answer, it is pretty much all contracted out and the number of people in an agency who have a real pulse on the actual mechanisms of delivery is very small.",
+   "full_text": "[Respondent] That is such a great question and thank you for asking it. I think that there are things that agencies need to do, and I think there is also things that the center of government needs to do to support them in doing it. If you go into any agency today and you ask who is actually doing the customer service, who is doing the delivery, who is, say, creating the website that people are using, and I am sort of speaking in an Internet era answer right now rather than the AI answer, it is pretty much all contracted out and the number of people in an agency who have a real pulse on the actual mechanisms of delivery is very small.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "federal government workforce challenges in AI",
+     "rationale": "Identifies over-reliance on contractors and internal loss of delivery oversight within federal agencies."
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "imbalance between bureaucratic compliance and delivery staff",
+   "quote": "They say, well, we are a team of three, how many other people are working on this? 300, 3,000. What are they doing? They are writing reports. They are doing various kinds of compliance. But we really need to go look at who are the people doing this work. Do we have enough of them who have the right competencies and capacities?",
+   "full_text": "You can go in and say, OK, there is so many teams I know right now who are doing really incredible work where they are building interfaces to government online for instance that really work for people, and they are struggling. You go in and say, great, this is amazing work, what do you need? They say, well, we are a team of three, how many other people are working on this? 300, 3,000. What are they doing? They are writing reports. They are doing various kinds of compliance. But we really need to go look at who are the people doing this work. Do we have enough of them who have the right competencies and capacities? Part of what I mean by a human capital strategy.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "federal government workforce challenges in AI",
+     "rationale": "Highlights massive administrative overhead compared to tiny product delivery teams."
+    }
+   ]
+  },
+  {
+   "segment_id": "S038",
+   "title": "need to overhaul government hiring for delivery competencies",
+   "quote": "There is a huge relook that we have to do on who we hire and in what capacity in government and really change things to be more oriented toward the capacities and competencies of delivery. Then we also need to be able to hire those people. I mentioned in my written testimony that it just takes too long to hire people today.",
+   "full_text": "There is a huge relook that we have to do on who we hire and in what capacity in government and really change things to be more oriented toward the capacities and competencies of delivery. Then we also need to be able to hire those people. I mentioned in my written testimony that it just takes too long to hire people today. And you know, the how to make that a shorter process is a very complicated question.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "federal government workforce challenges in AI",
+     "rationale": "Focuses on restructuring government hiring around delivery competencies and speeding up the process."
+    }
+   ]
+  },
+  {
+   "segment_id": "S039",
+   "title": "expanding direct hire authority for AI enabling roles",
+   "quote": "You see good movement around that right now with things like direct hire authority for agencies for AI enabled positions. Of course, it is much more than just experts in AI, right. It is all of the people who do the data, for instance or a wide range of AI enabling positions.",
+   "full_text": "You see good movement around that right now with things like direct hire authority for agencies for AI enabled positions. Of course, it is much more than just experts in AI, right. It is all of the people who do the data, for instance or a wide range of AI enabling positions.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "federal government workforce challenges in AI",
+     "rationale": "Discusses direct hire authority and the broader ecosystem of data and AI enabling roles."
+    }
+   ]
+  },
+  {
+   "segment_id": "S040",
+   "title": "losing interested private sector tech talent due to slow hiring",
+   "quote": "I now know literally hundreds of people from the private sector with exactly the competencies, capacities, and values that we want who want to come into government. These are the people we need. They are really interested in a way that they were not as interested 10 years ago, but they are languishing in nine month processes and then we are losing them.",
+   "full_text": "But we need to further ask, how can we speed the hiring of those positions? I now know literally hundreds of people from the private sector with exactly the competencies, capacities, and values that we want who want to come into government. These are the people we need. They are really interested in a way that they were not as interested 10 years ago, but they are languishing in nine month processes and then we are losing them. Let us just look at who we need to hire and then figure out how to hire them quickly.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "federal government workforce challenges in AI",
+     "rationale": "Describes losing enthusiastic private sector tech talent because of prolonged hiring timelines."
+    }
+   ]
+  },
+  {
+   "segment_id": "S041",
+   "title": "Complexity of the Federal Acquisition Regulation",
+   "quote": "The Federal Acquisition Regulation (FAR) is, as you well know, 2,400 pages, and the number of things that could be done to it to make it easier for contracting officers and people in charge of delivery in government are numerous.",
+   "full_text": "There are a bunch of procurement nerds because it is such a complex issue. The Federal Acquisition Regulation (FAR) is, as you well know, 2,400 pages, and the number of things that could be done to it to make it easier for contracting officers and people in charge of delivery in government are numerous.",
+   "open_codes": [
+    {
+     "code_id": "c048",
+     "label": "need for regulatory agility in government",
+     "rationale": "Highlights the extreme complexity and length of the federal procurement regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S042",
+   "title": "Need for simplicity speed and flexibility in procurement",
+   "quote": "Ultimately, if it is a little bit simpler, I think people will be able to get the outcomes that they desire from a particular procurement more quickly. I think speed and flexibility are the two things that you should be designing for if you think about any kind of procurement reform.",
+   "full_text": "I think in the time that we have today, what I would say is, it has to be simpler. Any time something has that many different provisions, you are going to have people fighting over interpretations of things. You are going to have people saying, we cannot use this, we have to apply this particular provision of it. Ultimately, if it is a little bit simpler, I think people will be able to get the outcomes that they desire from a particular procurement more quickly. I think speed and flexibility are the two things that you should be designing for if you think about any kind of procurement reform.",
+   "open_codes": [
+    {
+     "code_id": "c048",
+     "label": "need for regulatory agility in government",
+     "rationale": "Argues for simpler procurement processes designed for speed and flexibility."
+    }
+   ]
+  },
+  {
+   "segment_id": "S043",
+   "title": "Benefits of open source AI in government contexts",
+   "quote": "All I would add to it is, there is some controversy over the notion of open source AI. I think in the kinds of contexts we are talking about, the dangers are much less, and the benefits can be pretty big.",
+   "full_text": "I think Dr. Noveck said 90 percent of it. If I can just plus 1,000 that. All I would add to it is, there is some controversy over the notion of open source AI. I think in the kinds of contexts we are talking about, the dangers are much less, and the benefits can be pretty big.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "need for domain-specific guidance and policy in federal AI",
+     "rationale": "Discusses the utility and lower relative risks of open-source AI in specific government contexts."
+    }
+   ]
+  },
+  {
+   "segment_id": "S044",
+   "title": "Power concentration and democratization through open source AI",
+   "quote": "AI could have the effect of real consolidation of power because it is so hard to create these models. The investment that OpenAI put into Chat Generative Pre-trained Transformer (ChatGPT) is staggering. They have a lot of power because of that. The more that we can actually look at models that are more distributed, more democratized, and that is going to mean oftentimes open source, and make sure we can consider those when we are trying to find a solution in government, the more we will be I think promoting competition broadly in technology.",
+   "full_text": "AI could have the effect of real consolidation of power because it is so hard to create these models. The investment that OpenAI put into Chat Generative Pre-trained Transformer (ChatGPT) is staggering. They have a lot of power because of that. The more that we can actually look at models that are more distributed, more democratized, and that is going to mean oftentimes open source, and make sure we can consider those when we are trying to find a solution in government, the more we will be I think promoting competition broadly in technology.",
+   "open_codes": [
+    {
+     "code_id": "c025",
+     "label": "prioritizing federal investment in responsible AI",
+     "rationale": "Addresses market power concentration in AI and advocates for distributed, democratized open-source models to promote competition."
+    }
+   ]
+  },
+  {
+   "segment_id": "S045",
+   "title": "experience on the front lines of government",
+   "quote": "I was not a classically trained data person when I became essentially the de facto Chief Data Officer of the State of Maryland. What I was someone who understood what it meant to work in government.",
+   "full_text": "I was not a classically trained data person when I became essentially the de facto Chief Data Officer of the State of Maryland. What I was someone who understood what it meant to work in government. I connected to the people of the front lines of government, and I was able to usher in a transformation of data use in government because I could relate to the challenges that the people in the organizations were trying to solve. I knew what it was like to be a probation officer, to sort of sit under the crushing weight of that bureaucracy.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "federal government workforce challenges in AI",
+     "rationale": "Relates to the background and practical experience needed for government data and technology roles."
+    }
+   ]
+  },
+  {
+   "segment_id": "S046",
+   "title": "broader skills needed for government Chief Data Officers",
+   "quote": "When we think about how we attract CDOs into our government, if we are only hiring technologists into those roles and not people that have the softer skills, that can be deferential to subject matter expertise that exists in your government, that can actually connect and translate from the technology to the policymaking, to the legislative agenda setting, to the budget making, to all of the things that we know are the levers of government that are going to create change, then we are doing a disservice both to the position of CDO and to government itself.",
+   "full_text": "When we think about how we attract CDOs into our government, if we are only hiring technologists into those roles and not people that have the softer skills, that can be deferential to subject matter expertise that exists in your government, that can actually connect and translate from the technology to the policymaking, to the legislative agenda setting, to the budget making, to all of the things that we know are the levers of government that are going to create change, then we are doing a disservice both to the position of CDO and to government itself. CDOs need to be able to have those rounded expertise so that they can, like I said, connect to the people who are delivering for your government and also for those that are leading change in your government.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "federal government workforce challenges in AI",
+     "rationale": "Discusses the importance of multidisciplinary skills rather than pure technical knowledge for government tech leadership."
+    }
+   ]
+  },
+  {
+   "segment_id": "S047",
+   "title": "empowering CDOs for substantive government change",
+   "quote": "Where we have seen failures, both at the local and State level, is when we place a CDO in an information technology (IT) agency and their role is sort of ordained just to be the person that hounds people to move data or to get data express for other use. Where we have seen great success is where they are empowered from a leadership level, and that they are materially part of the big substantive change that government is embarking on.",
+   "full_text": "Where we have seen failures, both at the local and State level, is when we place a CDO in an information technology (IT) agency and their role is sort of ordained just to be the person that hounds people to move data or to get data express for other use. Where we have seen great success is where they are empowered from a leadership level, and that they are materially part of the big substantive change that government is embarking on.",
+   "open_codes": [
+    {
+     "code_id": "c124",
+     "label": "governance frameworks of mandate versus enablement in government AI",
+     "rationale": "Contrasts limiting IT/data roles to narrow technical tasks versus empowering them for broad organizational change."
+    }
+   ]
+  },
+  {
+   "segment_id": "S048",
+   "title": "AI translation capabilities for government services",
+   "quote": "When I worked on the task force for unemployment insurance during the pandemic, translation of the whole process, not just the application form people would use online--of course, we had a problem with the call center, but if you were able to call, were you able to get through and talk to somebody in the language that you knew so that you could actually get the help you need to get your unemployment insurance check?",
+   "full_text": "That is that is an inspiring question, thank you. I am glad that it came from our Senator from California. We have mentioned earlier that translation is one of the things AI is fantastic at. When I worked on the task force for unemployment insurance during the pandemic, translation of the whole process, not just the application form people would use online--of course, we had a problem with the call center, but if you were able to call, were you able to get through and talk to somebody in the language that you knew so that you could actually get the help you need to get your unemployment insurance check?",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "need for domain-specific guidance and policy in federal AI",
+     "rationale": "Discusses using AI for translation and language access in government programs."
+    },
+    {
+     "code_id": "c133",
+     "label": "improving government accessibility and service delivery through technology",
+     "rationale": "Describes leveraging translation tools to help residents access unemployment benefits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S049",
+   "title": "Procurement reform for government technology",
+   "quote": "Of course, we are at a moment in time when there are tools available that could make that a lot easier. I have spoken before about the need to streamline procurement so that tools like that could be procured more easily.",
+   "full_text": "Of course, we are at a moment in time when there are tools available that could make that a lot easier. I have spoken before about the need to streamline procurement so that tools like that could be procured more easily. I also think it is really important to recognize that when people call, they do not just want to be able to talk to somebody in their language, they actually need an answer.",
+   "open_codes": [
+    {
+     "code_id": "c134",
+     "label": "streamlining government technology procurement",
+     "rationale": "Calls for streamlining procurement so tools can be acquired easily."
+    }
+   ]
+  },
+  {
+   "segment_id": "S050",
+   "title": "Simplifying complex government regulations and policies",
+   "quote": "In order to do that, I do think we need to simplify the policies and processes and regulations that a program like unemployment insurance is staggeringly complex for something that really is not that complicated. We are going to take your pay, your previous pay and some portion of it, and you are going to get that when you are out of work. We have made it into 10,000 pages of regulation.",
+   "full_text": "It is wonderful if someone can pick up the phone, but much better if they can say, your check is coming. In order to do that, I do think we need to simplify the policies and processes and regulations that a program like unemployment insurance is staggeringly complex for something that really is not that complicated. We are going to take your pay, your previous pay and some portion of it, and you are going to get that when you are out of work. We have made it into 10,000 pages of regulation. I mentioned how people working at the EDD in California were still learning the ropes after 17 years.",
+   "open_codes": [
+    {
+     "code_id": "c135",
+     "label": "simplifying complex administrative regulations for government programs",
+     "rationale": "Argues for simplifying the thousands of pages of regulation governing unemployment insurance."
+    },
+    {
+     "code_id": "c033",
+     "label": "need for domain-specific guidance and policy in federal AI",
+     "rationale": "Discusses the need to simplify overly complex government program policies and regulations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S051",
+   "title": "Using AI to reduce regulatory complexity",
+   "quote": "We happened to be at a moment in time when AI could help us reduce that complexity. It cannot do the work for us, but it can help us understand what is in those 10,000 pages, suggest simplifications, and then lawmakers could work to make that a program that is a little bit easier to administer.",
+   "full_text": "We are going to take your pay, your previous pay and some portion of it, and you are going to get that when you are out of work. We have made it into 10,000 pages of regulation. I mentioned how people working at the EDD in California were still learning the ropes after 17 years. Of course, it is hard to get an answer under that incredible burden of complexity, and we happened to be at a moment in time when AI could help us reduce that complexity. It cannot do the work for us, but it can help us understand what is in those 10,000 pages, suggest simplifications, and then lawmakers could work to make that a program that is a little bit easier to administer.",
+   "open_codes": [
+    {
+     "code_id": "c124",
+     "label": "governance frameworks of mandate versus enablement in government AI",
+     "rationale": "Shows how AI can assist administrators by parsing regulations and suggesting simplifications."
+    }
+   ]
+  },
+  {
+   "segment_id": "S052",
+   "title": "Mandates versus enablement in agency operations",
+   "quote": "When I worked on unemployment insurance, and I hope that speaks to your question, not just the particular example, but we had a Legislature who passed a law right when we were trying to get through that backlog that was designed to help people who did not speak English. As much as I am a fan of the need to do that and feel very connected to the need to serve those folks, it was an example, I felt, of adding a mandate when what was needed was enablement.",
+   "full_text": "When I worked on unemployment insurance, and I hope that speaks to your question, not just the particular example, but we had a Legislature who passed a law right when we were trying to get through that backlog that was designed to help people who did not speak English. As much as I am a fan of the need to do that and feel very connected to the need to serve those folks, it was an example, I felt, of adding a mandate when what was needed was enablement.",
+   "open_codes": [
+    {
+     "code_id": "c124",
+     "label": "governance frameworks of mandate versus enablement in government AI",
+     "rationale": "Contrasts legislative mandates with practical agency enablement during a crisis."
+    }
+   ]
+  },
+  {
+   "segment_id": "S053",
+   "title": "Prioritizing immediate operational needs over new mandates",
+   "quote": "Instead, we said, here are new mandates for translation of the website, which distracted, frankly from the ability of the EDD at that moment in time to work through the backlog. The thing they needed to do the most at that time was get checks to what turned out to be 1.3 million people.",
+   "full_text": "One of the things we could have done at that time to subtract rather than add, would have been to remove the requirement that call center agents had to get permission before they could use the translation service that was currently available. Instead, we said, here are new mandates for translation of the website, which distracted, frankly from the ability of the EDD at that moment in time to work through the backlog. The thing they needed to do the most at that time was get checks to what turned out to be 1.3 million people.",
+   "open_codes": [
+    {
+     "code_id": "c124",
+     "label": "governance frameworks of mandate versus enablement in government AI",
+     "rationale": "Explains how uncoordinated mandates distract from urgent operational execution like processing benefit backlogs."
+    }
+   ]
+  },
+  {
+   "segment_id": "S054",
+   "title": "Agency and legislative communication regarding operational priorities",
+   "quote": "Sometimes we need to have better communication between agencies and legislators to understand what is the thing at this moment in time that will enable the right outcome and set some priorities and have the translation stuff come later. I hope the translation stuff does come later, but I also hope we use the tools of AI to do it, instead of doing it in the mode that we have been doing it over the past 10 years.",
+   "full_text": "Sometimes we need to recognize that we have to have priorities in order to serve people. There were many people in that 1.3 million claims backlog who were underserved, represented the diversity of California, and they actually did not need at that moment a different way to read through this web form, which was already so complicated. The language in it was so complicated in English, that translating it into another language was not going to help. What they needed was their check. Sometimes we need to have better communication between agencies and legislators to understand what is the thing at this moment in time that will enable the right outcome and set some priorities and have the translation stuff come later.",
+   "open_codes": [
+    {
+     "code_id": "c124",
+     "label": "governance frameworks of mandate versus enablement in government AI",
+     "rationale": "Emphasizes alignment between legislators and agencies on operational priorities and enablement."
+    },
+    {
+     "code_id": "c030",
+     "label": "federal government workforce challenges in AI",
+     "rationale": "Discusses leveraging AI tools to improve communication and service delivery."
+    },
+    {
+     "code_id": "c048",
+     "label": "need for regulatory agility in government",
+     "rationale": "Points out the need to move away from slow traditional modes of government translation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S055",
+   "title": "Leveraging AI for translation instead of traditional methods",
+   "quote": "I hope the translation stuff does come later, but I also hope we use the tools of AI to do it, instead of doing it in the mode that we have been doing it over the past 10 years.",
+   "full_text": "I hope the translation stuff does come later, but I also hope we use the tools of AI to do it, instead of doing it in the mode that we have been doing it over the past 10 years.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "expansion into generative AI",
+     "rationale": "Proposes modern AI tools for efficient translation work rather than traditional bureaucratic methods."
+    }
+   ]
+  },
+  {
+   "segment_id": "S056",
+   "title": "fundamental shift required to put the customer at the center",
+   "quote": "I think this is so critical that we have a fundamental shift in what we value in order to put the customer at the center. I know this is a very high level answer, but we have to value delivery as highly as we value policy, both here on the Hill and in the agencies, and to the points earlier, in States and in cities.",
+   "full_text": "I think this is so critical that we have a fundamental shift in what we value in order to put the customer at the center. I know this is a very high level answer, but we have to value delivery as highly as we value policy, both here on the Hill and in the agencies, and to the points earlier, in States and in cities.",
+   "open_codes": [
+    {
+     "code_id": "c124",
+     "label": "governance frameworks of mandate versus enablement in government AI",
+     "rationale": "Addresses the systemic need to value implementation and delivery equally to policy creation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S057",
+   "title": "contrast between policy words and citizen delivery experience",
+   "quote": "We are very focused here on the words that we write, and we forget that the people on the other end do not look at those words. They go on a website and try to get unemployment insurance. They are trying to get their driver's license or God forbid, they are in our criminal legal system and they are experiencing incredible burdens. They see delivery.",
+   "full_text": "We are very focused here on the words that we write, and we forget that the people on the other end do not look at those words. They go on a website and try to get unemployment insurance. They are trying to get their driver's license or God forbid, they are in our criminal legal system and they are experiencing incredible burdens. They see delivery.",
+   "open_codes": [
+    {
+     "code_id": "c037",
+     "label": "constitutional and due process violations by algorithms",
+     "rationale": "Highlights how administrative burdens and systems impact citizens directly."
+    }
+   ]
+  },
+  {
+   "segment_id": "S058",
+   "title": "government human capital set up for words and contractors",
+   "quote": "As I said, our human capital system in government broadly, not just in Federal Government, is not set up to value that. We are set up to write words and hire contractors.",
+   "full_text": "As I said, our human capital system in government broadly, not just in Federal Government, is not set up to value that. We are set up to write words and hire contractors.",
+   "open_codes": [
+    {
+     "code_id": "c030",
+     "label": "federal government workforce challenges in AI",
+     "rationale": "Critiques government human capital structures relying on contractors rather than delivery capability."
+    }
+   ]
+  },
+  {
+   "segment_id": "S059",
+   "title": "valuing government function from the end-user perspective",
+   "quote": "I believe that putting the customer at the center of government is going to involve a pretty high level shift to thinking about what is it that government actually does, what is our function, and valuing what it looks like to the person at the end this incredible waterfall hierarchy, as much as we do the business of actually writing policy.",
+   "full_text": "I believe that putting the customer at the center of government is going to involve a pretty high level shift to thinking about what is it that government actually does, what is our function, and valuing what it looks like to the person at the end this incredible waterfall hierarchy, as much as we do the business of actually writing policy.",
+   "open_codes": [
+    {
+     "code_id": "c124",
+     "label": "governance frameworks of mandate versus enablement in government AI",
+     "rationale": "Emphasizes prioritizing the citizen's experience over hierarchical policy writing."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_165059",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 14,
+   "n_ok": 14
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 0
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 3,
+    "created": 6,
+    "chunk": 2
+   },
+   {
+    "reused": 8,
+    "created": 0,
+    "chunk": 3
+   },
+   {
+    "reused": 2,
+    "created": 3,
+    "chunk": 4
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 6
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 7
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 8
+   },
+   {
+    "reused": 5,
+    "created": 0,
+    "chunk": 9
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 10
+   },
+   {
+    "reused": 1,
+    "created": 3,
+    "chunk": 11
+   },
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 12
+   },
+   {
+    "reused": 6,
+    "created": 0,
+    "chunk": 13
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg54718 — Jennifer Pahlka, Author and former U.S. Deputy Chief Technology Officer, Recoding America: Why Government Is Failing In The Digital Age And How We Can Do Better, Former U.S. Deputy Chief Technology Officer\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg54718  |  Harnessing Ai To Improve Government Services And Customer Experience  |  Senate, ?  |  2024-01-10  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chairman Peters) The Committee will come to order. We all interact with the government throughout our lives, whether it is applying for a small business loan, receiving financial aid to pursue an education, accessing essential health care, or applying for Social Security.\nThe prepared statement of Senator Peters appears in the Appendix on page 25.\nOur citizens turn to the government for all sorts of critical services. As elected officials, we must ensure that agencies provide those services as effectively as possible, and artificial intelligence (AI) can help succeed in doing that work.\nThis technology has the potential to make government services more efficient, effective, and accessible for all Americans. For instance, AI can easily translate crucial documents into multiple languages.\nIt can operate 24/7 chatbots that provide our citizens with interactive assistance. It can allow employees to tackle more requests in less time with greater accuracy. AI can make complex processes easier to navigate. The government's use of AI to deliver services is certainly not new.\nThree decades ago, the U.S. Postal Service (USPS) used it to create faster mail delivery services. Today, in my home State of Michigan, AI tools are providing translation services for citizens applying for permits and for licenses.\nThis technology is already making a difference in the lives of countless American civilians. But this is a watershed moment for AI. These technologies grow more advanced nearly every day, reaching more and more aspects of American life.\nThat is why, in the last year, I have convened five hearings on artificial intelligence, and we have passed legislation out of this Committee to address the challenges as well as the opportunities posed by AI.\nThis builds on my previous legislation to provide educational opportunities on AI, establish adequate training resources, and provide agencies with guidance on how to implement AI tools most effectively.\nThis Congress, our Committee has passed my bipartisan Improving Government Services Act to encourage Federal agencies to adopt proven customer service tools to help ensure Americans get the assistance that they need. This bill builds upon the hearing we convened last Congress to explore ways agencies can build trust by improving the customer experience (CX).\nThis is a key moment to understand the capabilities of AI, and how it can benefit both government employees and the citizens that they serve, and under what circumstances. This hearing will help us do just that.\nWe will examine the ways that AI can help deliver critical services and improve the public's experience in receiving them. We will outline the guardrails that this technology requires, the training resources, privacy standards, and performance metrics we need to properly implement AI tools, and our expert panel of witnesses will help us understand how this can happen at all levels of government.\nWe have a responsibility to do everything we can to ensure government provides the most effective and efficient government services. Succeeding in that work will help our constituents.\nIt will improve trust in government and strengthen our democratic institutions. This hearing is an opportunity to examine how artificial intelligence can achieve that mission. It is the practice of the Homeland Security and Governmental Affairs Committee (HSGAC) to swear in witnesses.\nIf each of you would please stand and raise your right hand. Do you swear that the testimony that you will give before this Committee will be the truth, the whole truth, and nothing but the truth, so help you, God?\n[Respondent] I do.\n[Interviewer] (Chairman Peters) Thank you. You may be seated. Our first witness is Jennifer Pahlka, and she is a renowned author and expert on public digital services. She has served in a range of roles across all levels of Government, including the U.S. Deputy Chief Technology Officer.\nAnd during her time in Government, she helped found the United States Digital Service, fix healthcare.gov, and improve the functionality of California's unemployment insurance program.\nPrior to her public service, Ms. Pahlka founded Code for America, a nonprofit working to enhance government services through digital tools. She is also author of Recording America, which was named as one of National Public Radio (NPRs) best books of 2023 and made President Obama's AI reading list.\nCongratulations on that. Ms. Pahlka, you are recognized for your opening comments.\nTESTIMONY OF JENNIFER PAHLKA, AUTHOR,  RECODING\n[Respondent] Thank you so much, Chair Peters and Members of the Committee. Thank you for inviting me here today.\nThe prepared statement of Ms. Pahlka appears in the Appendix on page 27.\nMy message today is simple, a powerful body like the U.S. Senate has many tools at its disposal to shape the future of the country. Those tools can be used to create mandates and controls on the institutions that deliver for the American people, or they can be used to enable these institutions to use their judgment in the service of agreed upon goals.\nA mandate and control framework will add rules and processes. An enablement framework will focus on building capacity, both by strengthening the workforce and reducing the burdens on everyone in it. This critical AI moment calls for enablement. The recent Executive Order (EO) on AI already provides some new controls and safeguards.\nThe order strikes a reasonable balance between encouragement and caution, but I worry that some of its guidance will be applied inappropriately. For example, some government agencies have long been using AI for day to day functions like handwriting recognition on envelopes, and agencies may now subject these benign, low risk uses to red tape.\nCaution is merited in some places and dangerous in others, where we risk moving backward, not forward. Moreover, in many areas of government service delivery, the status quo is frankly not worth protecting.\nWe understandably want to make sure, for instance, that applicants for government benefits are not unfairly denied by-- because of bias in algorithms. The reality is that to take just one benefit, 1 in 6 determinations of eligibility for Supplemental Nutrition Assistance Program (SNAP) is substantially incorrect today. If you count procedural errors, the error rate is 44 percent.\nWorse are the applications and adjudications that have not been decided at all, the ones sitting in backlogs, causing enormous distress to the public and wasting taxpayer dollars. Poor application of AI in these context could indeed make a bad situation worse.\nBut for people who are fed up and just want someone to get back to them about their tax return, their unemployment insurance check, or even their company's permit to build infrastructure, something has to change. We cannot double down on the remedies that failed in the Internet age, and hope that somehow it would work out in the age of AI.\nWe must finally commit to the hard work of building digital capacity. the Office of Personnel Management (OPM) and the White House have stated their intentions to build that capacity by hiring tech talent. This is a case where strengthening the workforce is also a matter of reducing burdens.\nOPM's recent memo, for instance, will grant direct hire authority for several AI related job classifications, and that will remove a bit of the red tape agencies need to bring on experts. That direct hire authority does not allow for the use of pooled hiring across agencies, despite the fact that pooled hiring has gotten us many excellent data scientists and other tech roles much more quickly.\nAgencies will have to run separate hiring processes for each open position, which will take enormous amounts of time and paperwork even with the direct hire authority. Congress should ask OPM what authorities they need in order to change this, and what resources they need to scale programs like this highly successful Subject Matter Expertise Qualifying Assessments (SME-QA) program. Then ask, what is the next obstacle that they need removed.\nI do not presume to know everything that is needed, only that they operate in a highly constrained environment no longer fit to the purpose it must serve. We must reduce burdens in other areas as well. What the public wants from customer service is answers, where is my check? Why did I get this Internal Revenue Service (IRS) notice?\nIf we use AI to make it easier to talk to government, but not to get those answers, we fail. The key reason those answers are hard to come by is the enormous complexity of government programs.\nI worked on the pandemic unemployment insurance crisis and encountered what is close to 10,000 pages of regulation governing what should be a relatively simple program. A claims processor working with my colleague kept calling himself the new guy because he was still learning the ropes. He had been with the agency for 17 years.\nRecall that unemployment insurance dates back to the 1935 Social Security Act. We have been adding rule upon rule and mandate upon mandate for close to 90 years now. We almost never remove them. It is no wonder the program is still in peril. It is collapsing under its own weight that Federal and State agencies cannot shed on their own. It is tempting to say that AI will help us by understanding those 90 years of accumulated policy cruft for us.\nThis is appealing in the short term, but dangerous in the long run. We cannot have a government so complex that one algorithm talks to the other at such a level of complexity that humans are out of the loop. But we can and should use AI to suggest dramatic simplifications to those overwrought frameworks, and make those new, leaner frameworks the law of the land.\nThe greatest gift this body could give to the agencies and the American public they serve is a massive, thorough decluttering. AI makes it possible, but only the people in this chamber can make it happen. Thank you very much.\n[Interviewer] (Chairman Peters) Thank you, Dr. Noveck. Ms. Pahlka, numerous surveys suggest that satisfaction with government services is a lot lower than it is in the private sector. My question for you is, what is your assessment of the State of Government service delivery today? What should we be striving for?\n[Respondent] It is lower, but it is getting better. I think what we need to recognize is that now it must get better, faster. It has to get better faster in part because the gap between public and private sector is about to widen as private sector actors adopt AI.\nAlso, because AI is going to complicate the landscape within Federal agencies, and so there is a need to step up. I think the way to get it better is both to support a lot of current efforts that are already underway. My colleagues have mentioned several of them, and there is a great foundation to build on. But also, to look at new tactics, like policy simplification, which I mentioned in my opening statement.\nThe goal is a good question. I think many people will say that we need to be on par with the private sector. There are, of course, differences between the public sector and the private sector. I think the way I would put it is that the level of service needs to recognize what is at stake for the citizen.\nVery often when you are engaging with the private sector, you are getting your cable bill or getting a car, it may be critical to you in that moment it but it is nowhere near as critical if you are doing something like expecting a tax return check or getting your unemployment insurance, when that may be really life changing for you.\nThe level of service should be appropriate to how critical it is to the human on the other end.\n[Interviewer] (Chairman Peters) Thank you. Ms. Pahlka.\n[Respondent] Wise words from my co-witnesses here. I support everything that they just said and simply add that I guess from the perspective of the pair mandates and directives with enablement.\nIn other words, agencies want to do these things. They want to improve government service delivery, and there are many things that often stand in their way that make them take a long time to do things, jump through a lot of hoops.\nAs you say, as you direct them to take these actions, also ask them what can we remove to make this easier.\n[Interviewer] (Senator Carper) Thank you, Mr. Chair. To our witnesses, welcome. Is it Pahlka?\n[Respondent] Yes.\n[Interviewer] (Senator Carper) Pahlka, right, Noveck, and Blauer. Those were my only questions.\n[Respondent] That was easy.\n[Interviewer] (Senator Carper) Not really. I think everybody on this Committee has been fortunate to hold a whole lot of different jobs in our lives. I think of myself as a servant, as Governor of Delaware. Maggie was Governor of her State as well. We got several Governors on this panel.\nBut we focused a whole lot on customer service. I remember I was right out of the Navy, moved to Delaware from California and went to go to the Department of Motor Vehicles (DMV) in Wilmington, Delaware to get my Volkswagen Karmann Ghia, with a rebuilt engine, through inspection and it took forever to find a place.\nWhen we got there, I was convinced that the people who work there hated me and anybody else who showed up for an inspection. I said, boy, would it be great to have a chance to fix that someday and change that.\nToday, when people go into a DMV in Delaware, the first thing they see is customer service, how can I help you. It used to be that people hated the Division of Revenue, which is like our IRS in Delaware.\nWe did have a lousy reputation for service. My last year as Governor, the folks at the Division of Revenue won the customer service award for best service of any nonprofit or business entity in the State of Delaware. We did not have AI then. Imagine how good we could be if we had AI then.\nAI could be a good thing, a real good thing, or it could be a real bad thing. Why I am excited about this hearing today to hear what the upside might be. When Chuck Schumer, our leader, told us a couple of months ago, we are going to have a series of briefings on AI, I said to my colleagues, I said I could barely spell AI.\nSeveral of them said to me later, they could barely spell AI as well. But I think I have almost got it down, at least the spelling. Now to find out, how can we harness this to provide better service. We have only three counties in Delaware. We have a million people.\nWe have county directors in each county. We have folks who do constituent service in each of our three county offices. We measure every month, we send out a customer satisfaction survey to the people that we have served through our county offices, and people can evaluate our service excellent, good, fair, poor or excellent. We do this every month.\nFor 22 years we are running--96 percent excellent or good. About three percent fair, one percent poor. If folks evaluate us, they come back and say that we were fair or poor, the service was fair or poor, we call them.\nWe call them and see, how could we do it better. None of them have mentioned AI to us yet in terms of doing better. But I just lay that down as a predicate. This is an important part of our jobs.\nFolks think about what we do about here is we pass budgets and we deal with--foreign international issues. We also focus on a good customer service. This may be a way that we can provide even better service.\nQuestion, Ms. Pahlka, Ms. Blauer, now that I have your names straight, what can Federal agencies do with the current tools at their disposal to deploy AI technology more efficiently in order to meet the evolving needs of the people we serve?\nHow will this improve the public's perception and satisfaction of government services? Ms. Pahlka.\n[Respondent] I just want to honor your focus on AI--focus on customer service in State of Delaware. I think that does so much to contribute to people's trust and faith in government and in democracy.\nThank you for sharing that. I think what you said about the successes in customer service without AI actually speak to something that each of us are trying to say, which is it is really about the foundation and the basics. Ms. Blauer mentioned leadership.\nDr. Noveck mentioned the infrastructure. We are not necessarily going to succeed or fail because of AI. We are going to succeed or fail because we have the right foundation to build on. We do not quite yet have that entire foundation. We need to keep building it. We need to build it faster.\nThere are all sorts of things that we should have done in the past decade or two, to bring customer service from the Federal Government into the Internet age and meet the expectations of the American public as they have been able to use services that become much more convenient for them.\nYou do not have to go stand in line anymore to deposit a check, you use your phone to do it. Expectations are risen, and we have to meet those rising expectations. Those things that we should have done to move us effectively into the Internet era they are unfinished business.\nWe still have to do them. We now have to do them quite quickly so that we can be set up to be a great customer service organization in the age of AI. Those things that are basic have to do with our human capital strategy.\nThey have to do with procurement. They have to do with the kind of leadership that Ms. Blauer talked about. I think we agree, and I very much appreciate your comments and your perspective.\n[Interviewer] (Senator Hassan) Thank you, Mr. Chair. thank you to our witnesses for being here, not only for your testimony, but for the work that you do. My questions are really going to be follow-ons or expansions of, I think, the questions you have heard, because there is a common focus among all of us about how we can maximize the potential of AI, but also protect the things that people care about in their interactions with government in the process.\nMs. Pahlka, I will start with you. In your testimony, you discussed how the Federal Government needs to build capacity and competency to deploy AI in a way that meets the diverse needs of each agency and improves service delivery. I am interested in a little bit more of the specifics.\nWhat specific ways can agency leadership foster greater technological capacity and competency to deploy AI, while balancing each agency's ultimate mission? In particular, what can we do to develop AI-competent workforces?\n[Respondent] That is such a great question and thank you for asking it. I think that there are things that agencies need to do, and I think there is also things that the center of government needs to do to support them in doing it.\nIf you go into any agency today and you ask who is actually doing the customer service, who is doing the delivery, who is, say, creating the website that people are using, and I am sort of speaking in an Internet era answer right now rather than the AI answer, it is pretty much all contracted out and the number of people in an agency who have a real pulse on the actual mechanisms of delivery is very small.\nYou can go in and say, OK, there is so many teams I know right now who are doing really incredible work where they are building interfaces to government online for instance that really work for people, and they are struggling. You go in and say, great, this is amazing work, what do you need?\nThey say, well, we are a team of three, how many other people are working on this? 300, 3,000. What are they doing? They are writing reports. They are doing various kinds of compliance. But we really need to go look at who are the people doing this work. Do we have enough of them who have the right competencies and capacities? Part of what I mean by a human capital strategy.\nThere is a huge relook that we have to do on who we hire and in what capacity in government and really change things to be more oriented toward the capacities and competencies of delivery. Then we also need to be able to hire those people. I mentioned in my written testimony that it just takes too long to hire people today. And you know, the how to make that a shorter process is a very complicated question.\nYou see good movement around that right now with things like direct hire authority for agencies for AI enabled positions. Of course, it is much more than just experts in AI, right. It is all of the people who do the data, for instance or a wide range of AI enabling positions.\nBut we need to further ask, how can we speed the hiring of those positions? I now know literally hundreds of people from the private sector with exactly the competencies, capacities, and values that we want who want to come into government.\nThese are the people we need. They are really interested in a way that they were not as interested 10 years ago, but they are languishing in nine month processes and then we are losing them. Let us just look at who we need to hire and then figure out how to hire them quickly.\n[Interviewer] (Chairman Peters) Thank you, Senator Hassan. Ms. Pahlka, your testimony mentions that our current Federal procurement framework is simply too rigid and that it prevents us from timely obtaining some technological capabilities like AI, as well as cloud computing.\nBut this issue is actually a major priority for this Committee, and we are in the process of looking at some reforms to the procurement process going forward.\nMy question for you is, is how can we change the framework to better obtain and use these essential capabilities like AI and cloud computing, and any other types of reforms that you think are essential for us to consider?\n[Respondent] Thank you so much for bringing up procurement. I know there are a bunch of procurement nerds listening who will be very excited that this topic is being spoken of in this chamber.\nThere are a bunch of procurement nerds because it is such a complex issue. The Federal Acquisition Regulation (FAR) is, as you well know, 2,400 pages, and the number of things that could be done to it to make it easier for contracting officers and people in charge of delivery in government are numerous.\nI think in the time that we have today, what I would say is, it has to be simpler. Any time something has that many different provisions, you are going to have people fighting over interpretations of things. You are going to have people saying, we cannot use this, we have to apply this particular provision of it.\nUltimately, if it is a little bit simpler, I think people will be able to get the outcomes that they desire from a particular procurement more quickly. I think speed and flexibility are the two things that you should be designing for if you think about any kind of procurement reform.\nThere is a lot else, I think, to talk about there, but ultimately, what you want to end up with something that is not 2,400 pages. The great thing about this particular moment in time is that it is very hard to understand what those 2,400 pages actually mean. Now, there are many people are in government who really do know it backwards and forwards, but AI can actually help us suggest some simplifications to that.\nIt is part of the opportunity of this particular moment.\n[Interviewer] (Chairman Peters) Thank you. Ms. Pahlka.\n[Respondent] I think Dr. Noveck said 90 percent of it. If I can just plus 1,000 that. All I would add to it is, there is some controversy over the notion of open source AI. I think in the kinds of contexts we are talking about, the dangers are much less, and the benefits can be pretty big.\nAI could have the effect of real consolidation of power because it is so hard to create these models. The investment that OpenAI put into Chat Generative Pre-trained Transformer (ChatGPT) is staggering.\nThey have a lot of power because of that. The more that we can actually look at models that are more distributed, more democratized, and that is going to mean oftentimes open source, and make sure we can consider those when we are trying to find a solution in government, the more we will be I think promoting competition broadly in technology.\n[Interviewer] (Chairman Peters) Thank you. Ms. Pahlka.\n[Respondent] My colleagues at the table here are national experts on this, and I would like to cede my time to Ms. Blauer there. Both of these folks have so much experience in this topic.\n[Interviewer] (Chairman Peters) Great. Ms. Blauer, you have the final say on this question.\n[Respondent] All right. Thank you to both of you.\nI was not a classically trained data person when I became essentially the de facto Chief Data Officer of the State of Maryland. What I was someone who understood what it meant to work in government.\nI connected to the people of the front lines of government, and I was able to usher in a transformation of data use in government because I could relate to the challenges that the people in the organizations were trying to solve. I knew what it was like to be a probation officer, to sort of sit under the crushing weight of that bureaucracy.\nWhen we think about how we attract CDOs into our government, if we are only hiring technologists into those roles and not people that have the softer skills, that can be deferential to subject matter expertise that exists in your government, that can actually connect and translate from the technology to the policymaking, to the legislative agenda setting, to the budget making, to all of the things that we know are the levers of government that are going to create change, then we are doing a disservice both to the position of CDO and to government itself. CDOs need to be able to have those rounded expertise so that they can, like I said, connect to the people who are delivering for your government and also for those that are leading change in your government.\nWhere we have seen failures, both at the local and State level, is when we place a CDO in an information technology (IT) agency and their role is sort of ordained just to be the person that hounds people to move data or to get data express for other use.\nWhere we have seen great success is where they are empowered from a leadership level, and that they are materially part of the big substantive change that government is embarking on.\n[Interviewer] (Senator Butler) Thank you, Chair Peters. Thank you to all of you for participating. So great to see a Californian on the panel.\nFor that reason, little hometown love, I would love to sort of start with you, Ms. Pahlka. We are one of the most diverse States in the country, representing 40 million Californians and a vast array of racial diversity, ethnic diversity, and language diversity.\nWe, given our size and scope, our diversity that makes us such a great State, the challenges of making government work for California residents is a challenge that you have taken on behalf of Governor Newsom and our Employment Development Department (EDD) team.\nI am curious about the ways in which these technologies can be deployed to further accessibility, as well as just getting people what they need on an everyday basis. The pain of getting a driver's license.\nThe pain of getting a passport, or getting your call returned. Talk with me a little bit, share with the Committee a little bit about how we can embrace all that makes us great, our diversity, and all of the things that really make our country the melting pot that it is, and deploy technology in order to make our government, again, more accessible for those whose first language may not be English, and make sure that it works in a way that people can get exactly what they need when they need it.\n[Respondent] That is that is an inspiring question, thank you. I am glad that it came from our Senator from California. We have mentioned earlier that translation is one of the things AI is fantastic at.\nWhen I worked on the task force for unemployment insurance during the pandemic, translation of the whole process, not just the application form people would use online--of course, we had a problem with the call center, but if you were able to call, were you able to get through and talk to somebody in the language that you knew so that you could actually get the help you need to get your unemployment insurance check?\nOf course, we are at a moment in time when there are tools available that could make that a lot easier. I have spoken before about the need to streamline procurement so that tools like that could be procured more easily. I also think it is really important to recognize that when people call, they do not just want to be able to talk to somebody in their language, they actually need an answer.\nIt is wonderful if someone can pick up the phone, but much better if they can say, your check is coming. In order to do that, I do think we need to simplify the policies and processes and regulations that a program like unemployment insurance is staggeringly complex for something that really is not that complicated.\nWe are going to take your pay, your previous pay and some portion of it, and you are going to get that when you are out of work. We have made it into 10,000 pages of regulation. I mentioned how people working at the EDD in California were still learning the ropes after 17 years.\nOf course, it is hard to get an answer under that incredible burden of complexity, and we happened to be at a moment in time when AI could help us reduce that complexity. It cannot do the work for us, but it can help us understand what is in those 10,000 pages, suggest simplifications, and then lawmakers could work to make that a program that is a little bit easier to administer.\nWhen I worked on unemployment insurance, and I hope that speaks to your question, not just the particular example, but we had a Legislature who passed a law right when we were trying to get through that backlog that was designed to help people who did not speak English.\nAs much as I am a fan of the need to do that and feel very connected to the need to serve those folks, it was an example, I felt, of adding a mandate when what was needed was enablement.\nOne of the things we could have done at that time to subtract rather than add, would have been to remove the requirement that call center agents had to get permission before they could use the translation service that was currently available.\nInstead, we said, here are new mandates for translation of the website, which distracted, frankly from the ability of the EDD at that moment in time to work through the backlog. The thing they needed to do the most at that time was get checks to what turned out to be 1.3 million people.\nSometimes we need to recognize that we have to have priorities in order to serve people. There were many people in that 1.3 million claims backlog who were underserved, represented the diversity of California, and they actually did not need at that moment a different way to read through this web form, which was already so complicated.\nThe language in it was so complicated in English, that translating it into another language was not going to help. What they needed was their check. Sometimes we need to have better communication between agencies and legislators to understand what is the thing at this moment in time that will enable the right outcome and set some priorities and have the translation stuff come later.\nI hope the translation stuff does come later, but I also hope we use the tools of AI to do it, instead of doing it in the mode that we have been doing it over the past 10 years.\n[Interviewer] (Senator Butler) Thank you.\n[Respondent] Thank you.\n[Interviewer] (Chairman Peters) OK. Ms. Pahlka, your book, Recoding America, outlines the disconnect that can occur between policymakers, policy implementers, and the general public. My question for you is, how can government actually prioritize the customer when it comes to service delivery in the life cycle?\n[Respondent] I think this is so critical that we have a fundamental shift in what we value in order to put the customer at the center.\nI know this is a very high level answer, but we have to value delivery as highly as we value policy, both here on the Hill and in the agencies, and to the points earlier, in States and in cities.\nWe are very focused here on the words that we write, and we forget that the people on the other end do not look at those words. They go on a website and try to get unemployment insurance. They are trying to get their driver's license or God forbid, they are in our criminal legal system and they are experiencing incredible burdens.\nThey see delivery. As I said, our human capital system in government broadly, not just in Federal Government, is not set up to value that. We are set up to write words and hire contractors.\nI believe that putting the customer at the center of government is going to involve a pretty high level shift to thinking about what is it that government actually does, what is our function, and valuing what it looks like to the person at the end this incredible waterfall hierarchy, as much as we do the business of actually writing policy.",
+ "_bench": {
+  "seconds": 81.9,
+  "chars": 33557
+ }
+}

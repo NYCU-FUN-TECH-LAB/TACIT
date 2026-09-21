@@ -1,0 +1,4088 @@
+{
+  "codebook_id": "cb_20260921_015911",
+  "language": "en",
+  "created": "2026-09-21T01:59:11",
+  "codes": [
+    {
+      "code_id": "c001",
+      "label": "Opening Remarks",
+      "definition": "Introduction and welcome by the respondent",
+      "examples": [
+        {
+          "quote": "Thank you, Senator Peters and Members of the Homeland Security and Government Affairs Committee. I thank you for inviting me to testify at this important hearing on the risks and opportunities of AI.",
+          "respondent": "Suresh Venkatasubramanian"
+        },
+        {
+          "quote": "Let's try to learn from it and see how we might apply something like that, or other models, here.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "Thank you, Chair Hickenlooper. And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.",
+          "respondent": "Senator Strayer"
+        },
+        {
+          "quote": "I am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate.",
+          "respondent": "Senator Hickenlooper"
+        },
+        {
+          "quote": "I am going to have to go vote, but I am going to leave you in the very capable hands of Senator Cantwell, who, as I said earlier, really knows probably more about this issue than anybody else in the Senate. So I am not worried that you are going to get lost in the forest.",
+          "respondent": "Senator Hickenlooper"
+        }
+      ],
+      "count": 11,
+      "first_seen_chunk": 0,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c002",
+      "label": "Background and Expertise",
+      "definition": "The respondent is providing background information on their expertise and experience",
+      "examples": [
+        {
+          "quote": "I recently completed a stint as tech policy advisor in the White House and helped develop the Blueprint for an AI Bill of Rights.",
+          "respondent": "Suresh Venkatasubramanian"
+        },
+        {
+          "quote": "Thank you, Chairman Peters, Ranking Member Paul, and Committee Members for your attention to artificial intelligence and automated decisionmaking in government programs.",
+          "respondent": "Richard A. Eppink, Of Counsel, American Civil Liberties Union Of Idaho Foundation"
+        },
+        {
+          "quote": "we can look to the Constitution. We can look to life, liberty, property, privacy",
+          "respondent": "Mr. Eppink"
+        },
+        {
+          "quote": "The experts on these systems are the people that the systems make decisions about.",
+          "respondent": "Mr. Eppink"
+        },
+        {
+          "quote": "we need ethics review boards in universities for AI, just like we have for biology and medicine",
+          "respondent": "Dr. Bengio"
+        },
+        {
+          "quote": "CDOs need to be able to have those rounded expertise so that they can, like I said, connect to the people who are delivering for your government and also for those that are leading change in your government.",
+          "respondent": "Ms. Pahlka"
+        }
+      ],
+      "count": 58,
+      "first_seen_chunk": 0,
+      "merged_from": [
+        "Importance of rounded expertise for CDOs"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Importance of rounded expertise for CDOs",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c003",
+      "label": "Definition of AI",
+      "definition": "The respondent is defining what AI is and its goals",
+      "examples": [
+        {
+          "quote": "We are here today to talk about AI, a field of study trying to design systems that can sense, interact, reason, and behave in the way humans do, and in some cases even surpass us.",
+          "respondent": "Suresh Venkatasubramanian"
+        },
+        {
+          "quote": "a field of study trying to design systems that can sense, interact, reason, and behave in the way humans do, and in some cases even surpass us.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "They fail when the algorithms draw incorrect conclusions from data. They fail when they make predictions based on faulty or biased data. They fail when the results of one AI system are fed into another, or even the same one, amplifying errors along the way. They fail when they are so opaque that errors in how they function cannot even be detected.",
+          "respondent": "Professor Venkatasubramanian"
+        },
+        {
+          "quote": "There is a future in which automated technology is an assistant. It enables human freedom, liberty, and flourishing, where the technology we build is inclusive and helps all of us achieve our dreams and maximize our potential.",
+          "respondent": "Professor Venkatasubramanian"
+        },
+        {
+          "quote": "we also do not know how it fails and under what circumstances it fails, and that is where the biggest problem is.",
+          "respondent": "Professor Venkatasubramanian"
+        },
+        {
+          "quote": "This term, AGI, isn't well-defined, but it's generally used to mean AI systems that are roughly as smart or capable as a human.",
+          "respondent": "Helen Toner, Director, Center for Security and Emerging Technology, Georgetown University"
+        },
+        {
+          "quote": "We need to have some ways to be able to verify security, verify on the updating, verifying the IP address, and then verifying what is not the IP, but who owns the IP on it, and then verifying the whole process of updating it, using it, and then also what is responsible use of it.",
+          "respondent": "Ms. Li"
+        },
+        {
+          "quote": "So what I thought I'd do is, if we're going to talk about the impact of AI and cybersecurity, is just set the stage of where we are in the cybersecurity space and where American companies are right now so, we can have a honest discussion about what AI, the effects might be.",
+          "respondent": "Alex Stamos, Chief Trust Officer, SentinelOne"
+        }
+      ],
+      "count": 57,
+      "first_seen_chunk": 0,
+      "merged_from": [
+        "[Definition of AGI]",
+        "Verification of AI security",
+        "Impact of AI on cybersecurity"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: [Definition of AGI]",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Verification of AI security",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c004",
+      "label": "Impact of machine learning on society",
+      "definition": "machine learning has a significant impact on various aspects of life",
+      "examples": [
+        {
+          "quote": "Virtually every sector of society is now touched by machine learning, and the most consequential decisions and experiences in our lives are mediated by algorithms--",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "Artificial intelligence is already transforming how government agencies serve the public",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "We need a diverse set of approaches, because we don't know how to really do this.",
+          "respondent": "Bengio"
+        },
+        {
+          "quote": "And then you look at the entertainment industry and the voice cloning, and you look at what our entertainers, our songwriters, our artists, our authors, our publishers, our TV actors, our TV producers are facing with AI, and to them, it is an absolute way that they're robbing them of their ability to make a living off of their creative work.",
+          "respondent": "Russell"
+        },
+        {
+          "quote": "And just for comparison, that's about 10 times the amount of the entire National Science Foundation of the United States, which has to cover physics, chemistry, basic biology, et cetera, et cetera, et cetera",
+          "respondent": "Russell"
+        },
+        {
+          "quote": "So, my suggestion is regulate the industries that have effect on people about the effects.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "All these systems have something in common. They are algorithms for making algorithms.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "What do I mean by that? Right now, to a first approximation, a computer runs any piece of binary code that you load into it. We put layers on top of that that say, ``Okay, that looks like a virus. I'm not running that.''",
+          "respondent": "Russell"
+        }
+      ],
+      "count": 77,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Regulating AI's impact on society",
+        "Characteristics of machine learning systems"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Regulating AI's impact on society",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Characteristics of machine learning systems",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c006",
+      "label": "Limitations of AI systems",
+      "definition": "AI systems have limitations and can fail",
+      "examples": [
+        {
+          "quote": "As a consequence of the above, we do not actually know for sure whether and how these algorithms work and why they produce the output that they do.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "Any automated system that has meaningful impact on our rights, opportunities for advancement, and access to critical services should be tested so it works, and works well. It should not exhibit discriminatory behavior, be limited and careful in its use of our personal data, be transparent, and easily understandable, and be accompanied by human supervision for all the times that it fails.",
+          "respondent": "Professor Venkatasubramanian"
+        },
+        {
+          "quote": "You mentioned in your opening comments and your written comments some of those risks, but for the Committee's benefit could you tell us more about the risks that are associated when you have non-transparent algorithms?",
+          "respondent": "Professor Venkatasubramanian"
+        },
+        {
+          "quote": "A machine learning algorithm that takes data that has hidden biases in it will invariably, almost certainly, detect and amplify those biases in its output.",
+          "respondent": "Professor Venkatasubramanian"
+        },
+        {
+          "quote": "A machine learning algorithm that takes data that has hidden biases in it will invariably, almost certainly, detect and amplify those biases in its output.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "AI is not super inventive yet, and I think that's where we're looking as defenders to make it more creative and more predictive of where things are going, and better at noticing things, weird attacks that have never been seen before, which is still a problem.",
+          "respondent": "Mr. Stamos"
+        },
+        {
+          "quote": "AI systems are useful in a huge variety of scenarios, from making financial decisions, to medical diagnosis, and content modernization, and I believe government should also utilize AI for improving constituents' access to government services.",
+          "respondent": "Ms. Espinel"
+        },
+        {
+          "quote": "Just to point out, one analogy of the past was there was a lot of challenge with extremist -- violent extremist content online in the--roughly in the mid-2000s post- 9/11, there was something formed called the Global Internet Forum to Counter Terrorism, and that was really the major platforms.",
+          "respondent": "Senator Hickenlooper"
+        }
+      ],
+      "count": 75,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "AI's limitations",
+        "Impact of AI systems",
+        "[Impact of AGI]",
+        "Limitations of administrative subpoenas",
+        "AI-enabled public administration",
+        "AI in public administration",
+        "Vulnerability of AI systems"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI's limitations",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Impact of AI systems",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Limitations of administrative subpoenas",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Vulnerability of AI systems",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c007",
+      "label": "Guardrails for AI",
+      "definition": "AI needs guardrails to prevent failures and ensure benefits",
+      "examples": [
+        {
+          "quote": "The truth is AI systems are not magic. AI is technology, and like any other piece of technology that has benefited us-- drugs, cars, planes--AI needs guardrails so we can be protected from the worst failures while still benefiting from the progress AI offers.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "The truth is AI systems are not magic. AI is technology, and like any other piece of technology that has benefited us-- drugs, cars, planes--AI needs guardrails so we can be protected from the worst failures while still benefiting from the progress AI offers.",
+          "respondent": "Professor Venkatasubramanian"
+        },
+        {
+          "quote": "What is required is a collection of procedures, among them procedures that examine the sources of data, examine the biases in the data, even if it is a large dataset, and try to understand how those biases might be affecting what the algorithm would do.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "What is required is a collection of procedures, among them procedures that examine the sources of data, examine the biases in the data, even if it is a large dataset, and try to understand how those biases might be affecting what the algorithm would do.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "There are certain best practices for how to train algorithms to try to mitigate these forms of bias, and they need to be put into place.",
+          "respondent": "Venkatasubramanian"
+        },
+        {
+          "quote": "your, quote, ``experience on the board of OpenAI taught me how fragile internal guardrails are when money is on the line and why it's imperative that policymakers step in.''",
+          "respondent": "Ms. Toner"
+        },
+        {
+          "quote": "we had clear values, and we had principles, and we had in place guardrails and protections",
+          "respondent": "Mr. Smith"
+        },
+        {
+          "quote": "But we also then need to speed up how we do that work, and that is where some of these copilot techniques, this ability to use AI to help us write code faster, really comes into play. But I do want to respond to the second half, and as Beth alluded to already, this ensuring that we are not using, and we do not need to in most cases, use PII or sensitive information, and how we do this, I think, is really crucial.",
+          "respondent": "Dr. Noveck"
+        }
+      ],
+      "count": 273,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Fragile internal guardrails",
+        "Guardrails and protections",
+        "Data protection and AI"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Fragile internal guardrails",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Guardrails and protections",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c009",
+      "label": "Single agency for AI regulation",
+      "definition": "Establishing a single agency for AI regulation to ensure international coordination",
+      "examples": [
+        {
+          "quote": "If there are 10 different agencies trying to regulate AI in its various forms, that could be useful, but as Stuart Russell was saying, this is going to be very big in terms of the space it takes in the economy, but also we need to have a single voice that coordinates with the other countries.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "I don't think we want to move the approval of every new drug from the FDA to this agency.",
+          "respondent": "Mr. Smith"
+        },
+        {
+          "quote": "And we're interested in that, too.",
+          "respondent": "Smith"
+        },
+        {
+          "quote": "Sounds then like you can afford to decouple?",
+          "respondent": "Smith"
+        },
+        {
+          "quote": "You probably need a level of international coordination.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "And there was a very specific choice, both in legislation and at the executive level, to let the market lead, to let innovators lead, to let them drive this technology forward because they can explore a lot of different approaches and uses in a way that we could never envision in the early 90s when some of these decisions were made.",
+          "respondent": "Mr. Chilson"
+        },
+        {
+          "quote": "As a scholar at Brookings who is interested in trying to figure out proactive, evidence-based strategies to move forward, this is actually preparation.",
+          "respondent": "Dr. Turner Lee"
+        },
+        {
+          "quote": "The White House secured voluntary commitments from some of the leading U.S.-based AI companies that want to equally ensure safety, security, trust with advanced systems.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 18,
+      "first_seen_chunk": 10,
+      "merged_from": [
+        "Template for AI regulation",
+        "Preparation for AI regulation",
+        "White House's efforts on AI regulation",
+        "Role of Congress in AI regulation",
+        "Congress's role in AI regulation",
+        "Role of Congress in addressing AI",
+        "Lack of transparency in AI regulation"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Template for AI regulation",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Role of Congress in AI regulation",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Lack of transparency in AI regulation",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c011",
+      "label": "Censorship",
+      "definition": "The act of suppressing or prohibiting the expression of certain ideas or opinions",
+      "examples": [
+        {
+          "quote": "If we do the first, then we're acting as censors. And I do think that makes me nervous. I don't think that's really our role to act as censors. And the Government really cannot, I think, under the First Amendment. But relabeling to ensure accuracy, I think that is probably a reasonable path.",
+          "respondent": "Smith"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 17,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c012",
+      "label": "Accuracy",
+      "definition": "The quality of being correct or precise",
+      "examples": [
+        {
+          "quote": "If we do the first, then we're acting as censors. And I do think that makes me nervous. I don't think that's really our role to act as censors. And the Government really cannot, I think, under the First Amendment. But relabeling to ensure accuracy, I think that is probably a reasonable path.",
+          "respondent": "Smith"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 17,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c014",
+      "label": "Automation and job loss",
+      "definition": "The impact of automation on job loss and the economy",
+      "examples": [
+        {
+          "quote": "But hey, in this economy where the wages of blue collar workers have been flat for 30, 40 years and running, what worries me is that oftentimes what we hear from the tech sector, to be honest with you, is that jobs that don't have creativity, as tech defines, that don't have value.",
+          "respondent": "Smith"
+        },
+        {
+          "quote": "low-paying entry jobs will be taken on by computers, but it gives us a chance to reposition those individuals, re-skill them",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "it allows for a new kind of automation. We have been building automation for several decades, but a lot of it was very brittle, and if something slightly changed under the hood, all of a sudden, you know, that automation would no longer work.",
+          "respondent": "Mr. Shah"
+        }
+      ],
+      "count": 3,
+      "first_seen_chunk": 17,
+      "merged_from": [
+        "Automation and job repositioning",
+        "Agentic AI and automation"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Automation and job repositioning",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Agentic AI and automation",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c015",
+      "label": "Impact of economic policy on working class",
+      "definition": "The negative impact of economic policy on working-class individuals.",
+      "examples": [
+        {
+          "quote": "I'd argue more broadly that our economic policy the last 30 years has been downright disastrous for working people.",
+          "respondent": "Smith"
+        },
+        {
+          "quote": "our economic policy the last 30 years has been downright disastrous for working people.",
+          "respondent": "Smith"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 18,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c016",
+      "label": "Impact of AI on job loss",
+      "definition": "The respondent is concerned about the potential job loss caused by AI.",
+      "examples": [
+        {
+          "quote": "I don't want AI to be the latest accelerant of that trend.",
+          "respondent": "Smith"
+        },
+        {
+          "quote": "We've seen this movie before, as they say. And it didn't turn out that well in the industrial revolution where workers were displaced en masse.",
+          "respondent": "Mr. Smith"
+        },
+        {
+          "quote": "I personally believe in multi-stakeholder approach.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "Folks think about what we do about here is we pass budgets and we deal with--foreign international issues. We also focus on a good customer service.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "AI could wipe out half of the entry- level white-collar jobs and spike unemployment 10 to 20 percent in the next 1 to 5 years.",
+          "respondent": "Mr. Shah"
+        },
+        {
+          "quote": "Medicare Advantage insurance companies are using AI to make decisions about what they will cover or not.",
+          "respondent": "Senator Carper"
+        },
+        {
+          "quote": "The status quo is frankly not worth protecting.",
+          "respondent": "Ms. Pahlka"
+        },
+        {
+          "quote": "Is it--is it a good thing that workers lose their jobs to AI, whether it's at Wendy's, or whether it's at Walmart, or whether it's at the local hardware store?",
+          "respondent": "Smith"
+        }
+      ],
+      "count": 13,
+      "first_seen_chunk": 19,
+      "merged_from": [
+        "Impact of AI on people's lives",
+        "Job loss due to AI"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Impact of AI on people's lives",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Job loss due to AI",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c017",
+      "label": "Microsoft's entwinement with China",
+      "definition": "Microsoft has a significant presence in China and has collaborated with Chinese state-owned businesses.",
+      "examples": [
+        {
+          "quote": "You have the Microsoft Research Asia that was set up in Beijing back in the late 1990s.",
+          "respondent": "Smith"
+        },
+        {
+          "quote": "It's 1.5 percent of our global revenue.",
+          "respondent": "Smith"
+        },
+        {
+          "quote": "You eventually took it down although it took 3 years. China used that database to train much of its facial recognition software and technology.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 3,
+      "first_seen_chunk": 19,
+      "merged_from": [
+        "Concerns about Microsoft's entwinement with China"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Concerns about Microsoft's entwinement with China",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c020",
+      "label": "Denial of involvement in Chinese government's activities",
+      "definition": "The respondent denies being involved in the Chinese government's activities",
+      "examples": [
+        {
+          "quote": "I don't think that will accomplish what you are asking us----",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 20,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c021",
+      "label": "Safeguards against technology misuse",
+      "definition": "The respondent describes measures to prevent technology misuse",
+      "examples": [
+        {
+          "quote": "We do everything we can to ensure that our technology is not used in any way for that kind of activity in China and around the world, by the way.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 20,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c022",
+      "label": "Decoupling",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "But is that the right thing to do?",
+          "respondent": "Smith"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 21,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c023",
+      "label": "Licensing regime for AI",
+      "definition": "The need for a licensing regime to regulate the use of AI-generated content",
+      "examples": [
+        {
+          "quote": "Who needs a license? You don't want it to be so hard that only a small number of big companies can get it. But then you also need to make sure that you're not requiring people to get it when they really, we would say, don't need a license for what they're doing.",
+          "respondent": "Smith"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 24,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c024",
+      "label": "Oversight and regulation",
+      "definition": "The need for oversight and regulation to ensure the responsible use of AI-generated content",
+      "examples": [
+        {
+          "quote": "You know, I think that there may well be obligations to disclose to, say, an independent authority when a training run begins depending on what the goal--when the training run ends, so that an oversight body can follow it just the way, say, might happen when a company's building a new commercial airplane.",
+          "respondent": "Smith"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 24,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c025",
+      "label": "Clarity about AI use",
+      "definition": "The importance of being clear about how AI technology is used",
+      "examples": [
+        {
+          "quote": "you do have to have clarity about how you want your technology to be used",
+          "respondent": "Mr. Smith"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 27,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c027",
+      "label": "Cloud provider oversight",
+      "definition": "Monitoring cloud providers to prevent AI technology misuse",
+      "examples": [
+        {
+          "quote": "we need to make sure that the cloud providers are not used to circumvent our export controls or sanctions",
+          "respondent": "Mr. Smith"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 27,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c028",
+      "label": "Moral imperative",
+      "definition": "The importance of considering moral principles in decision-making",
+      "examples": [
+        {
+          "quote": "There is a moral imperative here. And I think there--there is a lesson in the history of this great country, the greatest in the history of the world, that when we lose our moral compass, we lose our way.",
+          "respondent": "Mr. Smith"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 28,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c029",
+      "label": "Training and education",
+      "definition": "The need for retraining and upskilling workers",
+      "examples": [
+        {
+          "quote": "We need to train those workers. We need to provide education.",
+          "respondent": "Mr. Smith"
+        },
+        {
+          "quote": "We must finally commit to the hard work of building digital capacity.",
+          "respondent": "Ms. Pahlka"
+        },
+        {
+          "quote": "Students, for example, have been working with the California nonprofit Innovate Public Schools to help families of schoolchildren with disabilities translate and summarize the child's individualized education program (IEP).",
+          "respondent": "Dr. Noveck"
+        },
+        {
+          "quote": "That is going to require then more training, I think, for chief data officers and for data professionals in government around AI to talk about where those collaborations can occur.",
+          "respondent": "Dr. Noveck"
+        }
+      ],
+      "count": 4,
+      "first_seen_chunk": 28,
+      "merged_from": [
+        "AI in education",
+        "Training and collaboration for AI"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI in education",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Training and collaboration for AI",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c030",
+      "label": "Appreciation for challenges and uncertainty",
+      "definition": "Expressing gratitude for the difficulties and ambiguity",
+      "examples": [
+        {
+          "quote": "And I appreciate all the challenges. There's so much uncertainty.",
+          "respondent": "Smith"
+        },
+        {
+          "quote": "And again, thank you to you and Senator Blackburn for holding this important hearing; and for all our witnesses participating in this; I am sure it has been a robust discussion on many fronts.",
+          "respondent": "Senator Hickenlooper"
+        },
+        {
+          "quote": "I applaud this Committee and the work that has been done thus far on AI, including the AI Training Act and the AI Lead Act, which create powerful tools for Federal Government to set such norms.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "Thank you, Chair Peter, and thank you so much for this opportunity to appear before the Committee, especially in the company of such a distinguished panel.",
+          "respondent": "Beth Simone Noveck, Ph.D."
+        },
+        {
+          "quote": "I think in this case, what we are going to see is improved certainty and baselines for companies to better participate in the AI economy.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "I want to go on record for saying that we, as Members of Congress, have been engaged in a task force.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "That is that is an inspiring question, thank you.",
+          "respondent": "Ms. Pahlka"
+        },
+        {
+          "quote": "Thank you, Chair Peter, and thank you so much for this opportunity to appear before the Committee, especially in the company of such a distinguished panel.",
+          "respondent": "Dr. Noveck"
+        }
+      ],
+      "count": 12,
+      "first_seen_chunk": 30,
+      "merged_from": [
+        "Appreciation for the hearing",
+        "Appreciation for the question",
+        "Appreciation for the opportunity",
+        "Appreciation for AI Safety Institute's work"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Appreciation for the hearing",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Appreciation for AI Safety Institute's work",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c032",
+      "label": "Committee's work on AI",
+      "definition": "The committee has been studying AI in a thoughtful manner for years",
+      "examples": [
+        {
+          "quote": "This committee began studying the issue in a thoughtful manner years earlier.",
+          "respondent": "Espinel"
+        },
+        {
+          "quote": "This builds on my previous legislation to provide educational opportunities on AI, establish adequate training resources, and provide agencies with guidance on how to implement AI tools most effectively.",
+          "respondent": "Jennifer Pahlka"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Legislation and committee work"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Legislation and committee work",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c033",
+      "label": "Concerns about AI development and use",
+      "definition": "There are legitimate concerns about AI development and use",
+      "examples": [
+        {
+          "quote": "As with any new technology there are legitimate concerns that need to be addressed, including the risk of bias and discrimination.",
+          "respondent": "Espinel"
+        },
+        {
+          "quote": "We have also seen intellectual property issues with AI, songs, and the like, copyright, only around half the states have laws, that give individuals control over these, their name, image, and voice.",
+          "respondent": "Ms. Espinel"
+        },
+        {
+          "quote": "That is clearly wrong, and should be stopped. I am thinking about writer publicity, as you point out, that is not something that exist consistently throughout the United States.",
+          "respondent": "Ms. Espinel"
+        },
+        {
+          "quote": "Straight out of science fiction, that could be right around the corner.",
+          "respondent": "Ms. Espinel"
+        },
+        {
+          "quote": "How can we create an oversight and enforcement framework to make sure that we can hold bad actors accountable?",
+          "respondent": "Mr. Strayer"
+        },
+        {
+          "quote": "Mr. Altman gave inaccurate information about the small number of formal safety processes that the company did have in place",
+          "respondent": "Ms. Toner"
+        },
+        {
+          "quote": "Instead, it usurps Congress, abusing the DPA to impose new regulations, and spurring regulatory action that will affect the entire software industry.",
+          "respondent": "Chilson"
+        },
+        {
+          "quote": "Some companies develop AI, some companies use AI, our companies do both, and both roles have to be covered.",
+          "respondent": "Espinel"
+        }
+      ],
+      "count": 163,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Inaccurate information about AI development and use",
+        "Concerns about government misuse of AI",
+        "Different roles in AI development and use",
+        "AI development and innovation",
+        "Challenges in AI development and regulation",
+        "Challenges in AI development",
+        "Importance of responsible AI development",
+        "Importance of transparency in AI development",
+        "Concerns about OpenAI's commitment to safety",
+        "Concerns about AI company's commitment to safety",
+        "Concerns about AI regulation",
+        "Concerns about executive order regulation",
+        "Concerns about AI definition",
+        "Concerns about AI in elections",
+        "Concerns about AI use in elections",
+        "Concerns about AI's impact on elections",
+        "Concerns about AI's impact on election integrity",
+        "Concerns about AI training data",
+        "Concerns about AI dominance",
+        "Concerns about AI misuse",
+        "Concerns about AI use",
+        "Concerns about the President's role in AI regulation",
+        "Concerns about AI-generated content",
+        "Concerns about AI-generated content in elections",
+        "AI-generated content",
+        "Uncertainty about the impact of AI-generated content",
+        "Concerns about AI and national security",
+        "Concerns about OpenAI's testing and security",
+        "Concerns about data privacy",
+        "Concerns about AI company's priorities",
+        "Concerns about facial recognition",
+        "Here-and-now conversation about AI",
+        "Importance of regulation",
+        "Importance of AI regulation",
+        "Importance of clear regulation",
+        "Importance of state-level action",
+        "Importance of national AI leadership",
+        "Importance of legal protections",
+        "Importance of collaboration among defenders",
+        "Importance of collaboration and data sharing",
+        "Importance of understanding generative AI",
+        "Importance of information-sharing mission",
+        "Importance of answering questions",
+        "Concerns about AI's role in malign influence operations",
+        "Concerns about AI-generated deepfakes and misinformation",
+        "Lack of accountability in AI development"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Inaccurate information about AI development and use",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Concerns about government misuse of AI",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Different roles in AI development and use",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI development and innovation",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Importance of responsible AI development",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Concerns about OpenAI's commitment to safety",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Concerns about AI regulation",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Lack of accountability in AI development",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c034",
+      "label": "Legislation on AI",
+      "definition": "Legislation is needed to set rules around AI",
+      "examples": [
+        {
+          "quote": "This committee is well placed to move legislation that sets rules around AI.",
+          "respondent": "Espinel"
+        },
+        {
+          "quote": "This Congress, our Committee has passed my bipartisan Improving Government Services Act to encourage Federal agencies to adopt proven customer service tools to help ensure Americans get the assistance that they need.",
+          "respondent": "Beth Simone Noveck, Chief Innovation Officer, State Of New Jersey"
+        },
+        {
+          "quote": "we have urgent assignment to move and legislate on what is actually in the EO",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "Congress can also act on data privacy legislation.",
+          "respondent": "Dr. Lee"
+        },
+        {
+          "quote": "These are avoidable problems, and it is not just in scope for privacy law.",
+          "respondent": "Ms. Kak"
+        },
+        {
+          "quote": "It should focus on high risk uses of AI, like those that decide whether a person can get a job, a home, health care.",
+          "respondent": "Espinel"
+        }
+      ],
+      "count": 6,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Urgency of AI legislation",
+        "Data privacy legislation",
+        "Data privacy law",
+        "Recommendations for AI legislation"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Urgency of AI legislation",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Data privacy legislation",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Recommendations for AI legislation",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c038",
+      "label": "AI's various uses and outputs",
+      "definition": "AI systems are used in different sectors and for different purposes, and these various systems can have different kinds of outputs.",
+      "examples": [
+        {
+          "quote": "AI systems are used in different sectors and for different purposes, and these various systems can have different kinds of outputs.",
+          "respondent": "Ms. Espinel"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 16,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c040",
+      "label": "Consequential decisions and impact assessments",
+      "definition": "Consequential decisions in someone's life require impact assessments to identify and reduce risks.",
+      "examples": [
+        {
+          "quote": "Is it going to impact their ability to access government services, to access public benefits, to get a loan, to get education, to get a job?",
+          "respondent": "Ms. Espinel"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 16,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c042",
+      "label": "U.S. policymaking and AI",
+      "definition": "U.S. policymaking involving AI needs to be understood in a global context.",
+      "examples": [
+        {
+          "quote": "Therefore, U.S. policymaking involving AI needs to be understood in a global context to consider how new policies affecting AI will help the United States maintain its technological leadership rather than cede it to competitors, including authoritarian states.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 1,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c043",
+      "label": "Public trust and accountability",
+      "definition": "U.S. AI policies should prioritize building public trust and accountability.",
+      "examples": [
+        {
+          "quote": "U.S. AI policies should have two primary components; one, promoting innovation and investment, and two, building public trust and accountability.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "How does the public interest benefit from the use of AI?",
+          "respondent": "Dr. Lee"
+        },
+        {
+          "quote": "There is nothing about the current trajectory of AI that is inevitable and as a democracy the U.S. has a huge opportunity to take global leadership and shape this next era of tech so that it reflects the public interest and not just the bottom lines of very few companies.",
+          "respondent": "Ms. Kak"
+        }
+      ],
+      "count": 3,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Public interest and AI",
+        "Public interest"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Public interest and AI",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c044",
+      "label": "Transparency",
+      "definition": "Transparency is a key means by which to establish public trust.",
+      "examples": [
+        {
+          "quote": "Transparency is a key means by which to establish public trust.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "companies are also setting up fact sheets for what they call model cards that explain the features and limitations, to talk about where the datasets came from, intended uses.",
+          "respondent": "Mr. Strayer"
+        },
+        {
+          "quote": "I think the privacy framework we have already laid out to basically stop that kind of activity and protect people. We have heard a lot from the civil liberties community about this, about what you might see as online redlining, and you worry about something in the machine learning environment just putting that into a system, and then it being there for years and years without anybody even understanding that there was a discriminatory tactic against somebody.",
+          "respondent": "Senator Strayer"
+        },
+        {
+          "quote": "Transparency in our process is as important as transparency in the disclosure of how algorithms work, how AI works, so the public has a better understanding of it.",
+          "respondent": "Senator Blumenthal"
+        },
+        {
+          "quote": "we must integrate strong privacy and security protocols into these applications from the beginning.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "I think that is important.",
+          "respondent": "Ms. Espinel"
+        },
+        {
+          "quote": "It is about creating an AI workforce. It is about making sure that we have the right research.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "There's been recent consumer sentiment surveys showing that if they see AI in a product description, they're less likely to use the product.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 24,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Importance of transparency",
+        "Importance of transparency in AI use",
+        "Importance of transparency in government processes",
+        "Transparency and disclosure",
+        "Need for transparency and oversight"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Importance of transparency",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Transparency and disclosure",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Need for transparency and oversight",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c045",
+      "label": "Government's role",
+      "definition": "The government's role is to identify risk and review existing regulatory landscape.",
+      "examples": [
+        {
+          "quote": "So what is the government's role?",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "It falls upon the U.S. Government to spearhead the ethical procurement and deployment of these systems, setting norms for AI development and ultimately shaping the field of responsible AI.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "President Biden's executive order takes unprecedented action to allow innovation while protecting people's privacy and civil rights.",
+          "respondent": "Dr. Turner Lee"
+        },
+        {
+          "quote": "But now I think government can lead in the use of artificial intelligence for public good.",
+          "respondent": "Dr. Noveck"
+        },
+        {
+          "quote": "We are able to create now a more accessible government as well, with AI driven translation and summarization.",
+          "respondent": "Dr. Noveck"
+        },
+        {
+          "quote": "Personally, I think salaries are only one piece of the puzzle there.",
+          "respondent": "Ms. Toner"
+        },
+        {
+          "quote": "We want to ensure that people are taking advantage of these tools in ways that are actually supplemental to and aiding, as Senator Butler referred to, actually aiding government workers in how they do their work, not supplanting them.",
+          "respondent": "Dr. Noveck"
+        },
+        {
+          "quote": "Recall that unemployment insurance dates back to the 1935 Social Security Act.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 11,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Government's role in AI development",
+        "Government leading in AI use",
+        "AI in accessible government",
+        "Talent Issues in Government",
+        "Supplementing government workers",
+        "Complexity of government programs",
+        "Complexity of procurement process",
+        "Simplifying procurement process",
+        "Role of AI in simplifying procurement process"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Government's role in AI development",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Government leading in AI use",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Supplementing government workers",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Complexity of government programs",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c046",
+      "label": "International consensus-based standards",
+      "definition": "Policymakers should understand the status of international consensus-based standards and their ability to meet regulatory requirements.",
+      "examples": [
+        {
+          "quote": "Finally, before adopting new AI regulatory requirements, policymakers should understand the status of international consensus-based standards, and the ability of those standards to meet regulatory requirements.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 1,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c047",
+      "label": "Maintaining leadership in AI development",
+      "definition": "The importance of continuing to innovate and develop AI technology to maintain a competitive edge.",
+      "examples": [
+        {
+          "quote": "we really need to focus on running faster, that is how we innovate and make it to the next cycle of R&D in a position that puts us ahead of our adversaries, the United States, that is.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "including situations like process known as the deployment safety board, which was set up internally.",
+          "respondent": "Ms. Toner"
+        },
+        {
+          "quote": "Do they align with safety, for example, are employees rewarded for developing better safety features? Or, is it more rewards for racing to the market, which is the dynamic that we've discussed today?",
+          "respondent": "Mr. Harris"
+        },
+        {
+          "quote": "I do, and, again, responding to my colleagues, when we talk about stifling innovation and invention in this country when it comes to AI, I think we have two different conversations going on.",
+          "respondent": "Dr. Lee"
+        }
+      ],
+      "count": 4,
+      "first_seen_chunk": 3,
+      "merged_from": [
+        "Incidents in AI development",
+        "Incentives for AI development",
+        "Maintaining the US's lead over China"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Incidents in AI development",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Maintaining the US's lead over China",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c048",
+      "label": "Discussion on deepfakes",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "What is it you think is the landscape of a Federal role in identifying? Some have described a system of a watermark, some have described a--you know, immediate information system similar to what the Amber Alerts are, or something of that nature.",
+          "respondent": "Senator Hickenlooper"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 9,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c049",
+      "label": "Clearinghouse model",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "Sort of a Clearinghouse model, I think that is how they pursued.",
+          "respondent": "Senator Hickenlooper"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 9,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c052",
+      "label": "Need for a trained Federal AI workforce",
+      "definition": "The passage highlights the need for a trained Federal AI workforce to support the development and implementation of AI technologies.",
+      "examples": [
+        {
+          "quote": "But then we need a Federal AI workforce, one that is trained.",
+          "respondent": "Senator Carper"
+        },
+        {
+          "quote": "Finally, we need to build on the success of the AI Leadership Training Act that came out of this Committee by implementing free, accessible training not just for leadership, but for all Federal employees, going beyond senior officials, focusing not just on knowledge of what AI is, but on practical applications in government services, ensuring that we collect data and evaluate impact about how such upskilling translates into better public service efficiency and better innovation.",
+          "respondent": "Dr. Noveck"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 4,
+      "merged_from": [
+        "AI training for Federal employees"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI training for Federal employees",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c053",
+      "label": "Create AI Act",
+      "definition": "Establishing a national AI research resource",
+      "examples": [
+        {
+          "quote": "This is why I am unequivocally a strong supporter of the Create AI Act, a strong bipartisan legislation introduced this summer in both chambers. The Create AI Act will establish a national AI research resource that provides the needed resources to allow public sector researchers to innovate and train the next generation of AI leaders.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 2,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c054",
+      "label": "AI as a tool",
+      "definition": "The respondent views AI as a tool that should be treated as such.",
+      "examples": [
+        {
+          "quote": "AI is a tool, and I totally agree.",
+          "respondent": "Ms. Li"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 6,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c056",
+      "label": "AI office in each Federal entity",
+      "definition": "The respondent expresses concerns about the creation of an AI office in each Federal entity.",
+      "examples": [
+        {
+          "quote": "I do not think we should have an AI office in each one of our Federal entities.",
+          "respondent": "Ms. Li"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 6,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c058",
+      "label": "Government agencies using AI insights",
+      "definition": "Government agencies are using AI insights to inform their decision-making",
+      "examples": [
+        {
+          "quote": "And when you look across Federal Government today, you will see that agencies are starting to use the insights that they can glean from these vast troves of data that they generate in the doing of their business.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "I would add, we can also engage the public using AI to talk about how we are using AI and how we are governing the use of AI in agencies.",
+          "respondent": "Dr. Noveck"
+        },
+        {
+          "quote": "If you go into any agency today and you ask who is actually doing the customer service, who is doing the delivery, who is, say, creating the website that people are using, and I am sort of speaking in an Internet era answer right now rather than the AI answer, it is pretty much all contracted out and the number of people in an agency who have a real pulse on the actual mechanisms of delivery is very small.",
+          "respondent": "Ms. Pahlka"
+        },
+        {
+          "quote": "You license with a code of behavior that would require Government to set up some sort of agency to enforce that code of behavior.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "AI is being used to speed up the processing of disability determinations. It is being used to improve how we process patent applications, and those are just an example today.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "Our citizens turn to the government for all sorts of critical services.",
+          "respondent": "Jennifer Pahlka"
+        },
+        {
+          "quote": "AI is already helping us to create what I would call a more conversational government, where we can supply information and benefits and services, as you alluded to, 24/7.",
+          "respondent": "Dr. Noveck"
+        },
+        {
+          "quote": "AI can easily translate crucial documents into multiple languages.",
+          "respondent": "Jennifer Pahlka"
+        }
+      ],
+      "count": 20,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Public engagement and AI governance",
+        "Government agencies' reliance on contractors",
+        "Government Agency for Code Enforcement",
+        "AI's impact on government services",
+        "Government services",
+        "AI in government services",
+        "AI's potential in government services",
+        "AI applications in government services",
+        "Importance of AI in government services",
+        "Importance of AI in customer service",
+        "History of AI in government",
+        "AI can improve customer service",
+        "AI improving customer service",
+        "AI-powered customer service",
+        "Training AI-powered customer service tools",
+        "Guardrails for AI-powered customer service",
+        "Human-centered approach to AI-powered customer service",
+        "Multimodal AI and customer service",
+        "Unfinished business in customer service"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Public engagement and AI governance",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Government agencies' reliance on contractors",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI's impact on government services",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c060",
+      "label": "AI's potential in research and development",
+      "definition": "AI has the potential to transform research and development",
+      "examples": [
+        {
+          "quote": "If you take a peek inside of labs around the country and look at what is happening with federally funded R&D, in the world of research and development you will get a glimpse of where the future is going, and AI is playing a huge role there as well because AI can enable the design of the materials that we need for advanced batteries, for hydrogen storage, the things that are critical to our clean energy future.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "And I think another way to, like, you know, sort of, like, lose the race for everyone, frankly, is if we develop cutting- edge AI systems and then they're stolen by a foreign government before we understand, you know, that they're dangerous, and now, like, you know, you end up at a situation where both America and some--and another country are sort of in a standoff where they're both afraid of each other using the systems.",
+          "respondent": "Saunders"
+        },
+        {
+          "quote": "That has the potential to unleash a lot of regulation, not just on what we think of as AI, but software development generally, which would be really a sea change in how the U.S. approaches software development.",
+          "respondent": "Mr. Chilson"
+        }
+      ],
+      "count": 3,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Potential risks and consequences of AI development",
+        "Potential for regulation of software development"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Potential risks and consequences of AI development",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Potential for regulation of software development",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c061",
+      "label": "AI's role in delivering better outcomes",
+      "definition": "AI can be used to deliver better outcomes and create new possibilities",
+      "examples": [
+        {
+          "quote": "Used responsibly, AI can help us deliver better outcomes and to create new possibilities for the American people.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 1,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c062",
+      "label": "Uncertainty about AI's impact",
+      "definition": "The respondent acknowledges that there is uncertainty about AI's impact on jobs and the future.",
+      "examples": [
+        {
+          "quote": "The best understanding that many experts have in this area is that there are things that will look a lot like prior changes with technology coming in, and there are things that are not going to look the same.",
+          "respondent": "Dr. Prabhakar"
+        },
+        {
+          "quote": "This is one of those areas that we are really grappling with. The velocity of change has been incredible, and I think we are racing to catch up.",
+          "respondent": "Madam Chair"
+        },
+        {
+          "quote": "AI could wipe out half of the entry-level white-collar jobs and spike unemployment 10 to 20 percent in the next 1 to 5 years",
+          "respondent": "Mr. Shah"
+        }
+      ],
+      "count": 3,
+      "first_seen_chunk": 9,
+      "merged_from": [
+        "Concerns about AI's impact on society",
+        "Concerns about AI's impact on workforce"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Concerns about AI's impact on society",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c063",
+      "label": "Importance of interoperable lexicon and vocabulary",
+      "definition": "The respondent emphasizes the importance of having a shared vocabulary and understanding of risk and harms to facilitate interoperability across different applications and use cases.",
+      "examples": [
+        {
+          "quote": "I do think that it's important to have some sort of an interoperable lexicon, a horizontal foundation of at least having the same vocabulary and understanding of the risk and harms that give some sort of interoperability across all of the applications and all of the use cases.",
+          "respondent": "Ms. Tabassi"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 9,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c064",
+      "label": "Trustworthy AI and safety concerns",
+      "definition": "The respondent expresses concerns about the use of AI technology in physical machines and the potential dangers it poses.",
+      "examples": [
+        {
+          "quote": "When we talk about trustworthy AI, the use of such technology in machines in the physical world pose a danger that I'd like to dig into just a little bit further.",
+          "respondent": "Ms. Tabassi"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 9,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c065",
+      "label": "NIST's work on safety",
+      "definition": "The respondent discusses NIST's work on safety as one of the trustworthiness characteristics in AI RMF, emphasizing the need for definitions and measurements.",
+      "examples": [
+        {
+          "quote": "Safety is being identified as one of the seven trustworthiness characteristics of a--in AI RMF and it--beyond going--beyond the having definitions for what safety means, which understand that now is being defined and perceived differently across the different domains.",
+          "respondent": "Ms. Tabassi"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 9,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c066",
+      "label": "Risk management in AI RMF",
+      "definition": "Identifying and mitigating risks in AI RMF",
+      "examples": [
+        {
+          "quote": "In AI RMF it mentions that the--in terms of the safety, most urgent parameterizations and most risk management is required when there are risks to human life and where there are risks of serious injuries.",
+          "respondent": "Ms. Tabassi"
+        },
+        {
+          "quote": "In AI RMF we talk about a continuum, and that the risk management and accountability is a shared responsibility across all of them.",
+          "respondent": "Ms. Tabassi"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 10,
+      "merged_from": [
+        "Continuum of risk management"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Continuum of risk management",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c067",
+      "label": "Guiding principles for AI",
+      "definition": "Establishing principles to guide AI and machine learning tools",
+      "examples": [
+        {
+          "quote": "What would you say Congress must do to separate the processes of setting principles that will guide AI and machine learning tools prior to design and deployment of such tools from the technical operation of such tools?",
+          "respondent": "Ms. Tabassi"
+        },
+        {
+          "quote": "Please factcheck anything that comes out of these tools.",
+          "respondent": "Dr. Noveck"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 10,
+      "merged_from": [
+        "Guidelines for AI use"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Guidelines for AI use",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c069",
+      "label": "Collaboration on AI evaluation",
+      "definition": "NIST is willing to work with various stakeholders to develop evaluation frameworks for AI systems",
+      "examples": [
+        {
+          "quote": "So we are certainly not--more than open, eager, and enthusiastic to work with everybody on understanding how to evaluate AI systems in a way that not only look at the functionality, limits, and capabilities, but also their trustworthiness and their societal robustness.",
+          "respondent": "Ms. Tabassi"
+        },
+        {
+          "quote": "Before releasing any new system, OpenAI conducts extensive testing, engages external experts for detailed reviews and independent audits, improves the model's behavior, and implements robust safety and monitoring systems.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 11,
+      "merged_from": [
+        "Evaluation of OpenAI's safety efforts"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Evaluation of OpenAI's safety efforts",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c070",
+      "label": "Building on existing guidelines",
+      "definition": "NIST can start building on existing guidelines for AI evaluation",
+      "examples": [
+        {
+          "quote": "some of the guidelines in the AI RMF can already be applicable and can--we can start building on top of those",
+          "respondent": "Ms. Tabassi"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 11,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c071",
+      "label": "Extending evaluations to AI systems in context",
+      "definition": "NIST is extending its evaluation framework to include AI systems in their context of use",
+      "examples": [
+        {
+          "quote": "we're thinking of how to extending them, but also building this addition of being able to evaluate AI systems in their context of use with real interactions with the humans that operate them, use them, being impacted by them to be able to assess the risk and impact of the AI systems",
+          "respondent": "Ms. Tabassi"
+        },
+        {
+          "quote": "I think it'll be difficult for us from the outside to be able to evaluate, I believe, because I expect a lot of this testing and evaluation to happen behind closed doors, which I think is reasonable.",
+          "respondent": "Ms. Toner"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 11,
+      "merged_from": [
+        "Evaluation Challenges"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Evaluation Challenges",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c073",
+      "label": "AI's role in securing AI",
+      "definition": "The respondent questions whether AI can secure itself, highlighting the need for AI to remove error and work to secure AI.",
+      "examples": [
+        {
+          "quote": "can AI itself secure AI?",
+          "respondent": "Mr. Stamos"
+        },
+        {
+          "quote": "I don't--can AI itself secure AI? Is there any way that we can remove as much error as possible and have artificial intelligence work to secure artificial intelligence?",
+          "respondent": "Mr. Stamos"
+        },
+        {
+          "quote": "What can AI do on the predictive side to help small and medium-sized businesses to kind of see the threats that are, you know, coming down the track and stopping them?",
+          "respondent": "Mr. Stamos"
+        },
+        {
+          "quote": "AI is helping relief workers anticipate where medical equipment, food, water, and supplies are most needed in response to natural disasters.",
+          "respondent": "Espinel"
+        },
+        {
+          "quote": "AI algorithms trained on skewed, inaccurate, or unrepresentative data magnify human biases, lead to discriminatory outcomes.",
+          "respondent": "Dr. Turner Lee"
+        }
+      ],
+      "count": 5,
+      "first_seen_chunk": 2,
+      "merged_from": [
+        "AI's role in cybersecurity",
+        "AI's role in disaster response",
+        "AI's role in perpetuating biases"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI's role in cybersecurity",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI's role in disaster response",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI's role in perpetuating biases",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c074",
+      "label": "AI v. AI",
+      "definition": "The concept of AI competing against AI is discussed, with humans supervising and training AI on both sides.",
+      "examples": [
+        {
+          "quote": "It is going to be AI v. AI. You'll have humans supervising, training, pushing the AI in the right direction on both the defender side and the attacker side.",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 3,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c076",
+      "label": "Equity in AI",
+      "definition": "The importance of ensuring equity in AI education is discussed, with a focus on ensuring all children have access to AI learning opportunities.",
+      "examples": [
+        {
+          "quote": "I think that's one part we have to get right is to make sure you don't have kind of two classes of kids, the class that learns AI and the class that doesn't have the resources.",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 3,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c078",
+      "label": "Overly legalized situations",
+      "definition": "Situations where legal issues dominate, making it difficult to respond quickly or effectively.",
+      "examples": [
+        {
+          "quote": "it's something I put in my written testimony. I once worked in instant response where there were four law firms on every single call because different parts of the board were suing each other and there's a new CEO and an old CEO and it was a mess.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 5,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c079",
+      "label": "Derivative lawsuits",
+      "definition": "Lawsuits that arise from a company's security breach, which can lead to years of defense without actual improvement.",
+      "examples": [
+        {
+          "quote": "any company that deals with any security breach, any public company, automatically ends up with derivative lawsuits that they spend years and years defending that don't actually make anything better.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 5,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c080",
+      "label": "Talent pool problem",
+      "definition": "A shortage of skilled professionals in the field of CISO roles, particularly at the entry-level.",
+      "examples": [
+        {
+          "quote": "Yes, so we actually have a real talent.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 5,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c081",
+      "label": "Negative perception of CISOs",
+      "definition": "A negative perception of CISOs as being associated with negative outcomes and having no positive impact on the company's bottom line.",
+      "examples": [
+        {
+          "quote": "Because it is--you are naturally--like when I was a CISO and I would walk in the room, people would mutter under their breath, like, Oh, my God, Stamos is here.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 5,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c082",
+      "label": "Personal liability concerns",
+      "definition": "Concerns about personal liability for CISOs, leading to a deterrent effect on individuals considering CISO roles.",
+      "examples": [
+        {
+          "quote": "Oh, absolutely. I have two friends this last month who have turned down CISO jobs because they don't want the personal liability.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "AGI will also be a valuable target for theft, including by foreign adversaries of the United States. While OpenAI publicly took claims to take security seriously, their internal security was not prioritized.",
+          "respondent": "Senator Padilla"
+        },
+        {
+          "quote": "I think one of the other big effects other than the government misuse would be the chilling effects it would have on people using tools like this to say things that they think the government might not want them to say.",
+          "respondent": "Chilson"
+        }
+      ],
+      "count": 3,
+      "first_seen_chunk": 5,
+      "merged_from": [
+        "AGI security concerns",
+        "Concerns about chilling effects on speech"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AGI security concerns",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Concerns about chilling effects on speech",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c083",
+      "label": "Cyber attacks on local entities",
+      "definition": "Local entities experiencing cyber attacks with no effective recourse",
+      "examples": [
+        {
+          "quote": "one of our local churches got hacked and locked everything down, and the preacher had to use his own credit card to pay $500 to get them to turn that thing loose. A hospital system was hacked.",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 11,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c084",
+      "label": "Gap in law enforcement",
+      "definition": "Lack of preparedness and resources in local law enforcement for international cyber crime",
+      "examples": [
+        {
+          "quote": "If you're Mr. Luttrell's flower shop or the church in your district, they're not going to get an FBI agent on the phone. If they call the local police, generally those folks are not prepared to help with international cyber crime.",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 11,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c085",
+      "label": "ICAC as a model for cyber crime",
+      "definition": "Model for local cyber crime capabilities supported by Federal agencies",
+      "examples": [
+        {
+          "quote": "where the creation of local folks who are then trained and supported by Federal agencies to do child safety work, and in the end, it's local sheriffs, deputies, and local detectives, but they can call upon investigative resources from the Secret Service, from the FBI, from HSI.",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 11,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c086",
+      "label": "Gap in Congress's consideration",
+      "definition": "A perceived lack of attention or action by Congress on a particular issue.",
+      "examples": [
+        {
+          "quote": "I do think there's a gap here that Congress should consider how to fill.",
+          "respondent": "Mr. Stamos"
+        },
+        {
+          "quote": "Are there any other considerations that we in Congress should be thinking about as we go into 2024 with respect to election integrity?",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 12,
+      "merged_from": [
+        "Considerations for election integrity"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Considerations for election integrity",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c087",
+      "label": "AI's potential to level the playing field",
+      "definition": "The potential of AI to provide equal opportunities for individuals with varying skills and abilities.",
+      "examples": [
+        {
+          "quote": "I think one of the great things about AI is it is going to even out the playing field and that people who have lack of, you know, business email skills, perfect English and such, the AI will be a huge help, but you don't want to give kids that crutch as they get there.",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 12,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c088",
+      "label": "Anticipated consequences of outlawing ransomware payments",
+      "definition": "The potential outcomes and reactions of professionals involved in ransomware attacks if their economic model is disrupted.",
+      "examples": [
+        {
+          "quote": "I do think--these are professionals. They're used to making tens of millions of dollars a year. They are somewhat rational actors. So eventually I think that they will have to adapt their economic model. But in the short run, being cut off, they would do everything they can to try to convince the United States that this policy was not appropriate.",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 12,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c089",
+      "label": "Adapting to changing circumstances",
+      "definition": "The need to adjust one's economic model in response to new information or circumstances.",
+      "examples": [
+        {
+          "quote": "I think that they will have to adapt their economic model.",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 13,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c090",
+      "label": "No exceptions",
+      "definition": "The importance of not making exceptions in a policy or rule.",
+      "examples": [
+        {
+          "quote": "No. 1, no exceptions.",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 13,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c091",
+      "label": "Preemptive measures",
+      "definition": "Taking proactive steps to prevent or mitigate a potential threat or problem.",
+      "examples": [
+        {
+          "quote": "preemptive grants for them to upgrade their architectures.",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 13,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c092",
+      "label": "Imposing costs on malicious actors",
+      "definition": "Taking steps to make it costly or difficult for malicious actors to continue their activities.",
+      "examples": [
+        {
+          "quote": "trying to impose costs on the bad guys that--in that active time in which they are trying to, you know, deter the Government from standing strong, that you're also actively going after them.",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 13,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c094",
+      "label": "Congress' responsibility in election security",
+      "definition": "Congress' role in ensuring election security",
+      "examples": [
+        {
+          "quote": "I think Congress has a role to play here.",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 14,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c095",
+      "label": "Support for local election officials",
+      "definition": "Providing support for local election officials",
+      "examples": [
+        {
+          "quote": "Just looking through the election system, how can we support our local election officials who face some of the same challenges small businesses do, in terms of fewer resources, but having the same challenge arrive at their doorstep?",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 14,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c096",
+      "label": "Reaffirming CISA's role",
+      "definition": "Reaffirming CISA's role in supporting election officials",
+      "examples": [
+        {
+          "quote": "I think reaffirming CISA's role as a supporter here, and reaffirming the role of the ISACs as providing that level of support is a key thing",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 14,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c102",
+      "label": "Importance of nimble policies",
+      "definition": "The respondent emphasizes the need for flexible policies to adapt to the rapidly changing nature of AI.",
+      "examples": [
+        {
+          "quote": "I don't know if I'm right, but I'm very wedded to because AI is fluid.",
+          "respondent": "Mr. Stamos"
+        },
+        {
+          "quote": "This is why a policy response is needed.",
+          "respondent": "Senator Padilla"
+        },
+        {
+          "quote": "one of the things we've said repeatedly is we have to have an online privacy bill that is federally preemptive, before we start down the AI path.",
+          "respondent": "Ms. Toner"
+        },
+        {
+          "quote": "Indeed. I think, I believe, and other witnesses may know better, I believe that they had----",
+          "respondent": "Ms. Toner"
+        }
+      ],
+      "count": 4,
+      "first_seen_chunk": 17,
+      "merged_from": [
+        "Importance of policy response",
+        "Importance of Online Privacy Bill",
+        "Importance of privacy bill"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Importance of policy response",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Importance of Online Privacy Bill",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c103",
+      "label": "Regulate AI close to the people it impacts",
+      "definition": "The respondent suggests regulating AI at the local level, where it has a direct impact on people's lives.",
+      "examples": [
+        {
+          "quote": "My suggestion on AI regulation is to do it as close to the people it's impacting as possible.",
+          "respondent": "Mr. Stamos"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 17,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c111",
+      "label": "Need for digital capacity and AI",
+      "definition": "The need to build digital capacity and utilize AI to improve government services and reduce burdens.",
+      "examples": [
+        {
+          "quote": "But for people who are fed up and just want someone to get back to them about their tax return, their unemployment insurance check, or even their company's permit to build infrastructure, something has to change.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 3,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c112",
+      "label": "Challenges in hiring tech talent",
+      "definition": "The challenges faced by government agencies in hiring tech talent, including the need for direct hire authority and the limitations of pooled hiring.",
+      "examples": [
+        {
+          "quote": "OPM's recent memo, for instance, will grant direct hire authority for several AI related job classifications, and that will remove a bit of the red tape agencies need to bring on experts.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "I mentioned in my written testimony that it just takes too long to hire people today. And you know, the how to make that a shorter process is a very complicated question.",
+          "respondent": "Ms. Pahlka"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 3,
+      "merged_from": [
+        "Challenges in hiring and retaining talent"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Challenges in hiring and retaining talent",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c115",
+      "label": "Service level should match criticality",
+      "definition": "The level of service should be tailored to the level of importance or criticality of the situation.",
+      "examples": [
+        {
+          "quote": "Very often when you are engaging with the private sector, you are getting your cable bill or getting a car, it may be critical to you in that moment it but it is nowhere near as critical if you are doing something like expecting a tax return check or getting your unemployment insurance, when that may be really life changing for you.",
+          "respondent": "Ms. Pahlka"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 5,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c116",
+      "label": "Agencies want to improve service delivery",
+      "definition": "Government agencies aim to improve their service delivery processes.",
+      "examples": [
+        {
+          "quote": "I guess from the perspective of the pair mandates and directives with enablement.",
+          "respondent": "Ms. Pahlka"
+        },
+        {
+          "quote": "As you say, as you direct them to take these actions, also ask them what can we remove to make this easier.",
+          "respondent": "Ms. Pahlka"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 5,
+      "merged_from": [
+        "Remove obstacles to improve service delivery"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Remove obstacles to improve service delivery",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c119",
+      "label": "Foundation for AI",
+      "definition": "The importance of having a solid foundation for AI development and deployment.",
+      "examples": [
+        {
+          "quote": "We are not necessarily going to succeed or fail because of AI. We are going to succeed or fail because we have the right foundation to build on.",
+          "respondent": "Ms. Pahlka"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 7,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c121",
+      "label": "Human capital strategy and leadership",
+      "definition": "The importance of human capital strategy and leadership in AI development and deployment.",
+      "examples": [
+        {
+          "quote": "They have to do with our human capital strategy. They have to do with procurement. They have to do with the kind of leadership that Ms. Blauer talked about.",
+          "respondent": "Ms. Pahlka"
+        },
+        {
+          "quote": "Part of what I mean by a human capital strategy.",
+          "respondent": "Ms. Pahlka"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 7,
+      "merged_from": [
+        "Need for a human capital strategy"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Need for a human capital strategy",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c122",
+      "label": "Building AI-competent workforces",
+      "definition": "The need to develop and train workforces to support AI development and deployment.",
+      "examples": [
+        {
+          "quote": "What specific ways can agency leadership foster greater technological capacity and competency to deploy AI, while balancing each agency's ultimate mission?",
+          "respondent": "Ms. Pahlka"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 7,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c126",
+      "label": "Reforms to the procurement process",
+      "definition": "The need for reforms to the procurement process to better obtain and use essential capabilities like AI and cloud computing.",
+      "examples": [
+        {
+          "quote": "But this issue is actually a major priority for this Committee, and we are in the process of looking at some reforms to the procurement process going forward.",
+          "respondent": "Ms. Pahlka"
+        },
+        {
+          "quote": "creating more POC-type programs",
+          "respondent": "Mr. Shah"
+        },
+        {
+          "quote": "But this issue is actually a major priority for this Committee, and we are in the process of looking at some reforms to the procurement process going forward.",
+          "respondent": "Ms. Pahlka"
+        },
+        {
+          "quote": "Streamlining and simplicity is going to be incredibly important in this space if we are going to enable smaller people to compete",
+          "respondent": "Dr. Noveck"
+        },
+        {
+          "quote": "The more that we are streamlining by going smaller in the scope, being more agile, and ensuring that we are actually then refining as we go, I think the more that we are going to both open things up to procurement, but also ensure that the tools that we are procuring translate into better services and better customer experience.",
+          "respondent": "Dr. Noveck"
+        },
+        {
+          "quote": "not trying to anticipate every single requirement that we are going to have five years ahead of time in advance",
+          "respondent": "Dr. Noveck"
+        }
+      ],
+      "count": 6,
+      "first_seen_chunk": 8,
+      "merged_from": [
+        "Pilot programs for procurement",
+        "Prioritizing procurement reform",
+        "Streamlining procurement",
+        "Streamlining AI procurement",
+        "Agile procurement"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Pilot programs for procurement",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Prioritizing procurement reform",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Agile procurement",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c131",
+      "label": "Importance of distributed and democratized AI models",
+      "definition": "The importance of considering distributed and democratized AI models in government decision-making.",
+      "examples": [
+        {
+          "quote": "The more that we can actually look at models that are more distributed, more democratized, and that is going to mean oftentimes open source, and make sure we can consider those when we are trying to find a solution in government, the more we will be I think promoting competition broadly in technology.",
+          "respondent": "Ms. Pahlka"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 10,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c132",
+      "label": "Ms. Pahlka's experience as Chief Data Officer",
+      "definition": "Ms. Pahlka's personal experience as Chief Data Officer of the State of Maryland.",
+      "examples": [
+        {
+          "quote": "I was not a classically trained data person when I became essentially the de facto Chief Data Officer of the State of Maryland. What I was someone who understood what it meant to work in government.",
+          "respondent": "Ms. Pahlka"
+        },
+        {
+          "quote": "I think the question suggests the answer, which is ensuring that they do. As we have all talked about, data is of course integral to training AI models. Without data to analyze, the AI becomes fairly useless.",
+          "respondent": "Dr. Noveck"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 10,
+      "merged_from": [
+        "Importance of Chief Data Officers in AI efforts"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Importance of Chief Data Officers in AI efforts",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c134",
+      "label": "Failure of IT agencies in AI implementation",
+      "definition": "The failure of IT agencies in implementing AI due to a lack of empowerment and connection to government stakeholders.",
+      "examples": [
+        {
+          "quote": "Where we have seen failures, both at the local and State level, is when we place a CDO in an information technology (IT) agency and their role is sort of ordained just to be the person that hounds people to move data or to get data express for other use.",
+          "respondent": "Ms. Pahlka"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 10,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c136",
+      "label": "Translation capabilities of AI",
+      "definition": "AI's ability to translate languages",
+      "examples": [
+        {
+          "quote": "We have mentioned earlier that translation is one of the things AI is fantastic at.",
+          "respondent": "Ms. Pahlka"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 11,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c138",
+      "label": "Simplification of policies and processes",
+      "definition": "The need to simplify policies and processes to make a program like unemployment insurance more efficient and effective.",
+      "examples": [
+        {
+          "quote": "In order to do that, I do think we need to simplify the policies and processes and regulations that a program like unemployment insurance is staggeringly complex for something that really is not that complicated.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "AI can help us understand what is in those 10,000 pages, suggest simplifications, and then lawmakers could work to make that a program that is a little bit easier to administer.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 12,
+      "merged_from": [
+        "AI's role in simplifying policies and processes"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI's role in simplifying policies and processes",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c140",
+      "label": "Prioritizing the right outcome",
+      "definition": "The need to prioritize the right outcome in order to serve people effectively.",
+      "examples": [
+        {
+          "quote": "Sometimes we need to recognize that we have to have priorities in order to serve people.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "I think this is so critical that we have a fundamental shift in what we value in order to put the customer at the center.",
+          "respondent": "Ms. Pahlka"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 12,
+      "merged_from": [
+        "Prioritizing customer"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Prioritizing customer",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c141",
+      "label": "Complexity of language",
+      "definition": "The language used is overly complicated, making translation difficult.",
+      "examples": [
+        {
+          "quote": "The language in it was so complicated in English, that translating it into another language was not going to help. What they needed was their check.",
+          "respondent": "Ms. Pahlka"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 13,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c143",
+      "label": "Valuing delivery",
+      "definition": "The respondent emphasizes the importance of valuing delivery in government.",
+      "examples": [
+        {
+          "quote": "We are very focused here on the words that we write, and we forget that the people on the other end do not look at those words.",
+          "respondent": "Ms. Pahlka"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 13,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c147",
+      "label": "AI in call centers",
+      "definition": "Government using AI to improve call center operations",
+      "examples": [
+        {
+          "quote": "We also support our call centers with AI, which helps staff quickly write menu options and answers to questions in response to public demand.",
+          "respondent": "Dr. Noveck"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 2,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c150",
+      "label": "AI in public workers support",
+      "definition": "Government using AI to support public workers",
+      "examples": [
+        {
+          "quote": "AI is also helping us to support public workers in their effort to do a better job serving residents.",
+          "respondent": "Dr. Noveck"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 2,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c151",
+      "label": "AI in data processing",
+      "definition": "Government using AI to process data more efficiently",
+      "examples": [
+        {
+          "quote": "Governments are also using AI to process data, as we have heard, more efficiently.",
+          "respondent": "Dr. Noveck"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 2,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c153",
+      "label": "Citizen engagement and AI",
+      "definition": "Using AI to improve citizen engagement and public participation",
+      "examples": [
+        {
+          "quote": "In New Jersey, where we design government operations with residents rather than for them, we actively invite citizen comment.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 3,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c159",
+      "label": "Human-centered AI design",
+      "definition": "Designing AI systems that prioritize human needs and understanding",
+      "examples": [
+        {
+          "quote": "What we want to do is by listening to residents and understanding what it is that they need to know and want to know.",
+          "respondent": "Dr. Noveck"
+        },
+        {
+          "quote": "the more that we design things in a human centered way that is talking to and listening to residents about what do they need and what do they want",
+          "respondent": "Dr. Noveck"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 5,
+      "merged_from": [
+        "Human-centered design"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Human-centered design",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c168",
+      "label": "Mental health crisis and chatbots",
+      "definition": "The respondent discusses the mental health crisis and the potential role of chatbots in providing initial support.",
+      "examples": [
+        {
+          "quote": "Across the country, there is both a mental health crisis as well as a mental health worker crisis. I was reading, Los Angeles being one of the largest mental health providers in the country, that they also have more than 1,800 vacancies in mental health provision.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 8,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c174",
+      "label": "Encouragement to try AI",
+      "definition": "Encouraging people to try AI tools to improve services",
+      "examples": [
+        {
+          "quote": "I am very excited, and Governor Murphy gave his State of the State speech yesterday, in which the topic of use of AI, responsible and ethical use of AI featured very front and center.",
+          "respondent": "Dr. Noveck"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 10,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c175",
+      "label": "Training for responsible AI use",
+      "definition": "Providing training for government workers to use AI responsibly",
+      "examples": [
+        {
+          "quote": "We are coupling, however, that encouragement to try things with broad scale availability of training.",
+          "respondent": "Dr. Noveck"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 10,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c178",
+      "label": "Executive Order's Overreach",
+      "definition": "The executive order exceeds its authority and scope.",
+      "examples": [
+        {
+          "quote": "The executive order overreaches in at least two ways.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "The EO will not only pursue the eight benchmarks that are outlined in its mandate, it also, on a cumulative level, has pursued us to look at best practice for AI use in criminal justice, education, healthcare, and other thoughtful processes that develop an astute and ready workforce.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Executive order's purpose"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Executive order's purpose",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c183",
+      "label": "Unprecedented nature of the EO",
+      "definition": "The EO's length and nature are unprecedented and concerning.",
+      "examples": [
+        {
+          "quote": "What concerns me about the length of the EO is its unprecedented nature because it looks like legislation.",
+          "respondent": "Mr. Chilson"
+        },
+        {
+          "quote": "We have never seen it applied to AI, and we have never seen it applied not to ensure that there is sufficient production for defense, but more for a regulatory purpose, like it is being used here, to make sure it is safer or that it is more limited than it is.",
+          "respondent": "Mr. Chilson"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 3,
+      "merged_from": [
+        "Unprecedented use of DPA"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Unprecedented use of DPA",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c187",
+      "label": "Potential chilling effect on innovation",
+      "definition": "The respondent suggests that AI regulation could have a chilling effect on innovation by forcing companies to make tradeoffs.",
+      "examples": [
+        {
+          "quote": "I think it could chill innovation in a couple of different ways.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "I do, and I think the use of the DPA here undermines some of the other important goals that Congresswoman Pressley was pointing out about government uses and the risks of government use of AI.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 4,
+      "merged_from": [
+        "Potential stifling of AI innovation"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Potential stifling of AI innovation",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c188",
+      "label": "Companies moving overseas",
+      "definition": "The respondent suggests that AI regulation could lead to companies moving overseas to avoid regulatory constraints.",
+      "examples": [
+        {
+          "quote": "They absolutely could move overseas, and I know that there are jurisdictions that are actively recruiting AI startups and AI companies to move to their jurisdictions, promising them less constraining regulatory environments.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c190",
+      "label": "Executive Order 14110 and the Defense Production Act",
+      "definition": "The respondent discusses the executive order and the Defense Production Act, highlighting the potential impact on production.",
+      "examples": [
+        {
+          "quote": "And the executive order uses the DPA in order to discourage production on some levels, in part by imposing additional regulatory burdens on people who are producing at the highest level.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 5,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c192",
+      "label": "Commerce Department activities",
+      "definition": "The respondent discusses the Commerce Department's activities related to the executive order.",
+      "examples": [
+        {
+          "quote": "They certainly are doing a lot, actually.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 5,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c193",
+      "label": "Ongoing regulatory activity",
+      "definition": "Multiple rulemakings and proceedings are underway.",
+      "examples": [
+        {
+          "quote": "There are several rulemakings and other proceedings that are ongoing.",
+          "respondent": "Mr. Chilson"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 6,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c194",
+      "label": "Request for information on DPA provisions",
+      "definition": "Companies were asked to provide information on DPA provisions.",
+      "examples": [
+        {
+          "quote": "I have only heard that there was a request to some companies in mid-December that they start filing information.",
+          "respondent": "Mr. Chilson"
+        },
+        {
+          "quote": "Secretaries of State for a good decade now have been dealing with misinformation and disinformation, generally, and that takes on many different forms.",
+          "respondent": "Mr. Scanlan"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 6,
+      "merged_from": [
+        "Misinformation and Disinformation"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Misinformation and Disinformation",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c195",
+      "label": "Lack of detail on reporting procedure",
+      "definition": "The exact procedure for reporting is unknown.",
+      "examples": [
+        {
+          "quote": "I do not know what the exact procedure is.",
+          "respondent": "Mr. Chilson"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 6,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c196",
+      "label": "Concerns about broad authority",
+      "definition": "The executive order grants broad authority with unclear implications.",
+      "examples": [
+        {
+          "quote": "It gives them, basically, broad authority to do whatever.",
+          "respondent": "Mr. Chilson"
+        },
+        {
+          "quote": "Yes, I am happy I do not live in an authoritarian state, in a democracy that we have here in the United States, so I cannot tell you from personal experience.",
+          "respondent": "Dr. Lee"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 6,
+      "merged_from": [
+        "Concerns about authoritarian states"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Concerns about authoritarian states",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c209",
+      "label": "Balancing legislative and executive powers",
+      "definition": "The respondent discusses the importance of balancing legislative and executive powers, highlighting the need for cooperation and coordination.",
+      "examples": [
+        {
+          "quote": "You know, we do have a government with three branches, and we are a co-equal branch of government. So is the executive. And when one of those branches fails to act, that creates a vacuum that almost demands the others act, depending on the urgency of the situation.",
+          "respondent": "Lee"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 3,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c210",
+      "label": "Defending the executive branch",
+      "definition": "Mr. Connolly defends the executive branch's actions in addressing AI, arguing that Congress is not doing its job.",
+      "examples": [
+        {
+          "quote": "We are not doing anything, and when that happens, it seems to me the President has an obligation to address an urgent and imminent subject like AI.",
+          "respondent": "Mr. Connolly"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c211",
+      "label": "Technology outpacing policy",
+      "definition": "The rapid advancement of AI technology is outstripping the development of policies to govern its use.",
+      "examples": [
+        {
+          "quote": "I would disagree with it being overreach.",
+          "respondent": "Dr. Turner Lee"
+        },
+        {
+          "quote": "technology over time has generally raised the quality of living for all humans",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 5,
+      "merged_from": [
+        "Impact of technology on quality of living"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Impact of technology on quality of living",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c213",
+      "label": "Nonbinding reference",
+      "definition": "The reference to nonbinding content in the AI Bill of Rights.",
+      "examples": [
+        {
+          "quote": "In terms of the nonbinding reference, we know that much of the content that was in the AI Bill of Rights was nonbinding.",
+          "respondent": "Dr. Turner Lee"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 5,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c214",
+      "label": "AI's disproportionate threats",
+      "definition": "AI poses disproportionate threats to people from marginalized backgrounds",
+      "examples": [
+        {
+          "quote": "AI poses significant risks to people from marginalized backgrounds",
+          "respondent": "Dr. Turner Lee"
+        },
+        {
+          "quote": "the effects on marginalized populations are a couple of things",
+          "respondent": "Dr. Turner Lee"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 6,
+      "merged_from": [
+        "AI poses disproportionate threats to people from marginalized backgrounds"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI poses disproportionate threats to people from marginalized backgrounds",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c223",
+      "label": "Democracy and AI",
+      "definition": "The relationship between democracy and AI technology use",
+      "examples": [
+        {
+          "quote": "Yes. Democracy is important in the United States.",
+          "respondent": "Dr. Lee"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 9,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c229",
+      "label": "Importance of addressing AI-generated content",
+      "definition": "The respondent emphasizes the importance of addressing AI-generated content to ensure an informed electorate and electoral infrastructure.",
+      "examples": [
+        {
+          "quote": "it is really important for us to get a handle on this",
+          "respondent": "Dr. Turner Lee"
+        },
+        {
+          "quote": "AI bias, discrimination, disinfor-mation, interference in elections, harm to children, and the specter of AI, artificial general intelligence, or superintelligent AI being abused by bad actors to harm us in catastrophic ways.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "AI companies should be held liable for their products, and they should be required to embed hard-to-remove provenance data in AI-generated content.",
+          "respondent": "Ms. Mitchell"
+        },
+        {
+          "quote": "these industries commit to helping us with a better digital watermarking system",
+          "respondent": "Lee"
+        },
+        {
+          "quote": "I know that this Committee heard, in April, testimony about this topic of watermarking.",
+          "respondent": "Mr. Harris"
+        },
+        {
+          "quote": "I think we have to get a handle on when an AI in elections is intentionally deceptive and malicious. We need to be able to recognize it, stop it, and prosecute it.",
+          "respondent": "Scanlan"
+        },
+        {
+          "quote": "In New Hampshire, we're trying to raise the level of awareness of voters so that they know what to expect during an election cycle.",
+          "respondent": "Secretary Scanlan"
+        },
+        {
+          "quote": "I think we need uniformity and the power of the Federal Government to help put the brakes on that.",
+          "respondent": "Mr. Scanlan"
+        }
+      ],
+      "count": 10,
+      "first_seen_chunk": 13,
+      "merged_from": [
+        "Importance of addressing AI bias and discrimination",
+        "Embedding provenance data in AI-generated content",
+        "Importance of digital watermarking",
+        "Watermarking",
+        "Recognition and prosecution of AI-generated content",
+        "Awareness and education on AI-generated content",
+        "Need for Federal involvement in regulating AI-generated content",
+        "Need for independent regulation",
+        "Need for stability and certainty in regulation"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Importance of addressing AI bias and discrimination",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Embedding provenance data in AI-generated content",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Importance of digital watermarking",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Recognition and prosecution of AI-generated content",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Need for Federal involvement in regulating AI-generated content",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c230",
+      "label": "Distinguishing between AI and generative AI",
+      "definition": "The respondent highlights the need to distinguish between AI and generative AI, emphasizing the advanced capabilities of generative AI.",
+      "examples": [
+        {
+          "quote": "You know, generative AI has more advanced capabilities of extraction of voice, image, text in ways that we cannot often find out where it originated from",
+          "respondent": "Dr. Turner Lee"
+        },
+        {
+          "quote": "we sort of talk about AI and generative AI as if they are the same thing",
+          "respondent": "Lee"
+        },
+        {
+          "quote": "I would just suggest that I think we are conflating surveillance technology and how we actually look at government on the surveillance side versus what the EO is actually dictating, which is accountability, and the AI training data, and the test beds as we look at high-stakes applications.",
+          "respondent": "Lee"
+        },
+        {
+          "quote": "When you look at this difference between intel and agency, do you see these as different concepts?",
+          "respondent": "Ms. Toner"
+        },
+        {
+          "quote": "When you look at this difference between intel and agency, do you see these as different concepts? Do they carry different threats? Should these be approached separately? Differently? Does this play into AGI? Tell me your thoughts on that.",
+          "respondent": "Ms. Toner"
+        }
+      ],
+      "count": 5,
+      "first_seen_chunk": 13,
+      "merged_from": [
+        "Distinguishing between surveillance and AI regulation",
+        "Distinguishing between intelligence and agency",
+        "Differentiation between intelligence and agency"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Distinguishing between surveillance and AI regulation",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c235",
+      "label": "Media coverage of election",
+      "definition": "Media coverage of election is thorough and timely",
+      "examples": [
+        {
+          "quote": "Fortunately, when there is a major election taking place in New Hampshire, the media--both State and national media--are on top of it.",
+          "respondent": "Scanlan"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 1,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c241",
+      "label": "Uniformity and Federal Power",
+      "definition": "The need for uniformity and the power of the Federal Government to address national election issues.",
+      "examples": [
+        {
+          "quote": "I think that, you know, these things, in a national election, are going to be generated nationally, whether it's foreign actors or some other malicious circumstance, and I think we need uniformity and the power of the Federal Government to help put the brakes on that.",
+          "respondent": "Mr. Scanlan"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 3,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c242",
+      "label": "Drafting the Deepfake Bill",
+      "definition": "The process of drafting the deepfake bill and its challenges.",
+      "examples": [
+        {
+          "quote": "And I do want to note that drafting this bill, the deepfake bill, wasn't easy. We had to look at allowing satire, right, and all these kind of things, within the framework of the Constitution, and having Democratic and Republican lawyers look at this, to figure out what gave us a chance.",
+          "respondent": "Mr. Scanlan"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 3,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c243",
+      "label": "Federal Support for Democracy",
+      "definition": "The need for additional Federal support to promote democracy.",
+      "examples": [
+        {
+          "quote": "Could you talk about what other Federal support would be helpful in taking this on, in addition to stronger laws?",
+          "respondent": "Mr. Scanlan"
+        },
+        {
+          "quote": "Yes.",
+          "respondent": "Mr. Shah"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 3,
+      "merged_from": [
+        "Support for federalism"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Support for federalism",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c245",
+      "label": "Educating the Public",
+      "definition": "The importance of educating the public about AI-created audio and video fake material and its impact on elections.",
+      "examples": [
+        {
+          "quote": "Maybe this is something that Secretary Scanlan can talk about. We have laws that we're contemplating passing in this Committee, as well as in the larger Committee, the full Committee. But where does educating the public come into play, to let them know that, as we are approaching or we're already in an election situation, that they should expect to experience AI-created audio, video fake stuff, that--where does educating the public to the fact that they will be subjected to all of this come into play, to inoculate them against the impact of this kind of fake, deepfake material?",
+          "respondent": "Mr. Scanlan"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 3,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c252",
+      "label": "Data privacy mandate",
+      "definition": "A law or regulation requiring data privacy",
+      "examples": [
+        {
+          "quote": "AI developers would need to make data choices that deliberately prevent discriminatory outcomes.",
+          "respondent": "Ms. Kak"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c253",
+      "label": "Discriminatory outcomes",
+      "definition": "Unintended consequences of data choices that favor certain groups",
+      "examples": [
+        {
+          "quote": "AI developers would need to make data choices that deliberately prevent discriminatory outcomes.",
+          "respondent": "Ms. Kak"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c254",
+      "label": "Avoidable problems",
+      "definition": "Problems that can be prevented or mitigated through data privacy law",
+      "examples": [
+        {
+          "quote": "These are avoidable problems, and it is not just in scope for privacy law.",
+          "respondent": "Ms. Kak"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c256",
+      "label": "Costs of AI",
+      "definition": "The financial expenses associated with developing and running AI systems",
+      "examples": [
+        {
+          "quote": "Now, these eye-watering costs will need a path to profit and by every account a viable business model still does not exist.",
+          "respondent": "Ms. Kak"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c257",
+      "label": "Business models of AI",
+      "definition": "The ways in which AI systems are monetized or made profitable",
+      "examples": [
+        {
+          "quote": "Now, these eye-watering costs will need a path to profit and by every account a viable business model still does not exist.",
+          "respondent": "Ms. Kak"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c258",
+      "label": "Hyper-personalized inferences",
+      "definition": "AI-generated insights about individuals based on their online behavior",
+      "examples": [
+        {
+          "quote": "You do not need to be a clairvoyant to see that all roads might well be leading us right back to the surveillance advertising business model that got us here.",
+          "respondent": "Ms. Kak"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c259",
+      "label": "Surveillance",
+      "definition": "The act of monitoring or tracking individuals' online activities",
+      "examples": [
+        {
+          "quote": "You do not need to be a clairvoyant to see that all roads might well be leading us right back to the surveillance advertising business model that got us here.",
+          "respondent": "Ms. Kak"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c260",
+      "label": "Call to action",
+      "definition": "A plea to take action to shape the future of AI",
+      "examples": [
+        {
+          "quote": "There is nothing about the current trajectory of AI that is inevitable and as a democracy the U.S. has a huge opportunity to take global leadership and shape this next era of tech so that it reflects the public interest and not just the bottom lines of very few companies.",
+          "respondent": "Ms. Kak"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c266",
+      "label": "Transparency requirements for AI developers",
+      "definition": "Implementing transparency requirements for developers of high-stakes AI systems",
+      "examples": [
+        {
+          "quote": "First, we should be implementing transparency requirements for developers of high-stakes AI systems.",
+          "respondent": "Ms. Toner"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 2,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c270",
+      "label": "Safety processes and preparedness framework",
+      "definition": "Need for security and preparedness",
+      "examples": [
+        {
+          "quote": "when the company has safety processes, they announce them loudly and proudly",
+          "respondent": "Ms. Toner"
+        },
+        {
+          "quote": "So, things that could actually, like, start to, you know, assist novices in, like, creating biological weapons, or, like, you know, the systems that could start conducting unprecedented kinds of cyber attacks.",
+          "respondent": "Mr. Saunders"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 3,
+      "merged_from": [
+        "Need for security and preparedness"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Need for security and preparedness",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c271",
+      "label": "Larger dynamic and challenges",
+      "definition": "",
+      "examples": [
+        {
+          "quote": "there are really great people inside all of these companies trying to do really great things",
+          "respondent": "Ms. Toner"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 3,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c274",
+      "label": "Cautious Optimism",
+      "definition": "The respondent expresses optimism about the agreement's potential, but with reservations.",
+      "examples": [
+        {
+          "quote": "I'm optimistic about it and very pleased to see the agreement.",
+          "respondent": "Ms. Toner"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 7,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c281",
+      "label": "Autonomous action in AI systems",
+      "definition": "The respondent discusses the development of AI systems that can take autonomous action.",
+      "examples": [
+        {
+          "quote": "It is, you know, not the same thing as intelligence. But we are already seeing the ability of companies to take, you know, language models, chatbots, like ChatGPT and others, and, you know, add a little bit of additional software, add a little bit of additional development time, and convert them into systems that can go out and take autonomous action.",
+          "respondent": "Ms. Toner"
+        },
+        {
+          "quote": "Initially perhaps something like a personal assistant that could help you book a flight or schedule a meeting. But ultimately, you know, Mustafa Suleyman, formerly at Google, now at Microsoft, has talked about, for example, could you have an AI that you give it--I forget the numbers, something like a hundred thousand dollars and it comes back to you a little while later with a million dollars that it's made, because it's run some business or done something more sophisticated?",
+          "respondent": "Ms. Toner"
+        },
+        {
+          "quote": "I just--to put a finer point on something that I think both Mr. Saunders and Dr. Mitchell are describing, I think a core to the problem here is that the lack of regulation on tech means that many of these concerning practices are not illegal.",
+          "respondent": "Ms. Toner"
+        }
+      ],
+      "count": 3,
+      "first_seen_chunk": 9,
+      "merged_from": [
+        "Potential applications of autonomous AI systems",
+        "Regulatory challenges for autonomous AI systems"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Potential applications of autonomous AI systems",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Regulatory challenges for autonomous AI systems",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c295",
+      "label": "OpenAI's goals and priorities",
+      "definition": "The respondent discusses OpenAI's goals and priorities, including maintaining research velocity.",
+      "examples": [
+        {
+          "quote": "So, I think there were, like, a couple of, like, significant, like--I don't know, like, goals that, like, OpenAI as an organization has, you know.",
+          "respondent": "Saunders"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c299",
+      "label": "AI's potential for good",
+      "definition": "AI has the potential to bring about immense benefits in various fields, including medicine.",
+      "examples": [
+        {
+          "quote": "it would be easy to say, let's ban AI, but it has enormous potential for good. Take the medical area, you know, the potential for research, as well as for treatment and diagnosis--immense.",
+          "respondent": "Chair Blumenthal"
+        },
+        {
+          "quote": "it would be easy to say, let's ban AI, but it has enormous potential for good",
+          "respondent": "Chair Blumenthal"
+        },
+        {
+          "quote": "I think the good news I have for you is that the answer to that question might not be that important for you.",
+          "respondent": "Mr. Harris"
+        },
+        {
+          "quote": "The reason we are doing all of this work to manage risks is so that our country can seize this technology to build the future.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "I just want to return back to the risks that AI poses to election security.",
+          "respondent": "Mr. Stamos"
+        },
+        {
+          "quote": "I think that to the extent that we can be the ones that others follow, that we can be the ones whose software, whose hardware, whose foundation models others use, we will have the sort of dominant leadership position of how this whole planet evolves.",
+          "respondent": "Mr. Shah"
+        }
+      ],
+      "count": 6,
+      "first_seen_chunk": 6,
+      "merged_from": [
+        "AI's potential for government and citizens",
+        "AI's potential for election interference",
+        "AI's potential for dominant leadership position"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI's potential for government and citizens",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI's potential for election interference",
+          "reviewer": "bench: accept all"
+        },
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI's potential for dominant leadership position",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c300",
+      "label": "Need for rules of the road",
+      "definition": "Establishing clear guidelines and regulations is necessary to ensure the responsible development and use of AI.",
+      "examples": [
+        {
+          "quote": "But with every advance in technology, there are also potential downsides. And the point here is to deal with the downsides and not rely only on the creators to oversee what they're doing, but impose some rules of the road that protect them and the industry, as well as the public.",
+          "respondent": "Chair Blumenthal"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 6,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c301",
+      "label": "Timeframe for AI advancements",
+      "definition": "The respondent estimates the timeframe for AI advancements and emphasizes the need for preparation.",
+      "examples": [
+        {
+          "quote": "I think, you know, that--if it's not 3 years, it's going to be 5 years or 10 years, you know, the stuff is coming down the road",
+          "respondent": "Mr. Saunders"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 7,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c303",
+      "label": "The need for binding and enforceable oversight of AI",
+      "definition": "The need for clear rules and regulations to govern AI development and use.",
+      "examples": [
+        {
+          "quote": "We need to move quickly with binding and enforceable oversight of AI. It is possible.",
+          "respondent": "Ms. Mitchell"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 1,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c304",
+      "label": "Provenance",
+      "definition": "Giving people the ability to know what content is produced by AI and what content is produced by humans",
+      "examples": [
+        {
+          "quote": "I think that notice that when consumers deal with the right--robot, they should be told if it's a robot?",
+          "respondent": "Mr. Harris"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 3,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c305",
+      "label": "Notice and Disclosure",
+      "definition": "The concept of providing notice to consumers when they are interacting with AI or robots",
+      "examples": [
+        {
+          "quote": "you should be told if it's a robot?",
+          "respondent": "Mr. Harris"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c307",
+      "label": "Digital Fingerprinting",
+      "definition": "A technology used to identify and track AI-generated content",
+      "examples": [
+        {
+          "quote": "This technology has been used to keep track of child sexual abuse material and terrorist content circulating online.",
+          "respondent": "Mr. Harris"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c308",
+      "label": "Forms of Notice",
+      "definition": "The various ways in which AI-generated content can be identified as such",
+      "examples": [
+        {
+          "quote": "All these are forms of notice.",
+          "respondent": "Mr. Harris"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 4,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c309",
+      "label": "Licensing and Code of Behavior",
+      "definition": "Establishing a licensing regime with a code of behavior to regulate AI development and use",
+      "examples": [
+        {
+          "quote": "You need a license to practice. And if you violate the code of that profession, you can no longer practice.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 5,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c310",
+      "label": "Ethics in AI Design",
+      "definition": "The importance of designing AI systems with ethical considerations to prevent harm to human beings",
+      "examples": [
+        {
+          "quote": "Artificial intelligence systems should be designed in ways that they can't harm human beings.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 5,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c313",
+      "label": "AI threats to elections",
+      "definition": "The respondent discusses the potential threats to elections posed by AI, including deepfakes.",
+      "examples": [
+        {
+          "quote": "Those threats could include deepfakes of election officials, of candidates like yourselves, and also deepfakes that present election apparatus in them that indicate that there was tampering with physical objects associated with the election.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 7,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c314",
+      "label": "Difficulty in opting out of data use",
+      "definition": "The respondent shares their personal experience of trying to opt out of data use but being unable to find the button.",
+      "examples": [
+        {
+          "quote": "I tried to do it in Facebook, I tried to do it in Instagram, and I couldn't find the button. And then I posted and said, I can't find the button, in the comments there.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 7,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c318",
+      "label": "Disconnect between AI company CEOs and lobbyists",
+      "definition": "The respondent suggests that there is a disconnect between the CEOs of AI companies and their lobbyists, potentially leading to a lack of effective communication and collaboration.",
+      "examples": [
+        {
+          "quote": "I suspect that the disconnect is that the lobbyists are not--the lobbyists that work for these tech companies are, perhaps, not in direct communication with the CEOs, maybe something gets lost in communication, maybe they're actually automated themselves and they're still in an old version of their operating systems.",
+          "respondent": "Mr. Harris"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 13,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c319",
+      "label": "Advantages of clear regulation for tech companies",
+      "definition": "The respondent suggests that clear regulation is advantageous for tech companies, as it provides a clear framework for innovation and reduces the risk of costly and confusing legal issues.",
+      "examples": [
+        {
+          "quote": "Also, it's advantageous to tech companies to have clear rules of the road upon which they are racing.",
+          "respondent": "Mr. Harris"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 13,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c321",
+      "label": "AI regulation as a means to prevent AI catastrophe",
+      "definition": "Regulation is necessary to prevent AI catastrophes.",
+      "examples": [
+        {
+          "quote": "it's equivalent to a food company taking the issue of food safety, having a major outbreak of Listeria food poisoning",
+          "respondent": "Chair Blumenthal"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 14,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c323",
+      "label": "Analogies between AI and COVID-19 research",
+      "definition": "The respondent draws analogies between AI and COVID-19 research.",
+      "examples": [
+        {
+          "quote": "the debate about, did it start in a lab? Was there a release, was there research that tried to develop a more potent evil virus",
+          "respondent": "Chair Blumenthal"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 14,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c325",
+      "label": "AI drives measurable results",
+      "definition": "AI technology has a significant impact on business processes and outcomes",
+      "examples": [
+        {
+          "quote": "Today, Moveworks serves 5 million employees across 350 organizations, including major companies like Broadcom, Marriott, and CVS Health. We are also used by a number of local governments, such as Scottsdale, Ventura, and Durham County. In addition, government contractors, like Leidos and Northrop Grumman, use Moveworks to make their businesses more efficient.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 1,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c326",
+      "label": "Barriers to AI adoption",
+      "definition": "The Federal Government faces challenges in adopting AI technology",
+      "examples": [
+        {
+          "quote": "We have engaged with agencies across the government and consistently see enthusiasm for AI adoption, but that enthusiasm has not translated into government procuring AI products like Moveworks.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "American AI leadership requires action, not just intention.",
+          "respondent": "Mr. Shah"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Private sector AI adoption"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Private sector AI adoption",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c327",
+      "label": "FedRAMP process as a barrier",
+      "definition": "The FedRAMP process creates a significant barrier for AI innovators",
+      "examples": [
+        {
+          "quote": "The first is the FedRAMP process. Moveworks invested 3-and-a-half years and over $8-and-a-half million to achieve FedRAMP-ready status.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "We have encountered three primary barriers. The first is the FedRAMP process.",
+          "respondent": "Mr. Shah"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "FedRAMP process"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: FedRAMP process",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c328",
+      "label": "Complex reseller networks as a barrier",
+      "definition": "Complex reseller networks create a barrier for AI innovators",
+      "examples": [
+        {
+          "quote": "Second, complex reseller networks. These force innovative companies to work through intermediaries rather than directly with agencies, adding cost without adding value.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "We have encountered three primary barriers. The first is the FedRAMP process.",
+          "respondent": "Mr. Shah"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Complex reseller networks"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Complex reseller networks",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c329",
+      "label": "Multi-year contracting vehicles as a barrier",
+      "definition": "Multi-year contracting vehicles create a barrier for AI innovators",
+      "examples": [
+        {
+          "quote": "Third, multi-year contracting vehicles. These favor large incumbents over agile AI companies. These create delays measured in years.",
+          "respondent": "the person speaking, as named in the interview transcript"
+        },
+        {
+          "quote": "We have encountered three primary barriers. The first is the FedRAMP process.",
+          "respondent": "Mr. Shah"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 1,
+      "merged_from": [
+        "Multi-year contracting vehicles"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: Multi-year contracting vehicles",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c333",
+      "label": "Action over intention",
+      "definition": "Leadership requires action, not just words",
+      "examples": [
+        {
+          "quote": "American AI leadership requires action, not just intention.",
+          "respondent": "Mr. Shah"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 2,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c335",
+      "label": "Government AI adoption choice",
+      "definition": "A choice between modernizing procurement and falling behind",
+      "examples": [
+        {
+          "quote": "We have a choice.",
+          "respondent": "Mr. Shah"
+        },
+        {
+          "quote": "How do you see AI technologies like those developed by your company being effectively used in the Federal Government, and what kinds of productivity gains and cost savings could we expect to see?",
+          "respondent": "Mr. Shah"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 2,
+      "merged_from": [
+        "AI application in Federal Government"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI application in Federal Government",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c336",
+      "label": "AI's role in streamlining administrative tasks",
+      "definition": "AI can be used to streamline administrative tasks, such as analyzing vendors and summarizing submissions.",
+      "examples": [
+        {
+          "quote": "One, you can use AI to help with the procurement process itself in terms of analyzing vendors, summarizing submissions, generating use cases and requirements for the different agencies that are looking for new technology.",
+          "respondent": "Mr. Shah"
+        },
+        {
+          "quote": "a lot of these problems can be overcome at the application layer",
+          "respondent": "Mr. Shah"
+        }
+      ],
+      "count": 2,
+      "first_seen_chunk": 3,
+      "merged_from": [
+        "AI's role in monitoring and mitigating risks"
+      ],
+      "history": [
+        {
+          "time": "2026-09-22T03:25:10",
+          "action": "merge",
+          "detail": "merged: AI's role in monitoring and mitigating risks",
+          "reviewer": "bench: accept all"
+        }
+      ]
+    },
+    {
+      "code_id": "c337",
+      "label": "No use of blockchain technology",
+      "definition": "The respondent's company does not use blockchain technology in their solution.",
+      "examples": [
+        {
+          "quote": "So, we do not deploy blockchain technology for our solution. We focus squarely on what employees can benefit from when it comes to using AI to be more productive, so I am unfortunately not able to answer how blockchain could be used here.",
+          "respondent": "Mr. Shah"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 3,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c340",
+      "label": "Benefits of AI for government employees",
+      "definition": "Improving employee efficiency and productivity through AI",
+      "examples": [
+        {
+          "quote": "making their employees be able to self-serve, get information that they are looking for and take actions across a variety of systems",
+          "respondent": "Mr. Shah"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 6,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c343",
+      "label": "Innovation in AI happening at small startups",
+      "definition": "The respondent discusses the role of small startups in driving innovation in AI.",
+      "examples": [
+        {
+          "quote": "Most of the innovation happening in AI is happening at small startups, and I think that, to the extent that you can look at a team of maybe 50 people and see how long it takes for them to get their product discovered and utilized by Federal Agencies, will determine how fast we can move, and to the extent that we can solve that, I think it would make a big difference.",
+          "respondent": "Mr. Shah"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 8,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c349",
+      "label": "Private sector efficiency and growth",
+      "definition": "The private sector has taken efficiencies and turned them into profits, leading to growth",
+      "examples": [
+        {
+          "quote": "they have taken those efficiencies, turned them into profits. Profits have then led to more ambition to grow their businesses",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 11,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c350",
+      "label": "AI's impact on industries",
+      "definition": "AI will bring changes to many industries",
+      "examples": [
+        {
+          "quote": "there will be changes to many industries because of this",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 11,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c351",
+      "label": "AI dominance",
+      "definition": "The respondent agrees with the Trump Administration's goal of achieving AI dominance",
+      "examples": [
+        {
+          "quote": "yes",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 11,
+      "merged_from": [],
+      "history": []
+    },
+    {
+      "code_id": "c352",
+      "label": "DOGE's work in identifying waste, fraud, and abuse",
+      "definition": "DOGE has done outstanding work in identifying waste, fraud, and abuse",
+      "examples": [
+        {
+          "quote": "DOGE has done outstanding work in identifying waste, fraud, and abuse",
+          "respondent": "the person speaking, as named in the interview transcript"
+        }
+      ],
+      "count": 1,
+      "first_seen_chunk": 11,
+      "merged_from": [],
+      "history": []
+    }
+  ],
+  "provenance": {}
+}

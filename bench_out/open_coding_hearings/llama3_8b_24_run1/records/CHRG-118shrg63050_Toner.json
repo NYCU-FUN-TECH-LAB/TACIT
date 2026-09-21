@@ -1,0 +1,664 @@
+{
+ "respondent": "CHRG-118shrg63050_Toner",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Introduction and background",
+   "quote": "Chair Blumenthal, Ranking Member Hawley, Members of the Subcommittee, thank you for the opportunity to testify today.",
+   "full_text": "Chair Blumenthal, Ranking Member Hawley, Members of the Subcommittee, thank you for the opportunity to testify today. I want to start by commending you on the depth and sustained focus that this Subcommittee is bringing to the many and varied challenges and opportunities that we face with AI.",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is introducing themselves and their background in AI policy."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Concerns about AI development and use",
+   "quote": "The biggest disconnect that I see between AI insider perspectives and public perceptions of AI companies is when it comes to the idea of artificial general intelligence, or ``AGI.''",
+   "full_text": "The title of this hearing is ``Oversight of AI: Insiders' Perspectives,'' and the biggest disconnect that I see between AI insider perspectives and public perceptions of AI companies is when it comes to the idea of artificial general intelligence, or ``AGI.''",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent is highlighting the disconnect between AI insider perspectives and public perceptions of AI companies."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Definition of AGI",
+   "quote": "This term, AGI, isn't well-defined, but it's generally used to mean AI systems that are roughly as smart or capable as a human.",
+   "full_text": "This term, AGI, isn't well-defined, but it's generally used to mean AI systems that are roughly as smart or capable as a human.",
+   "open_codes": [
+    {
+     "code_id": "c264",
+     "label": "[Definition of AGI]",
+     "rationale": "The respondent is clarifying the meaning of AGI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Impact of AGI",
+   "quote": "Many top AI companies, including OpenAI, Google, Anthropic, are treating building AGI as an entirely serious goal and a goal that many people inside those companies think they might reach in 10 or 20 years, and some believe could be as close as 1 to 3 years away.",
+   "full_text": "Many top AI companies, including OpenAI, Google, Anthropic, are treating building AGI as an entirely serious goal and a goal that many people inside those companies think they might reach in 10 or 20 years, and some believe could be as close as 1 to 3 years away.",
+   "open_codes": [
+    {
+     "code_id": "c265",
+     "label": "[Impact of AGI]",
+     "rationale": "The respondent is highlighting the potential impact of AGI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Concerns about AI development and use",
+   "quote": "many of these same people believe that if they succeed in building computers that are as smart as humans or perhaps far smarter than humans, that technology will be at a minimum extraordinarily disruptive, and at a maximum could lead to literal human extinction.",
+   "full_text": "More to the point, many of these same people believe that if they succeed in building computers that are as smart as humans or perhaps far smarter than humans, that technology will be at a minimum extraordinarily disruptive, and at a maximum could lead to literal human extinction. The companies in question often say that it's too early for any regulation because the science of how AI works and how to make it safe is too nascent. I'd like to restate that in different words. They're saying, we don't have good science of how these systems work or how to tell when they'll be smarter than us. We don't have good science for how to make sure they won't cause massive harm. But don't worry, the main factors driving our decisions are profit incentives and unrelenting market pressure to move faster than our competitors. So, we promise we're being extra, extra safe.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage expresses concerns about the potential risks and consequences of AI development and use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "AI's potential impact and uncertainty",
+   "quote": "Whatever these companies say about it being too early for any regulation, the reality is that billions of dollars are being poured into building and deploying increasingly advanced AI systems. And these systems are affecting hundreds of millions of people's lives, even in the absence of scientific consensus about how they work or what will be built next.",
+   "full_text": "Whatever these companies say about it being too early for any regulation, the reality is that billions of dollars are being poured into building and deploying increasingly advanced AI systems. And these systems are affecting hundreds of millions of people's lives, even in the absence of scientific consensus about how they work or what will be built next. So, I would argue that a wait-and-see approach to policy is not an option. I want to be clear. I don't know how long we have to prepare for smarter-than-human AI, and I don't know how hard it will be to control it and ensure that it's safe.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The passage highlights the significant impact of AI on various aspects of life, despite the uncertainty surrounding its development and use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Balancing risks and benefits",
+   "quote": "As I'm sure the Committee has heard a thousand times, AI doesn't just bring risks. It also has the potential to raise living standards, help solve global challenges, and empower people around the world.",
+   "full_text": "As I'm sure the Committee has heard a thousand times, AI doesn't just bring risks. It also has the potential to raise living standards, help solve global challenges, and empower people around the world. If the story were simply that this technology is bad and dangerous, then our job would be much simpler. The challenge we face is figuring out how to proactively make good policy despite immense uncertainty and expert disagreement about how quickly AI will progress, and what dangers will arise along the way.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage acknowledges the potential risks and benefits of AI, highlighting the need to balance these factors in policy-making."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Policy building blocks",
+   "quote": "I want to briefly highlight six policy building blocks that I describe in more detail in my written testimony.",
+   "full_text": "I want to briefly highlight six policy building blocks that I describe in more detail in my written testimony. First, we should be implementing transparency requirements for developers of high-stakes AI systems. We should be making major research investments in how to measure and evaluate AI, as well as how to make it safe. We should be supporting the development of a rigorous third-party audit ecosystem, bolstering whistleblower protections for employees of AI companies, increasing technical expertise in Government, and clarifying how liability for AI harms should be allocated.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Impact of machine learning on society",
+     "rationale": "The passage outlines policy building blocks for AI, emphasizing the importance of transparency, research, and technical expertise in addressing the potential risks and benefits of AI."
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Implementing transparency requirements for AI developers",
+   "quote": "First, we should be implementing transparency requirements for developers of high-stakes AI systems.",
+   "full_text": "First, we should be implementing transparency requirements for developers of high-stakes AI systems. We should be making major research investments in how to measure and evaluate AI, as well as how to make it safe. We should be supporting the development of a rigorous third-party audit ecosystem, bolstering whistleblower protections for employees of AI companies, increasing technical expertise in Government, and clarifying how liability for AI harms should be allocated.",
+   "open_codes": [
+    {
+     "code_id": "c266",
+     "label": "Transparency requirements for AI developers",
+     "rationale": "To ensure accountability and safety in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S010",
+   "title": "Concerns about internal guardrails",
+   "quote": "your, quote, ``experience on the board of OpenAI taught me how fragile internal guardrails are when money is on the line and why it's imperative that policymakers step in.''",
+   "full_text": "your, quote, ``experience on the board of OpenAI taught me how fragile internal guardrails are when money is on the line and why it's imperative that policymakers step in.''",
+   "open_codes": [
+    {
+     "code_id": "c267",
+     "label": "Fragile internal guardrails",
+     "rationale": "To highlight the importance of policymakers' involvement in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S011",
+   "title": "Examples of incidents",
+   "quote": "including situations like process known as the deployment safety board, which was set up internally.",
+   "full_text": "Great idea for something to try, to try and coordinate safety between OpenAI and Microsoft when using OpenAI products. It's now been reported publicly that in the early days of that process, Microsoft--they're in the midst of planning a very big, very important launch, the launch of GPT-4--and Microsoft went ahead and launched GPT-4 to tens of thousands of users in India, without getting approval from that deployment safety board. Another example would be that there's been, since I stepped off the board, there's been concerns raised from inside the company that in the lead up to the launch of their 4o model, which was the, you know, voice assistant that had, you know, very, very exciting launch videos, was launched the day before a Google event that OpenAI knew might upstage them. And there's been concerns raised from inside the company about their inability to fully carry through the kinds of safety commitments that the company had made in advance of that.",
+   "open_codes": [
+    {
+     "code_id": "c268",
+     "label": "Incidents in AI development",
+     "rationale": "To illustrate the importance of policymakers' involvement in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S012",
+   "title": "Concerns about Microsoft's safety commitments",
+   "quote": "there's been concerns raised from inside the company about their inability to fully carry through the kinds of safety commitments that the company had made",
+   "full_text": "And there's been concerns raised from inside the company about their inability to fully carry through the kinds of safety commitments that the company had made in advance of that.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "Concerns raised from inside the company about their inability to fully carry through safety commitments"
+    }
+   ]
+  },
+  {
+   "segment_id": "S013",
+   "title": "Elaboration on inaccurate information",
+   "quote": "Mr. Altman gave inaccurate information about the small number of formal safety processes that the company did have in place",
+   "full_text": "You had said this year, that, I'm just going to quote you, that ``Mr. Altman gave inaccurate information about the small number of formal safety processes that the company did have in place.'' That is, he gave incorrect information to the board.",
+   "open_codes": [
+    {
+     "code_id": "c269",
+     "label": "Inaccurate information about AI development and use",
+     "rationale": "Mr. Altman gave incorrect information about formal safety processes"
+    }
+   ]
+  },
+  {
+   "segment_id": "S014",
+   "title": "Safety processes and preparedness framework",
+   "quote": "when the company has safety processes, they announce them loudly and proudly",
+   "full_text": "At the time, you know, one that I was thinking of, which was one of the first formal processes that I'm aware of, was this deployment safety board that I just discussed. And this breach by Microsoft that took place in the early days there. Since then, they have introduced a preparedness framework which I think is, you know--I want to commend many of these companies for taking some good steps.",
+   "open_codes": [
+    {
+     "code_id": "c270",
+     "label": "Safety processes and preparedness framework",
+     "rationale": "Company announces safety processes and introduces preparedness framework"
+    }
+   ]
+  },
+  {
+   "segment_id": "S015",
+   "title": "Concerns about compliance and team reassignment",
+   "quote": "there have been concerns raised about, you know, how well they're able to comply with it",
+   "full_text": "But there have been concerns raised about, you know, how well they're able to comply with it. Then also, it's been publicly reported that the, you know, really respected expert they brought in to run that team has since been reassigned from that role, which, you know, I worry what that means for, for, you know, the influence that that team is able to--to exert on the rest of the company.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "Concerns raised about compliance and team reassignment"
+    }
+   ]
+  },
+  {
+   "segment_id": "S016",
+   "title": "Larger dynamic and challenges",
+   "quote": "there are really great people inside all of these companies trying to do really great things",
+   "full_text": "And I think that is illustrative, as well, of a larger dynamic that I'm sure all of the witnesses here today have observed, which is, there are really great people inside all of these companies trying to do really great things. And the challenge is that if everything is up to the companies themselves, and to the leadership teams who are needing to make tradeoffs around getting products out, making profits, attracting new investors, those teams may not get the resourcing, the time, the influence, the, the ability to actually shape what happens that they need.",
+   "open_codes": [
+    {
+     "code_id": "c271",
+     "label": "Larger dynamic and challenges",
+     "rationale": "Larger dynamic and challenges faced by companies and leadership teams"
+    }
+   ]
+  },
+  {
+   "segment_id": "S017",
+   "title": "Concerns about AI development and use",
+   "quote": "if everything is up to the companies themselves, and to the leadership teams who are needing to make tradeoffs around getting products out, making profits, attracting new investors, those teams may not get the resourcing, the time, the influence, the, the ability to actually shape what happens that they need.",
+   "full_text": "And the challenge is that if everything is up to the companies themselves, and to the leadership teams who are needing to make tradeoffs around getting products out, making profits, attracting new investors, those teams may not get the resourcing, the time, the influence, the, the ability to actually shape what happens that they need. So I think, you know, many of the--many of the dynamics that I witnessed echo very much what I'm hearing from my fellow witnesses.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about companies prioritizing profits over responsible AI development and use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S018",
+   "title": "Evaluation of OpenAI's safety efforts",
+   "quote": "Before releasing any new system, OpenAI conducts extensive testing, engages external experts for detailed reviews and independent audits, improves the model's behavior, and implements robust safety and monitoring systems.",
+   "full_text": "And then he went on to say, and I'm still quoting him, ``We make,'' meaning OpenAI, ``significant efforts to ensure that safety is built into our systems at all levels.''",
+   "open_codes": [
+    {
+     "code_id": "c272",
+     "label": "Evaluation of OpenAI's safety efforts",
+     "rationale": "The respondent evaluates OpenAI's safety efforts as accurate and comprehensive."
+    }
+   ]
+  },
+  {
+   "segment_id": "S019",
+   "title": "Concerns about AI development and use",
+   "quote": "The question is, how much is enough? Who is making those decisions? And what incentives are driving those decisions?",
+   "full_text": "So in practice, you know, if you make a commitment, you have to write that commitment down in some words, and then when you go to implement it, there's going to be a lot of detailed decisions you have to make about what information is shared with whom, at what time, who is brought into the right room to make a certain decision.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent questions the adequacy of AI development and use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S020",
+   "title": "Concerns about AI development and use",
+   "quote": "I worry that we should not--if we rely on the companies to make all of those tradeoffs, all of those detailed decisions about how those commitments are implemented, that they're unable--they're just unable to fully account for the interests of a broad public.",
+   "full_text": "And I think, you know, you hear this, as well, from people, you know, I've heard this from people in multiple companies, you know, sentiment along the lines of, please, like, please help us slow down. Please give us guardrails that we can point to that are external, that help us not only be subject to these market pressures.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent worries that companies may not prioritize the public interest in AI development and use."
+    }
+   ]
+  },
+  {
+   "segment_id": "S021",
+   "title": "Guardrails for AI development",
+   "quote": "please help us slow down. Please give us guardrails that we can point to that are external, that help us not only be subject to these market pressures.",
+   "full_text": "And I think, you know, you hear this, as well, from people, you know, I've heard this from people in multiple companies, you know, sentiment along the lines of, please, like, please help us slow down. Please give us guardrails that we can point to that are external, that help us not only be subject to these market pressures.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent emphasizes the need for guardrails to prevent failures and ensure benefits in AI development"
+    }
+   ]
+  },
+  {
+   "segment_id": "S022",
+   "title": "Concerns about OpenAI's safety procedures",
+   "quote": "I think it depends entirely on how rapidly their research progresses. If their most aggressive predictions of how more--how quickly their systems will get more advanced are correct, then I have serious concerns, if they--their predictions--their most aggressive predictions may well be wrong, in which case I'm somewhat less concerned.",
+   "full_text": "I think it depends entirely on how rapidly their research progresses. If their most aggressive predictions of how more--how quickly their systems will get more advanced are correct, then I have serious concerns, if they--their predictions--their most aggressive predictions may well be wrong, in which case I'm somewhat less concerned.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about AI development and use, depending on the pace of research"
+    }
+   ]
+  },
+  {
+   "segment_id": "S023",
+   "title": "Competition with China",
+   "quote": "I think that the competition with China, certainly a very important consideration, and we should be keeping a very close eye on what they're doing and how U.S. technology compares to their technology.",
+   "full_text": "I think that the competition with China, certainly a very important consideration, and we should be keeping a very close eye on what they're doing and how U.S. technology compares to their technology. But I think it is used as an all-purpose excuse to not regulate, and an all-purpose defense against any kind of regulation. I think that's mistaken on a few fronts. It's mistaken because of what's happening in China. They are regulating their sector pretty heavily. They are, you know, scrambling to keep up with the U.S. They are facing some serious macro headwinds in terms of economic problems, access to semiconductors after U.S. export controls. So China, you know, has its own set of issues, we shouldn't treat them as, you know, just absolutely raring to go and about to pass us at any moment.",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The respondent expresses concerns about AI regulation and the President's ability to legislate without congressional approval"
+    }
+   ]
+  },
+  {
+   "segment_id": "S024",
+   "title": "AI consumer trust",
+   "quote": "There's been recent consumer sentiment surveys showing that if they see AI in a product description, they're less likely to use the product.",
+   "full_text": "And I think it also totally belies the fact that regulation and innovation do not have to be intention. This is a technology, AI, that consumers don't trust. There's been recent consumer sentiment surveys showing that if they see AI in a product description, they're less likely to use the product.",
+   "open_codes": [
+    {
+     "code_id": "c039",
+     "label": "Importance of transparency",
+     "rationale": "The respondent emphasizes the importance of transparency in AI development and use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S025",
+   "title": "Regulation and innovation do not have to be mutually exclusive",
+   "quote": "Regulation and innovation do not have to be intention. This is a technology, AI, that consumers don't trust.",
+   "full_text": "They are facing some serious macro headwinds in terms of economic problems, access to semiconductors after U.S. export controls. So China, you know, has its own set of issues, we shouldn't treat them as, you know, just absolutely raring to go and about to pass us at any moment. And I think it also totally belies the fact that regulation and innovation do not have to be intention. This is a technology, AI, that consumers don't trust. There's been recent consumer sentiment surveys showing that if they see AI in a product description, they're less likely to use the product. So if you can implement regulation that is, that is light touch, that increases consumer trust, that helps the Government be positioned to understand what is going on with the technology. You can, you can regulate in really sensible ways without even impacting innovation at all. So, it's irrelevant, you know, if it's going to affect the race with China.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent mentions the need for regulation to increase consumer trust and the potential impact on innovation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S026",
+   "title": "Liability and AI",
+   "quote": "At present, it's very unclear how AI should be thought of and how different actors, in what gets called ``the value chain,'' should take responsibility for unintended outcomes.",
+   "full_text": "The best--best comparison that people turn to is issues with software, issues with cybersecurity, which I think many tort experts, which I am not one, considered to be an area of liability that has not been especially successful in allocating responsibility for harms. And so, you know, that's not an especially promising precedent, necessarily. And also, AI is very different from the kinds of software we're used to dealing with, and the problems and harms that AI can cause are different from cybersecurity issues.",
+   "open_codes": [
+    {
+     "code_id": "c179",
+     "label": "Concerns about AI definition",
+     "rationale": "The respondent mentions the unclear definition of AI and the need for responsibility allocation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S027",
+   "title": "AI Safety Institute agreement",
+   "quote": "I think, in principle, it sounds excellent. I think it's a great step forward. I'm excited by the work that the AI Safety Institute is setting out to do, and I echo Mr. Harris' call for them to be as well-resourced as they possibly can be.",
+   "full_text": "Thank you, Senator Padilla. I haven't seen the details of the agreement. I think, in principle, it sounds excellent. I think it's a great step forward. I'm excited by the work that the AI Safety Institute is setting out to do, and I echo Mr. Harris' call for them to be as well-resourced as they possibly can be.",
+   "open_codes": [
+    {
+     "code_id": "c273",
+     "label": "Appreciation for AI Safety Institute's work",
+     "rationale": "The respondent mentions the excellent nature of the agreement and the importance of the AI Safety Institute's work."
+    }
+   ]
+  },
+  {
+   "segment_id": "S028",
+   "title": "Cautious Optimism about Agreement",
+   "quote": "I'm optimistic about it and very pleased to see the agreement.",
+   "full_text": "I think, you know, the success of an arrangement like this will depend on a lot of details about timing and access and what kind of assets are allowed to be accessed in what kinds of ways. So I'm optimistic about it and very pleased to see the agreement. But, you know, we'll have to see where it goes from here.",
+   "open_codes": [
+    {
+     "code_id": "c274",
+     "label": "Cautious Optimism",
+     "rationale": "The respondent acknowledges the agreement's potential, but emphasizes the need for details and evaluation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S029",
+   "title": "Evaluation Challenges",
+   "quote": "I think it'll be difficult for us from the outside to be able to evaluate, I believe, because I expect a lot of this testing and evaluation to happen behind closed doors, which I think is reasonable.",
+   "full_text": "And so, I think the task for Congress will be to be interfacing and working closely with NIST and the AI Safety Institute to hear from them how well this is working. Do they have, again, the sort of contractual arrangements that they need in order to carry out the kinds of testing that they think would be most valuable? Do they have the funding that they need? Do they have the staffing that they need?",
+   "open_codes": [
+    {
+     "code_id": "c275",
+     "label": "Evaluation Challenges",
+     "rationale": "The respondent notes that evaluation will likely occur behind closed doors, making it challenging for Congress to assess the agreement's success."
+    }
+   ]
+  },
+  {
+   "segment_id": "S030",
+   "title": "Talent Issues in Government",
+   "quote": "Personally, I think salaries are only one piece of the puzzle there.",
+   "full_text": "Personally, I think salaries are only one piece of the puzzle there. I know multiple people who are really interested in offering their immense talents to the U.S. Government and are just--it's the processes, the hiring processes are impossible. And another element that I know comes up for people who do end up getting into Government is, you know, their ability to use halfway-up-to-date technologies rather than extremely old devices, extremely old systems.",
+   "open_codes": [
+    {
+     "code_id": "c276",
+     "label": "Talent Issues in Government",
+     "rationale": "The respondent notes that salaries are only one aspect of the problem, and that hiring processes and outdated technologies are also significant barriers."
+    }
+   ]
+  },
+  {
+   "segment_id": "S031",
+   "title": "Importance of Online Privacy Bill",
+   "quote": "one of the things we've said repeatedly is we have to have an online privacy bill that is federally preemptive, before we start down the AI path.",
+   "full_text": "Mr. Saunders, to the point you were just making, one of the things we've said repeatedly is we have to have an online privacy bill that is federally preemptive, before we start down the AI path. Because people want to be able to firewall their information and keep it out of the public domain.",
+   "open_codes": [
+    {
+     "code_id": "c277",
+     "label": "Importance of Online Privacy Bill",
+     "rationale": "The respondent highlights the importance of protecting individuals' information and privacy in the context of AI development."
+    }
+   ]
+  },
+  {
+   "segment_id": "S032",
+   "title": "Concerns about Meta's use of public content",
+   "quote": "And I think we all know what that means.",
+   "full_text": "Mr. Saunders, to the point you were just making, one of the things we've said repeatedly is we have to have an online privacy bill that is federally preemptive, before we start down the AI path. Because people want to be able to firewall their information and keep it out of the public domain. And last week, and, Ms. Toner, I want to come to you on this because Meta announced it was going to use public content and things from Facebook and Instagram in the UK, and they were going to use this to train their generative AI models, again. And Meta said their goal was to reflect, let's see, British culture, history and idiom, and that UK companies and institutions will be able to utilize the latest technology. And I think we all know what that means.",
+   "open_codes": [
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent is worried about the potential misuse of public content for AI training."
+    }
+   ]
+  },
+  {
+   "segment_id": "S033",
+   "title": "Meta's use of public content in the UK",
+   "quote": "I think they had----",
+   "full_text": "Thank you, Senator Blackburn. My understanding of that announcement, which I'm only, I should admit, have seen briefly but not dug into in depth, is that that was actually a practice that Meta was already very much, you know, going ahead with in the United States, due to the lack of privacy protections here. And that the announcement last week was, I think they had----",
+   "open_codes": [
+    {
+     "code_id": "c002",
+     "label": "Background and Expertise",
+     "rationale": "The respondent is sharing their knowledge about the topic."
+    }
+   ]
+  },
+  {
+   "segment_id": "S034",
+   "title": "Importance of privacy bill",
+   "quote": "Indeed. I think, I believe, and other witnesses may know better, I believe that they had----",
+   "full_text": "Indeed. I think, I believe, and other witnesses may know better, I believe that they had held off on initiating that process in the UK, due to privacy protections that do exist in the UK. So, to me, this is actually an example of, perhaps, success on the UK's part.",
+   "open_codes": [
+    {
+     "code_id": "c278",
+     "label": "Importance of privacy bill",
+     "rationale": "The respondent believes that a privacy bill is necessary to protect individuals' information."
+    }
+   ]
+  },
+  {
+   "segment_id": "S035",
+   "title": "Distinguishing between intelligence and agency",
+   "quote": "When you look at this difference between intel and agency, do you see these as different concepts? Do they carry different threats? Should these be approached separately? Differently? Does this play into AGI? Tell me your thoughts on that.",
+   "full_text": "So, Ms. Toner, let me come to you on this. When you look at this difference between intel and agency, do you see these as different concepts? Do they carry different threats? Should these be approached separately? Differently? Does this play into AGI? Tell me your thoughts on that.",
+   "open_codes": [
+    {
+     "code_id": "c279",
+     "label": "Distinguishing between intelligence and agency",
+     "rationale": "The respondent is exploring the concepts of intelligence and agency in AI."
+    },
+    {
+     "code_id": "c280",
+     "label": "Differentiation between intelligence and agency",
+     "rationale": "The passage emphasizes the importance of understanding this difference in the context of AI development and regulation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S036",
+   "title": "Autonomous action in AI systems",
+   "quote": "It is, you know, not the same thing as intelligence. But we are already seeing the ability of companies to take, you know, language models, chatbots, like ChatGPT and others, and, you know, add a little bit of additional software, add a little bit of additional development time, and convert them into systems that can go out and take autonomous action.",
+   "full_text": "Right now, the state of these systems is pretty basic. But certainly talking to researchers and engineers in the space, they're very optimistic. They're very excited about the prospects of this category of system.",
+   "open_codes": [
+    {
+     "code_id": "c281",
+     "label": "Autonomous action in AI systems",
+     "rationale": "The passage highlights the current state of these systems and the excitement around their potential."
+    }
+   ]
+  },
+  {
+   "segment_id": "S037",
+   "title": "Potential applications of autonomous AI systems",
+   "quote": "Initially perhaps something like a personal assistant that could help you book a flight or schedule a meeting. But ultimately, you know, Mustafa Suleyman, formerly at Google, now at Microsoft, has talked about, for example, could you have an AI that you give it--I forget the numbers, something like a hundred thousand dollars and it comes back to you a little while later with a million dollars that it's made, because it's run some business or done something more sophisticated?",
+   "full_text": "At the limit, certainly, this is very--very related to ideas around AGI and advanced AI more generally. Sort of the founding idea or founding excitement of the field of AI, I think, for many people has been the idea of systems that can take very complicated actions, pursue very complicated goals in the real world.",
+   "open_codes": [
+    {
+     "code_id": "c282",
+     "label": "Potential applications of autonomous AI systems",
+     "rationale": "The passage highlights the potential scope of autonomous AI systems and their potential impact."
+    }
+   ]
+  },
+  {
+   "segment_id": "S038",
+   "title": "Regulatory challenges for autonomous AI systems",
+   "quote": "I just--to put a finer point on something that I think both Mr. Saunders and Dr. Mitchell are describing, I think a core to the problem here is that the lack of regulation on tech means that many of these concerning practices are not illegal.",
+   "full_text": "Thank you. I just--to put a finer point on something that I think both Mr. Saunders and Dr. Mitchell are describing, I think a core to the problem here is that the lack of regulation on tech means that many of these concerning practices are not illegal. And so existing whistleblower protections, it's very unclear if they apply at all. And if you're a whistleblower--a potential whistleblower sitting inside one of these companies, you don't really want to go out on a limb and take a guess at, well, is this enough of a financial issue that the SEC would be, you know, would cover me? Or do I have to go talk--if it's something that's kind of novel related to AI development or other technology development where you have serious concerns, but there's not a clear statute on the book saying the company is breaking the law, then your options are limited.",
+   "open_codes": [
+    {
+     "code_id": "c283",
+     "label": "Regulatory challenges for autonomous AI systems",
+     "rationale": "The passage emphasizes the need for regulation and oversight in the development and deployment of autonomous AI systems."
+    },
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The passage highlights the lack of regulation on tech and the unclear application of existing whistleblower protections."
+    }
+   ]
+  },
+  {
+   "segment_id": "S039",
+   "title": "Regulation and innovation",
+   "quote": "I think it is used as a catch-all rejection of any kind of regulation, and I think that that is mistaken.",
+   "full_text": "But I think it is used as a catch-all rejection of any kind of regulation, and I think that that is mistaken. I think it's mistaken for a few reasons. You know, primarily--primary among them, that there are many, many kinds of regulation, and some of them inhibit innovation quite a lot. Certainly, poorly designed heavy-handed regulation can do that. But plenty of kinds of regulation do the opposite.",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The passage highlights the misconception that regulation will always inhibit innovation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S040",
+   "title": "AI regulation and consumer trust",
+   "quote": "I think a mechanism that to me seems very important for AI, that I mentioned before and can elaborate on a little, is this idea of consumer trust or consumer willingness to use this technology, to rely on this technology, not just consumers, also--also businesses, you know, enterprise use of AI.",
+   "full_text": "I think a mechanism that to me seems very important for AI, that I mentioned before and can elaborate on a little, is this idea of consumer trust or consumer willingness to use this technology, to rely on this technology, not just consumers, also--also businesses, you know, enterprise use of AI. Right now, we're in a state where people don't actually trust this technology. They don't have the experience that it's particularly reliable or that it necessarily, you know, has results that fall within their expectations. And that makes them less willing to use it, which means the companies are earning less revenue, which means that they're less able to reinvest that revenue in research.",
+   "open_codes": [
+    {
+     "code_id": "c051",
+     "label": "Importance of transparency in AI use",
+     "rationale": "The passage highlights the need for transparency and trust in AI use."
+    },
+    {
+     "code_id": "c033",
+     "label": "Concerns about AI development and use",
+     "rationale": "The respondent expresses concerns about the lack of trust in AI technology and its impact on consumer willingness to use it."
+    }
+   ]
+  },
+  {
+   "segment_id": "S041",
+   "title": "Regulation and innovation in credit card security",
+   "quote": "And one significant result of that regulation was significant innovation in credit card security and different mechanisms to reduce the chances of that fraud.",
+   "full_text": "And one significant result of that regulation was significant innovation in credit card security and different mechanisms to reduce the chances of that fraud. So that's a regulation that both protected consumers and also directly spurred innovation.",
+   "open_codes": [
+    {
+     "code_id": "c007",
+     "label": "Guardrails for AI",
+     "rationale": "The respondent mentions the importance of regulation in promoting innovation and protecting consumers."
+    }
+   ]
+  },
+  {
+   "segment_id": "S042",
+   "title": "Comparison of AI to food safety",
+   "quote": "So, I think there are, you know, examples in, you know, food safety is an area we're very fortunate in this country that, you know, we have to think almost not at all about the safety of our food going from day to day because we have such good food safety standards. And I think, you know, the AI is very, very far from that--that point.",
+   "full_text": "So, I think there are, you know, examples in, you know, food safety is an area we're very fortunate in this country that, you know, we have to think almost not at all about the safety of our food going from day to day because we have such good food safety standards. And I think, you know, the AI is very, very far from that--that point.",
+   "open_codes": [
+    {
+     "code_id": "c006",
+     "label": "Limitations of AI systems",
+     "rationale": "The respondent compares the current state of AI to food safety, highlighting the limitations and potential failures of AI systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S043",
+   "title": "Policy recommendations for AI",
+   "quote": "So, I think, in my mind, almost all of the policy recommendations that have been made today are the kinds of recommendations that really would not inhibit innovation at all, and, in some cases, might actively promote it,",
+   "full_text": "So, I think, in my mind, almost all of the policy recommendations that have been made today are the kinds of recommendations that really would not inhibit innovation at all, and, in some cases, might actively promote it,",
+   "open_codes": [
+    {
+     "code_id": "c185",
+     "label": "Concerns about AI regulation",
+     "rationale": "The respondent believes that most policy recommendations for AI would not inhibit innovation and might actively promote it."
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260921_015911",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 12,
+   "n_ok": 12
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 2,
+    "created": 2,
+    "chunk": 0
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 1
+   },
+   {
+    "reused": 0,
+    "created": 3,
+    "chunk": 2
+   },
+   {
+    "reused": 2,
+    "created": 3,
+    "chunk": 3
+   },
+   {
+    "reused": 3,
+    "created": 1,
+    "chunk": 4
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 5
+   },
+   {
+    "reused": 2,
+    "created": 1,
+    "chunk": 6
+   },
+   {
+    "reused": 1,
+    "created": 4,
+    "chunk": 7
+   },
+   {
+    "reused": 2,
+    "created": 2,
+    "chunk": 8
+   },
+   {
+    "reused": 0,
+    "created": 4,
+    "chunk": 9
+   },
+   {
+    "reused": 3,
+    "created": 0,
+    "chunk": 10
+   },
+   {
+    "reused": 4,
+    "created": 0,
+    "chunk": 11
+   }
+  ]
+ },
+ "transcript": "Hearing transcript CHRG-118shrg63050 — Helen Toner, Director, Center for Security and Emerging Technology, Georgetown University\nSource: https://www.govinfo.gov/app/details/CHRG-118shrg63050  |  Oversight Of Ai: Insiders' Perspectives  |  Senate, ?  |  2024-09-17  |  PUBLIC DOMAIN (17 U.S.C. § 105)  |  spoken proceedings only\n[Interviewer] (Chair Blumenthal) Very good, thank you. We'll just begin and go down the panel beginning with Ms. Toner.\n[Respondent] Chair Blumenthal, Ranking Member Hawley, Members of the Subcommittee, thank you for the opportunity to testify today. I want to start by commending you on the depth and sustained focus that this Subcommittee is bringing to the many and varied challenges and opportunities that we face with AI.\nMy work has focused on AI policy for the last 8 years, with an emphasis on national security, US-China competition, and AI safety.\nIn 2019, I moved to Washington to help found CSET, the Center for Security and Emerging Technology at Georgetown University, which has since grown to be a highly respected source of analysis on AI policy issues.\nWhile working full-time at CSET, I also spent 2\\1/2\\ years serving on OpenAI's nonprofit board from 2021 until the widely covered events of last November.\nToday, I'll be drawing on my research at CSET, my experiences on the board, and my extensive relationships with and interactions with AI researchers and executives from the years that I've worked in this space.\nThe title of this hearing is ``Oversight of AI: Insiders' Perspectives,'' and the biggest disconnect that I see between AI insider perspectives and public perceptions of AI companies is when it comes to the idea of artificial general intelligence, or ``AGI.''\nThis term, AGI, isn't well-defined, but it's generally used to mean AI systems that are roughly as smart or capable as a human.\nIn public and policy conversations, talk of human-level AI is often treated as either science fiction or marketing hype. But many top AI companies, including OpenAI, Google, Anthropic, are treating building AGI as an entirely serious goal and a goal that many people inside those companies think they might reach in 10 or 20 years, and some believe could be as close as 1 to 3 years away.\nMore to the point, many of these same people believe that if they succeed in building computers that are as smart as humans or perhaps far smarter than humans, that technology will be at a minimum extraordinarily disruptive, and at a maximum could lead to literal human extinction.\nThe companies in question often say that it's too early for any regulation because the science of how AI works and how to make it safe is too nascent.\nI'd like to restate that in different words.\nThey're saying, we don't have good science of how these systems work or how to tell when they'll be smarter than us. We don't have good science for how to make sure they won't cause massive harm. But don't worry, the main factors driving our decisions are profit incentives and unrelenting market pressure to move faster than our competitors. So, we promise we're being extra, extra safe.\nWhatever these companies say about it being too early for any regulation, the reality is that billions of dollars are being poured into building and deploying increasingly advanced AI systems. And these systems are affecting hundreds of millions of people's lives, even in the absence of scientific consensus about how they work or what will be built next.\nSo, I would argue that a wait-and-see approach to policy is not an option. I want to be clear. I don't know how long we have to prepare for smarter-than-human AI, and I don't know how hard it will be to control it and ensure that it's safe.\nAs I'm sure the Committee has heard a thousand times, AI doesn't just bring risks. It also has the potential to raise living standards, help solve global challenges, and empower people around the world. If the story were simply that this technology is bad and dangerous, then our job would be much simpler.\nThe challenge we face is figuring out how to proactively make good policy despite immense uncertainty and expert disagreement about how quickly AI will progress, and what dangers will arise along the way.\nThe good news is that there are light touch adaptive policy measures we can adopt today that can both be helpful if we do see powerful AI systems soon, and also be helpful with many other AI policy issues that I'm sure we'll be discussing today.\nI want to briefly highlight six policy building blocks that I describe in more detail in my written testimony.\nFirst, we should be implementing transparency requirements for developers of high-stakes AI systems. We should be making major research investments in how to measure and evaluate AI, as well as how to make it safe. We should be supporting the development of a rigorous third-party audit ecosystem, bolstering whistleblower protections for employees of AI companies, increasing technical expertise in Government, and clarifying how liability for AI harms should be allocated.\nThese measures are really basic first steps that would in no way impede further innovation in AI. This kind of policy is about laying some minimal commonsense groundwork to help us get a handle on AI harms we're already seeing. And also set us up to identify and respond to new developments in AI over time.\nThis is not a technology we can manage with any single piece of legislation. But we're long overdue to implement some of these basic building blocks as a starting point. Thank you and I look forward to your questions.\n[Interviewer] (Chair Blumenthal) I think what's important here is that all of the tech companies, not just one, not just, for example, OpenAI, we're not singling out one or another, are engaged in that kind of strategy.\nLet me ask Ms. Toner, you wrote in your testimony that your, quote, ``experience on the board of OpenAI taught me how fragile internal guardrails are when money is on the line and why it's imperative that policymakers step in.''\nI know there are limits on what you can discuss publicly, I'm very respectful of them. But maybe you can tell us what you had in mind when you wrote that sentence.\n[Respondent] Certainly, Senator. And there's now been enough public reporting of some of the kinds of incidents that demonstrate this dynamic, including situations like process known as the deployment safety board, which was set up internally.\nGreat idea for something to try, to try and coordinate safety between OpenAI and Microsoft when using OpenAI products. It's now been reported publicly that in the early days of that process, Microsoft--they're in the midst of planning a very big, very important launch, the launch of GPT-4--and Microsoft went ahead and launched GPT-4 to tens of thousands of users in India, without getting approval from that deployment safety board.\nAnother example would be that there's been, since I stepped off the board, there's been concerns raised from inside the company that in the lead up to the launch of their 4o model, which was the, you know, voice assistant that had, you know, very, very exciting launch videos, was launched the day before a Google event that OpenAI knew might upstage them.\nAnd there's been concerns raised from inside the company about their inability to fully carry through the kinds of safety commitments that the company had made in advance of that.\nSo there's, you know, there's additional examples, but I think that those two illustrate the core point.\n[Interviewer] (Senator Hawley) Thank you, Mr. Chairman.\nMs. Toner, I just want to stay with you and maybe pick up there. My understanding is that when you left the OpenAI board, one of the reasons that you did so is you felt you couldn't do your job properly, meaning you couldn't effectively oversee Mr. Altman and some of the safety decisions that he was making.\nYou had said this year, that, I'm just going to quote you, that ``Mr. Altman gave inaccurate information about the small number of formal safety processes that the company did have in place.'' That is, he gave incorrect information to the board.\nTo the extent you're able, can you just elaborate on this? I'm interested in what's actually being done for safety inside this company, in no small part because of what he told us when he sat where you're sitting.\n[Respondent] Thank you, Senator. Yes, I'm happy to elaborate to the extent that I can without breaching any confidentiality obligations. I believe that, you know, when the company has safety processes, they announce them loudly and proudly. So I believe that you and your staff would be aware of the processes they have in place.\nAt the time, you know, one that I was thinking of, which was one of the first formal processes that I'm aware of, was this deployment safety board that I just discussed. And this breach by Microsoft that took place in the early days there.\nSince then, they have introduced a preparedness framework which I think is, you know--I want to commend many of these companies for taking some good steps. I think the idea behind the preparedness framework is good, I think to the extent they execute on it, that's great.\nBut there have been concerns raised about, you know, how well they're able to comply with it. Then also, it's been publicly reported that the, you know, really respected expert they brought in to run that team has since been reassigned from that role, which, you know, I worry what that means for, for, you know, the influence that that team is able to--to exert on the rest of the company.\nAnd I think that is illustrative, as well, of a larger dynamic that I'm sure all of the witnesses here today have observed, which is, there are really great people inside all of these companies trying to do really great things.\nAnd the challenge is that if everything is up to the companies themselves, and to the leadership teams who are needing to make tradeoffs around getting products out, making profits, attracting new investors, those teams may not get the resourcing, the time, the influence, the, the ability to actually shape what happens that they need.\nSo I think, you know, many of the--many of the dynamics that I witnessed echo very much what I'm hearing from my fellow witnesses.\n[Interviewer] (Senator Hawley) That's very helpful. Let me just ask you this, let me just put a finer point on it because Mr. Altman, as I said, testified to us on this connection this past year.\nHere's what--part of what he said. ``We make,'' meaning OpenAI, ``significant efforts to ensure that safety is built into our systems at all levels.''\nAnd then he went on to say, and I'm still quoting him, ``Before releasing any new system, OpenAI conducts extensive testing, engages external experts for detailed reviews and independent audits, improves the model's behavior, and implements robust safety and monitoring systems.'' In your experience, is that accurate?\n[Respondent] I believe it is possible to characterize the company's activities accurately that way. Yes. The question is, how much is enough? Who is making those decisions? And what incentives are driving those decisions?\nSo in practice, you know, if you make a commitment, you have to write that commitment down in some words, and then when you go to implement it, there's going to be a lot of detailed decisions you have to make about what information is shared with whom, at what time, who is brought into the right room to make a certain decision.\nIs your safety team, you know, whatever kind of safety team it might be, are they brought in from the very beginning to help with conception of the product, really think from the start about, you know, what implications this might have. Or are they handed something a couple of weeks before a launch deadline and told, okay, make this as good as you can do?\nHere, I'm not trying to refer to any specific incidents at OpenAI. I'm really referring to, again, you know, examples that I've heard reported publicly, heard from across the industry, that there are--there are good efforts and I worry that we should not--if we rely on the companies to make all of those tradeoffs, all of those detailed decisions about how those commitments are implemented, that they're unable--they're just unable to fully account for the interests of a broad public.\nAnd I think, you know, you hear this, as well, from people, you know, I've heard this from people in multiple companies, you know, sentiment along the lines of, please, like, please help us slow down. Please give us guardrails that we can point to that are external, that help us not only be subject to these market pressures.\n[Interviewer] (Senator Hawley) Just in general, is your impression now, is, was OpenAI doing enough in terms of its safety procedures and protocols to adequately vet its own products and to protect the public?\n[Respondent] I think it depends entirely on how rapidly their research progresses. If their most aggressive predictions of how more--how quickly their systems will get more advanced are correct, then I have serious concerns, if they--their predictions--their most aggressive predictions may well be wrong, in which case I'm somewhat less concerned.\n[Interviewer] (Senator Hawley) Let me finally, because I want to be mindful of the time and I've got colleagues who want to ask questions, let me just end with this.\nYou--in your written testimony, you make, I think, a very important and helpful point about AI development in China and why the competition with China, though real, should not be taken as an excuse for us to do nothing.\nCould you just amplify that? Because we've heard a lot of folks sitting where you're sitting over the last year and a half, raise the China point and usually say, well, we mustn't-- we mustn't lose the race to China, therefore it would be better if Congress did little to nothing. You think that that's wrong? Just explain this to us and why.\n[Respondent] I think that the competition with China, certainly a very important consideration, and we should be keeping a very close eye on what they're doing and how U.S. technology compares to their technology.\nBut I think it is used as an all-purpose excuse to not regulate, and an all-purpose defense against any kind of regulation. I think that's mistaken on a few fronts. It's mistaken because of what's happening in China. They are regulating their sector pretty heavily. They are, you know, scrambling to keep up with the U.S.\nThey are facing some serious macro headwinds in terms of economic problems, access to semiconductors after U.S. export controls. So China, you know, has its own set of issues, we shouldn't treat them as, you know, just absolutely raring to go and about to pass us at any moment.\nAnd I think it also totally belies the fact that regulation and innovation do not have to be intention. This is a technology, AI, that consumers don't trust. There's been recent consumer sentiment surveys showing that if they see AI in a product description, they're less likely to use the product.\nSo if you can implement regulation that is, that is light touch, that increases consumer trust, that helps the Government be positioned to understand what is going on with the technology. You can, you can regulate in really sensible ways without even impacting innovation at all. So, it's irrelevant, you know, if it's going to affect the race with China.\n[Interviewer] (Senator Kennedy) Well, that's what I'm getting to next. Liability. It is possible for the private sector to enforce through liability. Why are our tort laws right now, or our contract laws right now not adequate?\n[Respondent] I can jump in on that.\n[Interviewer] (Senator Kennedy) Yes.\n[Respondent] At present, it's very unclear how AI should be thought of and how different actors, in what gets called ``the value chain,'' should take responsibility for unintended outcomes.\nThe best--best comparison that people turn to is issues with software, issues with cybersecurity, which I think many tort experts, which I am not one, considered to be an area of liability that has not been especially successful in allocating responsibility for harms. And so, you know, that's not an especially promising precedent, necessarily.\nAnd also, AI is very different from the kinds of software we're used to dealing with, and the problems and harms that AI can cause are different from cybersecurity issues.\nSo I think, you know, liability is a way, if there can be clear allocation of liability, that's a way of, sort of, flexibly setting incentives that depend on the specifics of any given case, that could potentially be quite helpful if it were possible to provide more clarity.\n[Interviewer] (Senator Padilla) Thank you. Thank you, to all of you, for your testimony today.\nAs you're, I'm sure, aware, the U.S. AI Safety Institute recently announced a deal with OpenAI and Anthropic who agreed to share their models with researchers before and after deployment for research, for testing, and for evaluation. My first question is for Ms. Toner and for Dr. Mitchell. What do you think about this agreement?\n[Respondent] Thank you, Senator Padilla. I haven't seen the details of the agreement. I think, in principle, it sounds excellent. I think it's a great step forward. I'm excited by the work that the AI Safety Institute is setting out to do, and I echo Mr. Harris' call for them to be as well-resourced as they possibly can be.\nI think, you know, the success of an arrangement like this will depend on a lot of details about timing and access and what kind of assets are allowed to be accessed in what kinds of ways. So I'm optimistic about it and very pleased to see the agreement. But, you know, we'll have to see where it goes from here.\n[Interviewer] (Senator Padilla) Ms. Toner.\n[Respondent] Yes, just to add onto that, all of which I agree with. I think it'll be difficult for us from the outside to be able to evaluate, I believe, because I expect a lot of this testing and evaluation to happen behind closed doors, which I think is reasonable.\nAnd so, I think the task for Congress will be to be interfacing and working closely with NIST and the AI Safety Institute to hear from them how well this is working.\nDo they have, again, the sort of contractual arrangements that they need in order to carry out the kinds of testing that they think would be most valuable? Do they have the funding that they need? Do they have the staffing that they need? And so, we've talked a little bit about the need for more technical talent in Government.\nPersonally, I think salaries are only one piece of the puzzle there. I know multiple people who are really interested in offering their immense talents to the U.S. Government and are just--it's the processes, the hiring processes are impossible.\nAnd another element that I know comes up for people who do end up getting into Government is, you know, their ability to use halfway-up-to-date technologies rather than extremely old devices, extremely old systems.\nSo I do think that the talent issues are critical, and I think that the salaries are part of that. But I worry sometimes that we see the salaries as a totally intractable problem and then give up. And I think there are other ways to increase access to technical talent, as well.\n[Interviewer] (Senator Blackburn) Thank you so much. Yes, there are so many hearings today. It is catching us running back and forth.\nMr. Saunders, to the point you were just making, one of the things we've said repeatedly is we have to have an online privacy bill that is federally preemptive, before we start down the AI path. Because people want to be able to firewall their information and keep it out of the public domain.\nAnd last week, and, Ms. Toner, I want to come to you on this because Meta announced it was going to use public content and things from Facebook and Instagram in the UK, and they were going to use this to train their generative AI models, again.\nAnd Meta said their goal was to reflect, let's see, British culture, history and idiom, and that UK companies and institutions will be able to utilize the latest technology. And I think we all know what that means.\nI'd love to hear what concerns you have over that announcement and what limits should we place on companies, like Meta, that are using this data that is shared on their platforms to train their generative AI models.\n[Respondent] Thank you, Senator Blackburn. My understanding of that announcement, which I'm only, I should admit, have seen briefly but not dug into in depth, is that that was actually a practice that Meta was already very much, you know, going ahead with in the United States, due to the lack of privacy protections here. And that the announcement last week was, I think they had----\n[Interviewer] (Senator Blackburn) Probably need that privacy bill\n[Respondent] Indeed. I think, I believe, and other witnesses may know better, I believe that they had held off on initiating that process in the UK, due to privacy protections that do exist in the UK. So, to me, this is actually an example of, perhaps, success on the UK's part.\nIf Meta felt the need to be a little more thoughtful, a little more deliberate, a little more selective about the ways in which they were using British users' data because of the legal protections that existed there, which as you rightly point out, do not exist in the United States. I don't know if others want to add to that.\n[Interviewer] (Senator Blackburn) Well, we think having an online privacy--federally preemptive privacy bill that gets signed into law is something that is going to be necessary.\nAnd, as Senator Blumenthal said in his opening remarks, and I'm paraphrasing them now, but basically, Big Tech has proven to us they are not going to take steps that are necessary to protect the information of people.\nI do want to ask you something else, in, when we're talking about AVs that act in the world without humans and they're using AI, and that brings about the difference between intelligence and agency, between systems that think and systems that can act.\nSo, Ms. Toner, let me come to you on this. When you look at this difference between intel and agency, do you see these as different concepts? Do they carry different threats? Should these be approached separately? Differently? Does this play into AGI? Tell me your thoughts on that.\n[Respondent] Thank you, Senator. It's a good question. It's a timely question. We actually have a paper coming out introducing exactly this issue for policymakers----\n[Interviewer] (Senator Blackburn) Oh, great.\n[Respondent] In a couple of weeks.\n[Interviewer] (Senator Blackburn) Good.\n[Respondent] And what I would say is, I think these ideas of agency or agents that can take actions autonomously is not at all separate.\nIt is, you know, not the same thing as intelligence. But we are already seeing the ability of companies to take, you know, language models, chatbots, like ChatGPT and others, and, you know, add a little bit of additional software, add a little bit of additional development time, and convert them into systems that can go out and take autonomous action.\nRight now, the state of these systems is pretty basic. But certainly talking to researchers and engineers in the space, they're very optimistic. They're very excited about the prospects of this category of system.\nAnd it's something that is very actively under development, as far as I'm aware, at all of the top AI companies, with the goal being, you know, initially perhaps something like a personal assistant that could help you book a flight or schedule a meeting.\nBut ultimately, you know, Mustafa Suleyman, formerly at Google, now at Microsoft, has talked about, for example, could you have an AI that you give it--I forget the numbers, something like a hundred thousand dollars and it comes back to you a little while later with a million dollars that it's made, because it's run some business or done something more sophisticated?\nAt the limit, certainly, this is very--very related to ideas around AGI and advanced AI more generally. Sort of the founding idea or founding excitement of the field of AI, I think, for many people has been the idea of systems that can take very complicated actions, pursue very complicated goals in the real world. And I see a lot of, again, excitement in the field that we might be on the path in that direction.\n[Interviewer] (Chair Blumenthal) Ms. Toner.\n[Respondent] Thank you. I just--to put a finer point on something that I think both Mr. Saunders and Dr. Mitchell are describing, I think a core to the problem here is that the lack of regulation on tech means that many of these concerning practices are not illegal.\nAnd so existing whistleblower protections, it's very unclear if they apply at all.\nAnd if you're a whistleblower--a potential whistleblower sitting inside one of these companies, you don't really want to go out on a limb and take a guess at, well, is this enough of a financial issue that the SEC would be, you know, would cover me? Or do I have to go talk--if it's something that's kind of novel related to AI development or other technology development where you have serious concerns, but there's not a clear statute on the book saying the company is breaking the law, then your options are limited.\nSo, I think the need for whistleblower protections goes hand in hand with the lack of other rules.\n[Interviewer] (Chair Blumenthal) You know, just a few questions in closing. One of the arguments that we hear in this realm, as well as many others, is regulation will inhibit innovation. Or, regulation will impede our competition with our adversaries, China being one. We've had some questions about China.\nShould we be concerned about impeding innovation or putting companies in this country at a disadvantage with efforts abroad?\nI think that's a question I'd like to ask all of you. Ms. Toner?\n[Respondent] Certainly, happy to begin. I think it's a question that is worth your consideration and should certainly factor heavily into how regulation is designed and how Congress makes decisions about what legislation to pass.\nBut I think it is used as a catch-all rejection of any kind of regulation, and I think that that is mistaken. I think it's mistaken for a few reasons. You know, primarily--primary among them, that there are many, many kinds of regulation, and some of them inhibit innovation quite a lot. Certainly, poorly designed heavy-handed regulation can do that. But plenty of kinds of regulation do the opposite.\nSo, you know, one example is there were--my understanding is in maybe the 1970s or 1980s, there were rule changes around--maybe more recently, there were rule changes in the financial sector around who was responsible for credit card fraud that made the banks, you know, have to foot the bill if cards were used fraudulently.\nAnd one significant result of that regulation was significant innovation in credit card security and different mechanisms to reduce the chances of that fraud. So that's a regulation that both protected consumers and also directly spurred innovation.\nI think a mechanism that to me seems very important for AI, that I mentioned before and can elaborate on a little, is this idea of consumer trust or consumer willingness to use this technology, to rely on this technology, not just consumers, also--also businesses, you know, enterprise use of AI.\nRight now, we're in a state where people don't actually trust this technology. They don't have the experience that it's particularly reliable or that it necessarily, you know, has results that fall within their expectations. And that makes them less willing to use it, which means the companies are earning less revenue, which means that they're less able to reinvest that revenue in research.\nSo, I think there are, you know, examples in, you know, food safety is an area we're very fortunate in this country that, you know, we have to think almost not at all about the safety of our food going from day to day because we have such good food safety standards. And I think, you know, the AI is very, very far from that--that point.\nSo, I think, in my mind, almost all of the policy recommendations that have been made today are the kinds of recommendations that really would not inhibit innovation at all, and, in some cases, might actively promote it,",
+ "_bench": {
+  "seconds": 262.8,
+  "chars": 28404
+ }
+}

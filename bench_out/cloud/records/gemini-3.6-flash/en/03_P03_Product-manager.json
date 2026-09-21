@@ -1,0 +1,106 @@
+{
+ "respondent": "P03 — Product manager",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript P03 — Product manager, roadside camera hardware vendor"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Unanticipated streetlight interference and omitted living-environment specifications",
+   "quote": "Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it.",
+   "full_text": "About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it. It's not in any specification anywhere.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Fails upstream foresight; overlooked social and environmental impacts because they were omitted from technical specifications."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Proactive retrofitting and design guidance updates following community complaints",
+   "quote": "We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street.",
+   "full_text": "We fixed it. Took about six weeks. We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street. I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Substantively altered hardware and installation guidelines in response to resident complaints across the whole system."
+    },
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Extended retrofitting city-wide based on reasoning about unobserved future complaints across identical sites."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Absence of direct communication channels for resident feedback",
+   "quote": "There's no direct line from a resident to the people who can actually fix the thing.",
+   "full_text": "Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us. I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Highlights structural lack of direct, timely engagement channels between affected residents and technology developers."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Dismissal of upstream public consultation in favour of technical engineering criteria",
+   "quote": "Placement was decided on traffic engineering grounds — sight lines, pole availability, power. I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them.",
+   "full_text": "Placement was decided on traffic engineering grounds — sight lines, pole availability, power. I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them. 'Do you mind a camera here' — most people would say yes they mind, and then what?",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Decides location purely on engineering grounds and dismisses public consultation using a deficit-model assumption."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Assumes technical engineering expertise settles placement and frames public input as inherently unconstructive."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Modest integration of user-proximity considerations into hardware design reviews",
+   "quote": "We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology.",
+   "full_text": "A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Shows pragmatic humility regarding knowledge limits while establishing self-scrutiny of neighbor-facing design aspects."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Institutionalises changes in design review process to permanently alter future hardware innovation trajectories."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits strong evidence across all four dimensions, characterized by a narrative shift from initial closed, technocratic practices to adaptive institutional learning. Initially, the respondent demonstrates negative anticipation and negative public engagement: deployment placement relied solely on engineering criteria while dismissing public consultation under a deficit model, resulting in unforeseen light pollution for residents and delayed communication due to absent feedback channels. However, the respondent demonstrates high positive responsiveness and adaptive anticipation following the disruption. Rather than limiting fixes to the complaining street, the hardware vendor redesigned the units, retrofitted the entire city-wide fleet, and updated installation guidelines to prevent future issues. Multi-coded segments highlight the tension between technocratic efficiency and social sensitivity: dismissing public input (Engagement -N) was linked to over-reliance on technical criteria (Reflexivity -N), whereas subsequent process adjustments institutionalized reflexivity and responsiveness into design reviews (Reflexivity +P / Responsiveness +P). Ultimately, the account illustrates how practical friction can push engineering-driven hardware vendors from reactive fix-it approaches toward modest, systemic anticipatory governance.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P03 — Product manager, roadside camera hardware vendor\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | Tell me about your part of the deployment.\nRespondent | We supply the roadside units — the housing, the sensor, the local compute. Thirty intersections, two units each, some with three where the geometry is awkward. My job is that they work in the weather and don't need a truck roll every month.\nInterviewer | Did anything come up after installation that you hadn't expected?\nRespondent | Yes, and it's the thing I always tell people about now. About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it. It's not in any specification anywhere.\nInterviewer | What happened then?\nRespondent | We fixed it. Took about six weeks. We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street. I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.\nInterviewer | How did those residents reach you?\nRespondent | Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us. I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.\nInterviewer | Was there consultation before installation about where units went?\nRespondent | Placement was decided on traffic engineering grounds — sight lines, pole availability, power. I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them. 'Do you mind a camera here' — most people would say yes they mind, and then what?\nInterviewer | Has the LED episode changed how you think about new products?\nRespondent | A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 29.5,
+  "seconds_source": "estimated: gap between saved files",
+  "absence": null,
+  "note": "written by bench_models.py before resume support; completeness verified (no chunk_errors) and marker added afterwards"
+ }
+}

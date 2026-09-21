@@ -1,0 +1,101 @@
+{
+  "respondent": "N03 (Campaigner, digital rights organisation)",
+  "descriptors": {
+    "institution_type": "nonprofit",
+    "role_level": "other",
+    "sector": "ict_ai",
+    "experience": "6_10y",
+    "descriptor_basis": "Interview transcript: N03 (Campaigner, digital rights organisation)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "Separates the individuals from the structure",
+      "quote": "Our position isn't that anyone here intends to do anything else with it — I've met these officers, they don't — it's that intent isn't a control. The people who make the decision in 2031 haven't been hired yet",
+      "full_text": "Function creep, mainly. A camera installed to count pedestrians is a camera. The counting is a software decision and software decisions get revisited. Our position isn't that anyone here intends to do anything else with it — I've met these officers, they don't — it's that intent isn't a control. The people who make the decision in 2031 haven't been hired yet.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Deliberate refusal of an easy adversarial framing, locating the problem structurally."
+        },
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Anticipation directed at institutional continuity rather than at current actors' intentions."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "Technical control proposed alongside the policy clause",
+      "quote": "not just 'we won't', but a configuration the vendor cannot change without a council resolution",
+      "full_text": "A purpose limitation clause in the contract with a technical control behind it — not just 'we won't', but a configuration the vendor cannot change without a council resolution. And an annual public statement of every purpose the data has been used for, including refused requests. Both are ordinary in other sectors.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Anticipates that a policy commitment without a technical constraint will not survive institutional turnover."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "Response answers a question that was not asked",
+      "quote": "it wasn't a refusal. Nobody said no. The letter simply answered a different question. That's the most common response we get and it's the hardest to escalate, because on paper we were answered.",
+      "full_text": "We got a two-page letter which restated the existing data protection position and did not address either request. I want to be precise: it wasn't a refusal. Nobody said no. The letter simply answered a different question. That's the most common response we get and it's the hardest to escalate, because on paper we were answered.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "A specific failure mode of responsiveness: the appearance of reply without engagement with the substance."
+        },
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "The absence of a mechanism to challenge a formally adequate but substantively empty reply."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "Applies to himself the standard applied to the council",
+      "quote": "We learned more in two hours than in a year of correspondence, and the disability group's point about slower pedestrians is now in everything we write, which it wasn't before",
+      "full_text": "Yes, and that's been the more productive part. We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides. We learned more in two hours than in a year of correspondence, and the disability group's point about slower pedestrians is now in everything we write, which it wasn't before.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Implicit scrutiny of the campaign's own prior methods."
+        },
+        {
+          "dimension": "engagement",
+          "polarity": "P",
+          "rationale": "Engagement that visibly changed the engaging party's own position — the test the respondent applies to others."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "Declines to position his own organisation as oversight",
+      "quote": "we're not neutral and we shouldn't be trusted with it either. That's the part campaigners get wrong",
+      "full_text": "A published purpose register that somebody outside the council updates. Not us — we're not neutral and we shouldn't be trusted with it either. That's the part campaigners get wrong: we ask for oversight and then assume we're the oversight.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Critical examination of a habit in the respondent's own advocacy community."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "A campaigner who deliberately declines the adversarial framing: the officers do not intend function creep, but intent is not a control and the people deciding in 2031 have not been hired. His asks are precise — a purpose limitation with a technical control behind it, and an annual public statement of uses including refused requests. The reply was a two-page letter that answered a different question, which he identifies as the hardest response to escalate because on paper it counts as an answer. He applies his own standard to himself, declining to position his organisation as the oversight it demands.",
+  "transcript": "Interview transcript N03 — Campaigner, digital rights organisation\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n【Interviewer】What's your organisation's interest here?\n【Respondent】Function creep, mainly. A camera installed to count pedestrians is a camera. The counting is a software decision and software decisions get revisited. Our position isn't that anyone here intends to do anything else with it — I've met these officers, they don't — it's that intent isn't a control. The people who make the decision in 2031 haven't been hired yet.\n【Interviewer】What have you asked for?\n【Respondent】A purpose limitation clause in the contract with a technical control behind it — not just 'we won't', but a configuration the vendor cannot change without a council resolution. And an annual public statement of every purpose the data has been used for, including refused requests. Both are ordinary in other sectors.\n【Interviewer】What response did you get?\n【Respondent】We got a two-page letter which restated the existing data protection position and did not address either request. I want to be precise: it wasn't a refusal. Nobody said no. The letter simply answered a different question. That's the most common response we get and it's the hardest to escalate, because on paper we were answered.\n【Interviewer】Have you worked with other groups on this?\n【Respondent】Yes, and that's been the more productive part. We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides. We learned more in two hours than in a year of correspondence, and the disability group's point about slower pedestrians is now in everything we write, which it wasn't before.\n【Interviewer】What would count as success?\n【Respondent】A published purpose register that somebody outside the council updates. Not us — we're not neutral and we shouldn't be trusted with it either. That's the part campaigners get wrong: we ask for oversight and then assume we're the oversight.",
+  "transcript_file": "21_N03_Campaigner.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

@@ -1,0 +1,70 @@
+{
+ "respondent": "Doctoral researcher and project research assistant",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "researcher",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": "the interview transcript does not state it"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Officially and unofficially",
+   "quote": "Officially I do the fieldwork. Unofficially I'm the person who sits in the community meetings and then writes the paragraph that gets cut from the report.",
+   "full_text": "Officially I do the fieldwork. Unofficially I'm the person who sits in the community meetings and then writes the paragraph that gets cut from the report. I've counted. Four times now.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "self-examination of one's own role and assumptions"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Fieldwork and data collection",
+   "quote": "Sixty-one street intercepts and nine longer interviews, over four months, at eight junctions chosen to vary by ward income and footfall.",
+   "full_text": "Sixty-one street intercepts and nine longer interviews, over four months, at eight junctions chosen to vary by ward income and footfall. I did evenings and weekends as well because the daytime sample was retired people and parents, which is a real population but not the whole one.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "capacity to adapt and modify the data collection process"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Surprise and reframing the consultation question",
+   "quote": "How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all.",
+   "full_text": "How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all. Which reframes the whole consultation question, doesn't it — you can't consult people about a thing they don't know exists, and the consultation was advertised in the places you'd look if you already knew.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "exploring plausible futures and acknowledging uncertainty"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Sharing the material that gets cut",
+   "quote": "Put it in the thesis, where four people will read it. I know how that sounds.",
+   "full_text": "Put it in the thesis, where four people will read it. I know how that sounds. I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "two-way dialogue and co-creation with the community group"
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent exhibits strong reflexive tendencies, acknowledging their own role and assumptions. They also demonstrate responsiveness by adapting their data collection process. The anticipation dimension is evident in their exploration of plausible futures and acknowledgment of uncertainty. Finally, they engage with the community group, considering how to share their findings in a way that is accessible and meaningful to them.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A06 — Doctoral researcher and project research assistant\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What's your role on the project?\n[Respondent] Officially I do the fieldwork. Unofficially I'm the person who sits in the community meetings and then writes the paragraph that gets cut from the report. I've counted. Four times now.\n[Interviewer] On what grounds is it cut?\n[Respondent] Length, usually. Sometimes 'this belongs in the appendix'. Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.\n[Interviewer] Tell me about the fieldwork itself.\n[Respondent] Sixty-one street intercepts and nine longer interviews, over four months, at eight junctions chosen to vary by ward income and footfall. I did evenings and weekends as well because the daytime sample was retired people and parents, which is a real population but not the whole one.\n[Interviewer] Did anything surprise you?\n[Respondent] How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all. Which reframes the whole consultation question, doesn't it — you can't consult people about a thing they don't know exists, and the consultation was advertised in the places you'd look if you already knew.\n[Interviewer] What will you do with the material that gets cut?\n[Respondent] Put it in the thesis, where four people will read it. I know how that sounds. I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it."
+}

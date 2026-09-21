@@ -1,0 +1,32 @@
+hearings：12 份，待編 12 份，端點 ollama/llama3:8b@http://localhost:11434
+  ✓ CHRG-118shrg52483_Venkatasubramanian  29,530 字元  13/13 窗   37 段  碼簿   3 碼  241s
+  ✓ CHRG-118shrg52785_Ariga  13,785 字元  6/6 窗   19 段  碼簿   3 碼  99s
+  ✓ CHRG-118shrg52785_Eppink  18,011 字元  9/9 窗   27 段  碼簿   4 碼  154s
+  ✓ CHRG-118shrg53503_Bengio  23,249 字元  11/11 窗   37 段  碼簿   4 碼  227s
+  ✓ CHRG-118shrg53503_Russell  31,065 字元  14/14 窗   52 段  碼簿   4 碼  275s
+  ✓ CHRG-118shrg53879_Smith  72,374 字元  31/31 窗   87 段  碼簿  21 碼  502s
+  ✓ CHRG-118shrg59704_Espinel  38,360 字元  17/17 窗   38 段  碼簿  34 碼  267s
+  ✓ CHRG-118shrg59704_Strayer  25,169 字元  11/11 窗   28 段  碼簿  42 碼  196s
+  ✓ CHRG-118hhrg53382_Prabhakar  27,615 字元  12/12 窗   35 段  碼簿  57 碼  211s
+  ✓ CHRG-118hhrg53382_Hysen   7,417 字元  3/3 窗   12 段  碼簿  65 碼  67s
+  ✓ CHRG-118shrg54718_Pahlka  33,557 字元  14/14 窗   40 段  碼簿  95 碼  255s
+  ✓ CHRG-118hhrg55220_Chilson  17,557 字元  8/8 窗   24 段  碼簿 108 碼  155s
+
+{
+  "corpus": "hearings",
+  "model": "ollama/llama3:8b@http://localhost:11434",
+  "transcripts": 12,
+  "chars": 337689,
+  "windows": 149,
+  "windows_ok": 149,
+  "transcripts_with_chunk_errors": 0,
+  "coding_minutes": 44.2,
+  "open_segments": 436,
+  "codes_initial": 108,
+  "applications_initial": 491,
+  "singletons_initial": 83,
+  "merge_suggestions": 40,
+  "codes_after_merge": 83
+}
+最常用的碼：Defining AI (173); Providing Background (57); Establishing Context (43); The importance of transparency in AI-gen (27); Inclusive decision-making (26); [NEW CODE] Concerns about AI oversight a (22); NEW CODE (19); Transitioning the discussion (11); [NEW CODE] Concerns about AI-generated c (7); [NEW CODE] Concerns about AI replacing j (6)
+已寫入 bench_out\open_coding_hearings\llama3_8b_sub12/summary.json

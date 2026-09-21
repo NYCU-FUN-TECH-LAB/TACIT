@@ -1,0 +1,101 @@
+{
+  "respondent": "G04 (Policy analyst, national transport ministry)",
+  "descriptors": {
+    "institution_type": "government",
+    "role_level": "policy_maker",
+    "sector": "ict_ai",
+    "experience": "6_10y",
+    "descriptor_basis": "Interview transcript: G04 (Policy analyst, national transport ministry)"
+  },
+  "segments": [
+    {
+      "segment_id": "S001",
+      "title": "National position arrived after the deployments",
+      "quote": "Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.",
+      "full_text": "As a pilot we can learn from, officially. In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "N",
+          "rationale": "Foresight failure at the system level: the window for shaping practice closed before the guidance existed."
+        }
+      ]
+    },
+    {
+      "segment_id": "S002",
+      "title": "Names the attention mechanism candidly",
+      "quote": "The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong.",
+      "full_text": "Yes. There was a submission in 2021 recommending exactly that and it wasn't prioritised. I've read it. It's a good submission. The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.",
+      "codes": [
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Critical examination of how the respondent's own institution allocates capacity, generalised beyond the immediate case."
+        },
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "Adaptation is structurally reactive; there is no trigger short of failure."
+        }
+      ]
+    },
+    {
+      "segment_id": "S003",
+      "title": "Annual testing of the fallback required",
+      "quote": "A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type",
+      "full_text": "A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.",
+      "codes": [
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Targets the specific mechanism by which reversibility is quietly lost."
+        },
+        {
+          "dimension": "anticipation",
+          "polarity": "P",
+          "rationale": "Anticipates that aggregate reporting will continue to conceal distributional harm unless the requirement is explicit."
+        }
+      ]
+    },
+    {
+      "segment_id": "S004",
+      "title": "Instrument chosen cannot compel adaptation",
+      "quote": "the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on",
+      "full_text": "It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.",
+      "codes": [
+        {
+          "dimension": "responsiveness",
+          "polarity": "N",
+          "rationale": "The respondent's own assessment that the policy instrument will not produce change where change is needed."
+        }
+      ]
+    },
+    {
+      "segment_id": "S005",
+      "title": "Affected groups absent from the drafting group",
+      "quote": "No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+      "full_text": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+      "codes": [
+        {
+          "dimension": "engagement",
+          "polarity": "N",
+          "rationale": "The population most affected by the guidance has no part in writing it."
+        },
+        {
+          "dimension": "reflexivity",
+          "polarity": "P",
+          "rationale": "Refuses a constraint framing where the constraint was chosen by the institution invoking it."
+        }
+      ]
+    }
+  ],
+  "deleted_segments": [],
+  "summary": "The national view, and the clearest case in the corpus of anticipation failing at system level: eleven authorities acted before any national position existed, so the guidance now being drafted must be compatible with all of them and will be weak. A 2021 submission recommending earlier action was not prioritised because nothing had gone wrong yet — a mechanism the respondent names without defending. The guidance targets the right things, including annual fallback testing, but he expects it to change nothing where it matters, and the drafting group contains no disability organisations or residents.",
+  "transcript": "Interview transcript G04 — Policy analyst, national transport ministry\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does central government see deployments like Port Calder's?\n[Respondent] As a pilot we can learn from, officially. In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.\n[Interviewer] Could the ministry have moved earlier?\n[Respondent] Yes. There was a submission in 2021 recommending exactly that and it wasn't prioritised. I've read it. It's a good submission. The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.\n[Interviewer] What's going into the guidance?\n[Respondent] A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.\n[Interviewer] Will it have teeth?\n[Respondent] It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.\n[Interviewer] Was anyone outside government involved in drafting?\n[Respondent] A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+  "transcript_file": "16_G04_Policy-analyst.docx",
+  "_meta": {
+    "schema_version": 3,
+    "framework_id": "ri_stilgoe_2013",
+    "source": "demo/reference-coding"
+  }
+}

@@ -1,0 +1,101 @@
+{
+ "respondent": "Postdoctoral researcher, science and technology studies",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "researcher",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview header identifies the respondent as a 'Postdoctoral researcher, science and technology studies'."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Reflexive awareness of personal positionality and research bias",
+   "quote": "I should say that up front because where a question comes from shapes what you look at, and I was already annoyed before I started.",
+   "full_text": "I was going to study something else entirely and then I moved to Port Calder and started noticing that the junction outside my flat behaved differently on different days. That's an embarrassing origin story for a research programme but it's the true one. I should say that up front because where a question comes from shapes what you look at, and I was already annoyed before I started.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Acknowledges how personal background and emotional origin shape research framing and analytical focus."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Unquestioned algorithmic metrics prioritising vehicles over vulnerable pedestrians",
+   "quote": "The system optimises flow. Flow is measured in vehicles. So when the model has a choice between holding twelve cars and holding one person with a walking frame, the arithmetic is not close.",
+   "full_text": "The thing I keep coming back to is who gets asked to adapt. The system optimises flow. Flow is measured in vehicles. So when the model has a choice between holding twelve cars and holding one person with a walking frame, the arithmetic is not close. Nobody chose that. It falls out of what got counted.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Scrutinises the implicit ethical assumptions and metric choices embedded within the algorithmic system."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Participant-driven co-creation and researcher epistemic humility",
+   "quote": "We set up a group with a disability advocacy organisation and a residents' association — eleven people, meeting monthly, and they set the agenda, not me.",
+   "full_text": "Yes, that's most of what I do now. We set up a group with a disability advocacy organisation and a residents' association — eleven people, meeting monthly, and they set the agenda, not me. The first three meetings I talked too much and one of them told me so, which was the most useful supervision I've had.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Facilitates inclusive, two-way dialogue where community actors control the agenda."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Demonstrates epistemic humility by reflecting on personal dominance and accepting participant feedback."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Performative engagement without algorithmic impact",
+   "quote": "The group has produced two documents. Both were received warmly. Neither changed a parameter.",
+   "full_text": "No. And I want to be careful here because there's a genre of research where the conclusion is 'more participation is needed' and everyone nods and nothing happens. The group has produced two documents. Both were received warmly. Neither changed a parameter. At some point warm reception without change is its own kind of dismissal and I don't yet know what to do about it.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Identifies participation washing where external engagement is warmly received but remains purely symbolic."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Highlights systemic obduracy as participatory outputs fail to alter system parameters or design trajectory."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Lack of institutionalised mechanisms to compel adaptive changes",
+   "quote": "There's no point in the process where what the group says has to be answered in writing before something proceeds.",
+   "full_text": "They answer emails. I'm not being sarcastic — compared with the vendors, the department is reachable and the people in it are thoughtful and underfunded. The problem isn't that they don't care. It's that caring isn't a mechanism. There's no point in the process where what the group says has to be answered in writing before something proceeds. Without that, everything depends on whether the person in post that year happens to be receptive.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Critiques institutional failure to establish binding mechanisms that force systems to adapt to feedback."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent, an academic STS postdoctoral researcher, strongly exhibits Reflexivity (+) and identifies clear efforts toward Public Engagement (+), while highlighting severe institutional deficits in Responsiveness (−) and performative Engagement (−). Anticipation is absent from this excerpt, as the focus centers on inspecting an already deployed smart traffic infrastructure.\n\nReflexivity (+) is a defining feature of the respondent's perspective: they display notable epistemic humility regarding their own biases and research habits, while critically unpacking how unexamined assumptions embedded in technical metrics (defining traffic 'flow' purely by vehicle count) create inequitable real-world trade-offs.\n\nThe multi-coded segments expose a fundamental tension between inclusive engagement and structural obduracy. Although the researcher successfully established open, co-created participatory spaces with local advocates (Engagement +), this input encountered system-level immobility (Responsiveness −) and symbolic acceptance without operational impact (Engagement −). The commentary emphasizes that individual administrative goodwill cannot compensate for the lack of formal, institutionalized mechanisms requiring written, binding responses to stakeholder feedback.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A02 — Postdoctoral researcher, science and technology studies\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How did you come to study this deployment?\n[Respondent] I was going to study something else entirely and then I moved to Port Calder and started noticing that the junction outside my flat behaved differently on different days. That's an embarrassing origin story for a research programme but it's the true one. I should say that up front because where a question comes from shapes what you look at, and I was already annoyed before I started.\n[Interviewer] What have you found?\n[Respondent] The thing I keep coming back to is who gets asked to adapt. The system optimises flow. Flow is measured in vehicles. So when the model has a choice between holding twelve cars and holding one person with a walking frame, the arithmetic is not close. Nobody chose that. It falls out of what got counted.\n[Interviewer] Have you worked with residents directly?\n[Respondent] Yes, that's most of what I do now. We set up a group with a disability advocacy organisation and a residents' association — eleven people, meeting monthly, and they set the agenda, not me. The first three meetings I talked too much and one of them told me so, which was the most useful supervision I've had.\n[Interviewer] Has any of it changed the system?\n[Respondent] No. And I want to be careful here because there's a genre of research where the conclusion is 'more participation is needed' and everyone nods and nothing happens. The group has produced two documents. Both were received warmly. Neither changed a parameter. At some point warm reception without change is its own kind of dismissal and I don't yet know what to do about it.\n[Interviewer] Is there anything the city does well here?\n[Respondent] They answer emails. I'm not being sarcastic — compared with the vendors, the department is reachable and the people in it are thoughtful and underfunded. The problem isn't that they don't care. It's that caring isn't a mechanism. There's no point in the process where what the group says has to be answered in writing before something proceeds. Without that, everything depends on whether the person in post that year happens to be receptive.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.6-flash",
+  "seconds": 23.0,
+  "seconds_source": "estimated: gap between saved files",
+  "absence": null,
+  "note": "written by bench_models.py before resume support; completeness verified (no chunk_errors) and marker added afterwards"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "respondent": "N03",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "unspecified",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": ""
+ },
+ "summary": "",
+ "open_segments": [
+  {
+   "segment_id": "S001",
+   "title": "Function creep concerns",
+   "quote": "Function creep, mainly. A camera installed to count pedestrians is a camera.",
+   "full_text": "Function creep, mainly. A camera installed to count pedestrians is a camera. The counting is a software decision and software decisions get revisited. Our position isn't that anyone here intends to do anything else with it — I've met these officers, they don't — it's that intent isn't a control. The people who make the decision in 2031 haven't been hired yet.",
+   "open_codes": [
+    {
+     "code_id": "c003",
+     "label": "Unintended consequences",
+     "rationale": "The respondent expresses concerns about the potential for the system to be used for purposes other than its intended use"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Request for purpose limitation clause",
+   "quote": "A purpose limitation clause in the contract with a technical control behind it — not just 'we won't', but a configuration the vendor cannot change without a council resolution.",
+   "full_text": "A purpose limitation clause in the contract with a technical control behind it — not just 'we won't', but a configuration the vendor cannot change without a council resolution. And an annual public statement of every purpose the data has been used for, including refused requests. Both are ordinary in other sectors.",
+   "open_codes": [
+    {
+     "code_id": "c025",
+     "label": "Measuring impact",
+     "rationale": "The respondent requests a way to measure the impact of the system's data usage"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Disappointment with council response",
+   "quote": "We got a two-page letter which restated the existing data protection position and did not address either request.",
+   "full_text": "We got a two-page letter which restated the existing data protection position and did not address either request. I want to be precise: it wasn't a refusal. Nobody said no. The letter simply answered a different question. That's the most common response we get and it's the hardest to escalate, because on paper we were answered.",
+   "open_codes": [
+    {
+     "code_id": "c024",
+     "label": "Shifting responsibility",
+     "rationale": "The respondent expresses frustration with the council's response, which avoids taking responsibility for the impact of the system"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Value of collaboration",
+   "quote": "We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides.",
+   "full_text": "We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides. We learned more in two hours than in a year of correspondence, and the disability group's point about slower pedestrians is now in everything we write, which it wasn't before.",
+   "open_codes": [
+    {
+     "code_id": "c004",
+     "label": "Community engagement",
+     "rationale": "The respondent highlights the value of collaboration and community engagement in the project"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Definition of success",
+   "quote": "A published purpose register that somebody outside the council updates.",
+   "full_text": "A published purpose register that somebody outside the council updates. Not us — we're not neutral and we shouldn't be trusted with it either. That's the part campaigners get wrong: we ask for oversight and then assume we're the oversight.",
+   "open_codes": [
+    {
+     "code_id": "c035",
+     "label": "Transparency in system goals",
+     "rationale": "The respondent emphasizes the importance of transparency in the system's goals and objectives"
+    }
+   ]
+  }
+ ],
+ "_meta": {
+  "mode": "open_coding",
+  "codebook_id": "cb_20260914_193235",
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 1,
+   "n_ok": 1
+  },
+  "codes_per_chunk": [
+   {
+    "reused": 4,
+    "created": 1,
+    "chunk": 0
+   }
+  ]
+ },
+ "transcript": "Interview transcript N03 — Campaigner, digital rights organisation\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | What's your organisation's interest here?\nRespondent | Function creep, mainly. A camera installed to count pedestrians is a camera. The counting is a software decision and software decisions get revisited. Our position isn't that anyone here intends to do anything else with it — I've met these officers, they don't — it's that intent isn't a control. The people who make the decision in 2031 haven't been hired yet.\nInterviewer | What have you asked for?\nRespondent | A purpose limitation clause in the contract with a technical control behind it — not just 'we won't', but a configuration the vendor cannot change without a council resolution. And an annual public statement of every purpose the data has been used for, including refused requests. Both are ordinary in other sectors.\nInterviewer | What response did you get?\nRespondent | We got a two-page letter which restated the existing data protection position and did not address either request. I want to be precise: it wasn't a refusal. Nobody said no. The letter simply answered a different question. That's the most common response we get and it's the hardest to escalate, because on paper we were answered.\nInterviewer | Have you worked with other groups on this?\nRespondent | Yes, and that's been the more productive part. We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides. We learned more in two hours than in a year of correspondence, and the disability group's point about slower pedestrians is now in everything we write, which it wasn't before.\nInterviewer | What would count as success?\nRespondent | A published purpose register that somebody outside the council updates. Not us — we're not neutral and we shouldn't be trusted with it either. That's the part campaigners get wrong: we ask for oversight and then assume we're the oversight."
+}
