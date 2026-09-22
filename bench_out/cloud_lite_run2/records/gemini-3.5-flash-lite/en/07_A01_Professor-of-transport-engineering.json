@@ -1,0 +1,90 @@
+{
+ "respondent": "Professor of transport engineering",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "researcher",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "The interview transcript states 'Interview transcript A01 — Professor of transport engineering'."
+ },
+ "segments": [
+  {
+   "segment_id": "S003",
+   "title": "Complicity and credibility trade-offs in advisory roles",
+   "quote": "I'm in the acknowledgements of the annual report, which means my name lends the thing credibility whether or not I agree with what it says. I raised that. I was told I could ask to be removed. But if I take my name off I lose the meetings, and if I lose the meetings I can't argue for the baseline next time. So I stayed, and I'm aware that's a rationalisation as well as a reason.",
+   "full_text": "Uncomfortably. I'm in the acknowledgements of the annual report, which means my name lends the thing credibility whether or not I agree with what it says. I raised that. I was told I could ask to be removed. But if I take my name off I lose the meetings, and if I lose the meetings I can't argue for the baseline next time. So I stayed, and I'm aware that's a rationalisation as well as a reason.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Deep self-scrutiny regarding personal complicity, institutional compromises, and the limits of expert influence."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Walking interviews with residents",
+   "quote": "We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them. It's slow and it costs almost nothing and it surfaced things no dashboard would.",
+   "full_text": "We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them. It's slow and it costs almost nothing and it surfaced things no dashboard would. Two people described waiting at a junction and not knowing whether the system had seen them. That's not a detection failure, the detection was fine — it's a legibility failure, and it wasn't in anybody's requirements.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Upstream, two-way qualitative engagement with non-experts surfacing unconsidered user experience issues."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Disconnect between academic research and municipal practice",
+   "quote": "Whether a paper reaches a city is a separate question and the honest answer is usually no. I sent the preprint to two people in the transport department. One replied.",
+   "full_text": "It's in a paper. Whether a paper reaches a city is a separate question and the honest answer is usually no. I sent the preprint to two people in the transport department. One replied.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "One-way downstream communication via academic publishing failing to genuinely inform or influence institutional decision-makers."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Structural lack of internal critique in projects",
+   "quote": "Every project I've seen has ten people paid to make it work and nobody paid to find out whether it does.",
+   "full_text": "Spend the six months. Write down what failure looks like. And budget for someone whose job is to be wrong about the thing — not a critic, a person inside the project whose performance review rewards finding problems. Every project I've seen has ten people paid to make it work and nobody paid to find out whether it does.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Institutional arrangements lack mechanisms or incentives for discovering failure or redirecting trajectories."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent, a professor of transport engineering, exhibits a strong critical stance across multiple dimensions of Responsible Innovation. Anticipation is manifested through insistence on baseline data collection before launch, though hampered by the city's rejection of pre-registered failure conditions (a negative anticipatory stance). Reflexivity is notably high, with the professor openly interrogating their own compromises, complicity, and institutional positioning regarding the project's annual reports. Public engagement appears in a dual form: positively via upstream walking interviews that surfaced unexpected user legibility issues, and negatively through the disconnect of traditional academic publishing. Finally, the respondent highlights a systemic lack of institutional responsiveness, noting that innovation projects lack incentives or mechanisms to discover failure or change course.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A01 — Professor of transport engineering\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You advised the city early on. What did you push for?\n[Respondent] Two things, and I got one of them. The one I got was a baseline measurement period — six months of data before anything was switched on, at all thirty junctions and at twelve control junctions elsewhere in the city. Without that you can never say what the system did, only what happened afterwards. Cities almost never do this because it delays the ribbon-cutting by six months, and I was quite obnoxious about it.\n[Interviewer] And the one you didn't get?\n[Respondent] A pre-registered evaluation protocol. I wanted us to write down, before switch-on, what would count as the system working and what would count as it failing. Including the failure conditions. That was seen as — I think the word used was 'unhelpful framing'. So now the evaluation criteria are whatever the annual report says they are, which means the system has never failed and never will.\n[Interviewer] How do you assess your own role in this? You're an adviser but also, in a sense, part of the project.\n[Respondent] Uncomfortably. I'm in the acknowledgements of the annual report, which means my name lends the thing credibility whether or not I agree with what it says. I raised that. I was told I could ask to be removed. But if I take my name off I lose the meetings, and if I lose the meetings I can't argue for the baseline next time. So I stayed, and I'm aware that's a rationalisation as well as a reason.\n[Interviewer] Did you involve residents in your own evaluation work?\n[Respondent] We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them. It's slow and it costs almost nothing and it surfaced things no dashboard would. Two people described waiting at a junction and not knowing whether the system had seen them. That's not a detection failure, the detection was fine — it's a legibility failure, and it wasn't in anybody's requirements.\n[Interviewer] Did that reach the city?\n[Respondent] It's in a paper. Whether a paper reaches a city is a separate question and the honest answer is usually no. I sent the preprint to two people in the transport department. One replied.\n[Interviewer] What would you tell a city about to do this?\n[Respondent] Spend the six months. Write down what failure looks like. And budget for someone whose job is to be wrong about the thing — not a critic, a person inside the project whose performance review rewards finding problems. Every project I've seen has ten people paid to make it work and nobody paid to find out whether it does.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:40:49",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 8.1,
+  "absence": 0
+ }
+}

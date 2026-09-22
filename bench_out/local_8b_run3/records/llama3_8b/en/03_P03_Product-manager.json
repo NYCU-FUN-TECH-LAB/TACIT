@@ -1,0 +1,107 @@
+{
+ "respondent": "Product manager, roadside camera hardware vendor",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "over_20y",
+  "descriptor_basis": "the interview transcript does not state it"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Anticipation of potential issues",
+   "quote": "About four months in we started getting complaints from residents on Fenwick Street.",
+   "full_text": "About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it. It's not in any specification anywhere.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipated potential issues with the status LED shining into residents' bedrooms, which was not considered during the initial installation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reflexivity on assumptions",
+   "quote": "I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them.",
+   "full_text": "Placement was decided on traffic engineering grounds — sight lines, pole availability, power. I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them. 'Do you mind a camera here' — most people would say yes they mind, and then what?",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent reflects on the assumptions made during the installation process, acknowledging that residents were not consulted."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Engagement with residents",
+   "quote": "Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us.",
+   "full_text": "Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us. I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent describes the process of addressing resident complaints, which was indirect and took some time."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Responsiveness to feedback",
+   "quote": "We fixed it. Took about six weeks.",
+   "full_text": "We fixed it. Took about six weeks. We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street. I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent describes the process of responding to resident feedback and fixing the issue."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Anticipation of future issues",
+   "quote": "A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'.",
+   "full_text": "A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipates potential future issues and incorporates a new design review process to consider the impact on residents."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits strong anticipation and responsiveness, with a willingness to learn from mistakes and improve their design process. They also demonstrate some reflexive thinking, acknowledging the limitations of their initial approach. However, their engagement with residents is limited, and the process of addressing complaints is indirect.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P03 — Product manager, roadside camera hardware vendor\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | Tell me about your part of the deployment.\nRespondent | We supply the roadside units — the housing, the sensor, the local compute. Thirty intersections, two units each, some with three where the geometry is awkward. My job is that they work in the weather and don't need a truck roll every month.\nInterviewer | Did anything come up after installation that you hadn't expected?\nRespondent | Yes, and it's the thing I always tell people about now. About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it. It's not in any specification anywhere.\nInterviewer | What happened then?\nRespondent | We fixed it. Took about six weeks. We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street. I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.\nInterviewer | How did those residents reach you?\nRespondent | Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us. I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.\nInterviewer | Was there consultation before installation about where units went?\nRespondent | Placement was decided on traffic engineering grounds — sight lines, pole availability, power. I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them. 'Do you mind a camera here' — most people would say yes they mind, and then what?\nInterviewer | Has the LED episode changed how you think about new products?\nRespondent | A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/llama3:8b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/llama3:8b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "llama3:8b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-23T04:42:23",
+   "quantization_level": "Q4_0",
+   "parameter_size": "8.0B",
+   "family": "llama",
+   "context_length": 8192,
+   "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 23.5,
+  "absence": 0
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "respondent": "Board member, neighbourhood residents' association",
+ "descriptors": {
+  "institution_type": "other",
+  "role_level": "other",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": "self-introduction"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Initial curiosity and attendance",
+   "quote": "about six of us went to the session out of curiosity",
+   "full_text": "We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent mentions the importance of being the only organised body in the area, indicating a willingness to engage with the project and its potential impact."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Perceived imbalance in the session",
+   "quote": "we'd spent ninety minutes being told how it worked and about eleven minutes on questions",
+   "full_text": "What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent feels that the session was dominated by the supplier, with little opportunity for meaningful engagement or feedback."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Follow-up and lack of engagement",
+   "quote": "it's been fourteen months",
+   "full_text": "Has anyone from the council been back since? No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent feels that the relationship with the council has ended, and there has been no attempt to re-engage or follow up on the project."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Lessons learned and future approach",
+   "quote": "I'd do differently is bring three people instead of six and give each of them one question written down beforehand",
+   "full_text": "The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "The respondent reflects on the importance of planning and coordination in order to effectively engage with the project and its stakeholders."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent's account highlights a lack of responsiveness and engagement from the council, with the project seemingly stalled after the initial session. The respondent's own approach to engagement was also criticized, with a lack of planning and coordination leading to ineffective questioning. However, the respondent does express a willingness to re-engage and learn from past mistakes, indicating a potential for future improvement.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N02 — Board member, neighbourhood residents' association\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How did your association get involved?\n[Respondent] We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.\n[Interviewer] What was the session like?\n[Respondent] Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.\n[Interviewer] Did you raise anything?\n[Respondent] I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.\n[Interviewer] Has anyone from the council been back since?\n[Respondent] No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.\n[Interviewer] Would you go to the next one?\n[Respondent] Yes. Lower expectations, but yes. The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/llama3:8b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/llama3:8b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "llama3:8b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-23T04:48:03",
+   "quantization_level": "Q4_0",
+   "parameter_size": "8.0B",
+   "family": "llama",
+   "context_length": 8192,
+   "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 19.1,
+  "absence": 0
+ }
+}

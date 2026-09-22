@@ -1,0 +1,103 @@
+{
+ "respondent": "Board member, neighbourhood residents' association",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript N02 — Board member, neighbourhood residents' association"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Initial discovery via newsletter forwarding",
+   "quote": "We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity.",
+   "full_text": "We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Involves residents only through passive newsletter notification rather than proactive upstream inclusion."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Top-down information session structure",
+   "quote": "What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.",
+   "full_text": "Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "One-way communication structure prioritising expert presentation over meaningful public participation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Unverifiable assurances regarding privacy",
+   "quote": "That's the bit that stayed with me — I was given an answer I couldn't pass on.",
+   "full_text": "I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Assurances are provided verbally without artifacts or transparency mechanisms to substantiate claims to citizens."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Dormant relationship and lack of follow-up",
+   "quote": "There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.",
+   "full_text": "No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Absence of ongoing feedback loops or institutionalised mechanisms for continuous dialogue between authorities and residents."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Preparing tactical questions for future sessions",
+   "quote": "The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+   "full_text": "Yes. Lower expectations, but yes. The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent adapts their own participation strategy based on past experience to engage more effectively."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This interview transcript from a neighbourhood residents' association board member reveals significant challenges regarding public engagement and responsiveness in urban technology deployment. The respondent highlights a deficit-model engagement process characterised by late downstream notification via newsletters, one-way presentations dominated by technical experts, and unverifiable assurances regarding privacy concerns like camera fields of view. Responsiveness is similarly strained, marked by a passive abandonment of dialogue over a fourteen-month period, although the respondent demonstrates adaptive learning by planning more structured participation for future encounters. Anticipation and reflexivity are largely absent from this account, as the discussion remains tightly focused on procedural shortcomings and citizen-authority interactions rather than broader systemic foresight or critical institutional self-examination.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N02 — Board member, neighbourhood residents' association\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How did your association get involved?\n[Respondent] We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.\n[Interviewer] What was the session like?\n[Respondent] Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.\n[Interviewer] Did you raise anything?\n[Respondent] I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.\n[Interviewer] Has anyone from the council been back since?\n[Respondent] No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.\n[Interviewer] Would you go to the next one?\n[Respondent] Yes. Lower expectations, but yes. The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:46:44",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 5.3,
+  "absence": 0
+ }
+}

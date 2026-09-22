@@ -1,0 +1,90 @@
+{
+ "respondent": "Professor of transport engineering",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "researcher",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript A01 — Professor of transport engineering"
+ },
+ "segments": [
+  {
+   "segment_id": "S004",
+   "title": "Complicity of credibility and instrumental compromise",
+   "quote": "I'm in the acknowledgements of the annual report, which means my name lends the thing credibility whether or not I agree with what it says. I raised that. I was told I could ask to be removed. But if I take my name off I lose the meetings, and if I lose the meetings I can't argue for the baseline next time. So I stayed, and I'm aware that's a rationalisation as well as a reason.",
+   "full_text": "Uncomfortably. I'm in the acknowledgements of the annual report, which means my name lends the thing credibility whether or not I agree with what it says. I raised that. I was told I could ask to be removed. But if I take my name off I lose the meetings, and if I lose the meetings I can't argue for the baseline next time. So I stayed, and I'm aware that's a rationalisation as well as a reason.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Explicit self-scrutiny of personal complicity, compromise, and the limits of one's own institutional position."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Walking interviews with residents",
+   "quote": "We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them. It's slow and it costs almost nothing and it surfaced things no dashboard would.",
+   "full_text": "We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them. It's slow and it costs almost nothing and it surfaced things no dashboard would. Two people described waiting at a junction and not knowing whether the system had seen them. That's not a detection failure, the detection was fine — it's a legibility failure, and it wasn't in anybody's requirements.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Qualitative, two-way upstream participation involving non-experts (residents) walking routes to surface hidden issues."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Academic paper transmission gap",
+   "quote": "Whether a paper reaches a city is a separate question and the honest answer is usually no. I sent the preprint to two people in the transport department. One replied.",
+   "full_text": "It's in a paper. Whether a paper reaches a city is a separate question and the honest answer is usually no. I sent the preprint to two people in the transport department. One replied.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Communication reduced to downstream academic publication rather than genuine institutional dialogue or responsiveness."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Institutionalizing internal critique and failure roles",
+   "quote": "And budget for someone whose job is to be wrong about the thing — not a critic, a person inside the project whose performance review rewards finding problems. Every project I've seen has ten people paid to make it work and nobody paid to find out whether it does.",
+   "full_text": "What would you tell a city about to do this? Spend the six months. Write down what failure looks like. And budget for someone whose job is to be wrong about the thing — not a critic, a person inside the project whose performance review rewards finding problems. Every project I've seen has ten people paid to make it work and nobody paid to find out whether it does.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Proposing institutionalised internal mechanisms (rewarded problem-finders) to challenge project trajectory and enable learning."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent strongly exhibits anticipation and reflexivity, complemented by practical public engagement and institutional insights regarding responsiveness. Anticipation is highlighted through the successful implementation of baseline measurement periods, contrasted with the rejection of pre-registered failure conditions by city authorities (manifesting both positive foresight and negative deterministic evaluation lock-in). Reflexivity is prominently displayed when the professor critically examines their own compromised position within the project's governance structure, acknowledging how lending academic credibility involves ethical trade-offs. Public engagement is demonstrated concretely via qualitative walking interviews with residents that surfaced unforeseen legibility failures, although this is tempered by the recognition that academic publishing fails to effectively engage city decision-makers. Finally, responsiveness is addressed constructively by advocating for institutional roles dedicated to finding problems and challenging project trajectories. Overall, the account provides a deeply critical, reflexive perspective on urban technology governance, balancing methodological rigor with institutional realism.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A01 — Professor of transport engineering\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You advised the city early on. What did you push for?\n[Respondent] Two things, and I got one of them. The one I got was a baseline measurement period — six months of data before anything was switched on, at all thirty junctions and at twelve control junctions elsewhere in the city. Without that you can never say what the system did, only what happened afterwards. Cities almost never do this because it delays the ribbon-cutting by six months, and I was quite obnoxious about it.\n[Interviewer] And the one you didn't get?\n[Respondent] A pre-registered evaluation protocol. I wanted us to write down, before switch-on, what would count as the system working and what would count as it failing. Including the failure conditions. That was seen as — I think the word used was 'unhelpful framing'. So now the evaluation criteria are whatever the annual report says they are, which means the system has never failed and never will.\n[Interviewer] How do you assess your own role in this? You're an adviser but also, in a sense, part of the project.\n[Respondent] Uncomfortably. I'm in the acknowledgements of the annual report, which means my name lends the thing credibility whether or not I agree with what it says. I raised that. I was told I could ask to be removed. But if I take my name off I lose the meetings, and if I lose the meetings I can't argue for the baseline next time. So I stayed, and I'm aware that's a rationalisation as well as a reason.\n[Interviewer] Did you involve residents in your own evaluation work?\n[Respondent] We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them. It's slow and it costs almost nothing and it surfaced things no dashboard would. Two people described waiting at a junction and not knowing whether the system had seen them. That's not a detection failure, the detection was fine — it's a legibility failure, and it wasn't in anybody's requirements.\n[Interviewer] Did that reach the city?\n[Respondent] It's in a paper. Whether a paper reaches a city is a separate question and the honest answer is usually no. I sent the preprint to two people in the transport department. One replied.\n[Interviewer] What would you tell a city about to do this?\n[Respondent] Spend the six months. Write down what failure looks like. And budget for someone whose job is to be wrong about the thing — not a critic, a person inside the project whose performance review rewards finding problems. Every project I've seen has ten people paid to make it work and nobody paid to find out whether it does.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:45:25",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 8.6,
+  "absence": 0
+ }
+}

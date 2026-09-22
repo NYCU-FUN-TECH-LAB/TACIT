@@ -1,0 +1,77 @@
+{
+ "respondent": "A05",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript A05 — Chair, university research ethics committee"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Jurisdictional division between research and deployment",
+   "quote": "If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee.",
+   "full_text": "Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Institutional structures create an obdurate separation preventing ethics oversight of actual infrastructure deployment."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Committee capacity constraints",
+   "quote": "Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind.",
+   "full_text": "Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Lack of authority and institutional capacity blocks any adaptive regulatory response to city deployments."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Tokenistic representation of public perspective",
+   "quote": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category.",
+   "full_text": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Relying on a single lay member represents closed and inadequate public participation."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent, a university research ethics committee chair, provides a critical account structured around structural limitations across multiple Responsible Innovation dimensions. Responsiveness is highlighted negatively through rigid jurisdictional boundaries that subject minor interview studies to intense scrutiny while completely missing large-scale deployments like city traffic cameras, compounded by severe resource constraints. Anticipation is shown negatively through researchers' widespread failure to anticipate or plan for conflicts between research findings and funder interests. Public engagement is captured negatively through the tokenistic reliance on a single lay member to represent the public perspective, leading to meetings where public input is entirely absent yet decisions proceed anyway. Overall, the respondent demonstrates critical reflexivity regarding their own committee's limitations, though the coded segments themselves primarily evidence systemic obstacles in responsiveness, anticipation, and engagement.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A05 — Chair, university research ethics committee\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Did any part of this deployment come before your committee?\n[Respondent] Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.\n[Interviewer] Could your committee's remit cover deployments?\n[Respondent] Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.\n[Interviewer] What have you seen change in the studies that do come to you?\n[Respondent] More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.\n[Interviewer] Do affected communities have any voice in your process?\n[Respondent] We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:33:40",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 14.5,
+  "absence": 0
+ }
+}

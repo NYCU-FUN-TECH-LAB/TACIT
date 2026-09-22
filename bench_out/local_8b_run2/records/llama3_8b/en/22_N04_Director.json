@@ -1,0 +1,94 @@
+{
+ "respondent": "Director, older people's community service",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "over_20y",
+  "descriptor_basis": "the interview transcript does not state it"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Unpredictability of pedestrian detection",
+   "quote": "the crossing on Alder Street was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.",
+   "full_text": "We run a day centre and we started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipates the consequences of unpredictable pedestrian detection, such as people leaving earlier or not coming on bad weather days."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Frustration with lack of engagement",
+   "quote": "Anything that engaged with unpredictability. 'We measure accuracy, we don't measure consistency, we'll look at whether we can.' That would have been a good answer and it costs nothing to write.",
+   "full_text": "I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification. What would have been a useful reply? Anything that engaged with unpredictability.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent reflects on the lack of engagement from the transport department, recognizing that a simple acknowledgement would have been sufficient."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Importance of understanding the problem",
+   "quote": "I need to know the problem I described has been understood.",
+   "full_text": "I don't need them to fix it in a fortnight. I need to know the problem I described has been understood.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent emphasizes the importance of understanding the problem, rather than just providing a solution."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Awareness of unequal access to influence",
+   "quote": "I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "full_text": "Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent is aware that knowing a councillor was the key to influencing the change, but recognizes that this is not a fair or equal access to influence."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits strong anticipation, reflexivity, and responsiveness, recognizing the importance of understanding the problem and the need for engagement. However, they also acknowledge the limitations of their organization's influence, highlighting the need for more equal access to influence.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N04 — Director, older people's community service\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does this show up in your work?\n[Respondent] In cancelled appointments, mostly. We run a day centre and we started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.\n[Interviewer] Did you report it?\n[Respondent] I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.\n[Interviewer] What would have been a useful reply?\n[Respondent] Anything that engaged with unpredictability. 'We measure accuracy, we don't measure consistency, we'll look at whether we can.' That would have been a good answer and it costs nothing to write. I don't need them to fix it in a fortnight. I need to know the problem I described has been understood.\n[Interviewer] Have you found any other route?\n[Respondent] Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.\n[Interviewer] Do the people who use your centre know any of this happened?\n[Respondent] Some do. I told the ones who'd told me, because that seemed like the least I could do. What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/llama3:8b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/llama3:8b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "llama3:8b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-23T04:39:14",
+   "quantization_level": "Q4_0",
+   "parameter_size": "8.0B",
+   "family": "llama",
+   "context_length": 8192,
+   "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 19.9,
+  "absence": 0
+ }
+}

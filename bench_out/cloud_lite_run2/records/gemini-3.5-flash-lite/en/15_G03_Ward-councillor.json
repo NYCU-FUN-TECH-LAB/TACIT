@@ -1,0 +1,103 @@
+{
+ "respondent": "Ward councillor",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "policy_maker",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript G03 — Ward councillor, city council"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Constituent surgeries as direct data source",
+   "quote": "In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.",
+   "full_text": "Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Direct two-way interaction with residents raising real-world issues."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Unanticipated pedestrian uncertainty at junctions",
+   "quote": "The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+   "full_text": "Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Unanticipated behavioral consequences of the system deployment."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Challenging bureaucratic deflection in committee",
+   "quote": "Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data.",
+   "full_text": "Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Forcing institutional trajectory modification through committee pressure."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Epistemic limits and lack of technical briefings",
+   "quote": "No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "full_text": "Do you feel you understand the system well enough to scrutinise it? No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Honest admission of personal knowledge limits and inability to scrutinize complex models."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Absence of algorithmic auditing mechanisms",
+   "quote": "Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+   "full_text": "What would help? Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Highlighting structural absence of oversight and accountability mechanisms for automated systems."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent, a ward councillor, provides a grounded perspective on the municipal deployment of an adaptive traffic signal system. Public engagement is strongly highlighted through constituent surgeries, which serve as a critical bottom-up feedback mechanism missing from official reports. Anticipation and responsiveness intersect around unanticipated user uncertainty and the subsequent institutional friction required to force data release and trajectory modification. Reflexivity is evident in the councillor's epistemic humility regarding their own technical understanding and lack of briefing resources. Finally, the account underscores a significant systemic deficit in responsiveness and oversight, drawing a sharp contrast between financial auditing and the total absence of algorithmic auditing for automated decision-making systems.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G03 — Ward councillor, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | How does this reach you as a councillor?\nRespondent | Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.\nInterviewer | What did people describe?\nRespondent | Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.\nInterviewer | What did you do with it?\nRespondent | Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.\nInterviewer | Do you feel you understand the system well enough to scrutinise it?\nRespondent | No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.\nInterviewer | What would help?\nRespondent | Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:41:57",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 8.1,
+  "absence": 0
+ }
+}

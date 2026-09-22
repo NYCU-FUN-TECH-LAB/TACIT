@@ -1,0 +1,108 @@
+{
+ "respondent": "A02",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "researcher",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "The interview transcript identifies the respondent as a 'Postdoctoral researcher, science and technology studies'."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Origin of research and situated perspective",
+   "quote": "I should say that up front because where a question comes from shapes what you look at, and I was already annoyed before I started.",
+   "full_text": "I was going to study something else entirely and then I moved to Port Calder and started noticing that the junction outside my flat behaved differently on different days. That's an embarrassing origin story for a research programme but it's the true one. I should say that up front because where a question comes from shapes what you look at, and I was already annoyed before I started.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Scrutinising own starting assumptions and personal bias in framing the research."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Automated arithmetic favoring vehicle flow",
+   "quote": "So when the model has a choice between holding twelve cars and holding one person with a walking frame, the arithmetic is not close. Nobody chose that. It falls out of what got counted.",
+   "full_text": "The thing I keep coming back to is who gets asked to adapt. The system optimises flow. Flow is measured in vehicles. So when the model has a choice between holding twelve cars and holding one person with a walking frame, the arithmetic is not close. Nobody chose that. It falls out of what got counted.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Reflecting critically on how metrics and automated models embed unexamined values."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Upstream participatory group agenda setting",
+   "quote": "We set up a group with a disability advocacy organisation and a residents' association — eleven people, meeting monthly, and they set the agenda, not me.",
+   "full_text": "Yes, that's most of what I do now. We set up a group with a disability advocacy organisation and a residents' association — eleven people, meeting monthly, and they set the agenda, not me. The first three meetings I talked too much and one of them told me so, which was the most useful supervision I've had.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Two-way, upstream participation where external stakeholders drive the agenda."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Acknowledging personal over-involvement and accepting correction from participants."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Participation without institutional impact",
+   "quote": "The group has produced two documents. Both were received warmly. Neither changed a parameter. At some point warm reception without change is its own kind of dismissal and I don't yet know what to do about it.",
+   "full_text": "No. And I want to be careful here because there's a genre of research where the conclusion is 'more participation is needed' and everyone nods and nothing happens. The group has produced two documents. Both were received warmly. Neither changed a parameter. At some point warm reception without change is its own kind of dismissal and I don't yet know what to do about it.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Outlining participation washing where engagement yields no substantive trajectory change."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Absence of formal feedback mechanisms",
+   "quote": "There's no point in the process where what the group says has to be answered in writing before something proceeds. Without that, everything depends on whether the person in post that year happens to be receptive.",
+   "full_text": "The problem isn't that they don't care. It's that caring isn't a mechanism. There's no point in the process where what the group says has to be answered in writing before something proceeds. Without that, everything depends on whether the person in post that year happens to be receptive.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Highlighting the lack of institutionalised mechanisms to alter innovation trajectories."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This postdoctoral researcher strongly demonstrates Reflexivity and Public Engagement, while critically diagnosing a failure of Responsiveness in the Port Calder traffic system. Reflexivity is evident from the outset as the researcher scrutinizes their own subjective entry into the research and interrogates how technical optimisation models bake in implicit priorities. Public engagement is instantiated through a genuine, upstream participatory group with disability advocates and residents setting the agenda rather than the researcher. However, this engagement runs into a strict limit regarding Responsiveness: despite participatory documents being received warmly by authorities, no parameters change, illustrating a form of participation washing where engagement has no institutional mechanism to alter the technological trajectory. Anticipation is absent from the transcript, as the focus remains squarely on existing system biases and current institutional roadblocks.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A02 — Postdoctoral researcher, science and technology studies\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How did you come to study this deployment?\n[Respondent] I was going to study something else entirely and then I moved to Port Calder and started noticing that the junction outside my flat behaved differently on different days. That's an embarrassing origin story for a research programme but it's the true one. I should say that up front because where a question comes from shapes what you look at, and I was already annoyed before I started.\n[Interviewer] What have you found?\n[Respondent] The thing I keep coming back to is who gets asked to adapt. The system optimises flow. Flow is measured in vehicles. So when the model has a choice between holding twelve cars and holding one person with a walking frame, the arithmetic is not close. Nobody chose that. It falls out of what got counted.\n[Interviewer] Have you worked with residents directly?\n[Respondent] Yes, that's most of what I do now. We set up a group with a disability advocacy organisation and a residents' association — eleven people, meeting monthly, and they set the agenda, not me. The first three meetings I talked too much and one of them told me so, which was the most useful supervision I've had.\n[Interviewer] Has any of it changed the system?\n[Respondent] No. And I want to be careful here because there's a genre of research where the conclusion is 'more participation is needed' and everyone nods and nothing happens. The group has produced two documents. Both were received warmly. Neither changed a parameter. At some point warm reception without change is its own kind of dismissal and I don't yet know what to do about it.\n[Interviewer] Is there anything the city does well here?\n[Respondent] They answer emails. I'm not being sarcastic — compared with the vendors, the department is reachable and the people in it are thoughtful and underfunded. The problem isn't that they don't care. It's that caring isn't a mechanism. There's no point in the process where what the group says has to be answered in writing before something proceeds. Without that, everything depends on whether the person in post that year happens to be receptive.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:33:11",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 6.5,
+  "absence": 0
+ }
+}

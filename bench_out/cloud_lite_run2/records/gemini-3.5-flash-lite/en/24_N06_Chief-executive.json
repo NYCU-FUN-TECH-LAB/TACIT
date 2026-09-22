@@ -1,0 +1,103 @@
+{
+ "respondent": "Chief executive, local community foundation",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript N06 — Chief executive, local community foundation"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Being listed as a partner without prior consultation",
+   "quote": "Being named. I mean that literally — I found out we were a community partner when I read it in the bid summary after the award. Somebody had listed us. Nobody had asked us.",
+   "full_text": "[Interviewer] Your foundation was named as a community partner. What did that involve? [Respondent] Being named. I mean that literally — I found out we were a community partner when I read it in the bid summary after the award. Somebody had listed us. Nobody had asked us. We'd had one phone call eighteen months earlier about something adjacent.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Inclusion of community partner occurred without upstream consultation or consent."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Inability to unwind winning bid using unverified partnership",
+   "quote": "But the version with our name in it is the one that won the contract, and there's no mechanism to unwind that. The bid was evaluated partly on community partnership that didn't exist.",
+   "full_text": "[Interviewer] Did you object? [Respondent] I wrote and asked to be removed, and we were, from the next version. But the version with our name in it is the one that won the contract, and there's no mechanism to unwind that. The bid was evaluated partly on community partnership that didn't exist.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Lack of institutional mechanisms to correct or stop a trajectory based on false premises."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Phantom community reference group that quietly dissolved",
+   "quote": "We were invited to a launch event, which I didn't attend, and to a 'community reference group' which met twice and then stopped. I don't know that it was cancelled. It simply stopped being scheduled.",
+   "full_text": "[Interviewer] Has anything happened since? [Respondent] We were invited to a launch event, which I didn't attend, and to a 'community reference group' which met twice and then stopped. I don't know that it was cancelled. It simply stopped being scheduled. Nobody wrote to say it had ended.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Participation was superficial, failing to materialize into sustained two-way dialogue."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Structural requirements for genuine engagement",
+   "quote": "Possibly, with two changes. Somebody senior in the room, and a written response to whatever it produced within a fixed period.",
+   "full_text": "[Interviewer] Do you think the reference group could have worked? [Respondent] Possibly, with two changes. Somebody senior in the room, and a written response to whatever it produced within a fixed period. Without those two things a reference group is a mailing list with sandwiches. I've sat on eleven of them in this job and three worked, and all three had those two features.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Identifies concrete structural features necessary for meaningful two-way participation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Reflecting on institutional complicity and participation washing",
+   "quote": "My concern is that our attendance is what makes the process look legitimate. If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve.",
+   "full_text": "[Interviewer] Would you take part in the next one? [Respondent] Probably not, and I've thought about whether that's the right call. My concern is that our attendance is what makes the process look legitimate. If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve. Declining is also a bad option. There isn't a good one.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Critical self-scrutiny regarding the organization's own role in legitimizing hollow engagement processes."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent strongly exhibits Reflexivity (positive polarity) through deep self-scrutiny regarding how their organization's presence risks being co-opted to provide a veneer of legitimacy to non-inclusive processes. Public Engagement and Responsiveness are both predominantly negative, characterized by downstream notification, phantom consultation groups ('mailing list with sandwiches'), and an inability to unwind winning bids that relied on fabricated community partnerships. Anticipation is absent from this administrative and governance-focused critique. Multi-coding is absent as each segment neatly maps to distinct operational or reflective concerns.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N06 — Chief executive, local community foundation\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Your foundation was named as a community partner. What did that involve?\n[Respondent] Being named. I mean that literally — I found out we were a community partner when I read it in the bid summary after the award. Somebody had listed us. Nobody had asked us. We'd had one phone call eighteen months earlier about something adjacent.\n[Interviewer] Did you object?\n[Respondent] I wrote and asked to be removed, and we were, from the next version. But the version with our name in it is the one that won the contract, and there's no mechanism to unwind that. The bid was evaluated partly on community partnership that didn't exist.\n[Interviewer] Has anything happened since?\n[Respondent] We were invited to a launch event, which I didn't attend, and to a 'community reference group' which met twice and then stopped. I don't know that it was cancelled. It simply stopped being scheduled. Nobody wrote to say it had ended.\n[Interviewer] Do you think the reference group could have worked?\n[Respondent] Possibly, with two changes. Somebody senior in the room, and a written response to whatever it produced within a fixed period. Without those two things a reference group is a mailing list with sandwiches. I've sat on eleven of them in this job and three worked, and all three had those two features.\n[Interviewer] Would you take part in the next one?\n[Respondent] Probably not, and I've thought about whether that's the right call. My concern is that our attendance is what makes the process look legitimate. If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve. Declining is also a bad option. There isn't a good one.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:43:12",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 5.2,
+  "absence": 0
+ }
+}

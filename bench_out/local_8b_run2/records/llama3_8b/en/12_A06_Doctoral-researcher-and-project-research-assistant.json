@@ -1,0 +1,81 @@
+{
+ "respondent": "Doctoral researcher and project research assistant",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "researcher",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript does not state"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Fieldwork and community engagement",
+   "quote": "Sixty-one street intercepts and nine longer interviews, over four months, at eight junctions chosen to vary by ward income and footfall.",
+   "full_text": "Sixty-one street intercepts and nine longer interviews, over four months, at eight junctions chosen to vary by ward income and footfall. I did evenings and weekends as well because the daytime sample was retired people and parents, which is a real population but not the whole one.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent anticipates the need to engage with the community and acknowledges the limitations of the consultation process."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Surprise and reframing the consultation question",
+   "quote": "How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all.",
+   "full_text": "How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all. Which reframes the whole consultation question, doesn't it — you can't consult people about a thing they don't know exists, and the consultation was advertised in the places you'd look if you already knew.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent's surprise and reframing of the consultation question demonstrate a willingness to adapt and respond to new information."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Sharing findings with the community",
+   "quote": "I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+   "full_text": "I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "The respondent's willingness to share their findings directly with the community group demonstrates a commitment to engagement and transparency."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent exhibits strong anticipation and responsiveness, as well as a commitment to engagement and transparency. Their surprise at the lack of awareness about the system and their willingness to adapt and share their findings with the community group demonstrate a willingness to learn and engage with stakeholders.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A06 — Doctoral researcher and project research assistant\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What's your role on the project?\n[Respondent] Officially I do the fieldwork. Unofficially I'm the person who sits in the community meetings and then writes the paragraph that gets cut from the report. I've counted. Four times now.\n[Interviewer] On what grounds is it cut?\n[Respondent] Length, usually. Sometimes 'this belongs in the appendix'. Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.\n[Interviewer] Tell me about the fieldwork itself.\n[Respondent] Sixty-one street intercepts and nine longer interviews, over four months, at eight junctions chosen to vary by ward income and footfall. I did evenings and weekends as well because the daytime sample was retired people and parents, which is a real population but not the whole one.\n[Interviewer] Did anything surprise you?\n[Respondent] How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all. Which reframes the whole consultation question, doesn't it — you can't consult people about a thing they don't know exists, and the consultation was advertised in the places you'd look if you already knew.\n[Interviewer] What will you do with the material that gets cut?\n[Respondent] Put it in the thesis, where four people will read it. I know how that sounds. I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/llama3:8b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/llama3:8b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "llama3:8b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-23T04:35:50",
+   "quantization_level": "Q4_0",
+   "parameter_size": "8.0B",
+   "family": "llama",
+   "context_length": 8192,
+   "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 16.8,
+  "absence": 0
+ }
+}

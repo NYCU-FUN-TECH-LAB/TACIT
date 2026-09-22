@@ -1,0 +1,81 @@
+{
+ "respondent": "Associate professor of urban planning",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "over_20y",
+  "descriptor_basis": "the interview transcript does not state"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Induced demand and long-term thinking",
+   "quote": "It makes driving slightly better, which over ten years makes driving slightly more attractive, which puts more cars on the road, which uses up the capacity the system created.",
+   "full_text": "It makes driving slightly better, which over ten years makes driving slightly more attractive, which puts more cars on the road, which uses up the capacity the system created. Traffic engineers have known this since the sixties and it has a name, induced demand, and it gets left out of every business case I have ever read including this one.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent highlights the long-term consequences of the system, which is a capacity to change the innovation trajectory in response to external signals."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Workshop and scenario planning",
+   "quote": "We did, with about thirty people — planners, two councillors, a bus operator, four residents, a freight association. Three scenarios out to 2040.",
+   "full_text": "We did, with about thirty people — planners, two councillors, a bus operator, four residents, a freight association. Three scenarios out to 2040. The useful part wasn't the scenarios, it was that the freight association and the disability group ended up agreeing about kerb space, which neither of them expected and neither would have discovered in a consultation questionnaire.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "The respondent describes a workshop where various stakeholders participated in scenario planning, which is an example of upstream participation and co-creation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Measuring impact and transparency",
+   "quote": "I've stopped measuring impact on a three-year cycle because nothing in planning works on a three-year cycle.",
+   "full_text": "I've stopped measuring impact on a three-year cycle because nothing in planning works on a three-year cycle. If the city asked you what to change tomorrow, what would you say? Publish the objective function. One page, plain language: here is what the system is trying to maximise, here is what it treats as a cost, here is who decided.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent highlights the need for transparency and long-term thinking in planning, which is a capacity to change the innovation trajectory in response to external signals."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits strong responsiveness, engaging in long-term thinking and scenario planning. They also highlight the importance of transparency and measuring impact in planning. The absence of anticipation and reflexive thinking is notable.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A04 — Associate professor of urban planning\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What's your reading of what this system does to the city?\n[Respondent] It makes driving slightly better, which over ten years makes driving slightly more attractive, which puts more cars on the road, which uses up the capacity the system created. Traffic engineers have known this since the sixties and it has a name, induced demand, and it gets left out of every business case I have ever read including this one.\n[Interviewer] Was that raised during planning?\n[Respondent] I raised it at a workshop. The response was that the system is signal timing, not transport policy, and induced demand is a policy question. Which is true and also a way of ensuring nobody owns it. Every actor here has a defensible reason why the long-term question belongs to someone else, and the sum of those defensible reasons is that it belongs to nobody.\n[Interviewer] You ran a scenario workshop yourself, I think?\n[Respondent] We did, with about thirty people — planners, two councillors, a bus operator, four residents, a freight association. Three scenarios out to 2040. The useful part wasn't the scenarios, it was that the freight association and the disability group ended up agreeing about kerb space, which neither of them expected and neither would have discovered in a consultation questionnaire.\n[Interviewer] Did the workshop output go anywhere?\n[Respondent] Into the local plan consultation, where it sits alongside four hundred other submissions. I'd call that neither success nor failure. It's in the record. Sometimes things in the record get picked up years later by someone you've never met. I've stopped measuring impact on a three-year cycle because nothing in planning works on a three-year cycle.\n[Interviewer] If the city asked you what to change tomorrow, what would you say?\n[Respondent] Publish the objective function. One page, plain language: here is what the system is trying to maximise, here is what it treats as a cost, here is who decided. Nobody can argue with a system whose goals are undisclosed, and at the moment nobody outside the vendor knows what it is optimising.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/llama3:8b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/llama3:8b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "llama3:8b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-23T04:44:41",
+   "quantization_level": "Q4_0",
+   "parameter_size": "8.0B",
+   "family": "llama",
+   "context_length": 8192,
+   "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 17.0,
+  "absence": 0
+ }
+}

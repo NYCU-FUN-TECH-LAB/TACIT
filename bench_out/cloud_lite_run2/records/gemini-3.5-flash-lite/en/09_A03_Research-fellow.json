@@ -1,0 +1,108 @@
+{
+ "respondent": "A03",
+ "descriptors": {
+  "institution_type": "research_institute",
+  "role_level": "researcher",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript A03 — Research fellow, urban data science centre"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Administrative friction in accessing raw detection logs",
+   "quote": "I asked for the raw detection logs and I was given aggregates. That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked.",
+   "full_text": "I asked for the raw detection logs and I was given aggregates. That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked. Once I had the logs the audit itself took three weeks.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Data access required external political intervention rather than open institutional collaboration."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Epistemic caution regarding demographic associations",
+   "quote": "I want to be careful: that's an association in one city over eleven months, it is not a law of nature.",
+   "full_text": "Two things. The headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards. So the people most likely to be waiting longer for a crossing signal are also the people least likely to own a car. I want to be careful: that's an association in one city over eleven months, it is not a law of nature.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The researcher explicitly questions their own findings and limits generalization of the statistical association."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Partial institutional response fixing symptoms rather than models",
+   "quote": "The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That's a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported.",
+   "full_text": "Better than I expected, actually. The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That's a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported. So the symptom got fixed in the cheapest available place.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The intervention addressed physical infrastructure but refused to modify the underlying detection model or reporting trajectory."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Critique of mean-based performance metrics",
+   "quote": "Report the worst decile, not the mean. Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about.",
+   "full_text": "Yes, and it's not complicated. Report the worst decile, not the mean. Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about. It costs nothing to add a column.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Critical scrutiny of standard technical metrics and the hidden assumptions behind aggregate reporting."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Exclusion of residents from the audit process",
+   "quote": "No. It was a data exercise. In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+   "full_text": "Were residents involved in the audit at any point? No. It was a data exercise. In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The audit was conducted strictly as an internal data exercise without resident involvement."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The researcher reflects on their own methodological blind spot regarding the omission of local experiential knowledge."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "Respondent A03, a research fellow in an urban data science centre, exhibits strong reflexivity through epistemic humility regarding statistical associations and critical examination of standard mean-based reporting metrics. The narrative highlights negative public engagement (isolation from residents during the audit and administrative barriers to data access) and constrained responsiveness, where external feedback resulted in physical infrastructure adjustments (street lighting) rather than modifications to the core detection model. Multi-coding is observed in the final segment, where the exclusion of residents from the data exercise is simultaneously coded as closed engagement and reflective realization of methodological limitations.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A03 — Research fellow, urban data science centre\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | You audited the system's performance. How did you approach it?\nRespondent | I asked for the raw detection logs and I was given aggregates. That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked. Once I had the logs the audit itself took three weeks.\nInterviewer | What did the audit show?\nRespondent | Two things. The headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards. So the people most likely to be waiting longer for a crossing signal are also the people least likely to own a car. I want to be careful: that's an association in one city over eleven months, it is not a law of nature.\nInterviewer | What happened when you reported it?\nRespondent | Better than I expected, actually. The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That's a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported. So the symptom got fixed in the cheapest available place.\nInterviewer | Should performance reporting be different?\nRespondent | Yes, and it's not complicated. Report the worst decile, not the mean. Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about. It costs nothing to add a column.\nInterviewer | Were residents involved in the audit at any point?\nRespondent | No. It was a data exercise. In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:41:02",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 6.9,
+  "absence": 0
+ }
+}

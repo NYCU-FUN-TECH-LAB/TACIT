@@ -1,0 +1,113 @@
+{
+ "respondent": "Director, older people's community service",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript N04 — Director, older people's community service"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Observing unpredictable crossing impacts on day centre attendance",
+   "quote": "In cancelled appointments, mostly. We run a day centre and we started seeing people arrive flustered, or not arrive.",
+   "full_text": "In cancelled appointments, mostly. We run a day centre and we started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "External impacts discovered only reactively after service users experienced disruption."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Downstream notification of transport department metrics",
+   "quote": "I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.",
+   "full_text": "I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "One-way communication and bureaucratic dismissal of community feedback."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Transport department treated technical metrics as fixed, ignoring the reported problem."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Desire for genuine qualitative engagement over mere metrics",
+   "quote": "Anything that engaged with unpredictability. 'We measure accuracy, we don't measure consistency, we'll look at whether we can.'",
+   "full_text": "What would have been a useful reply? Anything that engaged with unpredictability. 'We measure accuracy, we don't measure consistency, we'll look at whether we can.' That would have been a good answer and it costs nothing to write. I don't need them to fix it in a fortnight. I need to know the problem I described has been understood.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Director articulates an adaptive, dialogic response model focusing on lived experience."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Reliance on informal political channels rather than systemic pathways",
+   "quote": "Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "full_text": "Have you found any other route? Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Change occurred via idiosyncratic political intervention rather than institutionalised feedback."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Critical self-scrutiny regarding the unfair privilege of personal political connections."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Inability to provide transparent explanations to affected service users",
+   "quote": "What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+   "full_text": "Do the people who use your centre know any of this happened? Some do. I told the ones who'd told me, because that seemed like the least I could do. What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Opaque bureaucratic processes prevent meaningful closing-the-loop with participants."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This interview transcript starkly highlights failures in public engagement and responsiveness within a municipal traffic system. The respondent, speaking as a director of an older people's community service, illustrates how the deployment of adaptive traffic signals generated unforeseen accessibility barriers for vulnerable residents. The transport authority demonstrated closed, deficit-model communication and obduracy, relying on rigid internal technical specifications ('detection accuracy') while ignoring qualitative feedback about consistency and unpredictability. A multi-coded segment reveals how bureaucratic dismissal intersects with a lack of responsiveness. Although the crossing timing eventually changed, the director exhibits epistemic humility and reflexivity by critiquing the inequitable reliance on political connections (knowing a councillor) rather than systematic engagement channels. Anticipation is notably absent from the account, as neither the municipal operators nor the service providers engaged in prospective foresight regarding how older pedestrians would experience signal automation.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N04 — Director, older people's community service\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does this show up in your work?\n[Respondent] In cancelled appointments, mostly. We run a day centre and we started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.\n[Interviewer] Did you report it?\n[Respondent] I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.\n[Interviewer] What would have been a useful reply?\n[Respondent] Anything that engaged with unpredictability. 'We measure accuracy, we don't measure consistency, we'll look at whether we can.' That would have been a good answer and it costs nothing to write. I don't need them to fix it in a fortnight. I need to know the problem I described has been understood.\n[Interviewer] Have you found any other route?\n[Respondent] Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.\n[Interviewer] Do the people who use your centre know any of this happened?\n[Respondent] Some do. I told the ones who'd told me, because that seemed like the least I could do. What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:36:28",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 7.5,
+  "absence": 0
+ }
+}

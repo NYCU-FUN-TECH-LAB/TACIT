@@ -1,0 +1,73 @@
+{
+  "generated": "2026-09-23T04:50:05",
+  "framework": "ri_stilgoe_2013",
+  "results": [
+    {
+      "model": "llama3:8b",
+      "endpoint": "ollama/llama3:8b@http://localhost:11434",
+      "provenance": {
+        "endpoint": "ollama/llama3:8b@http://localhost:11434",
+        "provider": "ollama",
+        "model": "llama3:8b",
+        "base_url": "http://localhost:11434",
+        "data_locality": "local",
+        "num_ctx": 32768,
+        "max_tokens": 8192,
+        "recorded_at": "2026-09-23T04:40:03",
+        "quantization_level": "Q4_0",
+        "parameter_size": "8.0B",
+        "family": "llama",
+        "context_length": 8192,
+        "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+        "temperature": 0.2,
+        "window_chars": 3000,
+        "overlap_chars": 300
+      },
+      "framework": "ri_stilgoe_2013",
+      "at": "2026-09-23T04:40:08",
+      "contract": {
+        "compliance": 1.0,
+        "verdict": "ok",
+        "answered": 6,
+        "asked": 6,
+        "valid_json": true,
+        "non_conforming": [],
+        "error": "",
+        "seconds": 4.3
+      },
+      "coding": {
+        "en": {
+          "transcripts": 24,
+          "completed": 24,
+          "resumed": 0,
+          "stopped_on_quota": null,
+          "chunk_errors": 0,
+          "failed": 0,
+          "segments": 96,
+          "codes": 97,
+          "chars": 53075,
+          "per_10k": 18.09,
+          "verbatim_rate": 0.969,
+          "absence_codes": 4,
+          "degenerate_titles": 5,
+          "window_chars": 3000,
+          "overlap_chars": 300,
+          "minutes": 8.3
+        }
+      },
+      "themes": {
+        "first_order": 96,
+        "themes": 8,
+        "unassigned": 4,
+        "dimensions_covered": 3,
+        "dimensions_total": 4,
+        "empty_dimensions": [
+          "reflexivity"
+        ],
+        "unrecognised_dimensions": [],
+        "note_written": true,
+        "minutes": 0.9
+      }
+    }
+  ]
+}

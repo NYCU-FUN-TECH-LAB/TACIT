@@ -1,0 +1,55 @@
+{
+ "respondent": "Business development lead, consortium partner",
+ "descriptors": {
+  "institution_type": "other",
+  "role_level": "other",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "the interview transcript does not state it"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Anticipation - N: Lock-in and lack of foresight",
+   "quote": "We wrote what scored well.",
+   "full_text": "That language is in the bid because the evaluation matrix had a section for it worth eight percent. We wrote what scored well.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "The respondent's approach was deterministic, focusing on scoring well rather than exploring alternative futures."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent's approach to responsible innovation was characterized by a lack of foresight, self-examination, and adaptability. The project's engagement plan was superficial, and the evaluation matrix prioritized scoring well over exploring alternative futures. The respondent's suggestions for improving the matrix highlight the need for evidence-based approaches rather than intentions.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P06 — Business development lead, consortium partner\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] The bid documents mention responsible innovation. How did that shape the work?\n[Respondent] I'll be straight with you because I don't think there's much point otherwise. That language is in the bid because the evaluation matrix had a section for it worth eight percent. We wrote what scored well. I'm not saying nobody believes it, I'm saying the reason it's in the document is the eight percent.\n[Interviewer] Was there anything behind the language?\n[Respondent] There was a stakeholder engagement plan. It was two pages. It committed us to a launch event and a feedback email address. Both happened. The email address got nine messages in eighteen months, seven of them about a pothole.\n[Interviewer] Did anyone review whether the plan was working?\n[Respondent] No. There was no review point in the contract. Contracts have review points for things somebody intends to check.\n[Interviewer] Do you think the project should have been done differently?\n[Respondent] Differently, probably. Would a different consortium have done it better? I doubt it. Everybody bidding on municipal AI work is structured the same way, with the same incentives, answering the same matrix. If you want a different outcome you have to change the matrix, not lecture the bidders.\n[Interviewer] What would a better matrix ask for?\n[Respondent] Evidence, not intentions. Don't ask me what my engagement plan is, ask me for the minutes of the last three times a plan like this changed a design decision. I couldn't produce them. Neither could my competitors. That would be a real filter.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/llama3:8b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/llama3:8b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "llama3:8b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-23T04:43:15",
+   "quantization_level": "Q4_0",
+   "parameter_size": "8.0B",
+   "family": "llama",
+   "context_length": 8192,
+   "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 15.4,
+  "absence": 3
+ }
+}

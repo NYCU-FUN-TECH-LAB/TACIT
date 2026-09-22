@@ -1,0 +1,103 @@
+{
+ "respondent": "Volunteer coordinator",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "middle_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript N05 — Volunteer coordinator, walking and cycling advocacy group"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Methodological transparency through low-tech measurement",
+   "quote": "Deliberately low-tech, because we wanted anybody to be able to check what we'd done.",
+   "full_text": "We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done. We measured wait time from arrival at the kerb to green, which is the number that matters to a person and is not the number anybody publishes.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Designing an accessible methodology enabling external verification."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Unanticipated empirical findings challenging expectations",
+   "quote": "Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six.",
+   "full_text": "Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Scrutinizing aggregate metrics and uncovering distributional inequalities in outcomes."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Limited operational change despite data sharing",
+   "quote": "Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before.",
+   "full_text": "Better than the campaigning stuff we've sent before, honestly, and I think it's because we led with the good news. An officer emailed and asked for our raw sheets, which we sent. Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "External feedback led to reporting changes but no physical alteration at junctions."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Methodological lock-in for comparability",
+   "quote": "the point is the comparison, so we can't improve the method even where we now know it's weak. That's frustrating and it's the right call.",
+   "full_text": "Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak. That's frustrating and it's the right call.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Deliberately maintaining a known weak methodology to preserve longitudinal comparability."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Open acknowledgment of dataset limitations",
+   "quote": "Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+   "full_text": "Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school. Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Explicitly scrutinizing epistemic limits and biases in volunteer-led data collection."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This interview transcript demonstrates strong engagement with reflexivity and responsiveness (both positive and negative dimensions). The respondent exhibits epistemic humility and self-scrutiny by openly acknowledging the limitations of their dataset (measuring Saturdays instead of weekdays) and questioning standard metrics like the median wait time. Public engagement is evidenced through a low-tech, verifiable community measurement process. However, responsiveness is constrained: while reporting practices changed slightly within municipal summaries, the physical infrastructure remained unchanged, and methodological rigidity prevents fixing known data collection flaws in order to maintain longitudinal comparability.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N05 — Volunteer coordinator, walking and cycling advocacy group\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You did your own measurement, I understand.\n[Respondent] We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done. We measured wait time from arrival at the kerb to green, which is the number that matters to a person and is not the number anybody publishes.\n[Interviewer] What did you find?\n[Respondent] Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.\n[Interviewer] How was that received?\n[Respondent] Better than the campaigning stuff we've sent before, honestly, and I think it's because we led with the good news. An officer emailed and asked for our raw sheets, which we sent. Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before.\n[Interviewer] Will you repeat the survey?\n[Respondent] Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak. That's frustrating and it's the right call.\n[Interviewer] What's the weakness you'd fix if you could?\n[Respondent] Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school. Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:36:33",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 5.2,
+  "absence": 0
+ }
+}

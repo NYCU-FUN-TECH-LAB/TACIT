@@ -1,0 +1,120 @@
+{
+ "respondent": "Professor of transport engineering",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "over_20y",
+  "descriptor_basis": "self-introduction"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Advocating for baseline measurement",
+   "quote": "The one I got was a baseline measurement period — six months of data before anything was switched on, at all thirty junctions and at twelve control junctions elsewhere in the city.",
+   "full_text": "The one I got was a baseline measurement period — six months of data before anything was switched on, at all thirty junctions and at twelve control junctions elsewhere in the city. Without that you can never say what the system did, only what happened afterwards. Cities almost never do this because it delays the ribbon-cutting by six months, and I was quite obnoxious about it.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Advocating for a baseline measurement period to ensure the system's effectiveness can be evaluated"
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Frustration with evaluation protocol",
+   "quote": "I wanted us to write down, before switch-on, what would count as the system working and what would count as it failing. Including the failure conditions.",
+   "full_text": "A pre-registered evaluation protocol. I wanted us to write down, before switch-on, what would count as the system working and what would count as it failing. Including the failure conditions. That was seen as — I think the word used was 'unhelpful framing'. So now the evaluation criteria are whatever the annual report says they are, which means the system has never failed and never will.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Expressing frustration with the lack of a pre-registered evaluation protocol and its consequences"
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Assessing own role in the project",
+   "quote": "I'm in the acknowledgements of the annual report, which means my name lends the thing credibility whether or not I agree with what it says.",
+   "full_text": "Uncomfortably. I'm in the acknowledgements of the annual report, which means my name lends the thing credibility whether or not I agree with what it says. I raised that. I was told I could ask to be removed. But if I take my name off I lose the meetings, and if I lose the meetings I can't argue for the baseline next time. So I stayed, and I'm aware that's a rationalisation as well as a reason.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Self-awareness and acknowledgment of the potential influence of one's name on the project's credibility"
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Involving residents in evaluation work",
+   "quote": "We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them.",
+   "full_text": "We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them. It's slow and it costs almost nothing and it surfaced things no dashboard would. Two people described waiting at a junction and not knowing whether the system had seen them. That's not a detection failure, the detection was fine — it's a legibility failure, and it wasn't in anybody's requirements.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Involving residents in the evaluation work through walking interviews"
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Sharing findings with the city",
+   "quote": "It's in a paper. Whether a paper reaches a city is a separate question and the honest answer is usually no.",
+   "full_text": "It's in a paper. Whether a paper reaches a city is a separate question and the honest answer is usually no. I sent the preprint to two people in the transport department. One replied.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Expressing skepticism about the likelihood of the findings being shared with the city"
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Advice to cities",
+   "quote": "Spend the six months. Write down what failure looks like.",
+   "full_text": "Spend the six months. Write down what failure looks like. And budget for someone whose job is to be wrong about the thing — not a critic, a person inside the project whose performance review rewards finding problems. Every project I've seen has ten people paid to make it work and nobody paid to find out whether it does.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Providing advice to cities on how to improve the evaluation process"
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits strong responsiveness, advocating for baseline measurement and pre-registered evaluation protocols. They also demonstrate reflexive thinking, acknowledging the potential influence of their name on the project's credibility. The respondent's engagement with residents through walking interviews is another example of their commitment to responsible innovation. However, their frustration with the lack of a pre-registered evaluation protocol and the limited reach of their findings suggest that they are not always successful in their efforts.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A01 — Professor of transport engineering\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You advised the city early on. What did you push for?\n[Respondent] Two things, and I got one of them. The one I got was a baseline measurement period — six months of data before anything was switched on, at all thirty junctions and at twelve control junctions elsewhere in the city. Without that you can never say what the system did, only what happened afterwards. Cities almost never do this because it delays the ribbon-cutting by six months, and I was quite obnoxious about it.\n[Interviewer] And the one you didn't get?\n[Respondent] A pre-registered evaluation protocol. I wanted us to write down, before switch-on, what would count as the system working and what would count as it failing. Including the failure conditions. That was seen as — I think the word used was 'unhelpful framing'. So now the evaluation criteria are whatever the annual report says they are, which means the system has never failed and never will.\n[Interviewer] How do you assess your own role in this? You're an adviser but also, in a sense, part of the project.\n[Respondent] Uncomfortably. I'm in the acknowledgements of the annual report, which means my name lends the thing credibility whether or not I agree with what it says. I raised that. I was told I could ask to be removed. But if I take my name off I lose the meetings, and if I lose the meetings I can't argue for the baseline next time. So I stayed, and I'm aware that's a rationalisation as well as a reason.\n[Interviewer] Did you involve residents in your own evaluation work?\n[Respondent] We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them. It's slow and it costs almost nothing and it surfaced things no dashboard would. Two people described waiting at a junction and not knowing whether the system had seen them. That's not a detection failure, the detection was fine — it's a legibility failure, and it wasn't in anybody's requirements.\n[Interviewer] Did that reach the city?\n[Respondent] It's in a paper. Whether a paper reaches a city is a separate question and the honest answer is usually no. I sent the preprint to two people in the transport department. One replied.\n[Interviewer] What would you tell a city about to do this?\n[Respondent] Spend the six months. Write down what failure looks like. And budget for someone whose job is to be wrong about the thing — not a critic, a person inside the project whose performance review rewards finding problems. Every project I've seen has ten people paid to make it work and nobody paid to find out whether it does.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/llama3:8b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/llama3:8b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "llama3:8b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-23T04:34:07",
+   "quantization_level": "Q4_0",
+   "parameter_size": "8.0B",
+   "family": "llama",
+   "context_length": 8192,
+   "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 29.3,
+  "absence": 0
+ }
+}

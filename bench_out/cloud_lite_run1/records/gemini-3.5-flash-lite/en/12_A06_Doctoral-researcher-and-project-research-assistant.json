@@ -1,0 +1,105 @@
+{
+ "respondent": "Doctoral researcher and project research assistant",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "researcher",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript A06 — Doctoral researcher and project research assistant"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Community feedback suppressed from reports",
+   "quote": "Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.",
+   "full_text": "[Interviewer] On what grounds is it cut?\n[Respondent] Length, usually. Sometimes 'this belongs in the appendix'. Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Public concerns are deliberately excluded and suppressed to avoid giving the community ammunition."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The researcher reflects critically on their own complicity and silence during the meeting."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Expanding sampling to include diverse populations",
+   "quote": "I did evenings and weekends as well because the daytime sample was retired people and parents, which is a real population but not the whole one.",
+   "full_text": "[Interviewer] Tell me about the fieldwork itself.\n[Respondent] Sixty-one street intercepts and nine longer interviews, over four months, at eight junctions chosen to vary by ward income and footfall. I did evenings and weekends as well because the daytime sample was retired people and parents, which is a real population but not the whole one.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Deliberate effort to include diverse and non-standard voices in the fieldwork design."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Reframing consultation based on public awareness",
+   "quote": "Roughly two in three had no idea the junctions had changed at all. Which reframes the whole consultation question, doesn't it — you can't consult people about a thing they don't know exists, and the consultation was advertised in the places you'd look if you already knew.",
+   "full_text": "[Interviewer] Did anything surprise you?\n[Respondent] How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all. Which reframes the whole consultation question, doesn't it — you can't consult people about a thing they don't know exists, and the consultation was advertised in the places you'd look if you already knew.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Critique of previous consultation as exclusive and ineffective due to lack of public awareness."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Critical questioning of the assumptions underlying the project's formal consultation process."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Returning findings directly to the community",
+   "quote": "I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+   "full_text": "[Interviewer] What will you do with the material that gets cut?\n[Respondent] Put it in the thesis, where four people will read it. I know how that sounds. I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Establishing direct, two-way accountability by returning research findings to the participating community."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Active deliberation on the researcher's role, ethics, and appropriateness of direct sharing."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent strongly exhibits Reflexivity and Public Engagement, operating from the perspective of a field researcher caught between institutional suppression of public dissent and personal ethical commitments. Positive engagement is visible in efforts to capture diverse demographics during fieldwork and to return findings directly to the community through plain-language summaries. Negative engagement is evident in the project's superficial consultation methods and the explicit suppression of critical community feedback ('we don't want to give them ammunition'). Reflexivity is strongly demonstrated through the respondent's critical evaluation of their own complicity in meetings, questioning of consultation assumptions, and ethical introspection regarding how research data is shared. Anticipation and Responsiveness are largely absent from this account, as the text focuses tightly on data collection ethics, institutional silencing, and researcher reflexivity rather than long-term forecasting or adaptive trajectory changes.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A06 — Doctoral researcher and project research assistant\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What's your role on the project?\n[Respondent] Officially I do the fieldwork. Unofficially I'm the person who sits in the community meetings and then writes the paragraph that gets cut from the report. I've counted. Four times now.\n[Interviewer] On what grounds is it cut?\n[Respondent] Length, usually. Sometimes 'this belongs in the appendix'. Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.\n[Interviewer] Tell me about the fieldwork itself.\n[Respondent] Sixty-one street intercepts and nine longer interviews, over four months, at eight junctions chosen to vary by ward income and footfall. I did evenings and weekends as well because the daytime sample was retired people and parents, which is a real population but not the whole one.\n[Interviewer] Did anything surprise you?\n[Respondent] How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all. Which reframes the whole consultation question, doesn't it — you can't consult people about a thing they don't know exists, and the consultation was advertised in the places you'd look if you already knew.\n[Interviewer] What will you do with the material that gets cut?\n[Respondent] Put it in the thesis, where four people will read it. I know how that sounds. I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:33:47",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 6.8,
+  "absence": 0
+ }
+}

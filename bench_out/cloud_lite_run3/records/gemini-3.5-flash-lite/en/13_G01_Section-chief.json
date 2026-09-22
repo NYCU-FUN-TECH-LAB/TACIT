@@ -1,0 +1,155 @@
+{
+ "respondent": "Section chief, city transport department",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "middle_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript G01 — Section chief, city transport department"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Manifesto commitment driving the intervention",
+   "quote": "The commitment came first. Then we went looking for the intervention that fitted it.",
+   "full_text": "Congestion numbers and a manifesto commitment, in that order of how it's talked about and the reverse order of how it actually worked. The commitment came first. Then we went looking for the intervention that fitted it.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Intervention retrofitted to a pre-existing political commitment rather than exploring alternative futures."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Upstream question settled beforehand",
+   "quote": "it does mean the question 'is this the right thing to do' was settled before my department was involved.",
+   "full_text": "I don't think that's unusual and I don't think it's illegitimate — that's what elections are for — but it does mean the question 'is this the right thing to do' was settled before my department was involved.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Upstream evaluation of whether the project is the right choice was excluded prior to departmental involvement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Combined consultation session due to staffing limits",
+   "quote": "We ran one combined session because I have four staff and two of them were on the tram project.",
+   "full_text": "Ideally you run several sessions for different groups — disability organisations one evening, ward councillors another, commuters another. Each one takes about two weeks of preparation. We ran one combined session because I have four staff and two of them were on the tram project.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Resource constraints resulted in a collapsed, downstream consultation format rather than tailored dialogue."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Failure to follow up on police data access",
+   "quote": "Somebody asked whether the footage could be requested by police and I said I'd check. I did check. The answer is yes, under a specific statutory route, and I never went back and told the room.",
+   "full_text": "Somebody asked whether the footage could be requested by police and I said I'd check. I did check. The answer is yes, under a specific statutory route, and I never went back and told the room. Nobody chased me.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Information requested during public consultation was investigated but never communicated back to participants."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Reflecting on the absence of accountability",
+   "quote": "That's the bit I'm not comfortable with — the absence of anyone chasing me is not the same as it being fine.",
+   "full_text": "That's the bit I'm not comfortable with — the absence of anyone chasing me is not the same as it being fine.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The speaker questions the comfortable assumption that lack of complaints equals public acceptance."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Adding audible confirmation after charity request",
+   "quote": "We added an audible confirmation at two crossings after the sight-loss charity asked for it — that one took eleven months and it should have taken three.",
+   "full_text": "Yes, three things. The pedestrian minimum went up at five junctions. We added an audible confirmation at two crossings after the sight-loss charity asked for it — that one took eleven months and it should have taken three. And we publish a monthly summary now, which nobody reads, but it exists and when a councillor asks a question I can point at it.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Substantive modification made to the system design following external feedback from a charity."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Institutional friction in handling small budget lines",
+   "quote": "The rest was that it needed a small budget line and small budget lines are harder than large ones because nobody has a process for them.",
+   "full_text": "Two of it was us not knowing who owned the decision. Three was the vendor's change-control process. The rest was that it needed a small budget line and small budget lines are harder than large ones because nobody has a process for them.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Institutional barriers and rigid vendor processes delayed the implementation of requested changes."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Writing a standing note for parameter changes",
+   "quote": "I've since written a standing note about who owns crossing-parameter changes, which removes the first two months next time.",
+   "full_text": "I've since written a standing note about who owns crossing-parameter changes, which removes the first two months next time.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Institutional learning formalized into a new procedure to streamline future change trajectories."
+    }
+   ]
+  },
+  {
+   "segment_id": "S009",
+   "title": "Organizational gaps rather than technical failures",
+   "quote": "Everything that went wrong here went wrong in the gaps between organisations, and none of those gaps were technical.",
+   "full_text": "What do you wish you had done at the start? Written down who has to be told what, and by when, before anything was switched on. Everything that went wrong here went wrong in the gaps between organisations, and none of those gaps were technical.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The speaker recognizes knowledge and coordination limits beyond pure technical expertise."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits notable reflexivity and responsiveness alongside constrained anticipation and public engagement. Anticipation is negatively framed as the project was retrofitted to fulfill a pre-determined political manifesto commitment rather than exploring open design alternatives or questioning the fundamental need upstream. Public engagement suffered due to severe resource limitations, resulting in a single combined consultation session and a failure to close the loop with participants regarding police data access—though the respondent candidly critiques this shortcoming rather than defending it. Responsiveness is demonstrated through concrete adaptations, such as increasing pedestrian minimums and adding audible crossing signals after stakeholder requests, as well as institutional learning via a new standing note on decision ownership. Reflexivity is strongly highlighted as the Section chief scrutinizes their own assumptions about public silence and diagnoses failures as organizational gaps rather than technical ones. There are no multi-coded segments in this transcript, as each excerpt distinctly captures a single thematic dimension of responsible innovation.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G01 — Section chief, city transport department\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Where did the pressure to do this project come from?\n[Respondent] Congestion numbers and a manifesto commitment, in that order of how it's talked about and the reverse order of how it actually worked. The commitment came first. Then we went looking for the intervention that fitted it. I don't think that's unusual and I don't think it's illegitimate — that's what elections are for — but it does mean the question 'is this the right thing to do' was settled before my department was involved.\n[Interviewer] How did you approach consultation?\n[Respondent] Badly, and I'll explain why rather than defend it. Ideally you run several sessions for different groups — disability organisations one evening, ward councillors another, commuters another. Each one takes about two weeks of preparation. We ran one combined session because I have four staff and two of them were on the tram project. It's a resourcing answer, not a values answer, but the effect on residents is identical either way.\n[Interviewer] What was raised at that session?\n[Respondent] Crossing times, mostly, and one long argument about cameras that I handled poorly. Somebody asked whether the footage could be requested by police and I said I'd check. I did check. The answer is yes, under a specific statutory route, and I never went back and told the room. Nobody chased me. That's the bit I'm not comfortable with — the absence of anyone chasing me is not the same as it being fine.\n[Interviewer] Has anything about the system changed since it went live?\n[Respondent] Yes, three things. The pedestrian minimum went up at five junctions. We added an audible confirmation at two crossings after the sight-loss charity asked for it — that one took eleven months and it should have taken three. And we publish a monthly summary now, which nobody reads, but it exists and when a councillor asks a question I can point at it.\n[Interviewer] What made the eleven months?\n[Respondent] Two of it was us not knowing who owned the decision. Three was the vendor's change-control process. The rest was that it needed a small budget line and small budget lines are harder than large ones because nobody has a process for them. I've since written a standing note about who owns crossing-parameter changes, which removes the first two months next time.\n[Interviewer] What do you wish you had done at the start?\n[Respondent] Written down who has to be told what, and by when, before anything was switched on. Everything that went wrong here went wrong in the gaps between organisations, and none of those gaps were technical.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:46:03",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 8.2,
+  "absence": 0
+ }
+}

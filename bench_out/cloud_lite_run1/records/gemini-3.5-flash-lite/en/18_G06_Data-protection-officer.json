@@ -1,0 +1,103 @@
+{
+ "respondent": "Data protection officer, city council",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "other",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript G06 — Data protection officer, city council"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Impact assessment template lacking real-time decision scope",
+   "quote": "Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.",
+   "full_text": "[Interviewer] Was a data protection impact assessment done? [Respondent] Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms. Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Respondent critically evaluates the limitations of the original assessment tool and acknowledges its shortcomings."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Live document left unreviewed without triggers",
+   "quote": "It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again.",
+   "full_text": "[Interviewer] Has the assessment been revisited? [Respondent] No. It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Lack of review mechanisms or triggers means the assessment trajectory remains static and unadaptive."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Questioning the adequacy of anonymity for derived counts",
+   "quote": "They are a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.",
+   "full_text": "[Interviewer] How is retention handled in practice? [Respondent] Seventy-two hours for the raw video, indefinite for the derived counts. The derived counts are the interesting part and nobody asks about them because they're described as anonymous. They are anonymous. They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Respondent critically questions prevailing technical/legal assumptions about data anonymity."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Calibrating risk communication too cautiously",
+   "quote": "I think the honest position is that I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.",
+   "full_text": "[Interviewer] Have you raised that? [Respondent] In a footnote. I know how that sounds after what I just said about the risk register. I think the honest position is that I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Respondent engages in self-scrutiny regarding their own internal communication strategy and institutional limitations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Subject access rights existing only in principle",
+   "quote": "So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+   "full_text": "[Interviewer] Do residents have a route to see what data concerns them? [Respondent] Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Public rights of inquiry are practically ineffective, functioning as nominal compliance rather than meaningful external inclusion."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits strong reflexivity through candid self-scrutiny regarding the limitations of the data protection impact assessment, the inadequacy of the 'anonymous' label for derived counts, and their own cautious communication strategies. However, the account reveals significant deficits in anticipation (failing to foresee real-time decision impacts) and responsiveness (lack of review triggers for live documents). Public engagement is similarly closed, characterized by subject access rights that exist only in theory and are practically unexercisable by residents. Multi-coded segments, such as the discussion on the thin impact assessment, demonstrate how institutional templates restrict both anticipatory foresight and reflective adaptation.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G06 — Data protection officer, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Was a data protection impact assessment done?\n[Respondent] Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms. Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.\n[Interviewer] Has the assessment been revisited?\n[Respondent] No. It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.\n[Interviewer] How is retention handled in practice?\n[Respondent] Seventy-two hours for the raw video, indefinite for the derived counts. The derived counts are the interesting part and nobody asks about them because they're described as anonymous. They are anonymous. They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.\n[Interviewer] Have you raised that?\n[Respondent] In a footnote. I know how that sounds after what I just said about the risk register. I think the honest position is that I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.\n[Interviewer] Do residents have a route to see what data concerns them?\n[Respondent] Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:35:39",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 32.5,
+  "absence": 0
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "respondent": "Chief information officer, city council",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "The interview transcript states 'Interview transcript G02 — Chief information officer, city council' at the beginning."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Standard corporate risk register and oversight",
+   "quote": "It's on the corporate risk register, it has a senior responsible owner, it reports into the digital board quarterly. That's the same governance any major system gets and I'd resist the idea that it needs something special.",
+   "full_text": "Through the standard route. It's on the corporate risk register, it has a senior responsible owner, it reports into the digital board quarterly. That's the same governance any major system gets and I'd resist the idea that it needs something special. Once you start creating bespoke oversight for anything with a model in it, you end up with forty committees and no capacity.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Resisting bespoke oversight or adaptive governance mechanisms for algorithmic systems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reliance on vendor assurance and acceptance testing",
+   "quote": "What we do instead is rely on the vendor's assurance documentation and on the acceptance testing.",
+   "full_text": "It has me. And a non-executive with a technology background. Is that enough to interrogate a detection model in detail? No, probably not. What we do instead is rely on the vendor's assurance documentation and on the acceptance testing.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Defers deep technical scrutiny to vendor assurance without interrogating model assumptions."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Refusal of algorithmic disclosure based on commercial confidentiality",
+   "quote": "Two asked for the algorithm and we refused those on commercial confidentiality grounds, which is the vendor's position and legally sound.",
+   "full_text": "We've had — I want to say six or seven freedom of information requests. Most were about camera locations and we answered those. Two asked for the algorithm and we refused those on commercial confidentiality grounds, which is the vendor's position and legally sound.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Rejecting public inquiries into the algorithm through legal and confidentiality exemptions."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Absence of foresight regarding transparency during procurement",
+   "quote": "The honest position is that in 2022 we weren't thinking about it, and by the time you're arguing about disclosure you've already signed.",
+   "full_text": "I don't believe transparency terms were in the specification. that's a fair criticism and I'd expect it to be in the next one. The honest position is that in 2022 we weren't thinking about it, and by the time you're arguing about disclosure you've already signed.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Failing to anticipate transparency needs upstream during the procurement phase."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Uncertainty regarding change control terms for residents",
+   "quote": "Whether transport can then change a parameter depends on the change-control terms, which — I'd have to look. I don't know the answer to that off the top of my head, which I appreciate is not a great answer.",
+   "full_text": "There's the general complaints process. It routes to transport, not to us. Whether transport can then change a parameter depends on the change-control terms, which — I'd have to look. I don't know the answer to that off the top of my head, which I appreciate is not a great answer.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Uncertainty and lack of clear institutional mechanisms to alter system parameters based on citizen complaints."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This interview with a city council Chief Information Officer exhibits predominantly negative polarities across the Responsible Innovation framework. The respondent demonstrates short-termism and lack of foresight regarding transparency (Anticipation - N), relies on standard compliance and vendor assurances rather than critical internal evaluation (Reflexivity - N), manages public inquiries through defensive FOI refusals rather than two-way dialogue (Engagement - N), and relies on rigid procurement terms and general complaint routes without adaptive mechanisms for modification (Responsiveness - N). There are no positive instances of AIRR dimensions in the transcript, as governance is tightly coupled to standard corporate risk registers and commercial confidentiality constraints.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G02 — Chief information officer, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does a system like this get governed once it's running?\n[Respondent] Through the standard route. It's on the corporate risk register, it has a senior responsible owner, it reports into the digital board quarterly. That's the same governance any major system gets and I'd resist the idea that it needs something special. Once you start creating bespoke oversight for anything with a model in it, you end up with forty committees and no capacity.\n[Interviewer] Does the digital board have the expertise to interrogate a model?\n[Respondent] It has me. And a non-executive with a technology background. Is that enough to interrogate a detection model in detail? No, probably not. What we do instead is rely on the vendor's assurance documentation and on the acceptance testing.\n[Interviewer] Has the public asked for information about the system?\n[Respondent] We've had — I want to say six or seven freedom of information requests. Most were about camera locations and we answered those. Two asked for the algorithm and we refused those on commercial confidentiality grounds, which is the vendor's position and legally sound.\n[Interviewer] Did the council consider negotiating that at procurement?\n[Respondent] I don't believe transparency terms were in the specification. That's a fair criticism and I'd expect it to be in the next one. The honest position is that in 2022 we weren't thinking about it, and by the time you're arguing about disclosure you've already signed.\n[Interviewer] Is there a route for a resident to challenge how a junction behaves?\n[Respondent] There's the general complaints process. It routes to transport, not to us. Whether transport can then change a parameter depends on the change-control terms, which — I'd have to look. I don't know the answer to that off the top of my head, which I appreciate is not a great answer.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:34:15",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 20.4,
+  "absence": 0
+ }
+}

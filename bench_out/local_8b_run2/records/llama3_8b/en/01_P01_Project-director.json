@@ -1,0 +1,152 @@
+{
+ "respondent": "Project director, systems integration contractor",
+ "descriptors": {
+  "institution_type": "other",
+  "role_level": "other",
+  "sector": "ict_ai",
+  "experience": "over_20y",
+  "descriptor_basis": "the interview transcript does not state"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Assessing the system's potential impact",
+   "quote": "On the technical side, absolutely, we ran a full assessment. False positive rate, detection accuracy under rain, night performance, we have an internal acceptance standard that's frankly stricter than what the city asked for.",
+   "full_text": "On the technical side, absolutely, we ran a full assessment. False positive rate, detection accuracy under rain, night performance, we have an internal acceptance standard that's frankly stricter than what the city asked for. That part I'm confident about. But social impact, what it does to the city as a city — honestly, that's not our remit. We're a contractor. The city writes a specification, we build to the specification. That's the arrangement.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent mentions running a full assessment, including false positive rate, detection accuracy under rain, and night performance, indicating a focus on anticipating potential issues."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Technical assessment vs. social impact",
+   "quote": "But social impact, what it does to the city as a city — honestly, that's not our remit. We're a contractor. The city writes a specification, we build to the specification.",
+   "full_text": "But social impact, what it does to the city as a city — honestly, that's not our remit. We're a contractor. The city writes a specification, we build to the specification. That's the arrangement.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "The respondent acknowledges that social impact is not their remit, indicating a lack of self-reflection on their own assumptions and knowledge limits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Unintended consequences and risk management",
+   "quote": "Unintended consequences. Look, I'll probably sound naive saying this, but smart infrastructure is where everything is going. Every city in the region is doing it. If we don't do it someone else will, so it's a question of when, not whether.",
+   "full_text": "Unintended consequences. Look, I'll probably sound naive saying this, but smart infrastructure is where everything is going. Every city in the region is doing it. If we don't do it someone else will, so it's a question of when, not whether. Sitting around imagining what might go wrong is, in my experience, a way of not shipping anything. Build it, see what breaks, fix what breaks. And a lot of the concerns people raise, with respect, come from not understanding the technology. Once the thing is running and people's commutes get shorter, that noise dies down on its own.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent mentions the inevitability of smart infrastructure and the potential for unintended consequences, indicating a focus on anticipating potential issues."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Community engagement and public information session",
+   "quote": "Yes, there was a public information session. The city organised it — March last year, I think, in the council building. We presented the system, what it does, the expected benefits. Turnout was modest, twenty-five, thirty people.",
+   "full_text": "Yes, there was a public information session. The city organised it — March last year, I think, in the council building. We presented the system, what it does, the expected benefits. Turnout was modest, twenty-five, thirty people.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent mentions a public information session, but notes that the design was already finalised, indicating a lack of engagement and responsiveness."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Design finalisation and procurement",
+   "quote": "After. The specification was locked by then, it had to be, because you can't tender against a moving target. Once the tender documents go out, that's it. So the session was more about — letting people know what was coming.",
+   "full_text": "After. The specification was locked by then, it had to be, because you can't tender against a moving target. Once the tender documents go out, that's it. So the session was more about — letting people know what was coming.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent notes that the design was already finalised, indicating a lack of responsiveness to external signals."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Acknowledging uncertainty in user needs",
+   "quote": "One woman, a wheelchair user, said the pedestrian crossing interval wasn't long enough for her. That stuck with me, actually.",
+   "full_text": "One woman, a wheelchair user, said the pedestrian crossing interval wasn't long enough for her. That stuck with me, actually. But the interval is set by national regulation — we can't just change it. So we explained that this was a regulatory matter, not a system matter, and that she should raise it with the ministry.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent acknowledges uncertainty in user needs and expresses a willingness to learn from user feedback."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Reflecting on documentation",
+   "quote": "Maybe the documentation, we could have written the user-facing documentation better.",
+   "full_text": "Differently. Hmm. Maybe the documentation, we could have written the user-facing documentation better. But the engineering, no. The system does what it was specified to do, within tolerance, on budget. I'd sign the same contract tomorrow.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent reflects on the documentation and acknowledges the possibility of improvement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Data sharing agreement",
+   "quote": "The city holds it. We process it. There's a data-sharing agreement, it went through their legal team and ours.",
+   "full_text": "The city holds it. We process it. There's a data-sharing agreement, it went through their legal team and ours. I couldn't tell you the retention period off the top of my head, it's in the schedule. That's genuinely not something I get asked about often, which now that you say it out loud is maybe a bit odd.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent describes a data-sharing agreement and acknowledges the possibility of improvement, showing a willingness to adapt."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "",
+ "_meta": {
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 2,
+   "n_ok": 2
+  },
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P01 — Project director, systems integration contractor\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Let's start with the beginning of the project. When Port Calder brought you in, how did you assess what this system might do to the city?\n[Respondent] Right, so — I want to split that into two parts, because people conflate them. On the technical side, absolutely, we ran a full assessment. False positive rate, detection accuracy under rain, night performance, we have an internal acceptance standard that's frankly stricter than what the city asked for. That part I'm confident about. But social impact, what it does to the city as a city — honestly, that's not our remit. We're a contractor. The city writes a specification, we build to the specification. That's the arrangement.\n[Interviewer] Was there any discussion early on about unintended consequences?\n[Respondent] Unintended consequences. Look, I'll probably sound naive saying this, but smart infrastructure is where everything is going. Every city in the region is doing it. If we don't do it someone else will, so it's a question of when, not whether. Sitting around imagining what might go wrong is, in my experience, a way of not shipping anything. Build it, see what breaks, fix what breaks. And a lot of the concerns people raise, with respect, come from not understanding the technology. Once the thing is running and people's commutes get shorter, that noise dies down on its own.\n[Interviewer] Were community groups or residents involved in the design?\n[Respondent] Yes, there was a public information session. The city organised it — March last year, I think, in the council building. We presented the system, what it does, the expected benefits. Turnout was modest, twenty-five, thirty people.\n[Interviewer] Was that before or after the design was finalised?\n[Respondent] After. The specification was locked by then, it had to be, because you can't tender against a moving target. Once the tender documents go out, that's it. So the session was more about — letting people know what was coming. Changing the design in that room wasn't realistic. The whole procurement would have to start again and somebody would have to answer for that.\n[Interviewer] Did anyone at that session raise an objection?\n[Respondent] One woman, a wheelchair user, said the pedestrian crossing interval wasn't long enough for her. That stuck with me, actually. But the interval is set by national regulation — we can't just change it. So we explained that this was a regulatory matter, not a system matter, and that she should raise it with the ministry.\n[Interviewer] Looking back, is there anything you'd do differently?\n[Respondent] Differently. Hmm. Maybe the documentation, we could have written the user-facing documentation better. But the engineering, no. The system does what it was specified to do, within tolerance, on budget. I'd sign the same contract tomorrow.\n[Interviewer] One more — the camera data. Who holds it?\n[Respondent] The city holds it. We process it. There's a data-sharing agreement, it went through their legal team and ours. I couldn't tell you the retention period off the top of my head, it's in the schedule. That's genuinely not something I get asked about often, which now that you say it out loud is maybe a bit odd.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/llama3:8b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/llama3:8b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "llama3:8b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-23T04:31:52",
+   "quantization_level": "Q4_0",
+   "parameter_size": "8.0B",
+   "family": "llama",
+   "context_length": 8192,
+   "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 47.7,
+  "absence": 0
+ }
+}

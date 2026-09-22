@@ -1,0 +1,90 @@
+{
+ "respondent": "A05",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript A05 — Chair, university research ethics committee"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Jurisdictional divide between research ethics and deployment",
+   "quote": "The decision to install the cameras and point them at a hundred thousand people went through a procurement committee.",
+   "full_text": "Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Massive public deployments bypass ethical scrutiny entirely via procurement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Severe institutional capacity constraints",
+   "quote": "We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind.",
+   "full_text": "Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Institutional structures lack the authority and resources to alter deployment trajectories."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Absence of contingency planning for inconvenient findings",
+   "quote": "What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder.",
+   "full_text": "More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Researchers fail to anticipate or plan for negative political or financial implications of their research."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Tokenistic public representation in ethics review",
+   "quote": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category.",
+   "full_text": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Public participation is reduced to a single lay member token, leaving meetings devoid of public perspective when absent."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "Respondent A05, Chair of a university research ethics committee, provides a critical institutional perspective on the governance of the Port Calder traffic system. The account is heavily weighted toward negative polarities across Public Engagement, Responsiveness, and Anticipation. Engagement is critiqued both externally—where large-scale deployments bypass ethics via procurement—and internally, where public voice is reduced to a single lay member. Responsiveness is constrained by severe resource limitations and a lack of jurisdictional authority over municipal deployments. Anticipation is shown to be weak upstream, as researchers routinely fail to plan for inconvenient findings. While Reflexivity is implicitly present through the chair's critique of the committee's own limitations, the explicit text highlights systemic structural hurdles that prevent responsible innovation governance from effectively reaching real-world technological deployments.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A05 — Chair, university research ethics committee\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Did any part of this deployment come before your committee?\n[Respondent] Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.\n[Interviewer] Could your committee's remit cover deployments?\n[Respondent] Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.\n[Interviewer] What have you seen change in the studies that do come to you?\n[Respondent] More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.\n[Interviewer] Do affected communities have any voice in your process?\n[Respondent] We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:45:48",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 6.0,
+  "absence": 0
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "respondent": "Ward councillor",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "policy_maker",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript G03 — Ward councillor, city council"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Residents raising specific crossing issues through surgery",
+   "quote": "In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use.",
+   "full_text": "Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Upstream input from individual citizens providing direct, unmediated observations about the traffic system."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Unanticipated pedestrian uncertainty caused by the system",
+   "quote": "The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+   "full_text": "Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Unanticipated behavioral consequences of the system deployment that were not foreseen by developers."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Administrative resistance and deflection in committee",
+   "quote": "The first time I got a written answer about detection accuracy, which wasn't the question I'd asked.",
+   "full_text": "Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Institutional deflection offering irrelevant metrics instead of addressing the specific feedback raised."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Overcoming institutional inertia through committee intervention",
+   "quote": "So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.",
+   "full_text": "Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Trajectory change achieved eventually through formal political pressure and access to raw logs."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Epistemic limits and lack of technical comprehension",
+   "quote": "I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "full_text": "No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Clear admission of epistemic limits combined with structural failure to provide adequate briefing for oversight."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Absence of algorithmic audit mechanisms",
+   "quote": "Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+   "full_text": "Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Explicit identification of a structural governance vacuum lacking any audit or oversight mechanism for algorithmic decisions."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent, a ward councillor, provides a critical perspective on the governance of an urban adaptive traffic system, highlighting acute gaps across all four dimensions of Responsible Innovation. Public engagement is initiated bottom-up through surgeries rather than through formal institutional channels, revealing unexpected negative impacts on pedestrian behavior (anticipation N). Responsiveness is initially hindered by institutional deflection via irrelevant technical metrics, only shifting when persistent political pressure forces data release. Reflexivity is heavily constrained by epistemic asymmetry; the councillor candidly admits to lacking the technical understanding required to scrutinize complex algorithmic weighting, exacerbated by a total absence of independent internal audit mechanisms for automated decision systems (responsiveness N).",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G03 — Ward councillor, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | How does this reach you as a councillor?\nRespondent | Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.\nInterviewer | What did people describe?\nRespondent | Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.\nInterviewer | What did you do with it?\nRespondent | Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.\nInterviewer | Do you feel you understand the system well enough to scrutinise it?\nRespondent | No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.\nInterviewer | What would help?\nRespondent | Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:46:14",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 5.9,
+  "absence": 0
+ }
+}

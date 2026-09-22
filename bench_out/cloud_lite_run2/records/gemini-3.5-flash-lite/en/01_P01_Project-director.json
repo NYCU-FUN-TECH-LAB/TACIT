@@ -1,0 +1,167 @@
+{
+ "respondent": "Project director",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "The interview transcript is identified as 'P01 — Project director, systems integration contractor', but does not explicitly state years of experience in the text."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Restricting focus to technical metrics while excluding social impact",
+   "quote": "On the technical side, absolutely, we ran a full assessment. False positive rate, detection accuracy under rain, night performance, we have an internal acceptance standard that's frankly stricter than what the city asked for. That part I'm confident about. But social impact, what it does to the city as a city — honestly, that's not our remit.",
+   "full_text": "[Interviewer] Let's start with the beginning of the project. When Port Calder brought you in, how did you assess what this system might do to the city? [Respondent] Right, so — I want to split that into two parts, because people conflate them. On the technical side, absolutely, we ran a full assessment. False positive rate, detection accuracy under rain, night performance, we have an internal acceptance standard that's frankly stricter than what the city asked for. That part I'm confident about. But social impact, what it does to the city as a city — honestly, that's not our remit. We're a contractor. The city writes a specification, we build to the specification. That's the arrangement.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Defines social impact as outside remit and treats technical compliance as sufficient, evading broader value scrutiny."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Dismissing upstream foresight in favor of market inevitability and rapid shipping",
+   "quote": "If we don't do it someone else will, so it's a question of when, not whether. Sitting around imagining what might go wrong is, in my experience, a way of not shipping anything. Build it, see what breaks, fix what breaks.",
+   "full_text": "[Interviewer] Was there any discussion early on about unintended consequences? [Respondent] Unintended consequences. Look, I'll probably sound naive saying this, but smart infrastructure is where everything is going. Every city in the region is doing it. If we don't do it someone else will, so it's a question of when, not whether. Sitting around imagining what might go wrong is, in my experience, a way of not shipping anything. Build it, see what breaks, fix what breaks. And a lot of the concerns people raise, with respect, come from not understanding the technology. Once the thing is running and people's commutes get shorter, that noise dies down on its own.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Explicitly rejects upstream exploration of unintended consequences in favor of a deterministic market rollout."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Reducing public engagement to downstream information delivery",
+   "quote": "The city organised it — March last year, I think, in the council building. We presented the system, what it does, the expected benefits.",
+   "full_text": "[Interviewer] Were community groups or residents involved in the design? [Respondent] Yes, there was a public information session. The city organised it — March last year, I think, in the council building. We presented the system, what it does, the expected benefits. Turnout was modest, twenty-five, thirty people.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Describes a one-way information session rather than two-way upstream participation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Excluding public input due to fixed procurement schedules",
+   "quote": "The specification was locked by then, it had to be, because you can't tender against a moving target. Once the tender documents go out, that's it. So the session was more about — letting people know what was coming. Changing the design in that room wasn't realistic.",
+   "full_text": "[Interviewer] Was that before or after the design was finalised? [Respondent] After. The specification was locked by then, it had to be, because you can't tender against a moving target. Once the tender documents go out, that's it. So the session was more about — letting people know what was coming. Changing the design in that room wasn't realistic. The whole procurement would have to start again and somebody would have to answer for that.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Framing public interaction as occurring only after specifications are locked precludes meaningful influence."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Treats the project trajectory as unchangeable due to procurement lock-in and fear of restarting the process."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Deflecting resident feedback by citing external regulatory constraints",
+   "quote": "One woman, a wheelchair user, said the pedestrian crossing interval wasn't long enough for her. That stuck with me, actually. But the interval is set by national regulation — we can't just change it. So we explained that this was a regulatory matter, not a system matter, and that she should raise it with the ministry.",
+   "full_text": "[Interviewer] Did anyone at that session raise an objection? [Respondent] One woman, a wheelchair user, said the pedestrian crossing interval wasn't long enough for her. That stuck with me, actually. But the interval is set by national regulation — we can't just change it. So we explained that this was a regulatory matter, not a system matter, and that she should raise it with the ministry. [Interviewer] Looking back, is there anything you'd do differently?",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Refuses to adapt the system design in response to direct user feedback, deflecting responsibility to national regulation."
+    },
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Feedback is deflected to an external ministry rather than integrated into the innovation."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Refusal to alter trajectory or configuration in response to direct user feedback."
+    }
+   ],
+   "review": {
+    "status": "pending",
+    "original_codes": [
+     "RES-N"
+    ],
+    "original_title": "",
+    "original_quote": "",
+    "source": "ai",
+    "history": [
+     {
+      "time": "",
+      "action": "merged_across_excerpts",
+      "detail": "codes from another excerpt: ENG-N",
+      "reviewer": ""
+     }
+    ]
+   }
+  },
+  {
+   "segment_id": "S006",
+   "title": "Defending engineering and contractual specs",
+   "quote": "The system does what it was specified to do, within tolerance, on budget. I'd sign the same contract tomorrow.",
+   "full_text": "[Interviewer] Looking back, is there anything you'd do differently? \n[Respondent] Differently. Hmm. Maybe the documentation, we could have written the user-facing documentation better. But the engineering, no. The system does what it was specified to do, within tolerance, on budget. I'd sign the same contract tomorrow.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Techno-optimistic defense of engineering specifications, reducing reflection to documentation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Realizing unfamiliarity with data retention periods",
+   "quote": "I couldn't tell you the retention period off the top of my head, it's in the schedule. That's genuinely not something I get asked about often, which now that you say it out loud is maybe a bit odd.",
+   "full_text": "[Interviewer] One more — the camera data. Who holds it? \n[Respondent] The city holds it. We process it. There's a data-sharing agreement, it went through their legal team and ours. I couldn't tell you the retention period off the top of my head, it's in the schedule. That's genuinely not something I get asked about often, which now that you say it out loud is maybe a bit odd.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Moment of epistemic humility recognizing a blind spot regarding data governance."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "",
+ "_meta": {
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 2,
+   "n_ok": 2
+  },
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P01 — Project director, systems integration contractor\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Let's start with the beginning of the project. When Port Calder brought you in, how did you assess what this system might do to the city?\n[Respondent] Right, so — I want to split that into two parts, because people conflate them. On the technical side, absolutely, we ran a full assessment. False positive rate, detection accuracy under rain, night performance, we have an internal acceptance standard that's frankly stricter than what the city asked for. That part I'm confident about. But social impact, what it does to the city as a city — honestly, that's not our remit. We're a contractor. The city writes a specification, we build to the specification. That's the arrangement.\n[Interviewer] Was there any discussion early on about unintended consequences?\n[Respondent] Unintended consequences. Look, I'll probably sound naive saying this, but smart infrastructure is where everything is going. Every city in the region is doing it. If we don't do it someone else will, so it's a question of when, not whether. Sitting around imagining what might go wrong is, in my experience, a way of not shipping anything. Build it, see what breaks, fix what breaks. And a lot of the concerns people raise, with respect, come from not understanding the technology. Once the thing is running and people's commutes get shorter, that noise dies down on its own.\n[Interviewer] Were community groups or residents involved in the design?\n[Respondent] Yes, there was a public information session. The city organised it — March last year, I think, in the council building. We presented the system, what it does, the expected benefits. Turnout was modest, twenty-five, thirty people.\n[Interviewer] Was that before or after the design was finalised?\n[Respondent] After. The specification was locked by then, it had to be, because you can't tender against a moving target. Once the tender documents go out, that's it. So the session was more about — letting people know what was coming. Changing the design in that room wasn't realistic. The whole procurement would have to start again and somebody would have to answer for that.\n[Interviewer] Did anyone at that session raise an objection?\n[Respondent] One woman, a wheelchair user, said the pedestrian crossing interval wasn't long enough for her. That stuck with me, actually. But the interval is set by national regulation — we can't just change it. So we explained that this was a regulatory matter, not a system matter, and that she should raise it with the ministry.\n[Interviewer] Looking back, is there anything you'd do differently?\n[Respondent] Differently. Hmm. Maybe the documentation, we could have written the user-facing documentation better. But the engineering, no. The system does what it was specified to do, within tolerance, on budget. I'd sign the same contract tomorrow.\n[Interviewer] One more — the camera data. Who holds it?\n[Respondent] The city holds it. We process it. There's a data-sharing agreement, it went through their legal team and ours. I couldn't tell you the retention period off the top of my head, it's in the schedule. That's genuinely not something I get asked about often, which now that you say it out loud is maybe a bit odd.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:38:38",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 12.6,
+  "absence": 0
+ }
+}

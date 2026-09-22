@@ -1,0 +1,113 @@
+{
+ "respondent": "P04",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript P04 — Head of compliance, mobility technology group"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Challenging deployment assumptions before launch",
+   "quote": "In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive.",
+   "full_text": "[Interviewer] What does responsible deployment mean in your role? [Respondent] In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive. I've made peace with being unpopular. The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Scrutinizes the timing of intervention and acknowledges the tension between legal risk and ethics."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Anticipating edge cases and failure modes",
+   "quote": "Three things, mainly. What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong.",
+   "full_text": "[Interviewer] What did you ask on this project? [Respondent] Three things, mainly. What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong. The third one is the one nobody has a good answer to, ever.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Explores plausible negative scenarios regarding data privacy, bias, and system kill-switches."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Silent infrastructural lock-in",
+   "quote": "So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.",
+   "full_text": "[Interviewer] What answer did you get on switching it off? [Respondent] A version of 'why would we'. Which isn't an answer. Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Systematic foresight identifying long-term technical path dependency and irreversible decay of fallback options."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Describes an obdurate trajectory where the capacity to halt or revert is structurally eliminated."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Risk register as a substitute for action",
+   "quote": "I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.",
+   "full_text": "[Interviewer] Did that get escalated? [Respondent] I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Institutional mechanisms absorb feedback without altering the innovation trajectory."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Open self-assessment of personal and institutional limitations in failing to escalate concerns."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Isolation from external engagement",
+   "quote": "No. It's me and a junior analyst. We don't have an ethics board, we don't have community input, we have me reading and worrying.",
+   "full_text": "[Interviewer] Was there any external input into these questions? [Respondent] No. It's me and a junior analyst. We don't have an ethics board, we don't have community input, we have me reading and worrying. For a system that watches thirty intersections that is a thin basis and I would say that on the record.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Affirmatively highlights the total absence of upstream participation, ethics boards, or community input."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "Respondent P04, a head of compliance, provides a candid and critical account of deployment practices in a mobility technology project. The narrative strongly exhibits Anticipation through the identification of data privacy concerns, demographic performance disparities, and infrastructural lock-in caused by decaying fallback systems. Reflexivity is evident both in the speaker's humility regarding their own limitations and their critical scrutiny of compliance versus ethics. Responsiveness is negatively coded due to the structural entrapment of technological lock-in and the neutralization of warnings via the risk register. Public Engagement is negatively coded through the explicit acknowledgement of a complete lack of external community input or ethics boards. Multi-coding is present in the discussion of lock-in (anticipatory insight coupled with obdurate trajectory) and the risk register (failure of responsiveness combined with reflective self-ownership).",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P04 — Head of compliance, mobility technology group\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What does responsible deployment mean in your role?\n[Respondent] In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive. I've made peace with being unpopular. The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.\n[Interviewer] What did you ask on this project?\n[Respondent] Three things, mainly. What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong. The third one is the one nobody has a good answer to, ever.\n[Interviewer] What answer did you get on switching it off?\n[Respondent] A version of 'why would we'. Which isn't an answer. Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.\n[Interviewer] Did that get escalated?\n[Respondent] I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.\n[Interviewer] Was there any external input into these questions?\n[Respondent] No. It's me and a junior analyst. We don't have an ethics board, we don't have community input, we have me reading and worrying. For a system that watches thirty intersections that is a thin basis and I would say that on the record.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:45:00",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 6.4,
+  "absence": 0
+ }
+}

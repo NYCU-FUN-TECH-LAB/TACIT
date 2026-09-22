@@ -1,0 +1,77 @@
+{
+ "respondent": "Policy analyst, national transport ministry",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "policy_maker",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript G04 — Policy analyst, national transport ministry"
+ },
+ "segments": [
+  {
+   "segment_id": "S003",
+   "title": "Guidance enforcement limitations",
+   "quote": "In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on.",
+   "full_text": "It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The regulatory instrument lacks teeth and fails to drive substantive changes in institutional trajectories."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Exclusion of public consultation",
+   "quote": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents.",
+   "full_text": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Key societal actors like residents and disability groups are entirely excluded from the policymaking process."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Self-imposed timeline constraints",
+   "quote": "I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+   "full_text": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The speaker critically scrutinises the ministry's internal justification, recognizing that timeline constraints are self-imposed."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent, a policy analyst at a national transport ministry, offers a candid and critical institutional perspective on the governance of adaptive traffic signals. The interview strongly highlights negative dimensions of anticipation and public engagement, alongside obdurate regulatory limitations. Anticipation is systematically undermined by a reactive model where attention is only allocated after failures occur, leaving the ministry to draft guidance retrospectively. Public engagement is closed and exclusive, characterized by the exclusion of residents and disability groups from the drafting working group—a limitation rationalized by self-imposed timelines. Despite these systemic shortcomings, the respondent demonstrates notable reflexivity by critically interrogating the ministry's own justifications (such as questioning the validity of timeline constraints). Responsiveness remains weak because the resulting guidance lacks legal teeth, functioning merely as a weak recommendation that fails to drive substantive behavioral changes across all local authorities.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G04 — Policy analyst, national transport ministry\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does central government see deployments like Port Calder's?\n[Respondent] As a pilot we can learn from, officially. In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.\n[Interviewer] Could the ministry have moved earlier?\n[Respondent] Yes. There was a submission in 2021 recommending exactly that and it wasn't prioritised. I've read it. It's a good submission. The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.\n[Interviewer] What's going into the guidance?\n[Respondent] A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.\n[Interviewer] Will it have teeth?\n[Respondent] It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.\n[Interviewer] Was anyone outside government involved in drafting?\n[Respondent] A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:46:21",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 6.2,
+  "absence": 0
+ }
+}

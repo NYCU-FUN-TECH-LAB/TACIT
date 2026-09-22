@@ -1,0 +1,94 @@
+{
+ "respondent": "Policy analyst, national transport ministry",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "other",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "the interview transcript does not state the respondent's experience"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Anticipation - N: Lock-in and lack of foresight",
+   "quote": "nothing had gone wrong yet, and our attention is allocated by what has gone wrong.",
+   "full_text": "The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "The respondent's statement highlights the lack of foresight and the tendency to prioritize issues only after they have gone wrong, which is a negative polarity for Anticipation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reflexivity - N: Lack of self-examination",
+   "quote": "I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+   "full_text": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "The respondent's statement shows a lack of self-examination and epistemic humility, as they do not question their own assumptions or knowledge limits, which is a negative polarity for Reflexivity."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Engagement - N: Limited participation and exclusion",
+   "quote": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents.",
+   "full_text": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent's statement highlights the limited participation and exclusion of certain groups, such as disability organisations and residents, which is a negative polarity for Engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Responsiveness - P: Adaptive guidance and learning",
+   "quote": "A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it.",
+   "full_text": "A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent's statement shows an adaptive approach to guidance and learning, as they acknowledge the need for improvement and are willing to learn from experience, which is a positive polarity for Responsiveness."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent's account highlights the ministry's tendency to prioritize issues only after they have gone wrong, which is a negative polarity for Anticipation. The lack of self-examination and epistemic humility is also evident, as the respondent does not question their own assumptions or knowledge limits, which is a negative polarity for Reflexivity. The limited participation and exclusion of certain groups, such as disability organisations and residents, is also a concern, which is a negative polarity for Engagement. However, the respondent's statement also shows an adaptive approach to guidance and learning, which is a positive polarity for Responsiveness.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G04 — Policy analyst, national transport ministry\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does central government see deployments like Port Calder's?\n[Respondent] As a pilot we can learn from, officially. In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.\n[Interviewer] Could the ministry have moved earlier?\n[Respondent] Yes. There was a submission in 2021 recommending exactly that and it wasn't prioritised. I've read it. It's a good submission. The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.\n[Interviewer] What's going into the guidance?\n[Respondent] A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.\n[Interviewer] Will it have teeth?\n[Respondent] It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.\n[Interviewer] Was anyone outside government involved in drafting?\n[Respondent] A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/llama3:8b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/llama3:8b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "llama3:8b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-23T04:46:38",
+   "quantization_level": "Q4_0",
+   "parameter_size": "8.0B",
+   "family": "llama",
+   "context_length": 8192,
+   "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 21.0,
+  "absence": 0
+ }
+}

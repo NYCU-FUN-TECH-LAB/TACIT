@@ -1,0 +1,67 @@
+{
+  "generated": "2026-09-23T04:37:01",
+  "framework": "ri_stilgoe_2013",
+  "results": [
+    {
+      "model": "gemini-3.5-flash-lite",
+      "endpoint": "gemini/gemini-3.5-flash-lite",
+      "provenance": {
+        "endpoint": "gemini/gemini-3.5-flash-lite",
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "base_url": null,
+        "data_locality": "remote",
+        "num_ctx": null,
+        "max_tokens": 65536,
+        "recorded_at": "2026-09-23T04:29:41",
+        "sdk": "google-genai",
+        "temperature": 0.2,
+        "window_chars": 3000,
+        "overlap_chars": 300
+      },
+      "framework": "ri_stilgoe_2013",
+      "at": "2026-09-23T04:29:41",
+      "contract": {
+        "compliance": 1.0,
+        "verdict": "ok",
+        "answered": 6,
+        "asked": 6,
+        "valid_json": true,
+        "non_conforming": [],
+        "error": "",
+        "seconds": 12.5
+      },
+      "coding": {
+        "en": {
+          "transcripts": 24,
+          "completed": 24,
+          "resumed": 0,
+          "stopped_on_quota": null,
+          "chunk_errors": 0,
+          "failed": 0,
+          "segments": 123,
+          "codes": 138,
+          "chars": 53075,
+          "per_10k": 23.17,
+          "verbatim_rate": 0.992,
+          "absence_codes": 0,
+          "degenerate_titles": 0,
+          "window_chars": 3000,
+          "overlap_chars": 300,
+          "minutes": 5.5
+        }
+      },
+      "themes": {
+        "first_order": 123,
+        "themes": 6,
+        "unassigned": 2,
+        "dimensions_covered": 4,
+        "dimensions_total": 4,
+        "empty_dimensions": [],
+        "unrecognised_dimensions": [],
+        "note_written": true,
+        "minutes": 0.4
+      }
+    }
+  ]
+}

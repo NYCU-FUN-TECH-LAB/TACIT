@@ -1,0 +1,108 @@
+{
+ "respondent": "Senior engineer, traffic signal manufacturer",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "rnd_staff",
+  "sector": "other",
+  "experience": "over_20y",
+  "descriptor_basis": "Twenty-six years. The difference is that the box used to do what the timing plan said..."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Shift from deterministic plans to autonomous model decisions",
+   "quote": "The difference is that the box used to do what the timing plan said, and now the box decides.",
+   "full_text": "Twenty-six years. The difference is that the box used to do what the timing plan said, and now the box decides. That sounds dramatic but operationally it's a big change, because when somebody complains about a junction I used to be able to open the plan and show them the numbers. Now the answer is 'the model decided', and I can't show anybody anything.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Shift to black-box decision making reduces foresight and transparency."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reliance on historical safety standards despite novel gaps",
+   "quote": "Signal engineering has a hundred years of standards behind it and they were written in blood, most of them. If we build to standard the safety case is sound. I don't lie awake about it.",
+   "full_text": "The standards are good. Signal engineering has a hundred years of standards behind it and they were written in blood, most of them. If we build to standard the safety case is sound. I don't lie awake about it.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Compliant techno-optimism assuming historical standards cover novel automated risks."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Internal origin of value weights without wider deliberation",
+   "quote": "What they don't cover is how the model should trade off a bus against six pedestrians. There's no standard for that. We just — implemented something. The weights came from a workshop. Four of us in a room.",
+   "full_text": "What they don't cover is how the model should trade off a bus against six pedestrians. There's no standard for that. We just — implemented something. The weights came from a workshop. Four of us in a room.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Exclusive decision-making by a small internal team without public or stakeholder involvement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Raising pedestrian minimums based on operational feedback",
+   "quote": "We raised the floor at that junction and then at four others with similar geometry. It wasn't a regulation issue, we just set the floor higher than the regulation requires.",
+   "full_text": "The pedestrian minimum, yes. It came up that the crossing at Alder and Third was clearing people too tight when the adaptive logic was pushing throughput. We raised the floor at that junction and then at four others with similar geometry. It wasn't a regulation issue, we just set the floor higher than the regulation requires.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Substantive modification of signal parameters beyond regulatory requirements in response to feedback."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Reliance on serendipitous observation over systematic monitoring",
+   "quote": "One of our own technicians, on site for something else. Not a complaint, not the monitoring dashboard. A man standing at a junction with a stopwatch because something looked wrong to him. I don't have a system that replaces that and it bothers me.",
+   "full_text": "One of our own technicians, on site for something else. Not a complaint, not the monitoring dashboard. A man standing at a junction with a stopwatch because something looked wrong to him. I don't have a system that replaces that and it bothers me.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Absence of systematic foresight or monitoring dashboards, relying instead on chance discovery."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Critical self-awareness regarding the limitations of internal monitoring systems."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent, a senior traffic signal engineer with 26 years of experience, demonstrates mixed engagement with responsible innovation dimensions. Reflexivity and anticipation are primarily characterized by negative polarities, driven by a reliance on legacy safety standards and a lack of systematic foresight regarding black-box adaptive models (e.g., admitting that trade-offs were decided by 'four of us in a room'). Public engagement is entirely closed, evidenced by internal-only value setting. However, the transcript shows strong positive responsiveness when the team actively modified pedestrian minimums across multiple junctions after discovering issues. Furthermore, a moment of reflexivity emerges through epistemic humility when the respondent acknowledges the inadequacy of their monitoring dashboards compared to serendipitous human observation on site.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P05 — Senior engineer, traffic signal manufacturer\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You've been in signals a long time. How is this project different?\n[Respondent] Twenty-six years. The difference is that the box used to do what the timing plan said, and now the box decides. That sounds dramatic but operationally it's a big change, because when somebody complains about a junction I used to be able to open the plan and show them the numbers. Now the answer is 'the model decided', and I can't show anybody anything.\n[Interviewer] Does that worry you?\n[Respondent] It bothers me more than it worries me, if that distinction makes sense. The standards are good. Signal engineering has a hundred years of standards behind it and they were written in blood, most of them. If we build to standard the safety case is sound. I don't lie awake about it.\n[Interviewer] Do the standards cover adaptive control?\n[Respondent] Partly. They cover the physical layer, the fail-safe behaviour, conflict monitoring — all of that still applies and it's what keeps people alive. What they don't cover is how the model should trade off a bus against six pedestrians. There's no standard for that. We just — implemented something. The weights came from a workshop. Four of us in a room.\n[Interviewer] Has anything been changed since go-live?\n[Respondent] The pedestrian minimum, yes. It came up that the crossing at Alder and Third was clearing people too tight when the adaptive logic was pushing throughput. We raised the floor at that junction and then at four others with similar geometry. It wasn't a regulation issue, we just set the floor higher than the regulation requires.\n[Interviewer] Who noticed it was too tight?\n[Respondent] One of our own technicians, on site for something else. Not a complaint, not the monitoring dashboard. A man standing at a junction with a stopwatch because something looked wrong to him. I don't have a system that replaces that and it bothers me.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "gemini/gemini-3.5-flash-lite",
+  "provenance": {
+   "endpoint": "gemini/gemini-3.5-flash-lite",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "base_url": null,
+   "data_locality": "remote",
+   "num_ctx": null,
+   "max_tokens": 65536,
+   "recorded_at": "2026-09-23T04:32:40",
+   "sdk": "google-genai",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 17.9,
+  "absence": 0
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "respondent": "Procurement manager, city council",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "other",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "the interview transcript does not state"
+ },
+ "segments": [
+  {
+   "segment_id": "S004",
+   "title": "Lessons learned and process improvement",
+   "quote": "One thing. We now copy the top-scoring quality commitments into the deliverables schedule as contract terms.",
+   "full_text": "One thing. We now copy the top-scoring quality commitments into the deliverables schedule as contract terms. It was a two-line change to a template. I've been trying to get it done for six years and this project is what finally carried it, because a councillor asked about it in public.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The respondent demonstrates a capacity to change the innovation trajectory in response to external signals, specifically the councillor's question."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Retrospective evaluation",
+   "quote": "Would you buy this system the same way again?",
+   "full_text": "Would you buy this system the same way again? With the template change, yes. Without it, I'd have said the process was fine and I'd have been wrong, which is worth noting — for six years I'd have told you our process was fine.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent demonstrates a willingness to learn from experience and adapt the procurement process in the future."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The procurement manager's account highlights the limitations of the procurement process, particularly with regards to stakeholder engagement. While the respondent acknowledges the need for process improvement, they do not demonstrate a strong commitment to anticipation, reflexivity, or responsiveness. However, the account does suggest a willingness to learn from experience and adapt the procurement process in the future.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G05 — Procurement manager, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Walk me through how this was bought.\n[Respondent] Open tender, three bidders, evaluated on price at sixty percent and quality at forty. Within the quality forty there was a sustainability and social value section worth eight, and inside that there was a subsection about stakeholder engagement worth about two and a half percent overall. That two and a half percent is the entire weight the process placed on whether anyone would be consulted.\n[Interviewer] Could it have been weighted differently?\n[Respondent] Yes, and I'd have supported it. The obstacle is that everything in the quality score has to be assessable in a way that survives a challenge. Price is easy to defend. 'This bidder's engagement plan is better' is exactly the kind of judgement a losing bidder takes to review, and a review costs us more than the contract's margin. So we weight what we can defend, not what matters most.\n[Interviewer] Is there any mechanism to check what was promised was delivered?\n[Respondent] Contract management, in theory. In practice the contract manager checks the deliverables schedule, and the engagement plan wasn't in the deliverables schedule, it was in the quality submission. Those are different documents and only one of them is monitored. That's a real gap and it exists on most of our contracts, not just this one.\n[Interviewer] Has anything changed as a result of this project?\n[Respondent] One thing. We now copy the top-scoring quality commitments into the deliverables schedule as contract terms. It was a two-line change to a template. I've been trying to get it done for six years and this project is what finally carried it, because a councillor asked about it in public.\n[Interviewer] Would you buy this system the same way again?\n[Respondent] With the template change, yes. Without it, I'd have said the process was fine and I'd have been wrong, which is worth noting — for six years I'd have told you our process was fine.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/llama3:8b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/llama3:8b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "llama3:8b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-23T04:37:26",
+   "quantization_level": "Q4_0",
+   "parameter_size": "8.0B",
+   "family": "llama",
+   "context_length": 8192,
+   "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 24.1,
+  "absence": 3
+ }
+}
