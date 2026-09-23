@@ -142,7 +142,7 @@ Prefer to do it manually:
 ```bash
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run src/app.py
 ```
 
 ---
@@ -172,7 +172,7 @@ point at the replacement.
 ```bash
 ollama serve
 ollama pull llama3.1:8b-instruct-q4_K_M
-streamlit run app.py
+streamlit run src/app.py
 ```
 
 Then choose **Ollama (local)** in the sidebar, set the address to
@@ -268,7 +268,7 @@ hearing title, date, chamber and source URL for every witness, the hand-assigned
 sector, and the three witnesses excluded with the reason for each.
 
 ```bash
-python make_hearing_corpus.py    # re-fetches from govinfo and rebuilds the corpus
+python src/make_hearing_corpus.py    # re-fetches from govinfo and rebuilds the corpus
 ```
 
 **The synthetic interviews** are fictional. Transcripts and reference codings
@@ -280,7 +280,7 @@ expect lower figures on real transcripts. They must not be cited as empirical
 data. Read `demo_data/en/00_ABOUT_THIS_DATA.txt` before using them.
 
 ```bash
-python make_demo_data.py         # rebuilds the .docx files and reference codings
+python src/make_demo_data.py         # rebuilds the .docx files and reference codings
 ```
 
 ### Why twenty-four and not six
@@ -371,16 +371,16 @@ repository. Run them from the project root with the virtual environment active.
 
 | What it produces | Command |
 |---|---|
-| Demonstration corpus and reference codings (Table 6) | `python make_demo_data.py` then `python run_tests.py demo` |
-| Model comparison: segments, codes, κ against the reference codings, wall time (Table 5) | `python bench_models.py --provider ollama --models llama3:8b` |
-| The same for a cloud model | `python bench_models.py --provider gemini --models gemini-3.6-flash --api-key <key>` |
-| Agreement against the reference codings on the 299-unit frame (Section 3) | `python bench_agreement.py bench_out/local_8b/records/llama3_8b/en` |
-| Single-pass against windowed yield (Section 2.4) | `python bench_yield.py --model llama3:8b` |
-| Open coding, one run on the twelve-transcript subset (Table 7) | `python bench_open_coding.py --corpus hearings --model llama3:8b --per-sector 3 --tag 12_run1` |
-| The same with a cloud model | `python bench_open_coding.py --corpus hearings --provider gemini --model gemini-3.5-flash-lite --per-sector 3 --tag 12_run1` |
-| Table 7 itself: median and range over the archived runs, no model needed | `python bench_open_summary.py` |
+| Demonstration corpus and reference codings (Table 7) | `python src/make_demo_data.py` then `python run_tests.py demo` |
+| Model comparison: segments, codes, κ against the reference codings, wall time (Table 6) | `python src/bench_models.py --provider ollama --models llama3:8b` |
+| The same for a cloud model | `python src/bench_models.py --provider gemini --models gemini-3.5-flash-lite --api-key <key>` |
+| Agreement against the reference codings on the 299-unit frame (Section 3) | `python src/bench_agreement.py bench_out/local_8b/records/llama3_8b/en` |
+| Single-pass against windowed yield (Section 2.4) | `python src/bench_yield.py --model llama3:8b` |
+| Open coding, one run on the twelve-transcript subset (Table 8) | `python src/bench_open_coding.py --corpus hearings --model llama3:8b --per-sector 3 --tag 12_run1` |
+| The same with a cloud model | `python src/bench_open_coding.py --corpus hearings --provider gemini --model gemini-3.5-flash-lite --per-sector 3 --tag 12_run1` |
+| Table 8 itself: median and range over the archived runs, no model needed | `python src/bench_open_summary.py` |
 | Figure 2, computed from the shipped context formula | `python paper/make_fig2.py` |
-| Figure 6, the Gioia data structure | `python paper/make_fig6.py` |
+| Figure 6, the three-level data structure | `python paper/make_fig6.py` |
 
 Two caveats about exactness.
 

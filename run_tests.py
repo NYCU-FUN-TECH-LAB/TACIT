@@ -44,7 +44,7 @@ def main(argv):
     env = dict(os.environ)
     # 讓 tests/ 底下的檔案 import 得到根目錄的模組，
     # 同時避免任何殘留的環境設定把測試導向真實的模型服務。
-    env["PYTHONPATH"] = ROOT + os.pathsep + env.get("PYTHONPATH", "")
+    env["PYTHONPATH"] = os.path.join(ROOT, "src") + os.pathsep + env.get("PYTHONPATH", "")
     # 輸出一律 UTF-8。Windows 上把結果導進管道或檔案時，子行程的 stdout
     # 會從主控台的 UTF-8 退回系統地區編碼（cp950），套件結尾印的 ✅／❌
     # 就會 UnicodeEncodeError 當掉，回傳碼非零——於是「全部通過」的套件

@@ -19,7 +19,7 @@ import subprocess
 import sys
 import tempfile
 
-sys.path.insert(0, os.getcwd())
+sys.path.insert(0, os.path.join(os.getcwd(), "src"))
 
 import bench_models as B            # noqa: E402
 import tacit_framework as F         # noqa: E402

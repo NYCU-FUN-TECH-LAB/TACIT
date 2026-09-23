@@ -259,7 +259,7 @@ _CJK = _re.compile(r"[\u3400-\u9fff\u3000-\u303f\uff00-\uffef]")
 
 def _run_launcher(lang, *args):
     env = dict(os.environ, TACIT_LANG=lang, PYTHONIOENCODING="utf-8")
-    r = _sp.run([sys.executable, os.path.join(ROOT, "_launch_common.py"), *args],
+    r = _sp.run([sys.executable, os.path.join(ROOT, "src", "_launch_common.py"), *args],
                 capture_output=True, env=env, cwd=ROOT, timeout=120)
     return (r.stdout + r.stderr).decode("utf-8", "replace")
 

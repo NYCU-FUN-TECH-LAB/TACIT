@@ -35,7 +35,7 @@ import json
 import os
 import sys
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # repository root; sources live in src/
 sys.path.insert(0, ROOT)
 
 import demo_transcripts_en as EN          # noqa: E402

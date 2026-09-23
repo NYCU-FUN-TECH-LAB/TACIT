@@ -23,7 +23,7 @@ import tacit_llm as LLM
 # 測試檔在 tests/，app.py 在專案根目錄。AppTest 把相對路徑解析成
 # 「相對於呼叫它的檔案」，所以這裡一定要給絕對路徑。
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-APP = os.path.join(ROOT, "app.py")
+APP = os.path.join(ROOT, "src", "app.py")
 
 FAIL = []
 

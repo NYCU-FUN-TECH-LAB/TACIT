@@ -33,7 +33,7 @@ import sys
 import tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, ROOT)
+sys.path.insert(0, os.path.join(ROOT, "src"))
 os.chdir(ROOT)
 
 import tacit_framework as F  # noqa: E402

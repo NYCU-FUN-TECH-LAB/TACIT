@@ -24,7 +24,7 @@ import tacit_i18n as I
 import tacit_llm as LLM
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-APP = os.path.join(ROOT, "app.py")
+APP = os.path.join(ROOT, "src", "app.py")
 
 FAIL = []
 

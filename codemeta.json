@@ -7,8 +7,8 @@
   "codeRepository": "https://github.com/NYCU-FUN-TECH-LAB/TACIT",
   "issueTracker": "https://github.com/NYCU-FUN-TECH-LAB/TACIT/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "1.0.0",
-  "softwareVersion": "1.0.0",
+  "version": "1.0.1",
+  "softwareVersion": "1.0.1",
   "programmingLanguage": [
     {
       "@type": "ComputerLanguage",
@@ -167,13 +167,13 @@
     "author": [
       {
         "@type": "Person",
-        "givenName": "Hung-Chi",
-        "familyName": "Chang"
+        "givenName": "Shih-Hsin",
+        "familyName": "Chen"
       },
       {
         "@type": "Person",
-        "givenName": "Shih-Hsin",
-        "familyName": "Chen"
+        "givenName": "Hung-Chi",
+        "familyName": "Chang"
       }
     ],
     "isPartOf": {

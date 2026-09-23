@@ -68,7 +68,7 @@ jobs:
       # 啟動器的前兩步。使用者按下 launch_*.{bat,command,sh} 之後，
       # 第一個執行的就是這兩個子命令；它們壞掉，程式根本打不開。
       - name: 啟動器 · Python 版本檢查
-        run: python _launch_common.py check
+        run: python src/_launch_common.py check
 
       - name: 安裝相依
         run: |
@@ -76,12 +76,12 @@ jobs:
           pip install -r requirements.txt
 
       - name: 啟動器 · 相依齊全檢查
-        run: python _launch_common.py deps
+        run: python src/_launch_common.py deps
 
       - name: 啟動器 · 挑一個可用的埠
         shell: bash
         run: |
-          PORT=$(python _launch_common.py port)
+          PORT=$(python src/_launch_common.py port)
           echo "picked port: $PORT"
           # stdout 必須只有埠號——批次檔直接拿它當變數
           [[ "$PORT" =~ ^[0-9]+$ ]] || { echo "port 子命令污染了 stdout"; exit 1; }
@@ -221,7 +221,7 @@ jobs:
 
       - name: 啟動器不會因為缺選配套件而擋住啟動
         run: |
-          python _launch_common.py deps
+          python src/_launch_common.py deps
           echo "exit code 0 = 缺選配不擋啟動（缺必要才會回傳 1）"
 
       - name: 從零產生示範語料
