@@ -28,6 +28,8 @@ env:
   # UnicodeEncodeError——那跟程式本身無關，純粹是主控台編碼。
   PYTHONUTF8: "1"
   PYTHONIOENCODING: "utf-8"
+  # 原始碼在 src/；內嵌的 python 片段與直接執行的測試檔都要找得到它
+  PYTHONPATH: "src"
 
 jobs:
 
@@ -88,7 +90,7 @@ jobs:
 
       # 論文 §3 明文列出這兩行指令。它們必須能在全新的機器上跑完。
       - name: 從零產生示範語料
-        run: python make_demo_data.py
+        run: python src/make_demo_data.py
 
       - name: 全部測試
         run: python run_tests.py
@@ -225,7 +227,7 @@ jobs:
           echo "exit code 0 = 缺選配不擋啟動（缺必要才會回傳 1）"
 
       - name: 從零產生示範語料
-        run: python make_demo_data.py
+        run: python src/make_demo_data.py
 
       # 沒有 scipy 就算不出卡方——但**不給 p 值**這件事兩種情形完全一樣。
       # 測試套件本身也必須兩種安裝情形都通過，否則論文說 scipy 是選配、
@@ -292,7 +294,7 @@ jobs:
           print("確認：沒有金鑰時回墊底清單並說明原因")
           PY
 
-      - run: python make_demo_data.py
+      - run: python src/make_demo_data.py
       - run: python run_tests.py
 
   # ===================================================================
@@ -320,14 +322,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt coverage
 
-      - run: python make_demo_data.py
+      - run: python src/make_demo_data.py
 
       - name: 逐套件量測
         run: |
           rm -rf .covdata && mkdir -p .covdata
           for f in tests/test_*.py; do
             COVERAGE_FILE=.covdata/.cov python -m coverage run -p \
-              --source=. \
+              --source=src \
               --omit="*/tests/*,*/.venv/*,*/_demo_*,*/demo_transcripts*" \
               "$f" > /dev/null 2>&1 || { echo "套件失敗：$f"; exit 1; }
           done
@@ -337,7 +339,7 @@ jobs:
       - name: 分析引擎不得低於 90%
         run: |
           COVERAGE_FILE=.covdata/.cov python - <<'PY'
-          import coverage, sys
+          import coverage, os, sys
           FLOORS = {
               "tacit_analysis.py": 90,   # 交叉表、共現、假設守門
               "tacit_schema.py":   90,   # 記錄結構、遷移、框架比對
@@ -353,7 +355,7 @@ jobs:
           cov.load()
           bad = []
           for name, floor in sorted(FLOORS.items()):
-              _, stmts, _, missing, _ = cov.analysis2(name)
+              _, stmts, _, missing, _ = cov.analysis2(os.path.join("src", name))
               pct = 100.0 * (len(stmts) - len(missing)) / len(stmts) if stmts else 100.0
               mark = "OK " if pct >= floor else "LOW"
               print(f"  {mark}  {name:22s} {pct:5.1f}%  (floor {floor}%)")
