@@ -7,8 +7,8 @@
   "codeRepository": "https://github.com/NYCU-FUN-TECH-LAB/TACIT",
   "issueTracker": "https://github.com/NYCU-FUN-TECH-LAB/TACIT/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "1.1.0",
-  "softwareVersion": "1.1.0",
+  "version": "1.1.1",
+  "softwareVersion": "1.1.1",
   "programmingLanguage": [
     {
       "@type": "ComputerLanguage",

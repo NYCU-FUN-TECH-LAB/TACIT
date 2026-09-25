@@ -21,7 +21,7 @@ import os
 import shutil
 import sys
 
-__version__ = "1.1.0"
+__version__ = "1.1.1"
 
 PACKAGE_DIR = os.path.dirname(os.path.abspath(__file__))
 if PACKAGE_DIR not in sys.path:

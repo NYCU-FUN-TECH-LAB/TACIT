@@ -2,7 +2,7 @@ cff-version: 1.2.0
 title: "TACIT: theory-anchored qualitative coding with researcher-held interpretive authority"
 message: "If you use this software, please cite it as below."
 type: software
-version: 1.1.0
+version: 1.1.1
 license: MIT
 repository-code: "https://github.com/NYCU-FUN-TECH-LAB/TACIT"
 authors:
