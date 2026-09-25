@@ -282,6 +282,7 @@ print("=" * 70)
 # 不獨立——那是同一個畫面上一邊說可以報、一邊說不該當推論。
 # 獨立性查得出來：表的總數大於受訪者人數。
 F.reset()
+import tacit_analysis as _A                                      # noqa: E402
 if RECS:
     def _chi_view(case):
         return run({"ui_lang": "en", "records": RECS,
@@ -294,13 +295,17 @@ if RECS:
         _ok = [str(x.value) for x in _seg.success if "p = " in str(x.value)]
         _info = [str(x.value) for x in _seg.info if "p = " in str(x.value)]
         ok("段落層級不再亮綠燈說 p 可以報告", not _ok, str(_ok)[:120])
-        ok("段落層級照樣給出 p 值", bool(_info) and "0.0182" in _info[0],
-           str(_info)[:120])
-        ok("並且說出有幾個單位、來自幾位受訪者",
-           bool(_info) and "181" in _info[0] and "24 respondents" in _info[0],
-           str(_info)[:200])
-        ok("並且指向一人一列的那個開關",
-           bool(_info) and "One row per respondent" in _info[0])
+        if _A.HAS_SCIPY:
+            ok("段落層級照樣給出 p 值", bool(_info) and "0.0182" in _info[0],
+               str(_info)[:120])
+            ok("並且說出有幾個單位、來自幾位受訪者",
+               bool(_info) and "181" in _info[0] and "24 respondents" in _info[0],
+               str(_info)[:200])
+            ok("並且指向一人一列的那個開關",
+               bool(_info) and "One row per respondent" in _info[0])
+        else:
+            # scipy 是選配：沒裝就算不出卡方，畫面上不可以出現任何 p 值
+            ok("沒有 scipy 時段落層級不給 p 值", not _info, str(_info)[:120])
 
     _case = _chi_view(True)
     ok("受訪者層級渲染無例外", not _case.exception,
@@ -308,7 +313,12 @@ if RECS:
     if not _case.exception:
         _warn = " ".join(str(x.value) for x in _case.warning)
         _cap = " ".join(str(x.value) for x in _case.caption)
-        ok("受訪者層級的 p 值被扣住", "no p-value is reported" in _warn, _warn[:160])
+        if _A.HAS_SCIPY:
+            ok("受訪者層級的 p 值被扣住", "no p-value is reported" in _warn, _warn[:160])
+        else:
+            _pvals = [str(x.value) for x in list(_case.success) + list(_case.info)
+                      if "p = " in str(x.value)]
+            ok("沒有 scipy 時受訪者層級也不給 p 值", not _pvals, str(_pvals)[:120])
         ok("受訪者層級不再說「一位受訪者貢獻多筆編碼」（那已經不成立）",
            "one respondent contributes several codes" not in _cap)
         ok("改說每人只算一次、觀察獨立",

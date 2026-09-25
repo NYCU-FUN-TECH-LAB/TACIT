@@ -74,32 +74,55 @@ print("測試 2：deps —— 必要與選配的分野")
 print("=" * 70)
 # Gemini SDK 是必要相依：不是每個人都有 Ollama，沒有本機模型的人裝完
 # 就要能用 Gemini。所以它必須在 REQUIRED 裡，缺了要讓啟動器去補裝。
+import importlib.util as _iu                                     # noqa: E402
+
+
+def _installed(mod):
+    try:
+        return _iu.find_spec(mod) is not None
+    except ModuleNotFoundError:                 # 父套件不存在，例如沒有 google
+        return False
+
+
+# 這台機器實際缺的必要套件。CI 有一格刻意只裝舊版 Gemini SDK：那時缺
+# google-genai 是真的，啟動器回 1 並列出缺項才是對的。
+_missing_now = [pkg for mod, pkg in LC.REQUIRED if not _installed(mod)]
 code, out, err = run(LC.cmd_deps)
-eq("相依齊全時回傳 0", code, 0)
+if _missing_now:
+    eq("缺必要套件時回傳 1", code, 1)
+    ok("並且把實際缺的套件列出來", all(p in out for p in _missing_now),
+       f"missing={_missing_now} out={out.strip()[:80]}")
+else:
+    eq("相依齊全時回傳 0", code, 0)
 ok("Gemini SDK 列在必要清單", ("google.genai", "google-genai") in LC.REQUIRED,
    str(LC.REQUIRED))
+
+# 下面各段測的是「選配缺不擋、必要缺才擋」的分支，所以必要清單只留這台
+# 機器上確實裝了的，免得上面那種環境讓每一段都被必要套件擋下。
+_REQ_PRESENT = [r for r in LC.REQUIRED if _installed(r[0])]
 if err:
     ok("選配缺少時的訊息走 stderr（不混進 stdout）", "選配" in err,
        err.strip()[:80])
 
 _saved_req = LC.REQUIRED
 try:
-    LC.REQUIRED = LC.REQUIRED + [("a_module_that_does_not_exist", "ghost-pkg")]
+    LC.REQUIRED = _REQ_PRESENT + [("a_module_that_does_not_exist", "ghost-pkg")]
     code, out, _ = run(LC.cmd_deps)
     eq("缺少必要套件時回傳 1", code, 1)
     ok("並且把缺項印在 stdout 供批次檔安裝", "ghost-pkg" in out, out.strip()[:80])
 finally:
     LC.REQUIRED = _saved_req
 
-_saved_opt = LC.OPTIONAL
+_saved_opt, _saved_req = LC.OPTIONAL, LC.REQUIRED
 try:
     LC.OPTIONAL = [("another_ghost_module", "ghost-optional")]
+    LC.REQUIRED = _REQ_PRESENT
     code, out, err = run(LC.cmd_deps)
     eq("缺少選配套件仍然回傳 0", code, 0)
     ok("選配缺項只提醒，不擋啟動", "ghost-optional" in err, err.strip()[:80])
     ok("選配訊息不會污染 stdout", "ghost-optional" not in out)
 finally:
-    LC.OPTIONAL = _saved_opt
+    LC.OPTIONAL, LC.REQUIRED = _saved_opt, _saved_req
 
 # 沒裝 Gemini SDK 的環境要被判定缺少，而且缺項要印在 stdout，
 # 啟動器才會去跑 pip install -r requirements.txt 補裝。
