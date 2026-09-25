@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tacit-qda"
+version = "1.1.0"
+description = "Auditable, locally deployable LLM-assisted qualitative coding with codebook provenance"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE.txt"]
+authors = [{ name = "Hung-Chi Chang" }]
+keywords = [
+    "qualitative research", "qualitative coding", "thematic analysis",
+    "large language models", "codebook", "inter-rater reliability", "CAQDAS",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Framework :: Streamlit",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Sociology",
+]
+# Same set as requirements.txt, which the platform launchers install.
+dependencies = [
+    "streamlit>=1.31",
+    "python-docx>=1.1",
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "openpyxl>=3.1",
+    "google-genai>=1.0",
+    "plotly>=5.18",
+    "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+zh = ["ckip-transformers"]
+
+[project.urls]
+Homepage = "https://github.com/NYCU-FUN-TECH-LAB/TACIT"
+Documentation = "https://github.com/NYCU-FUN-TECH-LAB/TACIT/blob/main/README.md"
+Archive = "https://doi.org/10.5281/zenodo.22882168"
+
+[project.scripts]
+tacit-qda = "tacit_qda._tacit_cli:main"
+
+# src/ is installed as the package tacit_qda; the shipped frameworks go with it.
+[tool.setuptools]
+package-dir = { "tacit_qda" = "src", "tacit_qda.frameworks" = "frameworks" }
+packages = ["tacit_qda", "tacit_qda.frameworks"]
+
+[tool.setuptools.package-data]
+"tacit_qda.frameworks" = ["*.json"]

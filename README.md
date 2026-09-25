@@ -145,6 +145,31 @@ pip install -r requirements.txt
 streamlit run src/app.py
 ```
 
+### Install from PyPI
+
+TACIT is also published as a Python package:
+
+```bash
+pip install tacit-qda
+tacit-qda
+```
+
+`tacit-qda` starts the interface with the current directory as the workspace:
+frameworks, analyses and lexicons are read from and written there, and the four
+shipped frameworks are copied into `frameworks/` on first use. Arguments after
+the command go to `streamlit run` (for example `tacit-qda --server.port 8600`).
+The demonstration corpora and benchmark scripts are in this repository, not in
+the package. `pip install "tacit-qda[zh]"` adds the Traditional Chinese segmenter.
+
+The engines can also be used from a script:
+
+```python
+import tacit_qda                      # puts the TACIT modules on the import path
+import tacit_framework as F
+F.FRAMEWORK_DIR = tacit_qda.bundled_frameworks_dir()
+F.activate_by_id("ri_stilgoe_2013")
+```
+
 ---
 
 ## Choosing a model provider
