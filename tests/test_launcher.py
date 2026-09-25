@@ -18,7 +18,12 @@ import sys
 import tempfile
 from contextlib import redirect_stdout, redirect_stderr
 
-import _launch_common as LC
+# 啟動器的語言在匯入時依系統介面語言決定。下面測試 1–7 比對的是中文訊息，
+# 所以在匯入前固定成中文，否則在英文系統上（例如 CI）這些比對一定不成立。
+# 英文輸出另有一段測試，以子行程逐一指定 TACIT_LANG。
+os.environ["TACIT_LANG"] = "zh"
+
+import _launch_common as LC                                      # noqa: E402
 
 FAIL = []
 

@@ -50,12 +50,12 @@ jobs:
         # 是 C7 的措辭，不是把這一格刪掉。
         exclude:
           # macos-latest 是 arm64，setup-python 沒有為它提供 3.9。
-          # 這是 runner 的限制，不是程式的限制，所以改用 x86 的 macos-13
-          # 補上這一格，而不是silently 少測一個平台。
+          # 這是 runner 的限制，不是程式的限制，所以用 Intel 的 macos-15-intel
+          # 補上這一格，不少測一個平台。
           - os: macos-latest
             python: "3.9"
         include:
-          - os: macos-13
+          - os: macos-15-intel
             python: "3.9"
 
     steps:
