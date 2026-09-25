@@ -8,7 +8,7 @@ repository-code: "https://github.com/NYCU-FUN-TECH-LAB/TACIT"
 authors:
   - family-names: Chang
     given-names: Hung-Chi
-    affiliation: "Institute of Technology Management, National Yang Ming Chiao Tung University"
+    affiliation: "Institute of Management of Technology, National Yang Ming Chiao Tung University"
     email: "chang.hung-chi.mg11@nycu.edu.tw"
 abstract: >-
   A Streamlit application for theory-driven qualitative coding of interview
