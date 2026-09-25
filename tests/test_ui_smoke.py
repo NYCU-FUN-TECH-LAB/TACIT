@@ -410,6 +410,22 @@ tr_recs = ri_records()
 for r in tr_recs:
     r[S.TRANSCRIPT] = "\n".join(f"【受訪者】{s[S.FULL_TEXT]}"
                                 for s in r[S.SEGMENTS])
+
+
+def uploader_labels(app):
+    """所有上傳欄位的標籤。較舊的 Streamlit（Python 3.9 裝得到的版本）的 AppTest
+    沒有 .file_uploader 這個屬性，就改用各版都有的 get("file_uploader")。"""
+    if hasattr(app, "file_uploader"):
+        return [str(u.label) for u in app.file_uploader]
+    out = []
+    for el in app.get("file_uploader"):
+        lab = getattr(el, "label", None)
+        if lab is None:
+            lab = getattr(getattr(el, "proto", None), "label", "")
+        out.append(str(lab))
+    return out
+
+
 at = run_app({"ui_lang": "zh", "records": tr_recs})
 ok("紀錄自帶逐字稿時無例外", not at.exception,
    str(at.exception[0].value)[:200] if at.exception else "")
@@ -420,8 +436,8 @@ ok("信度頁籤顯示「不需要重新上傳」",
    I.t("ir.transcripts_ready", "zh").split("{")[0] in blob or
    "不需要重新上傳" in blob, blob[:150])
 ok("沒有要求上傳逐字稿的欄位",
-   not any(I.t("ir.upload", "zh") == str(u.label) for u in at.file_uploader),
-   str([str(u.label) for u in at.file_uploader]))
+   I.t("ir.upload", "zh") not in uploader_labels(at),
+   str(uploader_labels(at)))
 
 # 缺逐字稿時（v1 舊檔）才該出現上傳欄位
 mixed = ri_records()
@@ -432,8 +448,8 @@ ok("有缺口時無例外", not at2.exception,
 blob2 = " ".join([str(x.value) for x in at2.warning])
 ok("缺逐字稿時明確說明缺幾份", "缺漏" in blob2, blob2[:150])
 ok("缺逐字稿時才出現上傳欄位",
-   any(I.t("ir.upload", "zh") == str(u.label) for u in at2.file_uploader),
-   str([str(u.label) for u in at2.file_uploader]))
+   I.t("ir.upload", "zh") in uploader_labels(at2),
+   str(uploader_labels(at2)))
 
 # 內含的逐字稿優先於上傳的：兩者衝突時必須採用 AI 實際編碼過的那一份
 at3 = run_app({"ui_lang": "zh", "records": tr_recs,

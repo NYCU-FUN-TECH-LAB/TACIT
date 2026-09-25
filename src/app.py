@@ -764,10 +764,13 @@ with st.sidebar:
                         return p
         return _prov_default
 
-    _prov_cur = _provider_from_state(st.session_state.get("llm_provider"))
+    # 先把狀態寫回合法的識別碼，再畫選單。選單的值因此只由 session_state
+    # 決定（不再另給 index），各版 Streamlit 看到的都是同一個合法值；
+    # 較舊的版本不會自己把不在選項裡的狀態值換掉。
+    st.session_state["llm_provider"] = _provider_from_state(
+        st.session_state.get("llm_provider"))
     provider = st.selectbox(
         t("llm.provider"), LLM.PROVIDERS,
-        index=LLM.PROVIDERS.index(_prov_cur),
         format_func=_provider_label,
         help=t("llm.provider_help"), key="llm_provider")
     # 不論 widget 回傳什麼，往下走的一律是識別碼
