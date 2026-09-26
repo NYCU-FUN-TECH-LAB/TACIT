@@ -1,0 +1,71 @@
+{
+  "generated": "2026-09-26T21:19:26",
+  "framework": "ri_stilgoe_2013",
+  "results": [
+    {
+      "model": "qwen2.5:7b",
+      "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+      "provenance": {
+        "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+        "provider": "ollama",
+        "model": "qwen2.5:7b",
+        "base_url": "http://localhost:11434",
+        "data_locality": "local",
+        "num_ctx": 32768,
+        "max_tokens": 8192,
+        "recorded_at": "2026-09-26T21:03:29",
+        "quantization_level": "Q4_K_M",
+        "parameter_size": "7.6B",
+        "family": "qwen2",
+        "context_length": 32768,
+        "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "temperature": 0.2,
+        "window_chars": 3000,
+        "overlap_chars": 300
+      },
+      "framework": "ri_stilgoe_2013",
+      "at": "2026-09-26T21:03:34",
+      "contract": {
+        "compliance": 1.0,
+        "verdict": "ok",
+        "answered": 6,
+        "asked": 6,
+        "valid_json": true,
+        "non_conforming": [],
+        "error": "",
+        "seconds": 4.4
+      },
+      "coding": {
+        "en": {
+          "transcripts": 24,
+          "completed": 24,
+          "resumed": 0,
+          "stopped_on_quota": null,
+          "chunk_errors": 0,
+          "failed": 0,
+          "segments": 110,
+          "codes": 117,
+          "chars": 53075,
+          "per_10k": 20.73,
+          "verbatim_rate": 0.918,
+          "absence_codes": 2,
+          "degenerate_titles": 4,
+          "window_chars": 3000,
+          "overlap_chars": 300,
+          "minutes": 13.8
+        }
+      },
+      "themes": {
+        "first_order": 110,
+        "themes": 9,
+        "unassigned": 0,
+        "dimensions_covered": 4,
+        "dimensions_total": 4,
+        "empty_dimensions": [],
+        "unrecognised_dimensions": [],
+        "note_written": false,
+        "minutes": 1.4
+      }
+    }
+  ]
+}

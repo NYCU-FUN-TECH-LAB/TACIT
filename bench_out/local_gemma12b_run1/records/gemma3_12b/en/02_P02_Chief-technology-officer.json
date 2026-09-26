@@ -1,0 +1,112 @@
+{
+ "respondent": "Chief technology officer",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript states respondent is Chief Technology Officer of an AI perception startup."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Detailed Modeling of Potential Failure Modes",
+   "quote": "We model failure modes in a lot of detail — occlusion, low light, unusual gaits, people pushing strollers, cyclists dismounting.",
+   "full_text": "We model failure modes in a lot of detail — occlusion, low light, unusual gaits, people pushing strollers, cyclists dismounting. We built a whole synthetic test set for edge cases because the real data didn't have enough of them. If a detector misses a person in a wheelchair at dusk, that is a catastrophic failure for us, commercially and otherwise.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Speaker explicitly considers potential failure modes and builds a synthetic test set to address edge cases, demonstrating foresight."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Limited Capacity for Long-Term Urban Effects Assessment",
+   "quote": "Ten-year urban effects is a question for someone with tenure. I don't say that dismissively, it's genuinely a different job from mine and I'm not equipped for it.",
+   "full_text": "[Interviewer] Beyond detection accuracy — did you look at longer-term effects? How the system might change the street over five or ten years?\n[Respondent] Honestly, no. We're a thirty-person company. Our runway is eighteen months. Ten-year urban effects is a question for someone with tenure. I don't say that dismissively, it's genuinely a different job from mine and I'm not equipped for it.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Respondent explicitly states a lack of consideration for long-term urban effects due to limited resources and expertise, indicating a short-term focus."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Acknowledges limitations in expertise and scope of responsibility, demonstrating a degree of epistemic humility."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Lack of External Scrutiny of Performance Disparities",
+   "quote": "We flagged it, we put it in the report, and then — nobody asked about it, and we moved on.",
+   "full_text": "The city gave us a target and we beat it. Ninety-eight point five on detection, we shipped at ninety-nine point one. Where it gets uncomfortable is that the aggregate number hides the distribution. Our worst subgroup was people using mobility aids, and that number was materially lower. We flagged it, we put it in the report, and then — nobody asked about it, and we moved on.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Identifies a performance disparity (mobility aids) but it was not followed up on, indicating a lack of responsiveness to feedback."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Absence of Direct Engagement with Affected Communities",
+   "quote": "we never met any of the people the system was hardest for.",
+   "full_text": "No. We had the city's requirements document and we built to it. In retrospect that's a strange way to build something that has to detect people, isn't it — we never met any of the people the system was hardest for.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Explicit statement of a lack of direct engagement with the people most affected by the system, indicating a closed and exclusive approach."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Contractual Constraints on User Research",
+   "quote": "If I'd priced in a user research programme we wouldn't have won, and then you'd be interviewing whoever did.",
+   "full_text": "Someone would have had to put it in the contract and pay for it. I know how that sounds. But we bid against two other firms on price. If I'd priced in a user research programme we wouldn't have won, and then you'd be interviewing whoever did.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Highlights how contractual and competitive pressures prevented the incorporation of user research, demonstrating a lack of responsiveness to potential needs."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent, a Chief Technology Officer at an AI perception startup, demonstrates a focus on immediate technical performance and commercial viability, often at the expense of broader societal considerations. While exhibiting some degree of reflexivity in acknowledging limitations, the account reveals a significant lack of anticipation regarding long-term urban effects and a concerning absence of public engagement, particularly with vulnerable populations. The respondent's responses consistently highlight how contractual constraints and competitive pressures prioritized price over responsible innovation, resulting in a system that performed poorly for specific subgroups and lacked external scrutiny. The negative polarity codes for anticipation and engagement are particularly prominent, suggesting a need for greater foresight and stakeholder involvement in future projects.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P02 — Chief technology officer, AI perception startup\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Your company supplied the detection models. How do you think about what could go wrong with them?\n[Respondent] Constantly. That's most of my job. We model failure modes in a lot of detail — occlusion, low light, unusual gaits, people pushing strollers, cyclists dismounting. We built a whole synthetic test set for edge cases because the real data didn't have enough of them. If a detector misses a person in a wheelchair at dusk, that is a catastrophic failure for us, commercially and otherwise.\n[Interviewer] Beyond detection accuracy — did you look at longer-term effects? How the system might change the street over five or ten years?\n[Respondent] Honestly, no. We're a thirty-person company. Our runway is eighteen months. Ten-year urban effects is a question for someone with tenure. I don't say that dismissively, it's genuinely a different job from mine and I'm not equipped for it.\n[Interviewer] Was there anyone in the consortium who did hold that question?\n[Respondent] Not that I saw. There was a university partner on the original bid but they dropped out over funding. After that it was three vendors and the city. Everyone in the room was optimising their own deliverable.\n[Interviewer] How did you decide what counted as acceptable performance?\n[Respondent] The city gave us a target and we beat it. Ninety-eight point five on detection, we shipped at ninety-nine point one. Where it gets uncomfortable is that the aggregate number hides the distribution. Our worst subgroup was people using mobility aids, and that number was materially lower. We flagged it, we put it in the report, and then — nobody asked about it, and we moved on. In hindsight flagging it in an appendix isn't the same as raising it.\n[Interviewer] Did you speak to any disability organisations directly?\n[Respondent] No. We had the city's requirements document and we built to it. In retrospect that's a strange way to build something that has to detect people, isn't it — we never met any of the people the system was hardest for.\n[Interviewer] What would have had to be different for that to happen?\n[Respondent] Someone would have had to put it in the contract and pay for it. I know how that sounds. But we bid against two other firms on price. If I'd priced in a user research programme we wouldn't have won, and then you'd be interviewing whoever did.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T21:31:35",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 265.1,
+  "absence": 0
+ }
+}

@@ -1,0 +1,125 @@
+{
+ "respondent": "Senior engineer",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "rnd_staff",
+  "sector": "ict_ai",
+  "experience": "over_20y",
+  "descriptor_basis": "Interview transcript: 'You've been in signals a long time.'"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Operational shift from plan-driven to model-driven control",
+   "quote": "The difference is that the box used to do what the timing plan said, and now the box decides.",
+   "full_text": "The difference is that the box used to do what the timing plan said, and now the box decides. That sounds dramatic but operationally it’s a big change, because when somebody complains about a junction I used to be able to open the plan and show them the numbers. Now the answer is 'the model decided', and I can't show anybody anything.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Implies a deterministic view of past signal operation, contrasting with the current model-driven approach; lacks exploration of future scenarios."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reliance on established standards and a history of safety",
+   "quote": "Signal engineering has a hundred years of standards behind it and they were written in blood, most of them.",
+   "full_text": "The standards are good. Signal engineering has a hundred years of standards behind it and they were written in blood, most of them. If we build to standard the safety case is sound. I don’t lie awake about it.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Expresses confidence in existing standards, suggesting a lack of critical reflection on their underlying assumptions or potential limitations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Gap in standards for ethical trade-offs",
+   "quote": "What they don't cover is how the model should trade off a bus against six pedestrians. There's no standard for that.",
+   "full_text": "They cover the physical layer, the fail-safe behaviour, conflict monitoring — all of that still applies and it’s what keeps people alive. What they don't cover is how the model should trade off a bus against six pedestrians. There’s no standard for that. We just — implemented something.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Highlights a lack of foresight in developing standards for complex ethical decisions made by the adaptive system; reactive rather than proactive."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Model weights determined by a small workshop",
+   "quote": "The weights came from a workshop. Four of us in a room.",
+   "full_text": "The weights came from a workshop. Four of us in a room.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Indicates a limited and potentially exclusive engagement process in determining crucial model parameters; lacks broader stakeholder input."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Responding to observed pedestrian crossing tightness",
+   "quote": "The pedestrian minimum, yes. It came up that the crossing at Alder and Third was clearing people too tight when the adaptive logic was pushing throughput.",
+   "full_text": "The pedestrian minimum, yes. It came up that the crossing at Alder and Third was clearing people too tight when the adaptive logic was pushing throughput. We raised the floor at that junction and then at four others with similar geometry. It wasn’t a regulation issue, we just set the floor higher than the regulation requires.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Demonstrates a capacity to modify the system based on observed issues, albeit a reactive rather than proactive response."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Technician's observation replaces systematic monitoring",
+   "quote": "One of our own technicians, on site for something else. Not a complaint, not the monitoring dashboard. A man standing at a junction with a stopwatch because something looked wrong to him.",
+   "full_text": "One of our own technicians, on site for something else. Not a complaint, not the monitoring dashboard. A man standing at a junction with a stopwatch because something looked wrong to him. I don’t have a system that replaces that and it bothers me.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Expresses concern about the reliance on human observation over systematic monitoring, suggesting a degree of self-awareness about the limitations of current systems."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Implies a lack of a systematic mechanism for responding to issues, relying instead on individual observation."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent demonstrates a complex perspective on the shift to adaptive traffic signal control. While acknowledging the operational benefits, they express concerns about the lack of transparency and accountability when decisions are driven by a model rather than a pre-defined plan. A key theme is the reliance on established standards, which, while providing a foundation for safety, lack guidance for navigating complex ethical trade-offs. The respondent highlights a reactive approach to problem-solving, demonstrated by adjustments made in response to technician observations, and expresses a degree of discomfort with the current reliance on individual judgment over systematic monitoring. The engagement process appears limited, with crucial model parameters determined by a small workshop. Overall, the respondent's account reveals a tension between the comfort of established practices and the uncertainties of a more autonomous system, suggesting a need for greater foresight, broader engagement, and more robust mechanisms for ethical decision-making.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P05 — Senior engineer, traffic signal manufacturer\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You've been in signals a long time. How is this project different?\n[Respondent] Twenty-six years. The difference is that the box used to do what the timing plan said, and now the box decides. That sounds dramatic but operationally it's a big change, because when somebody complains about a junction I used to be able to open the plan and show them the numbers. Now the answer is 'the model decided', and I can't show anybody anything.\n[Interviewer] Does that worry you?\n[Respondent] It bothers me more than it worries me, if that distinction makes sense. The standards are good. Signal engineering has a hundred years of standards behind it and they were written in blood, most of them. If we build to standard the safety case is sound. I don't lie awake about it.\n[Interviewer] Do the standards cover adaptive control?\n[Respondent] Partly. They cover the physical layer, the fail-safe behaviour, conflict monitoring — all of that still applies and it's what keeps people alive. What they don't cover is how the model should trade off a bus against six pedestrians. There's no standard for that. We just — implemented something. The weights came from a workshop. Four of us in a room.\n[Interviewer] Has anything been changed since go-live?\n[Respondent] The pedestrian minimum, yes. It came up that the crossing at Alder and Third was clearing people too tight when the adaptive logic was pushing throughput. We raised the floor at that junction and then at four others with similar geometry. It wasn't a regulation issue, we just set the floor higher than the regulation requires.\n[Interviewer] Who noticed it was too tight?\n[Respondent] One of our own technicians, on site for something else. Not a complaint, not the monitoring dashboard. A man standing at a junction with a stopwatch because something looked wrong to him. I don't have a system that replaces that and it bothers me.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T23:48:07",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 250.2,
+  "absence": 0
+ }
+}

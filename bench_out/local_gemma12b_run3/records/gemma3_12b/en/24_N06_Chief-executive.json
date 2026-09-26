@@ -1,0 +1,99 @@
+{
+ "respondent": "Chief executive, local community foundation",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript: 'Chief executive, local community foundation'"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Foundation unaware of partnership role",
+   "quote": "I found out we were a community partner when I read it in the bid summary after the award. Somebody had listed us. Nobody had asked us.",
+   "full_text": "Being named. I mean that literally — I found out we were a community partner when I read it in the bid summary after the award. Somebody had listed us. Nobody had asked us.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The foundation was included without consultation, demonstrating a closed and exclusive approach to engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Lack of mechanism to rectify inclusion",
+   "quote": "But the version with our name in it is the one that won the contract, and there's no mechanism to unwind that.",
+   "full_text": "But the version with our name in it is the one that won the contract, and there's no mechanism to unwind that.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The absence of a process to correct the erroneous inclusion demonstrates a lack of responsiveness to the foundation’s concerns."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Reference group's lack of structure",
+   "quote": "Without those two things a reference group is a mailing list with sandwiches.",
+   "full_text": "Possibly, with two changes. Somebody senior in the room, and a written response to whatever it produced within a fixed period. Without those two things a reference group is a mailing list with sandwiches. I've sat on eleven of them in this job and three worked, and all three had those two features.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent characterizes the reference group as performative and lacking genuine engagement due to its structural deficiencies."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Concern about legitimizing ineffective consultation",
+   "quote": "If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve.",
+   "full_text": "My concern is that our attendance is what makes the process look legitimate. If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve. Declining is also a bad option. There isn’t a good one.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent demonstrates awareness of how their participation could be used to create a false impression of community engagement, showing a degree of self-reflection."
+    },
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Highlights the risk of 'participation washing' where presence is used to mask a lack of genuine engagement."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent's account reveals a significant lack of responsible engagement and responsiveness in the project's implementation. The foundation's inclusion as a community partner without consultation, the absence of a mechanism to rectify this error, and the superficial nature of the subsequent reference group all point to a performative approach to community involvement. The respondent’s reflexive consideration of their role – recognizing that their participation could legitimize a flawed process – underscores the ethical complexities of engagement and the potential for tokenism. The overall impression is one of a system that prioritizes appearances over genuine collaboration and accountability, leaving the respondent in a difficult position with few viable options.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N06 — Chief executive, local community foundation\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Your foundation was named as a community partner. What did that involve?\n[Respondent] Being named. I mean that literally — I found out we were a community partner when I read it in the bid summary after the award. Somebody had listed us. Nobody had asked us. We'd had one phone call eighteen months earlier about something adjacent.\n[Interviewer] Did you object?\n[Respondent] I wrote and asked to be removed, and we were, from the next version. But the version with our name in it is the one that won the contract, and there's no mechanism to unwind that. The bid was evaluated partly on community partnership that didn't exist.\n[Interviewer] Has anything happened since?\n[Respondent] We were invited to a launch event, which I didn't attend, and to a 'community reference group' which met twice and then stopped. I don't know that it was cancelled. It simply stopped being scheduled. Nobody wrote to say it had ended.\n[Interviewer] Do you think the reference group could have worked?\n[Respondent] Possibly, with two changes. Somebody senior in the room, and a written response to whatever it produced within a fixed period. Without those two things a reference group is a mailing list with sandwiches. I've sat on eleven of them in this job and three worked, and all three had those two features.\n[Interviewer] Would you take part in the next one?\n[Respondent] Probably not, and I've thought about whether that's the right call. My concern is that our attendance is what makes the process look legitimate. If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve. Declining is also a bad option. There isn't a good one.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-27T03:06:30",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 194.4,
+  "absence": 0
+ }
+}

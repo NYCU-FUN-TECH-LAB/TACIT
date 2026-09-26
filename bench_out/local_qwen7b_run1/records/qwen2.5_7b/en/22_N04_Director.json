@@ -1,0 +1,120 @@
+{
+ "respondent": "Director, older people's community service",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "middle_management",
+  "sector": "other",
+  "experience": "11_20y",
+  "descriptor_basis": "unspecified"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Identifying a problem",
+   "quote": "We run a day centre and we started seeing people arrive flustered, or not arrive.",
+   "full_text": "In cancelled appointments, mostly. We run a day centre and we started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Describing the problem without involving users or stakeholders in the solution."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reporting the issue",
+   "quote": "I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates.",
+   "full_text": "I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Reporting the issue without seeking further input or feedback from the transport department."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Seeking a response",
+   "quote": "I need to know the problem I described has been understood.",
+   "full_text": "I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification. I don't need them to fix it in a fortnight. I need to know the problem I described has been understood.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Expressing a need for understanding without receiving a substantive response."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Engaging with a local representative",
+   "quote": "Our councillor. She raised it and something moved — the crossing minimum at Alder went up.",
+   "full_text": "Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Engaging with a local representative to address the issue."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Acknowledging limitations",
+   "quote": "I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "full_text": "Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Acknowledging the need for a different approach due to the reliance on a local representative."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Reflecting on the process",
+   "quote": "'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+   "full_text": "What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Expressing dissatisfaction with the lack of transparency and understanding."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent demonstrates engagement in addressing the issue of unpredictable traffic signals, but this engagement is limited to reporting the problem and seeking a local representative's help. The engagement is not two-way or inclusive, as evidenced by the lack of interaction with the transport department. The respondent also shows a degree of reflexivity, acknowledging the limitations of the current approach and the need for a different method. However, the overall process lacks transparency and understanding, as seen in the respondent's frustration with the long response time and the inability to provide clear explanations to affected users.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N04 — Director, older people's community service\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does this show up in your work?\n[Respondent] In cancelled appointments, mostly. We run a day centre and we started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.\n[Interviewer] Did you report it?\n[Respondent] I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.\n[Interviewer] What would have been a useful reply?\n[Respondent] Anything that engaged with unpredictability. 'We measure accuracy, we don't measure consistency, we'll look at whether we can.' That would have been a good answer and it costs nothing to write. I don't need them to fix it in a fortnight. I need to know the problem I described has been understood.\n[Interviewer] Have you found any other route?\n[Respondent] Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.\n[Interviewer] Do the people who use your centre know any of this happened?\n[Respondent] Some do. I told the ones who'd told me, because that seemed like the least I could do. What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T20:44:24",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 32.3,
+  "absence": 0
+ }
+}

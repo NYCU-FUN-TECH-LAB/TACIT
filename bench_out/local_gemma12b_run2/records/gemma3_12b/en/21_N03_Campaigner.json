@@ -1,0 +1,112 @@
+{
+ "respondent": "Campaigner",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "unspecified",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "The interview transcript does not state it."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Concern about future misuse of pedestrian counting cameras",
+   "quote": "Function creep, mainly. A camera installed to count pedestrians is a camera. The counting is a software decision and software decisions get revisited.",
+   "full_text": "Function creep, mainly. A camera installed to count pedestrians is a camera. The counting is a software decision and software decisions get revisited. Our position isn't that anyone here intends to do anything else with it — I've met these officers, they don't — it's that intent isn't a control. The people who make the decision in 2031 haven't been hired yet.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Acknowledges the possibility of future, unintended uses of the technology, highlighting uncertainty about future decisions."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Advocating for technical controls and transparency",
+   "quote": "A purpose limitation clause in the contract with a technical control behind it — not just 'we won't', but a configuration the vendor cannot change without a council resolution. And an annual public statement of every purpose the data has been used for, including refused requests.",
+   "full_text": "A purpose limitation clause in the contract with a technical control behind it — not just 'we won't', but a configuration the vendor cannot change without a council resolution. And an annual public statement of every purpose the data has been used for, including refused requests. Both are ordinary in other sectors.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Proposes concrete, technical changes to the system and processes to ensure accountability and adaptability."
+    },
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Advocates for public transparency and accountability mechanisms, suggesting a desire for broader stakeholder involvement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Frustration with evasive responses",
+   "quote": "We got a two-page letter which restated the existing data protection position and did not address either request. I want to be precise: it wasn't a refusal. Nobody said no. The letter simply answered a different question.",
+   "full_text": "We got a two-page letter which restated the existing data protection position and did not address either request. I want to be precise: it wasn't a refusal. Nobody said no. The letter simply answered a different question. That's the most common response we get and it's the hardest to escalate, because on paper we were answered.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Expresses frustration with the lack of genuine engagement and the use of procedural compliance to avoid substantive discussion."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Value of collaborative engagement with diverse groups",
+   "quote": "We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides. We learned more in two hours than in a year of correspondence, and the disability group's point about slower pedestrians is now in everything we write, which it wasn't before.",
+   "full_text": "We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides. We learned more in two hours than in a year of correspondence, and the disability group's point about slower pedestrians is now in everything we write, which it wasn't before.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Highlights the value of direct, collaborative engagement with diverse stakeholders, emphasizing two-way dialogue and co-creation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Recognizing the limitations of campaign oversight",
+   "quote": "That's the part campaigners get wrong: we ask for oversight and then assume we're the oversight.",
+   "full_text": "A published purpose register that somebody outside the council updates. Not us — we're not neutral and we shouldn't be trusted with it either. That's the part campaigners get wrong: we ask for oversight and then assume we're the oversight.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Demonstrates self-awareness regarding the potential biases and limitations of campaign groups in providing oversight."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent, a campaigner from a digital rights organization, primarily demonstrates a concern for the potential for future misuse of technology, particularly through function creep. This concern manifests in advocating for technical controls, transparency, and accountability mechanisms. The respondent’s experience highlights the value of collaborative engagement with diverse stakeholders, recognizing the limitations of campaign groups in providing oversight. A key theme is frustration with bureaucratic responses that avoid substantive engagement, suggesting a need for greater responsiveness and reflexivity within the council. The respondent’s approach emphasizes anticipation of future risks and a commitment to inclusive, participatory governance, rather than relying on campaign groups to act as oversight bodies.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N03 — Campaigner, digital rights organisation\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | What's your organisation's interest here?\nRespondent | Function creep, mainly. A camera installed to count pedestrians is a camera. The counting is a software decision and software decisions get revisited. Our position isn't that anyone here intends to do anything else with it — I've met these officers, they don't — it's that intent isn't a control. The people who make the decision in 2031 haven't been hired yet.\nInterviewer | What have you asked for?\nRespondent | A purpose limitation clause in the contract with a technical control behind it — not just 'we won't', but a configuration the vendor cannot change without a council resolution. And an annual public statement of every purpose the data has been used for, including refused requests. Both are ordinary in other sectors.\nInterviewer | What response did you get?\nRespondent | We got a two-page letter which restated the existing data protection position and did not address either request. I want to be precise: it wasn't a refusal. Nobody said no. The letter simply answered a different question. That's the most common response we get and it's the hardest to escalate, because on paper we were answered.\nInterviewer | Have you worked with other groups on this?\nRespondent | Yes, and that's been the more productive part. We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides. We learned more in two hours than in a year of correspondence, and the disability group's point about slower pedestrians is now in everything we write, which it wasn't before.\nInterviewer | What would count as success?\nRespondent | A published purpose register that somebody outside the council updates. Not us — we're not neutral and we shouldn't be trusted with it either. That's the part campaigners get wrong: we ask for oversight and then assume we're the oversight.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-27T00:57:35",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 264.7,
+  "absence": 0
+ }
+}

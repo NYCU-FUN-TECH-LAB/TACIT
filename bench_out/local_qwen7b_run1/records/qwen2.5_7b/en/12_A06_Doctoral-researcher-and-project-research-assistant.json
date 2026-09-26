@@ -1,0 +1,107 @@
+{
+ "respondent": "Respondent",
+ "descriptors": {
+  "institution_type": "research_institute",
+  "role_level": "researcher",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "unstated in the transcript"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Engagement - N: Downstream notification",
+   "quote": "I've counted. Four times now.",
+   "full_text": "Interviewer: What's your role on the project? Respondent: Officially I do the fieldwork. Unofficially I'm the person who sits in the community meetings and then writes the paragraph that gets cut from the report. I've counted. Four times now. Interviewer: On what grounds is it cut? Respondent: Length, usually. Sometimes 'this belongs in the appendix'. Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent describes instances where their contributions are cut from the report, indicating a one-way communication process without genuine interaction or feedback from the community."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Engagement - N: Deficit-model communication",
+   "quote": "I've counted. Four times now.",
+   "full_text": "Interviewer: What's your role on the project? Respondent: Officially I do the fieldwork. Unofficially I'm the person who sits in the community meetings and then writes the paragraph that gets cut from the report. I've counted. Four times now. Interviewer: On what grounds is it cut? Respondent: Length, usually. Sometimes 'this belongs in the appendix'. Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent's contributions are cut for reasons of length or being placed in the appendix, suggesting a deficit-model approach where the community's needs are not considered."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Reflexivity - N: We-know-best framing",
+   "quote": "Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.",
+   "full_text": "Interviewer: What's your role on the project? Respondent: Officially I do the fieldwork. Unofficially I'm the person who sits in the community meetings and then writes the paragraph that gets cut from the report. I've counted. Four times now. Interviewer: On what grounds is it cut? Respondent: Length, usually. Sometimes 'this belongs in the appendix'. Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "The respondent reflects on the decision to cut their contributions, indicating a 'we-know-best' approach where the community's perspective is not valued."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Anticipation - P: Scenario planning",
+   "quote": "How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all.",
+   "full_text": "Interviewer: Did anything surprise you? Respondent: How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all. Which reframes the whole consultation question, doesn't it — you can't consult people about a thing they don't know exists, and the consultation was advertised in the places you'd look if you already knew.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent reflects on the unexpected lack of awareness, suggesting a scenario planning approach to anticipate the impact of the system on the community."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Responsiveness - N: Obdurate",
+   "quote": "I know how that sounds. I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+   "full_text": "Interviewer: What will you do with the material that gets cut? Respondent: Put it in the thesis, where four people will read it. I know how that sounds. I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent is considering but not yet taking action to share their findings with the community, indicating a reluctance to change the trajectory of the project."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits a strong focus on anticipation, particularly in reflecting on the scenario of community awareness. However, the engagement, reflexivity, and responsiveness dimensions are weak, with evidence of a one-way communication process, a 'we-know-best' approach, and a reluctance to change the project trajectory despite internal reflection. The anticipation dimension is well-represented, while the other dimensions are largely absent or weakly represented in the interview transcript.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A06 — Doctoral researcher and project research assistant\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What's your role on the project?\n[Respondent] Officially I do the fieldwork. Unofficially I'm the person who sits in the community meetings and then writes the paragraph that gets cut from the report. I've counted. Four times now.\n[Interviewer] On what grounds is it cut?\n[Respondent] Length, usually. Sometimes 'this belongs in the appendix'. Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.\n[Interviewer] Tell me about the fieldwork itself.\n[Respondent] Sixty-one street intercepts and nine longer interviews, over four months, at eight junctions chosen to vary by ward income and footfall. I did evenings and weekends as well because the daytime sample was retired people and parents, which is a real population but not the whole one.\n[Interviewer] Did anything surprise you?\n[Respondent] How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all. Which reframes the whole consultation question, doesn't it — you can't consult people about a thing they don't know exists, and the consultation was advertised in the places you'd look if you already knew.\n[Interviewer] What will you do with the material that gets cut?\n[Respondent] Put it in the thesis, where four people will read it. I know how that sounds. I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T20:39:08",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 37.9,
+  "absence": 0
+ }
+}

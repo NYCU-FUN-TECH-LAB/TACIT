@@ -1,0 +1,94 @@
+{
+ "respondent": "Respondent",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "policy_maker",
+  "sector": "ict_ai",
+  "experience": "over_20y",
+  "descriptor_basis": "unspecified"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Anticipation - P",
+   "quote": "The people who make the decision in 2031 haven't been hired yet.",
+   "full_text": "Interviewer | What's your organisation's interest here? Respondent | Function creep, mainly. A camera installed to count pedestrians is a camera. The counting is a software decision and software decisions get revisited. Our position isn't that anyone here intends to do anything else with it — I've met these officers, they don't — it's that intent isn't a control. The people who make the decision in 2031 haven't been hired yet.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Exploring future scenarios and acknowledging uncertainty."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reflexivity - N",
+   "quote": "We're not neutral and we shouldn't be trusted with it either.",
+   "full_text": "Interviewer | What would count as success? Respondent | A published purpose register that somebody outside the council updates. Not us — we're not neutral and we shouldn't be trusted with it either. That's the part campaigners get wrong: we ask for oversight and then assume we're the oversight.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Techno-optimism and a lack of epistemic humility."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Engagement - P",
+   "quote": "We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides. We learned more in two hours than in a year of correspondence, and the disability group's point about slower pedestrians is now in everything we write, which it wasn't before.",
+   "full_text": "Interviewer | Have you worked with other groups on this? Respondent | Yes, and that's been the more productive part. We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides. We learned more in two hours than in a year of correspondence, and the disability group's point about slower pedestrians is now in everything we write, which it wasn't before.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Upstream participation and co-creation with external actors."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Responsiveness - N",
+   "quote": "We got a two-page letter which restated the existing data protection position and did not address either request. I want to be precise: it wasn't a refusal. Nobody said no. The letter simply answered a different question. That's the most common response we get and it's the hardest to escalate, because on paper we were answered.",
+   "full_text": "Interviewer | What response did you get? Respondent | We got a two-page letter which restated the existing data protection position and did not address either request. I want to be precise: it wasn't a refusal. Nobody said no. The letter simply answered a different question. That's the most common response we get and it's the hardest to escalate, because on paper we were answered.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Obdurate and a refusal to change course."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent strongly exhibits anticipation, particularly in considering future scenarios and acknowledging uncertainty. However, there is a lack of epistemic humility, as evidenced by the statement that the organisation is not neutral and should not be trusted with oversight. Engagement is evident through the joint sessions with other organisations, which proved more productive than ongoing correspondence. Responsiveness is weak, as the organisation's response to requests was merely restating existing positions without addressing the specific requests, indicating an obdurate stance.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N03 — Campaigner, digital rights organisation\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | What's your organisation's interest here?\nRespondent | Function creep, mainly. A camera installed to count pedestrians is a camera. The counting is a software decision and software decisions get revisited. Our position isn't that anyone here intends to do anything else with it — I've met these officers, they don't — it's that intent isn't a control. The people who make the decision in 2031 haven't been hired yet.\nInterviewer | What have you asked for?\nRespondent | A purpose limitation clause in the contract with a technical control behind it — not just 'we won't', but a configuration the vendor cannot change without a council resolution. And an annual public statement of every purpose the data has been used for, including refused requests. Both are ordinary in other sectors.\nInterviewer | What response did you get?\nRespondent | We got a two-page letter which restated the existing data protection position and did not address either request. I want to be precise: it wasn't a refusal. Nobody said no. The letter simply answered a different question. That's the most common response we get and it's the hardest to escalate, because on paper we were answered.\nInterviewer | Have you worked with other groups on this?\nRespondent | Yes, and that's been the more productive part. We ran a joint session with the disability organisation and the residents' association — about forty people, in a community hall, no slides. We learned more in two hours than in a year of correspondence, and the disability group's point about slower pedestrians is now in everything we write, which it wasn't before.\nInterviewer | What would count as success?\nRespondent | A published purpose register that somebody outside the council updates. Not us — we're not neutral and we shouldn't be trusted with it either. That's the part campaigners get wrong: we ask for oversight and then assume we're the oversight.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T21:00:45",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 27.9,
+  "absence": 0
+ }
+}

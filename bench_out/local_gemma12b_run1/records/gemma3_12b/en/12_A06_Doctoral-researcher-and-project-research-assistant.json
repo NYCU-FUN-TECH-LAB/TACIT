@@ -1,0 +1,81 @@
+{
+ "respondent": "Doctoral researcher and project research assistant",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "rnd_staff",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript states respondent is a doctoral researcher and project research assistant."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Concerns about suppressing community feedback",
+   "quote": "Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.",
+   "full_text": "Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Expresses concern about a decision to suppress community feedback, suggesting a lack of openness and potentially a 'we know best' attitude."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Critique of consultation strategy",
+   "quote": "you can't consult people about a thing they don't know exists, and the consultation was advertised in the places you'd look if you already knew.",
+   "full_text": "you can’t consult people about a thing they don't know exists, and the consultation was advertised in the places you’d look if you already knew.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Critiques the consultation process as ineffective due to lack of awareness, indicating a closed/exclusive approach to engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Desire to share findings directly with the community",
+   "quote": "I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+   "full_text": "I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Expresses a desire for direct, open sharing of findings with the community group, suggesting a move towards more inclusive engagement."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent demonstrates a critical perspective on the project's approach to responsible innovation. While officially fulfilling a research role, they actively observe and document issues within the project, particularly concerning community engagement and transparency. The respondent's reflexive awareness of the decision to suppress community feedback and their critique of the consultation strategy highlight a concern for inclusivity and open dialogue. Their desire to share findings directly with the community, despite reservations about appropriateness, underscores a commitment to equitable access to information and a rejection of restrictive 'paywalls.' The respondent's experience suggests a tension between formal project processes and a personal commitment to more responsible and participatory practices.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A06 — Doctoral researcher and project research assistant\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What's your role on the project?\n[Respondent] Officially I do the fieldwork. Unofficially I'm the person who sits in the community meetings and then writes the paragraph that gets cut from the report. I've counted. Four times now.\n[Interviewer] On what grounds is it cut?\n[Respondent] Length, usually. Sometimes 'this belongs in the appendix'. Once, quite honestly, 'we don't want to give them ammunition'. That was said in a meeting and nobody objected, including me, and I've thought about that a lot since.\n[Interviewer] Tell me about the fieldwork itself.\n[Respondent] Sixty-one street intercepts and nine longer interviews, over four months, at eight junctions chosen to vary by ward income and footfall. I did evenings and weekends as well because the daytime sample was retired people and parents, which is a real population but not the whole one.\n[Interviewer] Did anything surprise you?\n[Respondent] How few people knew there was a system. Roughly two in three had no idea the junctions had changed at all. Which reframes the whole consultation question, doesn't it — you can't consult people about a thing they don't know exists, and the consultation was advertised in the places you'd look if you already knew.\n[Interviewer] What will you do with the material that gets cut?\n[Respondent] Put it in the thesis, where four people will read it. I know how that sounds. I'm also, and I go back and forth on whether this is appropriate, giving the community group a plain-language summary of my own findings directly, because they gave me the data and I don't think a paywall is a good reason for them not to have it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T22:15:47",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 159.7,
+  "absence": 0
+ }
+}

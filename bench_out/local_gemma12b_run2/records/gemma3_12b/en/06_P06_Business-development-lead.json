@@ -1,0 +1,112 @@
+{
+ "respondent": "Business development lead, consortium partner",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript states respondent is a Business development lead, consortium partner"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Responsible innovation language driven by bid evaluation",
+   "quote": "That language is in the bid because the evaluation matrix had a section for it worth eight percent. We wrote what scored well.",
+   "full_text": "I'll be straight with you because I don't think there's much point otherwise. That language is in the bid because the evaluation matrix had a section for it worth eight percent. We wrote what scored well. I'm not saying nobody believes it, I'm saying the reason it's in the document is the eight percent.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent indicates the project's direction was dictated by external scoring criteria rather than internal values."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Stakeholder engagement plan was superficial",
+   "quote": "It was two pages. It committed us to a launch event and a feedback email address. Both happened. The email address got nine messages in eighteen months, seven of them about a pothole.",
+   "full_text": "There was a stakeholder engagement plan. It was two pages. It committed us to a launch event and a feedback email address. Both happened. The email address got nine messages in eighteen months, seven of them about a pothole.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The engagement plan was minimal and yielded little meaningful feedback, indicating a performative approach."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Lack of review mechanism for stakeholder engagement",
+   "quote": "No. There was no review point in the contract.",
+   "full_text": "Did anyone review whether the plan was working? No. There was no review point in the contract. Contracts have review points for things somebody intends to check.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Absence of a review mechanism demonstrates a lack of self-scrutiny regarding the effectiveness of the engagement plan."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Systemic incentives shape project outcomes",
+   "quote": "If you want a different outcome you have to change the matrix, not lecture the bidders.",
+   "full_text": "Differently, probably. Would a different consortium have done it better? I doubt it. Everybody bidding on municipal AI work is structured the same way, with the same incentives, answering the same matrix. If you want a different outcome you have to change the matrix, not lecture the bidders.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent argues that systemic incentives, embodied in the evaluation matrix, are the primary driver of project behavior."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Calls for evidence-based accountability in engagement",
+   "quote": "Don't ask me what my engagement plan is, ask me for the minutes of the last three times a plan like this changed a design decision.",
+   "full_text": "What would a better matrix ask for? Evidence, not intentions. Don't ask me what my engagement plan is, ask me for the minutes of the last three times a plan like this changed a design decision. I couldn't produce them. Neither could my competitors. That would be a real filter.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent advocates for a shift towards evidence-based accountability, demonstrating a desire for more rigorous self-reflection."
+    },
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "The respondent calls for a more substantive and impactful form of engagement, moving beyond superficial plans."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent's account reveals a cynical view of responsible innovation practices within the municipal AI sector. The emphasis on scoring well in bid evaluations, coupled with a superficial stakeholder engagement plan and a lack of review mechanisms, suggests a performative approach driven by systemic incentives. The respondent’s call for evidence-based accountability and a shift away from intentions highlights a desire for more meaningful engagement and a recognition that changing the underlying evaluation matrix is crucial for achieving different project outcomes. While there's a glimmer of reflexivity in the call for evidence, the overall tone suggests a resignation to the status quo and a belief that true change requires systemic reform rather than individual effort.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P06 — Business development lead, consortium partner\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] The bid documents mention responsible innovation. How did that shape the work?\n[Respondent] I'll be straight with you because I don't think there's much point otherwise. That language is in the bid because the evaluation matrix had a section for it worth eight percent. We wrote what scored well. I'm not saying nobody believes it, I'm saying the reason it's in the document is the eight percent.\n[Interviewer] Was there anything behind the language?\n[Respondent] There was a stakeholder engagement plan. It was two pages. It committed us to a launch event and a feedback email address. Both happened. The email address got nine messages in eighteen months, seven of them about a pothole.\n[Interviewer] Did anyone review whether the plan was working?\n[Respondent] No. There was no review point in the contract. Contracts have review points for things somebody intends to check.\n[Interviewer] Do you think the project should have been done differently?\n[Respondent] Differently, probably. Would a different consortium have done it better? I doubt it. Everybody bidding on municipal AI work is structured the same way, with the same incentives, answering the same matrix. If you want a different outcome you have to change the matrix, not lecture the bidders.\n[Interviewer] What would a better matrix ask for?\n[Respondent] Evidence, not intentions. Don't ask me what my engagement plan is, ask me for the minutes of the last three times a plan like this changed a design decision. I couldn't produce them. Neither could my competitors. That would be a real filter.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T23:52:07",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 239.5,
+  "absence": 0
+ }
+}

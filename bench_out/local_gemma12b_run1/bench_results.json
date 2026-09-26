@@ -1,0 +1,71 @@
+{
+  "generated": "2026-09-26T23:19:59",
+  "framework": "ri_stilgoe_2013",
+  "results": [
+    {
+      "model": "gemma3:12b",
+      "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+      "provenance": {
+        "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+        "provider": "ollama",
+        "model": "gemma3:12b",
+        "base_url": "http://localhost:11434",
+        "data_locality": "local",
+        "num_ctx": 32768,
+        "max_tokens": 8192,
+        "recorded_at": "2026-09-26T21:19:33",
+        "quantization_level": "Q4_K_M",
+        "parameter_size": "12.2B",
+        "family": "gemma3",
+        "context_length": 131072,
+        "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+        "temperature": 0.2,
+        "window_chars": 3000,
+        "overlap_chars": 300
+      },
+      "framework": "ri_stilgoe_2013",
+      "at": "2026-09-26T21:19:37",
+      "contract": {
+        "compliance": 1.0,
+        "verdict": "ok",
+        "answered": 6,
+        "asked": 6,
+        "valid_json": true,
+        "non_conforming": [],
+        "error": "",
+        "seconds": 41.9
+      },
+      "coding": {
+        "en": {
+          "transcripts": 24,
+          "completed": 24,
+          "resumed": 0,
+          "stopped_on_quota": null,
+          "chunk_errors": 0,
+          "failed": 0,
+          "segments": 121,
+          "codes": 146,
+          "chars": 53075,
+          "per_10k": 22.8,
+          "verbatim_rate": 0.851,
+          "absence_codes": 0,
+          "degenerate_titles": 0,
+          "window_chars": 3000,
+          "overlap_chars": 300,
+          "minutes": 104.8
+        }
+      },
+      "themes": {
+        "first_order": 121,
+        "themes": 9,
+        "unassigned": 1,
+        "dimensions_covered": 4,
+        "dimensions_total": 4,
+        "empty_dimensions": [],
+        "unrecognised_dimensions": [],
+        "note_written": true,
+        "minutes": 14.1
+      }
+    }
+  ]
+}

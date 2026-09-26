@@ -1,0 +1,107 @@
+{
+ "respondent": "Ward councillor",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "senior_management",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": "The interview transcript states the respondent is a Ward councillor at the city council and performs this role alongside a job."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Residents' observations provide valuable data",
+   "quote": "In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use.",
+   "full_text": "Interview transcript G03 — Ward councillor, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | How does this reach you as a councillor?\nRespondent | Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Describes direct, upstream engagement with residents through a surgery, providing specific feedback on the system."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Uncertainty about detection creates unsafe behaviour",
+   "quote": "people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+   "full_text": "Interview transcript G03 — Ward councillor, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | What did people describe?\nRespondent | Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Highlights an unanticipated negative consequence of the system – uncertainty leading to unsafe pedestrian behaviour – demonstrating a lack of foresight."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Committee responses avoid the core issue",
+   "quote": "The first time I got a written answer about detection accuracy, which wasn't the question I'd asked.",
+   "full_text": "Interview transcript G03 — Ward councillor, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | What did you do with it?\nRespondent | Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Demonstrates a lack of responsiveness; the committee's initial response missed the constituent's concern, indicating an inability to adapt to feedback."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Lack of understanding hinders effective scrutiny",
+   "quote": "I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "full_text": "Interview transcript G03 — Ward councillor, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | Do you feel you understand the system well enough to scrutinise it?\nRespondent | No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Acknowledges a lack of understanding and expertise, demonstrating a lack of epistemic humility and a recognition of knowledge limits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Need for independent oversight",
+   "quote": "Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things.",
+   "full_text": "Interview transcript G03 — Ward councillor, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | What would help?\nRespondent | Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Suggests a mechanism for improved responsiveness – independent oversight – indicating a desire for a more adaptive system."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The Ward Councillor's account highlights a disconnect between the technical implementation of the adaptive traffic signal system and its impact on residents. Engagement with constituents through the surgery provides crucial, yet unrecorded, data about the system's shortcomings, particularly concerning uncertainty and pedestrian safety. The councillor's lack of technical understanding and the committee's initial unresponsiveness to constituent concerns demonstrate a need for greater reflexivity and adaptive capacity within the local authority. The call for an independent oversight body underscores a desire for a more responsive and accountable system, capable of incorporating feedback and adapting to unforeseen consequences. The respondent's strongest exhibits are responsiveness and engagement, while reflexivity is notably weak due to a lack of technical understanding and a reliance on constituent input to guide scrutiny.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G03 — Ward councillor, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | How does this reach you as a councillor?\nRespondent | Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.\nInterviewer | What did people describe?\nRespondent | Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.\nInterviewer | What did you do with it?\nRespondent | Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.\nInterviewer | Do you feel you understand the system well enough to scrutinise it?\nRespondent | No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.\nInterviewer | What would help?\nRespondent | Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T22:30:47",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 327.0,
+  "absence": 0
+ }
+}

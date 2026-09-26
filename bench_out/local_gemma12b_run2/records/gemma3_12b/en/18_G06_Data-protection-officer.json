@@ -1,0 +1,107 @@
+{
+ "respondent": "Data protection officer",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript: 'Data protection officer, city council'"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Assessment focuses on camera function, not decision-making",
+   "quote": "It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.",
+   "full_text": "[Respondent] Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms. Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Assessment limited by outdated template; failure to anticipate evolving decision-making capabilities."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Lack of review mechanism for DPIA",
+   "quote": "No. It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again.",
+   "full_text": "[Interviewer] Has the assessment been revisited?\n[Respondent] No. It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Absence of a review mechanism demonstrates a lack of responsiveness to potential changes or new information."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Derived data described as anonymous despite revealing detailed information",
+   "quote": "They are anonymous. They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.",
+   "full_text": "[Interviewer] How is retention handled in practice?\n[Respondent] Seventy-two hours for the raw video, indefinite for the derived counts. The derived counts are the interesting part and nobody asks about them because they're described as anonymous. They are anonymous. They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Questioning the validity of 'anonymous' label, demonstrating a degree of self-reflection on the adequacy of the data protection approach."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Raising concerns in a 'read-friendly' form",
+   "quote": "I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.",
+   "full_text": "[Interviewer] Have you raised that?\n[Respondent] In a footnote. I know how that sounds after what I just said about the risk register. I think the honest position is that I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Acknowledges a cautious, potentially diluted approach to raising concerns, suggesting a lack of epistemic confidence in challenging established practices."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Subject access rights are effectively inaccessible",
+   "quote": "So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+   "full_text": "[Interviewer] Do residents have a route to see what data concerns them?\n[Respondent] Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Subject access rights exist in principle but are practically inaccessible, demonstrating a closed and exclusive approach to public engagement."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The Data Protection Officer's account reveals a system operating with significant limitations in responsible innovation practices. The initial DPIA lacked foresight regarding the system's decision-making capabilities, and the absence of a review mechanism highlights a lack of responsiveness to potential changes. While the officer demonstrates some reflexive awareness by questioning the validity of data anonymization and acknowledging a cautious approach to raising concerns, these efforts appear constrained by organizational dynamics. The practical inaccessibility of subject access rights further underscores a closed and exclusive approach to public engagement. The dominant theme is a system that, while technically compliant, falls short in genuinely embedding responsible innovation principles.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G06 — Data protection officer, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Was a data protection impact assessment done?\n[Respondent] Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms. Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.\n[Interviewer] Has the assessment been revisited?\n[Respondent] No. It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.\n[Interviewer] How is retention handled in practice?\n[Respondent] Seventy-two hours for the raw video, indefinite for the derived counts. The derived counts are the interesting part and nobody asks about them because they're described as anonymous. They are anonymous. They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.\n[Interviewer] Have you raised that?\n[Respondent] In a footnote. I know how that sounds after what I just said about the risk register. I think the honest position is that I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.\n[Interviewer] Do residents have a route to see what data concerns them?\n[Respondent] Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-27T00:44:03",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 276.3,
+  "absence": 0
+ }
+}

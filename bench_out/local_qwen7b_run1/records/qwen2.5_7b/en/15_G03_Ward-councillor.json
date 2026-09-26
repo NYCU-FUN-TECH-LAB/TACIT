@@ -1,0 +1,94 @@
+{
+ "respondent": "Respondent",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "11_20y",
+  "descriptor_basis": "unspecified"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Public Engagement - N: Downstream Notification",
+   "quote": "A resident with the same observation has nowhere to go.",
+   "full_text": "Interviewer | Do you feel you understand the system well enough to scrutinise it? Respondent | No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me. Interviewer | What would help? Respondent | Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The councillor states that residents have no place to go with their observations, indicating a lack of upstream or two-way dialogue."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reflexivity - N: Hubris / Over-confident",
+   "quote": "I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "full_text": "Interviewer | Do you feel you understand the system well enough to scrutinise it? Respondent | No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "The councillor expresses a lack of understanding and the absence of a briefing, indicating a hubristic stance that their role does not require such knowledge."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Anticipation - N: Short / Deterministic",
+   "quote": "I've read enough to ask about crossing times because a constituent taught me what to ask.",
+   "full_text": "Interviewer | Do you feel you understand the system well enough to scrutinise it? Respondent | No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "The councillor's reliance on a constituent to teach them what to ask suggests a short-term, deterministic approach to understanding the system."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Responsiveness - N: Obdurate",
+   "quote": "I've read enough to ask about crossing times because a constituent taught me what to ask.",
+   "full_text": "Interviewer | Do you feel you understand the system well enough to scrutinise it? Respondent | No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me. Interviewer | What would help? Respondent | Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The councillor's reliance on a constituent to teach them what to ask and the lack of a briefing indicate an obdurate approach to understanding and addressing the system's issues."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent demonstrates a weak engagement with the system, showing a lack of upstream or two-way dialogue with residents. There is also a lack of reflexivity, as the councillor expresses a hubristic stance that their role does not require a deeper understanding of the system. The anticipation dimension is weak, with a short-term, deterministic approach to understanding the system. The responsiveness dimension is also weak, as the councillor relies on external help and lacks institutional mechanisms to address the system's issues.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G03 — Ward councillor, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | How does this reach you as a councillor?\nRespondent | Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.\nInterviewer | What did people describe?\nRespondent | Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.\nInterviewer | What did you do with it?\nRespondent | Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.\nInterviewer | Do you feel you understand the system well enough to scrutinise it?\nRespondent | No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.\nInterviewer | What would help?\nRespondent | Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T20:40:53",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 32.6,
+  "absence": 0
+ }
+}

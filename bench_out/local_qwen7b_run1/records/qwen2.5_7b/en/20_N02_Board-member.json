@@ -1,0 +1,107 @@
+{
+ "respondent": "Board member, neighbourhood residents' association",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "middle_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "unstated in the interview transcript"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Initial involvement",
+   "quote": "We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.",
+   "full_text": "We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The group did not actively seek involvement, and the session was one-way communication."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Session experience",
+   "quote": "Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.",
+   "full_text": "Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The session was one-way, with minimal time for questions and answers from the participants."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Question and answer session",
+   "quote": "I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.",
+   "full_text": "I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The participant felt unable to pass on the information to the neighbour, indicating a lack of meaningful interaction."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Follow-up and future engagement",
+   "quote": "No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.",
+   "full_text": "No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The group has not pursued further engagement, suggesting a closed and exclusive approach."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Reflection on future participation",
+   "quote": "Yes. Lower expectations, but yes. The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+   "full_text": "Yes. Lower expectations, but yes. The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The participant reflects on the previous session and suggests a different approach for future participation."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The board member demonstrates a weak engagement approach, characterized by a one-way communication session and a lack of follow-up. However, the member shows a positive polarity in reflexivity, reflecting on the previous experience and suggesting improvements for future participation. The engagement dimension is consistently negative, indicating a closed and exclusive approach to public participation.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N02 — Board member, neighbourhood residents' association\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How did your association get involved?\n[Respondent] We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.\n[Interviewer] What was the session like?\n[Respondent] Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.\n[Interviewer] Did you raise anything?\n[Respondent] I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.\n[Interviewer] Has anyone from the council been back since?\n[Respondent] No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.\n[Interviewer] Would you go to the next one?\n[Respondent] Yes. Lower expectations, but yes. The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T20:43:24",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 34.4,
+  "absence": 0
+ }
+}

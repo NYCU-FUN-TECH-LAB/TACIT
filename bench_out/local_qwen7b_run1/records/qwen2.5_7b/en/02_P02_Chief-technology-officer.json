@@ -1,0 +1,94 @@
+{
+ "respondent": "Chief technology officer, AI perception startup",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "job title and context"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Anticipation - P: Considering failure modes",
+   "quote": "We model failure modes in a lot of detail — occlusion, low light, unusual gaits, people pushing strollers, cyclists dismounting.",
+   "full_text": "Interviewer: Your company supplied the detection models. How do you think about what could go wrong with them? Respondent: Constantly. That's most of my job. We model failure modes in a lot of detail — occlusion, low light, unusual gaits, people pushing strollers, cyclists dismounting. We built a whole synthetic test set for edge cases because the real data didn't have enough of them. If a detector misses a person in a wheelchair at dusk, that is a catastrophic failure for us, commercially and otherwise.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent describes systematically considering potential failure modes and building test sets for edge cases."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reflexivity - N: Lack of long-term consideration",
+   "quote": "Honestly, no. We're a thirty-person company. Our runway is eighteen months. Ten-year urban effects is a question for someone with tenure. I don't say that dismissively, it's genuinely a different job from mine and I'm not equipped for it.",
+   "full_text": "Interviewer: Beyond detection accuracy — did you look at longer-term effects? How the system might change the street over five or ten years? Respondent: Honestly, no. We're a thirty-person company. Our runway is eighteen months. Ten-year urban effects is a question for someone with tenure. I don't say that dismissively, it's genuinely a different job from mine and I'm not equipped for it.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "The respondent explicitly states that long-term effects are not considered due to the company's limited resources and the nature of the job."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Engagement - N: Absence of direct user interaction",
+   "quote": "No. We had the city's requirements document and we built to it. In retrospect that's a strange way to build something that has to detect people, isn't it — we never met any of the people the system was hardest for.",
+   "full_text": "Interviewer: Did you speak to any disability organisations directly? Respondent: No. We had the city's requirements document and we built to it. In retrospect that's a strange way to build something that has to detect people, isn't it — we never met any of the people the system was hardest for.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent states that they did not interact directly with the users the system was designed to assist, indicating a lack of engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Responsiveness - N: Lack of follow-up on flagged issues",
+   "quote": "We flagged it, we put it in the report, and then — nobody asked about it, and we moved on. In hindsight flagging it in an appendix isn't the same as raising it.",
+   "full_text": "Interviewer: How did you decide what counted as acceptable performance? Respondent: The city gave us a target and we beat it. Ninety-eight point five on detection, we shipped at ninety-nine point one. Where it gets uncomfortable is that the aggregate number hides the distribution. Our worst subgroup was people using mobility aids, and that number was materially lower. We flagged it, we put it in the report, and then — nobody asked about it, and we moved on. In hindsight flagging it in an appendix isn't the same as raising it.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent describes a situation where an issue was flagged but not addressed, indicating a lack of responsiveness."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The Chief technology officer primarily exhibits anticipation through systematic consideration of failure modes, but lacks in long-term foresight, direct user engagement, and responsiveness to flagged issues. The company's focus on short-term goals and limited resources contribute to these gaps, highlighting the challenges of integrating responsible innovation practices in a startup environment.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P02 — Chief technology officer, AI perception startup\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Your company supplied the detection models. How do you think about what could go wrong with them?\n[Respondent] Constantly. That's most of my job. We model failure modes in a lot of detail — occlusion, low light, unusual gaits, people pushing strollers, cyclists dismounting. We built a whole synthetic test set for edge cases because the real data didn't have enough of them. If a detector misses a person in a wheelchair at dusk, that is a catastrophic failure for us, commercially and otherwise.\n[Interviewer] Beyond detection accuracy — did you look at longer-term effects? How the system might change the street over five or ten years?\n[Respondent] Honestly, no. We're a thirty-person company. Our runway is eighteen months. Ten-year urban effects is a question for someone with tenure. I don't say that dismissively, it's genuinely a different job from mine and I'm not equipped for it.\n[Interviewer] Was there anyone in the consortium who did hold that question?\n[Respondent] Not that I saw. There was a university partner on the original bid but they dropped out over funding. After that it was three vendors and the city. Everyone in the room was optimising their own deliverable.\n[Interviewer] How did you decide what counted as acceptable performance?\n[Respondent] The city gave us a target and we beat it. Ninety-eight point five on detection, we shipped at ninety-nine point one. Where it gets uncomfortable is that the aggregate number hides the distribution. Our worst subgroup was people using mobility aids, and that number was materially lower. We flagged it, we put it in the report, and then — nobody asked about it, and we moved on. In hindsight flagging it in an appendix isn't the same as raising it.\n[Interviewer] Did you speak to any disability organisations directly?\n[Respondent] No. We had the city's requirements document and we built to it. In retrospect that's a strange way to build something that has to detect people, isn't it — we never met any of the people the system was hardest for.\n[Interviewer] What would have had to be different for that to happen?\n[Respondent] Someone would have had to put it in the contract and pay for it. I know how that sounds. But we bid against two other firms on price. If I'd priced in a user research programme we wouldn't have won, and then you'd be interviewing whoever did.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T20:33:25",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 31.9,
+  "absence": 0
+ }
+}

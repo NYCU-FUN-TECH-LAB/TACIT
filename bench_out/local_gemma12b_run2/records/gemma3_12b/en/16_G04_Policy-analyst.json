@@ -1,0 +1,112 @@
+{
+ "respondent": "Policy analyst",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "middle_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript: 'Policy analyst, national transport ministry'"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Guidance drafted retrospectively to accommodate prior actions",
+   "quote": "In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we’re now drafting has to be compatible with all eleven, which means it will be weak.",
+   "full_text": "As a pilot we can learn from, officially. In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we’re now drafting has to be compatible with all eleven, which means it will be weak.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Guidance is reactive to actions already taken, indicating a lack of proactive adaptation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Prioritisation driven by crisis, not foresight",
+   "quote": "The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong.",
+   "full_text": "Yes. There was a submission in 2021 recommending exactly that and it wasn't prioritised. I've read it. It's a good submission. The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Prioritisation based on reactive crisis management rather than proactive foresight or scenario planning."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Requirements for transparency and testing",
+   "quote": "A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it.",
+   "full_text": "A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Introducing requirements for testing and transparency demonstrates a response to identified shortcomings."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Guidance lacks enforcement power",
+   "quote": "It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on.",
+   "full_text": "It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Guidance lacks teeth and is unlikely to drive substantive change, indicating a lack of responsiveness."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Exclusion of key stakeholder groups from drafting",
+   "quote": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it.",
+   "full_text": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn’t allow for a public consultation, which is true, and also we set the timeline.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Exclusion of disability organisations and residents from the drafting process demonstrates a closed and exclusive approach to engagement."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "The respondent raising the issue of exclusion, but being overruled, suggests a lack of institutional self-reflection."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent highlights a system driven by reactive crisis management rather than proactive anticipation, leading to weak and retrospective guidance. Responsiveness is hampered by a lack of enforcement power and a prioritization of expediency over inclusive engagement. The absence of disability organizations and residents in the drafting process, despite the respondent's concerns, exemplifies a closed approach to stakeholder involvement. The account reveals a tension between the desire for responsible innovation and the constraints of bureaucratic processes and political realities, suggesting a need for greater institutional reflexivity and a shift towards more anticipatory governance.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G04 — Policy analyst, national transport ministry\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does central government see deployments like Port Calder's?\n[Respondent] As a pilot we can learn from, officially. In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.\n[Interviewer] Could the ministry have moved earlier?\n[Respondent] Yes. There was a submission in 2021 recommending exactly that and it wasn't prioritised. I've read it. It's a good submission. The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.\n[Interviewer] What's going into the guidance?\n[Respondent] A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.\n[Interviewer] Will it have teeth?\n[Respondent] It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.\n[Interviewer] Was anyone outside government involved in drafting?\n[Respondent] A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-27T00:35:30",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 251.4,
+  "absence": 0
+ }
+}

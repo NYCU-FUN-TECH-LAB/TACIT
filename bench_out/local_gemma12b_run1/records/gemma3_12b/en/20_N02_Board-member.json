@@ -1,0 +1,112 @@
+{
+ "respondent": "Board member, neighbourhood residents' association",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "middle_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript states respondent is a Board member of a neighbourhood residents' association."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Initial Involvement Driven by Curiosity and Default Representation",
+   "quote": "We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking.",
+   "full_text": "We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Participation driven by default representation rather than proactive engagement; highlights a lack of organised local voices."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Uneven Distribution of Question Time",
+   "quote": "What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.",
+   "full_text": "What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Illustrates a power imbalance and lack of genuine two-way dialogue; limited opportunity for meaningful participation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Inability to Verify Information and Pass it On",
+   "quote": "I was given an answer I couldn't pass on.",
+   "full_text": "I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Highlights a lack of transparency and accountability; the respondent is unable to verify the information provided, demonstrating a lack of trust."
+    },
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Illustrates a disconnect between the information provided and the ability of the community to understand and trust it."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Strained and Unacknowledged Relationship with the Council",
+   "quote": "There’s a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.",
+   "full_text": "No. And in fairness we haven't asked them to. There’s a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Demonstrates a lack of responsiveness from the council and a breakdown in communication; the relationship has effectively ended without acknowledgement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Strategic Approach to Future Participation",
+   "quote": "The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+   "full_text": "The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Suggests a learning experience and a more strategic approach to engagement in the future, aiming for more focused and impactful participation."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent, a Board member of a neighbourhood residents' association, demonstrates a cautious and somewhat disillusioned perspective on engagement with the council regarding the adaptive traffic signal system. Initial involvement stemmed from a default role as the only organised local body, rather than proactive advocacy. The session itself was characterized by a lack of genuine dialogue and an inability to verify information, leading to a strained and unacknowledged relationship with the council. The respondent's proposed changes to future participation – a smaller group with pre-prepared questions – suggest a recognition of past shortcomings and a desire for more focused and impactful engagement. The negative polarity codes dominate, reflecting a sense of power imbalance, lack of transparency, and a breakdown in communication. While the respondent expresses willingness to attend future sessions, this is tempered by lowered expectations and a strategic approach, indicating a need for significant improvements in the engagement process.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N02 — Board member, neighbourhood residents' association\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How did your association get involved?\n[Respondent] We weren't, at first. Somebody forwarded the newsletter item to our group chat and about six of us went to the session out of curiosity. We're not a campaign group, we run a summer fair and argue about parking. But we're the only organised body in this part of town, so if we don't turn up nobody from here does.\n[Interviewer] What was the session like?\n[Respondent] Professional. Slides, a model of a junction, sandwiches. Everyone was polite. What I noticed afterwards, walking home, was that we'd spent ninety minutes being told how it worked and about eleven minutes on questions, and both the questions that got detailed answers were from the man who turned out to be from a supplier.\n[Interviewer] Did you raise anything?\n[Respondent] I asked whether the cameras could see into flats. I was told no, the field of view is set to the carriageway. Which I believe. But I'd asked because a neighbour asked me to ask, and when I went back and told her 'they said no', she said 'well they would'. And I had nothing. I couldn't show her anything. That's the bit that stayed with me — I was given an answer I couldn't pass on.\n[Interviewer] Has anyone from the council been back since?\n[Respondent] No. And in fairness we haven't asked them to. There's a thing that happens where both sides decide the relationship is over and nobody says so. I could email. I haven't emailed. It's been fourteen months.\n[Interviewer] Would you go to the next one?\n[Respondent] Yes. Lower expectations, but yes. The thing I'd do differently is bring three people instead of six and give each of them one question written down beforehand, because what happened was six of us went and nobody asked the thing we'd all agreed in the group chat that somebody should ask.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T22:50:56",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 274.0,
+  "absence": 0
+ }
+}

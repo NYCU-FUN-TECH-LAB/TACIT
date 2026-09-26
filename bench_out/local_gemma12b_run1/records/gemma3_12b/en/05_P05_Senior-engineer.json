@@ -1,0 +1,117 @@
+{
+ "respondent": "Senior engineer",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "over_20y",
+  "descriptor_basis": "Interview transcript: 'You've been in signals a long time... Twenty-six years.'"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Shifting Responsibility from Engineer to Algorithm",
+   "quote": "The difference is that the box used to do what the timing plan said, and now the box decides. That sounds dramatic but operationally it’s a big change, because when somebody complains about a junction I used to be able to open the plan and show them the numbers. Now the answer is 'the model decided', and I can't show anybody anything.",
+   "full_text": "The difference is that the box used to do what the timing plan said, and now the box decides. That sounds dramatic but operationally it’s a big change, because when somebody complains about a junction I used to be able to open the plan and show them the numbers. Now the answer is 'the model decided', and I can't show anybody anything.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Expresses concern about the loss of explainability and accountability when decisions are made by an algorithm, highlighting a shift away from traditional engineering practices."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Reliance on Established Standards and Safety",
+   "quote": "The standards are good. Signal engineering has a hundred years of standards behind it and they were written in blood, most of them. If we build to standard the safety case is sound. I don’t lie awake about it.",
+   "full_text": "The standards are good. Signal engineering has a hundred years of standards behind it and they were written in blood, most of them. If we build to standard the safety case is sound. I don't lie awake about it.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Acknowledges the value and safety provided by established standards, demonstrating a degree of epistemic humility regarding the existing framework."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Gap in Standards for Ethical Trade-offs",
+   "quote": "What they don't cover is how the model should trade off a bus against six pedestrians. There’s no standard for that. We just — implemented something. The weights came from a workshop. Four of us in a room.",
+   "full_text": "What they don't cover is how the model should trade off a bus against six pedestrians. There’s no standard for that. We just — implemented something. The weights came from a workshop. Four of us in a room.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Highlights a lack of foresight in existing standards to address complex ethical dilemmas arising from adaptive control systems."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Implies a lack of robust ethical consideration, as the solution was 'implemented' without a clear standard, suggesting a reactive rather than anticipatory approach."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Responding to Field Observation",
+   "quote": "The pedestrian minimum, yes. It came up that the crossing at Alder and Third was clearing people too tight when the adaptive logic was pushing throughput. We raised the floor at that junction and then at four others with similar geometry. It wasn’t a regulation issue, we just set the floor higher than the regulation requires.",
+   "full_text": "The pedestrian minimum, yes. It came up that the crossing at Alder and Third was clearing people too tight when the adaptive logic was pushing throughput. We raised the floor at that junction and then at four others with similar geometry. It wasn’t a regulation issue, we just set the floor higher than the regulation requires.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Demonstrates a capacity to modify the system based on real-world observations and feedback, showing an adaptive response to an emergent issue."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Value of On-Site Technician Observation",
+   "quote": "One of our own technicians, on site for something else. Not a complaint, not the monitoring dashboard. A man standing at a junction with a stopwatch because something looked wrong to him. I don’t have a system that replaces that and it bothers me.",
+   "full_text": "One of our own technicians, on site for something else. Not a complaint, not the monitoring dashboard. A man standing at a junction with a stopwatch because something looked wrong to him. I don't have a system that replaces that and it bothers me.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Values the input of a technician who observed a problem directly, highlighting the importance of non-expert voices and on-site experience."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Expresses concern about the limitations of automated systems and the irreplaceable value of human observation, revealing a recognition of the limits of current knowledge."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent demonstrates a complex relationship with the shift towards adaptive traffic signal control. While acknowledging the benefits of established standards and safety protocols, they express concern about the loss of explainability and accountability when decisions are delegated to algorithms. The respondent's account highlights a gap in existing standards regarding ethical trade-offs and emphasizes the ongoing importance of human observation and judgment, even in a technologically advanced system. The respondent's responsiveness to field observations and willingness to modify the system demonstrates a capacity for adaptation, but also reveals a lingering discomfort with the reliance on automated decision-making and the potential for unforeseen consequences. Reflexivity is evident in the acknowledgement of limitations and the value of human expertise, while anticipation is somewhat lacking in the initial development of the system's ethical framework.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P05 — Senior engineer, traffic signal manufacturer\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You've been in signals a long time. How is this project different?\n[Respondent] Twenty-six years. The difference is that the box used to do what the timing plan said, and now the box decides. That sounds dramatic but operationally it's a big change, because when somebody complains about a junction I used to be able to open the plan and show them the numbers. Now the answer is 'the model decided', and I can't show anybody anything.\n[Interviewer] Does that worry you?\n[Respondent] It bothers me more than it worries me, if that distinction makes sense. The standards are good. Signal engineering has a hundred years of standards behind it and they were written in blood, most of them. If we build to standard the safety case is sound. I don't lie awake about it.\n[Interviewer] Do the standards cover adaptive control?\n[Respondent] Partly. They cover the physical layer, the fail-safe behaviour, conflict monitoring — all of that still applies and it's what keeps people alive. What they don't cover is how the model should trade off a bus against six pedestrians. There's no standard for that. We just — implemented something. The weights came from a workshop. Four of us in a room.\n[Interviewer] Has anything been changed since go-live?\n[Respondent] The pedestrian minimum, yes. It came up that the crossing at Alder and Third was clearing people too tight when the adaptive logic was pushing throughput. We raised the floor at that junction and then at four others with similar geometry. It wasn't a regulation issue, we just set the floor higher than the regulation requires.\n[Interviewer] Who noticed it was too tight?\n[Respondent] One of our own technicians, on site for something else. Not a complaint, not the monitoring dashboard. A man standing at a junction with a stopwatch because something looked wrong to him. I don't have a system that replaces that and it bothers me.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T21:47:45",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 302.5,
+  "absence": 0
+ }
+}

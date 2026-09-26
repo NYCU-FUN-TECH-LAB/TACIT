@@ -1,0 +1,94 @@
+{
+ "respondent": "the respondent, as named in the interview transcript",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "job title and context"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Legal risk management",
+   "quote": "In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive.",
+   "full_text": "In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive. I've made peace with being unpopular. The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "The respondent acknowledges that their role is primarily about legal risk, not ethics, and does not engage in second-order reflection."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Scenario planning",
+   "quote": "Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off.",
+   "full_text": "A version of 'why would we'. Which isn't an answer. Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent discusses potential future scenarios, including the long-term consequences of adaptive signal timing."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Lock-in and foresight",
+   "quote": "In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.",
+   "full_text": "A version of 'why would we'. Which isn't an answer. Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "The respondent discusses the long-term consequences of adaptive signal timing, highlighting the potential for lock-in."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Refusal to change course",
+   "quote": "I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.",
+   "full_text": "I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent did not push the issue beyond the risk register, indicating a refusal to change the course of the project."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent primarily focuses on legal risk management, demonstrating a negative stance on reflexivity by not engaging in second-order reflection. They engage in scenario planning and foresight, highlighting the potential for lock-in, which is coded as positive anticipation. However, their approach to addressing these issues through the risk register and not pushing for change indicates a negative responsiveness, as they do not attempt to alter the project trajectory in response to the identified risks.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P04 — Head of compliance, mobility technology group\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What does responsible deployment mean in your role?\n[Respondent] In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive. I've made peace with being unpopular. The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.\n[Interviewer] What did you ask on this project?\n[Respondent] Three things, mainly. What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong. The third one is the one nobody has a good answer to, ever.\n[Interviewer] What answer did you get on switching it off?\n[Respondent] A version of 'why would we'. Which isn't an answer. Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.\n[Interviewer] Did that get escalated?\n[Respondent] I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.\n[Interviewer] Was there any external input into these questions?\n[Respondent] No. It's me and a junior analyst. We don't have an ethics board, we don't have community input, we have me reading and worrying. For a system that watches thirty intersections that is a thin basis and I would say that on the record.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T21:07:00",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 28.7,
+  "absence": 0
+ }
+}

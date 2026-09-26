@@ -1,0 +1,107 @@
+{
+ "respondent": "Policy analyst",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "middle_management",
+  "sector": "energy_sustainability",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript states respondent is a policy analyst at a national transport ministry."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Reactive policy development driven by incidents",
+   "quote": "The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong.",
+   "full_text": "The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Policy action is triggered by negative events rather than proactive anticipation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Guidance will be weak due to retrospective compatibility",
+   "quote": "the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.",
+   "full_text": "Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The need to accommodate existing deployments results in diluted guidance."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Requirement for performance reporting is contentious",
+   "quote": "And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.",
+   "full_text": "And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Acknowledges that data reporting can reveal uncomfortable truths and anticipate resistance."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Guidance lacks enforcement power",
+   "quote": "It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on.",
+   "full_text": "It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Guidance is non-binding and unlikely to drive significant change."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Exclusion of key stakeholders from drafting",
+   "quote": "No disability organisations, no residents. I raised it.",
+   "full_text": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Key stakeholder groups (disability organisations, residents) were excluded from the drafting process."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent highlights a reactive and constrained policy environment. Policy decisions are driven by problems rather than proactive anticipation, leading to weak guidance that struggles to enforce meaningful change. The process is further hampered by a lack of stakeholder engagement, particularly from disability organizations and residents, and a prioritization of timelines over inclusive consultation. The respondent's comments reveal a system struggling to adapt and learn, with limited capacity for genuine responsiveness or meaningful public engagement.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G04 — Policy analyst, national transport ministry\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does central government see deployments like Port Calder's?\n[Respondent] As a pilot we can learn from, officially. In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.\n[Interviewer] Could the ministry have moved earlier?\n[Respondent] Yes. There was a submission in 2021 recommending exactly that and it wasn't prioritised. I've read it. It's a good submission. The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.\n[Interviewer] What's going into the guidance?\n[Respondent] A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.\n[Interviewer] Will it have teeth?\n[Respondent] It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.\n[Interviewer] Was anyone outside government involved in drafting?\n[Respondent] A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T22:33:32",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 165.5,
+  "absence": 0
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "respondent": "Chief executive, local community foundation",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "unspecified"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Lack of engagement",
+   "quote": "Nobody had asked us. We'd had one phone call eighteen months earlier about something adjacent.",
+   "full_text": "Being named. I mean that literally — I found out we were a community partner when I read it in the bid summary after the award. Somebody had listed us. Nobody had asked us. We'd had one phone call eighteen months earlier about something adjacent.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The community foundation was not consulted or involved in the decision to name them as a partner."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Lack of engagement",
+   "quote": "The bid was evaluated partly on community partnership that didn't exist.",
+   "full_text": "Being named. I mean that literally — I found out we were a community partner when I read it in the bid summary after the award. Somebody had listed us. Nobody had asked us. We'd had one phone call eighteen months earlier about something adjacent. The bid was evaluated partly on community partnership that didn't exist.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The bid was evaluated on a partnership that did not actually exist, indicating a lack of genuine engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Lack of engagement",
+   "quote": "We were invited to a launch event, which I didn't attend, and to a 'community reference group' which met twice and then stopped.",
+   "full_text": "We were invited to a launch event, which I didn't attend, and to a 'community reference group' which met twice and then stopped. I don't know that it was cancelled. It simply stopped being scheduled. Nobody wrote to say it had ended.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The community reference group met only twice and then stopped without formal communication, indicating a lack of engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Lack of engagement",
+   "quote": "I don't know that it was cancelled. It simply stopped being scheduled. Nobody wrote to say it had ended.",
+   "full_text": "We were invited to a launch event, which I didn't attend, and to a 'community reference group' which met twice and then stopped. I don't know that it was cancelled. It simply stopped being scheduled. Nobody wrote to say it had ended.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The reference group's cessation was not formally communicated, suggesting a lack of engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Lack of engagement",
+   "quote": "Declining is also a bad option. There isn't a good one.",
+   "full_text": "I don't know that it was cancelled. It simply stopped being scheduled. Nobody wrote to say it had ended. Do you think the reference group could have worked? Possibly, with two changes. Somebody senior in the room, and a written response to whatever it produced within a fixed period. Without those two things a reference group is a mailing list with sandwiches. I've sat on eleven of them in this job and three worked, and all three had those two features. Would you take part in the next one? Probably not, and I've thought about whether that's the right call. My concern is that our attendance is what makes the process look legitimate. If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve. Declining is also a bad option. There isn't a good one.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent acknowledges that declining participation is also a bad option, indicating a lack of viable engagement strategies."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Lack of engagement",
+   "quote": "My concern is that our attendance is what makes the process look legitimate. If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve.",
+   "full_text": "I don't know that it was cancelled. It simply stopped being scheduled. Nobody wrote to say it had ended. Do you think the reference group could have worked? Possibly, with two changes. Somebody senior in the room, and a written response to whatever it produced within a fixed period. Without those two things a reference group is a mailing list with sandwiches. I've sat on eleven of them in this job and three worked, and all three had those two features. Would you take part in the next one? Probably not, and I've thought about whether that's the right call. My concern is that our attendance is what makes the process look legitimate. If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve. Declining is also a bad option. There isn't a good one.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent expresses concern that their presence is merely for show, indicating a lack of genuine engagement."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent strongly exhibits a lack of engagement, as evidenced by the absence of consultation, the non-existent community partnership, the infrequent and unstructured meetings of the reference group, and the lack of formal communication about its cessation. The only positive engagement strategy suggested is the presence of a senior representative and a written response, but the respondent is hesitant to participate due to concerns about the legitimacy of their involvement. This highlights a significant gap in the responsible innovation framework, particularly in terms of public engagement.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N06 — Chief executive, local community foundation\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Your foundation was named as a community partner. What did that involve?\n[Respondent] Being named. I mean that literally — I found out we were a community partner when I read it in the bid summary after the award. Somebody had listed us. Nobody had asked us. We'd had one phone call eighteen months earlier about something adjacent.\n[Interviewer] Did you object?\n[Respondent] I wrote and asked to be removed, and we were, from the next version. But the version with our name in it is the one that won the contract, and there's no mechanism to unwind that. The bid was evaluated partly on community partnership that didn't exist.\n[Interviewer] Has anything happened since?\n[Respondent] We were invited to a launch event, which I didn't attend, and to a 'community reference group' which met twice and then stopped. I don't know that it was cancelled. It simply stopped being scheduled. Nobody wrote to say it had ended.\n[Interviewer] Do you think the reference group could have worked?\n[Respondent] Possibly, with two changes. Somebody senior in the room, and a written response to whatever it produced within a fixed period. Without those two things a reference group is a mailing list with sandwiches. I've sat on eleven of them in this job and three worked, and all three had those two features.\n[Interviewer] Would you take part in the next one?\n[Respondent] Probably not, and I've thought about whether that's the right call. My concern is that our attendance is what makes the process look legitimate. If we sit in the room and nothing changes, the report says the community was consulted, and our presence has been used against the people we exist to serve. Declining is also a bad option. There isn't a good one.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T21:18:02",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 39.3,
+  "absence": 0
+ }
+}

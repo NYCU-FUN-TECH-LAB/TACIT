@@ -1,0 +1,94 @@
+{
+ "respondent": "Respondent",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "11_20y",
+  "descriptor_basis": "unspecified"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Technical Design Flaw",
+   "quote": "About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it. It's not in any specification anywhere.",
+   "full_text": "About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it. It's not in any specification anywhere. Nobody had thought about it. It's not in any specification anywhere.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Single deterministic forecast, no exploration of alternative futures or consequences."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Problem Resolution",
+   "quote": "We fixed it. Took about six weeks. We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street. I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.",
+   "full_text": "We fixed it. Took about six weeks. We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street. I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Substantive modification after feedback, iterative learning, and institutionalised mechanisms for future prevention."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Communication Channels",
+   "quote": "There's no direct line from a resident to the people who can actually fix the thing.",
+   "full_text": "There's no direct line from a resident to the people who can actually fix the thing. I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Downstream notification, no upstream participation or two-way dialogue."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Reflection on Design",
+   "quote": "We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+   "full_text": "A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Questioning own assumptions and acknowledging limits."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent demonstrates a mix of positive and negative dimensions of Responsible Innovation. They exhibit strong responsiveness in addressing the LED issue by retrofitting units and changing future guidelines, indicating an adaptive approach. However, the absence of anticipation is evident, as there was no foresight or exploration of potential issues. Engagement is weak, with no upstream participation or two-way dialogue, and the communication channels are poor, relying on indirect routes. Reflexivity is present but limited to a single line in the design review, suggesting a nascent effort to incorporate user perspectives into the design process.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P03 — Product manager, roadside camera hardware vendor\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | Tell me about your part of the deployment.\nRespondent | We supply the roadside units — the housing, the sensor, the local compute. Thirty intersections, two units each, some with three where the geometry is awkward. My job is that they work in the weather and don't need a truck roll every month.\nInterviewer | Did anything come up after installation that you hadn't expected?\nRespondent | Yes, and it's the thing I always tell people about now. About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it. It's not in any specification anywhere.\nInterviewer | What happened then?\nRespondent | We fixed it. Took about six weeks. We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street. I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.\nInterviewer | How did those residents reach you?\nRespondent | Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us. I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.\nInterviewer | Was there consultation before installation about where units went?\nRespondent | Placement was decided on traffic engineering grounds — sight lines, pole availability, power. I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them. 'Do you mind a camera here' — most people would say yes they mind, and then what?\nInterviewer | Has the LED episode changed how you think about new products?\nRespondent | A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T20:50:15",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 29.6,
+  "absence": 0
+ }
+}

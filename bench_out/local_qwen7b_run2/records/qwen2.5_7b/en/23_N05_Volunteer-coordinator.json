@@ -1,0 +1,107 @@
+{
+ "respondent": "Respondent N05",
+ "descriptors": {
+  "institution_type": "unspecified",
+  "role_level": "rnd_staff",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "job title and context of the interview"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Methodology",
+   "quote": "We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done.",
+   "full_text": "Interviewer: You did your own measurement, I understand.\nRespondent: We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done. We measured wait time from arrival at the kerb to green, which is the number that matters to a person and is not the number anybody publishes.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Describes the methodology and rationale for using volunteers and low-tech tools, indicating open and inclusive participation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Survey Results",
+   "quote": "Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.",
+   "full_text": "Interviewer: What did you find?\nRespondent: Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Describes the results of the survey, acknowledging the complexity and providing a nuanced view, indicating open and inclusive participation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Survey Reception",
+   "quote": "Better than the campaigning stuff we've sent before, honestly, and I think it's because we led with the good news. An officer emailed and asked for our raw sheets, which we sent. Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before.",
+   "full_text": "Interviewer: How was that received?\nRespondent: Better than the campaigning stuff we've sent before, honestly, and I think it's because we led with the good news. An officer emailed and asked for our raw sheets, which we sent. Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Describes the positive reception of the survey results and the inclusion of the data in the monthly summary, indicating open and inclusive participation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Future Surveys",
+   "quote": "Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak. That's frustrating and it's the right call.",
+   "full_text": "Interviewer: Will you repeat the survey?\nRespondent: Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak. That's frustrating and it's the right call.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "States that the method cannot be improved even where known to be weak, indicating an obdurate approach to the innovation trajectory."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Methodology Critique",
+   "quote": "Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school. Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+   "full_text": "Interviewer: What's the weakness you'd fix if you could?\nRespondent: Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school. Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Acknowledges the weakness of the methodology and the non-representativeness of the data, indicating epistemic humility and second-order reflection."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "Respondent N05 most strongly exhibits engagement through the open and inclusive participation of volunteers and the transparent sharing of data. The methodology is described with reflexivity, acknowledging its limitations. However, the approach to future surveys is obdurate, as the method remains unchanged despite known weaknesses. This reflects a balance between openness and a fixed innovation trajectory.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N05 — Volunteer coordinator, walking and cycling advocacy group\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You did your own measurement, I understand.\n[Respondent] We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done. We measured wait time from arrival at the kerb to green, which is the number that matters to a person and is not the number anybody publishes.\n[Interviewer] What did you find?\n[Respondent] Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.\n[Interviewer] How was that received?\n[Respondent] Better than the campaigning stuff we've sent before, honestly, and I think it's because we led with the good news. An officer emailed and asked for our raw sheets, which we sent. Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before.\n[Interviewer] Will you repeat the survey?\n[Respondent] Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak. That's frustrating and it's the right call.\n[Interviewer] What's the weakness you'd fix if you could?\n[Respondent] Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school. Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T21:01:46",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 37.1,
+  "absence": 0
+ }
+}

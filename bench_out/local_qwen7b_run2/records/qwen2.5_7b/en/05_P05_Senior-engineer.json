@@ -1,0 +1,112 @@
+{
+ "respondent": "P05",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "over_20y",
+  "descriptor_basis": "self-introduction"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Change in decision-making process",
+   "quote": "The box used to do what the timing plan said, and now the box decides.",
+   "full_text": "Twenty-six years. The difference is that the box used to do what the timing plan said, and now the box decides. That sounds dramatic but operationally it's a big change, because when somebody complains about a junction I used to be able to open the plan and show them the numbers. Now the answer is 'the model decided', and I can't show anybody anything.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "No exploration of alternative futures or uncertainty."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Standards and safety",
+   "quote": "The standards are good. Signal engineering has a hundred years of standards behind it and they were written in blood, most of them. If we build to standard the safety case is sound.",
+   "full_text": "It bothers me more than it worries me, if that distinction makes sense. The standards are good. Signal engineering has a hundred years of standards behind it and they were written in blood, most of them. If we build to standard the safety case is sound. I don't lie awake about it.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Acknowledges the historical significance and safety of established standards."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Adaptive control and standardization",
+   "quote": "They cover the physical layer, the fail-safe behaviour, conflict monitoring — all of that still applies and it's what keeps people alive. What they don't cover is how the model should trade off a bus against six pedestrians. There's no standard for that.",
+   "full_text": "Partly. They cover the physical layer, the fail-safe behaviour, conflict monitoring — all of that still applies and it's what keeps people alive. What they don't cover is how the model should trade off a bus against six pedestrians. There's no standard for that. We just — implemented something. The weights came from a workshop. Four of us in a room.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "No upstream participation or co-creation with external actors."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "No questioning of own assumptions or knowledge limits."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Post-decision modification",
+   "quote": "The pedestrian minimum, yes. It came up that the crossing at Alder and Third was clearing people too tight when the adaptive logic was pushing throughput. We raised the floor at that junction and then at four others with similar geometry.",
+   "full_text": "Has anything been changed since go-live? The pedestrian minimum, yes. It came up that the crossing at Alder and Third was clearing people too tight when the adaptive logic was pushing throughput. We raised the floor at that junction and then at four others with similar geometry. It wasn't a regulation issue, we just set the floor higher than the regulation requires.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Made substantive modifications after feedback."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Manually detected issues",
+   "quote": "A man standing at a junction with a stopwatch because something looked wrong to him.",
+   "full_text": "Who noticed it was too tight? One of our own technicians, on site for something else. Not a complaint, not the monitoring dashboard. A man standing at a junction with a stopwatch because something looked wrong to him. I don't have a system that replaces that and it bothers me.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "No self-examination or scrutiny of own assumptions."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "Respondent P05 demonstrates a mix of dimensions. Anticipation is weak, as there is no exploration of alternative futures or uncertainty. Reflexivity is present in acknowledging the historical significance of standards but is lacking in self-examination or questioning of assumptions. Engagement is absent, as there is no upstream participation or co-creation with external actors. Responsiveness is strong, as the system was modified in response to manual detection of issues. The absence of engagement and anticipation highlights the gap between established practices and emerging adaptive technologies, while the strong responsiveness reflects a pragmatic approach to addressing real-world concerns.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P05 — Senior engineer, traffic signal manufacturer\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You've been in signals a long time. How is this project different?\n[Respondent] Twenty-six years. The difference is that the box used to do what the timing plan said, and now the box decides. That sounds dramatic but operationally it's a big change, because when somebody complains about a junction I used to be able to open the plan and show them the numbers. Now the answer is 'the model decided', and I can't show anybody anything.\n[Interviewer] Does that worry you?\n[Respondent] It bothers me more than it worries me, if that distinction makes sense. The standards are good. Signal engineering has a hundred years of standards behind it and they were written in blood, most of them. If we build to standard the safety case is sound. I don't lie awake about it.\n[Interviewer] Do the standards cover adaptive control?\n[Respondent] Partly. They cover the physical layer, the fail-safe behaviour, conflict monitoring — all of that still applies and it's what keeps people alive. What they don't cover is how the model should trade off a bus against six pedestrians. There's no standard for that. We just — implemented something. The weights came from a workshop. Four of us in a room.\n[Interviewer] Has anything been changed since go-live?\n[Respondent] The pedestrian minimum, yes. It came up that the crossing at Alder and Third was clearing people too tight when the adaptive logic was pushing throughput. We raised the floor at that junction and then at four others with similar geometry. It wasn't a regulation issue, we just set the floor higher than the regulation requires.\n[Interviewer] Who noticed it was too tight?\n[Respondent] One of our own technicians, on site for something else. Not a complaint, not the monitoring dashboard. A man standing at a junction with a stopwatch because something looked wrong to him. I don't have a system that replaces that and it bothers me.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T20:51:19",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 32.3,
+  "absence": 0
+ }
+}

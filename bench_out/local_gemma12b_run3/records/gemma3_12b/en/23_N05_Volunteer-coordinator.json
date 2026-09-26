@@ -1,0 +1,94 @@
+{
+ "respondent": "Volunteer coordinator",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "middle_management",
+  "sector": "energy_sustainability",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript: 'Volunteer coordinator, walking and cycling advocacy group'"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Prioritizing Verifiability Through Low-Tech Methods",
+   "quote": "Deliberately low-tech, because we wanted anybody to be able to check what we'd done.",
+   "full_text": "Deliberately low-tech, because we wanted anybody to be able to check what we'd done. We measured wait time from arrival at the kerb to green, which is the number that matters to a person and is not the number anybody publishes.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Emphasis on accessibility and verifiability promotes open participation."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Unexpected Results Highlight the Limitations of Summary Statistics",
+   "quote": "Median wait went down...The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.",
+   "full_text": "Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Recognition that a common metric (median) can mask important disparities and lead to misleading conclusions."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Acknowledging Methodological Weakness for Transparency",
+   "quote": "Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+   "full_text": "Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it. Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Openly acknowledging a significant limitation in the methodology demonstrates epistemic humility."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Maintaining Consistency Over Improvement for Comparative Analysis",
+   "quote": "the point is the comparison, so we can't improve the method even where we now know it's weak.",
+   "full_text": "Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak. That's frustrating and it's the right call.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Prioritizing comparability over methodological improvement demonstrates a resistance to adapting the approach, even when weaknesses are known."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent demonstrates a strong commitment to reflexivity, evident in their willingness to acknowledge methodological limitations and the potential for misleading results. The emphasis on verifiability and open participation aligns with principles of public engagement. However, a notable tension arises from the prioritization of comparability over methodological improvement, suggesting a reluctance to adapt the approach even when weaknesses are apparent. The respondent’s focus on transparency and honesty, even when it reveals flaws, is a key characteristic of their approach to data collection and dissemination.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N05 — Volunteer coordinator, walking and cycling advocacy group\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You did your own measurement, I understand.\n[Respondent] We did. Twenty-two volunteers, four Saturdays, stopwatches and a clipboard at fourteen junctions. Deliberately low-tech, because we wanted anybody to be able to check what we'd done. We measured wait time from arrival at the kerb to green, which is the number that matters to a person and is not the number anybody publishes.\n[Interviewer] What did you find?\n[Respondent] Median wait went down. I'll say that first because it's what we found and it wasn't what we expected. Median wait went down by about nine seconds. The ninetieth percentile went up by about twenty-six. So most crossings got a bit better and the bad ones got noticeably worse, and if you only publish the median you would report this as a success.\n[Interviewer] How was that received?\n[Respondent] Better than the campaigning stuff we've sent before, honestly, and I think it's because we led with the good news. An officer emailed and asked for our raw sheets, which we sent. Nothing changed at a junction as a result, but the ninetieth percentile now appears in the monthly summary, and it didn't before.\n[Interviewer] Will you repeat the survey?\n[Respondent] Yes, same four Saturdays next year, same junctions, same method — the point is the comparison, so we can't improve the method even where we now know it's weak. That's frustrating and it's the right call.\n[Interviewer] What's the weakness you'd fix if you could?\n[Respondent] Saturdays. We measure Saturdays because that's when volunteers are free, and Saturday is not when most people cross to get to work or school. Our entire dataset describes a day that isn't representative and I'd rather say that out loud than have somebody find it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-27T03:03:16",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 167.0,
+  "absence": 0
+ }
+}

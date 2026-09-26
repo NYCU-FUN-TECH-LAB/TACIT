@@ -1,0 +1,112 @@
+{
+ "respondent": "Chief information officer",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript: 'Interview transcript G02 — Chief information officer, city council'"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Reliance on Standard Governance Processes",
+   "quote": "It's on the corporate risk register, it has a senior responsible owner, it reports into the digital board quarterly. That’s the same governance any major system gets and I'd resist the idea that it needs something special.",
+   "full_text": "Through the standard route. It's on the corporate risk register, it has a senior responsible owner, it reports into the digital board quarterly. That’s the same governance any major system gets and I'd resist the idea that it needs something special. Once you start creating bespoke oversight for anything with a model in it, you end up with forty committees and no capacity.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent frames existing governance as sufficient, resisting adaptation for this specific system, indicating obduracy."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Acknowledging Limited Expertise",
+   "quote": "It has me. And a non-executive with a technology background. Is that enough to interrogate a detection model in detail? No, probably not.",
+   "full_text": "Does the digital board have the expertise to interrogate a model?\nIt has me. And a non-executive with a technology background. Is that enough to interrogate a detection model in detail? No, probably not. What we do instead is rely on the vendor's assurance documentation and on the acceptance testing.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent acknowledges the limited expertise of the digital board regarding the model, demonstrating a degree of epistemic humility."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Commercial Confidentiality Justification for Refusal",
+   "quote": "Two asked for the algorithm and we refused those on commercial confidentiality grounds, which is the vendor's position and legally sound.",
+   "full_text": "We've had — I want to say six or seven freedom of information requests. Most were about camera locations and we answered those. Two asked for the algorithm and we refused those on commercial confidentiality grounds, which is the vendor's position and legally sound.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Refusal of information requests, justified by commercial confidentiality, represents closed and exclusive engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Acknowledging a Missed Opportunity for Transparency",
+   "quote": "I don't believe transparency terms were in the specification. That's a fair criticism and I'd expect it to be in the next one.",
+   "full_text": "Did the council consider negotiating that at procurement?\nI don't believe transparency terms were in the specification. That's a fair criticism and I'd expect it to be in the next one. The honest position is that in 2022 we weren't thinking about it, and by the time you're arguing about disclosure you've already signed.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Acknowledging a past failure to consider transparency terms suggests a deferral of foresight and a reactive rather than anticipatory approach."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Acknowledging the criticism and expressing an expectation for improvement demonstrates a degree of self-reflection."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Limited Resident Challenge Route",
+   "quote": "There's the general complaints process. It routes to transport, not to us. Whether transport can then change a parameter depends on the change-control terms, which — I'd have to look.",
+   "full_text": "Is there a route for a resident to challenge how a junction behaves?\nThere's the general complaints process. It routes to transport, not to us. Whether transport can then change a parameter depends on the change-control terms, which — I'd have to look. I don't know the answer to that off the top of my head, which I appreciate is not a great answer.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The limited and indirect route for resident challenges suggests a lack of institutionalized mechanisms for responsiveness to external signals."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The Chief Information Officer primarily frames governance around established corporate processes, demonstrating a degree of obduracy in adapting to the specific needs of the adaptive traffic signal system. While acknowledging limitations in expertise and past oversights, the respondent largely relies on vendor assurance and standard procedures. Engagement with the public is limited, with requests for algorithmic transparency being denied on commercial confidentiality grounds. The account reveals a reactive approach, with foresight regarding transparency terms lacking in the initial procurement phase. The overall impression is one of adherence to existing structures rather than a proactive and adaptive approach to responsible innovation.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G02 — Chief information officer, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does a system like this get governed once it's running?\n[Respondent] Through the standard route. It's on the corporate risk register, it has a senior responsible owner, it reports into the digital board quarterly. That's the same governance any major system gets and I'd resist the idea that it needs something special. Once you start creating bespoke oversight for anything with a model in it, you end up with forty committees and no capacity.\n[Interviewer] Does the digital board have the expertise to interrogate a model?\n[Respondent] It has me. And a non-executive with a technology background. Is that enough to interrogate a detection model in detail? No, probably not. What we do instead is rely on the vendor's assurance documentation and on the acceptance testing.\n[Interviewer] Has the public asked for information about the system?\n[Respondent] We've had — I want to say six or seven freedom of information requests. Most were about camera locations and we answered those. Two asked for the algorithm and we refused those on commercial confidentiality grounds, which is the vendor's position and legally sound.\n[Interviewer] Did the council consider negotiating that at procurement?\n[Respondent] I don't believe transparency terms were in the specification. That's a fair criticism and I'd expect it to be in the next one. The honest position is that in 2022 we weren't thinking about it, and by the time you're arguing about disclosure you've already signed.\n[Interviewer] Is there a route for a resident to challenge how a junction behaves?\n[Respondent] There's the general complaints process. It routes to transport, not to us. Whether transport can then change a parameter depends on the change-control terms, which — I'd have to look. I don't know the answer to that off the top of my head, which I appreciate is not a great answer.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-27T02:24:57",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 260.2,
+  "absence": 0
+ }
+}

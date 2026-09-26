@@ -1,0 +1,112 @@
+{
+ "respondent": "Director",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript: 'Director, older people's community service'"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Service users adjust behaviour due to unpredictable crossing",
+   "quote": "We started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street.",
+   "full_text": "In cancelled appointments, mostly. We run a day centre and we started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The crossing's unpredictability led to user disruption, highlighting a lack of responsiveness from the system."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Frustration with bureaucratic response to user concerns",
+   "quote": "I wrote to the transport department with the numbers… then a letter saying detection accuracy at that junction was within specification.",
+   "full_text": "I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The department's response demonstrates a closed, exclusive approach, focusing on technical specifications rather than user experience."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Desire for acknowledgement and understanding, not immediate action",
+   "quote": "I need to know the problem I described has been understood.",
+   "full_text": "Anything that engaged with unpredictability. 'We measure accuracy, we don't measure consistency, we'll look at whether we can.' That would have been a good answer and it costs nothing to write. I don't need them to fix it in a fortnight. I need to know the problem I described has been understood.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent highlights the importance of understanding the problem, demonstrating a desire for a more reflective and human-centered response."
+    },
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "The respondent articulates a desired form of engagement - acknowledgement and understanding of the problem."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Reliance on councillor as a workaround highlights systemic issues",
+   "quote": "I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "full_text": "Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The need to rely on a councillor to resolve the issue indicates a lack of institutional responsiveness and equitable access to solutions."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Limited communication with service users about the resolution",
+   "quote": "I told the ones who'd told me, because that seemed like the least I could do.",
+   "full_text": "Some do. I told the ones who'd told me, because that seemed like the least I could do. What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "While some communication occurred, the lack of explanation for the delay suggests limited engagement and transparency."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent's account reveals a significant lack of responsiveness and engagement from the transport department regarding a problematic pedestrian crossing. The issue, causing disruption and anxiety for older people attending a day centre, was ultimately resolved through a councillor's intervention, highlighting a systemic problem of unequal access and bureaucratic inertia. While some communication occurred with affected service users, the inability to explain the lengthy delay underscores a lack of transparency and a failure to address the underlying causes of the problem. The respondent demonstrates a desire for a more reflexive approach, emphasizing the importance of understanding user concerns rather than simply adhering to technical specifications. The account primarily highlights negative polarities across responsiveness and engagement, suggesting a need for more inclusive and adaptive processes within the transport department.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N04 — Director, older people's community service\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does this show up in your work?\n[Respondent] In cancelled appointments, mostly. We run a day centre and we started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.\n[Interviewer] Did you report it?\n[Respondent] I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.\n[Interviewer] What would have been a useful reply?\n[Respondent] Anything that engaged with unpredictability. 'We measure accuracy, we don't measure consistency, we'll look at whether we can.' That would have been a good answer and it costs nothing to write. I don't need them to fix it in a fortnight. I need to know the problem I described has been understood.\n[Interviewer] Have you found any other route?\n[Respondent] Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.\n[Interviewer] Do the people who use your centre know any of this happened?\n[Respondent] Some do. I told the ones who'd told me, because that seemed like the least I could do. What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-27T03:00:29",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 254.4,
+  "absence": 0
+ }
+}

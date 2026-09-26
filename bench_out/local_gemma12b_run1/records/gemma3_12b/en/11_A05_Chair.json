@@ -1,0 +1,99 @@
+{
+ "respondent": "Chair, university research ethics committee",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "senior_management",
+  "sector": "unspecified",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript states respondent is Chair, university research ethics committee"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Distinction between research ethics review and system deployment",
+   "quote": "Only the research on it, not the system itself. That distinction is the whole problem in one sentence.",
+   "full_text": "Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The system deployment bypassed the ethics committee, demonstrating a lack of responsiveness to ethical considerations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Lack of authority and capacity for broader ethical oversight",
+   "quote": "Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we’re already behind.",
+   "full_text": "Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Acknowledges limitations in authority and capacity, implicitly highlighting a lack of institutional self-reflection regarding ethical oversight."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Researcher preparedness for inconvenient findings",
+   "quote": "What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder.",
+   "full_text": "More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent demonstrates reflexivity by questioning the preparedness of researchers for potentially problematic findings and initiating a new line of inquiry."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Limited public representation on the ethics committee",
+   "quote": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category.",
+   "full_text": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The limited representation of lay members indicates a closed and exclusive engagement process."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent acknowledges the inadequacy of the current public representation and expresses concern about proceeding without it, demonstrating a degree of self-reflection."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent highlights a significant disconnect between research ethics review and the deployment of systems like the adaptive traffic signal, revealing a lack of responsiveness and institutional capacity for broader ethical oversight. While acknowledging progress in areas like data protection impact assessments, the respondent demonstrates reflexivity by questioning researcher preparedness for inconvenient findings and expressing concern about the limited public representation on the committee. The account underscores a system where ethical considerations are often sidelined, particularly when they conflict with procurement processes or funding priorities, and where the voices of affected communities are inadequately represented.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A05 — Chair, university research ethics committee\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Did any part of this deployment come before your committee?\n[Respondent] Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.\n[Interviewer] Could your committee's remit cover deployments?\n[Respondent] Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.\n[Interviewer] What have you seen change in the studies that do come to you?\n[Respondent] More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.\n[Interviewer] Do affected communities have any voice in your process?\n[Respondent] We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T22:13:07",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 207.0,
+  "absence": 0
+ }
+}

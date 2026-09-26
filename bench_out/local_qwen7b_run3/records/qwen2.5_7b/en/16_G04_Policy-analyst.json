@@ -1,0 +1,94 @@
+{
+ "respondent": "unspecified",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "policy_maker",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "unstated in the transcript"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Reflexivity - N",
+   "quote": "The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong.",
+   "full_text": "Yes. There was a submission in 2021 recommending exactly that and it wasn't prioritised. I've read it. It's a good submission. The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "The respondent attributes the lack of prioritisation to a reactive mechanism, showing a lack of epistemic humility."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Engagement - N",
+   "quote": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents.",
+   "full_text": "A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent explicitly states that no disability organisations or residents were involved, indicating a closed approach."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Responsiveness - N",
+   "quote": "Making it statutory requires primary legislation and there is no legislative slot.",
+   "full_text": "It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent indicates that statutory requirements are not possible due to the lack of legislative slot, showing an obdurate stance."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Anticipation - N",
+   "quote": "In practice as a thing that happened which we now have to write guidance about retrospectively.",
+   "full_text": "As a pilot we can learn from, officially. In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "The respondent describes the guidance as a retrospective response to events, lacking foresight and exploration of alternative futures."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The policy analyst exhibits a predominantly negative stance across all dimensions. The lack of proactive anticipation, the absence of reflexivity in terms of the reactive prioritisation mechanism, the closed approach to public engagement, and the obdurate stance on statutory requirements all point to a reactive and unresponsive approach to responsible innovation. The only positive aspect is the recognition of the need for guidance, but this is framed within the constraints of existing conditions rather than proactive foresight or inclusive dialogue.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G04 — Policy analyst, national transport ministry\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does central government see deployments like Port Calder's?\n[Respondent] As a pilot we can learn from, officially. In practice as a thing that happened which we now have to write guidance about retrospectively. Eleven authorities did something in this space before there was any national position, and the guidance we're now drafting has to be compatible with all eleven, which means it will be weak.\n[Interviewer] Could the ministry have moved earlier?\n[Respondent] Yes. There was a submission in 2021 recommending exactly that and it wasn't prioritised. I've read it. It's a good submission. The reason it wasn't prioritised is that nothing had gone wrong yet, and our attention is allocated by what has gone wrong. That's the honest mechanism and it's not specific to this file.\n[Interviewer] What's going into the guidance?\n[Respondent] A requirement to publish what the system optimises. A requirement for a documented fallback that is tested annually, because everyone has a fallback on paper and nobody tests it. And a requirement to report performance disaggregated by pedestrian type, which is the one that will get pushed back on hardest because it's the one that would show something.\n[Interviewer] Will it have teeth?\n[Respondent] It's guidance. Authorities must have regard to it. In practice that means the ones already doing it will cite it and the ones who aren't will note that they've had regard to it and carry on. Making it statutory requires primary legislation and there is no legislative slot.\n[Interviewer] Was anyone outside government involved in drafting?\n[Respondent] A working group — five authorities, three vendors, two academics. No disability organisations, no residents. I raised it. I was told the timeline didn't allow for a public consultation, which is true, and also we set the timeline.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T21:13:58",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 24.1,
+  "absence": 0
+ }
+}

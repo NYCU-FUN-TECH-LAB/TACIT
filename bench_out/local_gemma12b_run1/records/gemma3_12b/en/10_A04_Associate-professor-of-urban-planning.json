@@ -1,0 +1,107 @@
+{
+ "respondent": "Associate professor of urban planning",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "senior_management",
+  "sector": "energy_sustainability",
+  "experience": "over_20y",
+  "descriptor_basis": "Interview transcript states respondent is an Associate professor of urban planning."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Traffic improvements lead to increased demand",
+   "quote": "It makes driving slightly better, which over ten years makes driving slightly more attractive, which puts more cars on the road, which uses up the capacity the system created.",
+   "full_text": "It makes driving slightly better, which over ten years makes driving slightly more attractive, which puts more cars on the road, which uses up the capacity the system created. Traffic engineers have known this since the sixties and it has a name, induced demand, and it gets left out of every business case I have ever read including this one.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Short-term focus; ignores long-term consequences of traffic improvements, deterministic view of traffic patterns."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Shifting responsibility for long-term consequences",
+   "quote": "Which is true and also a way of ensuring nobody owns it. Every actor here has a defensible reason why the long-term question belongs to someone else, and the sum of those defensible reasons is that it belongs to nobody.",
+   "full_text": "Which is true and also a way of ensuring nobody owns it. Every actor here has a defensible reason why the long-term question belongs to someone else, and the sum of those defensible reasons is that it belongs to nobody.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Highlights a lack of accountability and responsibility for long-term consequences; deflects ownership of the problem."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Unexpected agreement through facilitated scenarios",
+   "quote": "The useful part wasn't the scenarios, it was that the freight association and the disability group ended up agreeing about kerb space, which neither of them expected and neither would have discovered in a consultation questionnaire.",
+   "full_text": "We did, with about thirty people — planners, two councillors, a bus operator, four residents, a freight association, a disability group. Three scenarios out to 2040. The useful part wasn't the scenarios, it was that the freight association and the disability group ended up agreeing about kerb space, which neither of them expected and neither would have discovered in a consultation questionnaire.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Facilitated a workshop bringing together diverse stakeholders (planners, councillors, residents, freight association, disability group) to explore future scenarios."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Limited impact of public input",
+   "quote": "It sits alongside four hundred other submissions. I'd call that neither success nor failure. It's in the record. Sometimes things in the record get picked up years later by someone you've never met.",
+   "full_text": "Into the local plan consultation, where it sits alongside four hundred other submissions. I'd call that neither success nor failure. It's in the record. Sometimes things in the record get picked up years later by someone you've never met.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Highlights the limited impact of public input and a lack of responsiveness to feedback, as submissions are lost in a large pool."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Call for transparency of system objectives",
+   "quote": "Publish the objective function. One page, plain language: here is what the system is trying to maximise, here is what it treats as a cost, here is who decided.",
+   "full_text": "Publish the objective function. One page, plain language: here is what the system is trying to maximise, here is what it treats as a cost, here is who decided. Nobody can argue with a system whose goals are undisclosed, and at the moment nobody outside the vendor knows what it is optimising.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Calls for transparency and scrutiny of the system's goals, demonstrating a desire for accountability and open decision-making."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent demonstrates a critical perspective on technological solutions, particularly concerning induced demand and the deflection of responsibility for long-term consequences. While acknowledging the value of participatory workshops, they express frustration with the limited impact of public input and the lack of responsiveness within planning processes. The respondent’s call for transparency regarding the system’s objective function highlights a strong desire for reflexivity and accountability, suggesting a need for greater scrutiny of underlying assumptions and decision-making processes. The negative polarity codes relating to anticipation and responsiveness are prominent, revealing a concern that short-term gains are prioritized over long-term sustainability and that feedback is not adequately incorporated into decision-making. Engagement is evident in the workshop format, but its impact is tempered by the broader systemic issues identified.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A04 — Associate professor of urban planning\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What's your reading of what this system does to the city?\n[Respondent] It makes driving slightly better, which over ten years makes driving slightly more attractive, which puts more cars on the road, which uses up the capacity the system created. Traffic engineers have known this since the sixties and it has a name, induced demand, and it gets left out of every business case I have ever read including this one.\n[Interviewer] Was that raised during planning?\n[Respondent] I raised it at a workshop. The response was that the system is signal timing, not transport policy, and induced demand is a policy question. Which is true and also a way of ensuring nobody owns it. Every actor here has a defensible reason why the long-term question belongs to someone else, and the sum of those defensible reasons is that it belongs to nobody.\n[Interviewer] You ran a scenario workshop yourself, I think?\n[Respondent] We did, with about thirty people — planners, two councillors, a bus operator, four residents, a freight association. Three scenarios out to 2040. The useful part wasn't the scenarios, it was that the freight association and the disability group ended up agreeing about kerb space, which neither of them expected and neither would have discovered in a consultation questionnaire.\n[Interviewer] Did the workshop output go anywhere?\n[Respondent] Into the local plan consultation, where it sits alongside four hundred other submissions. I'd call that neither success nor failure. It's in the record. Sometimes things in the record get picked up years later by someone you've never met. I've stopped measuring impact on a three-year cycle because nothing in planning works on a three-year cycle.\n[Interviewer] If the city asked you what to change tomorrow, what would you say?\n[Respondent] Publish the objective function. One page, plain language: here is what the system is trying to maximise, here is what it treats as a cost, here is who decided. Nobody can argue with a system whose goals are undisclosed, and at the moment nobody outside the vendor knows what it is optimising.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T22:09:40",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 256.8,
+  "absence": 0
+ }
+}

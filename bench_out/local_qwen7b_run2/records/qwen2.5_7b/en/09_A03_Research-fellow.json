@@ -1,0 +1,112 @@
+{
+ "respondent": "Respondent",
+ "descriptors": {
+  "institution_type": "research_institute",
+  "role_level": "researcher",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "unstated in the transcript"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Data access and audit process",
+   "quote": "I asked for the raw detection logs and I was given aggregates. That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked.",
+   "full_text": "Interviewer | You audited the system's performance. How did you approach it? Respondent | I asked for the raw detection logs and I was given aggregates. That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked. Once I had the logs the audit itself took three weeks.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The audit was initiated by a councillor, not by the researcher, and the residents were not involved."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Audit findings and outcomes",
+   "quote": "Two things. The headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards. So the people most likely to be waiting longer for a crossing signal are also the people least likely to own a car.",
+   "full_text": "Interviewer | What did the audit show? Respondent | Two things. The headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards. So the people most likely to be waiting longer for a crossing signal are also the people least likely to own a car. I want to be careful: that's an association in one city over eleven months, it is not a law of nature.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "The respondent acknowledges the association and its potential implications, showing a reflective approach."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent questions the headline accuracy and considers the implications of the findings."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Reporting and outcomes",
+   "quote": "Better than I expected, actually. The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That's a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported.",
+   "full_text": "Interviewer | What happened when you reported it? Respondent | Better than I expected, actually. The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That's a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The transport department acted on the findings, resulting in a street-lighting upgrade."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Recommendations for performance reporting",
+   "quote": "Yes, and it's not complicated. Report the worst decile, not the mean. Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about. It costs nothing to add a column.",
+   "full_text": "Interviewer | Should performance reporting be different? Respondent | Yes, and it's not complicated. Report the worst decile, not the mean. Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about. It costs nothing to add a column.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent reflects on the current practice of reporting mean values and suggests an alternative."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Reflection on the audit process",
+   "quote": "In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+   "full_text": "Interviewer | Were residents involved in the audit at any point? Respondent | No. It was a data exercise. In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent reflects on the inefficiency of the data collection process and suggests a more direct approach."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent demonstrates strong engagement in the initial audit process, as evidenced by the effort to obtain raw data and the subsequent findings. However, the lack of resident involvement in the audit process indicates a negative engagement. The respondent shows positive reflexivity by acknowledging the implications of the findings and suggesting improvements in performance reporting. The audit led to a positive responsiveness outcome, with a street-lighting upgrade. The respondent also reflects on the inefficiency of the data collection process, indicating a willingness to improve future practices.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A03 — Research fellow, urban data science centre\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | You audited the system's performance. How did you approach it?\nRespondent | I asked for the raw detection logs and I was given aggregates. That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked. Once I had the logs the audit itself took three weeks.\nInterviewer | What did the audit show?\nRespondent | Two things. The headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards. So the people most likely to be waiting longer for a crossing signal are also the people least likely to own a car. I want to be careful: that's an association in one city over eleven months, it is not a law of nature.\nInterviewer | What happened when you reported it?\nRespondent | Better than I expected, actually. The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That's a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported. So the symptom got fixed in the cheapest available place.\nInterviewer | Should performance reporting be different?\nRespondent | Yes, and it's not complicated. Report the worst decile, not the mean. Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about. It costs nothing to add a column.\nInterviewer | Were residents involved in the audit at any point?\nRespondent | No. It was a data exercise. In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T20:53:32",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 37.1,
+  "absence": 0
+ }
+}

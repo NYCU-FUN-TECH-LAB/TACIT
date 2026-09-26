@@ -1,0 +1,125 @@
+{
+ "respondent": "Chief technology officer",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript states respondent is a Chief Technology Officer at an AI perception startup."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Detailed Modeling of Failure Modes",
+   "quote": "We model failure modes in a lot of detail — occlusion, low light, unusual gaits, people pushing strollers, cyclists dismounting.",
+   "full_text": "We model failure modes in a lot of detail — occlusion, low light, unusual gaits, people pushing strollers, cyclists dismounting. We built a whole synthetic test set for edge cases because the real data didn't have enough of them. If a detector misses a person in a wheelchair at dusk, that is a catastrophic failure for us, commercially and otherwise.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Explicitly considering potential failure modes and building synthetic data to address edge cases demonstrates foresight and exploration of future scenarios."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Lack of Consideration for Long-Term Urban Effects",
+   "quote": "Honestly, no. We're a thirty-person company. Our runway is eighteen months. Ten-year urban effects is a question for someone with tenure.",
+   "full_text": "Honestly, no. We're a thirty-person company. Our runway is eighteen months. Ten-year urban effects is a question for someone with tenure. I don't say that dismissively, it's genuinely a different job from mine and I'm not equipped for it.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Explicitly stating a lack of consideration for long-term effects and deferring responsibility demonstrates a short-term, deterministic focus."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Vendor Optimization and Absence of Broader Perspective",
+   "quote": "Everyone in the room was optimising their own deliverable.",
+   "full_text": "Not that I saw. There was a university partner on the original bid but they dropped out over funding. After that it was three vendors and the city. Everyone in the room was optimising their own deliverable.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Describes a situation where all actors were focused on their own deliverables, indicating a closed and exclusive approach to collaboration."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Hiding Performance Disparities in Aggregate Data",
+   "quote": "Where it gets uncomfortable is that the aggregate number hides the distribution. Our worst subgroup was people using mobility aids, and that number was materially lower.",
+   "full_text": "Where it gets uncomfortable is that the aggregate number hides the distribution. Our worst subgroup was people using mobility aids, and that number was materially lower. We flagged it, we put it in the report, and then — nobody asked about it, and we moved on. In hindsight flagging it in an appendix isn't the same as raising it.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Acknowledging the discomfort of hiding performance disparities and recognizing the inadequacy of simply flagging the issue demonstrates a lack of deeper self-scrutiny."
+    },
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The issue was flagged but not addressed, indicating a lack of responsiveness to the data and a failure to change course."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Absence of Direct Engagement with Affected Users",
+   "quote": "No. We had the city's requirements document and we built to it. In retrospect that's a strange way to build something that has to detect people, isn't it — we never met any of the people the system was hardest for.",
+   "full_text": "No. We had the city's requirements document and we built to it. In retrospect that's a strange way to build something that has to detect people, isn't it — we never met any of the people the system was hardest for.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Explicitly states the absence of direct engagement with users, demonstrating a closed and exclusive approach."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Contractual Constraints on User Research",
+   "quote": "Someone would have had to put it in the contract and pay for it. I know how that sounds. But we bid against two other firms on price.",
+   "full_text": "Someone would have had to put it in the contract and pay for it. I know how that sounds. But we bid against two other firms on price. If I'd priced in a user research programme we wouldn't have won, and then you'd be interviewing whoever did.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Highlights how external constraints (price competition) prevented responsiveness to user needs, demonstrating a lack of capacity to change course."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent, a Chief Technology Officer at an AI perception startup, demonstrates a strong focus on technical failure modes and a commitment to detailed modeling. However, there's a marked absence of anticipation regarding the broader societal and urban impacts of the technology, attributed to resource constraints and a short-term focus. Reflexivity is limited, with a recognition of performance disparities but a failure to address them effectively. Engagement is notably absent, with no direct interaction with users, particularly those most affected by the system. The respondent’s account reveals a system constrained by contractual obligations and competitive pricing, hindering responsiveness to user needs and broader societal concerns. The negative polarities across engagement and responsiveness, coupled with the limited reflexivity, suggest a system prioritizing technical delivery over responsible innovation.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P02 — Chief technology officer, AI perception startup\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Your company supplied the detection models. How do you think about what could go wrong with them?\n[Respondent] Constantly. That's most of my job. We model failure modes in a lot of detail — occlusion, low light, unusual gaits, people pushing strollers, cyclists dismounting. We built a whole synthetic test set for edge cases because the real data didn't have enough of them. If a detector misses a person in a wheelchair at dusk, that is a catastrophic failure for us, commercially and otherwise.\n[Interviewer] Beyond detection accuracy — did you look at longer-term effects? How the system might change the street over five or ten years?\n[Respondent] Honestly, no. We're a thirty-person company. Our runway is eighteen months. Ten-year urban effects is a question for someone with tenure. I don't say that dismissively, it's genuinely a different job from mine and I'm not equipped for it.\n[Interviewer] Was there anyone in the consortium who did hold that question?\n[Respondent] Not that I saw. There was a university partner on the original bid but they dropped out over funding. After that it was three vendors and the city. Everyone in the room was optimising their own deliverable.\n[Interviewer] How did you decide what counted as acceptable performance?\n[Respondent] The city gave us a target and we beat it. Ninety-eight point five on detection, we shipped at ninety-nine point one. Where it gets uncomfortable is that the aggregate number hides the distribution. Our worst subgroup was people using mobility aids, and that number was materially lower. We flagged it, we put it in the report, and then — nobody asked about it, and we moved on. In hindsight flagging it in an appendix isn't the same as raising it.\n[Interviewer] Did you speak to any disability organisations directly?\n[Respondent] No. We had the city's requirements document and we built to it. In retrospect that's a strange way to build something that has to detect people, isn't it — we never met any of the people the system was hardest for.\n[Interviewer] What would have had to be different for that to happen?\n[Respondent] Someone would have had to put it in the contract and pay for it. I know how that sounds. But we bid against two other firms on price. If I'd priced in a user research programme we wouldn't have won, and then you'd be interviewing whoever did.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T23:34:05",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 303.8,
+  "absence": 0
+ }
+}

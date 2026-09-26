@@ -1,0 +1,152 @@
+{
+ "respondent": "Project director",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "The interview transcript states the respondent is a Project director at a systems integration contractor."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Contractor's Role: Building to Specification",
+   "quote": "But social impact, what it does to the city as a city — honestly, that's not our remit. We're a contractor. The city writes a specification, we build to the specification. That's the arrangement.",
+   "full_text": "But social impact, what it does to the city as a city — honestly, that's not our remit. We're a contractor. The city writes a specification, we build to the specification. That's the arrangement.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent explicitly states their role is to build to a pre-defined specification, indicating a closed and exclusive approach to engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Prioritizing Speed Over Anticipation",
+   "quote": "Sitting around imagining what might go wrong is, in my experience, a way of not shipping anything. Build it, see what breaks, fix what breaks.",
+   "full_text": "Sitting around imagining what might go wrong is, in my experience, a way of not shipping anything. Build it, see what breaks, fix what breaks.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "The respondent frames foresight and consideration of potential problems as hindering progress, demonstrating a deterministic and short-term approach."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Public Information Session as Notification",
+   "quote": "So the session was more about — letting people know what was coming. Changing the design in that room wasn't realistic.",
+   "full_text": "So the session was more about — letting people know what was coming. Changing the design in that room wasn't realistic.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The public information session is presented as a means of notification rather than genuine engagement, as design changes were deemed unrealistic."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Regulatory Constraints as a Barrier to Responsiveness",
+   "quote": "But the interval is set by national regulation — we can't just change it. So we explained that this is a regulatory matter, not a system matter, and that she should raise it with the ministry.",
+   "full_text": "But the interval is set by national regulation — we can't just change it. So we explained that this was a regulatory matter, not a system matter, and that she should raise it with the ministry.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent attributes a lack of responsiveness to external regulatory constraints, framing regulation as an obstacle."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "User feedback highlighted a regulatory constraint",
+   "quote": "One woman, a wheelchair user, said the pedestrian crossing interval wasn't long enough for her. That stuck with me, actually.",
+   "full_text": "One woman, a wheelchair user, said the pedestrian crossing interval wasn't long enough for her. That stuck with me, actually. But the interval is set by national regulation — we can't just change it. So we explained that this was a regulatory matter, not a system matter, and that she should raise it with the ministry.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Direct user feedback is acknowledged and considered, though ultimately constrained by external factors."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Regulatory constraints limit responsiveness to user needs",
+   "quote": "But the interval is set by national regulation — we can't just change it. So we explained that this was a regulatory matter, not a system matter, and that she should raise it with the ministry.",
+   "full_text": "One woman, a wheelchair user, said the pedestrian crossing interval wasn't long enough for her. That stuck with me, actually. But the interval is set by national regulation — we can't just change it. So we explained that this was a regulatory matter, not a system matter, and that she should raise it with the ministry.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The response to user feedback is constrained by external regulation, demonstrating a lack of adaptive capacity."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Acceptance of the system's performance within defined parameters",
+   "quote": "The system does what it was specified to do, within tolerance, on budget. I'd sign the same contract tomorrow.",
+   "full_text": "Differently. Hmm. Maybe the documentation, we could have written the user-facing documentation better. But the engineering, no. The system does what it was specified to do, within tolerance, on budget. I'd sign the same contract tomorrow.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "The respondent expresses satisfaction with the system's performance and would re-sign the contract, indicating a lack of critical self-reflection."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Acknowledging a potential gap in data governance transparency",
+   "quote": "That’s genuinely not something I get asked about often, which now that you say it out loud is maybe a bit odd.",
+   "full_text": "The city holds it. We process it. There’s a data-sharing agreement, it went through their legal team and ours. I couldn't tell you the retention period off the top of my head, it's in the schedule. That's genuinely not something I get asked about often, which now that you say it out loud is maybe a bit odd.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent expresses surprise at not being asked about data retention, suggesting a potential lack of transparency or oversight."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "",
+ "_meta": {
+  "chunking": {
+   "window_chars": 3000,
+   "overlap_chars": 300,
+   "n_chunks": 2,
+   "n_ok": 2
+  },
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P01 — Project director, systems integration contractor\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Let's start with the beginning of the project. When Port Calder brought you in, how did you assess what this system might do to the city?\n[Respondent] Right, so — I want to split that into two parts, because people conflate them. On the technical side, absolutely, we ran a full assessment. False positive rate, detection accuracy under rain, night performance, we have an internal acceptance standard that's frankly stricter than what the city asked for. That part I'm confident about. But social impact, what it does to the city as a city — honestly, that's not our remit. We're a contractor. The city writes a specification, we build to the specification. That's the arrangement.\n[Interviewer] Was there any discussion early on about unintended consequences?\n[Respondent] Unintended consequences. Look, I'll probably sound naive saying this, but smart infrastructure is where everything is going. Every city in the region is doing it. If we don't do it someone else will, so it's a question of when, not whether. Sitting around imagining what might go wrong is, in my experience, a way of not shipping anything. Build it, see what breaks, fix what breaks. And a lot of the concerns people raise, with respect, come from not understanding the technology. Once the thing is running and people's commutes get shorter, that noise dies down on its own.\n[Interviewer] Were community groups or residents involved in the design?\n[Respondent] Yes, there was a public information session. The city organised it — March last year, I think, in the council building. We presented the system, what it does, the expected benefits. Turnout was modest, twenty-five, thirty people.\n[Interviewer] Was that before or after the design was finalised?\n[Respondent] After. The specification was locked by then, it had to be, because you can't tender against a moving target. Once the tender documents go out, that's it. So the session was more about — letting people know what was coming. Changing the design in that room wasn't realistic. The whole procurement would have to start again and somebody would have to answer for that.\n[Interviewer] Did anyone at that session raise an objection?\n[Respondent] One woman, a wheelchair user, said the pedestrian crossing interval wasn't long enough for her. That stuck with me, actually. But the interval is set by national regulation — we can't just change it. So we explained that this was a regulatory matter, not a system matter, and that she should raise it with the ministry.\n[Interviewer] Looking back, is there anything you'd do differently?\n[Respondent] Differently. Hmm. Maybe the documentation, we could have written the user-facing documentation better. But the engineering, no. The system does what it was specified to do, within tolerance, on budget. I'd sign the same contract tomorrow.\n[Interviewer] One more — the camera data. Who holds it?\n[Respondent] The city holds it. We process it. There's a data-sharing agreement, it went through their legal team and ours. I couldn't tell you the retention period off the top of my head, it's in the schedule. That's genuinely not something I get asked about often, which now that you say it out loud is maybe a bit odd.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T23:29:01",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 396.7,
+  "absence": 0
+ }
+}

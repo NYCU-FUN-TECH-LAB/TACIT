@@ -1,0 +1,120 @@
+{
+ "respondent": "Professor of transport engineering",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "unspecified",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "The interview transcript does not state these details."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Importance of Baseline Data for System Evaluation",
+   "quote": "Without that you can never say what the system did, only what happened afterwards.",
+   "full_text": "Two things, and I got one of them. The one I got was a baseline measurement period — six months of data before anything was switched on, at all thirty junctions and at twelve control junctions elsewhere in the city. Without that you can never say what the system did, only what happened afterwards. Cities almost never do this because it delays the ribbon-cutting by six months, and I was quite obnoxious about it.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Advocating for a baseline measurement period demonstrates foresight and a desire to understand long-term impacts, avoiding premature conclusions."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Frustration with Lack of Pre-Registered Evaluation",
+   "quote": "So now the evaluation criteria are whatever the annual report says they are, which means the system has never failed and never will.",
+   "full_text": "A pre-registered evaluation protocol. I wanted us to write down, before switch-on, what would count as the system working and what would count as it failing. Including the failure conditions. That was seen as — I think the word used was 'unhelpful framing'. So now the evaluation criteria are whatever the annual report says they are, which means the system has never failed and never will.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Expressing frustration with the lack of a pre-registered evaluation protocol and the resulting biased assessment demonstrates a recognition of the limitations of the current process."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Acknowledging a Conflict of Interest",
+   "quote": "I'm aware that's a rationalisation as well as a reason.",
+   "full_text": "I'm in the acknowledgements of the annual report, which means my name lends the thing credibility whether or not I agree with what it says. I raised that. I was told I could ask to be removed. But if I take my name off I lose the meetings, and if I lose the meetings I can't argue for the baseline next time. So I stayed, and I'm aware that's a rationalisation as well as a reason.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Acknowledging the rationalization behind staying involved despite concerns demonstrates a degree of self-awareness and critical reflection."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Qualitative Data Reveals Unexpected Issues",
+   "quote": "Two people described waiting at a junction and not knowing whether the system had seen them.",
+   "full_text": "We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them. It's slow and it costs almost nothing and it surfaced things no dashboard would. Two people described waiting at a junction and not knowing whether the system had seen them. That's not a detection failure, the detection was fine — it's a legibility failure, and it wasn't in anybody's requirements.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Utilizing walking interviews with residents to gather qualitative data demonstrates a commitment to incorporating non-expert voices and understanding lived experiences."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Limited Impact of Academic Research",
+   "quote": "Whether a paper reaches a city is a separate question and the honest answer is usually no.",
+   "full_text": "It's in a paper. Whether a paper reaches a city is a separate question and the honest answer is usually no. I sent the preprint to two people in the transport department. One replied.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Acknowledging that academic research often fails to influence city policy highlights a lack of responsiveness to external feedback and a disconnect between research and practice."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Need for Dedicated Critical Evaluation",
+   "quote": "Every project I've seen has ten people paid to make it work and nobody paid to find out whether it does.",
+   "full_text": "Spend the six months. Write down what failure looks like. And budget for someone whose job is to be wrong about the thing — not a critic, a person inside the project whose performance review rewards finding problems. Every project I've seen has ten people paid to make it work and nobody paid to find out whether it does.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "Advocating for someone whose job is to find problems demonstrates a desire for a more adaptive and responsive approach to project evaluation."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent demonstrates a strong commitment to rigorous evaluation and a critical perspective on technological implementation. They consistently advocate for upstream engagement, particularly through baseline data collection and pre-registered evaluation protocols. A recurring theme is the frustration with the disconnect between academic research and practical application, and the lack of mechanisms for genuinely assessing system failure. The respondent’s awareness of their own conflicted position—being acknowledged for credibility while simultaneously disagreeing with the evaluation—highlights a reflexive stance, though this is often navigated through pragmatic rationalizations. The respondent’s emphasis on qualitative data gathering and the need for dedicated critical evaluation suggests a desire for a more responsive and accountable innovation process, though the practical challenges of achieving this are readily acknowledged.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A01 — Professor of transport engineering\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] You advised the city early on. What did you push for?\n[Respondent] Two things, and I got one of them. The one I got was a baseline measurement period — six months of data before anything was switched on, at all thirty junctions and at twelve control junctions elsewhere in the city. Without that you can never say what the system did, only what happened afterwards. Cities almost never do this because it delays the ribbon-cutting by six months, and I was quite obnoxious about it.\n[Interviewer] And the one you didn't get?\n[Respondent] A pre-registered evaluation protocol. I wanted us to write down, before switch-on, what would count as the system working and what would count as it failing. Including the failure conditions. That was seen as — I think the word used was 'unhelpful framing'. So now the evaluation criteria are whatever the annual report says they are, which means the system has never failed and never will.\n[Interviewer] How do you assess your own role in this? You're an adviser but also, in a sense, part of the project.\n[Respondent] Uncomfortably. I'm in the acknowledgements of the annual report, which means my name lends the thing credibility whether or not I agree with what it says. I raised that. I was told I could ask to be removed. But if I take my name off I lose the meetings, and if I lose the meetings I can't argue for the baseline next time. So I stayed, and I'm aware that's a rationalisation as well as a reason.\n[Interviewer] Did you involve residents in your own evaluation work?\n[Respondent] We ran walking interviews. Fourteen people, each walked a route they normally walk, with a researcher, talking about the junctions as they crossed them. It's slow and it costs almost nothing and it surfaced things no dashboard would. Two people described waiting at a junction and not knowing whether the system had seen them. That's not a detection failure, the detection was fine — it's a legibility failure, and it wasn't in anybody's requirements.\n[Interviewer] Did that reach the city?\n[Respondent] It's in a paper. Whether a paper reaches a city is a separate question and the honest answer is usually no. I sent the preprint to two people in the transport department. One replied.\n[Interviewer] What would you tell a city about to do this?\n[Respondent] Spend the six months. Write down what failure looks like. And budget for someone whose job is to be wrong about the thing — not a critic, a person inside the project whose performance review rewards finding problems. Every project I've seen has ten people paid to make it work and nobody paid to find out whether it does.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-27T01:57:29",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 292.9,
+  "absence": 0
+ }
+}

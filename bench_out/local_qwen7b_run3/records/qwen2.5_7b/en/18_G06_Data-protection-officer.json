@@ -1,0 +1,94 @@
+{
+ "respondent": "unspecified",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "unstated in the transcript"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Anticipation - N: Lack of foresight in the data protection impact assessment",
+   "quote": "Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.",
+   "full_text": "Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms. Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "The respondent notes that the data protection impact assessment is incomplete because it does not consider the real-time decision-making aspect of the system, indicating a lack of foresight."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Responsiveness - N: Lack of review mechanism",
+   "quote": "There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.",
+   "full_text": "No. It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent mentions the absence of a review mechanism, indicating a lack of responsiveness to changes in the system."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Engagement - N: Limited public involvement",
+   "quote": "Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable.",
+   "full_text": "Do residents have a route to see what data concerns them? Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The respondent describes the subject access right as difficult to exercise in practice, indicating a lack of public engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Reflexivity - N: Self-examination limited to risk register",
+   "quote": "I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.",
+   "full_text": "In a footnote. I know how that sounds after what I just said about the risk register. I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "The respondent's self-examination is limited to the risk register, suggesting a lack of broader reflexivity."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The data protection officer demonstrates a lack of anticipation in the initial data protection impact assessment, as it does not fully consider the real-time decision-making aspect of the system. There is also a lack of responsiveness, with no review mechanism in place. Public engagement is limited, as the subject access right is difficult to exercise in practice. Reflexivity is present but constrained to the risk register, indicating a cautious approach to self-examination.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G06 — Data protection officer, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Was a data protection impact assessment done?\n[Respondent] Yes, and it's a decent one, I'll defend it. It covers lawful basis, retention, access, the security arrangement, the processor terms. Where I'd now say it's thin is that it assesses the system as a camera system. It doesn't really assess it as a system that makes decisions about people in real time, because in 2022 the template I had didn't have a section for that.\n[Interviewer] Has the assessment been revisited?\n[Respondent] No. It's a live document in the sense that the policy says it's a live document. Nobody has opened it since sign-off. There's no trigger — no review date, no event that causes someone to look at it again. I could set one. I haven't.\n[Interviewer] How is retention handled in practice?\n[Respondent] Seventy-two hours for the raw video, indefinite for the derived counts. The derived counts are the interesting part and nobody asks about them because they're described as anonymous. They are anonymous. They are also a complete record of how many people crossed which junction at what time for two years, and I'm not sure 'anonymous' is doing the work people think it's doing there.\n[Interviewer] Have you raised that?\n[Respondent] In a footnote. I know how that sounds after what I just said about the risk register. I think the honest position is that I raise things in the strongest form I think will still get read, and I'm probably calibrating that too cautiously.\n[Interviewer] Do residents have a route to see what data concerns them?\n[Respondent] Subject access, in principle. In practice, to make a subject access request about camera footage you need to tell us approximately when and where you were, and most people can't, and the footage is gone in seventy-two hours anyway. So the right exists and is close to unexercisable. I've had two requests in two years and I couldn't fulfil either.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T21:14:55",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 28.7,
+  "absence": 0
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "respondent": "Chair, university research ethics committee",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "unspecified"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Ethics review process",
+   "quote": "Only the research on it, not the system itself. That distinction is the whole problem.",
+   "full_text": "Interviewer: Did any part of this deployment come before your committee? Respondent: Only the research on it, not the system itself. That distinction is the whole problem. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The decision to install the cameras was made by a procurement committee, not the ethics committee, indicating a lack of public or community engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Capacity and remit",
+   "quote": "Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind.",
+   "full_text": "Interviewer: Could your committee's remit cover deployments? Respondent: Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The committee lacks authority and capacity to review deployments, indicating a lack of engagement with the broader context."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Data protection impact assessment",
+   "quote": "More applications now include a data-protection impact assessment, which is progress.",
+   "full_text": "Interviewer: What have you seen change in the studies that do come to you? Respondent: More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "The inclusion of data-protection impact assessments is a positive sign of engagement with ethical considerations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Inconvenient findings",
+   "quote": "What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it.",
+   "full_text": "Interviewer: What have you seen change in the studies that do come to you? Respondent: More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The lack of a plan for handling inconvenient findings indicates a lack of engagement with potential ethical challenges."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Lay member's role",
+   "quote": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+   "full_text": "Interviewer: Do affected communities have any voice in your process? Respondent: We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The presence of only one lay member and their absence when they cannot attend indicates a lack of meaningful public engagement."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The Chair of the university research ethics committee primarily exhibits engagement in the form of data-protection impact assessments, but is weak in other areas such as handling inconvenient findings and public engagement. The committee lacks authority and capacity to review deployments, and the presence of only one lay member further underscores the absence of meaningful public engagement. The Chair's reflections on the committee's limitations and the need for improvement suggest a degree of reflexivity, but this is not explicitly articulated in the transcript.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A05 — Chair, university research ethics committee\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Did any part of this deployment come before your committee?\n[Respondent] Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.\n[Interviewer] Could your committee's remit cover deployments?\n[Respondent] Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.\n[Interviewer] What have you seen change in the studies that do come to you?\n[Respondent] More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.\n[Interviewer] Do affected communities have any voice in your process?\n[Respondent] We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T20:54:40",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 33.9,
+  "absence": 0
+ }
+}

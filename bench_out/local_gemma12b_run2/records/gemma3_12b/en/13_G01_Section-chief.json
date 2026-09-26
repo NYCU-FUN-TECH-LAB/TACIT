@@ -1,0 +1,130 @@
+{
+ "respondent": "Section chief, city transport department",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "middle_management",
+  "sector": "energy_sustainability",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript: 'Section chief, city transport department'"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Manifesto commitment drives project selection",
+   "quote": "The commitment came first. Then we went looking for the intervention that fitted it.",
+   "full_text": "Congestion numbers and a manifesto commitment, in that order of how it's talked about and the reverse order of how it actually worked. The commitment came first. Then we went looking for the intervention that fitted it. I don't think that's unusual and I don't think it's illegitimate — that's what elections are for — but it does mean the question 'is this the right thing to do' was settled before my department was involved.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "The project was selected to fulfill a pre-existing commitment, rather than exploring alternative futures or considering the consequences of different approaches."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Resource constraints shape consultation process",
+   "quote": "It's a resourcing answer, not a values answer, but the effect on residents is identical either way.",
+   "full_text": "Ideally you run several sessions for different groups — disability organisations one evening, ward councillors another, commuters another. Each one takes about two weeks of preparation. We ran one combined session because I have four staff and two of them were on the tram project. It's a resourcing answer, not a values answer, but the effect on residents is identical either way.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The consultation process was compromised by resource limitations, resulting in a less inclusive and potentially less effective engagement with stakeholders."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Unanswered question about police access to footage",
+   "quote": "I did check. The answer is yes, under a specific statutory route, and I never went back and told the room. Nobody chased me.",
+   "full_text": "Somebody asked whether the footage could be requested by police and I said I'd check. I did check. The answer is yes, under a specific statutory route, and I never went back and told the room. Nobody chased me. That's the bit I'm not comfortable with — the absence of anyone chasing me is not the same as it being fine.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "The respondent acknowledges a failure to follow up on a question raised during consultation, demonstrating a lack of thoroughness and a discomfort with the lack of accountability."
+    },
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Failure to provide information requested during consultation represents a closed and exclusive approach to engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Delayed implementation of accessibility improvements",
+   "quote": "We added an audible confirmation at two crossings after the sight-loss charity asked for it — that one took eleven months and it should have taken three.",
+   "full_text": "We added an audible confirmation at two crossings after the sight-loss charity asked for it — that one took eleven months and it should have taken three. And we publish a monthly summary now, which nobody reads, but it exists and when a councillor asks a question I can point at it.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Significant delays in implementing a requested change demonstrate a lack of responsiveness to external feedback and a failure to adapt the system."
+    },
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "The response, albeit delayed, demonstrates a willingness to incorporate feedback from a disability organization, showing a potential for open engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Process bottlenecks hinder small budget line changes",
+   "quote": "The rest was that it needed a small budget line and small budget lines are harder than large ones because nobody has a process for them.",
+   "full_text": "Two of it was us not knowing who owned the decision. Three was the vendor's change-control process. The rest was that it needed a small budget line and small budget lines are harder than large ones because nobody has a process for them. I've since written a standing note about who owns crossing-parameter changes, which removes the first two months next time.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The lack of processes for small budget line changes highlights an institutional rigidity that hinders responsiveness to necessary adjustments."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Recognizing gaps in organizational communication",
+   "quote": "Everything that went wrong here went wrong in the gaps between organisations, and none of those gaps were technical.",
+   "full_text": "Written down who has to be told what, and by when, before anything was switched on. Everything that went wrong here went wrong in the gaps between organisations, and none of those gaps were technical.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent identifies a key problem as failures in communication between organizations, demonstrating a degree of self-reflection on the systemic issues at play."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent’s account reveals a project driven by political commitments rather than a thorough assessment of need, leading to a constrained consultation process and delayed responsiveness to stakeholder feedback. While there's an acknowledgement of shortcomings and a desire to improve, the project's trajectory appears largely determined by external pressures and internal bureaucratic hurdles. Reflexivity is evident in the recognition of communication gaps and the identification of process bottlenecks, but the initial prioritization of political objectives over careful consideration and inclusive engagement suggests a limited capacity for anticipation and a tendency towards reactive problem-solving. The negative polarities across anticipation and responsiveness are tempered by the positive polarity of reflexivity, indicating a willingness to learn from past mistakes, although systemic change appears challenging.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G01 — Section chief, city transport department\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Where did the pressure to do this project come from?\n[Respondent] Congestion numbers and a manifesto commitment, in that order of how it's talked about and the reverse order of how it actually worked. The commitment came first. Then we went looking for the intervention that fitted it. I don't think that's unusual and I don't think it's illegitimate — that's what elections are for — but it does mean the question 'is this the right thing to do' was settled before my department was involved.\n[Interviewer] How did you approach consultation?\n[Respondent] Badly, and I'll explain why rather than defend it. Ideally you run several sessions for different groups — disability organisations one evening, ward councillors another, commuters another. Each one takes about two weeks of preparation. We ran one combined session because I have four staff and two of them were on the tram project. It's a resourcing answer, not a values answer, but the effect on residents is identical either way.\n[Interviewer] What was raised at that session?\n[Respondent] Crossing times, mostly, and one long argument about cameras that I handled poorly. Somebody asked whether the footage could be requested by police and I said I'd check. I did check. The answer is yes, under a specific statutory route, and I never went back and told the room. Nobody chased me. That's the bit I'm not comfortable with — the absence of anyone chasing me is not the same as it being fine.\n[Interviewer] Has anything about the system changed since it went live?\n[Respondent] Yes, three things. The pedestrian minimum went up at five junctions. We added an audible confirmation at two crossings after the sight-loss charity asked for it — that one took eleven months and it should have taken three. And we publish a monthly summary now, which nobody reads, but it exists and when a councillor asks a question I can point at it.\n[Interviewer] What made the eleven months?\n[Respondent] Two of it was us not knowing who owned the decision. Three was the vendor's change-control process. The rest was that it needed a small budget line and small budget lines are harder than large ones because nobody has a process for them. I've since written a standing note about who owns crossing-parameter changes, which removes the first two months next time.\n[Interviewer] What do you wish you had done at the start?\n[Respondent] Written down who has to be told what, and by when, before anything was switched on. Everything that went wrong here went wrong in the gaps between organisations, and none of those gaps were technical.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-27T00:23:29",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 317.5,
+  "absence": 0
+ }
+}

@@ -1,0 +1,161 @@
+{
+ "respondent": "Head of compliance",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript states respondent is Head of compliance at a mobility technology group."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Accepting Unpopularity for Questioning Assumptions",
+   "quote": "In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive. I've made peace with being unpopular.",
+   "full_text": "In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive. I've made peace with being unpopular. The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Speaker acknowledges the discomfort of challenging established practices and prioritizes critical questioning over popularity."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Legal Risk vs. Ethical Considerations",
+   "quote": "The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.",
+   "full_text": "The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Speaker demonstrates self-awareness by distinguishing between legal and ethical considerations, highlighting the limits of their role."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Concerns about Footage Retention",
+   "quote": "What happens to footage of people who aren't the subject of any incident.",
+   "full_text": "Three things, mainly. What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong. The third one is the one nobody has a good answer to, ever.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Questioning the long-term implications of data storage demonstrates foresight and consideration of potential future issues."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Uneven Detection Performance Across Demographics",
+   "quote": "Whether the detection performance is uniform across body types and mobility aids.",
+   "full_text": "Three things, mainly. What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong. The third one is the one nobody has a good answer to, ever.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Raising the issue of equitable performance across diverse user groups shows foresight and a concern for potential biases."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Lack of Ability to Deactivate the System",
+   "quote": "And whether the city can switch it off if it turns out to be wrong.",
+   "full_text": "Three things, mainly. What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong. The third one is the one nobody has a good answer to, ever.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The lack of a clear mechanism to deactivate the system highlights a potential lack of responsiveness to unforeseen problems."
+    }
+   ]
+  },
+  {
+   "segment_id": "S006",
+   "title": "Risk of System Lock-in and Deteriorating Traffic",
+   "quote": "Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.",
+   "full_text": "Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Describes a situation where the system's complexity creates a lock-in effect, hindering the ability to revert to a previous state and demonstrating a lack of responsiveness."
+    },
+    {
+     "dimension": "anticipation",
+     "polarity": "P",
+     "rationale": "Recognizing the potential for lock-in and its negative consequences demonstrates foresight regarding long-term system behavior."
+    }
+   ]
+  },
+  {
+   "segment_id": "S007",
+   "title": "Risk Register as a Filing Mechanism",
+   "quote": "I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.",
+   "full_text": "I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The risk register being a 'filing' mechanism indicates a lack of responsiveness and a failure to translate identified risks into action."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "Acknowledging a failure to escalate the issue and taking ownership of that inaction demonstrates a degree of self-reflection, but also highlights a limitation in the system's ability to respond to concerns."
+    }
+   ]
+  },
+  {
+   "segment_id": "S008",
+   "title": "Limited Resources for Ethical Oversight",
+   "quote": "No. It's me and a junior analyst. We don't have an ethics board, we don't have community input, we have me reading and worrying. For a system that watches thirty intersections that is a thin basis and I would say that on the record.",
+   "full_text": "No. It's me and a junior analyst. We don't have an ethics board, we don't have community input, we have me reading and worrying. For a system that watches thirty intersections that is a thin basis and I would say that on the record.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The absence of an ethics board or community input signifies a lack of external engagement and a reliance on internal assessment."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Acknowledging the limited resources and expressing concern demonstrates a degree of self-awareness and a recognition of the potential shortcomings of the current approach."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent, a Head of Compliance, demonstrates a strong sense of responsibility by proactively questioning assumptions and identifying potential risks associated with the adaptive traffic signal system. However, their role is primarily focused on legal risk rather than ethics, and the system lacks robust mechanisms for external engagement or responsiveness to concerns. The respondent's candid admission of the risk register's function as a 'filing' system and the limited resources available for ethical oversight highlight systemic barriers to responsible innovation. The account is characterized by a degree of reflexive awareness of these limitations, but also a resignation to their persistence, suggesting a need for more substantive changes in organizational structure and processes to foster genuine responsible innovation.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P04 — Head of compliance, mobility technology group\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] What does responsible deployment mean in your role?\n[Respondent] In practice it means I am the person who asks the questions nobody wants asked, three weeks before launch, when it is expensive. I've made peace with being unpopular. The honest version is that most of what I do is legal risk, not ethics. Those overlap but they are not the same thing and I try not to pretend otherwise.\n[Interviewer] What did you ask on this project?\n[Respondent] Three things, mainly. What happens to footage of people who aren't the subject of any incident. Whether the detection performance is uniform across body types and mobility aids. And whether the city can switch it off if it turns out to be wrong. The third one is the one nobody has a good answer to, ever.\n[Interviewer] What answer did you get on switching it off?\n[Respondent] A version of 'why would we'. Which isn't an answer. Once the signal timing is adaptive, the fixed-time plans that used to run the junctions get out of date within a year or two — nobody maintains them any more. So the fallback decays. In two years turning it off means the traffic gets worse than it was before you started, and at that point nobody will turn it off. That is lock-in and it is happening quietly.\n[Interviewer] Did that get escalated?\n[Respondent] I wrote it up. It went into the risk register. The risk register is where things go to be filed. I don't think it reached anyone who could have changed the design, and I didn't push it beyond the register, which I'll own.\n[Interviewer] Was there any external input into these questions?\n[Respondent] No. It's me and a junior analyst. We don't have an ethics board, we don't have community input, we have me reading and worrying. For a system that watches thirty intersections that is a thin basis and I would say that on the record.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-27T01:45:26",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 412.1,
+  "absence": 0
+ }
+}

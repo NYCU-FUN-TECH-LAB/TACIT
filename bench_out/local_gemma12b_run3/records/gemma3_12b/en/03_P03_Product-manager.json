@@ -1,0 +1,99 @@
+{
+ "respondent": "Product manager",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript states 'Product manager' and describes responsibilities related to hardware deployment and design review."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Unexpected LED glare impacts residents",
+   "quote": "Yes, and it's the thing I always tell people about now. About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night.",
+   "full_text": "Yes, and it's the thing I always tell people about now. About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it. It's not in any specification anywhere.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "The speaker acknowledges a significant oversight in the design process, demonstrating a lack of foresight and a failure to consider the impact on residents."
+    },
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The residents' concerns were initially ignored and routed through multiple layers of bureaucracy, highlighting a lack of direct engagement and responsiveness."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Proactive Retrofit and Updated Guidance",
+   "quote": "I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.",
+   "full_text": "I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The speaker's advocacy for a city-wide retrofit and the subsequent change to mounting guidance demonstrate a willingness to adapt and improve the product based on feedback."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Delayed Resident Feedback Route",
+   "quote": "Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us. I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.",
+   "full_text": "Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us. I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The convoluted route for resident feedback and the delay in resolution highlight a lack of direct and accessible engagement channels."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Simple Design Review Addition",
+   "quote": "We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+   "full_text": "We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The addition of the design review line demonstrates a shift towards considering the impact on residents, albeit in a rudimentary form."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent's account primarily highlights the challenges of incorporating public concerns into product development. The initial LED glare incident served as a stark reminder of the importance of considering the lived experience of those affected by technology. While the response involved a significant retrofit and a small change to the design review process, the initial lack of engagement and the bureaucratic hurdles residents faced underscore a need for more direct and accessible feedback channels. The respondent demonstrates a nascent form of reflexivity, acknowledging past oversights and incorporating a simple prompt into the design review, but the incident also reveals a broader systemic issue regarding responsiveness to community concerns and a lack of robust engagement mechanisms. The account suggests that while lessons have been learned, there is still room for improvement in integrating public perspectives into the product development lifecycle.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P03 — Product manager, roadside camera hardware vendor\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | Tell me about your part of the deployment.\nRespondent | We supply the roadside units — the housing, the sensor, the local compute. Thirty intersections, two units each, some with three where the geometry is awkward. My job is that they work in the weather and don't need a truck roll every month.\nInterviewer | Did anything come up after installation that you hadn't expected?\nRespondent | Yes, and it's the thing I always tell people about now. About four months in we started getting complaints from residents on Fenwick Street. Turned out the units have a status LED, a small blue one, and at the height we'd mounted them on that street it was shining straight into second-floor bedrooms all night. Nobody had thought about it. It's not in any specification anywhere.\nInterviewer | What happened then?\nRespondent | We fixed it. Took about six weeks. We had a shroud designed, 3D printed a batch to test, then had them injection moulded, and a crew went round and retrofitted every unit in the city, not just that street. I pushed for all of them because if it's happening there it's happening somewhere else and nobody's called yet. And we changed the mounting guidance for future installs.\nInterviewer | How did those residents reach you?\nRespondent | Through the city, eventually. It went to the council, the council sat on it for a while because nobody knew whose problem it was, then it came to us. I think the first complaint was maybe five weeks before I heard about it. There's no direct line from a resident to the people who can actually fix the thing.\nInterviewer | Was there consultation before installation about where units went?\nRespondent | Placement was decided on traffic engineering grounds — sight lines, pole availability, power. I don't believe anyone asked residents. To be fair I'm not sure what you'd ask them. 'Do you mind a camera here' — most people would say yes they mind, and then what?\nInterviewer | Has the LED episode changed how you think about new products?\nRespondent | A bit. We now have a line in our design review that says 'what does this look like to somebody who lives next to it'. One line. It's not a methodology. But it's caught two things since, so I'll take it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-27T01:38:33",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 241.2,
+  "absence": 0
+ }
+}

@@ -1,0 +1,86 @@
+{
+  "generated": "2026-09-26T21:03:23",
+  "framework": "ri_stilgoe_2013",
+  "results": [
+    {
+      "model": "qwen2.5:7b",
+      "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+      "provenance": {
+        "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+        "provider": "ollama",
+        "model": "qwen2.5:7b",
+        "base_url": "http://localhost:11434",
+        "data_locality": "local",
+        "num_ctx": 32768,
+        "max_tokens": 8192,
+        "recorded_at": "2026-09-26T20:47:11",
+        "quantization_level": "Q4_K_M",
+        "parameter_size": "7.6B",
+        "family": "qwen2",
+        "context_length": 32768,
+        "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "temperature": 0.2,
+        "window_chars": 3000,
+        "overlap_chars": 300
+      },
+      "framework": "ri_stilgoe_2013",
+      "at": "2026-09-26T20:47:16",
+      "contract": {
+        "compliance": 1.0,
+        "verdict": "ok",
+        "answered": 6,
+        "asked": 6,
+        "valid_json": true,
+        "non_conforming": [],
+        "error": "",
+        "seconds": 4.7
+      },
+      "coding": {
+        "en": {
+          "transcripts": 24,
+          "completed": 24,
+          "resumed": 0,
+          "stopped_on_quota": null,
+          "chunk_errors": 0,
+          "failed": 0,
+          "segments": 112,
+          "codes": 118,
+          "chars": 53075,
+          "per_10k": 21.1,
+          "verbatim_rate": 0.92,
+          "absence_codes": 0,
+          "degenerate_titles": 8,
+          "window_chars": 3000,
+          "overlap_chars": 300,
+          "minutes": 14.2
+        }
+      },
+      "themes": {
+        "first_order": 112,
+        "themes": 6,
+        "unassigned": 3,
+        "dimensions_covered": 3,
+        "dimensions_total": 4,
+        "empty_dimensions": [
+          "responsiveness"
+        ],
+        "unrecognised_dimensions": [
+          {
+            "theme": "Insufficient external feedback mechanisms",
+            "wrote": "engagement|responsiveness"
+          },
+          {
+            "theme": "Obdurate Responsiveness",
+            "wrote": "engagement|responsiveness"
+          },
+          {
+            "theme": "Standard governance processes and their limitations",
+            "wrote": "engagement|responsiveness"
+          }
+        ],
+        "note_written": false,
+        "minutes": 1.1
+      }
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+ "respondent": "Chair, university research ethics committee",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "senior_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "unspecified"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Ethics review process",
+   "quote": "Only the research on it, not the system itself. That distinction is the whole problem",
+   "full_text": "Interviewer: Did any part of this deployment come before your committee? Respondent: Only the research on it, not the system itself. That distinction is the whole problem. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The decision to install the cameras was made by a procurement committee, not the ethics committee, indicating a lack of public or community engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Capacity and authority",
+   "quote": "Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind.",
+   "full_text": "Interviewer: Could your committee's remit cover deployments? Respondent: Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The committee lacks authority and capacity, limiting its ability to engage with broader stakeholders."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "The respondent questions the assumption that ethics review is free and unburdened, but does not further reflect on the implications."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Data protection impact assessment",
+   "quote": "More applications now include a data-protection impact assessment, which is progress.",
+   "full_text": "Interviewer: What have you seen change in the studies that do come to you? Respondent: More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "The inclusion of data-protection impact assessments suggests some level of engagement with ethical considerations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Inconvenient findings",
+   "quote": "What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it.",
+   "full_text": "Interviewer: What have you seen change in the studies that do come to you? Respondent: More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The respondent acknowledges the need for a plan in case of inconvenient findings, indicating a level of self-reflection."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Lack of public voice",
+   "quote": "We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+   "full_text": "Interviewer: Do affected communities have any voice in your process? Respondent: We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The committee has only one lay member, and the public perspective is absent when the member cannot attend, indicating a lack of public engagement."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent demonstrates a weak engagement dimension, with a lack of public or community involvement in the decision-making process. There is some evidence of reflexivity in acknowledging the need for a plan in case of inconvenient findings, but this is not consistently applied. The committee's capacity and authority are limited, further hindering its ability to engage effectively. While there is a positive engagement in the form of data-protection impact assessments, the overall structure of the account suggests a need for more substantive engagement and reflexivity to ensure responsible innovation.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A05 — Chair, university research ethics committee\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] Did any part of this deployment come before your committee?\n[Respondent] Only the research on it, not the system itself. That distinction is the whole problem in one sentence. If a doctoral student wants to interview twelve people about the cameras, that comes to me and I will spend forty minutes on the consent form. The decision to install the cameras and point them at a hundred thousand people went through a procurement committee. Nobody thinks this is strange except the people who say it out loud.\n[Interviewer] Could your committee's remit cover deployments?\n[Respondent] Not as constituted. We have no authority over the city and no capacity if we did — we're eleven academics and an administrator, meeting six times a year, and we're already behind. I mention the capacity because people propose expanding ethics review as though review were free.\n[Interviewer] What have you seen change in the studies that do come to you?\n[Respondent] More applications now include a data-protection impact assessment, which is progress. What I still almost never see is a plan for what the researcher will do if the finding is inconvenient to the funder. I've started asking for it. Roughly a third of applicants have no answer and about a fifth are visibly irritated that I asked.\n[Interviewer] Do affected communities have any voice in your process?\n[Respondent] We have one lay member. One, out of twelve. She is excellent and she is also one person doing the work of a category. When she can't attend, the public perspective is simply absent from that meeting and we proceed anyway. We should not proceed anyway.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T21:10:53",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 35.1,
+  "absence": 0
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "respondent": "Ward councillor",
+ "descriptors": {
+  "institution_type": "government",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript states respondent is a 'Ward councillor' and 'do this alongside a job'."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Residents' observations provide valuable data",
+   "quote": "In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use.",
+   "full_text": "Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Direct, upstream engagement with residents through a surgery, providing specific feedback on the system."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Uncertainty about detection creates risky behaviour",
+   "quote": "people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+   "full_text": "Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Highlights an unanticipated negative consequence (user risk) stemming from the system's operation, revealing a lack of foresight."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Lack of responsiveness to constituent concerns",
+   "quote": "The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data.",
+   "full_text": "Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Illustrates an initial lack of responsiveness to constituent concerns, requiring repeated effort to obtain relevant data."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Acknowledging limited technical understanding",
+   "quote": "I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "full_text": "I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Demonstrates epistemic humility by acknowledging a lack of technical understanding and reliance on external sources (a constituent)."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Need for independent oversight",
+   "quote": "Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things.",
+   "full_text": "Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There’s no equivalent for this, and this is now making decisions about people all day.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Suggests a need for independent scrutiny and oversight, implying a recognition of potential biases or limitations within the existing system."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent, a Ward Councillor, highlights the crucial role of direct resident engagement in identifying issues with the adaptive traffic signal system. The data gathered through their surgery, while not captured in formal reports, proved invaluable in understanding the system's impact. However, the respondent also demonstrates a lack of technical understanding and a frustration with the system’s initial unresponsiveness to constituent concerns. The call for an independent oversight body underscores a recognition of the need for greater scrutiny and accountability in a system making decisions that affect people's lives. The respondent's account strongly emphasizes the importance of engagement and reflexivity, while revealing a significant gap in responsiveness and anticipatory governance.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript G03 — Ward councillor, city council\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | How does this reach you as a councillor?\nRespondent | Through my surgery, every other Saturday, three hours, anybody can come. In the first year after switch-on I'd say a dozen people raised the junctions. Not organised, not a campaign — individual people describing something specific about a crossing they use. That's the most reliable data I get about anything and it doesn't appear in any report.\nInterviewer | What did people describe?\nRespondent | Two themes. One was crossing time, particularly for older residents on the Alder Street junction. The other, which I didn't expect, was uncertainty — people saying they didn't know if it had seen them, so they'd press the button again, or step forward to be noticed, which is exactly what you don't want people doing.\nInterviewer | What did you do with it?\nRespondent | Raised it in committee twice. The first time I got a written answer about detection accuracy, which wasn't the question I'd asked. The second time I asked for the raw logs and that's what eventually got the university their data. So it moved, but it moved because I had a committee to stand up in. A resident with the same observation has nowhere to go.\nInterviewer | Do you feel you understand the system well enough to scrutinise it?\nRespondent | No. I'm a councillor, I do this alongside a job. I get a hundred-page pack the Friday before a Tuesday committee. I've read enough to ask about crossing times because a constituent taught me what to ask. I could not tell you how the model weighs a bus against a pedestrian and I've never been offered a briefing that would tell me.\nInterviewer | What would help?\nRespondent | Somebody independent who answers to the committee rather than to the department, with enough hours to actually read things. Every authority has internal audit for money. There's no equivalent for this, and this is now making decisions about people all day.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-27T00:31:18",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 257.4,
+  "absence": 0
+ }
+}

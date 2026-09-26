@@ -1,0 +1,68 @@
+{
+ "respondent": "Business development lead, consortium partner",
+ "descriptors": {
+  "institution_type": "industry",
+  "role_level": "middle_management",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "job title and context of the interview"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Lack of genuine engagement",
+   "quote": "There was a stakeholder engagement plan. It was two pages. It committed us to a launch event and a feedback email address. Both happened. The email address got nine messages in eighteen months, seven of them about a pothole.",
+   "full_text": "Interviewer: Was there anything behind the language? Respondent: There was a stakeholder engagement plan. It was two pages. It committed us to a launch event and a feedback email address. Both happened. The email address got nine messages in eighteen months, seven of them about a pothole. Interviewer: Did anyone review whether the plan was working? Respondent: No. There was no review point in the contract. Contracts have review points for things somebody intends to check.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "The engagement plan was nominal, with no review mechanism in place."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Refusal to change course",
+   "quote": "Do you think the project should have been done differently? Differently, probably. Would a different consortium have done it better? I doubt it. Everybody bidding on municipal AI work is structured the same way, with the same incentives, answering the same matrix. If you want a different outcome you have to change the matrix, not lecture the bidders.",
+   "full_text": "Interviewer: Do you think the project should have been done differently? Respondent: Differently, probably. Would a different consortium have done it better? I doubt it. Everybody bidding on municipal AI work is structured the same way, with the same incentives, answering the same matrix. If you want a different outcome you have to change the matrix, not lecture the bidders.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The respondent argues that changing the matrix is the only way to achieve a different outcome, implying a refusal to change course within the current framework."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent exhibits weak engagement and responsiveness. The engagement plan was nominal, with no review mechanism in place, and the project was carried out according to a standard bidding process. The respondent's reluctance to change the matrix suggests a lack of responsiveness to external signals. While the respondent acknowledges the need for a different approach, they do not provide concrete examples of how the project could have been done differently, indicating a lack of substantive modification after feedback.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript P06 — Business development lead, consortium partner\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] The bid documents mention responsible innovation. How did that shape the work?\n[Respondent] I'll be straight with you because I don't think there's much point otherwise. That language is in the bid because the evaluation matrix had a section for it worth eight percent. We wrote what scored well. I'm not saying nobody believes it, I'm saying the reason it's in the document is the eight percent.\n[Interviewer] Was there anything behind the language?\n[Respondent] There was a stakeholder engagement plan. It was two pages. It committed us to a launch event and a feedback email address. Both happened. The email address got nine messages in eighteen months, seven of them about a pothole.\n[Interviewer] Did anyone review whether the plan was working?\n[Respondent] No. There was no review point in the contract. Contracts have review points for things somebody intends to check.\n[Interviewer] Do you think the project should have been done differently?\n[Respondent] Differently, probably. Would a different consortium have done it better? I doubt it. Everybody bidding on municipal AI work is structured the same way, with the same incentives, answering the same matrix. If you want a different outcome you have to change the matrix, not lecture the bidders.\n[Interviewer] What would a better matrix ask for?\n[Respondent] Evidence, not intentions. Don't ask me what my engagement plan is, ask me for the minutes of the last three times a plan like this changed a design decision. I couldn't produce them. Neither could my competitors. That would be a real filter.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/qwen2.5:7b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "qwen2.5:7b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T20:51:38",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "7.6B",
+   "family": "qwen2",
+   "context_length": 32768,
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 19.5,
+  "absence": 0
+ }
+}

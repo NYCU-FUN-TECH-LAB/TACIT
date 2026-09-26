@@ -1,0 +1,117 @@
+{
+ "respondent": "Director",
+ "descriptors": {
+  "institution_type": "nonprofit",
+  "role_level": "senior_management",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript: 'Director, older people's community service'"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Service users adjust routines due to unpredictable crossing",
+   "quote": "We started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.",
+   "full_text": "In cancelled appointments, mostly. We run a day centre and we started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The crossing's unpredictability caused disruption, indicating a lack of responsiveness from the system."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Frustration with bureaucratic response",
+   "quote": "I wrote to the transport department with the numbers…I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.",
+   "full_text": "I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The lengthy and dismissive response from the transport department demonstrates a lack of responsiveness to the reported problem."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "N",
+     "rationale": "The department's focus on 'detection accuracy' rather than 'consistency' reveals a lack of reflection on the system's impact."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Desired response would acknowledge the problem",
+   "quote": "Anything that engaged with unpredictability. 'We measure accuracy, we don't measure consistency, we'll look at whether we can.' That would have been a good answer and it costs nothing to write.",
+   "full_text": "What would have been a useful reply? Anything that engaged with unpredictability. 'We measure accuracy, we don't measure consistency, we'll look at whether we can.' That would have been a good answer and it costs nothing to write.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "P",
+     "rationale": "The desired response highlights a need for acknowledgement and a willingness to investigate the issue of unpredictability."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "The suggestion to consider 'consistency' demonstrates a desire for a more reflective approach to problem-solving."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Reliance on councillor highlights systemic issue",
+   "quote": "I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "full_text": "I'm also aware that the route that worked was knowing a councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Reliance on a councillor to resolve the issue indicates a lack of accessible and equitable engagement channels."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Lack of explanation is unsatisfactory",
+   "quote": "What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+   "full_text": "What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The inability to explain the delay highlights a lack of accountability and responsiveness."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "The respondent's account reveals a significant lack of responsiveness and reflexivity within the transport department. The unpredictable nature of the traffic signal caused disruption for service users, leading to missed appointments and frustration. The department's bureaucratic response, focusing on technical specifications rather than user experience, compounded the problem. The need to rely on a councillor to resolve the issue highlights a systemic failure in accessible engagement channels. The respondent's desire for transparency and accountability underscores the importance of understanding and addressing the impact of technological systems on vulnerable populations. While there is a desire for responsiveness and a recognition of the need for consistency, the overall impression is one of a system that prioritizes technical metrics over human needs.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript N04 — Director, older people's community service\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How does this show up in your work?\n[Respondent] In cancelled appointments, mostly. We run a day centre and we started seeing people arrive flustered, or not arrive. When we asked, several described the crossing on Alder Street. Not that it was dangerous — that it was unpredictable, so they'd started leaving fifteen minutes earlier, and some had started not coming on bad weather days because the margin wasn't there.\n[Interviewer] Did you report it?\n[Respondent] I wrote to the transport department with the numbers. Nineteen people, over six weeks, with the dates. I got an acknowledgement within two days and then nothing for five months, then a letter saying detection accuracy at that junction was within specification.\n[Interviewer] What would have been a useful reply?\n[Respondent] Anything that engaged with unpredictability. 'We measure accuracy, we don't measure consistency, we'll look at whether we can.' That would have been a good answer and it costs nothing to write. I don't need them to fix it in a fortnight. I need to know the problem I described has been understood.\n[Interviewer] Have you found any other route?\n[Respondent] Our councillor. She raised it and something moved — the crossing minimum at Alder went up. I'm glad. I'm also aware that the route that worked was knowing a councillor, and most organisations like ours don't have that, and it shouldn't be how this works.\n[Interviewer] Do the people who use your centre know any of this happened?\n[Respondent] Some do. I told the ones who'd told me, because that seemed like the least I could do. What I couldn't tell them is why it took eight months, because I don't know, and 'I don't know' after eight months is not a good thing to say to somebody who missed appointments over it.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-27T01:02:05",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 270.4,
+  "absence": 0
+ }
+}

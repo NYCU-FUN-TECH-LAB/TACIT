@@ -1,0 +1,107 @@
+{
+ "respondent": "Research fellow",
+ "descriptors": {
+  "institution_type": "research_institute",
+  "role_level": "rnd_staff",
+  "sector": "ict_ai",
+  "experience": "unspecified",
+  "descriptor_basis": "Interview transcript states: 'Research fellow, urban data science centre'"
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Resolution of data access delayed by external pressure",
+   "quote": "That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked.",
+   "full_text": "I asked for the raw detection logs and I was given aggregates. That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked. Once I had the logs the audit itself took three weeks.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Resolution of a critical data access request was delayed and ultimately driven by external pressure, indicating a lack of responsiveness to internal inquiry."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "Acknowledging the limitations of correlational findings",
+   "quote": "I want to be careful: that’s an association in one city over eleven months, it is not a law of nature.",
+   "full_text": "Two things. The headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards. So the people most likely to be waiting longer for a crossing signal are also the people least likely to own a car. I want to be careful: that’s an association in one city over eleven months, it is not a law of nature.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Speaker explicitly acknowledges the limitations of the findings as a correlation within a specific context, demonstrating epistemic humility."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Symptom-focused solution avoids systemic change",
+   "quote": "What it didn't turn into was any change to the detection model or to how performance gets reported. So the symptom got fixed in the cheapest available place.",
+   "full_text": "Better than I expected, actually. The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That’s a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported. So the symptom got fixed in the cheapest available place.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "The response addressed a symptom but failed to address the underlying systemic issues, indicating a lack of substantive change."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Critique of mean-based performance reporting",
+   "quote": "Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about.",
+   "full_text": "Yes, and it's not complicated. Report the worst decile, not the mean. Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about. It costs nothing to add a column.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Speaker critiques the use of a common statistical measure (mean) for its potential to obscure important disparities, demonstrating a reflexive awareness of methodological limitations."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Regret over lack of resident engagement",
+   "quote": "In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+   "full_text": "No. It was a data exercise. In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "N",
+     "rationale": "Speaker expresses regret for not engaging residents earlier, highlighting a missed opportunity for more efficient and relevant data gathering."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent demonstrates a strong awareness of the limitations of data-driven approaches and the potential for technical solutions to mask underlying systemic issues.  The negative codes relating to responsiveness and engagement are prominent, highlighting a system that is slow to respond to internal requests and lacks meaningful resident involvement. The reflexive elements are evident in the speaker's careful framing of findings and critique of common statistical practices.  The account reveals a tension between technical expertise and the need for broader stakeholder engagement to ensure equitable outcomes, with a clear recognition that data analysis alone is insufficient to address complex social problems.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A03 — Research fellow, urban data science centre\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\nSpeaker | Content\nInterviewer | You audited the system's performance. How did you approach it?\nRespondent | I asked for the raw detection logs and I was given aggregates. That took four months to resolve and it was resolved because a councillor asked the same question in a committee meeting, not because I asked. Once I had the logs the audit itself took three weeks.\nInterviewer | What did the audit show?\nRespondent | Two things. The headline accuracy held up, that was fine. But detection latency was distributed unevenly by time of day in a way that mapped onto lighting, and the junctions with the worst lighting are in the two lowest-income wards. So the people most likely to be waiting longer for a crossing signal are also the people least likely to own a car. I want to be careful: that's an association in one city over eleven months, it is not a law of nature.\nInterviewer | What happened when you reported it?\nRespondent | Better than I expected, actually. The transport department took it seriously and it turned into a street-lighting upgrade at nine junctions. That's a real outcome and I should say so. What it didn't turn into was any change to the detection model or to how performance gets reported. So the symptom got fixed in the cheapest available place.\nInterviewer | Should performance reporting be different?\nRespondent | Yes, and it's not complicated. Report the worst decile, not the mean. Every dashboard I have ever seen for a public system reports the mean, and the mean is exactly the statistic that hides the people you should be worried about. It costs nothing to add a column.\nInterviewer | Were residents involved in the audit at any point?\nRespondent | No. It was a data exercise. In hindsight the lighting finding would have taken about a week instead of three months if I'd asked twenty people in those wards whether crossing felt different at night, and I didn't think to.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-27T00:06:36",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 245.8,
+  "absence": 0
+ }
+}

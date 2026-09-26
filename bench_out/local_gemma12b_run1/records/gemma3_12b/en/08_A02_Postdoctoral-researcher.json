@@ -1,0 +1,117 @@
+{
+ "respondent": "Postdoctoral researcher",
+ "descriptors": {
+  "institution_type": "academia",
+  "role_level": "researcher",
+  "sector": "other",
+  "experience": "unspecified",
+  "descriptor_basis": "The interview transcript states the respondent is a postdoctoral researcher."
+ },
+ "segments": [
+  {
+   "segment_id": "S001",
+   "title": "Origin of research shaped by personal annoyance",
+   "quote": "I was going to study something else entirely and then I moved to Port Calder and started noticing that the junction outside my flat behaved differently on different days.",
+   "full_text": "I was going to study something else entirely and then I moved to Port Calder and started noticing that the junction outside my flat behaved differently on different days. That's an embarrassing origin story for a research programme but it's the true one. I should say that up front because where a question comes from shapes what you look at, and I was already annoyed before I started.",
+   "codes": [
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Acknowledges the influence of personal experience and bias on research direction."
+    }
+   ]
+  },
+  {
+   "segment_id": "S002",
+   "title": "System prioritizes vehicle flow over vulnerable users",
+   "quote": "The system optimises flow. Flow is measured in vehicles. So when the model has a choice between holding twelve cars and holding one person with a walking frame, the arithmetic is not close.",
+   "full_text": "The thing I keep coming back to is who gets asked to adapt. The system optimises flow. Flow is measured in vehicles. So when the model has a choice between holding twelve cars and holding one person with a walking frame, the arithmetic is not close. Nobody chose that. It falls out of what got counted.",
+   "codes": [
+    {
+     "dimension": "anticipation",
+     "polarity": "N",
+     "rationale": "Illustrates a deterministic model with limited foresight regarding vulnerable road users."
+    }
+   ]
+  },
+  {
+   "segment_id": "S003",
+   "title": "Resident group sets agenda, researcher learns to listen",
+   "quote": "We set up a group with a disability advocacy organisation and a residents' association — eleven people, meeting monthly, and they set the agenda, not me. The first three meetings I talked too much and one of them told me so, which was the most useful supervision I've had.",
+   "full_text": "Yes, that’s most of what I do now. We set up a group with a disability advocacy organisation and a residents' association — eleven people, meeting monthly, and they set the agenda, not me. The first three meetings I talked too much and one of them told me so, which was the most useful supervision I've had.",
+   "codes": [
+    {
+     "dimension": "engagement",
+     "polarity": "P",
+     "rationale": "Demonstrates upstream participation with a resident group setting the agenda."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Researcher acknowledges and adjusts their behaviour based on feedback from the engagement group."
+    }
+   ]
+  },
+  {
+   "segment_id": "S004",
+   "title": "Warm reception of recommendations does not lead to change",
+   "quote": "The group has produced two documents. Both were received warmly. Neither changed a parameter.",
+   "full_text": "No. And I want to be careful here because there's a genre of research where the conclusion is 'more participation is needed' and everyone nods and nothing happens. The group has produced two documents. Both were received warmly. Neither changed a parameter. At some point warm reception without change is its own kind of dismissal and I don't yet know what to do about it.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Highlights the lack of responsiveness; recommendations are received well but not implemented."
+    },
+    {
+     "dimension": "reflexivity",
+     "polarity": "P",
+     "rationale": "Researcher reflects on the limitations of participation and the potential for performative engagement."
+    }
+   ]
+  },
+  {
+   "segment_id": "S005",
+   "title": "Department is thoughtful but lacks formal accountability",
+   "quote": "They answer emails. I'm not being sarcastic — compared with the vendors, the department is reachable and the people in it are thoughtful and underfunded. The problem isn't that they don't care. It's that caring isn't a mechanism.",
+   "full_text": "They answer emails. I'm not being sarcastic — compared with the vendors, the department is reachable and the people in it are thoughtful and underfunded. The problem isn't that they don't care. It's that caring isn't a mechanism. There's no point in the process where what the group says has to be answered in writing before something proceeds. Without that, everything depends on whether the person in post that year happens to be receptive.",
+   "codes": [
+    {
+     "dimension": "responsiveness",
+     "polarity": "N",
+     "rationale": "Illustrates a lack of institutionalized mechanisms for responding to feedback."
+    }
+   ]
+  }
+ ],
+ "deleted_segments": [],
+ "summary": "This respondent demonstrates a strong commitment to public engagement, evidenced by the establishment of a resident group that sets the research agenda. However, the research also reveals a significant lack of responsiveness within the city's system, where recommendations are received positively but not translated into concrete changes. The respondent exhibits reflexivity, acknowledging the influence of personal bias and critically examining the limitations of participatory processes. A key theme is the tension between genuine concern and the absence of formal mechanisms to translate that concern into action, highlighting a system that is thoughtful but ultimately resistant to change.",
+ "_meta": {
+  "schema_version": 3
+ },
+ "transcript": "Interview transcript A02 — Postdoctoral researcher, science and technology studies\nCase: Port Calder adaptive traffic signal and pedestrian detection system  |  SYNTHETIC DATA — not a real interview\n[Interviewer] How did you come to study this deployment?\n[Respondent] I was going to study something else entirely and then I moved to Port Calder and started noticing that the junction outside my flat behaved differently on different days. That's an embarrassing origin story for a research programme but it's the true one. I should say that up front because where a question comes from shapes what you look at, and I was already annoyed before I started.\n[Interviewer] What have you found?\n[Respondent] The thing I keep coming back to is who gets asked to adapt. The system optimises flow. Flow is measured in vehicles. So when the model has a choice between holding twelve cars and holding one person with a walking frame, the arithmetic is not close. Nobody chose that. It falls out of what got counted.\n[Interviewer] Have you worked with residents directly?\n[Respondent] Yes, that's most of what I do now. We set up a group with a disability advocacy organisation and a residents' association — eleven people, meeting monthly, and they set the agenda, not me. The first three meetings I talked too much and one of them told me so, which was the most useful supervision I've had.\n[Interviewer] Has any of it changed the system?\n[Respondent] No. And I want to be careful here because there's a genre of research where the conclusion is 'more participation is needed' and everyone nods and nothing happens. The group has produced two documents. Both were received warmly. Neither changed a parameter. At some point warm reception without change is its own kind of dismissal and I don't yet know what to do about it.\n[Interviewer] Is there anything the city does well here?\n[Respondent] They answer emails. I'm not being sarcastic — compared with the vendors, the department is reachable and the people in it are thoughtful and underfunded. The problem isn't that they don't care. It's that caring isn't a mechanism. There's no point in the process where what the group says has to be answered in writing before something proceeds. Without that, everything depends on whether the person in post that year happens to be receptive.",
+ "_bench": {
+  "complete": true,
+  "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+  "provenance": {
+   "endpoint": "ollama/gemma3:12b@http://localhost:11434",
+   "provider": "ollama",
+   "model": "gemma3:12b",
+   "base_url": "http://localhost:11434",
+   "data_locality": "local",
+   "num_ctx": 32768,
+   "max_tokens": 8192,
+   "recorded_at": "2026-09-26T22:01:18",
+   "quantization_level": "Q4_K_M",
+   "parameter_size": "12.2B",
+   "family": "gemma3",
+   "context_length": 131072,
+   "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+   "temperature": 0.2,
+   "window_chars": 3000,
+   "overlap_chars": 300
+  },
+  "seconds": 269.3,
+  "absence": 0
+ }
+}
