@@ -654,11 +654,14 @@ APP_STRINGS = {
         "en": "p = {p}. Expected counts meet the assumption; independence does "
               "not \u2014 the {n} units in this table come from {k} respondents, so "
               "the same person is counted several times. Report this as a "
-              "description of the pattern, or tick \u201cOne row per respondent\u201d "
-              "for a table that meets both assumptions.",
+              "description of the pattern. Ticking “One row per respondent” "
+              "makes the observations independent, but with one row per person "
+              "the expected counts are usually too small, and the tool will "
+              "then withhold p.",
         "zh": "p = {p}。期望次數符合前提；獨立性不符合——這張表的 {n} 個單位來自 "
-              "{k} 位受訪者，同一個人被算了好幾次。請把它當作樣態的描述來報告，"
-              "或勾選「每位受訪者只佔一列」取得兩個前提都符合的表。"},
+              "{k} 位受訪者，同一個人被算了好幾次。請把它當作樣態的描述來報告。"
+              "勾選「每位受訪者只佔一列」可以讓觀察彼此獨立，但一人一列之後"
+              "期望次數通常會不足，屆時工具會扣住 p 值不報。"},
     "cross.chi_case_note": {
         "en": "Each of the {k} respondents is counted once here, so the "
               "observations are independent. What limits this table is its "
@@ -784,6 +787,104 @@ APP_STRINGS = {
                              "zh": "貳、逐案例編碼結果"},
     "export.no_codes": {"en": "(no coded data)", "zh": "（尚無編碼資料）"},
     "export.multi_mark": {"en": "multi-coded", "zh": "多重編碼"},
+    # --- 出處與稽核摘要。拿不到的值寫「未記錄」，不省略那一列 ---
+    "export.section_provenance": {"en": "Provenance and audit record",
+                                  "zh": "出處與稽核紀錄"},
+    "sheet.provenance": {"en": "Provenance", "zh": "出處紀錄"},
+    "sheet.endpoints": {"en": "Endpoints by record", "zh": "各紀錄的端點"},
+    "sheet.tests": {"en": "Statistical tests", "zh": "統計檢定判定"},
+    "export.not_recorded": {"en": "not recorded", "zh": "未記錄"},
+    "export.field": {"en": "Field", "zh": "欄位"},
+    "export.value": {"en": "Value", "zh": "值"},
+    "export.fw_id": {"en": "Framework id", "zh": "框架識別碼"},
+    "export.fw_name": {"en": "Framework name", "zh": "框架名稱"},
+    "export.approved_at": {"en": "Approved on", "zh": "核可日期"},
+    "export.status_counts": {"en": "Review status", "zh": "複核狀態"},
+    "export.frame_total": {"en": "Reliability frame: total units",
+                           "zh": "信度抽樣框：單元總數"},
+    "export.frame_coded": {"en": "Reliability frame: units the model marked",
+                           "zh": "信度抽樣框：模型已標記單元"},
+    "export.frame_uncoded": {"en": "Reliability frame: unmarked units",
+                             "zh": "信度抽樣框：未標記單元"},
+    "export.frame_sample": {"en": "Reliability sample: units drawn",
+                            "zh": "信度抽樣：抽出的單元數"},
+    "export.frame_session": {"en": "Reliability session id", "zh": "信度工作階段編號"},
+    "export.record_file": {"en": "Record file", "zh": "紀錄檔"},
+    "export.endpoint": {"en": "Endpoint", "zh": "端點"},
+    "export.locality": {"en": "Data locality", "zh": "資料去向"},
+    "export.coded_at": {"en": "Coded at", "zh": "編碼時間"},
+    "export.case_level": {"en": "One row per respondent", "zh": "每位受訪者一列"},
+    "export.verdict": {"en": "Verdict", "zh": "判定"},
+    "export.reason": {"en": "Reason", "zh": "理由"},
+    "export.p_withheld": {"en": "withheld", "zh": "扣住不報"},
+    "export.tests_note": {
+        "en": "Every descriptor-by-unit table was checked. Where p is marked "
+              "withheld, the expected-count rule was not met and no p-value "
+              "should be reported for that table.",
+        "zh": "每一張屬性 × 單位的表都檢查過。p 標為「扣住不報」的表，期望次數"
+              "規則不成立，該表不應報告 p 值。"},
+    # --- 執行中的提醒 ---
+    "run.in_progress": {
+        "en": "A coding run is in progress. Do not click anything until it "
+              "finishes: any interaction restarts the page and aborts the run. "
+              "Each transcript is written to disk as soon as it completes.",
+        "zh": "編碼正在執行。結束之前請不要點任何東西：任何操作都會重新載入頁面、"
+              "中止這次執行。每份逐字稿一完成就會寫進磁碟。"},
+    "run.interrupted": {
+        "en": "The previous coding run was interrupted by an interface action "
+              "before it finished. Transcripts that had completed were saved; "
+              "the one in progress was not. Press Start again to continue.",
+        "zh": "上一次編碼在結束之前被介面操作中斷。已完成的逐字稿都已存檔，"
+              "進行中的那一份沒有。再按一次開始即可接續。"},
+    "run.bad_docx": {
+        "en": "{name} could not be read and is left out of this batch: {e}",
+        "zh": "{name} 無法讀取，這一批不會處理它：{e}"},
+    "run.chunk_failed": {
+        "en": "{n} of {m} excerpts failed; the record is marked incomplete. "
+              "The passages in those excerpts were not coded.",
+        "zh": "{m} 個段落中有 {n} 個失敗；這筆紀錄已標為不完整。"
+              "那幾段裡的內容沒有被編碼。"},
+    "run.chunk_failed_detail": {"en": "Which excerpts failed", "zh": "失敗的段落明細"},
+    "run.done_empty": {
+        "en": "Done, but the model returned no segments for this transcript. "
+              "The record is saved empty — read the yield warning below and "
+              "consider segmented coding or a stronger model.",
+        "zh": "完成，但模型沒有從這份逐字稿編出任何段落。紀錄以空白存檔——"
+              "請看下方的產出量警告，並考慮改用分段編碼或換一顆較強的模型。"},
+    "run.open_corpus_term": {"en": "What the documents are (used in the prompt)",
+                             "zh": "語料是什麼（寫進提示詞）"},
+    "run.open_corpus_term_help": {
+        "en": "A short noun phrase such as “interview transcript”, “committee "
+              "hearing” or “sustainability report”. It is fixed when the "
+              "codebook is created and stays with it.",
+        "zh": "一個短的名詞片語，例如 interview transcript、committee hearing、"
+              "sustainability report。碼簿建立時定案，之後跟著碼簿走。"},
+    "run.open_autosave": {
+        "en": "Each finished transcript and the current codebook are written "
+              "to {dir} as the run proceeds, so a page refresh does not lose them.",
+        "zh": "每完成一份逐字稿，該份與目前的碼簿都會寫進 {dir}，"
+              "重新整理頁面不會遺失。"},
+    "run.open_resume": {"en": "Load the open coding saved on disk",
+                        "zh": "載入磁碟上保存的開放編碼"},
+    "run.open_resumed": {
+        "en": "Loaded codebook {cb} with {n} transcript(s) from {dir}.",
+        "zh": "已從 {dir} 載入碼簿 {cb} 與 {n} 份逐字稿。"},
+    "run.open_resume_none": {
+        "en": "Nothing to load: {dir} holds no saved open coding.",
+        "zh": "沒有可載入的東西：{dir} 裡沒有保存的開放編碼。"},
+    # --- 屬性存檔 ---
+    "data.nothing_changed": {
+        "en": "Nothing was changed, so nothing was written.",
+        "zh": "沒有任何改動，因此沒有寫入任何檔案。"},
+    "data.saved_n": {"en": "{n} record(s) updated and written back to file.",
+                     "zh": "已更新 {n} 筆紀錄並寫回檔案。"},
+    "data.dup_names": {
+        "en": "{n} respondent name(s) appear on more than one loaded record: "
+              "{names}. Every crosstab merges same-named records into one "
+              "person. Rename them here, or load only one record per person.",
+        "zh": "有 {n} 個受訪者名稱出現在不只一筆載入的紀錄上：{names}。"
+              "每一張交叉表都會把同名的紀錄併成同一個人。請在這裡改名，"
+              "或每人只載入一筆。"},
 }
 
 I.register(APP_STRINGS)
@@ -827,6 +928,11 @@ REVIEW_STRINGS = {
         "en": "Confirm applies any text or code edits made above. With no changes "
               "it is recorded as confirmed-unchanged.",
         "zh": "「確認」會一併套用你在上面改過的文字與編碼；沒有改動時記為確認未改。"},
+    "rv.empty_codes": {
+        "en": "No code is selected. A segment with no code is not a coding: "
+              "use Delete instead — the segment is kept and can be restored.",
+        "zh": "沒有選任何編碼。沒有碼的段落不算一筆編碼：請改用「刪除」——"
+              "段落會保留，之後可以還原。"},
     "rv.deleted_box": {"en": "Deleted segments ({n}) — kept and restorable",
                        "zh": "已刪除的段落（{n}）—— 保留可還原"},
     "rv.restore": {"en": "Restore", "zh": "還原"},
@@ -932,6 +1038,18 @@ REVIEW_STRINGS = {
               "太少的時候會直接講。標籤文字比的是碼本身的用字——"
               "碼簿很大的歸納式編碼要用這個，因為那種編碼多半一段一個碼。"},
     "th.nomodel_k": {"en": "Groups", "zh": "分成幾群"},
+    "th.stop_rule": {"en": "Stop rule", "zh": "停止規則"},
+    "th.stop_by_distance": {"en": "Stop at a merge distance",
+                            "zh": "合併距離到門檻就停"},
+    "th.stop_by_k": {"en": "Fixed number of groups", "zh": "固定群數"},
+    "th.stop_distance": {"en": "Stop distance (0–1)", "zh": "停止距離（0–1）"},
+    "th.stop_distance_help": {
+        "en": "Groups keep merging only while their average distance stays at "
+              "or below this value; the default 0.85 stops before unrelated "
+              "codes are forced together. A fixed number of groups ignores the "
+              "distance and merges until that many remain.",
+        "zh": "只有平均距離不超過這個值的群才會繼續合併；預設 0.85 會在不相干的"
+              "碼被硬湊在一起之前停下。固定群數則不看距離，一路併到剩那麼多群。"},
     "th.nomodel_go": {"en": "Group the codes", "zh": "分群"},
     "th.nomodel_build": {"en": "Build themes from these groups",
                          "zh": "用這些群建立主題"},
@@ -1264,6 +1382,13 @@ REVIEW_STRINGS = {
     "ir.as_coder": {"en": "Code as", "zh": "以哪位編碼者身分編碼"},
     "ir.page": {"en": "Page (10 per page)", "zh": "第幾頁（每頁 10 筆）"},
     "ir.save_page": {"en": "Save this page", "zh": "儲存這一頁"},
+    "ir.page_saved": {"en": "Saved the codings of {n} unit(s) on this page for {who}.",
+                      "zh": "已為 {who} 儲存這一頁 {n} 個單元的編碼。"},
+    "ir.code_here_note": {
+        "en": "Nothing typed here is recorded until you press Save this page; "
+              "an imported sheet is never overwritten by an unsaved page.",
+        "zh": "這裡選的碼要按「儲存這一頁」才會記錄；沒儲存的頁面不會蓋掉"
+              "匯入的編碼表。"},
     "ir.no_codings": {"en": "No human codings yet.", "zh": "尚無人工編碼。"},
     "ir.coder_a": {"en": "Coder A", "zh": "編碼者 A"},
     "ir.coder_b": {"en": "Coder B", "zh": "編碼者 B"},
@@ -1556,11 +1681,11 @@ FRAMEWORK_STRINGS = {
                           "literature.",
                     "zh": "草稿完成：{n} 個維度，均以檢索到的文獻為依據。"},
     "fw.guard_blocked": {
-        "en": "Hallucination guard: the model cited works that were never "
+        "en": "Citation guard: the model cited works that were never "
               "retrieved. Those citations were removed. This is the check that "
               "stops a framework being built on invented sources — read the "
               "detail below before approving anything.",
-        "zh": "幻覺防護：模型引用了未被檢索到的文獻，這些引用已被移除。"
+        "zh": "引用防護：模型引用了未被檢索到的文獻，這些引用已被移除。"
               "這道檢查正是防止框架建立在杜撰文獻上的機制——"
               "核可任何維度之前，請先讀下方細節。"},
     "fw.dropped": {"en": "Dimensions discarded before review", "zh": "審閱前已丟棄的維度"},
@@ -1690,6 +1815,13 @@ LLM_STRINGS = {
     "llm.test": {"en": "Test connection", "zh": "測試連線"},
 
     "llm.num_ctx": {"en": "Context window (tokens)", "zh": "上下文長度（token）"},
+    "llm.native_smaller": {
+        "en": "This model's native context window is {native} tokens, smaller "
+              "than the {ctx} set above. The length budget uses the native "
+              "window: anything beyond it would be truncated silently by the "
+              "server.",
+        "zh": "這顆模型的原生上下文視窗是 {native} 個 token，比上面設定的 {ctx} "
+              "小。長度預算以原生視窗為準：超過的部分會被伺服器無聲截斷。"},
     # 視窗預算攤開來。使用者調 num_ctx 卻不知道多少真的落到逐字稿上，
     # 只能靠撞牆時的錯誤訊息反推——而那時他已經選好模型、上傳好檔案了。
     "llm.budget": {

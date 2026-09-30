@@ -179,30 +179,45 @@ def heatmap(df, title, colorscale="Blues", zmid=None):
 # 2. 逐字稿讀取與存取
 # =====================================================================
 def read_docx(file):
-    doc = docx.Document(file)
-    out = []
-    for para in doc.paragraphs:
-        if para.text.strip():
-            out.append(para.text)
-    for table in doc.tables:
-        headers = [c.text.strip() for c in table.rows[0].cells] if table.rows else []
-        speaker_names = ["講者", "Speaker", "speaker", "發言人"]
-        content_names = ["內容", "Content", "content", "逐字稿"]
-        is_transcript = any(h in speaker_names + content_names for h in headers)
-        if is_transcript:
-            si = next((i for i, h in enumerate(headers) if h in speaker_names), None)
-            ci = next((i for i, h in enumerate(headers) if h in content_names), None)
-            for row in table.rows[1:]:
-                cells = [c.text.strip() for c in row.cells]
-                if ci is not None and ci < len(cells) and cells[ci]:
-                    sp = cells[si] if si is not None and si < len(cells) else ""
-                    out.append(f"【{sp}】{cells[ci]}" if sp else cells[ci])
-        else:
-            for row in table.rows:
-                vals = [c.text.strip() for c in row.cells if c.text.strip()]
-                if vals:
-                    out.append(" | ".join(vals))
-    return "\n".join(out)
+    """
+    把上傳的 .docx 讀成逐字稿文字。讀取規則住在引擎層（依文件順序走段落與
+    表格、講者表格輸出【講者】內容、略過頁首頁尾註腳），介面與批次腳本讀到
+    的是同一份文字。不是 .docx 的檔案拋 ValueError，訊息帶檔名。
+    """
+    return CH.read_docx_text(file)
+
+
+def show_chunk_errors(meta):
+    """分窗失敗的窗口：幾個、哪幾段、為什麼。紀錄本身已標為不完整。"""
+    errs = (meta or {}).get("chunk_errors") or []
+    if not errs:
+        return
+    total = ((meta or {}).get("chunking") or {}).get("n_chunks") or len(errs)
+    st.warning(t("run.chunk_failed", n=len(errs), m=total))
+    with st.expander(t("run.chunk_failed_detail")):
+        cols = [c for c in ("chunk", "start_char", "end_char", "error")
+                if any(c in e for e in errs)]
+        df = pd.DataFrame(errs)
+        show_df(df[cols] if cols else df, hide_index=True)
+
+
+def read_uploads(files):
+    """
+    逐檔讀取上傳的 .docx，回傳 ({檔名: 全文}, [(檔名, 原因)])。
+
+    一個壞掉的檔案（改了副檔名的純文字、截斷的 zip）只影響它自己：記下
+    檔名與原因，其餘檔案照常讀。整批一起炸掉的話，畫面上什麼都不剩，
+    使用者也看不出是哪一個檔案的問題。
+    """
+    texts, errors = {}, []
+    for f in files or []:
+        try:
+            if hasattr(f, "seek"):
+                f.seek(0)
+            texts[f.name] = read_docx(f)
+        except Exception as e:                                  # noqa: BLE001
+            errors.append((f.name, f"{type(e).__name__}: {e}"))
+    return texts, errors
 
 
 def fix_newlines_in_strings(s):
@@ -224,6 +239,20 @@ def fix_newlines_in_strings(s):
     return "".join(out)
 
 
+def unique_filename(fn, directory=None):
+    """
+    新紀錄的檔名不可以撞到既有檔案。同名受訪者在同一秒內存兩筆（批次轉換
+    時很常見）會算出同一個檔名；撞到就加流水號，絕不拿既有檔案來寫新紀錄。
+    """
+    directory = SAVE_DIR if directory is None else directory
+    stem, ext = os.path.splitext(fn)
+    n, out = 1, fn
+    while os.path.exists(os.path.join(directory, out)):
+        n += 1
+        out = f"{stem}_{n}{ext}"
+    return out
+
+
 def save_record(rec):
     """
     寫回磁碟。**既有的 _meta 要合併，不能整份蓋掉。**
@@ -239,22 +268,21 @@ def save_record(rec):
     """
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     safe = re.sub(r'[\\/:*?"<>|]', "_", str(rec.get(S.RESPONDENT, "unknown")))[:40]
-    fn = rec.get("_file") or f"{safe}_{ts}.json"
+    fn = rec.get("_file") or unique_filename(f"{safe}_{ts}.json")
     payload = {k: v for k, v in rec.items() if not k.startswith("_")}
     meta = dict(rec.get(S.META) or {})          # 保留讀進來時就有的欄位
     meta["schema_version"] = S.SCHEMA_VERSION
     meta.setdefault("framework_id", F.active().id)
     meta["last_saved"] = datetime.now().isoformat(timespec="seconds")
 
-    # 第三個坑（#36）：隨軟體附的參考編碼同時是「示範資料」與「論文 Table 6
-    # 的資料來源」。從 analyses/ 載入 demo 紀錄後在複核頁籤改一個碼並儲存，
-    # 若直接覆寫原檔，參考標準就悄悄變了：只改一個碼，卡方就從
-    # 10.04/.018 變成 10.454/.0151，任何引用這批語料的數字都對不上。
-    # 參考編碼一律唯讀：修改另存新檔，並在 _meta 記下它是從哪一份分出來的。
+    # 隨軟體附的參考編碼一律唯讀。它同時是示範資料與已發表數字的資料來源：
+    # 載入後在複核頁籤改一個碼並直接覆寫原檔，參考標準就悄悄變了，任何引用
+    # 這批語料的數字都會對不上。修改一律另存新檔，並在 _meta 記下它是從
+    # 哪一份分出來的。
     if rec.get("_reference"):
         orig = fn
         stem = re.sub(r"\.json$", "", orig)
-        fn = f"{stem}_reviewed_{ts}.json"
+        fn = unique_filename(f"{stem}_reviewed_{ts}.json")
         meta["derived_from"] = orig
         meta["reference_source"] = meta.get("source")
         meta["source"] = f"reviewed-copy/{orig}"
@@ -272,6 +300,77 @@ def save_record(rec):
     rec[S.META] = meta
     rec["_file"] = fn
     return fn
+
+
+# 開放編碼的中途存檔。放在 analyses/ 的子資料夾：側欄掃描的是 analyses/
+# 本層，不會把還沒定案的開放紀錄與碼簿當成分析列出來。
+OPEN_DIR = os.path.join(SAVE_DIR, "open_coding")
+
+
+def save_open_record(rec, cb):
+    """
+    開放編碼每完成一份逐字稿就寫進磁碟，碼簿一併寫。沒有這一步，一次十幾
+    分鐘的地端執行在頁面重新整理之後什麼都不剩——結果只存在 session 裡。
+    """
+    os.makedirs(OPEN_DIR, exist_ok=True)
+    fn = rec.get("_file")
+    if not fn:
+        safe = re.sub(r'[\\/:*?"<>|]', "_", str(rec.get(S.RESPONDENT, "unknown")))[:40]
+        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+        fn = unique_filename(f"open_{safe}_{ts}.json", OPEN_DIR)
+    payload = {k: v for k, v in rec.items() if not k.startswith("_") or k == S.META}
+    with open(os.path.join(OPEN_DIR, fn), "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    rec["_file"] = fn
+    OP.save_codebook(cb, os.path.join(OPEN_DIR,
+                                      f"codebook_{cb[OP.CODEBOOK_ID]}.json"))
+    return fn
+
+
+def load_open_coding(directory=None):
+    """
+    讀回最近寫入的碼簿與屬於它的開放紀錄。回傳 (碼簿, 紀錄清單)；
+    資料夾裡沒有碼簿時回 (None, [])。
+    """
+    directory = OPEN_DIR if directory is None else directory
+    if not os.path.isdir(directory):
+        return None, []
+    cbs = [f for f in os.listdir(directory)
+           if f.startswith("codebook_") and f.endswith(".json")]
+    if not cbs:
+        return None, []
+    newest = max(cbs, key=lambda f: os.path.getmtime(os.path.join(directory, f)))
+    cb = OP.load_codebook(os.path.join(directory, newest))
+    recs = []
+    for fn in sorted(os.listdir(directory)):
+        if not (fn.startswith("open_") and fn.endswith(".json")):
+            continue
+        try:
+            with open(os.path.join(directory, fn), "r", encoding="utf-8") as f:
+                rec = json.load(f)
+        except (OSError, ValueError):
+            continue
+        if (rec.get(S.META) or {}).get("codebook_id") != cb[OP.CODEBOOK_ID]:
+            continue
+        rec["_file"] = fn
+        recs.append(rec)
+    return cb, recs
+
+
+def record_labels(recs):
+    """
+    選單用的紀錄標籤：受訪者名稱；同名不只一筆時補上檔名，讓每一筆都選得到。
+    選單的選項值一律用索引——用名稱查，同名的第二筆永遠到不了。
+    """
+    names = [str(r.get(S.RESPONDENT, "")) for r in recs or []]
+    dup = {n for n, c in Counter(names).items() if c > 1}
+    out = []
+    for i, r in enumerate(recs or []):
+        label = names[i]
+        if names[i] in dup:
+            label += f" · {r.get('_file') or i + 1}"
+        out.append(label)
+    return out
 
 
 def load_records_from_dir(path, tag):
@@ -829,7 +928,11 @@ with st.sidebar:
     models, model_note = available_models(provider, api_key, base_url)
     if models:
         _prev = st.session_state.get("_llm_model")
-        _idx = models.index(_prev) if _prev in models else 0
+        # 預設挑第一顆對話模型：清單依字母排序時第一顆常是程式碼或嵌入模型，
+        # 那種模型拿來編碼只會回傳空的或不合格式的結果。
+        _default = LLM.default_model(models)
+        _idx = (models.index(_prev) if _prev in models
+                else (models.index(_default) if _default in models else 0))
         model_name = st.selectbox(t("app.model"), models, index=_idx,
                                   key="_llm_model")
     else:
@@ -854,9 +957,24 @@ with st.sidebar:
         # 視窗預算要看得見。使用者調了 num_ctx 卻不知道有多少真的落到
         # 逐字稿上，就只能靠撞牆時的錯誤訊息去反推——而那個訊息出現的
         # 時候，他已經選好模型、上傳好檔案、按下開始了。
-        _res = LLM.default_max_tokens(provider, int(num_ctx))
-        _room = int(num_ctx) - _res
-        st.caption(t("llm.budget", ctx=f"{int(num_ctx):,}", out=f"{_res:,}",
+        # 預算要用**實際**的視窗算：設定值比模型原生視窗大時，伺服器不會
+        # 報錯，只會無聲截斷。原生視窗要問伺服器，問過的結果留在 session 裡，
+        # 不必每次重繪都再問一次。
+        _nk = (provider, model_name, base_url, int(num_ctx))
+        _nc = st.session_state.get("_native_cache")
+        if not _nc or _nc.get("key") != _nk:
+            _ep = LLM.Endpoint(provider, model_name, api_key, base_url,
+                               num_ctx=int(num_ctx))
+            _nc = {"key": _nk, "eff": _ep.effective_num_ctx(),
+                   "res": _ep.effective_max_tokens(),
+                   "native": _ep.native_context_length()[0]}
+            st.session_state["_native_cache"] = _nc
+        _eff, _res = int(_nc["eff"]), int(_nc["res"])
+        _room = _eff - _res
+        if _eff < int(num_ctx):
+            st.warning(t("llm.native_smaller", native=f"{int(_nc['native'] or _eff):,}",
+                         ctx=f"{int(num_ctx):,}"))
+        st.caption(t("llm.budget", ctx=f"{_eff:,}", out=f"{_res:,}",
                      room=f"{_room:,}", chars=f"{int(_room * 3.5):,}"))
         if st.button(t("llm.test"), **WIDE):
             ok, note = LLM.probe(LLM.Endpoint(provider, model_name, api_key,
@@ -1008,10 +1126,24 @@ with tab_run:
     st.caption(t("run.mode_framework_help") if mode == MODE_FRAMEWORK
                else t("run.mode_open_help"))
 
+    # 執行中的提醒放在最上面。任何介面互動都會重跑整支指令稿，跑到一半的
+    # 批次就此中止；上一輪若沒有正常走到結尾，這個記號還留著，這裡就說出來。
+    run_notice = st.empty()
+    if st.session_state.pop("_run_active", False):
+        st.warning(t("run.interrupted"))
+
     st.caption(t("run.transcript_hint"))
     files = st.file_uploader(t("run.upload"), type=["docx"],
                              accept_multiple_files=True)
-    delay = st.slider(t("run.delay"), 0, 30, 10, help=t("run.delay_help"))
+    # 每個檔案各自讀一次。壞掉的檔案只影響它自己：報檔名與原因，排除在
+    # 這一批之外，其餘照常。
+    texts, bad_files = read_uploads(files)
+    for _name, _why in bad_files:
+        st.warning(t("run.bad_docx", name=_name, e=_why))
+    files = [f for f in (files or []) if f.name in texts]
+    # 地端服務沒有速率上限，每份稿件之間不必等；雲端才需要間隔。
+    delay = st.slider(t("run.delay"), 0, 30, LLM.default_delay(provider),
+                      help=t("run.delay_help"))
 
     if mode == MODE_FRAMEWORK:
         with st.expander(f"{t('side.framework')}: {FW.name()}"):
@@ -1030,6 +1162,31 @@ with tab_run:
             else:
                 st.caption(t("run.open_codebook_continues",
                              n=_n, cb=_cb[OP.CODEBOOK_ID]))
+            st.caption(t("run.open_autosave", dir=OPEN_DIR))
+            # 語料是什麼（訪談逐字稿、聽證會、永續報告書）寫進提示詞，由使用者
+            # 說，不從任何框架推；開放編碼沒有作用中的框架。碼簿建立時定案，
+            # 之後跟著碼簿走。
+            st.text_input(t("run.open_corpus_term"),
+                          value=(OP.corpus_term_of(_cb) if _cb
+                                 else OP.DEFAULT_CORPUS_TERM),
+                          key="open_corpus_term", disabled=bool(_cb),
+                          help=t("run.open_corpus_term_help"))
+            _rn = st.session_state.pop("_open_resume_note", None)
+            if _rn:
+                st.success(_rn)
+            # 中途存檔可以讀回來：頁面重新整理之後 session 是空的，磁碟上的
+            # 碼簿與紀錄還在。
+            if not _cb and st.button(t("run.open_resume"), key="btn_open_resume"):
+                _cb2, _recs2 = load_open_coding()
+                if _cb2 is None:
+                    st.info(t("run.open_resume_none", dir=OPEN_DIR))
+                else:
+                    st.session_state.codebook = _cb2
+                    st.session_state.open_records = _recs2
+                    st.session_state["_open_resume_note"] = t(
+                        "run.open_resumed", cb=_cb2[OP.CODEBOOK_ID],
+                        n=len(_recs2), dir=OPEN_DIR)
+                    st.rerun()
             # 從零開始是一個需要明講的決定：碼簿一清掉，之前幾份逐字稿
             # 建立的碼就不再被沿用，後面編出來的碼會跟前面對不上。
             if _cb and st.button(t("run.open_codebook_reset"), key="btn_cb_reset"):
@@ -1075,7 +1232,7 @@ with tab_run:
                        CH.DEFAULT_OVERLAP_CHARS, step=100, key="sl_overlap",
                        help=t("run.chunk_overlap_help"), disabled=not use_chunks)
         if files:
-            _n = [len(CH.split_transcript(read_docx(f), win, ov))
+            _n = [len(CH.split_transcript(texts[f.name], win, ov))
                   for f in files] if use_chunks else [1] * len(files)
             st.caption(t("run.chunk_est", calls=sum(_n), files=len(files)))
 
@@ -1111,10 +1268,12 @@ with tab_run:
                     if mode == MODE_OPEN:
                         # 用一份丟棄式的碼簿：試跑不該污染正在累積的那一份，
                         # 它是校準不是資料（跟框架模式的理由完全相同）。
-                        _cb_dry = OP.new_codebook(st.session_state.analysis_lang)
+                        _cb_dry = OP.new_codebook(
+                            st.session_state.analysis_lang,
+                            corpus_term=st.session_state.get("open_corpus_term")
+                            or OP.DEFAULT_CORPUS_TERM)
                         sys_dry = OP.build_open_prompt(
-                            _cb_dry, st.session_state.analysis_lang, sample,
-                            corpus_term=FW.corpus_term("document", "en"))
+                            _cb_dry, st.session_state.analysis_lang, sample)
                     else:
                         sys_dry = build_system_prompt(
                             FW, st.session_state.analysis_lang, sample)
@@ -1197,6 +1356,9 @@ with tab_run:
             st.success(t("run.all_done"))
         else:
             ep = endpoint()
+            # 記號在迴圈跑完才清掉：被介面互動中斷時它會留著，下一輪據此提醒。
+            st.session_state["_run_active"] = True
+            run_notice.warning(t("run.in_progress"))
             prog = st.progress(0.0)
             n_ok, n_fail, stopped = 0, 0, False
             for i, file in enumerate(todo):
@@ -1206,7 +1368,7 @@ with tab_run:
                 for attempt in range(3):
                     try:
                         status.info(t("run.coding", a=attempt + 1))
-                        transcript = read_docx(file)
+                        transcript = texts[file.name]
                         if not transcript.strip():
                             raise ValueError(t("run.empty_doc"))
                         # 提示詞的語言指示要依**這一份**的內容決定，
@@ -1260,6 +1422,9 @@ with tab_run:
                             raw = f"(chunked: {chunk_meta.get('chunking')})"
                         else:
                             rec = code_chunk(transcript, 0, 1)
+                            # 整份送出時模型偶爾把同一段話回傳好幾次；引文
+                            # 完全相同的段落只留一筆，碼取聯集。
+                            rec[S.SEGMENTS] = CH.dedupe_segments(rec[S.SEGMENTS])
                             raw = "(single pass)"
                         rec[S.TRANSCRIPT] = transcript
                         rec[S.TRANSCRIPT_FILE] = file.name
@@ -1280,6 +1445,9 @@ with tab_run:
                             "framework_id": FW.id,
                             "coded_at": datetime.now().isoformat(timespec="seconds"),
                         })
+                        # 產出量診斷與被丟棄的碼是紀錄的一部分，存檔之前就要寫進
+                        # _meta；之後畫面上的警告從紀錄裡讀，不另外算一份。
+                        CH.attach_yield(rec, transcript, FW.dimensions, run_drops)
                         save_record(rec)
                         # 存檔後立刻讓側欄的掃描快取失效，
                         # 否則新跑完的這一份不會出現在可載入清單裡。
@@ -1289,13 +1457,19 @@ with tab_run:
                         n_seg = len(rec[S.SEGMENTS])
                         n_multi = sum(1 for s in rec[S.SEGMENTS]
                                       if len(S.codes_of(s)) > 1)
-                        status.success(t("run.done", n=n_seg, m=n_multi))
+                        if n_seg:
+                            status.success(t("run.done", n=n_seg, m=n_multi))
+                        else:
+                            # 零段不是成功：紀錄存了，但裡面沒有東西。
+                            status.warning(t("run.done_empty"))
+                        # 失敗的窗口要說出來：紀錄已標為不完整，使用者要知道
+                        # 哪幾段沒有被讀過。
+                        show_chunk_errors(rec.get(S.META))
                         # 產出量檢查。工具不知道正確答案是幾段——那是研究者
                         # 的判斷——但認得出幾種「不可能是真的」的形狀。沒有
                         # 這一層的話，使用者拿到 4 段，畫面上沒有任何
                         # 跡象顯示這份分析漏掉了大半份稿件。
-                        yr = CH.yield_report(transcript, rec[S.SEGMENTS],
-                                             FW.dimensions)
+                        yr = rec[S.META]["yield"]
                         if yr["flags"]:
                             st.warning(t("run.yield_low", n=yr["n_segments"],
                                          chars=yr["chars"], d=yr["per_10k"],
@@ -1305,7 +1479,6 @@ with tab_run:
                             if yr["missing"]:
                                 st.caption(t("run.yield_missing", dims=", ".join(
                                     I.dim(d) for d in yr["missing"])))
-                        rec.setdefault(S.META, {})["yield"] = yr
                         # 以缺席為證據而被擋下的碼。數量大代表這顆模型在這
                         # 份稿件上經常憑「沒有出現 X」生碼——那是換模型或
                         # 收緊框架排除條件的訊號，不是可以忽略的雜訊。
@@ -1315,7 +1488,6 @@ with tab_run:
                             st.warning(t("run.absence_dropped", n=len(_absent)))
                             with st.expander(t("run.absence_detail")):
                                 show_df(pd.DataFrame(_absent), hide_index=True)
-                        rec[S.META]["dropped"] = run_drops
                         if delay:
                             time.sleep(delay)
                         break
@@ -1325,9 +1497,11 @@ with tab_run:
                         status.error(t("run.quota"))
                         stopped = True
                         break
-                    except (LLM.ContextOverflow, LLM.NotConfigured) as e:
-                        # 這兩種錯誤重試一百次也一樣：context 不夠就是不夠，
-                        # 服務沒開就是沒開。直接停下並把解法講清楚。
+                    except (LLM.ContextOverflow, LLM.NotConfigured, LLM.Timeout,
+                            LLM.Unavailable) as e:
+                        # 這幾種錯誤重試也一樣：context 不夠就是不夠（含送出後
+                        # 才發現的截斷），服務沒開就是沒開，逾時與服務端滿載
+                        # 已經在供應者層重試過。直接停下並把原因講清楚。
                         status.error(str(e))
                         stopped = True
                         break
@@ -1340,10 +1514,15 @@ with tab_run:
                             status.error(t("run.failed", name=file.name))
                             with st.expander(t("run.raw_output")):
                                 st.code((raw or "-")[:4000])
+                                # 伺服器最近一次回報的用量：讀了幾個 token、
+                                # 為什麼停。判斷截斷與空回覆要看這個。
+                                st.caption(str(ep.last_usage))
                 prog.progress((i + 1) / len(todo))
                 if stopped:
                     break
 
+            st.session_state["_run_active"] = False
+            run_notice.empty()
             remaining = len(todo) - n_ok - n_fail
             if stopped:
                 st.warning(t("run.stopped_summary", ok=n_ok, left=remaining))
@@ -1372,15 +1551,19 @@ with tab_run:
         else:
             ep = endpoint()
             cb = st.session_state.codebook or OP.new_codebook(
-                st.session_state.analysis_lang)
+                st.session_state.analysis_lang,
+                corpus_term=st.session_state.get("open_corpus_term")
+                or OP.DEFAULT_CORPUS_TERM)
             st.session_state.codebook = cb
+            st.session_state["_run_active"] = True
+            run_notice.warning(t("run.in_progress"))
             prog = st.progress(0.0)
             n_ok = n_fail = 0
             for i, file in enumerate(files):
                 st.subheader(file.name)
                 status = st.empty()
                 try:
-                    transcript = read_docx(file)
+                    transcript = texts[file.name]
                     if not transcript.strip():
                         raise ValueError(t("run.empty_doc"))
 
@@ -1391,8 +1574,7 @@ with tab_run:
                         # 框架驅動那邊不同：那邊整份共用一份提示詞就夠，
                         # 這邊每編一段碼簿就長大，下一段必須看得到。
                         sysmsg = OP.build_open_prompt(
-                            _cb, st.session_state.analysis_lang, _tr,
-                            corpus_term=FW.corpus_term("document", "en"))
+                            _cb, st.session_state.analysis_lang, _tr)
                         out = LLM.complete(
                             ep, f"File: {_f.name}\n\n"
                                 f"Excerpt {n + 1} of {total}:\n{text}",
@@ -1403,9 +1585,12 @@ with tab_run:
                         j = j.replace("\r\n", "\n").replace("\r", "\n")
                         return LLM.loads_lenient(fix_newlines_in_strings(j))
 
+                    # 受訪者識別碼取自檔名，不取自模型輸出：模型讀不到名字時
+                    # 會把提示詞裡的佔位字樣抄回來，兩份文件會撞成同一個。
                     rec = OP.open_code_transcript(
                         transcript, code_open, cb,
-                        window=win if use_chunks else 10 ** 9, overlap=ov)
+                        window=win if use_chunks else 10 ** 9, overlap=ov,
+                        transcript_file=file.name)
                     rec[S.TRANSCRIPT] = transcript
                     rec[S.TRANSCRIPT_FILE] = file.name
                     rec[S.META]["source"] = ep.describe()
@@ -1416,6 +1601,9 @@ with tab_run:
                     rec[S.META]["coded_at"] = datetime.now().isoformat(
                         timespec="seconds")
                     st.session_state.open_records.append(rec)
+                    # 每完成一份就寫進磁碟，碼簿一起寫。中途被打斷或頁面
+                    # 重新整理，已完成的部分不會消失。
+                    save_open_record(rec, cb)
                     n_ok += 1
 
                     _st = [s for s in (rec[S.META].get("codes_per_chunk") or [])]
@@ -1428,12 +1616,14 @@ with tab_run:
                     if rec[S.META].get("chunk_errors"):
                         st.warning(t("run.open_chunk_errors",
                                      n=len(rec[S.META]["chunk_errors"])))
+                        show_chunk_errors(rec[S.META])
                     if delay:
                         time.sleep(delay)
                 except LLM.RateLimited:
                     status.error(t("run.quota"))
                     break
-                except (LLM.ContextOverflow, LLM.NotConfigured) as e:
+                except (LLM.ContextOverflow, LLM.NotConfigured, LLM.Timeout,
+                        LLM.Unavailable) as e:
                     status.error(str(e))
                     break
                 except Exception as e:                       # noqa: BLE001
@@ -1441,6 +1631,8 @@ with tab_run:
                     status.error(f"{t('run.failed', name=file.name)}: "
                                  f"{type(e).__name__}: {e}")
                 prog.progress((i + 1) / len(files))
+            st.session_state["_run_active"] = False
+            run_notice.empty()
             if n_ok:
                 st.success(t("run.open_batch_done", ok=n_ok, fail=n_fail,
                              codes=len(cb[OP.CODES])))
@@ -1462,6 +1654,13 @@ with tab_run:
 # =====================================================================
 with tab_codebook:
     cb = st.session_state.codebook
+    # 定案的結果訊息留到重跑之後才顯示：定案當下整支指令稿會重跑一次，
+    # 讓每一個頁籤都讀到新的框架。
+    _fw_note = st.session_state.pop("_cb_fw_note", None)
+    if _fw_note:
+        st.success(t("cb.fw_built", n=_fw_note[0], path=_fw_note[1],
+                     recs=_fw_note[2]))
+        st.info(t("cb.fw_built_next"))
     if not cb or not cb[OP.CODES]:
         st.info(t("cb.empty"))
         st.caption(t("cb.empty_hint"))
@@ -1601,17 +1800,20 @@ with tab_codebook:
                     save_record(r)
                 st.session_state.records = converted
                 st.session_state.pop("_saved_index", None)
+                os.makedirs(OPEN_DIR, exist_ok=True)
                 OP.save_codebook(cb, os.path.join(
-                    SAVE_DIR, f"codebook_{cb[OP.CODEBOOK_ID]}.json"))
-                st.success(t("cb.fw_built", n=len(new_fw.dimensions),
-                             path=os.path.basename(path),
-                             recs=len(converted)))
-                st.info(t("cb.fw_built_next"))
+                    OPEN_DIR, f"codebook_{cb[OP.CODEBOOK_ID]}.json"))
+                st.session_state["_cb_fw_note"] = (
+                    len(new_fw.dimensions), os.path.basename(path), len(converted))
                 # 碼簿定案的那一刻，這批資料就從「開放編碼」變成「有框架的
                 # 編碼」了。側邊欄要跟著切回框架模式並顯示這個新框架，否則
                 # 畫面會說「沒有套用框架」而分析頁籤卻在用它。widget 已經
                 # 建立，這一輪改不了它的值，留個記號下一輪套用。
                 st.session_state["_pending_mode"] = MODE_FRAMEWORK
+                # 作用中的框架換了，而這一輪的側欄與前面的頁籤都是用舊框架
+                # 畫的；後面的頁籤若接著畫，會拿舊框架的極性設定去讀新框架
+                # 的資料。整支指令稿重跑一次，每個頁籤才會讀到同一個框架。
+                st.rerun()
             except Exception as e:                           # noqa: BLE001
                 st.error(f"{type(e).__name__}: {e}")
 
@@ -1626,6 +1828,11 @@ with tab_data:
     else:
         st.markdown(f"### {t('data.descriptor_editor')}")
         st.caption(t("data.descriptor_hint"))
+        # 同名的紀錄在每一張交叉表裡都會被併成同一個人，載入時就要講。
+        _dups = sorted(n for n, c in Counter(str(r.get(S.RESPONDENT, ""))
+                                             for r in recs).items() if c > 1)
+        if _dups:
+            st.warning(t("data.dup_names", n=len(_dups), names=", ".join(_dups)))
 
         desc_df = pd.DataFrame([
             {S.RESPONDENT: r.get(S.RESPONDENT, ""),
@@ -1652,11 +1859,14 @@ with tab_data:
                                 **WIDE, key="desc_editor")
 
         if st.button(t("data.save_descriptors"), type="primary", key="btn_desc"):
-            renamed, clashes = [], []
+            renamed, clashes, n_saved = [], [], 0
             _existing = [r.get(S.RESPONDENT, "") for r in recs]
             for i, r in enumerate(recs):
                 if i >= len(edited):
                     continue
+                # 只存真的改過的紀錄。隨軟體附的參考編碼一存就會分出一份新檔，
+                # 沒改也存等於把每一筆都複製一次，下次載入每個碼都算兩遍。
+                _before = (dict(r.get(S.DESCRIPTORS) or {}), r.get(S.RESPONDENT, ""))
                 d = r.setdefault(S.DESCRIPTORS, S.blank_descriptors())
                 for k, opts in S.DESCRIPTOR_FIELDS.items():
                     shown = edited.iloc[i][k]
@@ -1680,7 +1890,9 @@ with tab_data:
                             _tr[new] = _tr.pop(old)
                             st.session_state.transcripts = _tr
                         renamed.append((old, new))
-                save_record(r)
+                if (dict(r.get(S.DESCRIPTORS) or {}), r.get(S.RESPONDENT, "")) != _before:
+                    save_record(r)
+                    n_saved += 1
             if clashes:
                 st.error(t("data.rename_clash",
                            pairs="；".join(f"{a} → {b}" for a, b in clashes)))
@@ -1691,7 +1903,10 @@ with tab_data:
                 st.warning(t("data.renamed",
                              n=len(renamed),
                              pairs="；".join(f"{a} → {b}" for a, b in renamed)))
-            st.success(t("data.saved"))
+            if n_saved:
+                st.success(t("data.saved_n", n=n_saved))
+            else:
+                st.info(t("data.nothing_changed"))
 
         st.divider()
         st.markdown(f"### {t('data.health')}")
@@ -1810,9 +2025,16 @@ with tab_review:
         # ---- 逐段複核
         with rv1:
             c1, c2, c3 = st.columns([2, 2, 1])
-            names = [r.get(S.RESPONDENT, "") for r in recs]
-            who = c1.selectbox(t("common.respondent"), names, key="rv_case")
-            rec = recs[names.index(who)]
+            # 選項用索引：同名的紀錄不只一筆時，用名稱查永遠只到得了第一筆。
+            _labels = record_labels(recs)
+            ridx = c1.selectbox(t("common.respondent"), list(range(len(recs))),
+                                format_func=lambda i, _l=_labels: _l[i],
+                                key="rv_case")
+            rec = recs[ridx]
+            who = rec.get(S.RESPONDENT, "")
+            # widget 的鍵帶索引與名稱：兩筆同名紀錄的段落編號都從 S001 起算，
+            # 只用名稱當鍵，切換紀錄時欄位會留著上一筆的內容。
+            rk = f"{ridx}_{who}"
             pending_only = c2.checkbox(t("rv.pending_only"), True, key="rv_pending")
             cf = c3.selectbox(t("rv.filter_code"), [t("common.all")] + S.CODES,
                               key="rv_cf")
@@ -1854,31 +2076,36 @@ with tab_review:
                             else:
                                 st.caption(t("rv.quote_ok"))
                         title = st.text_input(t("common.title"), s.get(S.TITLE, ""),
-                                              key=f"rv_t_{who}_{sid}")
+                                              key=f"rv_t_{rk}_{sid}")
                         quote = st.text_area(t("common.quote"), s.get(S.QUOTE, ""),
-                                             height=68, key=f"rv_q_{who}_{sid}")
+                                             height=68, key=f"rv_q_{rk}_{sid}")
                         with st.expander(t("common.full_text")):
                             full = st.text_area(
                                 t("common.full_text"), s.get(S.FULL_TEXT, ""),
-                                height=120, key=f"rv_f_{who}_{sid}",
+                                height=120, key=f"rv_f_{rk}_{sid}",
                                 label_visibility="collapsed")
                         picked = st.multiselect(
                             t("common.codes"), S.CODES, default=S.codes_of(s),
-                            key=f"rv_c_{who}_{sid}",
+                            key=f"rv_c_{rk}_{sid}",
                             format_func=lambda c: f"{c}  {I.code_label(c)}")
                         if s.get(S.CODES_F):
                             st.caption(t("rv.ai_rationale") + ": " + "; ".join(
                                 f"{c.get(S.RATIONALE, '')}" for c in s[S.CODES_F]
                                 if c.get(S.RATIONALE)))
                         b1, b2, b3 = st.columns([1, 1, 2])
-                        if b1.button(t("rv.confirm"), key=f"rv_ok_{who}_{sid}",
+                        if b1.button(t("rv.confirm"), key=f"rv_ok_{rk}_{sid}",
                                      **WIDE):
-                            RV.update_text(s, title=title, quote=quote,
-                                           full_text=full, reviewer=reviewer)
-                            RV.update_codes(s, picked, reviewer=reviewer)
-                            save_record(rec)
-                            st.rerun()
-                        if b2.button(t("rv.delete"), key=f"rv_del_{who}_{sid}",
+                            # 空的碼集合不是一筆編碼。要拿掉整段用「刪除」，
+                            # 段落與它的軌跡都會留著。
+                            if not picked:
+                                st.error(t("rv.empty_codes"))
+                            else:
+                                RV.update_text(s, title=title, quote=quote,
+                                               full_text=full, reviewer=reviewer)
+                                RV.update_codes(s, picked, reviewer=reviewer)
+                                save_record(rec)
+                                st.rerun()
+                        if b2.button(t("rv.delete"), key=f"rv_del_{rk}_{sid}",
                                      **WIDE):
                             RV.delete_segment(rec, sid, reviewer=reviewer)
                             save_record(rec)
@@ -1894,7 +2121,7 @@ with tab_review:
                                     f"{'/'.join(s[S.REVIEW][S.ORIGINAL_CODES]) or '-'}"
                                     f"  {s.get(S.QUOTE, '')[:40]}")
                         if cc2.button(t("rv.restore"),
-                                      key=f"rv_res_{who}_{s.get(S.SEGMENT_ID)}"):
+                                      key=f"rv_res_{rk}_{s.get(S.SEGMENT_ID)}"):
                             RV.restore_segment(rec, s.get(S.SEGMENT_ID),
                                                reviewer=reviewer)
                             save_record(rec)
@@ -1903,9 +2130,12 @@ with tab_review:
         # ---- 人工新增
         with rv2:
             st.caption(t("rv.add_hint"))
-            names2 = [r.get(S.RESPONDENT, "") for r in recs]
-            who2 = st.selectbox(t("rv.add_to"), names2, key="rv_add_case")
-            rec2 = recs[names2.index(who2)]
+            _labels2 = record_labels(recs)
+            ridx2 = st.selectbox(t("rv.add_to"), list(range(len(recs))),
+                                 format_func=lambda i, _l=_labels2: _l[i],
+                                 key="rv_add_case")
+            rec2 = recs[ridx2]
+            who2 = rec2.get(S.RESPONDENT, "")
             new_title = st.text_input(t("common.title"), key="rv_add_t")
             new_text = st.text_area(t("rv.add_text"), height=130, key="rv_add_f")
             new_codes = st.multiselect(t("common.codes"), S.CODES, key="rv_add_c",
@@ -2003,12 +2233,17 @@ with tab_cross:
     if long_df.empty:
         st.info(t("app.no_data"))
     else:
+        # 段落數要數 (受訪者, 段落) 配對：段落編號在每一筆紀錄裡都從 S001
+        # 重新起算，只數不同的編號會把 24 個人的段落數壓成一個人的。
+        n_segments = len(long_df[[S.RESPONDENT, S.SEGMENT_ID]].drop_duplicates())
         st.caption(t("cross.basis", r=long_df[S.RESPONDENT].nunique(),
-                     s=long_df[S.SEGMENT_ID].nunique(), c=len(long_df)))
+                     s=n_segments, c=len(long_df)))
 
-        # 無極性框架時不顯示極性平衡——那個分析在此沒有意義
+        # 無極性框架時不顯示極性平衡——那個分析在此沒有意義。
+        # 極性有無一律問當下作用中的框架，不用開場時抓的那一份。
+        has_pol = F.active().has_polarity
         sub_keys = ["cross.tab1", "cross.tab2", "cross.tab3"]
-        if FW.has_polarity:
+        if has_pol:
             sub_keys.append("cross.tab4")
         subs = st.tabs([t(k) for k in sub_keys])
 
@@ -2022,7 +2257,7 @@ with tab_cross:
             # 少了這個選項，使用者在八格編碼的表上只會一直看到「前提不成立」，
             # 而工具其實算得出來的那一個檢定，介面上根本到不了。
             unit_opts = [A.CODE] + ([S.DIMENSION, S.POLARITY]
-                                    if FW.has_polarity else [])
+                                    if has_pol else [])
             _unit_names = {A.CODE: "common.code", S.DIMENSION: "common.dimension",
                            S.POLARITY: "common.polarity"}
             unit = c2.selectbox(t("cross.unit"), unit_opts,
@@ -2158,9 +2393,16 @@ with tab_cross:
             st.caption(t("cross.case_note"))
 
         # ---- 極性平衡（僅有極性的框架）
-        if FW.has_polarity:
+        # 指數欄位只在「恰好兩極」時存在；沒有的話這一頁只說明，不畫圖。
+        per_dim, overall = A.polarity_balance(long_df) if has_pol \
+            else (pd.DataFrame(), pd.DataFrame())
+        has_index = ("polarity_index" in per_dim.columns
+                     and "polarity_index" in overall.columns)
+        if has_pol and not has_index:
             with subs[3]:
-                per_dim, overall = A.polarity_balance(long_df)
+                st.info(t("side.no_polarity_note"))
+        elif has_pol:
+            with subs[3]:
                 st.markdown(f"#### {t('cross.polarity_overall')}")
                 if HAS_PLOTLY and not overall.empty:
                     o = overall.sort_values("polarity_index")
@@ -2250,17 +2492,32 @@ with tab_themes:
             if len(used) < 2:
                 st.info(t("th.nomodel_need"))
             else:
-                nb1, nb2 = st.columns([2, 1])
+                nb1, nb2, nb3 = st.columns([2, 2, 1])
                 basis = nb1.radio(
                     t("th.nomodel_basis"), ["cooccurrence", "labels"],
                     horizontal=True, key="th_basis",
                     format_func=lambda v: (t("th.basis_cooc") if v == "cooccurrence"
                                            else t("th.basis_labels")),
                     help=t("th.nomodel_basis_help"))
-                n_groups = nb2.number_input(t("th.nomodel_k"), 2,
-                                            max(2, len(used)),
-                                            min(8, max(2, len(used) // 2)),
-                                            key="th_k")
+                # 預設用停止距離：群只在平均距離不超過門檻時繼續合併，
+                # 不相干的碼不會被硬湊成一組。固定群數是另一種選擇，
+                # 它不看距離，一路併到剩那麼多群為止。
+                stop_rule = nb2.radio(
+                    t("th.stop_rule"), ["distance", "k"], horizontal=True,
+                    key="th_stop_rule",
+                    format_func=lambda v: (t("th.stop_by_distance")
+                                           if v == "distance" else t("th.stop_by_k")))
+                if stop_rule == "distance":
+                    stop_dist = nb3.number_input(
+                        t("th.stop_distance"), 0.05, 1.0, 0.85, 0.05,
+                        key="th_stop", help=t("th.stop_distance_help"))
+                    n_groups = None
+                else:
+                    stop_dist = None
+                    n_groups = nb3.number_input(t("th.nomodel_k"), 2,
+                                                max(2, len(used)),
+                                                min(8, max(2, len(used) // 2)),
+                                                key="th_k")
                 if st.button(t("th.nomodel_go"), key="btn_cluster"):
                     cnt, _jac, tot = A.cooccurrence(recs)
                     if basis == "cooccurrence":
@@ -2269,9 +2526,19 @@ with tab_themes:
                         dist = RT.label_distances(
                             {c: f"{I.code_label(c)} {FW.definition(S.split_code(c)[0], I.get_lang())}"
                              for c in used})
-                    st.session_state.code_clusters = RT.cluster_codes(
-                        dist, used, k=int(n_groups), weights=tot)
+                    if n_groups is not None:
+                        st.session_state.code_clusters = RT.cluster_codes(
+                            dist, used, k=int(n_groups), weights=tot)
+                    else:
+                        st.session_state.code_clusters = RT.cluster_codes(
+                            dist, used, k=None, max_distance=float(stop_dist),
+                            weights=tot)
                     st.session_state.cluster_basis = basis
+                    st.session_state.cluster_stop = {
+                        "rule": stop_rule,
+                        "max_distance": (float(stop_dist) if stop_dist is not None
+                                         else None),
+                        "k": int(n_groups) if n_groups is not None else None}
 
                 groups = st.session_state.get("code_clusters") or []
                 if groups:
@@ -2321,6 +2588,8 @@ with tab_themes:
                                            "method": "agglomerative-average",
                                            "basis": st.session_state.get(
                                                "cluster_basis"),
+                                           "stop": st.session_state.get(
+                                               "cluster_stop"),
                                            "k": len(groups),
                                            "merge_distances": [
                                                g[RT.CLUSTER_DISTANCE]
@@ -3043,6 +3312,9 @@ with tab_irr:
             st.info(t("app.no_data"))
         else:
             valid = {u[S.UNIT_ID] for u in sess[S.UNITS]}
+            _note = st.session_state.pop("_irr_note", None)
+            if _note:
+                st.success(_note)
             for coder in sess[S.CODERS]:
                 with st.container(border=True):
                     done = len(sess[S.HUMAN_CODINGS].get(coder) or {})
@@ -3060,30 +3332,48 @@ with tab_irr:
                             sess[S.HUMAN_CODINGS][coder] = parsed
                             with open(IRR_PATH, "w", encoding="utf-8") as f:
                                 json.dump(sess, f, ensure_ascii=False, indent=2)
-                            st.success(t("ir.imported", n=len(parsed),
-                                         m=sum(1 for v in parsed.values() if v)))
+                            # 下方「直接在介面上編碼」的選單帶著自己的狀態；
+                            # 匯入之後要把這位編碼者的選單狀態清掉，它們才會
+                            # 重新以匯入的值初始化，而不是繼續顯示舊的。
+                            for k in [k for k in st.session_state
+                                      if str(k).startswith(f"code_{coder}_")]:
+                                del st.session_state[k]
+                            st.session_state["_irr_note"] = t(
+                                "ir.imported", n=len(parsed),
+                                m=sum(1 for v in parsed.values() if v))
+                            st.rerun()
                         except Exception as e:
                             st.error(str(e))
 
             st.divider()
             st.markdown(f"##### {t('ir.code_here')}")
+            st.caption(t("ir.code_here_note"))
             who = st.selectbox(t("ir.as_coder"), sess[S.CODERS], key="irr_who")
             npages = max(1, (len(sess[S.UNITS]) + 9) // 10)
             page = st.number_input(t("ir.page"), 1, npages, 1, key="irr_pg")
-            cur = sess[S.HUMAN_CODINGS].setdefault(who, {})
-            for u in sess[S.UNITS][(page - 1) * 10: page * 10]:
+            # 畫面上的選單只是草稿：它們的值**不會**在每次重繪時寫回工作階段。
+            # 選單一建立就帶著自己的狀態（一開始是空的），若每一輪都把它寫回去，
+            # 匯入的編碼表會被這十個空選單蓋掉，信度就是從壞掉的資料算出來的。
+            # 只有按下「儲存這一頁」才寫入，而且只寫這一頁的單元。
+            cur = sess[S.HUMAN_CODINGS].get(who) or {}
+            page_units = sess[S.UNITS][(page - 1) * 10: page * 10]
+            draft = {}
+            for u in page_units:
                 with st.container(border=True):
                     st.markdown(f"`{u[S.UNIT_ID]}`  {u[S.TEXT]}")
-                    cur[u[S.UNIT_ID]] = st.multiselect(
+                    draft[u[S.UNIT_ID]] = st.multiselect(
                         t("common.codes"), S.CODES,
                         default=cur.get(u[S.UNIT_ID], []),
                         key=f"code_{who}_{u[S.UNIT_ID]}",
                         format_func=lambda c: f"{c}  {I.code_label(c)}",
                         label_visibility="collapsed")
             if st.button(t("ir.save_page"), key="btn_save_manual"):
+                target = sess[S.HUMAN_CODINGS].setdefault(who, {})
+                for uid, codes in draft.items():
+                    target[uid] = sorted(codes)
                 with open(IRR_PATH, "w", encoding="utf-8") as f:
                     json.dump(sess, f, ensure_ascii=False, indent=2)
-                st.success("ok")
+                st.success(t("ir.page_saved", n=len(draft), who=who))
 
             # ---- 人工編碼 → 分析紀錄
             # 沒有這條路的話，編碼表收回來只算了信度就停住，交叉表、共現、
@@ -3202,7 +3492,7 @@ with tab_irr:
                                           columns=[f"{nb}: {d}" for d in disp])
                         show_df(cm)
 
-                        if FW.has_polarity:
+                        if S.HAS_POLARITY:
                             st.markdown(f"##### {t('ir.polarity_agree')}")
                             show_df(pretty(pd.DataFrame(
                                 RIRR.polarity_confusion(ca, cb, uids)),
@@ -3252,12 +3542,145 @@ with tab_irr:
 # =====================================================================
 # 12. 匯出
 # =====================================================================
-def build_excel(records):
+_ORIGIN_KEYS = {F.PROV_BUILTIN: "fw.origin_builtin",
+                F.PROV_MANUAL: "fw.origin_manual",
+                F.PROV_OPENALEX_DRAFT: "fw.origin_draft",
+                F.PROV_OPENALEX_APPROVED: "fw.origin_approved",
+                F.PROV_INDUCED: "fw.origin_induced"}
+
+
+def origin_label(prov):
+    return t(_ORIGIN_KEYS[prov]) if prov in _ORIGIN_KEYS else str(prov)
+
+
+def provenance_rows(records, irr=None):
+    """
+    出處與稽核摘要，一列一個欄位：框架來源與文獻依據、核可者、複核狀態
+    計數、信度抽樣框規模。拿不到的值寫「未記錄」，那一列照樣要在——
+    讀者要看得出是沒記，不是沒這回事。
+    """
+    fw = F.active()
+    nr = t("export.not_recorded")
+    prov = OA.provenance_of(fw)
+    rows = [
+        (t("export.fw_id"), fw.id or nr),
+        (t("export.fw_name"), fw.name(I.get_lang()) or nr),
+        (t("fw.origin"), origin_label(fw.provenance)),
+        (t("common.citation"), fw.citation or nr),
+    ]
+    bib = OA.bibliography(fw)
+    if bib:
+        for b in bib:
+            cite = b.get("citation") or nr
+            if b.get("doi"):
+                cite += f" · DOI {b['doi']}"
+            rows.append((f"{t('fw.grounding')} ({b.get('role') or '-'})", cite))
+    else:
+        rows.append((t("fw.grounding"), nr))
+    rows.append((t("fw.reviewer"), prov.get("approved_by") or nr))
+    rows.append((t("export.approved_at"), prov.get("approved_at") or nr))
+
+    stt = RV.review_stats(records)
+    for k in ("ai_segments", "reviewed", "confirmed", "modified", "deleted",
+              "human_added", "pending"):
+        rows.append((f"{t('export.status_counts')}: {k}", stt.get(k)))
+
+    diag = (irr or {}).get("diag") or {}
+    sess = (irr or {}).get("session") or {}
+    rows.append((t("export.frame_total"), diag.get("total_units", nr)))
+    rows.append((t("export.frame_coded"), diag.get("ai_coded_units", nr)))
+    rows.append((t("export.frame_uncoded"), diag.get("uncoded_units", nr)))
+    rows.append((t("export.frame_sample"),
+                 len(sess.get(S.UNITS) or []) if sess else nr))
+    rows.append((t("export.frame_session"), sess.get(S.SESSION_ID) or nr))
+    return rows
+
+
+def endpoint_rows(records):
+    """每一筆紀錄是哪個端點編出來的、逐字稿去了哪裡。缺的欄位寫「未記錄」。"""
+    nr = t("export.not_recorded")
+    out = []
+    for r in records:
+        meta = r.get(S.META) or {}
+        ep = meta.get("endpoint") if isinstance(meta.get("endpoint"), dict) else {}
+        out.append({
+            t("common.respondent"): r.get(S.RESPONDENT, ""),
+            t("export.record_file"): r.get("_file") or nr,
+            t("export.endpoint"): ep.get("endpoint") or meta.get("source") or nr,
+            t("llm.provider"): ep.get("provider") or nr,
+            t("app.model"): ep.get("model") or nr,
+            t("llm.base_url"): ep.get("base_url") or nr,
+            t("export.locality"): ep.get("data_locality") or nr,
+            t("llm.num_ctx"): ep.get("num_ctx") if ep.get("num_ctx") is not None else nr,
+            "temperature": ep.get("temperature", nr),
+            t("run.chunk_window"): ep.get("window_chars", nr),
+            t("export.coded_at"): meta.get("coded_at") or nr,
+            t("export.fw_id"): meta.get("framework_id") or nr,
+        })
+    return out
+
+
+def test_rows(long_df):
+    """
+    每一張屬性 × 單位的交叉表各跑一次卡方守衛（段落層級與受訪者層級各
+    一次），記下判定與理由。p 被扣住的表要看得出為什麼被扣住。
+    """
+    units = [A.CODE] + ([S.DIMENSION, S.POLARITY] if S.HAS_POLARITY else [])
+    names = {A.CODE: "common.code", S.DIMENSION: "common.dimension",
+             S.POLARITY: "common.polarity"}
+    nr = t("export.not_recorded")
+    out = []
+    for k in S.DESCRIPTOR_KEYS:
+        use = long_df[long_df[k] != S.UNSPECIFIED] if not long_df.empty else long_df
+        for unit in units:
+            for case_lvl in (False, True):
+                ct = pd.DataFrame()
+                if not use.empty:
+                    ct, _ = A.crosstab_by_descriptor(use, k, row_unit=unit,
+                                                     case_level=case_lvl)
+                rep = A.chi_square_report(ct)
+                v = rep["verdict"]
+                if v == A.CHI_UNAVAILABLE:
+                    reason = t("cross.chi_no_scipy")
+                elif v == A.CHI_TOO_SMALL:
+                    reason = t("cross.chi_too_small")
+                elif v == A.CHI_SPARSE:
+                    reason = t("cross.chi_sparse", small=rep["cells_below_5"],
+                               total=rep["cells_total"])
+                else:
+                    reason = t("cross.chi_ok")
+                out.append({
+                    t("cross.group_by"): I.descriptor(k),
+                    t("cross.unit"): t(names[unit]),
+                    t("export.case_level"): "yes" if case_lvl else "no",
+                    t("export.verdict"): v,
+                    "p": (round(rep["p"], 4) if rep.get("p") is not None
+                          else t("export.p_withheld")),
+                    t("export.reason"): reason,
+                    "chi2": rep.get("chi2", nr), "df": rep.get("dof", nr),
+                    t("stat.cramers_v"): rep.get("cramers_v", nr),
+                    t("stat.n"): rep.get("n", nr),
+                    "cells_below_5": rep.get("cells_below_5", nr),
+                    "min_expected": rep.get("min_expected", nr),
+                })
+    return out
+
+
+def build_excel(records, irr=None):
     long_df = A.build_long_df(records)
     buf = io.BytesIO()
     with pd.ExcelWriter(buf, engine="openpyxl") as xw:
         pretty(long_df, code_cols=[A.CODE], dim_cols=[S.DIMENSION]).to_excel(
             xw, sheet_name=t("sheet.long_table"), index=False)
+        # 出處與稽核摘要放在長表旁邊：碼離開工具時，誰核可的框架、哪個端點、
+        # 複核到哪裡、哪些檢定被扣住，全部跟著走。
+        pd.DataFrame(provenance_rows(records, irr),
+                     columns=[t("export.field"), t("export.value")]).to_excel(
+            xw, sheet_name=t("sheet.provenance"), index=False)
+        pd.DataFrame(endpoint_rows(records)).to_excel(
+            xw, sheet_name=t("sheet.endpoints"), index=False)
+        pd.DataFrame(test_rows(long_df)).to_excel(
+            xw, sheet_name=t("sheet.tests"), index=False)
         pretty(pd.DataFrame(A.coverage_report(records))).to_excel(
             xw, sheet_name=t("sheet.data_health"), index=False)
         rows = []
@@ -3286,12 +3709,13 @@ def build_excel(records):
                 pairs.to_excel(xw, sheet_name=t("sheet.cooc_pairs"), index=False)
             A.case_matrix(long_df).to_excel(xw, sheet_name=t("sheet.case_count"))
             A.case_matrix(long_df, True).to_excel(xw, sheet_name=t("sheet.case_pct"))
-            if FW.has_polarity:
+            if S.HAS_POLARITY:
                 per_dim, overall = A.polarity_balance(long_df)
-                pretty(per_dim, dim_cols=[S.DIMENSION]).to_excel(
-                    xw, sheet_name=t("sheet.polarity_dim"), index=False)
-                pretty(overall).to_excel(xw, sheet_name=t("sheet.polarity_overall"),
-                                         index=False)
+                if "polarity_index" in per_dim.columns:
+                    pretty(per_dim, dim_cols=[S.DIMENSION]).to_excel(
+                        xw, sheet_name=t("sheet.polarity_dim"), index=False)
+                    pretty(overall).to_excel(
+                        xw, sheet_name=t("sheet.polarity_overall"), index=False)
         pd.DataFrame([{"code": c, "meaning": I.code_label(c)}
                       for c in S.CODES]).to_excel(
             xw, sheet_name=t("sheet.code_ref"), index=False)
@@ -3299,13 +3723,35 @@ def build_excel(records):
     return buf
 
 
-def build_word(records):
+def build_word(records, irr=None):
     long_df = A.build_long_df(records)
+    fw = F.active()
     doc = docx.Document()
     doc.add_heading(t("export.report_title"), 0)
-    doc.add_paragraph(f"{t('side.framework')}: {FW.name()} — {FW.citation}")
+    doc.add_paragraph(f"{t('side.framework')}: {fw.name()} — {fw.citation}")
     doc.add_paragraph(f"{t('export.generated')}: {datetime.now():%Y-%m-%d %H:%M}   "
                       f"{t('export.sample')}: {len(records)}")
+
+    # 出處與稽核紀錄放在最前面：框架從哪來、誰核可、哪個端點、複核到哪裡、
+    # 哪些檢定被扣住。這些跟碼一樣是結果的一部分。
+    doc.add_heading(t("export.section_provenance"), level=1)
+    for field, value in provenance_rows(records, irr):
+        doc.add_paragraph(f"{field}: {value}", style="List Bullet")
+    doc.add_heading(t("sheet.endpoints"), level=2)
+    for row in endpoint_rows(records):
+        doc.add_paragraph(
+            f"{row[t('common.respondent')]}: {row[t('export.endpoint')]} · "
+            f"{t('export.locality')}={row[t('export.locality')]} · "
+            f"{t('export.coded_at')}={row[t('export.coded_at')]}",
+            style="List Bullet")
+    doc.add_heading(t("sheet.tests"), level=2)
+    doc.add_paragraph(t("export.tests_note"))
+    for row in test_rows(long_df):
+        doc.add_paragraph(
+            f"{row[t('cross.group_by')]} × {row[t('cross.unit')]} "
+            f"({t('export.case_level')}: {row[t('export.case_level')]}): "
+            f"p = {row['p']} — {row[t('export.reason')]}",
+            style="List Bullet")
 
     doc.add_heading(t("export.section_cross"), level=1)
     if long_df.empty:
@@ -3365,6 +3811,19 @@ def build_word(records):
     return buf
 
 
+def export_payload(records):
+    """
+    合併 JSON 的內容。底線開頭的鍵是記憶體內的標記，不匯出；_meta 是唯一
+    的例外——端點、資料去向、溫度、分窗參數、框架識別碼全在裡面，少了它
+    匯出檔就沒有出處。
+    """
+    payload = [{k: v for k, v in r.items()
+                if not k.startswith("_") or k == S.META}
+               for r in records]
+    return {"framework_id": F.active().id, "schema_version": S.SCHEMA_VERSION,
+            "records": payload}
+
+
 with tab_export:
     recs = st.session_state.records
     if not recs:
@@ -3372,22 +3831,21 @@ with tab_export:
     else:
         st.markdown(f"### {t('export.title')}")
         st.caption(t("export.hint"))
+        _irr = {"diag": st.session_state.get("irr_diag"),
+                "session": st.session_state.get("irr_session")}
         c1, c2 = st.columns(2)
         with c1:
-            st.download_button(t("export.excel"), build_excel(recs),
+            st.download_button(t("export.excel"), build_excel(recs, _irr),
                                file_name=f"analysis_{datetime.now():%Y%m%d}.xlsx",
                                **WIDE, type="primary")
         with c2:
-            st.download_button(t("export.word"), build_word(recs),
+            st.download_button(t("export.word"), build_word(recs, _irr),
                                file_name=f"report_{datetime.now():%Y%m%d}.docx",
                                **WIDE)
         st.divider()
-        payload = [{k: v for k, v in r.items() if not k.startswith("_")}
-                   for r in recs]
         st.download_button(
             t("export.json"),
-            json.dumps({"framework_id": FW.id, "schema_version": S.SCHEMA_VERSION,
-                        "records": payload}, ensure_ascii=False,
+            json.dumps(export_payload(recs), ensure_ascii=False,
                        indent=2).encode("utf-8"),
             file_name=f"records_{datetime.now():%Y%m%d}.json",
             mime="application/json", **WIDE)
@@ -3397,11 +3855,7 @@ with tab_export:
 # 13. 框架建構：OpenAlex 檢索 → 草擬 → 人工核可
 # =====================================================================
 def _origin_label(prov):
-    return {F.PROV_BUILTIN: t("fw.origin_builtin"),
-            F.PROV_MANUAL: t("fw.origin_manual"),
-            F.PROV_OPENALEX_DRAFT: t("fw.origin_draft"),
-            F.PROV_OPENALEX_APPROVED: t("fw.origin_approved"),
-            F.PROV_INDUCED: t("fw.origin_induced")}.get(prov, prov)
+    return origin_label(prov)
 
 
 def _oa_client():

@@ -95,7 +95,9 @@ ok("中文表頭認得出來", "【受訪者A】中文表頭的內容" in txt, r
 
 # 不是逐字稿的表格（例如附在文件裡的資料表）走通用路徑，不可整張丟掉
 txt = APP.read_docx(table_doc(["項目", "數值"], [["受訪次數", "3"]]))
-ok("非逐字稿表格改用通用串接", "受訪次數 | 3" in txt, repr(txt))
+# 非逐字稿的表格一列一行，儲存格以 tab 接起來，表頭也保留（它是資料表的一部分）
+ok("非逐字稿表格改用通用串接（tab 分隔，表頭保留）",
+   "受訪次數\t3" in txt and "項目\t數值" in txt, repr(txt))
 
 eq("空白文件回空字串", APP.read_docx(para_doc([])), "")
 
@@ -203,11 +205,11 @@ finally:
 
 print()
 print("=" * 70)
-print("測試 3b：隨附的參考編碼唯讀——複核後另存新檔（#36）")
+print("測試 3b：隨附的參考編碼唯讀——複核後另存新檔")
 print("=" * 70)
-# 要防的失效：analyses/ 裡的 demo 參考編碼同時是論文 Table 6 的資料來源。
+# 要防的失效：analyses/ 裡的 demo 參考編碼同時是基準測試與交叉表數字的參考標準。
 # 在複核頁籤改一個碼並儲存，若直接覆寫原檔，參考標準就悄悄變了：只改一個碼，
-# 卡方就從 10.04/.018 變成 10.454/.0151，引用這批語料的數字都對不上。
+# 卡方就從 10.04/.018 變成 10.454/.0151，所有以這批語料算出的數字都對不上。
 _saved_dir = APP.SAVE_DIR
 _tmp = tempfile.mkdtemp()
 try:
@@ -394,6 +396,172 @@ _junk = S.migrate_record(json.loads('{"segments": []}'))
 eq("空結果解析得出來且為零段落", len(_junk.get(S.SEGMENTS) or []), 0)
 ok("模型回非 JSON 時擷取器回空字串而不是拋錯",
    LLM._extract_first_json("I cannot help with that.") == "")
+F.reset()
+
+print()
+print("=" * 70)
+print("測試 6：同名受訪者在同一秒內存兩筆，檔名不得相撞")
+print("=" * 70)
+# 批次轉換時所有紀錄在同一個迴圈裡存檔，時間戳到秒；兩份逐字稿的受訪者
+# 名稱相同（小模型常回 unknown）就會算出同一個檔名，第二筆把第一筆蓋掉。
+_saved_dir = APP.SAVE_DIR
+_tmp = tempfile.mkdtemp()
+try:
+    APP.SAVE_DIR = _tmp
+    F.activate_by_id("ri_stilgoe_2013")
+
+    def _same_name():
+        return S.migrate_record({S.RESPONDENT: "unknown", S.SEGMENTS: [
+            {S.SEGMENT_ID: "S001", S.CODES_F: [
+                {S.DIMENSION: S.ANTICIPATION, S.POLARITY: "P"}]}]})
+
+    _a, _b = _same_name(), _same_name()
+    _fa, _fb = APP.save_record(_a), APP.save_record(_b)
+    ok("兩個檔名不同", _fa != _fb, f"{_fa} / {_fb}")
+    ok("兩個檔都在磁碟上", all(os.path.isfile(os.path.join(_tmp, f))
+                             for f in (_fa, _fb)))
+    eq("目錄裡正好兩個檔", len([x for x in os.listdir(_tmp) if x.endswith(".json")]), 2)
+    eq("第二筆再存一次寫回自己的檔", APP.save_record(_b), _fb)
+    eq("unique_filename 不碰不存在的名字",
+       APP.unique_filename("fresh.json", _tmp), "fresh.json")
+finally:
+    APP.SAVE_DIR = _saved_dir
+
+print()
+print("=" * 70)
+print("測試 7：一個壞掉的 .docx 只影響它自己")
+print("=" * 70)
+
+
+class _Upload(io.BytesIO):
+    """模擬上傳物件：有 name 的檔案介面。"""
+    def __init__(self, name, data):
+        super().__init__(data)
+        self.name = name
+
+
+_good = _Upload("good.docx", para_doc(["Interviewer: 問題", "R: 回答"]).getvalue())
+_bad = _Upload("fake.docx", b"this is plain text renamed to .docx, not a zip")
+_texts, _errors = APP.read_uploads([_bad, _good])
+eq("好的檔案讀出來", list(_texts), ["good.docx"])
+ok("內容正確", "回答" in _texts.get("good.docx", ""))
+eq("壞的檔案被記下，附檔名", [e[0] for e in _errors], ["fake.docx"])
+ok("原因帶著例外名稱", "BadZipFile" in _errors[0][1], _errors[0][1])
+eq("沒有檔案時回空", APP.read_uploads(None), ({}, []))
+
+print()
+print("=" * 70)
+print("測試 8：開放編碼每完成一份就寫進磁碟，並可讀回")
+print("=" * 70)
+import tacit_open as OP                                    # noqa: E402
+
+_open_dir = APP.OPEN_DIR
+_tmp = tempfile.mkdtemp()
+try:
+    APP.OPEN_DIR = os.path.join(_tmp, "open_coding")
+    _cb = OP.new_codebook("en")
+
+    def _open_rec(name):
+        return {S.RESPONDENT: name, S.DESCRIPTORS: S.blank_descriptors(),
+                S.SUMMARY: "", OP.OPEN_SEGMENTS: [], S.TRANSCRIPT: "x",
+                S.META: {"mode": "open_coding",
+                         "codebook_id": _cb[OP.CODEBOOK_ID],
+                         "codes_per_chunk": []}}
+
+    _r1 = _open_rec("R1")
+    _fn1 = APP.save_open_record(_r1, _cb)
+    ok("紀錄檔寫出來了", os.path.isfile(os.path.join(APP.OPEN_DIR, _fn1)), _fn1)
+    ok("碼簿一併寫出來了",
+       os.path.isfile(os.path.join(APP.OPEN_DIR,
+                                   f"codebook_{_cb[OP.CODEBOOK_ID]}.json")))
+    _fn2 = APP.save_open_record(_open_rec("R1"), _cb)
+    ok("同名的第二份不覆蓋第一份", _fn2 != _fn1, f"{_fn1} / {_fn2}")
+    eq("同一份再存一次寫回同一個檔", APP.save_open_record(_r1, _cb), _fn1)
+    _cb_back, _recs_back = APP.load_open_coding()
+    eq("讀回同一份碼簿", _cb_back[OP.CODEBOOK_ID], _cb[OP.CODEBOOK_ID])
+    eq("讀回兩份紀錄", len(_recs_back), 2)
+    ok("讀回的紀錄帶檔名", all(r.get("_file") for r in _recs_back))
+    eq("沒有中途存檔時回 (None, [])",
+       APP.load_open_coding(os.path.join(_tmp, "nope")), (None, []))
+    ok("中途存檔不落在側欄掃描的本層",
+       not any(f.endswith(".json") for f in os.listdir(_tmp)), str(os.listdir(_tmp)))
+finally:
+    APP.OPEN_DIR = _open_dir
+
+print()
+print("=" * 70)
+print("測試 9：匯出檔帶出處、端點、複核狀態與檢定判定；JSON 保留 _meta")
+print("=" * 70)
+import openpyxl                                            # noqa: E402
+import tacit_review as RV                                  # noqa: E402
+
+F.activate_by_id("ri_stilgoe_2013")
+_EP = "ollama/x@http://localhost:11434"
+
+
+def _xrec(name):
+    r = S.migrate_record({
+        S.RESPONDENT: name,
+        S.DESCRIPTORS: {"institution_type": "industry"},
+        S.SEGMENTS: [{S.SEGMENT_ID: "S001", S.TITLE: "t", S.QUOTE: "q",
+                      S.FULL_TEXT: "q", S.CODES_F: [
+                          {S.DIMENSION: S.ANTICIPATION, S.POLARITY: "P",
+                           S.RATIONALE: "r"}]}],
+        S.META: {"source": _EP,
+                 "endpoint": {"endpoint": _EP, "provider": "ollama", "model": "x",
+                              "base_url": "http://localhost:11434",
+                              "data_locality": "local", "num_ctx": 8192,
+                              "temperature": 0.2},
+                 "coded_at": "2026-09-01T10:00:00",
+                 "framework_id": "ri_stilgoe_2013"}})
+    r["_file"] = f"{name}.json"
+    r["_fw_mismatch"] = None
+    return r
+
+
+_xrecs = [_xrec("X1"), _xrec("X2")]
+RV.ensure_all(_xrecs)
+RV.confirm(_xrecs[0][S.SEGMENTS][0], "researcher_a")
+_xl = APP.build_excel(_xrecs, {"diag": {"total_units": 299, "ai_coded_units": 125,
+                                        "uncoded_units": 174}, "session": None})
+_wb = openpyxl.load_workbook(io.BytesIO(_xl.getvalue()))
+for _k in ("sheet.provenance", "sheet.endpoints", "sheet.tests"):
+    ok(f"Excel 有 {APP.t(_k)} 工作表", APP.t(_k) in _wb.sheetnames, str(_wb.sheetnames))
+_prov = {r[0]: r[1] for r in
+         _wb[APP.t("sheet.provenance")].iter_rows(min_row=2, values_only=True)}
+eq("框架來源", _prov.get(APP.t("fw.origin")), APP.t("fw.origin_builtin"))
+eq("核可者未記錄時寫「未記錄」而不是省略",
+   _prov.get(APP.t("fw.reviewer")), APP.t("export.not_recorded"))
+eq("複核狀態計數：已確認 1", _prov.get(f"{APP.t('export.status_counts')}: confirmed"), 1)
+eq("複核狀態計數：未複核 1", _prov.get(f"{APP.t('export.status_counts')}: pending"), 1)
+eq("抽樣框規模寫進去", _prov.get(APP.t("export.frame_total")), 299)
+eq("沒有抽樣時寫「未記錄」",
+   _prov.get(APP.t("export.frame_session")), APP.t("export.not_recorded"))
+_ep_rows = list(_wb[APP.t("sheet.endpoints")].iter_rows(values_only=True))
+ok("端點表有資料去向欄", APP.t("export.locality") in _ep_rows[0], str(_ep_rows[0]))
+ok("端點表寫了端點描述", any(_EP == c for c in _ep_rows[1]), str(_ep_rows[1]))
+ok("端點表寫了資料去向", "local" in _ep_rows[1], str(_ep_rows[1]))
+_tests = list(_wb[APP.t("sheet.tests")].iter_rows(values_only=True))
+ok("檢定表有判定與理由欄",
+   APP.t("export.verdict") in _tests[0] and APP.t("export.reason") in _tests[0],
+   str(_tests[0]))
+ok("兩筆紀錄的表 p 被標為扣住並附理由",
+   any(APP.t("export.p_withheld") in [str(c) for c in row] for row in _tests[1:]),
+   str(_tests[1:3]))
+_hdr = list(_wb[APP.t("sheet.long_table")].iter_rows(values_only=True))[0]
+ok("長表有狀態欄", APP.t("common.status") in _hdr, str(_hdr))
+ok("長表有原始碼欄", "original_codes" in _hdr, str(_hdr))
+ok("長表有端點欄", "endpoint" in _hdr, str(_hdr))
+_wd = docx.Document(io.BytesIO(APP.build_word(_xrecs).getvalue()))
+_heads = [p.text for p in _wd.paragraphs if p.style.name.startswith("Heading")]
+ok("Word 報告有出處章節", APP.t("export.section_provenance") in _heads, str(_heads[:4]))
+ok("Word 報告寫了端點", any(_EP in p.text for p in _wd.paragraphs))
+_js = APP.export_payload(_xrecs)
+ok("JSON 匯出保留 _meta", all(S.META in r for r in _js["records"]))
+ok("JSON 匯出的 _meta 含端點與資料去向",
+   all(r[S.META]["endpoint"]["data_locality"] == "local" for r in _js["records"]))
+ok("JSON 匯出不帶其他底線鍵",
+   all(not [k for k in r if k.startswith("_") and k != S.META] for r in _js["records"]))
 F.reset()
 
 print()

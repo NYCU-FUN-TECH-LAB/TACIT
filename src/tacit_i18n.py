@@ -454,26 +454,40 @@ def methods_sentence(facts, lang=None):
     mod_r = (facts["modify_rate"] or 0) * 100
     del_r = (facts["delete_rate"] or 0) * 100
     added = facts["human_added"]
+    # 未複核的段落數由事實決定。「全部編碼皆經確認」這句話只有在沒有任何
+    # 段落待複核時才成立；否則句子要說出還有幾段沒看過。
+    pending = int(facts.get("pending") or 0)
+    pend_r = (pending / n * 100) if n else 0.0
 
     if lang == "zh":
         add_clause = (f"另由研究者補入模型漏標之段落 {added} 段。" if added else "")
+        if pending:
+            close = (f"尚有 {pending} 段（{pend_r:.1f}%）未複核，"
+                     f"進入分析的編碼並非全部經研究者確認。")
+        else:
+            close = "進入後續分析的編碼皆經研究者確認。"
         return (f"模型初編碼共產生 {n} 個編碼段落，研究者逐段複核 "
                 f"{facts['reviewed']} 段（複核率 {rate:.1f}%），其中 "
                 f"{conf} 段確認無誤（{conf_r:.1f}%）、"
                 f"{mod} 段經修改（{mod_r:.1f}%）、"
                 f"{dele} 段判定不成立而刪除（{del_r:.1f}%）；"
-                f"{add_clause}進入後續分析的編碼皆經研究者確認。")
+                f"{add_clause}{close}")
 
     was = lambda k: "was" if k == 1 else "were"
     segw = lambda k: "segment" if k == 1 else "segments"
     add_clause = (f"A further {added} {segw(added)} missed by the model "
                   f"{was(added)} added by the researcher. " if added else "")
+    if pending:
+        close = (f"{pending} {segw(pending)} ({pend_r:.1f}%) {'remains' if pending == 1 else 'remain'} "
+                 f"unreviewed, so not every code entering the analysis has "
+                 f"been verified by the researcher.")
+    else:
+        close = "Every code entering the analysis was verified by the researcher."
     return (f"The model's first pass produced {n} coded {segw(n)}. The researcher "
             f"reviewed {facts['reviewed']} of them ({rate:.1f}%): {conf} "
             f"{was(conf)} confirmed unchanged ({conf_r:.1f}%), {mod} {was(mod)} "
             f"modified ({mod_r:.1f}%), and {dele} {was(dele)} rejected "
-            f"({del_r:.1f}%). {add_clause}Every code entering the analysis was "
-            f"verified by the researcher.")
+            f"({del_r:.1f}%). {add_clause}{close}")
 
 
 # =====================================================================

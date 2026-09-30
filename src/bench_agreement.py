@@ -96,15 +96,19 @@ def main(argv):
     precision = tp / (tp + fp) if tp + fp else None
     recall = tp / (tp + fn) if tp + fn else None
     unmatched = sum(mod_diag["unmatched_quotes"].values())
+    on_excluded = sum(mod_diag["quotes_on_excluded_units"].values())
     mod_segments = sum(len(r.get(S.SEGMENTS) or []) for r in mod.values())
 
     result = {
         "model_records": argv[0],
         "units": len(units),
+        "excluded_interviewer_units": ref_diag["excluded_interviewer_units"],
+        "excluded_header_units": ref_diag["excluded_header_units"],
         "reference_unmarked_units": ref_diag["uncoded_units"],
         "model_unmarked_units": mod_diag["uncoded_units"],
         "model_segments": mod_segments,
         "model_quotes_not_located": unmatched,
+        "model_quotes_on_excluded_units": on_excluded,
         "pooled": pooled,
         "precision": None if precision is None else round(precision, 3),
         "recall": None if recall is None else round(recall, 3),
@@ -116,9 +120,12 @@ def main(argv):
     with open(out, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
-    print(f"抽樣框 {len(units)} 單元（參考編碼未標記 {ref_diag['uncoded_units']}，"
-          f"模型未標記 {mod_diag['uncoded_units']}）")
-    print(f"模型 {mod_segments} 段，其中 {unmatched} 段的引文在逐字稿裡找不到")
+    print(f"抽樣框 {len(units)} 個受訪者發言單元（參考編碼未標記 {ref_diag['uncoded_units']}，"
+          f"模型未標記 {mod_diag['uncoded_units']}；訪員提問 "
+          f"{ref_diag['excluded_interviewer_units']} 與標題行 "
+          f"{ref_diag['excluded_header_units']} 個單元不在框內）")
+    print(f"模型 {mod_segments} 段，其中 {unmatched} 段的引文在逐字稿裡找不到，"
+          f"{on_excluded} 段落在訪員提問或標題行上")
     print(f"pooled κ = {pooled[IRR.KAPPA]}  PABAK = {pooled[IRR.PABAK]}  "
           f"AC1 = {pooled[IRR.AC1]}")
     print(f"precision = {result['precision']}  recall = {result['recall']}  "

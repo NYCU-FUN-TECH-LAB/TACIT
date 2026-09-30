@@ -203,6 +203,31 @@ ok("JSON 錯誤不是暫時性（重傳同一份提示詞沒用）",
 
 print()
 print("=" * 70)
+print("測試 5d：逾時與送出後才發現的截斷都不重試")
+print("=" * 70)
+# 生成逾時是模型太慢或還在載入，重送同一份提示詞只是再等一次同樣的時間；
+# 截斷是視窗不夠，重送也不會變好。兩者都要原樣拋出，讓呼叫端整批停下。
+for _exc, _label in [(LLM.Timeout("no answer within 900 seconds"), "逾時"),
+                     (LLM.Truncated("the server evaluated only 4,108 prompt tokens"), "截斷")]:
+    fn, st = scripted([_exc, "should not get here"])
+    LLM._complete_gemini = fn
+    slept.clear()
+    try:
+        LLM.complete(ep, "prompt")
+        ok(f"{_label}應該拋出", False)
+    except type(_exc):
+        ok(f"{_label}原樣拋出 {type(_exc).__name__}", True)
+    except LLM.LLMError as e:
+        ok(f"{_label}原樣拋出", False, f"拋成了 {type(e).__name__}")
+    finally:
+        LLM._complete_gemini = _real_gemini
+    eq(f"{_label}只呼叫 1 次", st["n"], 1)
+    eq(f"{_label}沒有等待", slept, [])
+ok("Truncated 是 ContextOverflow（介面用同一個 except 接）",
+   issubclass(LLM.Truncated, LLM.ContextOverflow))
+
+print()
+print("=" * 70)
 print("測試 6：Gemini 沒有回傳文字")
 print("=" * 70)
 _saved = (LLM.GEMINI_SDK, LLM.genai_client)

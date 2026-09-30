@@ -36,6 +36,10 @@ except ImportError:
 CODE = "code"
 MULTI_CODED = "multi_coded"
 CODES_IN_SEGMENT = "codes_in_segment"
+# 複核與出處欄位。長表是匯出檔的主體，稽核軌跡要跟著碼一起離開工具：
+# 每一列都帶著複核狀態、模型原本給的碼、段落來源，以及編出它的端點。
+ORIGINAL_CODES = "original_codes"
+ENDPOINT = "endpoint"
 
 # --- 共現層級 --------------------------------------------------------
 LEVEL_SEGMENT = "segment"
@@ -54,9 +58,14 @@ def build_long_df(records):
     for rec in records:
         resp = rec.get(S.RESPONDENT, "unknown")
         desc = rec.get(S.DESCRIPTORS) or S.blank_descriptors()
+        meta = rec.get(S.META) or {}
+        ep = meta.get("endpoint")
+        endpoint = (ep.get("endpoint") if isinstance(ep, dict) else None) \
+            or meta.get("source") or ""
         for seg in rec.get(S.SEGMENTS, []):
             codes = S.codes_of(seg)
             n_codes = len(codes)
+            review = seg.get(S.REVIEW) or {}
             # 一個段落可能被指派兩個「同維度同極性但理由不同」的碼。分析層
             # 以 (段落, 維度, 極性) 為分析單位，所以那仍然只算一列——同一段
             # 話在同一個維度上被算兩次會扭曲共現與 Jaccard。但理由是研究者
@@ -65,7 +74,8 @@ def build_long_df(records):
             rationale = {}
             for c in seg.get(S.CODES_F) or []:
                 d, p = S.norm_dimension(c.get(S.DIMENSION)), S.norm_polarity(c.get(S.POLARITY))
-                if d in S.DIMENSIONS and p:
+                # 無極性框架的 p 一律是 None，理由照樣要收；只看維度是否合法。
+                if d in S.DIMENSIONS and (p or not S.HAS_POLARITY):
                     key = S.code_of(d, p)
                     txt = (c.get(S.RATIONALE) or "").strip()
                     if not txt:
@@ -92,10 +102,15 @@ def build_long_df(records):
                 row[S.QUOTE] = seg.get(S.QUOTE, "")
                 row[S.FULL_TEXT] = seg.get(S.FULL_TEXT, "")
                 row[S.RATIONALE] = rationale.get(code, "")
+                row[S.STATUS] = review.get(S.STATUS, S.STATUS_PENDING)
+                row[ORIGINAL_CODES] = "/".join(review.get(S.ORIGINAL_CODES) or codes)
+                row[S.SOURCE] = review.get(S.SOURCE, S.SOURCE_AI)
+                row[ENDPOINT] = endpoint
                 rows.append(row)
     cols = ([S.RESPONDENT, S.SEGMENT_ID, S.DIMENSION, S.POLARITY, CODE,
              MULTI_CODED, CODES_IN_SEGMENT] + S.DESCRIPTOR_KEYS +
-            [S.TITLE, S.QUOTE, S.FULL_TEXT, S.RATIONALE])
+            [S.TITLE, S.QUOTE, S.FULL_TEXT, S.RATIONALE,
+             S.STATUS, ORIGINAL_CODES, S.SOURCE, ENDPOINT])
     return pd.DataFrame(rows, columns=cols) if rows else pd.DataFrame(columns=cols)
 
 
@@ -140,10 +155,10 @@ def crosstab_by_descriptor(long_df, descriptor_key, row_unit=CODE, normalize="ro
                    .agg(**{descriptor_key: (descriptor_key, "first"),
                            row_unit: (row_unit, _modal)})
                    .reset_index())
-    # 欄的排列順序依單位而定。極性本來漏在這裡：row_unit=polarity 時會拿
-    # 維度清單去 reindex，結果每一欄都對不上，交叉表整個變空。
-    # 而機構類型 × 極性正好是這類語料裡唯一一張期望次數夠大、卡方前提
-    # 站得住的表——漏掉它等於把唯一算得出來的檢定藏起來。
+    # 欄的排列順序依列單位而定，三種單位各有自己的清單：碼、維度、極性。
+    # reindex 用的清單必須跟 row_unit 的值域一致，否則沒有一欄對得上、
+    # 交叉表會是空的。屬性 × 極性是這類語料裡欄數最少、格子最滿的表，
+    # 通常也是唯一一張期望次數站得住的。
     order = {CODE: S.CODES, S.DIMENSION: S.DIMENSIONS,
              S.POLARITY: S.POLARITIES}.get(row_unit, S.DIMENSIONS)
     ct = pd.crosstab(long_df[descriptor_key], long_df[row_unit])

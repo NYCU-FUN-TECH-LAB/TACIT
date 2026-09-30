@@ -105,6 +105,13 @@ if RECS:
     import tacit_analysis as _A                          # noqa: E402
     if not at_en.exception:
         _txt = blob(at_en)
+        # 基底行數的是 (受訪者, 段落) 配對：段落編號在每一筆紀錄裡都從
+        # S001 起算，只數不同的編號會把 24 個人的段落數壓成一個人的。
+        ok("交互分析的基底行數的是 148 個段落、181 筆編碼",
+           "24 respondents, 148 segments, 181 codes" in _txt,
+           [ln for ln in _txt.splitlines() if "Basis" in ln][:1])
+        ok("匯出頁籤在全語料下畫得出來（含出處與檢定判定的匯出檔沒有炸）",
+           I.t("export.hint", "en")[:40] in _txt)
         if _A.HAS_SCIPY:
             ok("預設（八格編碼）的表被判定為稀疏，不給 p 值",
                "cells have an expected count below 5" in _txt,

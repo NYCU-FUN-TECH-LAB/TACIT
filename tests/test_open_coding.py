@@ -41,6 +41,9 @@ def check(label, got, want):
         FAIL.append(label)
 
 
+eq = check
+
+
 print("=" * 70)
 print("測試 1：碼簿的基本操作")
 print("=" * 70)
@@ -559,6 +562,137 @@ check("其中兩次記為沿用", _st["reused"], 2)
 check("碼的計數是 3", OP.find_code(_cb, "Guardrails for AI")[OP.CODE_COUNT], 3)
 check("夾帶的定義在沒有定義時被採用",
       OP.find_code(_cb, "Audit duties")[OP.CODE_DEFINITION], "who checks the checker")
+
+print()
+print("=" * 70)
+print("測試 N+1：開放編碼的語料詞來自碼簿，不來自任何框架")
+print("=" * 70)
+# 要防的失效：開放編碼期間介面上寫著「no framework applied」，提示詞卻拿了
+# 隱藏的作用中框架的語料詞——一場參議院聽證會被當成「a corporate
+# sustainability report」來編，受訪者名稱也被寫成那個詞。
+F.reset()
+_cb_t = OP.new_codebook("en")
+eq("新碼簿帶中性的語料詞", _cb_t[OP.CORPUS_TERM], "document")
+_p1 = OP.build_open_prompt(_cb_t, "en", "sample")
+ok("提示詞用碼簿的語料詞", "OPEN CODING of a document" in _p1, _p1[:120])
+_p2 = OP.build_open_prompt(_cb_t, "en", "sample",
+                           corpus_term="corporate sustainability report")
+ok("呼叫端傳來的框架語料詞蓋不過碼簿的",
+   "corporate sustainability report" not in _p2 and "of a document" in _p2, _p2[:120])
+OP.set_corpus_term(_cb_t, "hearing transcript")
+_p3 = OP.build_open_prompt(_cb_t, "en", "sample")
+ok("改了碼簿的語料詞就用新的", "OPEN CODING of a hearing transcript" in _p3
+   and "hearing transcript from beginning to end" in _p3, _p3[:120])
+eq("corpus_term_of 讀得到", OP.corpus_term_of(_cb_t), "hearing transcript")
+_old_cb = {OP.CODEBOOK_ID: "old", OP.CODES: []}
+eq("沒有語料詞的舊碼簿：以呼叫端的值為後備",
+   OP.corpus_term_of(_old_cb, "interview transcript"), "interview transcript")
+eq("兩者都沒有就是 document", OP.corpus_term_of(_old_cb), "document")
+with tempfile.TemporaryDirectory() as _d2:
+    import json as _json2
+    _pp = os.path.join(_d2, "old.json")
+    with open(_pp, "w", encoding="utf-8") as _f:
+        _json2.dump(_old_cb, _f)
+    eq("舊碼簿讀進來補上中性語料詞", OP.load_codebook(_pp)[OP.CORPUS_TERM], "document")
+
+print()
+print("=" * 70)
+print("測試 N+2：受訪者識別碼不從模型輸出來——用檔名主幹")
+print("=" * 70)
+_cb_r = OP.new_codebook("en")
+
+
+def _fake_named(text, n, total):
+    return {S.RESPONDENT: "the corporate sustainability report",
+            OP.OPEN_SEGMENTS: [raw_seg(f"t{n}", f"第{n}窗口的內容",
+                                       [("某個碼", "定義", "理由")])]}
+
+
+_r1 = OP.open_code_transcript(LONG, _fake_named, _cb_r, window=3000, overlap=300,
+                              transcript_file="D1x_hearing.docx")
+eq("識別碼是檔名主幹", _r1[S.RESPONDENT], "D1x_hearing")
+eq("來源記進 _meta", _r1[S.META]["respondent_source"], "file_stem")
+eq("檔名寫進紀錄", _r1.get(S.TRANSCRIPT_FILE), "D1x_hearing.docx")
+ok("模型給的名字沒有進紀錄", "sustainability" not in _r1[S.RESPONDENT])
+ok("碼的代表引文也用同一個識別碼",
+   all(e[S.RESPONDENT] == "D1x_hearing"
+       for c in _cb_r[OP.CODES] for e in c[OP.CODE_EXAMPLES]))
+_r2 = OP.open_code_transcript(LONG, _fake_named, OP.new_codebook(), window=3000,
+                              overlap=300, respondent="Senate hearing 2024-07-30",
+                              transcript_file="x.docx")
+eq("呼叫端給的識別碼優先", _r2[S.RESPONDENT], "Senate hearing 2024-07-30")
+_r3 = OP.open_code_transcript(LONG, _fake_named, OP.new_codebook(), window=3000, overlap=300)
+eq("兩者都沒給時是 unknown，不是模型的話", _r3[S.RESPONDENT], "unknown")
+eq("語料詞記進 _meta", _r3[S.META].get("corpus_term"), "document")
+
+# 轉成標準紀錄時，佔位字樣的識別碼用紀錄裡的檔名補上
+F.set_active(fw)
+_ph_rec = {S.RESPONDENT: "unknown", S.TRANSCRIPT_FILE: "P9_file.docx",
+           OP.OPEN_SEGMENTS: [{S.SEGMENT_ID: "S001", S.TITLE: "t", S.QUOTE: "q",
+                               S.FULL_TEXT: "q", OP.OPEN_CODES: [
+                                   {OP.CODE_ID: "c001", OP.CODE_LABEL: "護理人力不足",
+                                    S.RATIONALE: ""}]}]}
+eq("to_records 把佔位識別碼換成檔名主幹",
+   OP.to_records([copy.deepcopy(_ph_rec)])[0][S.RESPONDENT], "P9_file")
+_ph_rec[S.RESPONDENT] = "Real Name"
+eq("真正的名字不動", OP.to_records([copy.deepcopy(_ph_rec)])[0][S.RESPONDENT], "Real Name")
+
+print()
+print("=" * 70)
+print("測試 N+3：整批的錯誤直接拋出；窗口的錯誤記清楚位置與數量")
+print("=" * 70)
+import tacit_llm as LLM                                          # noqa: E402
+
+for _exc in (LLM.ContextOverflow("prompt is about 7874 tokens"),
+             LLM.RateLimited("HTTP 429"), LLM.NotConfigured("Cannot reach"),
+             LLM.Timeout("no answer"), LLM.Unavailable("tried 4 times")):
+    def _fatal_open(text, n, total, _e=_exc):
+        if n == 1:
+            raise _e
+        return fake_open(text, n, total)
+    try:
+        OP.open_code_transcript(LONG, _fatal_open, OP.new_codebook(), window=3000, overlap=300)
+        ok(f"{type(_exc).__name__} 直接拋出", False)
+    except type(_exc) as e:
+        ok(f"{type(_exc).__name__} 直接拋出，訊息說出是哪個窗口",
+           "window 2 of" in str(e), str(e)[:100])
+    except Exception as e:                                       # noqa: BLE001
+        ok(f"{type(_exc).__name__} 直接拋出", False, f"變成了 {type(e).__name__}")
+
+_e2 = rec2[S.META]["chunk_errors"][0]
+ok("窗口錯誤記下字元範圍與原因",
+   _e2.get("end_char", 0) > _e2.get("start_char", -1) and "壞 JSON" in _e2["error"], str(_e2))
+eq("失敗的窗口數寫進 _meta.incomplete_windows", rec2[S.META].get("incomplete_windows"), 1)
+eq("chunking.n_failed 一致", rec2[S.META]["chunking"]["n_failed"], 1)
+ok("完整的紀錄沒有 incomplete_windows", "incomplete_windows" not in rec[S.META])
+ok("每個窗口一筆診斷（含失敗的）",
+   len(rec2[S.META]["chunking"]["windows"]) == rec2[S.META]["chunking"]["n_chunks"])
+ok("失敗的窗口標成 failed",
+   [w["status"] for w in rec2[S.META]["chunking"]["windows"] if w["chunk"] == 1] == ["failed"])
+
+print()
+print("=" * 70)
+print("測試 N+4：開放編碼的合併也只在相鄰窗口的重疊區")
+print("=" * 70)
+_oa = [{S.SEGMENT_ID: "S001", S.QUOTE: "We never asked the residents of the district.",
+        S.FULL_TEXT: "x", OP.OPEN_CODES: [{OP.CODE_ID: "c001", OP.CODE_LABEL: "甲"}]},
+       {S.SEGMENT_ID: "S002", S.QUOTE: "Shared overlap sentence seen by both windows.",
+        S.FULL_TEXT: "x", OP.OPEN_CODES: [{OP.CODE_ID: "c002", OP.CODE_LABEL: "乙"}]}]
+_ob = [{S.SEGMENT_ID: "S001", S.QUOTE: "Shared overlap sentence seen by both windows.",
+        S.FULL_TEXT: "x", OP.OPEN_CODES: [{OP.CODE_ID: "c003", OP.CODE_LABEL: "丙"}]}]
+_oc = [{S.SEGMENT_ID: "S001", S.QUOTE: "We never asked the residents of the district.",
+        S.FULL_TEXT: "x", OP.OPEN_CODES: [{OP.CODE_ID: "c004", OP.CODE_LABEL: "丁"}]}]
+_om = OP.merge_open_segments([_oa, _ob, [], _oc],
+                             overlaps=["", "Shared overlap sentence seen by both windows.",
+                                       "", ""])
+_oq = [s[S.QUOTE] for s in _om]
+eq("重疊區的同一句合併、相隔很遠的同一句不合併", len(_om), 3)
+ok("併進來的碼留下軌跡",
+   any(h.get("action") == OP.MERGE_ACTION and "c003" in h.get("detail", "")
+       for s in _om for h in s.get("merge_history", [])), str(_om))
+ok("相隔很遠的那一段保留自己的碼",
+   [c[OP.CODE_ID] for s in _om if s[S.QUOTE].startswith("We never") for c in s[OP.OPEN_CODES]]
+   == ["c001", "c004"], str(_oq))
 
 F.reset()
 print()

@@ -81,8 +81,55 @@ check("AI 引文全部對得回逐字稿", diag["unmatched_quotes"], {})
 hit = [f for f in frame if "REF-N" in f[S.AI_CODES]]
 check_true("多重編碼單元同時帶兩碼",
            bool(hit) and set(hit[0][S.AI_CODES]) == {"REF-N", "RES-N"})
-check_true("訪員提問未被標記",
-           any(f[S.SPEAKER] == "訪員" and not f[S.AI_CODES] for f in frame))
+check_true("訪員提問不進抽樣框",
+           not any(f[S.SPEAKER] == "訪員" for f in frame))
+check("訪員提問的數量記在診斷裡（過短的一句不成單元）", diag["excluded_interviewer_units"], 1)
+check("沒有標題行", diag["excluded_header_units"], 0)
+check_true("include_interviewer=True 時訪員提問進框且未被標記",
+           any(f[S.SPEAKER] == "訪員" and not f[S.AI_CODES]
+               for f in I.build_frame(RECORDS, {"產A": TRANSCRIPT},
+                                      include_interviewer=True)[0]))
+
+print()
+print("=" * 70)
+print("測試 2b：三種講者標記與標題行、續段、英文長句")
+print("=" * 70)
+_en = "\n".join([
+    "Interview transcript P01 — Project director",
+    "Case: an invented city  |  synthetic data",
+    "[Interviewer] Let us start with the beginning of the project.",
+    "[Respondent] Right, so I want to split that into two parts because people conflate them.",
+    "And this second paragraph continues the same answer without a label.",
+    "[Interviewer] Was there any discussion early on?",
+    "[Respondent] " + "Yes, there was a public session organised by the city in March. " * 12,
+])
+_u = I.split_units(_en)
+_roles = [u[I.ROLE] for u in _u]
+check("標題行角色為 header", _roles[:2], [I.ROLE_HEADER, I.ROLE_HEADER])
+check_true("[Interviewer] 標記被辨識為訪員",
+           any(u[I.ROLE] == I.ROLE_INTERVIEWER and "beginning" in u[S.TEXT] for u in _u))
+check_true("沒有標記的續段歸給前一位講者",
+           any(u[S.SPEAKER] == "Respondent" and "second paragraph" in u[S.TEXT] for u in _u))
+_long = [u for u in _u if "public session" in u[S.TEXT]]
+check_true("英文長發言在句末切開", len(_long) >= 2 and all(len(u[S.TEXT]) <= 400 for u in _long),
+           f"{len(_long)} 段")
+_fr, _dg = I.build_frame([], {"P01": _en})
+check("抽樣框只含受訪者發言", {u[I.ROLE] for u in _fr}, {I.ROLE_RESPONDENT})
+check("訪員與標題行的數量", (_dg["excluded_interviewer_units"], _dg["excluded_header_units"]), (2, 2))
+_colon = I.split_units("\n".join([
+    "Source: a single line that is not a speaker label at all",
+    "Q: what did the city do first when the project began?",
+    "A: it ran a public information session before anything was installed.",
+    "Q: and after that?",
+    "A: it went ahead with the installation and waited for feedback from residents.",
+    "受訪者：中文冒號標記也要能辨識，而且要有足夠的長度才會成為一個單元。",
+    "受訪者：第二句。",
+]))
+check("冒號式標籤出現兩次以上才算講者", [u[S.SPEAKER] for u in _colon][:2], ["", "Q"])
+check_true("Q 是訪員", any(u[S.SPEAKER] == "Q" and u[I.ROLE] == I.ROLE_INTERVIEWER for u in _colon))
+check_true("全形冒號標籤被辨識", any(u[S.SPEAKER] == "受訪者" for u in _colon))
+_plain = I.split_units("A plain document without any speaker labels at all.\nIts second paragraph is also long enough to stand alone.")
+check("無標記文件每段都是 respondent", [u[I.ROLE] for u in _plain], [I.ROLE_RESPONDENT] * 2)
 check_true("欄位皆為 ASCII", all(k.isascii() for k in frame[0]))
 check_true("未標記層用識別碼而非顯示文字",
            any(f[S.STRATUM] == S.STRATUM_UNMARKED for f in frame))

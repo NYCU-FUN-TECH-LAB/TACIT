@@ -165,8 +165,11 @@ print("=" * 70)
 if recs:
     tr = {r[S.RESPONDENT]: r[S.TRANSCRIPT] for r in recs}
     frame, diag = IRR.build_frame(recs, tr)
-    ok("抽樣框單元數足夠（>200）", diag["total_units"] > 200,
+    ok("抽樣框只含受訪者發言，單元數足夠（>100）", diag["total_units"] > 100,
        str(diag["total_units"]))
+    ok("訪員提問與標題行不在框內、數量有記錄",
+       diag["excluded_interviewer_units"] > 0 and diag["excluded_header_units"] > 0,
+       f"{diag['excluded_interviewer_units']} / {diag['excluded_header_units']}")
     ok("抽樣框含未標記單元", diag["uncoded_units"] > 0,
        f"{diag['uncoded_units']}；沒有未標記單元的話 recall 恆等於 1，數字沒有意義")
     ok("每一段參考引文都對得回抽樣框的單元",

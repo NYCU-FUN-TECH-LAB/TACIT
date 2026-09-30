@@ -115,5 +115,6 @@ fi
 
 exec "$VPY" -m streamlit run "$APP" \
   --server.port "$PORT" \
+  --server.address localhost \
   --server.headless false \
   --browser.gatherUsageStats false

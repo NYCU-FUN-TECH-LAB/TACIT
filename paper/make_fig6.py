@@ -136,7 +136,6 @@ def main():
             print(f"{OUT_PNG}: {im.size[0]} x {im.size[1]} px")
     except ImportError:
         print(f"{OUT_PNG} 已輸出")
-    print(f"build_paper.js 的長寬比要改成 {w} / {h}")
     return 0
 
 

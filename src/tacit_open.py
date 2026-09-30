@@ -60,6 +60,12 @@ LANGUAGE = "language"
 CODES = "codes"
 CREATED = "created"
 PROVENANCE = "provenance"
+# 開放編碼時提示詞怎麼稱呼這份資料（"document"、"interview transcript"、
+# "hearing transcript"…）。這個詞屬於碼簿而不是框架：開放編碼期間沒有
+# 作用中的框架，上一個框架的語料詞（「企業永續報告書」）跟正在編的
+# 聽證會沒有關係，卻會被模型寫進受訪者名稱與理由裡。
+CORPUS_TERM = "corpus_term"
+DEFAULT_CORPUS_TERM = "document"
 
 CODE_ID = "code_id"
 CODE_LABEL = "label"
@@ -84,14 +90,31 @@ OPEN_CODES = "open_codes"
 MAX_CODES_IN_PROMPT = 60
 
 
-def new_codebook(language=S.DEFAULT_ANALYSIS_LANG, codebook_id=None):
+def new_codebook(language=S.DEFAULT_ANALYSIS_LANG, codebook_id=None,
+                 corpus_term=DEFAULT_CORPUS_TERM):
     return {
         CODEBOOK_ID: codebook_id or f"cb_{datetime.now():%Y%m%d_%H%M%S}",
         LANGUAGE: language,
         CREATED: datetime.now().isoformat(timespec="seconds"),
         CODES: [],
         PROVENANCE: {},
+        CORPUS_TERM: str(corpus_term or DEFAULT_CORPUS_TERM).strip() or DEFAULT_CORPUS_TERM,
     }
+
+
+def corpus_term_of(cb, fallback=None):
+    """
+    這本碼簿的語料詞。碼簿裡有就用碼簿的；沒有（舊碼簿）才用 fallback，
+    再沒有就用中性的 "document"。呼叫端傳來的框架語料詞在這裡只是 fallback。
+    """
+    term = str((cb or {}).get(CORPUS_TERM) or "").strip()
+    return term or str(fallback or "").strip() or DEFAULT_CORPUS_TERM
+
+
+def set_corpus_term(cb, term):
+    """改掉碼簿的語料詞（介面的開放編碼設定寫進來）。"""
+    cb[CORPUS_TERM] = str(term or "").strip() or DEFAULT_CORPUS_TERM
+    return cb[CORPUS_TERM]
 
 
 def _norm(s):
@@ -240,14 +263,19 @@ def codebook_prompt_block(cb, lang="en", max_codes=MAX_CODES_IN_PROMPT):
     return "\n".join(lines)
 
 
-def build_open_prompt(cb, analysis_lang, sample="", corpus_term="interview transcript"):
+def build_open_prompt(cb, analysis_lang, sample="", corpus_term=None):
     """
     開放編碼的系統提示詞。
 
     與框架驅動的提示詞是兩份不同的東西，不共用：那一份的主體是維度定義與
     排除條件，這一份沒有維度，主體是碼簿與開放編碼的規則。硬要共用會讓兩
     邊都長出一堆 if。
+
+    語料詞（「a document」「an interview transcript」）取自碼簿，不取自任何
+    框架：開放編碼沒有作用中的框架。corpus_term 參數只在碼簿沒有記語料詞
+    時才用得到。
     """
+    corpus_term = corpus_term_of(cb, corpus_term)
     lines = [
         "You are an experienced qualitative researcher performing OPEN CODING "
         f"of a {corpus_term}. There is no pre-existing theoretical framework: "
@@ -367,88 +395,141 @@ def absorb(cb, raw, chunk=0, respondent=""):
     return segs, {"reused": reused, "created": created, "chunk": chunk}
 
 
-def merge_open_segments(groups):
+MERGE_ACTION = "merged_across_excerpts"
+
+
+def merge_open_segments(groups, overlaps=None):
     """
     合併各窗口的開放編碼段落，去掉重疊區產生的重複。
 
-    規則與 tacit_coding.merge_segments 相同（引文包含即視為同一段，碼取
-    聯集），但**不經過任何框架相關的函式**。
+    規則與 tacit_coding.merge_segments 相同：只在相鄰窗口之間、引文相同或
+    包含（較短的至少 MIN_CONTAINMENT_CHARS 字）時視為同一段；給了 overlaps
+    （每個窗口與前一窗口共有的文字）就只在重疊區裡合併。碼取聯集，併進來
+    的碼記在段落的 merge_history 裡，事後分得出哪些共現是分窗的產物。
 
-    這一點是刻意的：`S.codes_of()` 會把碼丟給
-    `F.active().code_of()`，而開放編碼進行中作用中的框架根本不含這些碼——
-    RI 還開著的話，"c001" 會被算成 "c001-None" 這種東西。合併邏輯若依賴
-    那個結果，行為就取決於「使用者上一次開的是哪個框架」。開放編碼這一段
-    必須完全不依賴框架，因為框架是它的**產物**，不是它的前提。
+    這支函式**不經過任何框架相關的函式**。這一點是刻意的：`S.codes_of()`
+    會把碼丟給 `F.active().code_of()`，而開放編碼進行中作用中的框架根本
+    不含這些碼——RI 還開著的話，"c001" 會被算成 "c001-None" 這種東西。
+    合併邏輯若依賴那個結果，行為就取決於「使用者上一次開的是哪個框架」。
+    開放編碼這一段必須完全不依賴框架，因為框架是它的**產物**，不是它的前提。
     """
-    kept = []
-    for seg in [s for g in groups or [] for s in (g or [])]:
-        q = _norm(seg.get(S.QUOTE))
-        if not q:
-            continue
-        dup = next((k for k in kept
-                    if q in _norm(k.get(S.QUOTE)) or _norm(k.get(S.QUOTE)) in q),
-                   None)
-        if dup is None:
-            kept.append(dict(seg))
-            continue
-        have = {c[CODE_ID] for c in dup.get(OPEN_CODES) or []}
-        for c in seg.get(OPEN_CODES) or []:
-            if c[CODE_ID] not in have:
-                dup.setdefault(OPEN_CODES, []).append(c)
-                have.add(c[CODE_ID])
-        if len(str(seg.get(S.FULL_TEXT) or "")) > len(str(dup.get(S.FULL_TEXT) or "")):
-            dup[S.FULL_TEXT] = seg[S.FULL_TEXT]
-        if len(str(seg.get(S.QUOTE) or "")) > len(str(dup.get(S.QUOTE) or "")):
-            dup[S.QUOTE] = seg[S.QUOTE]
+    kept, kept_q, origins = [], [], []
+    positional = overlaps is not None
+    for g, group in enumerate(groups or []):
+        ov = _norm(overlaps[g]) if positional and g < len(overlaps) else ""
+        for seg in (group or []):
+            q = _norm(seg.get(S.QUOTE))
+            if not q:
+                continue
+            k = CH.find_duplicate(kept_q, origins, q, g, ov, positional)
+            if k is None:
+                kept.append(dict(seg))
+                kept_q.append(q)
+                origins.append(g)
+                continue
+            dup = kept[k]
+            have = {c[CODE_ID] for c in dup.get(OPEN_CODES) or []}
+            added = []
+            for c in seg.get(OPEN_CODES) or []:
+                if c[CODE_ID] not in have:
+                    dup.setdefault(OPEN_CODES, []).append(c)
+                    have.add(c[CODE_ID])
+                    added.append(c[CODE_ID])
+            if added:
+                dup.setdefault("merge_history", []).append({
+                    "action": MERGE_ACTION,
+                    "detail": "codes from another excerpt: " + ", ".join(added)})
+            if len(str(seg.get(S.FULL_TEXT) or "")) > len(str(dup.get(S.FULL_TEXT) or "")):
+                dup[S.FULL_TEXT] = seg[S.FULL_TEXT]
+            if len(str(seg.get(S.QUOTE) or "")) > len(str(dup.get(S.QUOTE) or "")):
+                dup[S.QUOTE] = seg[S.QUOTE]
+                kept_q[k] = _norm(seg[S.QUOTE])
     for n, seg in enumerate(kept, 1):
         seg[S.SEGMENT_ID] = f"S{n:03d}"
     return kept
 
 
 def open_code_transcript(transcript, code_one, cb, window=CH.DEFAULT_WINDOW_CHARS,
-                         overlap=CH.DEFAULT_OVERLAP_CHARS, on_progress=None):
+                         overlap=CH.DEFAULT_OVERLAP_CHARS, on_progress=None,
+                         respondent=None, transcript_file=None):
     """
     對一份逐字稿做開放編碼。碼簿 cb 會**就地被修改**——那正是重點：
     下一份逐字稿會帶著這一份建立的碼繼續跑。
 
     code_one(chunk_text, index, total) 回傳模型的原始 JSON（已 parse 成
     dict）。呼叫模型留在外面，這支函式才測得動。
+
+    受訪者識別碼**不取自模型輸出**：模型讀不到名字時會填提示詞裡的佔位
+    字樣，兩份文件會撞成同一個識別碼，而且提示詞注入可以改掉它。給
+    respondent 就用它；不然用 transcript_file 的檔名主幹；兩者都沒給時是
+    "unknown"，to_records 會再從紀錄的 transcript_file 補。
+
+    壞 JSON 的窗口記進 _meta.chunk_errors（序號、字元範圍、原因）並繼續；
+    視窗不夠、配額用盡、服務沒開、逾時這幾種整批的問題直接拋出，訊息前面
+    加上是哪個窗口。
     """
-    chunks = CH.split_transcript(transcript, window, overlap)
-    all_segs, per_chunk, errors = [], [], []
-    respondent_votes = []
-    for n, (_, text) in enumerate(chunks):
+    plan = CH.plan_windows(transcript, window, overlap)
+    total = len(plan)
+    groups = [[] for _ in plan]
+    overlaps = [p["overlap_text"] for p in plan]
+    per_chunk, errors, windows = [], [], []
+    if respondent:
+        who, source = str(respondent).strip(), "caller"
+    elif transcript_file:
+        who, source = CH.respondent_from_filename(transcript_file), "file_stem"
+    else:
+        who, source = "unknown", "unset"
+    for p in plan:
+        n = p["chunk"]
         if on_progress:
-            on_progress(n, len(chunks))
+            on_progress(n, total)
+        info = {"chunk": n, "chars": len(p["text"]),
+                "start_char": p["char_start"], "end_char": p["char_end"]}
         try:
-            raw = code_one(text, n, len(chunks))
+            raw = code_one(p["text"], n, total)
+        except CH.FATAL_ERRORS as e:
+            raise CH._window_error(e, n, total, p) from e
         except Exception as e:                                   # noqa: BLE001
-            errors.append({"chunk": n, "error": f"{type(e).__name__}: {e}"})
+            errors.append({**info, "error": f"{type(e).__name__}: {e}"})
+            windows.append({**info, "status": "failed", "segments": 0})
             continue
         if not raw:
-            errors.append({"chunk": n, "error": "empty"})
+            errors.append({**info, "error": "empty"})
+            windows.append({**info, "status": "empty", "segments": 0})
             continue
-        who = str(raw.get(S.RESPONDENT) or "").strip()
-        respondent_votes.append(who)
         segs, st = absorb(cb, raw, chunk=n, respondent=who)
-        all_segs.append(segs)
+        groups[n] = segs
         per_chunk.append(st)
+        windows.append({**info, "status": "ok" if segs else "no_segments",
+                        "segments": len(segs),
+                        "per_10k": round(len(segs) / len(p["text"]) * 10000, 2)
+                        if p["text"] else 0.0})
 
-    merged = merge_open_segments(all_segs)
+    merged = merge_open_segments(groups, overlaps)
     rec = {
-        S.RESPONDENT: CH.merge_respondent(respondent_votes),
+        S.RESPONDENT: who,
         S.DESCRIPTORS: S.blank_descriptors(),
         S.SUMMARY: "",
         OPEN_SEGMENTS: merged,
         S.META: {"mode": "open_coding",
                  "codebook_id": cb[CODEBOOK_ID],
+                 "corpus_term": corpus_term_of(cb),
+                 "respondent_source": source,
                  "chunking": {"window_chars": window, "overlap_chars": overlap,
-                              "n_chunks": len(chunks),
-                              "n_ok": len(per_chunk)},
+                              "n_chunks": total,
+                              "n_ok": len(per_chunk),
+                              "n_failed": len(errors),
+                              "n_no_segments": sum(
+                                  1 for w in windows if w["status"] == "no_segments"),
+                              "merge_rule": "adjacent_overlap",
+                              "windows": windows},
                  "codes_per_chunk": per_chunk},
     }
+    if transcript_file:
+        rec[S.TRANSCRIPT_FILE] = str(transcript_file)
     if errors:
         rec[S.META]["chunk_errors"] = errors
+        rec[S.META]["incomplete_windows"] = len(errors)
     return rec
 
 
@@ -706,8 +787,13 @@ def to_records(open_records, cb=None):
                 "every open code was dropped: the active framework does not "
                 "contain the codebook's codes. Build a framework with "
                 "codebook_to_framework() and activate it before converting.")
+        # 識別碼是佔位字樣（模型沒讀到名字）而紀錄知道自己來自哪個檔案時，
+        # 用檔名主幹——紀錄、逐字稿與抽樣框都用這個字串當鍵，撞名會互相覆蓋。
+        who = str(rec.get(S.RESPONDENT) or "").strip()
+        if CH.is_placeholder_name(who) and rec.get(S.TRANSCRIPT_FILE):
+            who = CH.respondent_from_filename(rec[S.TRANSCRIPT_FILE])
         new = S.migrate_record({
-            S.RESPONDENT: rec.get(S.RESPONDENT, "unknown"),
+            S.RESPONDENT: who or "unknown",
             S.DESCRIPTORS: rec.get(S.DESCRIPTORS) or S.blank_descriptors(),
             S.SUMMARY: rec.get(S.SUMMARY, ""),
             S.SEGMENTS: segs})
@@ -734,6 +820,8 @@ def load_codebook(path):
     with open(path, "r", encoding="utf-8") as f:
         cb = json.load(f)
     cb.setdefault(CODES, [])
+    if not str(cb.get(CORPUS_TERM) or "").strip():
+        cb[CORPUS_TERM] = DEFAULT_CORPUS_TERM
     for c in cb[CODES]:
         c.setdefault(CODE_EXAMPLES, [])
         c.setdefault(CODE_COUNT, 0)

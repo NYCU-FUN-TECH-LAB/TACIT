@@ -446,6 +446,33 @@ check("繁體的判定依據掃不出東西", S.scan_record_script(_rd2), {})
 
 print()
 print("=" * 70)
+print("測試 N：碼被研究者全部拿掉、但帶著複核軌跡的段落，載入時要留下")
+print("=" * 70)
+# 沒有碼的段落通常是模型輸出的空殼，載入時丟掉。但研究者在複核時把碼
+# 全部拿掉的段落不是空殼：那個決定與它的稽核軌跡是資料，丟掉等於把一次
+# 複核從統計裡抹去，重新載入後複核率與修改率都會變。
+_kept = S.migrate_record({S.RESPONDENT: "R", S.SEGMENTS: [
+    {S.SEGMENT_ID: "S004", S.TITLE: "t", S.QUOTE: "q", S.FULL_TEXT: "q",
+     S.CODES_F: [],
+     S.REVIEW: {S.STATUS: S.STATUS_MODIFIED, S.ORIGINAL_CODES: ["ANT-P"],
+                S.SOURCE: S.SOURCE_AI,
+                S.HISTORY: [{"time": "2026-01-01T00:00:00",
+                             "action": "update_codes",
+                             "detail": "+- / -ANT-P", "reviewer": "r"}]}},
+    {S.SEGMENT_ID: "S005", S.TITLE: "t", S.QUOTE: "q", S.FULL_TEXT: "q",
+     S.CODES_F: []},
+]})
+_ids = [s[S.SEGMENT_ID] for s in _kept[S.SEGMENTS]]
+check("有複核軌跡的空碼段落保留", "S004" in _ids, True)
+check("沒有軌跡的空碼段落照舊不載入", "S005" in _ids, False)
+_s4 = _kept[S.SEGMENTS][0]
+check("狀態保留為已修改", _s4[S.REVIEW][S.STATUS], S.STATUS_MODIFIED)
+check("原始碼快照保留", _s4[S.REVIEW][S.ORIGINAL_CODES], ["ANT-P"])
+check("軌跡保留", len(_s4[S.REVIEW][S.HISTORY]), 1)
+check("再遷移一次結果不變", S.migrate_record(copy.deepcopy(_kept)), _kept)
+
+print()
+print("=" * 70)
 print(f"結果：{'全部通過 ✅' if not FAIL else '失敗項目 ' + str(FAIL)}")
 print("=" * 70)
 sys.exit(1 if FAIL else 0)

@@ -1,10 +1,10 @@
 """
-製作使用手冊.py — 由截圖與內文產生圖文並茂的操作手冊
+make_manual.py — 由截圖與內文產生圖文並茂的操作手冊
 =====================================================
 用法：
-    python 製作使用手冊.py            產生中英文兩份 HTML
-    python 製作使用手冊.py --pdf      再各轉一份 PDF
-    python 製作使用手冊.py --lang zh  只產生其中一種
+    python make_manual.py            產生中英文兩份 HTML
+    python make_manual.py --pdf      再各轉一份 PDF
+    python make_manual.py --lang zh  只產生其中一種
 
 【中英文各一份，內文分開維護】
   英文版不是逐句翻譯：中文版對台灣的研究生說話，英文版對國外的研究者與

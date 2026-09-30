@@ -32,11 +32,14 @@ Gemini 走官方 SDK google-genai，列在 requirements.txt 的必要清單裡�
 照樣能用，介面會說缺什麼並提供一鍵安裝。
 """
 
+import http.client
+import ipaddress
 import json
 import os
 import re
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 
 # Gemini SDK 有新舊兩套。
@@ -200,13 +203,48 @@ def default_max_tokens(provider, num_ctx=None):
 # 並在送出前估算長度、超過就擋下來。
 DEFAULT_NUM_CTX = 32768
 
+# num_ctx 只是**設定值**，模型自己的原生視窗才是上限。Ollama 收到比原生
+# 視窗大的 num_ctx 不會報錯，只會把視窗夾回原生大小，然後照樣截斷提示詞：
+# llama3:8b 的原生視窗是 8,192，設 32,768 送一份 12,000 token 的提示詞，
+# 伺服器只讀了 4,108 個 token，回傳的 JSON 格式完整。所以長度預算一律以
+# min(設定值, 原生視窗) 計算；原生視窗問 /api/show 拿。
+#
+# 問得到伺服器、但模型資訊裡沒有 context_length 時，退回一個保守值。
+# 8,192 是常見小型地端模型的原生視窗；比它更小的模型（4,096）由送出後的
+# prompt_eval_count 檢查接住，使用者也可以把 num_ctx 直接設低。
+NATIVE_CTX_FALLBACK = 8192
+
+# 送出後的檢查：伺服器回報它實際讀了幾個 token（Ollama 的 prompt_eval_count、
+# OpenAI 相容端點的 usage.prompt_tokens）。回報值低於送出前估計值的這個比例，
+# 就判定提示詞被截斷。比例取 0.5 而不是更高：估計器對英文偏高約 1.2–1.3 倍，
+# 對中文則依分詞器不同可能偏低到 0.6 倍（qwen 對中文約 0.6 token/字），
+# 0.5 以下才是任何分詞器都解釋不了的落差。實測被截斷的兩個案例分別是
+# 0.33 與 0.27。
+TRUNCATION_RATIO = 0.5
+
+# 「測試連線」時送一個 token 的生成給選定的模型，等模型載入要一點時間。
+PROBE_GENERATION_TIMEOUT = 180
+
+# 每份稿件之間的預設間隔（秒）。雲端服務有速率上限，地端沒有——地端等 10 秒
+# 只是把一輪 24 份的分析平白拉長四分鐘。
+DEFAULT_DELAY_SECONDS = {
+    GEMINI: 10,
+    OLLAMA: 0,
+    OPENAI_COMPAT: 0,
+}
+
+
+def default_delay(provider):
+    """介面「每份稿件間隔秒數」的預設值。"""
+    return DEFAULT_DELAY_SECONDS.get(provider, 10)
+
 
 class LLMError(RuntimeError):
     """供應者呼叫失敗的共同基底。"""
 
 
 class NotConfigured(LLMError):
-    """缺金鑰、缺模型名稱、或本機服務沒開。"""
+    """缺金鑰、缺模型名稱、金鑰被拒、或本機服務沒開。"""
 
 
 class RateLimited(LLMError):
@@ -217,6 +255,24 @@ class ContextOverflow(LLMError):
     """提示詞長度超過 context window——送出去只會被無聲截斷。"""
 
 
+class Truncated(ContextOverflow):
+    """
+    送出後才發現被截斷：伺服器回報讀到的 token 數遠低於提示詞的長度。
+
+    是 ContextOverflow 的子類，因為對呼叫端而言是同一件事——這一次的結果
+    不能用，而且重送同一份提示詞也不會好。差別只在發現的時機。
+    """
+
+
+class Timeout(LLMError):
+    """
+    在時限內沒有等到回應。
+
+    跟連線抖動分開：生成逾時多半是模型太慢或還在載入，重送同一份提示詞
+    只會再等一次同樣的時間。
+    """
+
+
 class Unavailable(LLMError):
     """
     服務端暫時無法回應（503 滿載、500/502/504）。已自動重試過仍失敗才會拋出。
@@ -225,6 +281,12 @@ class Unavailable(LLMError):
     滿載通常幾秒到幾分鐘就過去，值得自動等一下。混在一起的話，要嘛把
     配額錯誤白白重試三輪，要嘛讓使用者被一次尖峰擋下來、以為軟體壞了。
     """
+
+
+# 呼叫端不該逐窗吞掉、應該整批停下的錯誤。分窗編碼的每個窗口各自呼叫模型，
+# 這幾種錯誤在第一個窗口出現就會在後面每一個窗口出現，逐窗吞掉再繼續
+# 只會把「服務沒開」變成六十個「窗口失敗」，而真正的原因不會出現在畫面上。
+FATAL_ERRORS = (ContextOverflow, RateLimited, NotConfigured, Timeout, Unavailable)
 
 
 # 暫時性錯誤的重試間隔（秒）。總共最多多等約 19 秒——比使用者手動重按
@@ -276,7 +338,8 @@ class Endpoint:
     """
 
     def __init__(self, provider=GEMINI, model="", api_key="", base_url="",
-                 timeout=900, num_ctx=DEFAULT_NUM_CTX, max_tokens=None):
+                 timeout=900, num_ctx=DEFAULT_NUM_CTX, max_tokens=None,
+                 native_ctx=None):
         if provider not in PROVIDERS:
             raise NotConfigured(f"unknown provider: {provider}")
         self.provider = provider
@@ -285,8 +348,58 @@ class Endpoint:
         self.base_url = (base_url or DEFAULT_BASE_URL[provider]).strip().rstrip("/")
         self.timeout = int(timeout)
         self.num_ctx = int(num_ctx)
+        # 明確指定的輸出上限是使用者的決定，不隨視窗重算；沒指定的才跟著
+        # 實際視窗走（見 effective_max_tokens）。
+        self.explicit_max_tokens = bool(max_tokens)
         self.max_tokens = int(max_tokens
                               or default_max_tokens(provider, self.num_ctx))
+        # 原生視窗可以由呼叫端直接給（服務問不到時的手動覆寫）；None 表示
+        # 要去問伺服器。問過的結果快取在物件上，同一份稿件不必每個窗口都問。
+        self._native_override = int(native_ctx) if native_ctx else None
+        self._native = None
+        # 最近一次呼叫伺服器回報的用量（讀了幾個 token、為什麼停），
+        # 介面與批次腳本可以拿來顯示或寫進紀錄。
+        self.last_usage = None
+
+    def native_context_length(self):
+        """
+        模型的原生 context 視窗。回傳 (長度或 None, 來源)。
+
+        來源是 "override"（呼叫端指定）、"server"（/api/show 查到）、
+        "missing"（伺服器答了但沒有這個欄位）、"unknown"（查不到，或這個
+        供應者沒有可查的介面）。
+        """
+        if self._native_override:
+            return self._native_override, "override"
+        if self._native is None:
+            if self.provider == OLLAMA and self.model:
+                self._native = native_context(self.model, self.base_url)
+            else:
+                self._native = (None, "unknown")
+        return self._native
+
+    def effective_num_ctx(self):
+        """
+        長度預算實際使用的視窗：min(num_ctx, 原生視窗)。
+
+        原生視窗查不到（伺服器沒開、非 Ollama 的地端服務）就只能信設定值；
+        伺服器答了但沒有欄位，退回 NATIVE_CTX_FALLBACK。雲端一律回 num_ctx，
+        它的視窗由服務端管理。
+        """
+        if not self.is_local:
+            return self.num_ctx
+        native, source = self.native_context_length()
+        if native:
+            return min(self.num_ctx, int(native))
+        if source == "missing":
+            return min(self.num_ctx, NATIVE_CTX_FALLBACK)
+        return self.num_ctx
+
+    def effective_max_tokens(self):
+        """輸出保留額，依實際視窗重算——除非呼叫端明確指定過。"""
+        if self.explicit_max_tokens or not self.is_local:
+            return self.max_tokens
+        return default_max_tokens(self.provider, self.effective_num_ctx())
 
     def provenance(self, **extra):
         """
@@ -305,6 +418,7 @@ class Endpoint:
             "model": self.model,
             "base_url": self.base_url or None,
             "data_locality": self.data_locality,
+            "host_class": self.host_class,
             "num_ctx": self.num_ctx if self.is_local else None,
             "max_tokens": self.max_tokens,
             "recorded_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
@@ -313,6 +427,10 @@ class Endpoint:
             p["sdk"] = GEMINI_SDK
         elif self.provider == OLLAMA:
             p.update(model_details(self.model, self.base_url))
+        if self.is_local:
+            # 真正用來算預算、也真正送給伺服器的視窗。跟 num_ctx 並列，
+            # 讀紀錄的人才看得出設定值有沒有被原生視窗夾掉。
+            p["effective_num_ctx"] = self.effective_num_ctx()
         p.update({k: v for k, v in extra.items() if v is not None})
         return p
 
@@ -321,30 +439,46 @@ class Endpoint:
         return self.provider in LOCAL_PROVIDERS
 
     @property
+    def host_class(self):
+        """位址的主機類別：loopback / private / public / unknown（見 classify_host）。"""
+        if self.provider == GEMINI:
+            return "public"
+        return classify_host(self.base_url)
+
+    @property
     def data_locality(self):
         """
-        逐字稿有沒有離開這台機器：'local' 或 'remote'。
+        逐字稿有沒有離開研究者的機器或網路：'local'、'remote' 或 'unknown'。
 
         **這件事由位址決定，不由供應者決定。** OpenAI 相容那條路同時涵蓋
         LM Studio（localhost，資料不出機器）與 OpenRouter 之類的代理閘道
         （資料送到別人手上），is_local 只看供應者，兩者都會回 True。
         資料管理聲明要寫的是這個欄位，不是供應者名稱。
+
+        判定依主機名稱解析後的類別：本機回環位址與私有網段（RFC 1918、
+        連結本地、唯一本地）算 local，公開位址算 remote，解析不出來的位址
+        算 unknown。host_class 另外記下是本機還是區域網路。
         """
         if self.provider == GEMINI:
             return "remote"
-        return "local" if _is_loopback(self.base_url) else "remote"
+        cls = self.host_class
+        if cls in ("loopback", "private"):
+            return "local"
+        return "remote" if cls == "public" else "unknown"
 
     @property
     def needs_key(self):
         """
         只有 Gemini 一定要金鑰。OpenAI 相容端點分兩種情形：指向
-        api.openai.com 或 OpenRouter 要金鑰，指向 localhost 不要——
-        所以這裡不能只看供應者，要看位址。
+        api.openai.com 或 OpenRouter 要金鑰，指向 localhost 或區域網路
+        裡自己的機器不要——所以這裡不能只看供應者，要看位址。
+        解析不出來的位址當成要金鑰：多問一次金鑰無害，少問一次會把
+        逐字稿送去不知道哪裡。
         """
         if self.provider == GEMINI:
             return True
         if self.provider == OPENAI_COMPAT:
-            return not _is_loopback(self.base_url)
+            return self.host_class not in ("loopback", "private")
         return False
 
     def describe(self):
@@ -360,9 +494,48 @@ class Endpoint:
             raise NotConfigured("no API key")
 
 
+def classify_host(url):
+    """
+    位址指向哪一類主機：'loopback'、'private'、'public' 或 'unknown'。
+
+    用 urllib.parse 取出主機名稱再判斷，不用正規式比對字串開頭：
+    `localhost.evil.example.com`、`127.0.0.1.nip.io`、`localhost@evil.example.com`
+    都以 localhost 或 127.0.0.1 開頭，主機名稱卻是別人的伺服器。
+
+    只有主機名稱**正好**是 localhost，或 IP 落在回環（127.0.0.0/8、::1）、
+    未指定（0.0.0.0）的位址才算 loopback；RFC 1918、連結本地、唯一本地
+    網段算 private；其他可解析的位址一律 public。沒有 scheme、沒有主機名
+    稱、或主機名稱不是 IP 也不是 localhost 但無法判斷的，回 unknown。
+    """
+    s = (url or "").strip()
+    if not s:
+        return "unknown"
+    try:
+        parts = urllib.parse.urlsplit(s)
+        host = parts.hostname
+    except ValueError:
+        return "unknown"
+    if parts.scheme.lower() not in ("http", "https") or not host:
+        return "unknown"
+    host = host.strip("[]").lower()
+    if host == "localhost":
+        return "loopback"
+    try:
+        ip = ipaddress.ip_address(host)
+    except ValueError:
+        # 是主機名稱而不是 IP。localhost 以外的名稱都要靠 DNS 才知道指到哪，
+        # 而 DNS 答案可以指向任何地方——當成公開位址。
+        return "public"
+    if ip.is_loopback or ip.is_unspecified:
+        return "loopback"
+    if ip.is_private or ip.is_link_local:
+        return "private"
+    return "public"
+
+
 def _is_loopback(url):
-    return bool(re.match(r"^https?://(localhost|127\.0\.0\.1|\[::1\]|0\.0\.0\.0)\b",
-                         (url or "").strip(), re.I))
+    """位址是不是這台機器本身（介面用它決定要不要問金鑰、顯示隱私提示）。"""
+    return classify_host(url) == "loopback"
 
 
 # =====================================================================
@@ -387,37 +560,54 @@ def estimate_tokens(text):
     return int(cjk + other / 3.5) + 16
 
 
-def check_context(ep, prompt, system=""):
+def check_context(ep, prompt, system="", max_tokens=None):
     """
     送出前擋下必然被截斷的呼叫。
 
     只對地端供應者檢查：雲端模型的 context window 由服務端管理，
     超過會回傳明確的錯誤，不會無聲截斷。
+
+    預算以**實際視窗**計算：min(num_ctx, 模型原生視窗)。設定值比原生視窗大
+    時伺服器只會把視窗夾回原生大小，不會報錯，所以設定值不能拿來算。
+    估算規則：CJK 一字一 token、其他 3.5 字元一 token；輸出保留視窗的四分之
+    一（3,072 到 8,192 之間）；再留 512 的餘裕。
     """
     if not ep.is_local:
         return
+    window = ep.effective_num_ctx()
+    reserve = int(max_tokens or ep.effective_max_tokens())
     need = estimate_tokens(prompt) + estimate_tokens(system) + 512
-    room = ep.num_ctx - ep.max_tokens
+    room = window - reserve
+    native, source = ep.native_context_length()
+    capped = window < ep.num_ctx
+    cap_note = ""
+    if capped:
+        cap_note = (f" The configured num_ctx is {ep.num_ctx:,}, but "
+                    + (f"this model's native context is {native:,}"
+                       if native else
+                       f"the server did not report this model's native "
+                       f"context, so {NATIVE_CTX_FALLBACK:,} is assumed")
+                    + ", and the budget is computed from the smaller of the two.")
     if room <= 0:
         raise ContextOverflow(
-            f"num_ctx ({ep.num_ctx}) must exceed max output tokens "
-            f"({ep.max_tokens}); raise the context window or lower the "
-            f"output limit.")
+            f"the context window ({window:,}) must exceed the output "
+            f"reservation ({reserve:,}); raise the context window or lower "
+            f"the output limit.{cap_note}")
     if need > room:
         # 訊息要指向**真正的槓桿**。只寫「加大視窗、切開逐字稿、換模型」的話，
         # 但保留額佔掉視窗一半以上時，那三條沒有一條是原因——使用者會誤以為
         # 地端模型做不到，而其實只是保留額訂得太大。
-        share = ep.max_tokens / ep.num_ctx if ep.num_ctx else 0
+        share = reserve / window if window else 0
         hint = (f" The output reservation is {share:.0%} of the window; "
                 f"a single coding pass returns about 1,500–2,500 tokens, so "
                 f"lowering it to {MIN_OUTPUT_RESERVE} would free "
-                f"{ep.max_tokens - MIN_OUTPUT_RESERVE} tokens for the "
+                f"{reserve - MIN_OUTPUT_RESERVE} tokens for the "
                 f"transcript."
-                if share > 0.3 and ep.max_tokens > MIN_OUTPUT_RESERVE else "")
+                if share > 0.3 and reserve > MIN_OUTPUT_RESERVE else "")
         # 「加大視窗」不是可行動的建議——使用者不知道要加到多少，也不知道
-        # 這顆模型撐不撐得住。所以算出確切的數字，並且去問模型的實際上限。
+        # 這顆模型撐不撐得住。所以算出確切的數字，並且對照模型的實際上限。
         want = required_num_ctx(need, ep.provider)
-        limit = model_context_limit(ep.model, ep.base_url) if ep.is_local else None
+        limit = native if native else None
         if want and limit and want > limit:
             advice = (f" This model's context limit is {limit:,}, which is not "
                       f"enough for this transcript — split it, or use a model "
@@ -432,14 +622,103 @@ def check_context(ep, prompt, system=""):
                       "context.")
         raise ContextOverflow(
             f"prompt is about {need} tokens but only {room} tokens of "
-            f"context remain (num_ctx {ep.num_ctx} minus {ep.max_tokens} "
+            f"context remain (window {window:,} minus {reserve:,} "
             f"reserved for output). The server would silently truncate the "
-            f"transcript.{hint}{advice}")
+            f"transcript.{cap_note}{hint}{advice}")
+
+
+def check_usage(ep, usage, prompt, system="", json_mode=False):
+    """
+    送出後的檢查：伺服器回報讀了幾個 token、為什麼停下來。
+
+    usage 是 {"prompt_tokens": 讀到的 token 數或 None,
+              "completion_tokens": 生成的 token 數或 None,
+              "finish_reason": "stop" / "length" / None}。
+    結果記在 ep.last_usage，並補上送出前的估計值。
+
+    讀到的 token 數低於估計值的 TRUNCATION_RATIO 倍就拋 Truncated——這是
+    送出前的守門漏掉的那一種截斷（原生視窗查不到、或伺服器另有上限）。
+    json_mode 下 finish_reason 是 length 也拋錯：JSON 被切在半途，重送同一份
+    提示詞不會變好，該做的是加大輸出上限或縮小窗口。
+    """
+    est = estimate_tokens(prompt) + estimate_tokens(system)
+    rec = dict(usage or {})
+    rec["estimated_prompt_tokens"] = est
+    ep.last_usage = rec
+    read = rec.get("prompt_tokens")
+    if isinstance(read, int) and read > 0 and est > 0 and read < est * TRUNCATION_RATIO:
+        raise Truncated(
+            f"the server evaluated only {read:,} prompt tokens, but the prompt "
+            f"is about {est:,} tokens: the transcript was truncated before the "
+            f"model read it (window {ep.effective_num_ctx():,}). Lower num_ctx "
+            f"to this model's real context length, use a smaller excerpt "
+            f"window, or choose a model with a longer context. The result of "
+            f"this call was discarded.")
+    if json_mode and str(rec.get("finish_reason") or "").lower() == "length":
+        raise LLMError(
+            f"{ep.model} stopped because the output limit "
+            f"({rec.get('completion_tokens') or ep.effective_max_tokens():,} "
+            f"tokens) was reached, so the JSON is cut off. Raise the output "
+            f"limit or use a smaller excerpt window.")
 
 
 # =====================================================================
 # 4. HTTP 工具
 # =====================================================================
+def _decode_body(raw, url):
+    """
+    伺服器回的位元組 → dict。
+
+    三種不是 JSON 的回覆各自要有講得清楚的錯誤：不是 UTF-8（多半是代理
+    或編碼設定壞了，用替代字元硬吞會把引文改成「caf���」）、不是 JSON
+    （代理回了一頁 HTML 卻掛 200）、以及空回覆。
+    """
+    try:
+        text = raw.decode("utf-8")
+    except UnicodeDecodeError as e:
+        raise LLMError(f"response from {url} is not valid UTF-8 "
+                       f"(byte {e.start}); check the server or proxy "
+                       f"encoding.") from e
+    if not text.strip():
+        raise LLMError(f"empty response body from {url}")
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError as e:
+        head = text.strip()[:160].replace("\n", " ")
+        raise LLMError(f"non-JSON response from {url} (HTTP 200): "
+                       f"{head}") from e
+
+
+def _raise_http(e, url):
+    """把 HTTPError 轉成分得出處理方式的例外。"""
+    body = ""
+    try:
+        body = e.read().decode("utf-8", "replace")[:400]
+    except Exception:                                     # noqa: BLE001
+        pass
+    if e.code == 429:
+        raise RateLimited(f"HTTP 429 rate limited: {body}") from e
+    if e.code in (401, 403):
+        # 金鑰錯或沒給。重試沒有用，訊息要指向金鑰欄位。
+        raise NotConfigured(f"HTTP {e.code} from {url}: authentication "
+                            f"failed. Check the API key. {body}") from e
+    raise LLMError(f"HTTP {e.code} from {url}: {body}") from e
+
+
+def _raise_transport(e, url, timeout):
+    """連線層的例外 → 分辨逾時、連不上、與其他抖動。"""
+    if isinstance(e, TimeoutError) or isinstance(
+            getattr(e, "reason", None), TimeoutError):
+        raise Timeout(f"no answer from {url} within {timeout} seconds. The "
+                      f"model may still be loading, or it is too slow for "
+                      f"this excerpt size: raise the timeout, use a smaller "
+                      f"excerpt window, or a faster model.") from e
+    if isinstance(e, urllib.error.URLError):
+        raise NotConfigured(_unreachable_msg(url, e)) from e
+    # 連線中途被重設或對方關閉：交給重試邏輯判斷是不是暫時性的
+    raise LLMError(f"{type(e).__name__}: {e} ({url})") from e
+
+
 def _post_json(url, payload, timeout, headers=None):
     data = json.dumps(payload).encode("utf-8")
     hdr = {"Content-Type": "application/json"}
@@ -447,29 +726,24 @@ def _post_json(url, payload, timeout, headers=None):
     req = urllib.request.Request(url, data=data, headers=hdr, method="POST")
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
-            return json.loads(r.read().decode("utf-8", "replace"))
+            return _decode_body(r.read(), url)
     except urllib.error.HTTPError as e:
-        body = ""
-        try:
-            body = e.read().decode("utf-8", "replace")[:400]
-        except Exception:
-            pass
-        if e.code == 429:
-            raise RateLimited(f"HTTP 429 rate limited: {body}") from e
-        raise LLMError(f"HTTP {e.code} from {url}: {body}") from e
-    except urllib.error.URLError as e:
-        raise NotConfigured(_unreachable_msg(url, e)) from e
+        _raise_http(e, url)
+    except (urllib.error.URLError, TimeoutError, ConnectionError,
+            http.client.HTTPException) as e:
+        _raise_transport(e, url, timeout)
 
 
 def _get_json(url, timeout, headers=None):
     req = urllib.request.Request(url, headers=headers or {}, method="GET")
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
-            return json.loads(r.read().decode("utf-8", "replace"))
+            return _decode_body(r.read(), url)
     except urllib.error.HTTPError as e:
-        raise LLMError(f"HTTP {e.code} from {url}") from e
-    except urllib.error.URLError as e:
-        raise NotConfigured(_unreachable_msg(url, e)) from e
+        _raise_http(e, url)
+    except (urllib.error.URLError, TimeoutError, ConnectionError,
+            http.client.HTTPException) as e:
+        _raise_transport(e, url, timeout)
 
 
 def _unreachable_msg(url, e):
@@ -502,46 +776,107 @@ def _gemini_sort_key(name):
             "lite" in name, name)
 
 
+_EMBED_WORDS = ("embed", "bge", "nomic", "minilm", "e5-")
+_CODE_WORDS = ("codellama", "coder", "starcoder", "codegemma", "codestral",
+               "deepseek-coder", "code-")
+
+
+def is_embedding_model(name):
+    """嵌入模型不會生成文字，拿來編碼只會得到空回覆。"""
+    low = (name or "").lower()
+    return any(k in low for k in _EMBED_WORDS)
+
+
 def _local_sort_key(name):
     """
-    地端模型排序：指令微調版優先，量化程度低的優先，再依名稱。
+    地端模型排序：指令微調版優先，一般對話模型其次，程式碼模型最後，
+    同一類再依名稱。
 
     base 模型（無 instruct/chat 後綴）幾乎不可能照著我們的提示詞回傳
-    JSON，排到最後可以少掉一整類「為什麼都解析失敗」的求助。
+    JSON，排到後面可以少掉一整類「為什麼都解析失敗」的求助；程式碼模型
+    （codellama 之類）字母序常常排第一，但它不是拿來讀訪談稿的。
     """
     low = name.lower()
     tuned = 0 if any(k in low for k in ("instruct", "chat", "-it")) else 1
-    embed = 1 if any(k in low for k in ("embed", "bge", "nomic")) else 0
-    return (embed, tuned, low)
+    code = 1 if any(k in low for k in _CODE_WORDS) else 0
+    embed = 1 if is_embedding_model(low) else 0
+    return (embed, code, tuned, low)
 
 
-def model_context_limit(model, base_url="", timeout=10):
+def default_model(names):
     """
-    問 Ollama 這顆模型到底支援多長的 context。查不到就回 None。
+    清單裡預設該選哪一顆：第一顆不是嵌入、不是程式碼模型的對話模型。
+    沒有合適的就回空字串，讓介面留白並要求使用者自己選。
+    """
+    for n in sorted(names or [], key=_local_sort_key):
+        low = n.lower()
+        if is_embedding_model(low) or any(k in low for k in _CODE_WORDS):
+            continue
+        return n
+    return ""
+
+
+def _context_length_from_info(info):
+    """
+    從 /api/show 的 model_info 取原生視窗。
+
+    欄位名隨架構不同（llama.context_length、qwen2.context_length…），
+    有 general.architecture 就照它組欄位名，沒有才退回後綴比對。
+    只認 <架構>.context_length：像 phi3.rope.scaling.original_context_length
+    這種欄位不是視窗上限。
+    """
+    info = info or {}
+    arch = str(info.get("general.architecture") or "").strip()
+    keys = ([f"{arch}.context_length"] if arch else []) + \
+        [k for k in info if str(k).endswith(".context_length")]
+    for k in keys:
+        if k in info:
+            try:
+                n = int(info[k])
+            except (TypeError, ValueError):
+                continue
+            if n > 0:
+                return n
+    return None
+
+
+_NATIVE_CACHE = {}
+
+
+def native_context(model, base_url="", timeout=10, refresh=False):
+    """
+    問 Ollama 這顆模型的原生 context 視窗。回傳 (長度或 None, 來源)。
+
+    來源："server"（查到了）、"missing"（伺服器答了但沒有這個欄位）、
+    "unknown"（伺服器沒開、模型不存在、或回覆讀不懂）。
 
     為什麼要問：使用者把 num_ctx 設成 20480 撞牆時，只得到「加大視窗」
     這種建議的話，沒有人告訴他這顆模型其實支援 131072，也沒有人
-    告訴他該設多少才夠。要使用者自己去查模型規格再回來填一個數字，
-    那不叫提示，那叫把工作丟回去。
+    告訴他該設多少才夠。反過來，設定值比原生視窗大時伺服器不會報錯，
+    只會無聲截斷——所以長度預算要用這個值夾住設定值。
 
-    Ollama 的 /api/show 會回 model_info，裡面有 <架構>.context_length。
-    欄位名隨架構不同（llama.context_length、qwen2.context_length…），
-    所以用後綴比對而不是寫死。
+    查到的結果依 (base_url, model) 快取；查不到不快取，服務起來之後
+    再問就會有。
     """
     base_url = (base_url or DEFAULT_BASE_URL[OLLAMA]).rstrip("/")
+    key = (base_url, model)
+    if not refresh and key in _NATIVE_CACHE:
+        return _NATIVE_CACHE[key]
     try:
         d = _post_json(f"{base_url}/api/show", {"model": model}, timeout)
-    except (LLMError, NotConfigured, Exception):
-        return None
-    info = (d or {}).get("model_info") or {}
-    for k, v in info.items():
-        if str(k).endswith(".context_length"):
-            try:
-                n = int(v)
-                return n if n > 0 else None
-            except (TypeError, ValueError):
-                return None
-    return None
+    except Exception:                                     # noqa: BLE001
+        return None, "unknown"
+    if not isinstance(d, dict):
+        return None, "unknown"
+    n = _context_length_from_info(d.get("model_info"))
+    out = (n, "server") if n else (None, "missing")
+    _NATIVE_CACHE[key] = out
+    return out
+
+
+def model_context_limit(model, base_url="", timeout=10):
+    """原生視窗的長度；查不到就回 None。細節見 native_context。"""
+    return native_context(model, base_url, timeout)[0]
 
 
 _DETAILS_CACHE = {}
@@ -569,13 +904,9 @@ def model_details(model, base_url="", timeout=10):
         for k in ("quantization_level", "parameter_size", "family"):
             if det.get(k):
                 out[k] = str(det[k])
-        for k, v in (d.get("model_info") or {}).items():
-            if str(k).endswith(".context_length"):
-                try:
-                    out["context_length"] = int(v)
-                except (TypeError, ValueError):
-                    pass
-                break
+        n = _context_length_from_info(d.get("model_info"))
+        if n:
+            out["context_length"] = n
     except Exception:                                     # noqa: BLE001
         pass
     try:
@@ -632,18 +963,19 @@ def list_models(provider, api_key="", base_url="", timeout=15):
             names = sorted((m.get("name") or m.get("model") or ""
                             for m in d.get("models", []) if m),
                            key=_local_sort_key)
-            names = [n for n in names if n]
+            # 嵌入模型不列：它不會生成文字，選了只會得到空回覆。
+            names = [n for n in names if n and not is_embedding_model(n)]
             if not names:
-                return [], ("Ollama is running but has no models. "
+                return [], ("Ollama is running but has no chat models. "
                             "Pull one, e.g.: ollama pull llama3.1:8b-instruct-q4_K_M")
-            return names, f"{len(names)} models installed locally."
+            return names, f"{len(names)} chat models installed locally."
 
         if provider == OPENAI_COMPAT:
             hdr = {"Authorization": f"Bearer {api_key}"} if api_key else {}
             d = _get_json(f"{base_url}/models", timeout, hdr)
             names = sorted((m.get("id", "") for m in d.get("data", []) if m),
                            key=_local_sort_key)
-            names = [n for n in names if n]
+            names = [n for n in names if n and not is_embedding_model(n)]
             if not names:
                 raise LLMError("endpoint returned an empty model list")
             return names, f"{len(names)} models offered by {base_url}."
@@ -654,10 +986,15 @@ def list_models(provider, api_key="", base_url="", timeout=15):
     return [], ""
 
 
-def probe(ep, timeout=10):
+def probe(ep, timeout=10, generate=True):
     """
-    連得上嗎？回傳 (bool, 訊息)。介面用它在按下「開始分析」**之前**
-    就告訴使用者服務沒開，而不是等跑完第一份逐字稿才失敗。
+    連得上、而且選定的模型真的能生成嗎？回傳 (bool, 訊息)。
+
+    介面用它在按下「開始分析」**之前**就告訴使用者服務沒開，而不是等跑完
+    第一份逐字稿才失敗。只列模型清單是不夠的：清單裡有這顆模型不代表它
+    載得起來，所以 generate=True 時會送一個 token 的生成給選定的模型，並
+    把查到的原生視窗與實際視窗寫進訊息——使用者在這裡就看得到
+    「設 32,768 但模型只有 8,192」這件事。
     """
     try:
         models, note = list_models(ep.provider, ep.api_key, ep.base_url, timeout)
@@ -670,7 +1007,46 @@ def probe(ep, timeout=10):
     if ep.model and ep.model not in models:
         return False, (f"'{ep.model}' is not available at {ep.base_url}. "
                        f"Installed: {', '.join(models[:5])}")
-    return True, note
+    if not generate or not ep.model:
+        return True, note
+
+    parts = [note]
+    if ep.provider == OLLAMA:
+        native, source = native_context(ep.model, ep.base_url, timeout,
+                                        refresh=True)
+        ep._native = (native, source)
+        eff = ep.effective_num_ctx()
+        if native:
+            parts.append(f"Native context of {ep.model}: {native:,} tokens.")
+            if native < ep.num_ctx:
+                parts.append(f"num_ctx is set to {ep.num_ctx:,}, so the "
+                             f"budget uses {eff:,}.")
+        else:
+            parts.append(f"The server did not report this model's native "
+                         f"context; {eff:,} is assumed. Set num_ctx to the "
+                         f"model's real window if it is smaller.")
+    t0 = time.time()
+    try:
+        probe_ep = Endpoint(ep.provider, ep.model, ep.api_key, ep.base_url,
+                            timeout=min(ep.timeout, PROBE_GENERATION_TIMEOUT),
+                            num_ctx=ep.num_ctx, max_tokens=1,
+                            native_ctx=ep.native_context_length()[0])
+        _once_for_probe(probe_ep)
+    except LLMError as e:
+        return False, (f"{parts[0]} '{ep.model}' did not answer a one-token "
+                       f"test generation: {str(e)[:300]}")
+    parts.append(f"Test generation answered in {time.time() - t0:.1f} s.")
+    return True, " ".join(parts)
+
+
+def _once_for_probe(ep):
+    """一個 token 的生成，只看有沒有回應，不看內容。"""
+    if ep.provider == OLLAMA:
+        _complete_ollama(ep, "Reply with the single word OK.", "", 0.0, 1,
+                         False, strict=False)
+    else:
+        _complete_openai(ep, "Reply with the single word OK.", "", 0.0, 1,
+                         False, strict=False)
 
 
 # =====================================================================
@@ -798,8 +1174,8 @@ def complete(ep, prompt, system="", temperature=0.2, max_tokens=None,
     被調整成搭配擷取邏輯，改動它等於要重新驗證所有既有結果。
     """
     ep.validate()
-    max_tokens = int(max_tokens or ep.max_tokens)
-    check_context(ep, prompt, system)
+    max_tokens = int(max_tokens or ep.effective_max_tokens())
+    check_context(ep, prompt, system, max_tokens)
 
     def _once():
         if ep.provider == GEMINI:
@@ -813,10 +1189,11 @@ def complete(ep, prompt, system="", temperature=0.2, max_tokens=None,
     # 服務端滿載（503）時自動等一下再試。實測過：雲端模型在尖峰時段會回
     # "This model is currently experiencing high demand"，使用者手動重按
     # 通常就成功——那這件事應該由程式來做，而不是讓人以為軟體壞了。
+    # 逾時不重試：生成逾時是模型太慢，再等一次只是再等一次。
     for attempt in range(len(RETRY_DELAYS) + 1):
         try:
             return _once()
-        except (RateLimited, NotConfigured, ContextOverflow):
+        except (RateLimited, NotConfigured, ContextOverflow, Timeout):
             raise
         except LLMError as e:
             if not _looks_transient(str(e)):
@@ -897,7 +1274,8 @@ def _complete_gemini(ep, prompt, system, temperature, max_tokens):
         raise LLMError(str(e)) from e
 
 
-def _complete_ollama(ep, prompt, system, temperature, max_tokens, json_mode):
+def _complete_ollama(ep, prompt, system, temperature, max_tokens, json_mode,
+                     strict=True):
     msgs = ([{"role": "system", "content": system}] if system else []) + \
            [{"role": "user", "content": prompt}]
     payload = {
@@ -907,21 +1285,31 @@ def _complete_ollama(ep, prompt, system, temperature, max_tokens, json_mode):
         "options": {
             "temperature": temperature,
             # num_ctx 一定要明確給。Ollama 的預設值遠小於一份逐字稿，
-            # 沒給就會無聲截斷——結果看起來完全正常。
-            "num_ctx": ep.num_ctx,
+            # 沒給就會無聲截斷——結果看起來完全正常。送的是實際視窗
+            # （設定值與原生視窗取小），紀錄裡寫的才是伺服器真的用的數字。
+            "num_ctx": ep.effective_num_ctx(),
             "num_predict": max_tokens,
         },
     }
     if json_mode:
         payload["format"] = "json"
     d = _post_json(f"{ep.base_url}/api/chat", payload, ep.timeout)
+    if not isinstance(d, dict):
+        raise LLMError(f"unexpected response from {ep.model}: {str(d)[:200]}")
+    usage = {"prompt_tokens": d.get("prompt_eval_count"),
+             "completion_tokens": d.get("eval_count"),
+             "finish_reason": d.get("done_reason")}
     text = ((d.get("message") or {}).get("content") or "").strip()
+    if strict:
+        # 先查截斷再查內容：被截斷的提示詞一樣會產出格式完整的 JSON。
+        check_usage(ep, usage, prompt, system, json_mode)
     if not text:
         raise LLMError(f"empty response from {ep.model}: {str(d)[:200]}")
     return text
 
 
-def _complete_openai(ep, prompt, system, temperature, max_tokens, json_mode):
+def _complete_openai(ep, prompt, system, temperature, max_tokens, json_mode,
+                     strict=True):
     msgs = ([{"role": "system", "content": system}] if system else []) + \
            [{"role": "user", "content": prompt}]
     payload = {"model": ep.model, "messages": msgs,
@@ -942,10 +1330,18 @@ def _complete_openai(ep, prompt, system, temperature, max_tokens, json_mode):
                            ep.timeout, hdr)
         else:
             raise
+    if not isinstance(d, dict):
+        raise LLMError(f"unexpected response from {ep.model}: {str(d)[:200]}")
     choices = d.get("choices") or []
     if not choices:
         raise LLMError(f"no choices returned: {str(d)[:200]}")
+    u = d.get("usage") or {}
+    usage = {"prompt_tokens": u.get("prompt_tokens"),
+             "completion_tokens": u.get("completion_tokens"),
+             "finish_reason": choices[0].get("finish_reason")}
     text = ((choices[0].get("message") or {}).get("content") or "").strip()
+    if strict:
+        check_usage(ep, usage, prompt, system, json_mode)
     if not text:
         raise LLMError(f"empty response from {ep.model}")
     return text
@@ -1008,6 +1404,7 @@ def from_env():
         TACIT_BASE_URL   地端服務位址
         TACIT_API_KEY    金鑰（Gemini 亦讀 GEMINI_API_KEY / GOOGLE_API_KEY）
         TACIT_NUM_CTX    地端 context window
+        TACIT_NATIVE_CTX 模型的原生視窗（服務問不到時的手動覆寫，可不設）
 
     回傳 None 表示沒設定，呼叫端應改用介面上的欄位。
     """
@@ -1024,6 +1421,7 @@ def from_env():
             api_key=key,
             base_url=os.environ.get("TACIT_BASE_URL", ""),
             num_ctx=int(os.environ.get("TACIT_NUM_CTX", DEFAULT_NUM_CTX)),
+            native_ctx=int(os.environ.get("TACIT_NATIVE_CTX") or 0) or None,
         )
     except Exception:                                 # pragma: no cover
         return None

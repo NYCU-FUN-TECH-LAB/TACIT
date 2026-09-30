@@ -37,7 +37,24 @@ import tacit_schema as S
 
 
 _PUNCT = re.compile(r'[\s，。！？；：、,.!?;:「」『』（）()〈〉《》【】\-—…·"\'　]+')
-_SPEAKER = re.compile(r'^【(.*?)】(.*)$')
+
+# 講者標記的三種寫法：【講者】、[Speaker]、以及「講者：」/「Speaker:」。
+# 括號式一律視為標記；冒號式只在同一個標籤於整份逐字稿出現兩次以上時
+# 才算講者（「案例：」「Source:」這類只出現一次的前言行不是講者）。
+_SPEAKER_BRACKET = re.compile(r'^[【\[]\s*([^\]】]{1,40}?)\s*[】\]]\s*(.*)$')
+_SPEAKER_COLON = re.compile(
+    r'^([A-Za-z][A-Za-z0-9 .\'\-]{0,30}|[一-鿿]{1,10})\s*[:：]\s*(.*)$')
+# 訪員一方的標籤。這些發言不是分析對象，不進抽樣框。
+_INTERVIEWER = re.compile(
+    r'^(?:interviewer|int|i|q|question|moderator|facilitator|researcher|host|'
+    r'chair(?:man|woman|person)?|訪員|訪談者|訪問者|主持人|提問者?|問)(?:\s*\d+)?$',
+    re.IGNORECASE)
+ROLE = "role"
+ROLE_RESPONDENT = "respondent"
+ROLE_INTERVIEWER = "interviewer"
+ROLE_HEADER = "header"
+# 過長的單元在句末切開；中文句末標點不帶空白，英文句末標點後接空白。
+_SENT_SPLIT = re.compile(r"(?<=[。！？])|(?<=[.!?])\s+")
 
 # --- 本模組回傳的欄位名（ASCII） ------------------------------------
 N_OBS = "n"
@@ -60,27 +77,65 @@ def normalize(text):
     return _PUNCT.sub("", text or "")
 
 
+def _colon_labels(lines):
+    """冒號式標籤中出現兩次以上的，視為講者。"""
+    seen = Counter()
+    for line in lines:
+        m = _SPEAKER_COLON.match(line)
+        if m:
+            seen[m.group(1).strip()] += 1
+    return {k for k, n in seen.items() if n >= 2}
+
+
+def speaker_role(speaker):
+    return ROLE_INTERVIEWER if _INTERVIEWER.match(speaker or "") else ROLE_RESPONDENT
+
+
 def split_units(transcript, min_len=15, max_len=400):
     """
-    把逐字稿切成「發言單元」。優先依【講者】標記切；沒有就依段落切。
+    把逐字稿切成「發言單元」，每個單元帶講者與角色。
+
+    有講者標記的逐字稿：標記行開始一個新輪次，之後沒有標記的行是同一位
+    講者的續段；第一個標記之前的行是標題與前言（角色 header）。
+    沒有任何標記的文件：逐段切，角色一律 respondent。
     過短的單元併入前一個——但**只在同一位講者之間合併**。
     跨講者合併會把訪員的提問黏進受訪者的發言裡，造成張冠李戴。
     """
+    lines = [raw.strip() for raw in (transcript or "").split("\n")]
+    lines = [ln for ln in lines if ln]
+    colon = _colon_labels(lines)
+    labelled = any(_SPEAKER_BRACKET.match(ln) for ln in lines) or bool(colon)
+
     units, buf = [], None
-    for raw in (transcript or "").split("\n"):
-        line = raw.strip()
-        if not line:
-            continue
-        m = _SPEAKER.match(line)
-        speaker, body = (m.group(1).strip(), m.group(2).strip()) if m else ("", line)
+    cur_speaker, seen_label = "", False
+    for line in lines:
+        m = _SPEAKER_BRACKET.match(line)
+        if m:
+            speaker, body = m.group(1).strip(), m.group(2).strip()
+        else:
+            m = _SPEAKER_COLON.match(line)
+            if m and m.group(1).strip() in colon:
+                speaker, body = m.group(1).strip(), m.group(2).strip()
+            else:
+                m = None
+                body = line
+        if m:
+            cur_speaker, seen_label = speaker, True
+            role = speaker_role(speaker)
+        elif labelled and not seen_label:
+            speaker, role = "", ROLE_HEADER
+        else:
+            speaker = cur_speaker
+            role = speaker_role(speaker) if labelled else ROLE_RESPONDENT
         if not body:
             continue
-        if buf and len(normalize(buf[S.TEXT])) < min_len and buf[S.SPEAKER] == speaker:
+        if (buf and len(normalize(buf[S.TEXT])) < min_len
+                and buf[S.SPEAKER] == speaker and buf[ROLE] == role):
             buf[S.TEXT] += body
             continue
         if buf:
             units.append(buf)
-        buf = {S.SPEAKER: speaker, S.TEXT: body}
+        buf = {S.SPEAKER: speaker, S.TEXT: body, ROLE: role}
     if buf:
         units.append(buf)
 
@@ -91,20 +146,23 @@ def split_units(transcript, min_len=15, max_len=400):
             out.append(u)
             continue
         parts, cur = [], ""
-        for piece in re.split(r"(?<=[。！？])", t):
+        for piece in _SENT_SPLIT.split(t):
+            if not piece:
+                continue
             if len(cur) + len(piece) > max_len and cur:
                 parts.append(cur); cur = piece
             else:
-                cur += piece
+                cur += (" " if cur and not cur[-1].isspace() and piece[0].isascii() else "") + piece
         if cur:
             parts.append(cur)
         for p in parts:
-            out.append({S.SPEAKER: u[S.SPEAKER], S.TEXT: p})
+            out.append({S.SPEAKER: u[S.SPEAKER], S.TEXT: p, ROLE: u[ROLE]})
 
     merged = []
     for u in out:
         if (merged and len(normalize(u[S.TEXT])) < min_len
-                and merged[-1][S.SPEAKER] == u[S.SPEAKER]):
+                and merged[-1][S.SPEAKER] == u[S.SPEAKER]
+                and merged[-1][ROLE] == u[ROLE]):
             merged[-1][S.TEXT] += u[S.TEXT]
         else:
             merged.append(u)
@@ -119,11 +177,16 @@ def _overlaps(unit_norm, excerpt_norm, min_chars=10):
     return len(unit_norm) >= min_chars and unit_norm in excerpt_norm
 
 
-def build_frame(records, transcripts, min_len=15, max_len=400):
+def build_frame(records, transcripts, min_len=15, max_len=400,
+                include_interviewer=False):
     """
     transcripts: {respondent: 逐字稿全文}
     回傳抽樣框：每個單元一列，附上 AI 在該單元標記的編碼集合。
     未被 AI 標記的單元 ai_codes 為空——**這些就是量 recall 的關鍵**。
+
+    只有受訪者的發言進抽樣框。訪員的提問與檔頭的標題行不是編碼對象，
+    留在框裡只會灌高「未標記」的數量，讓 PABAK 與 AC1 好看而無意義；
+    它們的數量記在 diag 裡。include_interviewer=True 時訪員發言也納入。
     """
     by_resp = defaultdict(list)
     for rec in records:
@@ -134,10 +197,21 @@ def build_frame(records, transcripts, min_len=15, max_len=400):
             if txt and codes:
                 by_resp[resp].append((normalize(txt), codes))
 
-    frame, matched = [], defaultdict(set)
+    frame, matched, on_excluded = [], defaultdict(set), defaultdict(set)
+    excluded = Counter()
     for resp, text in transcripts.items():
         for k, u in enumerate(split_units(text, min_len, max_len)):
+            role = u.get(ROLE, ROLE_RESPONDENT)
             un = normalize(u[S.TEXT])
+            if role == ROLE_HEADER or (role == ROLE_INTERVIEWER
+                                       and not include_interviewer):
+                excluded[role] += 1
+                # 落在訪員提問或標題行上的編碼不進框，但要記下來：
+                # 那是模型（或編碼者）把非分析對象的文字標了碼。
+                for j, (ex, cs) in enumerate(by_resp.get(resp, [])):
+                    if _overlaps(un, ex):
+                        on_excluded[resp].add(j)
+                continue
             codes = set()
             for j, (ex, cs) in enumerate(by_resp.get(resp, [])):
                 if _overlaps(un, ex):
@@ -148,18 +222,25 @@ def build_frame(records, transcripts, min_len=15, max_len=400):
                 S.RESPONDENT: resp,
                 "position": k,
                 S.SPEAKER: u[S.SPEAKER],
+                ROLE: role,
                 S.TEXT: u[S.TEXT],
                 S.AI_CODES: sorted(codes),
                 S.STRATUM: "+".join(sorted(codes)) if codes else S.STRATUM_UNMARKED,
             })
 
-    unmatched = {r: len(v) - len(matched.get(r, set())) for r, v in by_resp.items()}
+    only_excluded = {r: len(on_excluded.get(r, set()) - matched.get(r, set()))
+                     for r in by_resp}
+    unmatched = {r: len(v) - len(matched.get(r, set())) - only_excluded[r]
+                 for r, v in by_resp.items()}
     diag = {
         "total_units": len(frame),
         "ai_coded_units": sum(1 for f in frame if f[S.AI_CODES]),
         "uncoded_units": sum(1 for f in frame if not f[S.AI_CODES]),
         "transcripts": len(transcripts),
         "unmatched_quotes": {k: v for k, v in unmatched.items() if v},
+        "quotes_on_excluded_units": {k: v for k, v in only_excluded.items() if v},
+        "excluded_interviewer_units": excluded[ROLE_INTERVIEWER],
+        "excluded_header_units": excluded[ROLE_HEADER],
     }
     return frame, diag
 

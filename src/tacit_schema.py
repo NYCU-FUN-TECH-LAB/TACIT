@@ -591,8 +591,13 @@ def migrate_record(raw, dropped=None):
         src = raw.get(SEGMENTS, raw.get("編碼段落")) or []
         segments = [_migrate_segment(s, i + 1, dropped=dropped)
                     for i, s in enumerate(src) if isinstance(s, dict)]
+        # 沒有任何碼的段落通常是模型輸出裡的空殼，載入時丟掉。但有兩種
+        # 例外必須留下：研究者自己補入的段落，以及帶著複核紀錄的段落——
+        # 後者的碼是研究者在複核時拿掉的，那個決定與它的稽核軌跡是資料，
+        # 丟掉等於把一次複核從統計裡抹去。
         segments = [s for s in segments if s[CODES_F] or
-                    (s.get(REVIEW, {}).get(SOURCE) == SOURCE_HUMAN)]
+                    (s.get(REVIEW, {}).get(SOURCE) == SOURCE_HUMAN) or
+                    (s.get(REVIEW, {}).get(HISTORY))]
 
     deleted_src = raw.get(DELETED_SEGMENTS, raw.get("已刪除段落")) or []
     deleted = [_migrate_segment(s, i + 1, dropped=dropped)

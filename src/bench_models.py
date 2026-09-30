@@ -28,7 +28,7 @@ bench_models.py — 各模型在本工具上的實測比較
   編碼走的是與 app.py 完全相同的分窗路徑（tacit_coding.code_transcript）。
   這一點不能省：整份逐字稿一次送出去正是會讓召回率崩掉的做法——
   一份 46,730 字元的稿件只回 4 段。兩邊不一致的話，
-  Table 5 量到的是使用者實際上不會遇到的行為，那比沒有 Table 5 更糟。
+  這裡量到的是使用者實際上不會遇到的行為，那比不量更糟。
 
 不量什麼
 --------
@@ -51,8 +51,6 @@ import sys
 import time
 from datetime import datetime
 
-import docx
-
 import tacit_coding as CH
 import tacit_framework as F
 import tacit_schema as S
@@ -66,17 +64,8 @@ RESULTS = os.path.join(OUT_DIR, "bench_results.json")
 
 # ---------------------------------------------------------------------
 def read_docx(path):
-    doc = docx.Document(path)
-    out = []
-    for para in doc.paragraphs:
-        if para.text.strip():
-            out.append(para.text)
-    for table in doc.tables:
-        for row in table.rows:
-            vals = [c.text.strip() for c in row.cells if c.text.strip()]
-            if vals:
-                out.append(" | ".join(vals))
-    return "\n".join(out)
+    """與介面相同的讀法（tacit_coding.read_docx_text）：段落與表格依文件順序。"""
+    return CH.read_docx_text(path)
 
 
 def build_system_prompt(fw, analysis_lang, sample=""):
@@ -118,8 +107,8 @@ def bench_coding(ep, corpus, lang, limit=None, window=CH.DEFAULT_WINDOW_CHARS,
     對整批逐字稿跑編碼，回傳計數與耗時。不寫進 analyses/。
 
     **走的路徑必須與 app.py 相同。** 這支腳本若把整份逐字稿一次送出去，
-    而 app.py 是分窗編碼——兩邊不一致的話，Table 5 量的是一個使用者
-    實際上不會遇到的行為，而那比沒有 Table 5 更糟。
+    而 app.py 是分窗編碼——兩邊不一致的話，量到的是一個使用者
+    實際上不會遇到的行為，而那比不量更糟。
 
     量的東西不只段落數、編碼數、逐字率——那三個指標分不出
     「模型有沒有在捏造」：
@@ -199,7 +188,7 @@ def bench_coding(ep, corpus, lang, limit=None, window=CH.DEFAULT_WINDOW_CHARS,
                 merged.pop("_chunk_summaries", None)
                 # 分窗編碼會吞掉單一窗口的錯誤繼續跑，這對壞 JSON 是對的；
                 # 但額度用完不是模型行為，那份紀錄只編了一半。當成完成存下
-                # 來，Table 5 的段落數就會悄悄變少。所以撞到額度就整份不算。
+                # 來，比較表裡的段落數就會悄悄變少。所以撞到額度就整份不算。
                 quota = [e for e in (merged[S.META].get("chunk_errors") or [])
                          if e["error"].startswith((LLM.RateLimited.__name__,
                                                    LLM.NotConfigured.__name__,
@@ -300,7 +289,7 @@ def bench_themes(ep, records):
 
 # ---------------------------------------------------------------------
 def markdown_table(results):
-    """兩張表：一張給 Table 5（編碼），一張給 Table 5b（歸納）。"""
+    """兩張 Markdown 表：一張是編碼的量測，一張是主題歸納的量測。"""
     out = []
     out.append("### Coding\n")
     out.append("| Model | Corpus | Transcripts | Segments | Seg/10k | Codes | "

@@ -145,7 +145,7 @@ for /f "usebackq delims=" %%i in (`"!VPY!" src\_launch_common.py port 2^>con`) d
 echo     http://localhost:!PORT!
 "!VPY!" src\_launch_common.py msg keepopen
 
-"!VPY!" -m streamlit run "%APP%" --server.port !PORT! --server.headless false --browser.gatherUsageStats false
+"!VPY!" -m streamlit run "%APP%" --server.port !PORT! --server.address localhost --server.headless false --browser.gatherUsageStats false
 
 echo.
 echo The program has stopped.

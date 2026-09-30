@@ -248,6 +248,84 @@ check("非法碼被過濾", R.codes_of(bad), ["REF-N"])
 
 print()
 print("=" * 70)
+print("測試 10：狀態由內容與原始快照的比較決定，不由最後按的按鈕決定")
+print("=" * 70)
+recs = fresh(); R.ensure_all(recs)
+segs = recs[0][S.SEGMENTS]
+R.update_codes(segs[1], ["RES-P", "REF-N"], reviewer="r")
+check("加碼後為已修改", segs[1][S.REVIEW][S.STATUS], S.STATUS_MODIFIED)
+R.confirm(segs[1], reviewer="r")
+check("再按一次確認、什麼都沒動，仍是已修改", segs[1][S.REVIEW][S.STATUS],
+      S.STATUS_MODIFIED)
+check("修改率不因再按確認而歸零", R.review_stats(recs)["modify_rate"], 0.25)
+R.update_text(segs[2], quote="研究者整句改寫過的引文", reviewer="r")
+R.confirm(segs[2], reviewer="r")
+check("改寫引文後確認記為已修改", segs[2][S.REVIEW][S.STATUS], S.STATUS_MODIFIED)
+R.update_codes(segs[1], ["RES-P"], reviewer="r")
+check("改回原始碼集合後回到已確認", segs[1][S.REVIEW][S.STATUS], S.STATUS_CONFIRMED)
+R.delete_segment(recs[0], "S1", reviewer="r")
+R.restore_segment(recs[0], "S1", reviewer="r")
+s1 = next(s for s in recs[0][S.SEGMENTS] if s[S.SEGMENT_ID] == "S1")
+check("未複核的段落刪除再還原回到未審核", s1[S.REVIEW][S.STATUS], S.STATUS_PENDING)
+check_true("還原後不殘留刪除前狀態的暫存欄位", R.PRIOR_STATUS not in s1[S.REVIEW])
+R.confirm(s1, reviewer="r")
+R.delete_segment(recs[0], "S1", reviewer="r")
+R.restore_segment(recs[0], "S1", reviewer="r")
+s1 = next(s for s in recs[0][S.SEGMENTS] if s[S.SEGMENT_ID] == "S1")
+check("已確認的段落刪除再還原仍是已確認", s1[S.REVIEW][S.STATUS], S.STATUS_CONFIRMED)
+st10 = R.review_stats(recs)
+check("確認 + 修改 + 刪除 = 已複核",
+      st10["confirmed"] + st10["modified"] + st10["deleted"], st10["reviewed"])
+
+print()
+print("=" * 70)
+print("測試 11：刪掉研究者自己補入的段落不算駁回模型；句子不得誇大複核")
+print("=" * 70)
+recs = fresh(); R.ensure_all(recs)
+m = R.add_segment(recs[0], "補入的一段", ["REF-P"], reviewer="r")
+R.delete_segment(recs[0], m[S.SEGMENT_ID], reviewer="r")
+st11 = R.review_stats(recs)
+check("刪除數只算模型段落", st11["deleted"], 0)
+check("人工段落的刪除另計", st11["human_deleted"], 1)
+check("刪除率為 0", st11["delete_rate"], 0.0)
+check("未複核 4 段", st11["pending"], 4)
+en = I.methods_sentence(R.methods_facts(recs), "en")
+check_true("有段落未複核時，英文句不宣稱全部驗證",
+           "Every code entering the analysis was verified" not in en, en[-140:])
+check_true("英文句說出未複核的段數與比例",
+           "4 segments (100.0%) remain unreviewed" in en, en[-140:])
+zh = I.methods_sentence(R.methods_facts(recs), "zh")
+check_true("中文句同樣不宣稱全部確認",
+           "皆經研究者確認" not in zh and "4 段（100.0%）未複核" in zh, zh[-60:])
+for s in recs[0][S.SEGMENTS]:
+    if s[S.REVIEW][S.SOURCE] != S.SOURCE_HUMAN:
+        R.confirm(s, reviewer="r")
+en2 = I.methods_sentence(R.methods_facts(recs), "en")
+check_true("全部複核完之後才宣稱全部驗證",
+           "Every code entering the analysis was verified" in en2
+           and "remain unreviewed" not in en2, en2[-140:])
+check_true("已複核數等於確認＋修改＋刪除",
+           R.review_stats(recs)["reviewed"] == 4)
+
+print()
+print("=" * 70)
+print("測試 12：無極性框架複核時，原有碼的理由不得丟失")
+print("=" * 70)
+import tacit_framework as F                                      # noqa: E402
+F.activate_by_id("utaut_venkatesh_2003")
+d0, d1 = S.DIMENSIONS[:2]
+seg_np = {S.SEGMENT_ID: "N1", S.TITLE: "t", S.QUOTE: "q", S.FULL_TEXT: "q",
+          S.CODES_F: [S.make_code(d0, None, "the model's reason")]}
+R.ensure_review(seg_np)
+R.update_codes(seg_np, S.codes_of(seg_np) + [S.code_of(d1)], reviewer="r")
+by_dim = {c[S.DIMENSION]: c[S.RATIONALE] for c in seg_np[S.CODES_F]}
+check("原有碼的理由保留", by_dim.get(d0), "the model's reason")
+check("新加的碼也在", sorted(by_dim), sorted([d0, d1]))
+check("狀態為已修改", seg_np[S.REVIEW][S.STATUS], S.STATUS_MODIFIED)
+F.reset()
+
+print()
+print("=" * 70)
 print(f"結果：{'全部通過 ✅' if not FAIL else '失敗項目 ' + str(FAIL)}")
 print("=" * 70)
 sys.exit(1 if FAIL else 0)

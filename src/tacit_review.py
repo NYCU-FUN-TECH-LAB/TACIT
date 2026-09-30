@@ -114,11 +114,45 @@ def _log(seg, action, detail, reviewer):
 # =====================================================================
 # 2. 編輯操作
 # =====================================================================
+# 段落被刪除前的狀態。還原時要回到那個狀態，而不是一律記成「已修改」——
+# 刪除再還原並沒有改動任何內容。
+PRIOR_STATUS = "status_before_delete"
+
+
+def is_changed(seg):
+    """
+    目前的內容跟 AI 原始快照有沒有差別（編碼、標題、引文三者任一）。
+
+    狀態由這個比較決定，不由最後按了哪個按鈕決定：同一段按兩次「確認」，
+    第二次不會把已修改的段落洗回「已確認」；把引文改寫過再按確認，記的是
+    已修改而不是已確認；改回原樣就回到已確認。
+    """
+    r = seg.get(S.REVIEW) or {}
+    if sorted(r.get(S.ORIGINAL_CODES) or []) != codes_of(seg):
+        return True
+    if (seg.get(S.TITLE) or "") != (r.get(S.ORIGINAL_TITLE) or ""):
+        return True
+    return (seg.get(S.QUOTE) or "") != (r.get(S.ORIGINAL_QUOTE) or "")
+
+
+def derive_status(seg):
+    """
+    複核後的狀態：人工新增者永遠是 added；AI 段落依 is_changed 決定
+    modified 或 confirmed。deleted 由 delete_segment 另外設定。
+    """
+    r = seg[S.REVIEW]
+    if r.get(S.SOURCE) == S.SOURCE_HUMAN or r.get(S.STATUS) == S.STATUS_ADDED:
+        return S.STATUS_ADDED
+    return S.STATUS_MODIFIED if is_changed(seg) else S.STATUS_CONFIRMED
+
+
 def confirm(seg, reviewer="researcher"):
-    """確認 AI 編碼無誤。狀態為 confirmed，不改動內容。"""
+    """
+    研究者看過這一段。狀態由內容與原始快照的比較決定：沒有差異記為
+    confirmed，有差異記為 modified——不論之前是什麼狀態。
+    """
     ensure_review(seg)
-    if seg[S.REVIEW][S.STATUS] != S.STATUS_ADDED:
-        seg[S.REVIEW][S.STATUS] = S.STATUS_CONFIRMED
+    seg[S.REVIEW][S.STATUS] = derive_status(seg)
     _log(seg, ACTION_CONFIRM, "", reviewer)
     return seg
 
@@ -138,11 +172,12 @@ def update_codes(seg, new_codes, rationales=None, reviewer="researcher"):
     keep = {}
     for c in seg.get(S.CODES_F) or []:
         dim, pol = S.norm_dimension(c.get(S.DIMENSION)), S.norm_polarity(c.get(S.POLARITY))
-        if dim in S.DIMENSIONS and pol:
+        # 無極性框架的 pol 一律是 None；理由要跟著碼留下來，判斷只看維度。
+        if dim in S.DIMENSIONS and (pol or not S.HAS_POLARITY):
             keep[S.code_of(dim, pol)] = c.get(S.RATIONALE, "")
     keep.update(rationales or {})
     seg[S.CODES_F] = codes_to_objects(sorted(new), keep)
-    seg[S.REVIEW][S.STATUS] = S.STATUS_MODIFIED
+    seg[S.REVIEW][S.STATUS] = derive_status(seg)
     _log(seg, ACTION_UPDATE_CODES,
          f"+{','.join(added) or '-'} / -{','.join(removed) or '-'}", reviewer)
     return True, added, removed
@@ -158,8 +193,7 @@ def update_text(seg, title=None, quote=None, full_text=None, reviewer="researche
             seg[field] = val
     if not changes:
         return False
-    if seg[S.REVIEW][S.STATUS] in (S.STATUS_PENDING, S.STATUS_CONFIRMED):
-        seg[S.REVIEW][S.STATUS] = S.STATUS_MODIFIED
+    seg[S.REVIEW][S.STATUS] = derive_status(seg)
     _log(seg, ACTION_UPDATE_TEXT, "; ".join(changes), reviewer)
     return True
 
@@ -170,6 +204,7 @@ def delete_segment(rec, seg_id, reason="", reviewer="researcher"):
     for i, seg in enumerate(rec.get(S.SEGMENTS, [])):
         if seg.get(S.SEGMENT_ID) == seg_id:
             ensure_review(seg)
+            seg[S.REVIEW][PRIOR_STATUS] = seg[S.REVIEW].get(S.STATUS, S.STATUS_PENDING)
             seg[S.REVIEW][S.STATUS] = S.STATUS_DELETED
             _log(seg, ACTION_DELETE, reason, reviewer)
             rec[S.DELETED_SEGMENTS].append(rec[S.SEGMENTS].pop(i))
@@ -178,9 +213,23 @@ def delete_segment(rec, seg_id, reason="", reviewer="researcher"):
 
 
 def restore_segment(rec, seg_id, reviewer="researcher"):
+    """
+    還原被刪除的段落。狀態回到刪除前的樣子：內容跟原始快照有差異就是
+    modified，沒有差異就回到刪除前記的狀態（pending 或 confirmed）——
+    刪除再還原本身不算一次修改。
+    """
     for i, seg in enumerate(rec.get(S.DELETED_SEGMENTS, [])):
         if seg.get(S.SEGMENT_ID) == seg_id:
-            seg[S.REVIEW][S.STATUS] = S.STATUS_MODIFIED
+            ensure_review(seg)
+            prior = seg[S.REVIEW].pop(PRIOR_STATUS, S.STATUS_PENDING)
+            if seg[S.REVIEW].get(S.SOURCE) == S.SOURCE_HUMAN:
+                seg[S.REVIEW][S.STATUS] = S.STATUS_ADDED
+            elif is_changed(seg):
+                seg[S.REVIEW][S.STATUS] = S.STATUS_MODIFIED
+            else:
+                seg[S.REVIEW][S.STATUS] = (prior if prior in (S.STATUS_PENDING,
+                                                              S.STATUS_CONFIRMED)
+                                           else S.STATUS_PENDING)
             _log(seg, ACTION_RESTORE, "", reviewer)
             rec.setdefault(S.SEGMENTS, []).append(rec[S.DELETED_SEGMENTS].pop(i))
             return True
@@ -285,7 +334,12 @@ def review_stats(records):
     reviewed = sum(1 for s in ai_origin if s[S.REVIEW][S.STATUS] != S.STATUS_PENDING)
     modified = sum(1 for s in ai_origin if s[S.REVIEW][S.STATUS] == S.STATUS_MODIFIED)
     confirmed = sum(1 for s in ai_origin if s[S.REVIEW][S.STATUS] == S.STATUS_CONFIRMED)
+    # 「刪除」只算模型產出的段落：研究者刪掉自己補入的段落，不是駁回模型。
+    # 這樣 confirmed + modified + deleted 才等於 reviewed。
+    ai_deleted = sum(1 for s in ai_origin if s[S.REVIEW][S.STATUS] == S.STATUS_DELETED)
     added = sum(1 for s in alive if s[S.REVIEW].get(S.SOURCE) == S.SOURCE_HUMAN)
+    human_deleted = sum(1 for s in deleted
+                        if s[S.REVIEW].get(S.SOURCE) == S.SOURCE_HUMAN)
 
     def pct(a, b):
         return round(a / b, 3) if b else None
@@ -298,9 +352,10 @@ def review_stats(records):
         "confirm_rate": pct(confirmed, n_ai),
         "modified": modified,
         "modify_rate": pct(modified, n_ai),
-        "deleted": len(deleted),
-        "delete_rate": pct(len(deleted), n_ai),
+        "deleted": ai_deleted,
+        "delete_rate": pct(ai_deleted, n_ai),
         "human_added": added,
+        "human_deleted": human_deleted,
         "active_segments": len(alive),
         "pending": sum(1 for s in alive if s[S.REVIEW][S.STATUS] == S.STATUS_PENDING),
     }

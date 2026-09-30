@@ -342,7 +342,7 @@ _ns = {"os": os, "json": json, "re": __import__("re"),
        "datetime": __import__("datetime").datetime,
        "S": S, "F": F, "SAVE_DIR": tempfile.mkdtemp()}
 _app_src = open(APP, encoding="utf-8").read()
-exec(_app_src[_app_src.index("def save_record"):
+exec(_app_src[_app_src.index("def unique_filename"):
               _app_src.index("def load_records_from_dir")], _ns)
 _save = _ns["save_record"]
 
@@ -607,6 +607,18 @@ for lang in I.LANGS:
 ok("英文字串不含中文",
    not any(any("一" <= ch <= "鿿" for ch in I.t(k, "en"))
            for k in I.STRINGS))
+# 巢套觀察的提示：一人一列讓觀察獨立，但期望次數多半會不足、p 會被扣住。
+# 不能說那張表「兩個前提都符合」。
+ok("巢套提示不再宣稱一人一列的表符合兩個前提",
+   "meets both assumptions" not in I.t("cross.chi_nested", "en")
+   and "withhold p" in I.t("cross.chi_nested", "en"))
+ok("中文版同樣講明 p 會被扣住", "扣住 p 值" in I.t("cross.chi_nested", "zh"))
+ok("引用守門的標籤叫 Citation guard",
+   I.t("fw.guard_blocked", "en").startswith("Citation guard")
+   and "Hallucination" not in I.t("fw.guard_blocked", "en"))
+ok("中文標籤叫引用防護",
+   I.t("fw.guard_blocked", "zh").startswith("引用防護")
+   and "幻覺" not in I.t("fw.guard_blocked", "zh"))
 
 print()
 print("=" * 70)
@@ -906,6 +918,156 @@ _pend = _mode_view("open", _pending_mode="framework")
 ok("定案後的下一輪自動切回框架模式",
    not _pend.exception and _pend.session_state["coding_mode"] == "framework",
    str(_pend.session_state["coding_mode"]) if not _pend.exception else "exception")
+# 定案的結果訊息留到重跑之後才顯示
+_note = _mode_view("open", _pending_mode="framework", codebook=_cb,
+                   open_records=[], _cb_fw_note=(3, "induced_x.json", 2))
+ok("定案後重跑的那一輪顯示結果訊息",
+   not _note.exception and any(
+       "induced_x.json" in str(x.value) and "2 record" in str(x.value)
+       for x in _note.success),
+   str([str(x.value)[:80] for x in _note.success]))
+ok("結果訊息只顯示一次", "_cb_fw_note" not in _note.session_state)
+F.reset()
+
+print()
+print("=" * 70)
+print("測試 17：介面上的編碼選單不得蓋掉匯入的編碼表")
+print("=" * 70)
+# 「直接在介面上編碼」的十個選單一建立就是空的。它們的值若每一輪都寫回
+# 工作階段，匯入的編碼表就會被這十個空選單蓋掉，而信度是從那份壞掉的
+# 資料算出來的。只有按「儲存這一頁」才寫入。
+F.reset()
+_s17 = _IR.create_session(_IR.stratified_sample(_frame, n=100, seed=1),
+                          ["coder_a", "coder_b"], seed=1)
+_u17 = [u[S.UNIT_ID] for u in _s17[S.UNITS]]
+_s17[S.HUMAN_CODINGS] = {"coder_a": {u: ["ANT-P"] for u in _u17}, "coder_b": {}}
+_state17 = {"ui_lang": "en", "records": [], "irr_frame": _frame,
+            "irr_diag": _diag, "irr_human_only": True, "irr_session": _s17,
+            "irr_who": "coder_a", "irr_pg": 1}
+_at = run_app(_state17)
+ok("打開回收頁籤不例外", not _at.exception,
+   str(_at.exception[0].value)[:200] if _at.exception else "")
+if not _at.exception:
+    _hc = _at.session_state["irr_session"][S.HUMAN_CODINGS]
+    ok("匯入的編碼一個都沒被畫面上的選單清掉",
+       all(_hc["coder_a"].get(u) == ["ANT-P"] for u in _u17),
+       str([u for u in _u17 if _hc["coder_a"].get(u) != ["ANT-P"]][:5]))
+    ok("只是打開頁籤，另一位編碼者不會冒出空的編碼", _hc["coder_b"] == {},
+       str(list(_hc["coder_b"])[:5]))
+    _md = " ".join(str(m.value) for m in _at.markdown)
+    ok("回收數照實：coder_b 0 筆", f"0/{len(_u17)} received" in _md, _md[-200:])
+    ok("報表選單不會因為打開頁籤而多出一位編碼者",
+       all("coder_b" not in (s.options or []) for s in _at.selectbox
+           if s.label == I.t("ir.coder_a", "en")))
+# 以 coder_b 身分按「儲存這一頁」，這一頁的十個單元才寫進去；coder_a 不動
+_state17b = dict(_state17, irr_who="coder_b")
+_at = run_app(_state17b)
+if not _at.exception:
+    _at.button(key="btn_save_manual").click().run()
+    _hc = _at.session_state["irr_session"][S.HUMAN_CODINGS]
+    ok("儲存這一頁之後才記錄這一頁的單元",
+       len(_hc["coder_b"]) == min(10, len(_u17)), str(len(_hc["coder_b"])))
+    ok("儲存的是這一頁的單元", set(_hc["coder_b"]) == set(_u17[:10]))
+    ok("另一位編碼者的匯入結果不受影響",
+       all(_hc["coder_a"].get(u) == ["ANT-P"] for u in _u17))
+F.reset()
+
+print()
+print("=" * 70)
+print("測試 17a：側欄與執行頁籤的預設值跟著供應者走；開放編碼的語料詞由使用者說")
+print("=" * 70)
+# 地端服務沒有速率上限，每份稿件之間不必等；預設模型要是一顆對話模型，
+# 不是清單裡字母排序最前面的那一顆。
+F.reset()
+_at = run_app({"ui_lang": "en", "records": [], "llm_provider": "ollama",
+               "llm_base_url": "http://127.0.0.1:9"})
+ok("地端供應者：間隔秒數預設 0",
+   not _at.exception and any(s.label == I.t("run.delay", "en") and s.value == 0
+                             for s in _at.slider),
+   str([(s.label, s.value) for s in _at.slider][:3]))
+_at = run_app({"ui_lang": "en", "records": [], "llm_provider": "gemini"})
+ok("雲端供應者：間隔秒數預設 10",
+   not _at.exception and any(s.label == I.t("run.delay", "en") and s.value == 10
+                             for s in _at.slider),
+   str([(s.label, s.value) for s in _at.slider][:3]))
+ok("預設模型函式跳過嵌入與程式碼模型",
+   LLM.default_model(["codellama:7b", "nomic-embed-text", "llama3.1:8b-instruct"])
+   == "llama3.1:8b-instruct")
+_at = run_app({"ui_lang": "en", "records": [], "coding_mode": "open"})
+_ct = [x for x in _at.text_input if x.label == I.t("run.open_corpus_term", "en")]
+ok("開放編碼有「語料是什麼」的輸入欄，預設是中性的 document",
+   bool(_ct) and str(_ct[0].value) == "document",
+   str([(x.label, x.value) for x in _at.text_input][:4]))
+ok("開放編碼的提示詞不再從框架推語料詞",
+   'corpus_term=FW.corpus_term' not in open(APP, encoding="utf-8").read())
+F.reset()
+
+print()
+print("=" * 70)
+print("測試 17b：不用模型的分群預設以 0.85 的停止距離收斂，固定群數是另一種選擇")
+print("=" * 70)
+# 引擎接受停止距離；介面若一律傳固定群數，這條規則永遠不會生效，
+# 不相干的碼會在接近 1 的距離被硬湊成幾組。
+import tacit_themes as _RT                                       # noqa: E402
+
+F.reset()
+_at = run_app({"ui_lang": "en", "records": ri_records()})
+ok("主題頁籤渲染無例外", not _at.exception,
+   str(_at.exception[0].value)[:200] if _at.exception else "")
+if not _at.exception:
+    _stop = [n for n in _at.number_input if n.label == I.t("th.stop_distance", "en")]
+    ok("有停止距離的輸入欄", bool(_stop), str([n.label for n in _at.number_input][:8]))
+    ok("預設 0.85", bool(_stop) and abs(float(_stop[0].value) - 0.85) < 1e-9,
+       str(_stop[0].value) if _stop else "")
+    ok("預設不顯示固定群數欄",
+       not any(n.label == I.t("th.nomodel_k", "en") for n in _at.number_input))
+    _at.button(key="btn_cluster").click().run()
+    _groups = _at.session_state["code_clusters"]
+    ok("分群跑出結果", bool(_groups), str(_groups)[:80])
+    ok("超過 0.85 的合併沒有發生",
+       all(g[_RT.CLUSTER_DISTANCE] <= 0.85 for g in _groups
+           if len(g[_RT.CLUSTER_MEMBER_CODES]) > 1),
+       str([g[_RT.CLUSTER_DISTANCE] for g in _groups]))
+    ok("停止規則記在工作階段裡",
+       (_at.session_state["cluster_stop"] or {}).get("rule") == "distance"
+       and (_at.session_state["cluster_stop"] or {}).get("max_distance") == 0.85)
+    # 固定群數仍然可選
+    _at.radio(key="th_stop_rule").set_value("k").run()
+    ok("切到固定群數後出現群數欄",
+       any(n.label == I.t("th.nomodel_k", "en") for n in _at.number_input))
+    _at.button(key="btn_cluster").click().run()
+    ok("固定群數的規則記下來", (_at.session_state["cluster_stop"] or {}).get("rule") == "k")
+F.reset()
+
+print()
+print("=" * 70)
+print("測試 18：執行中斷的提醒，與同名紀錄的複核選單")
+print("=" * 70)
+F.reset()
+_at = run_app({"ui_lang": "en", "records": [], "_run_active": True})
+ok("上一輪沒跑完時提醒使用者",
+   not _at.exception and any(I.t("run.interrupted", "en")[:40] in str(w.value)
+                             for w in _at.warning),
+   str([str(w.value)[:60] for w in _at.warning]))
+ok("提醒的記號用過就清掉", "_run_active" not in _at.session_state)
+_at2 = run_app({"ui_lang": "en", "records": []})
+ok("正常啟動沒有這個提醒",
+   not any(I.t("run.interrupted", "en")[:40] in str(w.value) for w in _at2.warning))
+
+# 兩筆同名紀錄：複核選單要列出每一筆，資料頁籤要提醒同名
+_dup = ri_records() + ri_records()[:1]
+_at = run_app({"ui_lang": "en", "records": _dup})
+ok("同名紀錄不會讓頁籤炸掉", not _at.exception,
+   str(_at.exception[0].value)[:200] if _at.exception else "")
+if not _at.exception:
+    _box = [s for s in _at.selectbox if s.label == I.t("common.respondent", "en")]
+    ok("複核選單列出三筆、同名者可分辨",
+       any(len(set(s.options)) == 3 for s in _box),
+       str([s.options for s in _box]))
+    ok("資料頁籤提醒同名",
+       any(I.t("data.dup_names", "en")[:16].split("{")[0] in str(w.value)
+           or "appear on more than one" in str(w.value) for w in _at.warning),
+       str([str(w.value)[:60] for w in _at.warning]))
 F.reset()
 
 print()

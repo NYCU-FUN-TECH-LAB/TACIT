@@ -1,10 +1,10 @@
 """
-驗證 tacit_openalex.py：檢索客戶端、摘要還原、幻覺防護、人工核可、出處紀錄。
+驗證 tacit_openalex.py：檢索客戶端、摘要還原、引用防護、人工核可、出處紀錄。
 
 完全不碰網路。假的 HTTP 層覆寫 Client._fetch，因此參數組裝、快取、
 額度計算都會被實際執行到，只有最後那一步網路呼叫被換掉。
 
-最關鍵的一組是「幻覺防護」：模型引用一篇沒有被檢索到的文獻時，
+最關鍵的一組是「引用防護」：模型引用一篇沒有被檢索到的文獻時，
 系統必須拒絕，而不是照單全收。編碼框架是整份研究的效度根基，
 在這裡放行等於讓整條分析管線建立在杜撰的文獻上。
 """
@@ -259,6 +259,28 @@ with tempfile.TemporaryDirectory() as d:
     check("無金鑰時 rate_limit 不浪費呼叫",
           FakeClient(cache_dir=d, min_interval=0).rate_limit()["error"], "no api key")
 
+    # 暫時性的 429（搜尋叢集忙碌，帶 Retry-After）跟每日額度用完是兩件事：
+    # 訊息要把秒數與伺服器的話原樣帶出來，不能一律說成「沒有金鑰只有 100 credits」。
+    import io
+
+    def http_429_retry_after(url):
+        raise urllib.error.HTTPError(
+            url, 429, "Too Many Requests", {"Retry-After": "39"},
+            io.BytesIO(b'{"error": "rate limited", "message": "Anonymous search is '
+                       b'temporarily rate-limited while the search cluster is under '
+                       b'elevated load. Please retry in 39s"}'))
+
+    c = FakeClient(cache_dir=d, min_interval=0, script=http_429_retry_after)
+    try:
+        c.works(search="q429ra")
+        check_true("帶 Retry-After 的 429 應拋 QuotaError", False)
+    except OA.QuotaError as e:
+        check_true("帶 Retry-After 的 429 應拋 QuotaError", True)
+        check_true("訊息說出幾秒後重試", "39 seconds" in str(e), str(e)[:120])
+        check_true("訊息帶出伺服器的話", "search cluster" in str(e), str(e)[:200])
+        check_true("不再說成每日額度用完", "credits per day" not in str(e), str(e)[:200])
+        check("Retry-After 記在客戶端", c.retry_after, 39)
+
 print()
 print("=" * 70)
 print("測試 4：檢索策略（兩趟：奠基 + 近年）")
@@ -436,7 +458,7 @@ check_true("草稿可載入為 Framework 物件", F.load_dict(draft).id == "resp
 
 print()
 print("=" * 70)
-print("測試 7：幻覺防護（本模組存在的理由）")
+print("測試 7：引用防護（本模組存在的理由）")
 print("=" * 70)
 halluc = json.loads(good_draft())
 halluc["dimensions"][0]["grounding_refs"] = ["W1", "W99"]
@@ -612,9 +634,9 @@ for lang in ("en", "zh"):
     check_true(f"{lang} 方法句含檢索數", "6" in s)
     check_true(f"{lang} 方法句含核可者", "Hung Chi" in s)
     check_true(f"{lang} 方法句夠完整", len(s) > 150, f"{len(s)} 字")
-check_true("英文方法句說明了幻覺防護",
+check_true("英文方法句說明了引用防護",
            "rejected programmatically" in OA.methods_sentence(facts, "en"))
-check_true("中文方法句說明了幻覺防護",
+check_true("中文方法句說明了引用防護",
            "一律拒絕" in OA.methods_sentence(facts, "zh"))
 
 bib = OA.bibliography(fw)

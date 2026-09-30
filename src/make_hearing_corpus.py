@@ -21,8 +21,14 @@ make_hearing_corpus.py — 從美國國會聽證會逐字稿建立公開示範�
 的回答」。證人的**書面**聲明不收，因為那部分理論上可能仍有著作權，且不是
 口語資料；只收會議記錄員逐字記下的口頭發言。
 
-證人本來就分產業、學界、政府、公民團體四類，跟原本示範語料的
-institution_type 四值直接對應，Table 6 的交叉表設計不必改。
+證人分產業、學界、政府、公民團體四類，對應合成示範語料 institution_type
+的四個值，所以依機構類型分層的交叉表在兩份語料上可以同樣使用。
+
+語料規模
+--------
+22 場聽證會、80 位證人，全部隨軟體附上。manifest 的 paper_subset 欄位另外
+標出一個 24 人子集：四個部門各 6 位，以固定種子分層隨機抽出（見
+select_paper_subset）。
 
 輸出
 ----
@@ -32,7 +38,9 @@ institution_type 四值直接對應，Table 6 的交叉表設計不必改。
                                           職稱、機構、部門判定、字元數
   demo_data/hearings/00_ABOUT_THIS_DATA.txt
 
-部門判定是關鍵字猜的，manifest 裡標 needs_review；定案前要人工看一遍。
+部門與職級先由關鍵字規則（SECTOR_RULES、ROLE_RULES）判定，再以 OVERRIDES
+裡的人工指派覆蓋。manifest 的 needs_review 記錄該證人是否只有規則判定而
+沒有人工指派。
 """
 import argparse
 import html
@@ -109,8 +117,20 @@ ROLE_RULES = [
 
 # 人工複核（2026-09-17）。關鍵字規則猜錯或缺資料的，在這裡改；
 # 沒列在這裡的證人維持規則判定，manifest 標 needs_review。
-# 鍵是 (hearing id, 姓氏)。institution_type 用原本示範語料的四值。
+# 鍵是 (hearing id, 姓氏)。institution_type 用合成示範語料的四值。
 OVERRIDES = {
+    # 2026-09-30 人工確認的 24 人子集其餘證人（規則判定與人工判定相同）。
+    ("CHRG-118shrg52483", "Venkatasubramanian"): {"institution_type": "academia"},
+    ("CHRG-118shrg52785", "Ariga"): {"institution_type": "government"},
+    ("CHRG-118shrg52785", "Eppink"): {"institution_type": "nonprofit"},
+    ("CHRG-118shrg53503", "Russell"): {"institution_type": "academia"},
+    ("CHRG-118shrg53879", "Smith"): {"institution_type": "industry"},
+    ("CHRG-118shrg59704", "Espinel"): {"institution_type": "industry"},
+    ("CHRG-118shrg53707", "Ghani"): {"institution_type": "academia"},
+    ("CHRG-118shrg53707", "Li"): {"institution_type": "academia"},
+    ("CHRG-118hhrg55220", "Chilson"): {"institution_type": "nonprofit"},
+    ("CHRG-118shrg61871", "Kak"): {"institution_type": "nonprofit"},
+    ("CHRG-118shrg63050", "Saunders"): {"institution_type": "industry"},
     ("CHRG-118shrg52483", "Matheny"): {"institution_type": "nonprofit"},      # RAND 是非營利
     ("CHRG-118hhrg52499", "Matheny"): {"institution_type": "nonprofit"},
     ("CHRG-118hhrg52499", "Delangue"): {"institution_type": "industry"},
@@ -162,11 +182,12 @@ SUBSET_SECTORS = ("industry", "academia", "government", "nonprofit")
 
 def select_paper_subset(manifest, per=SUBSET_PER_SECTOR, seed=SUBSET_SEED):
     """
-    稿件用的 24 人子集：四個部門各 6 位，固定種子的分層隨機抽樣。
+    示範用的 24 人子集（manifest 的 paper_subset）：四個部門各 6 位，固定種子
+    的分層隨機抽樣。
 
     為什麼要子集：全部 80 份約 160 萬字元，雲端免費額度跑不完，地端要好幾個
-    小時；而稿件的示範只需要一個四類各六人的語料——跟原本合成語料同一個設計，
-    Table 6 的交叉表敘事不必改。全部 80 份仍然出貨，使用者可以自己跑。
+    小時。四類各六人與合成示範語料是同一個設計，依機構類型分層的交叉表在兩份
+    語料上可以同樣使用。全部 80 份都隨軟體附上，子集只是 manifest 裡的標記。
 
     同一個人出席多場聽證會時只抽一次（Thierer 出席四場），否則「24 位受訪者」
     其實不到 24 個人。抽樣是隨機的而不是挑的：挑長度適中或內容漂亮的證詞，

@@ -18,6 +18,7 @@ research-data/
 *.docx
 !demo_data/en/*.docx
 !demo_data/zh/*.docx
+!demo_data/hearings/en/*.docx
 
 # ---------------------------------------------------------------------
 # 金鑰
@@ -55,9 +56,6 @@ paper/*
 !paper/fig*.png
 !paper/fig*.svg
 !paper/make_fig*.py
-!paper/*.ps1
-!paper/package.json
-!paper/package-lock.json
 paper/*_old.png
 
 # ---------------------------------------------------------------------

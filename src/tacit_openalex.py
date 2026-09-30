@@ -125,6 +125,7 @@ class Client:
         self.credits_remaining = None
         self.calls = 0
         self.cache_hits = 0
+        self.retry_after = None       # 最近一次 429/409 附帶的 Retry-After 秒數
         self._last_call = 0.0
         if cache_dir:
             os.makedirs(cache_dir, exist_ok=True)
@@ -261,9 +262,11 @@ class Client:
             rem = headers.get("X-RateLimit-Remaining")
             used = headers.get("X-RateLimit-Credits-Used")
         except urllib.error.HTTPError as e:
-            # 公告寫 409、文件寫 429，兩者都可能出現，一律當成額度問題。
+            # 公告寫 409、文件寫 429，兩者都可能出現，一律當成額度問題——
+            # 但要分得出「今天的額度用完了」與「搜尋叢集忙碌，幾十秒後再試」：
+            # 後者帶 Retry-After，訊息裡要把伺服器的話與秒數原樣帶出來。
             if e.code in (409, 429):
-                raise QuotaError(self._quota_message(e.code)) from e
+                raise QuotaError(self._quota_message(e.code, e)) from e
             if e.code in (401, 403):
                 raise OpenAlexError(
                     f"HTTP {e.code}: API key rejected. Check the key at "
@@ -286,15 +289,32 @@ class Client:
             self._cache_write(url_no_key, payload)
         return payload
 
-    def _quota_message(self, code):
+    def _quota_message(self, code, err=None):
+        retry_after, server_msg = None, ""
+        if err is not None:
+            hdrs = getattr(err, "headers", None) or {}
+            ra = str(hdrs.get("Retry-After") or "").strip()
+            retry_after = int(ra) if ra.isdigit() else None
+            try:
+                body = err.read().decode("utf-8", "replace")
+                parsed = json.loads(body)
+                server_msg = str((parsed.get("message") or parsed.get("error")
+                                  or "") if isinstance(parsed, dict) else "").strip()
+            except Exception:                                # noqa: BLE001
+                server_msg = ""
+        self.retry_after = retry_after
+        tail = f" Server message: {server_msg[:300]}" if server_msg else ""
+        if retry_after:
+            return (f"HTTP {code}: OpenAlex is rate-limiting this request "
+                    f"right now; retry in {retry_after} seconds.{tail}")
         if self.has_key:
             return (f"HTTP {code}: daily credit limit reached "
                     f"({DAILY_CREDITS_WITH_KEY:,}/day) or more than 100 requests "
-                    f"per second. Credits reset at midnight UTC.")
+                    f"per second. Credits reset at midnight UTC.{tail}")
         return (f"HTTP {code}: without an API key you only get "
                 f"{DAILY_CREDITS_NO_KEY} credits per day "
                 f"(about {DAILY_CREDITS_NO_KEY // CREDITS_LIST} searches). "
-                f"Get a free key at {API_KEY_URL}")
+                f"Get a free key at {API_KEY_URL}{tail}")
 
     # --- 端點 ---
     def works(self, search=None, filters=None, per_page=25, sort=None, page=1,

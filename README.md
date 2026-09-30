@@ -5,7 +5,7 @@
 A Streamlit application that codes interview transcripts against a *pluggable*
 theoretical framework, keeps interpretive authority with the researcher, and
 reports the statistics a reader will actually ask for — including inter-rater
-reliability computed from genuine double-blind double coding.
+reliability computed from blind double coding.
 
 Language models can run **entirely on your own machine**, so transcripts need
 not leave it.
@@ -28,7 +28,7 @@ A coding framework is the validity foundation of the whole study. Asking a model
 to recall the dimensions of a theory produces output that is plausible and
 partly invented, including citations to work that does not exist. Here you
 retrieve literature from OpenAlex, the model drafts dimensions *from the
-retrieved abstracts*, and a hallucination guard rejects any citation that was
+retrieved abstracts*, and a citation guard rejects any citation that was
 not actually retrieved. You then approve the framework dimension by dimension,
 under your own name.
 
@@ -58,8 +58,7 @@ whereas a local model has a fixed weight file you can name in a paper.
 
 | | |
 |---|---|
-| **Manual (English)** | `docs/TACIT_User-Manual_en.pdf` |
-| **Manual (中文)** | `docs/TACIT_User-Manual_zh.pdf` |
+| **Manual** | `docs/manual_source/` (English and Traditional Chinese; built with `make_manual.py`) |
 | **Demo corpora** | 80 witness transcripts from U.S. congressional hearings on AI governance (public domain) · 24 synthetic English interviews with reference codings · 6 Traditional Chinese |
 
 The synthetic interviews ship with **a reference coding for every one of
@@ -158,8 +157,10 @@ tacit-qda
 frameworks, analyses and lexicons are read from and written there, and the four
 shipped frameworks are copied into `frameworks/` on first use. Arguments after
 the command go to `streamlit run` (for example `tacit-qda --server.port 8600`).
-The demonstration corpora and benchmark scripts are in this repository, not in
-the package. `pip install "tacit-qda[zh]"` adds the Traditional Chinese segmenter.
+The package carries the engines, the interface and the four frameworks. The
+demonstration corpora, the reference codings and the archived benchmark outputs
+are in this repository and in the Zenodo archive, not in the package, so
+reproducing the numbers below needs a clone or the archive. `pip install "tacit-qda[zh]"` adds the Traditional Chinese segmenter.
 
 The engines can also be used from a script:
 
@@ -211,10 +212,13 @@ returns well-formed JSON — so your coding looks complete while half the
 transcript was never read. This is the most dangerous failure mode in local
 deployment precisely because nothing goes wrong on screen.
 
-TACIT therefore sets the context window explicitly (default 32,768), exposes it
-in the sidebar, estimates the prompt length before sending, and **refuses to
-send a prompt that would not fit**. Raise it for long transcripts; it costs
-memory, roughly 0.5–2 GB per 32k tokens depending on the model.
+TACIT therefore sets the context window explicitly (default 32,768, capped at
+the model's own context length as reported by the server), exposes it in the
+sidebar, estimates the prompt length before sending, and **refuses to send a
+prompt that would not fit**. After each call it compares the server's count of
+prompt tokens with the estimate and reports a truncated prompt as an error
+rather than a result. Raise the window for long transcripts; it costs memory,
+roughly 0.5–2 GB per 32k tokens depending on the model.
 
 ### Batch and scripted runs
 
@@ -239,7 +243,7 @@ reproduced.
 
 ## Pluggable frameworks
 
-Three frameworks ship with the tool, and they are deliberately unalike — each
+Four frameworks ship with the tool, and they are deliberately unalike — each
 one exercises a different part of the framework contract:
 
 | Framework | Dimensions | Polarity | Field | What it tests |
@@ -247,6 +251,7 @@ one exercises a different part of the framework contract:
 | `ri_stilgoe_2013` | Anticipation, Reflexivity, Engagement, Responsiveness | yes, `P`/`N` → 8 codes | Responsible innovation | the default |
 | `utaut_venkatesh_2003` | Performance expectancy, Effort expectancy, Social influence, Facilitating conditions | none → 4 codes | Technology acceptance | a framework with **no polarity model** |
 | `esg_disclosure_probe` | Targets and baselines, Measurement and boundary, Governance and accountability, Stakeholder engagement | yes, `S`/`A` → 8 codes | Sustainability disclosure | polarity values that are **not** `P`/`N`; a non-interview corpus |
+| `tdf_cane_2012` | the fourteen domains of the Theoretical Domains Framework | none → 14 codes | Behaviour change | a framework with **many** dimensions and no polarity |
 
 None of them is hard-coded. Dimensions, polarity values, descriptor fields and
 interface labels live in a JSON file, and the analysis engines, prompts and
@@ -284,7 +289,7 @@ Two corpora ship, and they are different kinds of thing. Do not mix them up.
 | Use it for | open coding, screenshots, anything you want a reader to be able to verify | statistics, agreement against a fixed standard, regression tests | CKIP segmentation, language routing |
 
 **The hearings** are U.S. congressional hearings on artificial-intelligence
-governance, March 2023 to June 2025, retrieved from
+governance, March 2023 to September 2025, retrieved from
 [govinfo.gov](https://www.govinfo.gov) and in the public domain under
 17 U.S.C. § 105. The record was split at witness level, one file per speaker;
 prepared statements reprinted in the record were left out because they are
@@ -321,12 +326,12 @@ With 24 respondents the corpus produces:
 
 | Quantity | Value |
 |---|---|
-| Coded segments | 148, of which 36 (24%) are coded more than once |
-| Codes assigned | 184 (one per researcher judgement) |
+| Coded segments | 148, of which 36 (24%) carry more than one annotation judgement |
+| Codes assigned | 184 judgements, 181 distinct segment × code (three segments repeat a code with a second rationale) |
 | Analysis units | 181 distinct segment × dimension × polarity |
-| Reliability sampling frame | 299 units, **174 of them unmarked** |
+| Reliability sampling frame | 139 respondent turns (122 interviewer turns and 48 header lines counted and kept out); the reference coding marks 138, the first cloud run 127 |
 | Institution type × polarity | χ²(3) = 10.04, *p* = .018, *V* = .236, min. expected 18.1 |
-| Institution type × dimension | χ²(9) = 7.19, *p* = .617, *V* = .115, assumptions met |
+| Institution type × dimension | χ²(9) = 7.19, *p* = .617, *V* = .115, expected counts adequate, units nested in respondents |
 | Institution type × full code set | assumptions not met, p value withheld |
 
 Those three rows are all deliberate: one significant, one null with assumptions
@@ -376,13 +381,14 @@ sidebar states which case you are in.
 
 | Tab | Purpose |
 |---|---|
-| Run analysis | Code transcripts against the active framework. The only step that uses model capacity |
+| Run analysis | Code transcripts against the active framework, or in open mode with an accumulating codebook |
+| Codebook | The open-coding codebook: near-duplicate pairs, merge history, singletons, new-code rate per document, and freezing the codebook as a framework |
 | Data & descriptors | Edit respondent attributes; these drive every later comparison |
 | Code review | Confirm, revise, delete or add codes. Full audit trail |
 | Cross-analysis | Crosstabs, co-occurrence, cross-case matrix, polarity balance |
 | Theme structure | Two-stage inductive theme induction with a model, or model-free grouping of the codes by co-occurrence or label similarity which you name yourself; Gioia data structure figure with SVG export |
 | Lexicon induction | Term discovery, log-odds feature induction, dictionary baseline for auditing the model |
-| Reliability | Sampling frame from records or from transcripts you upload, double-blind coding sheets, κ / PABAK / AC1 / Krippendorff α, confusion matrices, model precision and recall, and human codings turned back into analysable records |
+| Reliability | Sampling frame of respondent turns from records or from transcripts you upload, blind coding sheets, κ / PABAK / AC1 / Krippendorff α, confusion matrices, model precision and recall, and human codings turned back into analysable records |
 | Export | Excel, Word, JSON |
 | Framework builder | Retrieve literature from OpenAlex, draft dimensions, approve them individually |
 
@@ -390,37 +396,42 @@ sidebar states which case you are in.
 
 ## Reproducing the numbers in the paper
 
-Every figure quoted in the SoftwareX article comes from one of the scripts
-below, and each writes its raw output under `bench_out/`, which is kept in this
-repository. Run them from the project root with the virtual environment active.
+Every number in the SoftwareX article comes from a script below. The raw
+outputs of every model run are archived under `bench_out/`, so the tables can
+be recomputed without a model; the model runs themselves can be repeated, but
+sampling and, for cloud models, changing weights mean a repeat is comparable,
+not identical. Run everything from the project root with the virtual
+environment active.
 
-| What it produces | Command |
+**Recompute from the archive (no model, no key):**
+
+| Article item | Command |
 |---|---|
-| Demonstration corpus and reference codings (Table 7) | `python src/make_demo_data.py` then `python run_tests.py demo` |
-| Model comparison: segments, codes, κ against the reference codings, wall time (Table 6) | `python src/bench_models.py --provider ollama --models llama3:8b` |
-| The same for a cloud model | `python src/bench_models.py --provider gemini --models gemini-3.5-flash-lite --api-key <key>` |
-| Agreement against the reference codings on the 299-unit frame (Section 3) | `python src/bench_agreement.py bench_out/local_8b/records/llama3_8b/en` |
-| Single-pass against windowed yield (Section 2.4) | `python src/bench_yield.py --model llama3:8b` |
-| Open coding, one run on the twelve-transcript subset (Table 8) | `python src/bench_open_coding.py --corpus hearings --model llama3:8b --per-sector 3 --tag 12_run1` |
-| The same with a cloud model | `python src/bench_open_coding.py --corpus hearings --provider gemini --model gemini-3.5-flash-lite --per-sector 3 --tag 12_run1` |
-| Table 8 itself: median and range over the archived runs, no model needed | `python src/bench_open_summary.py` |
-| Figure 2, computed from the shipped context formula | `python paper/make_fig2.py` |
+| Table 3 (segments, codes, precision, recall, κ, minutes per endpoint; median and range over the archived runs) and the per-run detail behind the Section 3 agreement paragraph | `python src/bench_models_summary.py` |
+| Table 4 (the demonstration corpus and its crosstabs) | `python src/make_demo_data.py` then `python run_tests.py demo` — the test prints and checks every row |
+| Table 5 (open coding of the twelve hearing transcripts, median and range over the archived runs) and the 24-transcript run (352 codes, 972 candidate merges, 167 after merging) | `python src/bench_open_summary.py` |
+| Section 2.4, single pass against windowed coding (5 against 90 segments) | `bench_out/yield/yield.json` holds the archived runs; `python src/bench_yield.py --model qwen2.5:7b --num-ctx 32768 --max-chars 60000 --group ""` repeats them |
+| Section 3, one archived run on the reliability frame | `python src/bench_agreement.py bench_out/cloud_lite_run1/records/gemini-3.5-flash-lite/en` |
+| Figure 2, the context-window budget | `python paper/make_fig2.py` |
 | Figure 6, the three-level data structure | `python paper/make_fig6.py` |
 
-Two caveats about exactness.
+**Repeat a model run (writes a new folder under `bench_out/`):**
 
-**The cloud row cannot be reproduced identically.** Weights behind a stable
-version string change and older versions are withdrawn, which is one of the
-arguments the article makes. The archived outputs under
-`bench_out/cloud/` are therefore the record of what that run did; re-running
-gives a comparable but not identical result.
+| Run | Command |
+|---|---|
+| Table 3, one local endpoint | `python src/bench_models.py --provider ollama --models llama3:8b --corpus en` |
+| Table 3, the cloud endpoint | `python src/bench_models.py --provider gemini --models gemini-3.5-flash-lite --corpus en` with the key in `TACIT_API_KEY` |
+| Table 5, one open-coding run on the twelve-transcript subset | `python src/bench_open_coding.py --corpus hearings --model llama3:8b --per-sector 3 --tag 12_run4` |
+| The same with the cloud model | `python src/bench_open_coding.py --corpus hearings --provider gemini --model gemini-3.5-flash-lite --per-sector 3 --tag 12_run4` |
 
-**Runs vary between samples, by a lot.** On the same twelve transcripts, in the
-same order, at the same temperature, the cloud model returned 89, 143 and 156
-codes and the local 8B model 11, 27 and 108. One open-coding run is therefore
-not a reportable number. Give each run its own `--tag` (the archived ones are
-`12_run1`, `12_run2`, `12_run3`) so it lands in its own directory; `bench_open_summary.py` then reports the median and range, and
-leaves out runs made by a different version of the code, saying which and why.
+Give each new run its own `--tag`; the archived open-coding runs are
+`12_run1` to `12_run3` and `24_run1`, and a tag that already exists resumes that
+run instead of starting a new one. Runs vary between samples, by a lot: on the
+same twelve transcripts, in the same order, at the same temperature, the cloud
+model returned 89, 143 and 156 codes and the local 8B model 11, 11 and 27. One
+open-coding run is therefore not a reportable number; `bench_open_summary.py`
+reports the median and range and leaves out runs made by a different version of
+the code, saying which and why.
 
 ---
 
@@ -430,7 +441,7 @@ leaves out runs made by a different version of the code, saying which and why.
 python run_tests.py
 ```
 
-Seventeen suites, **none requiring network access, an API key or a model
+Twenty suites, **none requiring network access, an API key or a model
 server**. The OpenAlex client is tested against offline fixtures, the provider
 abstraction against fake transports, and the interface end-to-end with
 Streamlit's `AppTest` in both languages and several frameworks.

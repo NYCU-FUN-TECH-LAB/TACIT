@@ -317,7 +317,7 @@ BLOCKS = [
                               "drafting and approval, import/export.")),
     ("h3", "Step 1 — retrieve"),
     ("shot", ("35_fw_results", "Retrieved works are numbered W1, W2 … and those "
-                               "identifiers are what the hallucination guard operates on. "
+                               "identifiers are what the citation guard operates on. "
                                "Here the exact phrase matched too few works, so the query "
                                "was widened to require all terms — a change recorded in "
                                "the retrieval log.")),
@@ -333,9 +333,9 @@ BLOCKS = [
              "somewhere in their full text."),
     ("h3", "Step 2 — draft"),
     ("shot", ("38_fw_guard", "Retrieved abstracts are given to the model, which drafts "
-                             "dimensions. The warnings panel is the hallucination guard's "
+                             "dimensions. The warnings panel is the citation guard's "
                              "output.")),
-    ("why", "<b>What the hallucination guard blocks</b><br>"
+    ("why", "<b>What the citation guard blocks</b><br>"
             "Every reference the model cites must exist in the retrieved set. Invented "
             "citations are removed; if all citations in a draft are invented the draft "
             "fails outright rather than being partially salvaged. Each dimension must "

@@ -19,8 +19,10 @@ def main(argv=None):
         print(f"Copied {len(copied)} shipped frameworks into "
               f"{os.path.join(workdir, 'frameworks')}")
     app = os.path.join(tacit_qda.PACKAGE_DIR, "app.py")
+    # 只綁本機位址；使用者要開放給區網時，後面的引數會覆蓋它。
     cmd = [sys.executable, "-m", "streamlit", "run", app,
-           "--browser.gatherUsageStats", "false", *argv]
+           "--browser.gatherUsageStats", "false",
+           "--server.address", "localhost", *argv]
     return subprocess.call(cmd, cwd=workdir)
 
 

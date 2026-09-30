@@ -3,9 +3,9 @@ name: CI
 # 這個工作流程要回答的是第一次拿到這個 repo 的人會問的四個問題，不是「測試有沒有通過」：
 #
 #   1. 從一個乾淨的機器開始，照 README 做，跑得起來嗎？
-#   2. 論文裡 Table 6 的每一個數字，重跑一次還會是同一個嗎？
-#   3. 論文說 scipy / plotly 是選配、Gemini SDK 裝完就能用——真的嗎？
-#   4. 論文說支援 Windows / macOS / Linux 與 Python 3.9+——真的嗎？
+#   2. README 列出的示範語料數字，重跑一次還會是同一個嗎？
+#   3. scipy / plotly 是選配、Gemini SDK 裝完就能用——真的嗎？
+#   4. 支援 Windows / macOS / Linux 與 Python 3.9+——真的嗎？
 #
 # 每一個 job 對應其中一題，job 名稱就是那一題。
 
@@ -34,7 +34,7 @@ env:
 jobs:
 
   # ===================================================================
-  # 問題 1 + 2 + 4：乾淨機器、跨平台、跨 Python 版本，重現論文數字
+  # 問題 1 + 2 + 4：乾淨機器、跨平台、跨 Python 版本，重現示範語料數字
   # ===================================================================
   reproduce:
     name: 重現 (${{ matrix.os }}, py${{ matrix.python }})
@@ -45,9 +45,9 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
         python: ["3.9", "3.13"]
-        # C7 宣稱 Python ≥ 3.9、S5 宣稱三個平台都支援。矩陣就是那兩句話的
-        # 檢驗。3.9 這一格若哪天失敗，代表相依套件不再支援它——那時該改的
-        # 是 C7 的措辭，不是把這一格刪掉。
+        # README 寫 Python ≥ 3.9 與三個平台都支援，矩陣就是那兩句話的檢驗。
+        # 3.9 這一格若哪天失敗，代表相依套件不再支援它——那時該改的是
+        # README 的措辭，不是把這一格刪掉。
         exclude:
           # macos-latest 是 arm64，setup-python 沒有為它提供 3.9。
           # 這是 runner 的限制，不是程式的限制，所以用 Intel 的 macos-15-intel
@@ -88,7 +88,7 @@ jobs:
           # stdout 必須只有埠號——批次檔直接拿它當變數
           [[ "$PORT" =~ ^[0-9]+$ ]] || { echo "port 子命令污染了 stdout"; exit 1; }
 
-      # 論文 §3 明文列出這兩行指令。它們必須能在全新的機器上跑完。
+      # README 列出這兩行指令。它們必須能在全新的機器上跑完。
       - name: 從零產生示範語料
         run: python src/make_demo_data.py
 
@@ -96,11 +96,11 @@ jobs:
         run: python run_tests.py
 
       # ---------------------------------------------------------------
-      # 漂移守門：Table 6 的每一個數字都在這裡重算一次。
-      # 這些值同時出現在 README.md 與論文裡，
+      # 漂移守門：README 列出的示範語料數字都在這裡重算一次。
+      # 這些值寫在 README.md 裡，
       # 任何一次改動若動到它們，這一步會失敗並把新舊值都印出來。
       # ---------------------------------------------------------------
-      - name: 核對論文 Table 6 的數字
+      - name: 核對示範語料的數字
         shell: bash
         run: |
           python - <<'PY'
@@ -122,7 +122,7 @@ jobs:
 
           pol, dim, code = chi("polarity"), chi("dimension"), chi("code")
 
-          # 論文 Table 6 / README「With 24 respondents the corpus produces」
+          # README「With 24 respondents the corpus produces」
           expected = {
               "respondents":        (len(recs), 24),
               "coded segments":     (segs, 148),
@@ -141,16 +141,16 @@ jobs:
           }
           bad = {k: v for k, v in expected.items() if v[0] != v[1]}
           for k, (got, want) in expected.items():
-              print(f"  {'OK ' if k not in bad else 'DRIFT'}  {k:20s} {got!r:>10}  (paper: {want!r})")
+              print(f"  {'OK ' if k not in bad else 'DRIFT'}  {k:20s} {got!r:>10}  (README: {want!r})")
           if bad:
-              print("\n論文裡發表的數字已經對不上程式跑出來的結果。")
+              print("\nREADME 列出的數字已經對不上程式跑出來的結果。")
               print("要嘛是迴歸，要嘛是刻意的改動——刻意的話，"
-                    "README.md 與論文裡的數字都要一起更新。")
+                    "README.md 的數字要一起更新。")
               sys.exit(1)
           PY
 
       # 信度抽樣框：含未標記單元是「recall 不恆等於 1」的前提，
-      # 也是論文 §2.2 的四個設計決定之一。
+      # 也是四個設計決定之一。
       - name: 核對信度抽樣框
         shell: bash
         run: |
@@ -163,13 +163,15 @@ jobs:
           tr = {r[S.RESPONDENT]: r[S.TRANSCRIPT] for r in recs}
           frame, diag = IRR.build_frame(recs, tr)
           total, unmarked = diag["total_units"], diag["uncoded_units"]
-          print(f"  frame units = {total} (paper: 299)")
-          print(f"  unmarked    = {unmarked} (paper: 174)")
+          excl = (diag["excluded_interviewer_units"], diag["excluded_header_units"])
+          print(f"  respondent units = {total} (expected 139)")
+          print(f"  unmarked by the reference coding = {unmarked} (expected 1)")
+          print(f"  interviewer / header units kept out = {excl} (expected (122, 48))")
           print(f"  unmatched quotes = {diag['unmatched_quotes']} (must be empty)")
-          bad = (total, unmarked) != (299, 174) or bool(diag["unmatched_quotes"])
+          bad = ((total, unmarked) != (139, 1) or excl != (122, 48)
+                 or bool(diag["unmatched_quotes"]))
           if bad:
-              print("抽樣框漂移了。沒有未標記單元的話 recall 恆等於 1，數字沒有意義；")
-              print("有對不回去的引文，代表切分方式與參考編碼已經不同步。")
+              print("抽樣框漂移了：切分規則、講者辨識或參考編碼已經不同步。")
               sys.exit(1)
           PY
 
@@ -230,7 +232,7 @@ jobs:
         run: python src/make_demo_data.py
 
       # 沒有 scipy 就算不出卡方——但**不給 p 值**這件事兩種情形完全一樣。
-      # 測試套件本身也必須兩種安裝情形都通過，否則論文說 scipy 是選配、
+      # 測試套件本身也必須兩種安裝情形都通過，否則 README 說 scipy 是選配、
       # 只裝必要項的人跑 run_tests.py 卻看到失敗。
       - name: 全部測試（缺選配套件時一樣要全綠）
         run: python run_tests.py
@@ -352,7 +354,7 @@ jobs:
   # ===================================================================
   # 覆蓋率：只設地板，不追求數字
   #
-  # 地板訂在「分析引擎不得低於 90%」。那幾個模組是論文拿來當賣點的東西
+  # 地板訂在「分析引擎不得低於 90%」。那幾個模組是這套工具的核心
   # ——假設守門、信度抽樣框、稽核軌跡、框架載入——它們掉下來要當場知道。
   # app.py 與啟動器不設門檻：UI 與環境建置本來就有一部分無法自動化，
   # 訂一個做不到的門檻只會讓大家習慣性忽略紅燈。

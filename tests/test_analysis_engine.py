@@ -315,6 +315,43 @@ check_true("**但受訪者層級的表不變**——這正是它存在的理由"
 
 print()
 print("=" * 70)
+print("測試 10：長表帶複核狀態、原始碼與端點；無極性框架的理由也要在")
+print("=" * 70)
+# 長表是匯出檔的主體。稽核軌跡要跟著碼一起離開工具：每一列帶複核狀態、
+# 模型原本給的碼、段落來源與編出它的端點。
+import tacit_framework as F                                      # noqa: E402
+
+_EP = "ollama/x@http://localhost:11434"
+_pr = rec("產A", {"institution_type": "industry"},
+          [seg("a1", [(S.REFLEXIVITY, "N")])])
+_pr[S.META] = {"source": _EP, "endpoint": {"endpoint": _EP, "data_locality": "local"}}
+_pr[S.SEGMENTS][0][S.REVIEW] = {S.STATUS: S.STATUS_MODIFIED,
+                                S.ORIGINAL_CODES: ["REF-N", "RES-N"],
+                                S.SOURCE: S.SOURCE_AI, S.HISTORY: []}
+_pl = A.build_long_df([_pr])
+check("狀態欄", _pl[S.STATUS].tolist(), [S.STATUS_MODIFIED])
+check("原始碼欄（斜線串接）", _pl[A.ORIGINAL_CODES].tolist(), ["REF-N/RES-N"])
+check("來源欄", _pl[S.SOURCE].tolist(), [S.SOURCE_AI])
+check("端點欄", _pl[A.ENDPOINT].tolist(), [_EP])
+_pl0 = A.build_long_df(RECORDS)
+check("沒有複核欄位時狀態預設為未審核", sorted(_pl0[S.STATUS].unique()), [S.STATUS_PENDING])
+check("沒有複核快照時原始碼就是目前的碼", _pl0[A.ORIGINAL_CODES].iloc[0],
+      "/".join(S.codes_of(RECORDS[0][S.SEGMENTS][0])))
+check("沒有 _meta 時端點為空字串", _pl0[A.ENDPOINT].iloc[0], "")
+check_true("新欄位皆為 ASCII", all(str(c).isascii() for c in _pl.columns))
+
+F.activate_by_id("utaut_venkatesh_2003")
+_d0 = S.DIMENSIONS[0]
+_np = {S.RESPONDENT: "R", S.DESCRIPTORS: S.blank_descriptors(), S.SUMMARY: "",
+       S.SEGMENTS: [{S.SEGMENT_ID: "n1", S.TITLE: "t", S.QUOTE: "q",
+                     S.FULL_TEXT: "q",
+                     S.CODES_F: [S.make_code(_d0, None, "the model's reason")]}]}
+check("無極性框架的理由進長表", A.build_long_df([_np])[S.RATIONALE].tolist(),
+      ["the model's reason"])
+F.reset()
+
+print()
+print("=" * 70)
 print(f"結果：{'全部通過 ✅' if not FAIL else '失敗項目 ' + str(FAIL)}")
 print("=" * 70)
 sys.exit(1 if FAIL else 0)

@@ -151,12 +151,27 @@ with FakeLLMServer({"/api/tags": lambda b: (200, {"models": [
         {"name": "llama3.1:8b"},
         {"name": "llama3.1:8b-instruct-q4_K_M"}]})}) as s:
     names, note = L.list_models(L.OLLAMA, base_url=s.base)
-    ok("查得到已安裝的模型", len(names) == 3, str(names))
+    ok("查得到已安裝的對話模型", len(names) == 2, str(names))
     ok("指令微調版排在 base 之前",
        names.index("llama3.1:8b-instruct-q4_K_M") < names.index("llama3.1:8b"),
        str(names))
-    ok("embedding 模型排到最後", names[-1] == "nomic-embed-text", str(names))
+    # 嵌入模型不會生成文字，選了只會得到空回覆，所以根本不列
+    ok("embedding 模型不列進清單", "nomic-embed-text" not in names, str(names))
     ok("提示文字說明清單來源", "installed locally" in note, note)
+
+# 預設選項：字母序第一顆常常是程式碼模型（codellama），那不是拿來讀訪談的。
+with FakeLLMServer({"/api/tags": lambda b: (200, {"models": [
+        {"name": "codellama:7b"}, {"name": "gemma3:12b"},
+        {"name": "llama3:8b"}, {"name": "nomic-embed-text"}]})}) as s:
+    names, _ = L.list_models(L.OLLAMA, base_url=s.base)
+    ok("程式碼模型排在一般模型後面", names[-1] == "codellama:7b", str(names))
+    eq("預設選第一顆一般對話模型", L.default_model(names), "gemma3:12b")
+    eq("預設選項不是程式碼模型",
+       L.default_model(["codellama:7b", "nomic-embed-text"]), "")
+eq("清單為空時預設留白", L.default_model([]), "")
+eq("地端的預設間隔是 0 秒", L.default_delay(L.OLLAMA), 0)
+eq("OpenAI 相容端點的預設間隔是 0 秒", L.default_delay(L.OPENAI_COMPAT), 0)
+ok("雲端保留間隔", L.default_delay(L.GEMINI) > 0, str(L.default_delay(L.GEMINI)))
 
 with FakeLLMServer({"/api/tags": lambda b: (200, {"models": []})}) as s:
     names, note = L.list_models(L.OLLAMA, base_url=s.base)
@@ -388,17 +403,46 @@ print()
 print("=" * 70)
 print("測試 6：probe — 按下開始分析之前就要知道服務有沒有開")
 print("=" * 70)
+_probe_chats = []
+
+
+def _probe_chat(body):
+    _probe_chats.append(body)
+    return 200, {"message": {"role": "assistant", "content": "OK"},
+                 "prompt_eval_count": 12, "eval_count": 1, "done_reason": "length"}
+
+
 with FakeLLMServer({"/api/tags": lambda b: (200, {"models": [
-        {"name": "llama3.1:8b-instruct-q4_K_M"}]})}) as s:
+                        {"name": "llama3.1:8b-instruct-q4_K_M"}]}),
+                    "/api/show": lambda b: (200, {"model_info": {
+                        "general.architecture": "llama",
+                        "llama.context_length": 8192}}),
+                    "/api/chat": _probe_chat}) as s:
+    L._NATIVE_CACHE.clear()
     good = L.Endpoint(provider=L.OLLAMA, model="llama3.1:8b-instruct-q4_K_M",
-                      base_url=s.base)
+                      base_url=s.base, num_ctx=32768)
     okk, note = L.probe(good)
-    ok("模型裝了就回 True", okk, note)
+    ok("模型裝了、也答得出來就回 True", okk, note)
+    # 只列清單是不夠的：清單裡有這顆模型不代表它載得起來。
+    eq("測試連線真的送了一個 token 的生成", len(_probe_chats), 1)
+    eq("試跑只要一個 token", dig(_probe_chats, 0, "options", "num_predict"), 1)
+    ok("訊息報出模型的原生視窗", "8,192" in note, note)
+    ok("訊息說明設定值被原生視窗夾住", "32,768" in note and "8,192" in note, note)
+    ok("訊息報出試跑時間", "answered in" in note, note)
+    okk2, note2 = L.probe(good, generate=False)
+    ok("generate=False 時只查清單", okk2 and len(_probe_chats) == 1, note2)
 
     bad = L.Endpoint(provider=L.OLLAMA, model="not-installed", base_url=s.base)
     okk, note = L.probe(bad)
     ok("模型沒裝就回 False", not okk)
     ok("並且列出實際裝了什麼", "llama3.1:8b-instruct-q4_K_M" in note, note[:100])
+
+# 清單裡有、但生成失敗（模型載不起來）：要回 False 並帶出原因
+with FakeLLMServer({"/api/tags": lambda b: (200, {"models": [{"name": "m"}]}),
+                    "/api/chat": lambda b: (500, {"error": "out of memory"})}) as s:
+    okk, note = L.probe(L.Endpoint(provider=L.OLLAMA, model="m", base_url=s.base))
+    ok("生成失敗時測試連線回 False", not okk, note[:120])
+    ok("並且帶出伺服器的錯誤", "out of memory" in note, note[:160])
 
 okk, note = L.probe(L.Endpoint(provider=L.OLLAMA, model="m",
                                base_url="http://127.0.0.1:9"))
@@ -929,8 +973,10 @@ print("=" * 70)
 for _ep, _want in [
     (L.Endpoint(provider=L.GEMINI, model="g", api_key="k"), "remote"),
     (L.Endpoint(provider=L.OLLAMA, model="m"), "local"),
+    # 區域網路裡自己的機器：資料沒有離開研究者的網路，算 local；
+    # host_class 另外記下它不是這台機器本身。
     (L.Endpoint(provider=L.OLLAMA, model="m",
-                  base_url="http://192.168.1.9:11434"), "remote"),
+                  base_url="http://192.168.1.9:11434"), "local"),
     (L.Endpoint(provider=L.OPENAI_COMPAT, model="m"), "local"),
     (L.Endpoint(provider=L.OPENAI_COMPAT, model="m",
                   base_url="https://openrouter.ai/api/v1"), "remote"),
@@ -939,6 +985,50 @@ for _ep, _want in [
 ]:
     ok(f"{_ep.describe()[:46]} → {_want}",
        _ep.data_locality == _want, _ep.data_locality)
+eq("區域網路位址的 host_class 是 private",
+   L.Endpoint(provider=L.OLLAMA, model="m",
+              base_url="http://192.168.1.9:11434").host_class, "private")
+eq("本機位址的 host_class 是 loopback",
+   L.Endpoint(provider=L.OLLAMA, model="m").host_class, "loopback")
+
+# 位址的判定要用解析出來的主機名稱，不能用字串開頭：以 localhost 或
+# 127.0.0.1 開頭的名稱可以指向任何一台別人的伺服器。
+for _url, _cls, _loc in [
+    ("http://localhost.evil.example.com/v1", "public", "remote"),
+    ("http://127.0.0.1.nip.io:8622/v1", "public", "remote"),
+    ("http://localhost@evil.example.com/v1", "public", "remote"),
+    ("http://[::1]:8080/v1", "loopback", "local"),
+    ("http://0.0.0.0:8000/v1", "loopback", "local"),
+    ("http://LOCALHOST:1234", "loopback", "local"),
+    ("http://127.0.0.1:8622/v1", "loopback", "local"),
+    ("http://127.5.6.7:11434", "loopback", "local"),
+    ("http://10.0.0.5:11434", "private", "local"),
+    ("http://[fd00::5]:11434", "private", "local"),
+    ("http://169.254.1.1:11434", "private", "local"),
+    ("http://host.docker.internal:11434", "public", "remote"),
+    ("https://api.openai.com/v1", "public", "remote"),
+    ("localhost:1234/v1", "unknown", "unknown"),
+    ("", "unknown", "unknown"),
+    ("http://", "unknown", "unknown"),
+]:
+    eq(f"classify_host {_url or '(empty)'}", L.classify_host(_url), _cls)
+    if _url:
+        _e = L.Endpoint(provider=L.OPENAI_COMPAT, model="m", base_url=_url)
+        eq(f"data_locality {_url}", _e.data_locality, _loc)
+ok("偽裝成 localhost 的遠端位址要金鑰",
+   L.Endpoint(provider=L.OPENAI_COMPAT, model="m",
+              base_url="http://localhost.evil.example.com/v1").needs_key)
+ok("_is_loopback 只認這台機器",
+   L._is_loopback("http://[::1]:8080/v1")
+   and not L._is_loopback("http://localhost.evil.example.com/v1")
+   and not L._is_loopback("http://192.168.1.9:11434"))
+ok("解析不出來的位址當成要金鑰（多問無害，少問會把資料送去不知道哪裡）",
+   L.Endpoint(provider=L.OPENAI_COMPAT, model="m",
+              base_url="localhost:1234/v1").needs_key)
+eq("host_class 寫進稽核紀錄",
+   L.Endpoint(provider=L.OPENAI_COMPAT, model="m",
+              base_url="http://127.0.0.1.nip.io/v1").provenance().get("host_class"),
+   "public")
 
 _remote = L.Endpoint(provider=L.OPENAI_COMPAT, model="m",
                        base_url="https://openrouter.ai/api/v1")
@@ -951,6 +1041,242 @@ ok("data_locality 進得了稽核紀錄",
 ok("地端端點的稽核紀錄寫 local",
    L.Endpoint(provider=L.OLLAMA, model="m").provenance()
    .get("data_locality") == "local")
+
+print()
+print("=" * 70)
+print("測試：長度預算要用模型的原生視窗，不是設定值")
+print("=" * 70)
+# 要防的失效：llama3:8b 的原生視窗是 8,192，num_ctx 設 32,768。伺服器收到
+# 32,768 不報錯，只把視窗夾回 8,192，然後把一份 12,000 token 的提示詞截到
+# 4,108 個 token——JSON 格式完整、編碼段落 0 個、畫面上寫「1 succeeded」。
+_show_llama3 = lambda b: (200, {"model_info": {"general.architecture": "llama",  # noqa: E731
+                                                "llama.context_length": 8192}})
+_long_prompt = "The witness said that the plan was reviewed twice. " * 1000   # ≈ 14.6k tokens
+with FakeLLMServer({"/api/show": _show_llama3,
+                    "/api/chat": chat_ok('{"segments": []}')}) as s:
+    L._NATIVE_CACHE.clear()
+    ep = L.Endpoint(provider=L.OLLAMA, model="llama3:8b", base_url=s.base,
+                    num_ctx=32768)
+    eq("原生視窗查到 8192", ep.native_context_length(), (8192, "server"))
+    eq("實際視窗取設定值與原生視窗的較小者", ep.effective_num_ctx(), 8192)
+    eq("輸出保留額依實際視窗重算（8192 的四分之一，下限 3072）",
+       ep.effective_max_tokens(), 3072)
+    try:
+        L.complete(ep, _long_prompt, system="sys", json_mode=True)
+        ok("超過原生視窗的提示詞在送出前被擋下", False)
+    except L.ContextOverflow as e:
+        _m = str(e)
+        ok("超過原生視窗的提示詞在送出前被擋下", True)
+        ok("訊息說出設定值與原生視窗", "32,768" in _m and "8,192" in _m, _m[:200])
+        ok("訊息說這顆模型放不下、要切開或換模型",
+           "not enough" in _m or "split" in _m.lower(), _m[-160:])
+    eq("沒有任何請求送出去", len(s.posts("/api/chat")), 0)
+
+    # 放得下的提示詞照常送，而且送給伺服器的 num_ctx 是實際視窗
+    out = L.complete(ep, "short prompt", system="sys", json_mode=True)
+    body = s.posts("/api/chat")[0]["body"]
+    eq("送給伺服器的 num_ctx 是實際視窗（不是設定值）",
+       dig(body, "options", "num_ctx"), 8192)
+    eq("num_predict 是重算後的保留額", dig(body, "options", "num_predict"), 3072)
+    p = ep.provenance()
+    eq("稽核紀錄寫下實際視窗", p.get("effective_num_ctx"), 8192)
+    eq("稽核紀錄仍寫下設定值", p.get("num_ctx"), 32768)
+    # 呼叫端明確給的 max_tokens 不被重算
+    ep_x = L.Endpoint(provider=L.OLLAMA, model="llama3:8b", base_url=s.base,
+                      num_ctx=32768, max_tokens=1500)
+    eq("明確指定的保留額不隨視窗重算", ep_x.effective_max_tokens(), 1500)
+
+# 伺服器答了、但沒有 context_length 欄位：退回保守值，不能信 32768
+with FakeLLMServer({"/api/show": lambda b: (200, {"model_info": {}})}) as s:
+    L._NATIVE_CACHE.clear()
+    ep = L.Endpoint(provider=L.OLLAMA, model="odd", base_url=s.base, num_ctx=32768)
+    eq("欄位缺少時來源是 missing", ep.native_context_length()[1], "missing")
+    eq("欄位缺少時用保守的預設視窗", ep.effective_num_ctx(), L.NATIVE_CTX_FALLBACK)
+    ep_small = L.Endpoint(provider=L.OLLAMA, model="odd", base_url=s.base, num_ctx=4096)
+    eq("使用者把 num_ctx 設得更小時照設定值", ep_small.effective_num_ctx(), 4096)
+    ep_o = L.Endpoint(provider=L.OLLAMA, model="odd", base_url=s.base,
+                      num_ctx=32768, native_ctx=16384)
+    eq("呼叫端可以手動覆寫原生視窗", ep_o.effective_num_ctx(), 16384)
+
+# 服務問不到（沒開、或非 Ollama 的地端服務）：只能信設定值
+L._NATIVE_CACHE.clear()
+ep_down = L.Endpoint(provider=L.OLLAMA, model="m", base_url="http://127.0.0.1:9",
+                     num_ctx=20480)
+eq("問不到時來源是 unknown", ep_down.native_context_length()[1], "unknown")
+eq("問不到時用設定值", ep_down.effective_num_ctx(), 20480)
+eq("OpenAI 相容端點沒有可查的原生視窗",
+   L.Endpoint(provider=L.OPENAI_COMPAT, model="m", num_ctx=20480).effective_num_ctx(),
+   20480)
+eq("雲端不受影響",
+   L.Endpoint(provider=L.GEMINI, model="m", api_key="k").effective_num_ctx(),
+   L.DEFAULT_NUM_CTX)
+# phi3 的 model_info 同時有 phi3.context_length 與
+# phi3.rope.scaling.original_context_length，後者不是視窗上限
+eq("只認 <架構>.context_length",
+   L._context_length_from_info({"general.architecture": "phi3",
+                                "phi3.rope.scaling.original_context_length": 4096,
+                                "phi3.context_length": 131072}), 131072)
+eq("沒有 general.architecture 時退回後綴比對",
+   L._context_length_from_info({"qwen2.context_length": 32768}), 32768)
+
+_saved_env = os.environ.get("TACIT_NATIVE_CTX")
+try:
+    os.environ.update({"TACIT_PROVIDER": "ollama", "TACIT_MODEL": "m",
+                       "TACIT_NATIVE_CTX": "8192"})
+    eq("環境變數可以給原生視窗", L.from_env().native_context_length(), (8192, "override"))
+finally:
+    for _k in ("TACIT_PROVIDER", "TACIT_MODEL", "TACIT_NATIVE_CTX"):
+        os.environ.pop(_k, None)
+    if _saved_env is not None:
+        os.environ["TACIT_NATIVE_CTX"] = _saved_env
+
+print()
+print("=" * 70)
+print("測試：送出後也要查——伺服器回報讀了幾個 token")
+print("=" * 70)
+# 送出前的守門靠估計與原生視窗；原生視窗查不到時仍可能被截斷。伺服器每次
+# 都會回報它實際讀了幾個 token（prompt_eval_count），遠低於提示詞長度就是
+# 被截斷了，這一次的結果不能用。
+_mid_prompt = "The committee asked about the review process for the plan. " * 700   # ≈ 12k tokens
+with FakeLLMServer({"/api/chat": lambda b: (200, {
+        "message": {"content": '{"segments": []}'},
+        "prompt_eval_count": 4108, "eval_count": 20, "done_reason": "stop"})}) as s:
+    L._NATIVE_CACHE.clear()
+    ep = L.Endpoint(provider=L.OLLAMA, model="m", base_url=s.base, num_ctx=32768)
+    try:
+        L.complete(ep, _mid_prompt, json_mode=True)
+        ok("伺服器讀到的 token 遠少於提示詞時拋錯", False)
+    except L.ContextOverflow as e:
+        ok("伺服器讀到的 token 遠少於提示詞時拋錯", True)
+        ok("拋的是 Truncated（ContextOverflow 的子類，既有的 except 接得住）",
+           isinstance(e, L.Truncated))
+        ok("訊息寫出讀到幾個、應該有幾個", "4,108" in str(e), str(e)[:120])
+        ok("訊息說結果已丟棄", "discarded" in str(e), str(e)[-80:])
+    eq("不重試（重送同一份提示詞不會變好）", len(s.posts("/api/chat")), 1)
+    eq("用量記在端點上", (ep.last_usage or {}).get("prompt_tokens"), 4108)
+    ok("估計值也記下來", (ep.last_usage or {}).get("estimated_prompt_tokens", 0) > 8000,
+       str(ep.last_usage))
+
+# 讀到的數字與估計相符就照常回傳（中文分詞器讀到的比估計少三成也算相符）
+with FakeLLMServer({"/api/chat": lambda b: (200, {
+        "message": {"content": '{"segments": []}'},
+        "prompt_eval_count": 7000, "eval_count": 20, "done_reason": "stop"})}) as s:
+    ep = L.Endpoint(provider=L.OLLAMA, model="m", base_url=s.base, num_ctx=32768)
+    eq("相符時照常回傳", L.complete(ep, "字" * 10000, json_mode=True), '{"segments": []}')
+# 沒有回報用量的伺服器不查
+with FakeLLMServer({"/api/chat": chat_ok("plain")}) as s:
+    ep = L.Endpoint(provider=L.OLLAMA, model="m", base_url=s.base)
+    eq("沒有用量欄位時不查", L.complete(ep, "x" * 20000), "plain")
+    ok("last_usage 仍寫下估計值", (ep.last_usage or {}).get("estimated_prompt_tokens"))
+
+# 輸出撞到 num_predict：JSON 被切在半途，要講清楚，不要重試同一份提示詞
+with FakeLLMServer({"/api/chat": lambda b: (200, {
+        "message": {"content": '{"segments": [{"quote": "cut'},
+        "prompt_eval_count": 100, "eval_count": 3072, "done_reason": "length"})}) as s:
+    ep = L.Endpoint(provider=L.OLLAMA, model="m", base_url=s.base)
+    try:
+        L.complete(ep, "p", json_mode=True)
+        ok("json_mode 下輸出被切斷要拋錯", False)
+    except L.ContextOverflow:
+        ok("輸出被切斷不是提示詞過長", False)
+    except L.LLMError as e:
+        ok("json_mode 下輸出被切斷要拋錯", True)
+        ok("訊息指向輸出上限", "output limit" in str(e), str(e)[:120])
+    eq("非 json_mode 的文字回覆照常回傳（呼叫端自己截）",
+       L.complete(ep, "p"), '{"segments": [{"quote": "cut')
+
+# OpenAI 相容端點：usage.prompt_tokens 與 finish_reason
+with FakeLLMServer({"/chat/completions": lambda b: (200, {
+        "choices": [{"finish_reason": "stop", "message": {"content": "{}"}}],
+        "usage": {"prompt_tokens": 3000, "completion_tokens": 2}})}) as s:
+    ep = L.Endpoint(provider=L.OPENAI_COMPAT, model="m", base_url=s.base)
+    try:
+        L.complete(ep, _mid_prompt, json_mode=True)
+        ok("OpenAI 相容端點也查 usage.prompt_tokens", False)
+    except L.Truncated:
+        ok("OpenAI 相容端點也查 usage.prompt_tokens", True)
+with FakeLLMServer({"/chat/completions": lambda b: (200, {
+        "choices": [{"finish_reason": "length", "message": {"content": "{"}}],
+        "usage": {"prompt_tokens": 10, "completion_tokens": 512}})}) as s:
+    ep = L.Endpoint(provider=L.OPENAI_COMPAT, model="m", base_url=s.base)
+    try:
+        L.complete(ep, "p", json_mode=True)
+        ok("OpenAI 相容端點 finish_reason=length 要拋錯", False)
+    except L.LLMError as e:
+        ok("OpenAI 相容端點 finish_reason=length 要拋錯", "output limit" in str(e))
+
+print()
+print("=" * 70)
+print("測試：伺服器回了不是 JSON、不是 UTF-8、逾時、金鑰被拒的東西")
+print("=" * 70)
+_real_sleep2 = L._sleep
+L._sleep = lambda s_: None
+try:
+    # 代理回了一頁 HTML 卻掛 200
+    with FakeLLMServer({"/chat/completions":
+                        lambda b: (200, b"<html><body>502 Bad Gateway</body></html>")}) as s:
+        ep = L.Endpoint(provider=L.OPENAI_COMPAT, model="m", base_url=s.base)
+        try:
+            L.complete(ep, "p")
+            ok("HTML 回覆要拋 LLMError", False)
+        except L.LLMError as e:
+            ok("HTML 回覆要拋 LLMError（不是裸的 JSONDecodeError）", True)
+            ok("訊息帶出回覆的開頭", "Bad Gateway" in str(e), str(e)[:120])
+        except Exception as e:                               # noqa: BLE001
+            ok("HTML 回覆要拋 LLMError", False, f"拋成了 {type(e).__name__}")
+
+    # 不是 UTF-8 的位元組：不能用替代字元硬吞（引文會變成 caf���）
+    _bad_bytes = (b'{"choices":[{"message":{"content":"caf' + b"\xe9\xff\xfe" + b'"}}]}')
+    with FakeLLMServer({"/chat/completions": lambda b: (200, _bad_bytes)}) as s:
+        ep = L.Endpoint(provider=L.OPENAI_COMPAT, model="m", base_url=s.base)
+        try:
+            L.complete(ep, "p")
+            ok("非 UTF-8 回覆要拋錯", False)
+        except L.LLMError as e:
+            ok("非 UTF-8 回覆要拋錯", True)
+            ok("訊息說明是編碼問題", "UTF-8" in str(e), str(e)[:120])
+
+    # 逾時：拋 Timeout，而且不重試（模型太慢，再等一次只是再等一次）
+    import time as _time
+
+    def _slow(body):
+        _time.sleep(2.5)
+        return 200, {"message": {"content": "late"}}
+
+    with FakeLLMServer({"/api/chat": _slow}) as s:
+        ep = L.Endpoint(provider=L.OLLAMA, model="m", base_url=s.base, timeout=1)
+        try:
+            L.complete(ep, "p")
+            ok("逾時要拋錯", False)
+        except L.Timeout as e:
+            ok("逾時拋 Timeout", True)
+            ok("Timeout 是 LLMError（既有的 except 接得住）", isinstance(e, L.LLMError))
+            ok("訊息說出秒數與可做的事", "1 seconds" in str(e) and "timeout" in str(e).lower(),
+               str(e)[:160])
+        except L.LLMError as e:
+            ok("逾時拋 Timeout", False, f"拋成了 {type(e).__name__}: {str(e)[:80]}")
+        eq("逾時不重試", len(s.posts("/api/chat")), 1)
+        ok("Timeout 列在整批該停下的錯誤裡", L.Timeout in L.FATAL_ERRORS)
+
+    # 金鑰被拒：NotConfigured，重試沒有用
+    with FakeLLMServer({"/chat/completions":
+                        lambda b: (401, {"error": {"message": "invalid api key"}})}) as s:
+        ep = L.Endpoint(provider=L.OPENAI_COMPAT, model="m", base_url=s.base)
+        try:
+            L.complete(ep, "p")
+            ok("401 要拋 NotConfigured", False)
+        except L.NotConfigured as e:
+            ok("401 要拋 NotConfigured", True)
+            ok("訊息指向金鑰", "key" in str(e).lower(), str(e)[:100])
+        except L.LLMError as e:
+            ok("401 要拋 NotConfigured", False, f"拋成了 {type(e).__name__}")
+        eq("401 不重試", len(s.posts("/chat/completions")), 1)
+finally:
+    L._sleep = _real_sleep2
+
+ok("整批該停下的錯誤包含視窗不夠、配額、服務沒開、逾時、重試後仍不可用",
+   all(c in L.FATAL_ERRORS for c in (L.ContextOverflow, L.RateLimited,
+                                     L.NotConfigured, L.Timeout, L.Unavailable)))
 
 print()
 print("=" * 70)
