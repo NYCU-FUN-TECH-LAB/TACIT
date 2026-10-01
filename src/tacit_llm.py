@@ -37,6 +37,7 @@ import ipaddress
 import json
 import os
 import re
+import socket
 import time
 import urllib.error
 import urllib.parse
@@ -705,10 +706,15 @@ def _raise_http(e, url):
     raise LLMError(f"HTTP {e.code} from {url}: {body}") from e
 
 
+# Python 3.9 的 socket.timeout 還不是 TimeoutError 的子類別（3.10 起才是），
+# 兩個都要認，逾時才不會在舊版本上漏接。
+_TIMEOUT_ERRORS = (TimeoutError, socket.timeout)
+
+
 def _raise_transport(e, url, timeout):
     """連線層的例外 → 分辨逾時、連不上、與其他抖動。"""
-    if isinstance(e, TimeoutError) or isinstance(
-            getattr(e, "reason", None), TimeoutError):
+    if isinstance(e, _TIMEOUT_ERRORS) or isinstance(
+            getattr(e, "reason", None), _TIMEOUT_ERRORS):
         raise Timeout(f"no answer from {url} within {timeout} seconds. The "
                       f"model may still be loading, or it is too slow for "
                       f"this excerpt size: raise the timeout, use a smaller "
@@ -729,7 +735,7 @@ def _post_json(url, payload, timeout, headers=None):
             return _decode_body(r.read(), url)
     except urllib.error.HTTPError as e:
         _raise_http(e, url)
-    except (urllib.error.URLError, TimeoutError, ConnectionError,
+    except (urllib.error.URLError, socket.timeout, TimeoutError, ConnectionError,
             http.client.HTTPException) as e:
         _raise_transport(e, url, timeout)
 
@@ -741,7 +747,7 @@ def _get_json(url, timeout, headers=None):
             return _decode_body(r.read(), url)
     except urllib.error.HTTPError as e:
         _raise_http(e, url)
-    except (urllib.error.URLError, TimeoutError, ConnectionError,
+    except (urllib.error.URLError, socket.timeout, TimeoutError, ConnectionError,
             http.client.HTTPException) as e:
         _raise_transport(e, url, timeout)
 
