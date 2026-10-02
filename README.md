@@ -481,8 +481,8 @@ If this tool contributes to published work, please cite it. See
 [CITATION.cff](CITATION.cff); machine-readable metadata is in
 [codemeta.json](codemeta.json).
 
-Every release is archived on Zenodo. Version 1.0.0 is
-[10.5281/zenodo.22882169](https://doi.org/10.5281/zenodo.22882169);
+Every release is archived on Zenodo. Version 1.2.0 is
+[10.5281/zenodo.23074150](https://doi.org/10.5281/zenodo.23074150);
 [10.5281/zenodo.22882168](https://doi.org/10.5281/zenodo.22882168) always resolves to
 the latest version.
 
