@@ -43,6 +43,7 @@ import tacit_themes as RT
 import tacit_lexicon as RL
 import tacit_irr as RIRR
 import tacit_review as RV
+import tacit_highlight as HL
 import tacit_openalex as OA
 
 try:
@@ -3121,8 +3122,122 @@ with tab_irr:
     with st.expander(t("ir.trap2")):
         st.markdown(t("ir.trap2_body"))
 
-    ir1, ir2, ir3, ir4 = st.tabs([t("ir.tab1"), t("ir.tab2"),
-                                  t("ir.tab3"), t("ir.tab4")])
+    ir1, ir2, ir3, ir4, ir5 = st.tabs([t("ir.tab1"), t("ir.tab2"), t("ir.tab3"),
+                                       t("ir.tab4"), t("ir.tab5")])
+
+    # ---- 標記過的 Word 檔：人在 Word 裡用註解編碼，讀回來與載入的編碼比較
+    with ir5:
+        _codes5 = F.active().codes
+        st.markdown(t("ir.mk_intro", example="; ".join(_codes5[:1] + _codes5[2:3])))
+        mk_files = st.file_uploader(t("ir.mk_upload"), type=["docx"],
+                                    accept_multiple_files=True, key="mk_files")
+        c1, c2 = st.columns(2)
+        mk_coder = c1.text_input(t("ir.mk_coder"), "coder_a", key="mk_coder")
+        _against = {HL.SOURCE_MODEL: t("ir.mk_against_model"),
+                    HL.SOURCE_CURRENT: t("ir.mk_against_current")}
+        mk_against = c2.radio(t("ir.mk_against"), list(_against),
+                              format_func=lambda k, _m=_against: _m[k], key="mk_against")
+        if mk_files and not recs:
+            st.info(t("ir.mk_need_records"))
+        elif mk_files:
+            _labels5 = record_labels(recs)
+            _opts5 = [-1] + list(range(len(recs)))
+            _rows5, _human5, _detail5 = [], [], []
+            _pa, _pb, _pu = {}, {}, []
+            for _k, _f in enumerate(mk_files):
+                try:
+                    _parsed = HL.read_marked_docx(io.BytesIO(_f.getvalue()))
+                except Exception as _e:                   # noqa: BLE001
+                    st.warning(t("ir.mk_read_error", file=_f.name,
+                                 err=f"{type(_e).__name__}: {_e}"))
+                    continue
+                _coded = [m for m in _parsed["marks"] if m["codes"]]
+                _unknown = [m for m in _parsed["marks"] if not m["codes"]]
+                if not _coded:
+                    st.warning(t("ir.mk_no_comments", file=_f.name))
+                _guess = HL.match_record(_parsed, recs, _f.name)
+                _idx = st.selectbox(
+                    t("ir.mk_match", file=_f.name), _opts5,
+                    index=_opts5.index(_guess) if _guess is not None else 0,
+                    format_func=lambda i, _l=_labels5: t("ir.mk_no_match") if i < 0 else _l[i],
+                    key=f"mk_match_{_k}_{_f.name}")
+                _row = {t("ir.mk_col_file"): _f.name,
+                        t("ir.mk_col_record"): "" if _idx < 0 else _labels5[_idx],
+                        t("ir.mk_col_comments"): len(_coded),
+                        t("ir.mk_col_unknown"): len(_unknown),
+                        t("ir.mk_col_hl"): len(_parsed["highlight_only"])}
+                _cmp = None
+                if _idx >= 0 and _coded:
+                    _other, _ = HL.model_marks_of(recs[_idx], mk_against,
+                                                  transcript=_parsed["transcript"])
+                    _cmp = HL.compare_marks(_parsed["transcript"], _coded, _other)
+                    _pl = _cmp["pooled"] or {}
+                    _row.update({
+                        t("ir.mk_col_units"): _cmp["units"],
+                        "κ": _pl.get(RIRR.KAPPA), "PABAK": _pl.get(RIRR.PABAK),
+                        "AC1": _pl.get(RIRR.AC1),
+                        t("ir.mk_col_precision"): _cmp["precision"],
+                        t("ir.mk_col_recall"): _cmp["recall"],
+                        t("ir.mk_col_human_only"): _pl.get(RIRR.ONLY_A),
+                        t("ir.mk_col_model_only"): _pl.get(RIRR.ONLY_B)})
+                    for _u in _cmp["unit_ids"]:
+                        _key = f"{_k}:{_u}"
+                        _pu.append(_key)
+                        _pa[_key], _pb[_key] = _cmp["a"][_u], _cmp["b"][_u]
+                _rows5.append(_row)
+                _detail5.append((_f.name, _unknown, _parsed["highlight_only"], _cmp))
+                _resp5 = (recs[_idx][S.RESPONDENT] if _idx >= 0
+                          else (_parsed["respondent"] or os.path.splitext(_f.name)[0]))
+                _human5.append(HL.record_from_marked(_parsed, _resp5, mk_coder.strip()))
+            if len([r for r in _rows5 if r.get("κ") is not None]) > 1 and _pu:
+                _pl = RIRR.pooled_kappa(_pa, _pb, _pu)
+                _tp, _fn, _fp = _pl[RIRR.BOTH], _pl[RIRR.ONLY_A], _pl[RIRR.ONLY_B]
+                _rows5.append({
+                    t("ir.mk_col_file"): t("ir.mk_pooled"), t("ir.mk_col_units"): len(_pu),
+                    "κ": _pl[RIRR.KAPPA], "PABAK": _pl[RIRR.PABAK], "AC1": _pl[RIRR.AC1],
+                    t("ir.mk_col_precision"): round(_tp / (_tp + _fp), 3) if _tp + _fp else None,
+                    t("ir.mk_col_recall"): round(_tp / (_tp + _fn), 3) if _tp + _fn else None,
+                    t("ir.mk_col_human_only"): _fn, t("ir.mk_col_model_only"): _fp})
+            if _rows5:
+                _df5 = pd.DataFrame(_rows5)
+                _order5 = [t("ir.mk_col_file"), t("ir.mk_col_record"), t("ir.mk_col_units"),
+                           "κ", t("ir.mk_col_precision"), t("ir.mk_col_recall"), "PABAK", "AC1",
+                           t("ir.mk_col_human_only"), t("ir.mk_col_model_only"),
+                           t("ir.mk_col_comments"), t("ir.mk_col_unknown"), t("ir.mk_col_hl")]
+                show_df(_df5[[c for c in _order5 if c in _df5.columns]], hide_index=True)
+            for _name, _unknown, _hl_only, _cmp in _detail5:
+                if not (_unknown or _hl_only or (_cmp and (_cmp["differ"] or _cmp["human_not_placed"]
+                                                           or _cmp["model_not_placed"]))):
+                    continue
+                with st.expander(t("ir.mk_details", file=_name)):
+                    if _cmp and (_cmp["human_not_placed"] or _cmp["model_not_placed"]):
+                        st.caption(t("ir.mk_not_placed", h=_cmp["human_not_placed"],
+                                     m=_cmp["model_not_placed"]))
+                    if _cmp and _cmp["differ"]:
+                        st.markdown(f"**{t('ir.mk_differ')}**")
+                        show_df(pd.DataFrame(
+                            [{"unit": d["unit"], "hand": ", ".join(d["human"]),
+                              "other": ", ".join(d["model"]), "text": d["text"]}
+                             for d in _cmp["differ"]]), hide_index=True)
+                    if _unknown:
+                        st.markdown(f"**{t('ir.mk_unknown_list')}**")
+                        show_df(pd.DataFrame(
+                            [{"comment": m["comment"], "text": m["text"]} for m in _unknown]),
+                            hide_index=True)
+                    if _hl_only:
+                        st.markdown(f"**{t('ir.mk_hl_list')}**")
+                        show_df(pd.DataFrame(
+                            [{"colour": h["colour"], "text": h["text"]} for h in _hl_only]),
+                            hide_index=True)
+            if any(r[S.SEGMENTS] for r in _human5):
+                st.download_button(
+                    t("ir.mk_download"),
+                    json.dumps({"framework_id": F.active().id,
+                                "schema_version": S.SCHEMA_VERSION,
+                                "records": _human5}, ensure_ascii=False, indent=2).encode("utf-8"),
+                    file_name=f"hand_coding_{mk_coder.strip() or 'coder'}_{datetime.now():%Y%m%d}.json",
+                    mime="application/json", help=t("ir.mk_download_help"),
+                    key="btn_mk_download")
 
     # ---- 抽樣框
     with ir1:
@@ -3849,6 +3964,40 @@ with tab_export:
                        indent=2).encode("utf-8"),
             file_name=f"records_{datetime.now():%Y%m%d}.json",
             mime="application/json", **WIDE)
+
+        # ---- 螢光筆標記的逐字稿 ----
+        # 一份逐字稿一個 .docx。先按鈕產生再下載：幾十份長逐字稿每次重繪都
+        # 重做一次會拖慢整個頁籤。
+        st.divider()
+        st.markdown(f"### {t('export.hl_title')}")
+        st.caption(t("export.hl_hint"))
+        _hl_recs = [r for r in recs if (r.get(S.TRANSCRIPT) or "").strip()]
+        if not _hl_recs:
+            st.info(t("export.hl_none"))
+        else:
+            _hl_labels = {HL.SOURCE_CURRENT: t("export.hl_current"),
+                          HL.SOURCE_MODEL: t("export.hl_model"),
+                          HL.SOURCE_BLANK: t("export.hl_blank")}
+            _hl_src = st.radio(t("export.hl_source"), HL.SOURCES,
+                               format_func=lambda k, _m=_hl_labels: _m[k],
+                               key="hl_source")
+            if st.button(t("export.hl_prepare"), key="btn_hl_prepare"):
+                _n = _m = 0
+                for _r in _hl_recs:
+                    _p, _x = HL.place_marks(_r, _hl_src)
+                    _n, _m = _n + len(_p), _m + len(_x)
+                st.session_state["hl_export"] = {
+                    "source": _hl_src, "files": len(_hl_recs), "n": _n, "m": _m,
+                    "data": HL.build_zip(_hl_recs, _hl_src, I.get_lang())}
+            _hl = st.session_state.get("hl_export")
+            if _hl and _hl["source"] == _hl_src:
+                if _hl_src != HL.SOURCE_BLANK:
+                    st.caption(t("export.hl_summary", files=_hl["files"],
+                                 n=_hl["n"], m=_hl["m"]))
+                st.download_button(
+                    t("export.hl_download"), _hl["data"],
+                    file_name=f"transcripts_{_hl_src}_{datetime.now():%Y%m%d}.zip",
+                    mime="application/zip", key="btn_hl_download", **WIDE)
 
 
 # =====================================================================

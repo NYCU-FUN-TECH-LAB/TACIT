@@ -1072,6 +1072,31 @@ F.reset()
 
 print()
 print("=" * 70)
+print("測試 19：匯出頁籤的螢光筆標記逐字稿")
+print("=" * 70)
+import glob as _glob19, io as _io19, json as _json19, zipfile as _zip19
+F.activate_by_id("ri_stilgoe_2013")
+_recs19 = [S.migrate_record(_json19.load(open(_p, encoding="utf-8")))
+           for _p in sorted(_glob19.glob(os.path.join("analyses", "demo_en_*.json")))[:3]]
+_at = run_app({"ui_lang": "en", "records": _recs19})
+ok("載入紀錄後匯出頁籤無例外", not _at.exception,
+   str(_at.exception[0].value)[:200] if _at.exception else "")
+_btn = [b for b in _at.button if b.key == "btn_hl_prepare"]
+ok("有產生螢光筆檔案的按鈕", len(_btn) == 1, str(len(_btn)))
+if _btn:
+    _btn[0].click().run()
+    ok("按下後無例外", not _at.exception,
+       str(_at.exception[0].value)[:200] if _at.exception else "")
+    _hl = _at.session_state["hl_export"] if "hl_export" in _at.session_state else None
+    ok("產生了 zip，三份逐字稿三個檔", bool(_hl) and _hl["files"] == 3
+       and len(_zip19.ZipFile(_io19.BytesIO(_hl["data"])).namelist()) == 3,
+       str(_hl and _hl["files"]))
+    ok("參考編碼的引文全部找得到位置", bool(_hl) and _hl["n"] > 0 and _hl["m"] == 0,
+       str(_hl and (_hl["n"], _hl["m"])))
+F.reset()
+
+print()
+print("=" * 70)
 print(f"結果：{'全部通過 ✅' if not FAIL else '失敗項目 ' + str(FAIL)}")
 print("=" * 70)
 sys.exit(1 if FAIL else 0)

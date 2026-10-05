@@ -12,7 +12,7 @@ not leave it.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.txt)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
-[![Tests](https://img.shields.io/badge/tests-20%20suites-brightgreen.svg)](#testing)
+[![Tests](https://img.shields.io/badge/tests-21%20suites-brightgreen.svg)](#testing)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22882168.svg)](https://doi.org/10.5281/zenodo.22882168)
 
 ---
@@ -389,7 +389,7 @@ sidebar states which case you are in.
 | Theme structure | Two-stage inductive theme induction with a model, or model-free grouping of the codes by co-occurrence or label similarity which you name yourself; Gioia data structure figure with SVG export |
 | Lexicon induction | Term discovery, log-odds feature induction, dictionary baseline for auditing the model |
 | Reliability | Sampling frame of respondent turns from records or from transcripts you upload, blind coding sheets, κ / PABAK / AC1 / Krippendorff α, confusion matrices, model precision and recall, and human codings turned back into analysable records |
-| Export | Excel, Word, JSON |
+| Export | Excel, Word, JSON; each transcript as a Word file with the coded passages highlighted in place (current coding, the model's original draft, or unmarked with the colour key for hand highlighting) |
 | Framework builder | Retrieve literature from OpenAlex, draft dimensions, approve them individually |
 
 ---
@@ -441,7 +441,7 @@ the code, saying which and why.
 python run_tests.py
 ```
 
-Twenty suites, **none requiring network access, an API key or a model
+Twenty-one suites, **none requiring network access, an API key or a model
 server**. The OpenAlex client is tested against offline fixtures, the provider
 abstraction against fake transports, and the interface end-to-end with
 Streamlit's `AppTest` in both languages and several frameworks.

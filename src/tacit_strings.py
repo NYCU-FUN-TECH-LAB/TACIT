@@ -771,6 +771,28 @@ APP_STRINGS = {
     "export.excel": {"en": "Excel (full cross-analysis)", "zh": "Excel（完整交互分析）"},
     "export.word": {"en": "Word report", "zh": "Word 報告"},
     "export.json": {"en": "Merged JSON", "zh": "合併 JSON"},
+    "export.hl_title": {"en": "Highlighted transcripts (Word)", "zh": "螢光筆標記的逐字稿（Word）"},
+    "export.hl_hint": {
+        "en": "The whole transcript, with every coded passage highlighted where it "
+              "stands in the original text: one colour per dimension, and the segment "
+              "number and codes in a bracket after each passage. One file per transcript. "
+              "The unmarked version carries the same colour key, for a person to highlight "
+              "by hand in Word.",
+        "zh": "整份逐字稿，把每一段被編碼的話在原文的位置用螢光筆標出來：一個維度一個顏色，"
+              "每段後面的括號是段落編號與編碼。一份逐字稿一個檔。"
+              "「未標記」版本附同一份顏色圖例，給人在 Word 裡手動畫螢光筆用。"},
+    "export.hl_source": {"en": "Which coding", "zh": "標哪一份編碼"},
+    "export.hl_current": {"en": "Current coding (after review)", "zh": "目前的編碼（複核之後）"},
+    "export.hl_model": {"en": "The model's original draft", "zh": "模型的原始草稿"},
+    "export.hl_blank": {"en": "Unmarked, with the colour key (for hand highlighting)",
+                        "zh": "未標記，附顏色圖例（供人工螢光筆標記）"},
+    "export.hl_prepare": {"en": "Prepare the files", "zh": "產生檔案"},
+    "export.hl_download": {"en": "Download highlighted transcripts", "zh": "下載螢光筆標記的逐字稿"},
+    "export.hl_none": {"en": "None of the loaded records holds its transcript text, so there is "
+                             "nothing to highlight.",
+                       "zh": "載入的紀錄都沒有逐字稿內容，沒有東西可以標。"},
+    "export.hl_summary": {"en": "{files} files: {n} passages highlighted, {m} not located in the transcript.",
+                          "zh": "{files} 個檔：標出 {n} 段，另有 {m} 段的引文在逐字稿裡找不到。"},
     "export.hint": {
         "en": "The Excel file contains the coded long table, descriptors, one "
               "sheet per cross-analysis, and a code reference. The long table is "
@@ -1259,6 +1281,57 @@ REVIEW_STRINGS = {
     "ir.tab2": {"en": "Sample & blind", "zh": "抽樣與盲測"},
     "ir.tab3": {"en": "Collect codings", "zh": "回收編碼"},
     "ir.tab4": {"en": "Reliability report", "zh": "信度報表"},
+    "ir.tab5": {"en": "Marked Word files", "zh": "標記過的 Word 檔"},
+    "ir.mk_intro": {
+        "en": "Compare coding done by hand in Word with the loaded coding. Export the "
+              "unmarked transcripts from the Export tab, have each coder select passages and "
+              "add a **comment** holding the code or codes (for example `{example}`), and "
+              "upload the files here. A passage may carry several codes and passages may "
+              "overlap. Highlighting is optional; codes are read from the comments. "
+              "Agreement is computed on respondent turns, with the hand coding as the reference.",
+        "zh": "把人在 Word 裡做的編碼，與目前載入的編碼做比較。先到匯出頁籤下載「未標記」的逐字稿，"
+              "請編碼者選取段落、加上**註解**並在註解裡寫碼（例如 `{example}`），再把檔案上傳到這裡。"
+              "一段話可以有好幾個碼，段落之間可以重疊。要不要畫螢光筆都可以，程式讀的是註解裡的碼。"
+              "一致性以受訪者的發言單元計算，人工編碼當參照。"},
+    "ir.mk_upload": {"en": "Marked transcripts (.docx)", "zh": "標記過的逐字稿（.docx）"},
+    "ir.mk_coder": {"en": "Coder name", "zh": "編碼者名稱"},
+    "ir.mk_against": {"en": "Compare with", "zh": "與哪一份比較"},
+    "ir.mk_against_model": {"en": "The model's original draft", "zh": "模型的原始草稿"},
+    "ir.mk_against_current": {"en": "The current coding (after review)", "zh": "目前的編碼（複核之後）"},
+    "ir.mk_match": {"en": "Record for {file}", "zh": "{file} 對應的紀錄"},
+    "ir.mk_no_match": {"en": "(not compared)", "zh": "（不比較）"},
+    "ir.mk_read_error": {"en": "{file}: could not be read as a Word document ({err}).",
+                         "zh": "{file}：無法當成 Word 文件讀取（{err}）。"},
+    "ir.mk_no_comments": {"en": "{file}: no comment with a recognisable code was found.",
+                          "zh": "{file}：沒有找到任何寫著可辨識編碼的註解。"},
+    "ir.mk_need_records": {"en": "Load the coded records first; the comparison needs something to compare with.",
+                           "zh": "請先載入已編碼的紀錄，才有東西可以比較。"},
+    "ir.mk_col_file": {"en": "File", "zh": "檔案"},
+    "ir.mk_col_record": {"en": "Record", "zh": "紀錄"},
+    "ir.mk_col_comments": {"en": "Comments with codes", "zh": "有碼的註解"},
+    "ir.mk_col_unknown": {"en": "Comments without a code", "zh": "認不出碼的註解"},
+    "ir.mk_col_hl": {"en": "Highlighted, no comment", "zh": "只畫螢光筆沒寫註解"},
+    "ir.mk_col_units": {"en": "Units", "zh": "單元數"},
+    "ir.mk_col_precision": {"en": "Precision", "zh": "Precision"},
+    "ir.mk_col_recall": {"en": "Recall", "zh": "Recall"},
+    "ir.mk_col_human_only": {"en": "Hand only (cells)", "zh": "只有人標（格）"},
+    "ir.mk_col_model_only": {"en": "Other only (cells)", "zh": "只有對方標（格）"},
+    "ir.mk_pooled": {"en": "All files pooled", "zh": "全部檔案合併"},
+    "ir.mk_details": {"en": "Details: {file}", "zh": "明細：{file}"},
+    "ir.mk_unknown_list": {"en": "Comments in which no code was recognised", "zh": "認不出碼的註解"},
+    "ir.mk_hl_list": {"en": "Highlighted passages with no comment (not counted)",
+                      "zh": "畫了螢光筆但沒有註解的段落（不計入）"},
+    "ir.mk_differ": {"en": "Units coded differently", "zh": "兩邊編碼不同的單元"},
+    "ir.mk_not_placed": {"en": "{h} hand-coded and {m} other passages fell on no respondent turn "
+                               "(too short, on an interviewer turn, or outside the transcript) and are not counted.",
+                         "zh": "有 {h} 段人工標記與 {m} 段對方的標記落不到任何受訪者發言單元上"
+                               "（太短、落在訪員的提問上、或不在逐字稿裡），不計入。"},
+    "ir.mk_download": {"en": "Download the hand codings as records (JSON)",
+                       "zh": "下載人工編碼的紀錄（JSON）"},
+    "ir.mk_download_help": {"en": "Load this file from the sidebar as its own analysis; loading it beside the "
+                                  "model's records for the same respondents would count each respondent twice.",
+                            "zh": "請把這個檔當成另一份分析從側邊欄載入；與同一批受訪者的模型紀錄一起載入，"
+                                  "每位受訪者會被算兩次。"},
     "ir.source": {"en": "Build the frame from", "zh": "抽樣框的來源"},
     "ir.source_records": {"en": "The analyses loaded in the sidebar",
                           "zh": "側欄載入的分析"},
