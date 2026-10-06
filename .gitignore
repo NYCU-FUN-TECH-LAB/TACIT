@@ -4,13 +4,23 @@
 # 這裡列出的是「安全網」，不是唯一防線。真實訪談資料應該放在
 # repo 資料夾**之外**（見 README 的「Handling real interview data」一節）——
 # .gitignore 只擋還沒被追蹤的檔案，一個 git add -f 就會破功。
+# 使用者自己的分析紀錄（含逐字稿全文）不進版本控制；只有示範語料的參考編碼進。
 analyses/*.json
+analyses/**/*.json
 analyses_v1/*.json
 # 隨附的示範分析（合成資料，可公開）例外
 !analyses/demo_en_*.json
 !analyses/demo_zh_*.json
+analyses/*_reviewed_*.json
+# 使用者自建的框架不進版本控制；出貨的四個例外。
+frameworks/*.json
+!frameworks/ri_stilgoe_2013.json
+!frameworks/tdf_cane_2012.json
+!frameworks/utaut_venkatesh_2003.json
+!frameworks/esg_disclosure_probe.json
 irr_session*.json
 themes.json
+lexicon_*.json
 transcripts/
 research-data/
 
