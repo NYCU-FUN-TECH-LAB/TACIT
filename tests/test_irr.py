@@ -136,6 +136,31 @@ check_true("未標記層用識別碼而非顯示文字",
 
 print()
 print("=" * 70)
+print("測試 2c：講者獨佔一行的逐字稿（會議軟體匯出）與指定訪員")
+print("=" * 70)
+_meet = "\n".join([
+    "Audio file", "meeting.m4a", "Transcript",
+    "Speaker 3", "0:00", "So to start, could you tell us about your project on smart healthcare?",
+    "Speaker 1", "0:12", "We are a funding group and we support faculty who build these systems in hospitals.",
+    "Speaker 2", "Maybe pick one and we can talk about that one in more detail?",
+    "Speaker 1", "1:05", "Sure. The recent funding cycle supported a startup that joined the programme last year.",
+    "Speaker 1", "It has changed over time because the landscape of hospital procurement has changed.",
+])
+_u = I.split_units(_meet)
+check("時間戳行不是單元", any(u[S.TEXT].strip() == "0:12" for u in _u), False)
+check("講者行不是單元", any(u[S.TEXT].startswith("Speaker") for u in _u), False)
+check("講者是獨佔一行的標籤", sorted({u[S.SPEAKER] for u in _u if u[I.ROLE] != I.ROLE_HEADER}),
+      ["Speaker 1", "Speaker 2", "Speaker 3"])
+check("標題行是 header", [u[I.ROLE] for u in _u][:1], [I.ROLE_HEADER])
+_sp = I.speakers_of(_meet)
+check("每位講者的單元數", {k: v["units"] for k, v in _sp.items()}, {"Speaker 3": 1, "Speaker 1": 3, "Speaker 2": 1})
+check("建議的訪員：字最多的是受訪者，其餘是訪員", I.suggest_interviewers(_meet), {"speaker 2", "speaker 3"})
+_fr, _dg = I.build_frame([], {"m": _meet}, interviewers=I.suggest_interviewers(_meet))
+check("指定訪員後抽樣框只剩受訪者", (_dg["total_units"], _dg["excluded_interviewer_units"]), (3, 2))
+check("不指定時 Speaker N 全算受訪者", I.build_frame([], {"m": _meet})[1]["total_units"], 5)
+
+print()
+print("=" * 70)
 print("測試 3：分層抽樣")
 print("=" * 70)
 big = []

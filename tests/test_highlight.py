@@ -103,7 +103,7 @@ rec = make_record()
 placed, missing = H.place_marks(rec, H.SOURCE_CURRENT)
 check("找到位置的段落", [m["id"] for m in placed], ["S001", "S002", "S003"])
 check("找不到位置的段落", [m["id"] for m in missing], ["S004"])
-data = H.build_docx(rec, H.SOURCE_CURRENT, lang="en")
+data = H.build_docx(rec, H.SOURCE_CURRENT, lang="en", list_unlocated=True)
 hl = highlighted(data)
 texts = [t for t, _ in hl]
 check_true("三段引文都被螢光筆標出來", all(q in texts for q in (Q1, Q2, Q3)), str(texts)[:200])
@@ -116,7 +116,11 @@ txt = body_text(data)
 check_true("句尾括號帶段落編號與碼", "[S001 ANT-P]" in txt and "[S003 RES-P]" in txt, "")
 check_true("多重編碼的括號列出兩個碼", "[S002 " in txt and "ENG-N" in txt and "REF-P" in txt)
 check_true("沒被標到的話原樣保留", "[Interviewer] And afterwards?" in txt)
-check_true("找不到位置的段落列在文末", "nowhere in the transcript" in txt)
+check_true("要求時，找不到位置的段落列在文末", "nowhere in the transcript" in txt)
+check_true("預設不列", "nowhere in the transcript" not in body_text(H.build_docx(rec, H.SOURCE_CURRENT, lang="en")))
+check("標點與大小寫不同的引文仍找得到",
+      H.locate(TRANSCRIPT, "we ran a baseline period, of six months before anything was switched on"),
+      (TRANSCRIPT.index(Q1), TRANSCRIPT.index(Q1) + len(Q1) - 1))
 check_true("訪員的提問沒有螢光筆", not any("unintended consequences" in t for t in texts))
 # 拿掉括號之後，逐字稿每一行都完整還在
 doc = Document(io.BytesIO(data))
@@ -155,11 +159,11 @@ print("=" * 70)
 rec = make_record()
 blank = H.build_docx(rec, H.SOURCE_BLANK, lang="en")
 bh = highlighted(blank)
-check("只有圖例有顏色，四個維度各一格", len(bh), 4)
+check("人工編碼版沒有任何螢光筆", len(bh), 0)
 check_true("逐字稿本身沒有任何螢光筆", not any(Q1 in t or Q2 in t for t, _ in bh))
 check_true("逐字稿內容完整", all(line in body_text(blank) for line in LINES))
-check("空白版與標記版的圖例顏色一致",
-      [c for _, c in bh], [H.colour_map([rec])[d] for d in F.active().dimensions])
+check_true("空白版附上定義、指標與排除條件",
+           all(k in body_text(blank) for k in ("Definition", "Indicators", "Not this dimension")))
 
 print()
 print("=" * 70)
@@ -319,6 +323,52 @@ check("無極性框架：識別字要大小寫相符", H.parse_codes("PE and SI"
 check("一般單字不會被當成碼", H.parse_codes("the type of pe lesson, si"), [])
 check("無極性框架：完整標籤", H.parse_codes("performance expectancy"), ["PE"])
 F.activate_by_id("ri_stilgoe_2013")
+
+print()
+print("=" * 70)
+print("測試 11：裁決——兩組不同的單元由人定稿")
+print("=" * 70)
+rec = make_record()
+mm, _ = H.model_marks_of(rec, H.SOURCE_MODEL)
+hm = [{"text": Q1, "codes": ["ANT-P"]}, {"text": Q2, "codes": ["ENG-N", "REF-P"]}, {"text": Q3, "codes": ["RES-N"]}]
+cmp = H.compare_marks(TRANSCRIPT, hm, mm)
+check("compare_marks 回傳抽樣框的單元文字", [r["text"][:20] for r in cmp["frame"]], [LINES[2][13:33], LINES[4][13:33]])
+diff_units = [d["unit"] for d in cmp["differ"]]
+check("只有一個單元不同", len(diff_units), 1)
+u = diff_units[0]
+for choice, want in ((H.DECISION_A, ["RES-N"]), (H.DECISION_B, ["RES-P"]), (H.DECISION_BOTH, ["RES-N", "RES-P"]),
+                     (H.DECISION_NEITHER, None), (H.DECISION_CUSTOM, ["ANT-N"])):
+    adj = H.adjudicated_record(cmp, {u: {"decision": choice, "codes": ["ANT-N"], "reason": "r"}},
+                               "P01", "judge", "hand", "model", transcript=TRANSCRIPT)
+    got = [sorted(S.codes_of(sg)) for sg in adj[S.SEGMENTS] if sg[S.FULL_TEXT] == Q3]
+    check(f"裁決 {choice}", got, [want] if want else [])
+adj = H.adjudicated_record(cmp, {}, "P01", "judge", transcript=TRANSCRIPT)
+check("沒裁決的單元記在 undecided", adj[S.META]["adjudication"]["undecided"], [u])
+check("相同的單元直接採用", [sorted(S.codes_of(sg)) for sg in adj[S.SEGMENTS]], [["ANT-P", "ENG-N", "REF-P"]])
+adj = H.adjudicated_record(cmp, {u: {"decision": H.DECISION_B, "reason": "model read it as adaptive"}}, "P01", "judge", "hand", "model", transcript=TRANSCRIPT)
+h = [sg for sg in adj[S.SEGMENTS] if sg[S.FULL_TEXT] == Q3][0][S.REVIEW][S.HISTORY][0]
+check("歷史記下兩組原本的碼、決定、理由與裁決者",
+      (h["hand"], h["model"], h["decision"], h["reason"], h["by"]), (["RES-N"], ["RES-P"], "b", "model read it as adaptive", "judge"))
+check("定稿紀錄標明來源", adj[S.META]["source"], "adjudicated/judge")
+check("裁決計數", adj[S.META]["adjudication"]["counts"]["b"], 1)
+check_true("定稿紀錄可以再匯出成螢光筆檔",
+           Q3 in [t for t, _ in highlighted(H.build_docx(adj, H.SOURCE_CURRENT, lang="en"))])
+
+print()
+print("=" * 70)
+print("測試 12：維度層一致性、比對工作簿、並排的兩個螢光筆版本")
+print("=" * 70)
+dimk = H.dimension_agreement(cmp)
+check("維度層的格數 = 單元 × 維度", dimk["n"], cmp["units"] * 4)
+check("第三單元 RES-N 對 RES-P 在維度層算一致", dimk["a_only"] + dimk["b_only"], 0)
+wb = H.comparison_workbook([("f1.docx", cmp)], "hand", "model")
+import openpyxl
+sheets = openpyxl.load_workbook(io.BytesIO(wb)).sheetnames
+check("工作簿三張表", sheets, ["summary", "per_code", "units"])
+sbs = zipfile.ZipFile(io.BytesIO(H.side_by_side_zip(
+    {"transcript": TRANSCRIPT, "marks": [{"start": 0, "end": 1, "text": Q1, "comment": "ANT-P", "author": "s", "codes": ["ANT-P"]}],
+     "highlight_only": [], "respondent": ""}, rec, H.SOURCE_MODEL, "P01", "student", "en")))
+check("並排 zip 有兩個檔", len(sbs.namelist()), 2)
 
 print()
 print("=" * 70)

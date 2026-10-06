@@ -49,6 +49,12 @@ _INTERVIEWER = re.compile(
     r'^(?:interviewer|int|i|q|question|moderator|facilitator|researcher|host|'
     r'chair(?:man|woman|person)?|訪員|訪談者|訪問者|主持人|提問者?|問)(?:\s*\d+)?$',
     re.IGNORECASE)
+# 講者標籤獨自佔一行的寫法（會議軟體匯出的逐字稿）：「Speaker 2」一行，
+# 下一行才是發言；時間戳行（0:12 或 00:01:05）略過。名字獨佔一行也算，
+# 但要在整份逐字稿裡出現三次以上，免得把標題當成講者。
+_LINE_SPEAKER = re.compile(r"^Speaker\s*\d*$", re.IGNORECASE)
+_LINE_NAME = re.compile(r"^[A-Za-z\u4e00-\u9fff][A-Za-z\u4e00-\u9fff .'\-]{0,30}$")
+_TIMESTAMP = re.compile(r"^\d{1,2}:\d\d(:\d\d)?(\s*[-–]\s*\d{1,2}:\d\d(:\d\d)?)?$")
 ROLE = "role"
 ROLE_RESPONDENT = "respondent"
 ROLE_INTERVIEWER = "interviewer"
@@ -87,11 +93,53 @@ def _colon_labels(lines):
     return {k for k, n in seen.items() if n >= 2}
 
 
-def speaker_role(speaker):
+def speaker_role(speaker, interviewers=None):
+    """訪員：標籤符合訪員字樣，或在呼叫端指定的 interviewers 集合裡。"""
+    if interviewers and (speaker or "").strip().casefold() in interviewers:
+        return ROLE_INTERVIEWER
     return ROLE_INTERVIEWER if _INTERVIEWER.match(speaker or "") else ROLE_RESPONDENT
 
 
-def split_units(transcript, min_len=15, max_len=400):
+def _line_labels(lines):
+    """獨佔一行的講者標籤：Speaker N 一律算；其他短行要出現三次以上。"""
+    seen = Counter()
+    for line in lines:
+        if _LINE_SPEAKER.match(line):
+            seen[line] += 3
+        elif _LINE_NAME.match(line) and len(line.split()) <= 4 and not _TIMESTAMP.match(line):
+            seen[line] += 1
+    return {k for k, n in seen.items() if n >= 3}
+
+
+def speakers_of(transcript, interviewers=None):
+    """每位講者的單元數、字元數與角色，依出現順序。"""
+    out = {}
+    for u in split_units(transcript, interviewers=interviewers):
+        if u[ROLE] == ROLE_HEADER:
+            continue
+        d = out.setdefault(u[S.SPEAKER], {"units": 0, "chars": 0, "role": u[ROLE]})
+        d["units"] += 1
+        d["chars"] += len(u[S.TEXT])
+    return out
+
+
+def suggest_interviewers(transcript):
+    """
+    建議哪些講者是訪員：標籤本身寫明的；若標籤是 Speaker 1、Speaker 2 這種
+    看不出身分的，字元數最多的那一位當受訪者，其餘當訪員。呼叫端讓使用者改。
+    """
+    sp = speakers_of(transcript)
+    named = {k.casefold() for k in sp if _INTERVIEWER.match(k or "")}
+    if named:
+        return named
+    generic = [k for k in sp if _LINE_SPEAKER.match(k or "")]
+    if len(generic) >= 2:
+        top = max(generic, key=lambda k: sp[k]["chars"])
+        return {k.casefold() for k in generic if k != top}
+    return set()
+
+
+def split_units(transcript, min_len=15, max_len=400, interviewers=None):
     """
     把逐字稿切成「發言單元」，每個單元帶講者與角色。
 
@@ -102,13 +150,18 @@ def split_units(transcript, min_len=15, max_len=400):
     跨講者合併會把訪員的提問黏進受訪者的發言裡，造成張冠李戴。
     """
     lines = [raw.strip() for raw in (transcript or "").split("\n")]
-    lines = [ln for ln in lines if ln]
+    lines = [ln for ln in lines if ln and not _TIMESTAMP.match(ln)]
     colon = _colon_labels(lines)
-    labelled = any(_SPEAKER_BRACKET.match(ln) for ln in lines) or bool(colon)
+    standalone = _line_labels(lines)
+    labelled = any(_SPEAKER_BRACKET.match(ln) for ln in lines) or bool(colon) or bool(standalone)
+    interviewers = {str(x).strip().casefold() for x in (interviewers or ())}
 
     units, buf = [], None
     cur_speaker, seen_label = "", False
     for line in lines:
+        if line in standalone:
+            cur_speaker, seen_label = line, True
+            continue
         m = _SPEAKER_BRACKET.match(line)
         if m:
             speaker, body = m.group(1).strip(), m.group(2).strip()
@@ -121,12 +174,12 @@ def split_units(transcript, min_len=15, max_len=400):
                 body = line
         if m:
             cur_speaker, seen_label = speaker, True
-            role = speaker_role(speaker)
+            role = speaker_role(speaker, interviewers)
         elif labelled and not seen_label:
             speaker, role = "", ROLE_HEADER
         else:
             speaker = cur_speaker
-            role = speaker_role(speaker) if labelled else ROLE_RESPONDENT
+            role = speaker_role(speaker, interviewers) if labelled else ROLE_RESPONDENT
         if not body:
             continue
         if (buf and len(normalize(buf[S.TEXT])) < min_len
@@ -178,7 +231,7 @@ def _overlaps(unit_norm, excerpt_norm, min_chars=10):
 
 
 def build_frame(records, transcripts, min_len=15, max_len=400,
-                include_interviewer=False):
+                include_interviewer=False, interviewers=None):
     """
     transcripts: {respondent: 逐字稿全文}
     回傳抽樣框：每個單元一列，附上 AI 在該單元標記的編碼集合。
@@ -200,7 +253,7 @@ def build_frame(records, transcripts, min_len=15, max_len=400,
     frame, matched, on_excluded = [], defaultdict(set), defaultdict(set)
     excluded = Counter()
     for resp, text in transcripts.items():
-        for k, u in enumerate(split_units(text, min_len, max_len)):
+        for k, u in enumerate(split_units(text, min_len, max_len, interviewers)):
             role = u.get(ROLE, ROLE_RESPONDENT)
             un = normalize(u[S.TEXT])
             if role == ROLE_HEADER or (role == ROLE_INTERVIEWER

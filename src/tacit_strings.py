@@ -776,16 +776,18 @@ APP_STRINGS = {
         "en": "The whole transcript, with every coded passage highlighted where it "
               "stands in the original text: one colour per dimension, and the segment "
               "number and codes in a bracket after each passage. One file per transcript. "
-              "The unmarked version carries the same colour key, for a person to highlight "
-              "by hand in Word.",
+              "The unmarked version carries the codebook, for a person to code by hand in "
+              "Word with comments.",
         "zh": "整份逐字稿，把每一段被編碼的話在原文的位置用螢光筆標出來：一個維度一個顏色，"
               "每段後面的括號是段落編號與編碼。一份逐字稿一個檔。"
-              "「未標記」版本附同一份顏色圖例，給人在 Word 裡手動畫螢光筆用。"},
+              "「未標記」版本附編碼簿，給人在 Word 裡用註解手動編碼。"},
     "export.hl_source": {"en": "Which coding", "zh": "標哪一份編碼"},
     "export.hl_current": {"en": "Current coding (after review)", "zh": "目前的編碼（複核之後）"},
     "export.hl_model": {"en": "The model's original draft", "zh": "模型的原始草稿"},
-    "export.hl_blank": {"en": "Unmarked, with the colour key (for hand highlighting)",
-                        "zh": "未標記，附顏色圖例（供人工螢光筆標記）"},
+    "export.hl_blank": {"en": "Unmarked: transcript and codebook (for coding by hand with comments)",
+                        "zh": "未標記：逐字稿＋編碼簿（供人工用註解編碼）"},
+    "export.hl_list_unlocated": {"en": "List passages whose quote could not be located at the end of each file",
+                                 "zh": "把引文對不回原文的段落列在每個檔案的最後"},
     "export.hl_prepare": {"en": "Prepare the files", "zh": "產生檔案"},
     "export.hl_download": {"en": "Download highlighted transcripts", "zh": "下載螢光筆標記的逐字稿"},
     "export.hl_none": {"en": "None of the loaded records holds its transcript text, so there is "
@@ -1306,6 +1308,39 @@ REVIEW_STRINGS = {
                           "zh": "{file}：沒有找到任何寫著可辨識編碼的註解。"},
     "ir.mk_need_records": {"en": "Load the coded records first; the comparison needs something to compare with.",
                            "zh": "請先載入已編碼的紀錄，才有東西可以比較。"},
+    "ir.mk_speakers": {"en": "Speakers in {file} (units, characters): {list}",
+                       "zh": "{file} 的講者（單元數、字元數）：{list}"},
+    "ir.mk_interviewers": {"en": "Interviewer speakers for {file} (kept out of the frame)",
+                           "zh": "{file} 的訪員（不進抽樣框）"},
+    "ir.mk_dimension": {"en": "Dimension level (polarity ignored): κ = {k}; agreement {po}",
+                        "zh": "維度層（不分正負）：κ = {k}；一致率 {po}"},
+    "ir.mk_per_code": {"en": "Per code", "zh": "各碼"},
+    "ir.mk_download_xlsx": {"en": "Download the comparison (Excel)", "zh": "下載比對結果（Excel）"},
+    "ir.mk_download_pair": {"en": "Download both highlighted versions (Word)", "zh": "下載兩個螢光筆版本（Word）"},
+    "ir.adj_title": {"en": "Adjudicate: {file}", "zh": "裁決：{file}"},
+    "ir.adj_intro": {"en": "For every unit the two codings differ on, decide what the final coding is. "
+                           "Units they agree on are taken as they are. The decision, both original codings "
+                           "and your reason are written into the record.",
+                     "zh": "兩組編碼不同的每個單元，決定定稿是什麼。兩組相同的單元直接採用。"
+                           "決定、兩組原本的碼與理由都會寫進紀錄。"},
+    "ir.adj_name": {"en": "Adjudicator", "zh": "裁決者"},
+    "ir.adj_col_decision": {"en": "Decision", "zh": "決定"},
+    "ir.adj_col_codes": {"en": "Codes (if custom)", "zh": "自訂的碼"},
+    "ir.adj_col_reason": {"en": "Reason", "zh": "理由"},
+    "ir.adj_opt_a": {"en": "hand", "zh": "採人工"},
+    "ir.adj_opt_b": {"en": "other", "zh": "採對方"},
+    "ir.adj_opt_both": {"en": "both", "zh": "兩者都要"},
+    "ir.adj_opt_neither": {"en": "neither", "zh": "都不要"},
+    "ir.adj_opt_custom": {"en": "custom", "zh": "自訂"},
+    "ir.adj_build": {"en": "Build the adjudicated record", "zh": "產生裁決後的紀錄"},
+    "ir.adj_summary": {"en": "{units} units: {same} agreed, {a} hand, {b} other, {both} both, {neither} neither, "
+                             "{custom} custom, {undecided} undecided.",
+                       "zh": "{units} 個單元：{same} 個兩組相同、{a} 個採人工、{b} 個採對方、{both} 個兩者都要、"
+                             "{neither} 個都不要、{custom} 個自訂、{undecided} 個未裁決。"},
+    "ir.adj_download": {"en": "Download the adjudicated record (JSON)", "zh": "下載裁決後的紀錄（JSON）"},
+    "ir.adj_save": {"en": "Save into this workspace", "zh": "存進這個工作區"},
+    "ir.adj_saved": {"en": "Saved as {file}. Load it from the sidebar as its own analysis.",
+                     "zh": "已存成 {file}。請從側邊欄把它當成一份獨立的分析載入。"},
     "ir.mk_col_file": {"en": "File", "zh": "檔案"},
     "ir.mk_col_record": {"en": "Record", "zh": "紀錄"},
     "ir.mk_col_comments": {"en": "Comments with codes", "zh": "有碼的註解"},

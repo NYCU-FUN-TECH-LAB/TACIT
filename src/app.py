@@ -3142,7 +3142,7 @@ with tab_irr:
         elif mk_files:
             _labels5 = record_labels(recs)
             _opts5 = [-1] + list(range(len(recs)))
-            _rows5, _human5, _detail5 = [], [], []
+            _rows5, _human5, _detail5, _adj5 = [], [], [], []
             _pa, _pb, _pu = {}, {}, []
             for _k, _f in enumerate(mk_files):
                 try:
@@ -3161,6 +3161,19 @@ with tab_irr:
                     index=_opts5.index(_guess) if _guess is not None else 0,
                     format_func=lambda i, _l=_labels5: t("ir.mk_no_match") if i < 0 else _l[i],
                     key=f"mk_match_{_k}_{_f.name}")
+                # 講者：訪員的提問不進抽樣框。標籤看不出身分（Speaker 1、2）時，
+                # 字最多的當受訪者、其餘當訪員，讓使用者改。
+                _sp = RIRR.speakers_of(_parsed["transcript"])
+                _names = [k for k in _sp if k]
+                _sugg = RIRR.suggest_interviewers(_parsed["transcript"])
+                _ivs = []
+                if _names:
+                    st.caption(t("ir.mk_speakers", file=_f.name, list="; ".join(
+                        f"{k} ({v['units']}, {v['chars']:,})" for k, v in _sp.items() if k)))
+                    _ivs = st.multiselect(
+                        t("ir.mk_interviewers", file=_f.name), _names,
+                        default=[k for k in _names if k.casefold() in _sugg],
+                        key=f"mk_iv_{_k}_{_f.name}")
                 _row = {t("ir.mk_col_file"): _f.name,
                         t("ir.mk_col_record"): "" if _idx < 0 else _labels5[_idx],
                         t("ir.mk_col_comments"): len(_coded),
@@ -3170,7 +3183,8 @@ with tab_irr:
                 if _idx >= 0 and _coded:
                     _other, _ = HL.model_marks_of(recs[_idx], mk_against,
                                                   transcript=_parsed["transcript"])
-                    _cmp = HL.compare_marks(_parsed["transcript"], _coded, _other)
+                    _cmp = HL.compare_marks(_parsed["transcript"], _coded, _other,
+                                            interviewers=_ivs)
                     _pl = _cmp["pooled"] or {}
                     _row.update({
                         t("ir.mk_col_units"): _cmp["units"],
@@ -3186,6 +3200,8 @@ with tab_irr:
                         _pa[_key], _pb[_key] = _cmp["a"][_u], _cmp["b"][_u]
                 _rows5.append(_row)
                 _detail5.append((_f.name, _unknown, _parsed["highlight_only"], _cmp))
+                if _cmp:
+                    _adj5.append((_k, _f.name, _parsed, _idx, _cmp))
                 _resp5 = (recs[_idx][S.RESPONDENT] if _idx >= 0
                           else (_parsed["respondent"] or os.path.splitext(_f.name)[0]))
                 _human5.append(HL.record_from_marked(_parsed, _resp5, mk_coder.strip()))
@@ -3205,14 +3221,20 @@ with tab_irr:
                            t("ir.mk_col_human_only"), t("ir.mk_col_model_only"),
                            t("ir.mk_col_comments"), t("ir.mk_col_unknown"), t("ir.mk_col_hl")]
                 show_df(_df5[[c for c in _order5 if c in _df5.columns]], hide_index=True)
-            for _name, _unknown, _hl_only, _cmp in _detail5:
-                if not (_unknown or _hl_only or (_cmp and (_cmp["differ"] or _cmp["human_not_placed"]
-                                                           or _cmp["model_not_placed"]))):
+            _pairs5 = {k: (p, i) for k, n, p, i, c in _adj5}
+            for _j, (_name, _unknown, _hl_only, _cmp) in enumerate(_detail5):
+                if not (_unknown or _hl_only or _cmp):
                     continue
                 with st.expander(t("ir.mk_details", file=_name)):
                     if _cmp and (_cmp["human_not_placed"] or _cmp["model_not_placed"]):
                         st.caption(t("ir.mk_not_placed", h=_cmp["human_not_placed"],
                                      m=_cmp["model_not_placed"]))
+                    if _cmp:
+                        _dk = HL.dimension_agreement(_cmp)
+                        if _dk:
+                            st.caption(t("ir.mk_dimension", k=_dk["kappa"], po=_dk["observed_agreement"]))
+                        st.markdown(f"**{t('ir.mk_per_code')}**")
+                        show_df(pd.DataFrame(_cmp["per_code"]), hide_index=True)
                     if _cmp and _cmp["differ"]:
                         st.markdown(f"**{t('ir.mk_differ')}**")
                         show_df(pd.DataFrame(
@@ -3229,6 +3251,72 @@ with tab_irr:
                         show_df(pd.DataFrame(
                             [{"colour": h["colour"], "text": h["text"]} for h in _hl_only]),
                             hide_index=True)
+            # ---- 裁決：不同的單元由人定稿，產出可以接到後面分析的紀錄
+            _dec_labels = {HL.DECISION_A: t("ir.adj_opt_a"), HL.DECISION_B: t("ir.adj_opt_b"),
+                           HL.DECISION_BOTH: t("ir.adj_opt_both"),
+                           HL.DECISION_NEITHER: t("ir.adj_opt_neither"),
+                           HL.DECISION_CUSTOM: t("ir.adj_opt_custom")}
+            _dec_by_label = {v: k for k, v in _dec_labels.items()}
+            for _k, _name, _parsed, _idx, _cmp in _adj5:
+                if not _cmp["differ"]:
+                    continue
+                with st.expander(t("ir.adj_title", file=_name)):
+                    st.caption(t("ir.adj_intro"))
+                    _judge = st.text_input(t("ir.adj_name"), mk_coder.strip() or "adjudicator",
+                                           key=f"adj_name_{_k}")
+                    _grid = pd.DataFrame([{
+                        "unit": d["unit"], t("ir.mk_col_human_only").split(" (")[0]: ", ".join(d["human"]),
+                        t("ir.mk_col_model_only").split(" (")[0]: ", ".join(d["model"]),
+                        "text": d["text"], t("ir.adj_col_decision"): "",
+                        t("ir.adj_col_codes"): "", t("ir.adj_col_reason"): ""} for d in _cmp["differ"]])
+                    _edited = st.data_editor(
+                        _grid, hide_index=True, key=f"adj_grid_{_k}", **WIDE,
+                        disabled=["unit", _grid.columns[1], _grid.columns[2], "text"],
+                        column_config={t("ir.adj_col_decision"): st.column_config.SelectboxColumn(
+                            options=list(_dec_labels.values()), required=False)})
+                    _decisions = {}
+                    for _, _r in _edited.iterrows():
+                        _choice = _dec_by_label.get(str(_r[t("ir.adj_col_decision")] or ""))
+                        if _choice:
+                            _codes = [c.strip().upper() for c in re.split(r"[,;、，；\s]+",
+                                      str(_r[t("ir.adj_col_codes")] or "")) if c.strip()]
+                            _decisions[_r["unit"]] = {"decision": _choice, "codes": _codes,
+                                                      "reason": str(_r[t("ir.adj_col_reason")] or "")}
+                    _resp_a = (recs[_idx][S.RESPONDENT] if _idx >= 0
+                               else (_parsed["respondent"] or os.path.splitext(_name)[0]))
+                    _adj = HL.adjudicated_record(_cmp, _decisions, _resp_a, _judge,
+                                                 "hand", "other", transcript=_parsed["transcript"])
+                    _ac = _adj[S.META]["adjudication"]
+                    st.caption(t("ir.adj_summary", units=_ac["units"], same=_ac["counts"]["same"],
+                                 a=_ac["counts"]["a"], b=_ac["counts"]["b"], both=_ac["counts"]["both"],
+                                 neither=_ac["counts"]["neither"], custom=_ac["counts"]["custom"],
+                                 undecided=len(_ac["undecided"])))
+                    c1, c2 = st.columns(2)
+                    c1.download_button(
+                        t("ir.adj_download"),
+                        json.dumps({"framework_id": F.active().id, "schema_version": S.SCHEMA_VERSION,
+                                    "records": [_adj]}, ensure_ascii=False, indent=2).encode("utf-8"),
+                        file_name=f"adjudicated_{_judge}_{datetime.now():%Y%m%d}.json",
+                        mime="application/json", key=f"adj_dl_{_k}", **WIDE)
+                    if c2.button(t("ir.adj_save"), key=f"adj_save_{_k}", **WIDE):
+                        _saved = save_record(_adj)
+                        st.success(t("ir.adj_saved", file=_saved or _adj.get("_file", "")))
+            if _adj5:
+                _cx1, _cx2 = st.columns(2)
+                _cx1.download_button(
+                    t("ir.mk_download_xlsx"),
+                    HL.comparison_workbook([(n, c) for _, n, _, _, c in _adj5], "hand", "other"),
+                    file_name=f"comparison_{datetime.now():%Y%m%d}.xlsx",
+                    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    key="btn_mk_xlsx", **WIDE)
+                _k0, _n0, _p0, _i0, _c0 = _adj5[0]
+                if _i0 >= 0:
+                    _cx2.download_button(
+                        t("ir.mk_download_pair") + (f" — {_n0}" if len(_adj5) > 1 else ""),
+                        HL.side_by_side_zip(_p0, recs[_i0], mk_against, recs[_i0][S.RESPONDENT],
+                                            mk_coder.strip(), I.get_lang()),
+                        file_name=f"side_by_side_{datetime.now():%Y%m%d}.zip",
+                        mime="application/zip", key="btn_mk_pair", **WIDE)
             if any(r[S.SEGMENTS] for r in _human5):
                 st.download_button(
                     t("ir.mk_download"),
@@ -3981,6 +4069,7 @@ with tab_export:
             _hl_src = st.radio(t("export.hl_source"), HL.SOURCES,
                                format_func=lambda k, _m=_hl_labels: _m[k],
                                key="hl_source")
+            _hl_list = st.checkbox(t("export.hl_list_unlocated"), value=False, key="hl_list_unlocated")
             if st.button(t("export.hl_prepare"), key="btn_hl_prepare"):
                 _n = _m = 0
                 for _r in _hl_recs:
@@ -3988,7 +4077,7 @@ with tab_export:
                     _n, _m = _n + len(_p), _m + len(_x)
                 st.session_state["hl_export"] = {
                     "source": _hl_src, "files": len(_hl_recs), "n": _n, "m": _m,
-                    "data": HL.build_zip(_hl_recs, _hl_src, I.get_lang())}
+                    "data": HL.build_zip(_hl_recs, _hl_src, I.get_lang(), _hl_list)}
             _hl = st.session_state.get("hl_export")
             if _hl and _hl["source"] == _hl_src:
                 if _hl_src != HL.SOURCE_BLANK:

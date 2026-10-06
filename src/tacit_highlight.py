@@ -27,6 +27,7 @@ tacit_highlight.py — 把編碼標回原始逐字稿，輸出螢光筆標記的
 
 不呼叫模型，只讀紀錄。
 """
+import difflib
 import io
 import re
 import zipfile
@@ -112,11 +113,31 @@ def marks_of(rec, source=SOURCE_CURRENT):
 # =====================================================================
 # 2. 把引文找回原文的位置
 # =====================================================================
+_PUNCT = re.compile(r"[\s，。！？；：、,.!?;:「」『』（）()〈〉《》【】\-—…·\"'’‘“”　]+")
+_norm_cache = {}
+
+
+def _normalized_index(transcript):
+    """逐字稿去掉標點與空白後的字串，以及每個字元對回原文的位置。"""
+    key = (id(transcript), len(transcript))
+    hit = _norm_cache.get(key)
+    if hit and hit[0] is transcript:
+        return hit[1], hit[2]
+    chars, pos = [], []
+    for i, ch in enumerate(transcript):
+        if not _PUNCT.match(ch):
+            chars.append(ch.casefold()); pos.append(i)
+    norm = "".join(chars)
+    _norm_cache.clear(); _norm_cache[key] = (transcript, norm, pos)
+    return norm, pos
+
+
 def locate(transcript, text):
     """
     引文在逐字稿裡的 (起, 迄) 字元位置；找不到回 None。
-    先找一模一樣的；找不到再放寬空白（模型常把換行寫成空格、把連續空白
-    縮成一個），其餘字元仍須逐字相同。
+    三層：一模一樣；放寬空白（模型常把換行寫成空格）；最後忽略標點、
+    大小寫與空白（模型常改掉句點、逗號或把「of」寫成「Of」），其餘字元
+    仍須逐字相同，找到後把位置對回原文。
     """
     if not transcript or not text or not text.strip():
         return None
@@ -128,7 +149,36 @@ def locate(transcript, text):
     if not parts:
         return None
     m = re.search(r"\s+".join(parts), transcript)
-    return (m.start(), m.end()) if m else None
+    if m:
+        return m.start(), m.end()
+    norm, pos = _normalized_index(transcript)
+    q = "".join(ch.casefold() for ch in text if not _PUNCT.match(ch))
+    if len(q) < 10:
+        return None
+    j = norm.find(q)
+    if j != -1:
+        return pos[j], pos[j + len(q) - 1] + 1
+    return _locate_with_gaps(norm, pos, q)
+
+
+def _locate_with_gaps(norm, pos, q, min_block=25, min_cover=0.85, max_gap=400):
+    """
+    模型常把被訪員短句隔開的兩段發言接成一段引文，或漏掉中間幾個字。
+    這裡找引文在逐字稿裡的幾塊逐字相同的片段：片段都夠長、合起來涵蓋引文
+    的大部分、片段之間在逐字稿裡相隔不遠，就把整個範圍當成位置。
+    """
+    sm = difflib.SequenceMatcher(None, norm, q, autojunk=False)
+    blocks = [b for b in sm.get_matching_blocks() if b.size >= min_block]
+    if not blocks:
+        return None
+    covered = sum(b.size for b in blocks)
+    if covered < min_cover * len(q):
+        return None
+    first, last = blocks[0], blocks[-1]
+    for x, y in zip(blocks, blocks[1:]):
+        if y.a - (x.a + x.size) > max_gap:
+            return None
+    return pos[first.a], pos[last.a + last.size - 1] + 1
 
 
 def place_marks(rec, source=SOURCE_CURRENT):
@@ -189,19 +239,19 @@ _TITLES = {
                      "zh": "逐字稿：目前編碼的螢光筆標記"},
     SOURCE_MODEL: {"en": "Transcript with the model's original coding highlighted",
                    "zh": "逐字稿：模型原始編碼的螢光筆標記"},
-    SOURCE_BLANK: {"en": "Transcript for hand highlighting",
-                   "zh": "逐字稿：供人工螢光筆標記"},
+    SOURCE_BLANK: {"en": "Transcript for hand coding",
+                   "zh": "逐字稿：供人工編碼"},
 }
 _TEXT = {
     "legend": {"en": "Colour key", "zh": "顏色圖例"},
     "blank_note": {"en": "How to code this transcript: select a passage, add a comment "
                          "(Review > New Comment) and type its code or codes in the comment, "
                          "for example {example}. A passage may carry several codes, and "
-                         "passages may overlap. Highlighting with the colours above is "
-                         "optional; the codes are read from the comments.",
+                         "passages may overlap. The codes are read from the comments; "
+                         "highlighting is not needed. The codebook below gives the rules.",
                    "zh": "編碼方式：選取一段話，加上註解（校閱 > 新增註解），在註解裡寫這段話的碼，"
                          "例如 {example}。一段話可以有好幾個碼，段落之間也可以重疊。"
-                         "要不要用上面的顏色畫螢光筆都可以；程式讀的是註解裡的碼。"},
+                         "程式讀的是註解裡的碼，不必畫螢光筆。下面的編碼簿是編碼的規則。"},
     "tag_note": {"en": "Each highlighted passage carries a comment with its codes; the "
                        "bracket after it repeats the segment number and codes for print. "
                        "A passage with codes from two dimensions takes the colour of the "
@@ -210,12 +260,17 @@ _TEXT = {
                        "供列印時閱讀。一段話若同時帶兩個維度的碼，顏色取第一個。"},
     "counts": {"en": "{n} passages highlighted; {m} could not be located in the transcript.",
                "zh": "標出 {n} 段；另有 {m} 段的引文在逐字稿裡找不到。"},
+    "counts_ok": {"en": "{n} passages highlighted.", "zh": "標出 {n} 段。"},
     "missing": {"en": "Passages not located in the transcript",
                 "zh": "在逐字稿裡找不到位置的段落"},
     "framework": {"en": "Framework", "zh": "框架"},
     "endpoint": {"en": "Model endpoint", "zh": "模型端點"},
     "no_transcript": {"en": "This record holds no transcript text.",
                       "zh": "這筆紀錄沒有逐字稿內容。"},
+    "codebook": {"en": "Codebook", "zh": "編碼簿"},
+    "definition": {"en": "Definition", "zh": "定義"},
+    "indicators": {"en": "Indicators", "zh": "指標"},
+    "exclusions": {"en": "Not this dimension", "zh": "不屬於這個維度"},
 }
 
 
@@ -257,8 +312,43 @@ def _write_line(par, line, offset, placed, colours, runs_of):
                 t.font.color.rgb = _TAG_GREY
 
 
-def build_docx(rec, source=SOURCE_CURRENT, colours=None, lang=None):
-    """一份逐字稿的螢光筆標記版，回傳 .docx 的位元組。"""
+def _write_codebook(doc, fw, lang):
+    """人工編碼版附上編碼簿：每個維度的定義、各極性的指標、排除條件。編碼者要有規則才能編。"""
+    doc.add_heading(_tx("codebook", lang), level=2)
+    for d in fw.dimensions:
+        p = doc.add_paragraph()
+        codes = [c for c in fw.codes if _group_of(c) == d]
+        p.add_run(fw.label(d, lang)).bold = True
+        p.add_run("   " + ", ".join(codes)).font.size = Pt(10)
+        definition = fw.definition(d, lang) or fw.definition(d, "en")
+        if definition:
+            q = doc.add_paragraph(); q.add_run(_tx("definition", lang) + ": ").bold = True
+            q.add_run(definition)
+        if fw.has_polarity:
+            for pol in fw.polarity_values:
+                ind = fw.indicators(d, pol, lang) or fw.indicators(d, pol, "en") or []
+                if ind:
+                    q = doc.add_paragraph()
+                    q.add_run(f"{fw.code_of(d, pol)} ({fw.polarity_label(d, pol, lang)}) "
+                              f"{_tx('indicators', lang)}: ").bold = True
+                    q.add_run("; ".join(ind))
+        else:
+            ind = fw.indicators(d, None, lang) or fw.indicators(d, None, "en") or []
+            if ind:
+                q = doc.add_paragraph(); q.add_run(_tx("indicators", lang) + ": ").bold = True
+                q.add_run("; ".join(ind))
+        exc = fw.exclusions(d, lang) or fw.exclusions(d, "en") or []
+        if exc:
+            q = doc.add_paragraph(); q.add_run(_tx("exclusions", lang) + ": ").bold = True
+            q.add_run(" ".join(exc))
+
+
+def build_docx(rec, source=SOURCE_CURRENT, colours=None, lang=None, list_unlocated=False):
+    """
+    一份逐字稿的螢光筆標記版，回傳 .docx 的位元組。
+    引文對不回原文的段落預設不列在文件裡（數量在介面上顯示）；
+    list_unlocated=True 時附在文末。
+    """
     lang = lang or I.get_lang()
     lang = lang if lang in ("en", "zh") else "en"
     colours = colours or colour_map([rec], source)
@@ -282,6 +372,20 @@ def build_docx(rec, source=SOURCE_CURRENT, colours=None, lang=None):
     p = doc.add_paragraph("; ".join(info))
     p.runs[0].font.size = Pt(9)
 
+    if source == SOURCE_BLANK:
+        example = "; ".join(fw.codes[:1] + fw.codes[2:3]) or "CODE"
+        doc.add_paragraph(_tx("blank_note", lang, example=example))
+        _write_codebook(doc, fw, lang)
+        doc.add_paragraph(SEPARATOR)
+        runs_of = {}
+        if not transcript.strip():
+            doc.add_paragraph(_tx("no_transcript", lang))
+        for line in transcript.split(chr(10)):
+            doc.add_paragraph(line)
+        buf = io.BytesIO()
+        doc.save(buf)
+        return buf.getvalue()
+
     doc.add_heading(_tx("legend", lang), level=2)
     used = {_group_of(c) for mk in placed for c in mk["codes"]}
     shown = [g for g in colours if g in used or g in fw.dimensions]
@@ -293,12 +397,9 @@ def build_docx(rec, source=SOURCE_CURRENT, colours=None, lang=None):
             sorted({c for mk in placed for c in mk["codes"] if _group_of(c) == g})
         if codes and codes != [g]:
             p.add_run("  " + ", ".join(codes)).font.size = Pt(9)
-    if source == SOURCE_BLANK:
-        example = "; ".join(fw.codes[:1] + fw.codes[2:3]) or "CODE"
-        doc.add_paragraph(_tx("blank_note", lang, example=example))
-    else:
-        doc.add_paragraph(_tx("tag_note", lang)).runs[0].font.size = Pt(9)
-        doc.add_paragraph(_tx("counts", lang, n=len(placed), m=len(missing))).runs[0].font.size = Pt(9)
+    doc.add_paragraph(_tx("tag_note", lang)).runs[0].font.size = Pt(9)
+    doc.add_paragraph(_tx("counts_ok" if not (missing and list_unlocated) else "counts", lang,
+                          n=len(placed), m=len(missing))).runs[0].font.size = Pt(9)
 
     doc.add_paragraph(SEPARATOR)
     runs_of = {}
@@ -317,7 +418,7 @@ def build_docx(rec, source=SOURCE_CURRENT, colours=None, lang=None):
         if runs:
             doc.add_comment(runs, text="; ".join(mk["codes"]), author=author, initials="T")
 
-    if missing:
+    if missing and list_unlocated:
         doc.add_heading(_tx("missing", lang), level=2)
         for mk in missing:
             p = doc.add_paragraph()
@@ -337,7 +438,7 @@ def _safe_name(text):
     return name[:80] or "transcript"
 
 
-def build_zip(records, source=SOURCE_CURRENT, lang=None):
+def build_zip(records, source=SOURCE_CURRENT, lang=None, list_unlocated=False):
     """每份逐字稿一個 .docx，打包成 zip；同一個維度在所有檔案裡同一色。"""
     colours = colour_map(records, source)
     buf = io.BytesIO()
@@ -348,7 +449,7 @@ def build_zip(records, source=SOURCE_CURRENT, lang=None):
             seen[base] = seen.get(base, 0) + 1
             if seen[base] > 1:
                 base = f"{base}_{seen[base]}"
-            z.writestr(f"{base}_{source}.docx", build_docx(rec, source, colours, lang))
+            z.writestr(f"{base}_{source}.docx", build_docx(rec, source, colours, lang, list_unlocated))
     return buf.getvalue()
 
 
@@ -532,7 +633,7 @@ def record_from_marked(parsed, respondent, coder=""):
 # =====================================================================
 # 6. 人工標記與模型編碼的一致性
 # =====================================================================
-def _unit_coding(transcript, marks):
+def _unit_coding(transcript, marks, interviewers=None):
     """把一組標記（text + codes）放到逐字稿的抽樣框上：{單元編號: 碼的集合}。"""
     segs = []
     for mk in marks:
@@ -543,18 +644,19 @@ def _unit_coding(transcript, marks):
                 codes.append(S.make_code(dim, pol))
         if codes and mk.get("text"):
             segs.append({S.QUOTE: mk["text"], S.FULL_TEXT: mk["text"], S.CODES_F: codes})
-    frame, diag = IRR.build_frame([{S.RESPONDENT: "_", S.SEGMENTS: segs}], {"_": transcript})
+    frame, diag = IRR.build_frame([{S.RESPONDENT: "_", S.SEGMENTS: segs}], {"_": transcript},
+                                  interviewers=interviewers)
     return frame, diag
 
 
-def compare_marks(transcript, human_marks, model_marks):
+def compare_marks(transcript, human_marks, model_marks, interviewers=None):
     """
     同一份逐字稿上兩組標記的一致性，以受訪者發言單元 × 碼為格。
     人工標記當參照：precision 是模型標的有多少人也標了，recall 是人標的
     有多少模型也標了。回傳 pooled 係數、各碼係數與兩邊不同的單元清單。
     """
-    fh, dh = _unit_coding(transcript, human_marks)
-    fm, dm = _unit_coding(transcript, model_marks)
+    fh, dh = _unit_coding(transcript, human_marks, interviewers)
+    fm, dm = _unit_coding(transcript, model_marks, interviewers)
     units = [u[S.UNIT_ID] for u in fh]
     a = {u[S.UNIT_ID]: set(u[S.AI_CODES]) for u in fh}
     b = {u[S.UNIT_ID]: set(u[S.AI_CODES]) for u in fm}
@@ -571,6 +673,7 @@ def compare_marks(transcript, human_marks, model_marks):
         "recall": round(tp / (tp + fn), 3) if tp + fn else None,
         "per_code": IRR.per_code_agreement(a, b, units) if units else [],
         "differ": differ,
+        "frame": [{"unit": u[S.UNIT_ID], "speaker": u.get(S.SPEAKER, ""), "text": u[S.TEXT]} for u in fh],
         "human_not_placed": sum(dh["unmatched_quotes"].values()) + sum(dh["quotes_on_excluded_units"].values()),
         "model_not_placed": sum(dm["unmatched_quotes"].values()) + sum(dm["quotes_on_excluded_units"].values()),
     }
@@ -606,3 +709,144 @@ def match_record(parsed, records, file_name=""):
                 r"(?<![a-z0-9])" + re.escape(head.casefold()) + r"(?![a-z0-9])", hay)):
             return i
     return None
+
+
+# =====================================================================
+# 7. 裁決：兩組編碼不同的單元，由人決定定稿
+# =====================================================================
+DECISION_A = "a"            # 採第一組（人工）
+DECISION_B = "b"            # 採第二組（模型或另一位編碼者）
+DECISION_BOTH = "both"      # 兩組聯集
+DECISION_NEITHER = "neither"
+DECISION_CUSTOM = "custom"  # 自訂的碼
+DECISIONS = [DECISION_A, DECISION_B, DECISION_BOTH, DECISION_NEITHER, DECISION_CUSTOM]
+SOURCE_ADJUDICATED = "adjudicated"
+
+
+def adjudicated_record(cmp, decisions, respondent, adjudicator, label_a="hand", label_b="other",
+                       transcript=None):
+    """
+    依裁決產生一筆定稿紀錄。
+
+    cmp 是 compare_marks 的回傳；decisions 是 {單元編號: {"decision": …,
+    "codes": [...], "reason": "..."}}。兩組相同的單元不必裁決，直接採用；
+    不同而沒有裁決的單元不編碼，單元編號記在 _meta.undecided。
+    每個段落的 review.history 記下兩組原本的碼、決定與理由，由誰裁決。
+    """
+    segments, undecided = [], []
+    counts = {k: 0 for k in DECISIONS}
+    counts["same"] = 0
+    for row in cmp["frame"]:
+        u = row["unit"]
+        a, b = set(cmp["a"].get(u, ())), set(cmp["b"].get(u, ()))
+        d = (decisions or {}).get(u) or {}
+        choice = d.get("decision")
+        if a == b:
+            codes, choice = a, "same"
+        elif choice == DECISION_A:
+            codes = a
+        elif choice == DECISION_B:
+            codes = b
+        elif choice == DECISION_BOTH:
+            codes = a | b
+        elif choice == DECISION_NEITHER:
+            codes = set()
+        elif choice == DECISION_CUSTOM:
+            codes = {c for c in (d.get("codes") or []) if S.split_code(c)[0]}
+        else:
+            undecided.append(u)
+            continue
+        counts[choice] += 1
+        parsed = []
+        for c in sorted(codes):
+            dim, pol = S.split_code(c)
+            if dim:
+                parsed.append(S.make_code(dim, pol))
+        if not parsed:
+            continue
+        segments.append({
+            S.SEGMENT_ID: f"S{len(segments) + 1:03d}", S.TITLE: "",
+            S.QUOTE: row["text"], S.FULL_TEXT: row["text"], S.CODES_F: parsed,
+            S.REVIEW: {S.STATUS: S.STATUS_CONFIRMED, S.SOURCE: SOURCE_ADJUDICATED,
+                       S.ORIGINAL_CODES: [],
+                       S.HISTORY: [{"by": adjudicator, "unit_id": u, "decision": choice,
+                                    label_a: sorted(a), label_b: sorted(b),
+                                    "reason": d.get("reason") or ""}]}})
+    return {S.RESPONDENT: respondent, S.DESCRIPTORS: S.blank_descriptors(), S.SUMMARY: "",
+            S.TRANSCRIPT: transcript or "", S.SEGMENTS: segments, S.DELETED_SEGMENTS: [],
+            S.META: {"source": f"{SOURCE_ADJUDICATED}/{adjudicator or 'adjudicator'}",
+                     "endpoint": None, "framework_id": F.active().id,
+                     "adjudication": {"units": cmp["units"], "counts": counts,
+                                      "undecided": undecided, label_a: label_a, label_b: label_b}}}
+
+
+def dimension_agreement(cmp):
+    """
+    忽略極性、只看維度的一致性：一個單元在一個維度上，兩組是否都標了。
+    極性常是兩組最常不合的地方，分開看才知道不合在「有沒有」還是「正負」。
+    """
+    dims = list(F.active().dimensions)
+    both = a_only = b_only = neither = 0
+    for u in cmp["unit_ids"]:
+        A = {S.split_code(x)[0] for x in cmp["a"].get(u, ())}
+        B = {S.split_code(x)[0] for x in cmp["b"].get(u, ())}
+        for d in dims:
+            x, y = d in A, d in B
+            both += x and y; a_only += x and not y; b_only += y and not x
+            neither += (not x) and (not y)
+    n = both + a_only + b_only + neither
+    if not n:
+        return None
+    po = (both + neither) / n
+    pa, pb = (both + a_only) / n, (both + b_only) / n
+    pe = pa * pb + (1 - pa) * (1 - pb)
+    return {"n": n, "both": both, "a_only": a_only, "b_only": b_only, "neither": neither,
+            "observed_agreement": round(po, 3),
+            "kappa": round((po - pe) / (1 - pe), 3) if pe < 1 else None}
+
+
+def comparison_workbook(results, label_a="hand", label_b="other"):
+    """
+    幾份檔案的比對結果寫成一本 Excel：總表、每碼、每個單元兩組各標了什麼。
+    results: [(檔名, cmp)]。回傳位元組。
+    """
+    import pandas as pd
+    summary, per_code, units = [], [], []
+    for name, cmp in results:
+        pl = cmp["pooled"] or {}
+        dim = dimension_agreement(cmp) or {}
+        summary.append({"file": name, "units": cmp["units"], "cells": pl.get("n"),
+                        "both": pl.get(IRR.BOTH), f"{label_a} only": pl.get(IRR.ONLY_A),
+                        f"{label_b} only": pl.get(IRR.ONLY_B),
+                        "kappa": pl.get(IRR.KAPPA), "PABAK": pl.get(IRR.PABAK), "AC1": pl.get(IRR.AC1),
+                        "precision": cmp["precision"], "recall": cmp["recall"],
+                        "dimension kappa": dim.get("kappa"),
+                        f"{label_a} not placed": cmp["human_not_placed"],
+                        f"{label_b} not placed": cmp["model_not_placed"]})
+        for r in cmp["per_code"]:
+            per_code.append({"file": name, **r})
+        for row in cmp["frame"]:
+            u = row["unit"]
+            a, b = sorted(cmp["a"].get(u, ())), sorted(cmp["b"].get(u, ()))
+            units.append({"file": name, "unit": u, "speaker": row["speaker"],
+                          label_a: ", ".join(a), label_b: ", ".join(b),
+                          "same": a == b, "text": row["text"]})
+    buf = io.BytesIO()
+    with pd.ExcelWriter(buf) as w:
+        pd.DataFrame(summary).to_excel(w, sheet_name="summary", index=False)
+        pd.DataFrame(per_code).to_excel(w, sheet_name="per_code", index=False)
+        pd.DataFrame(units).to_excel(w, sheet_name="units", index=False)
+    return buf.getvalue()
+
+
+def side_by_side_zip(parsed, rec, source, respondent, coder, lang=None):
+    """同一份逐字稿的兩個螢光筆版本：人工標記的、與載入紀錄的，同一套顏色。"""
+    hrec = record_from_marked(parsed, respondent, coder)
+    view = dict(rec); view[S.TRANSCRIPT] = parsed["transcript"]
+    colours = colour_map([hrec, view], SOURCE_CURRENT)
+    buf = io.BytesIO()
+    base = _safe_name(respondent)
+    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
+        z.writestr(f"{base}_{_safe_name(coder) or 'hand'}.docx", build_docx(hrec, SOURCE_CURRENT, colours, lang))
+        z.writestr(f"{base}_{source}.docx", build_docx(view, source, colours, lang))
+    return buf.getvalue()
