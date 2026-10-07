@@ -10,6 +10,7 @@ import tacit_framework as F
 import tacit_schema as S
 import tacit_review as RV
 import tacit_highlight as H
+import tacit_irr as IRR
 
 FAIL = []
 
@@ -369,6 +370,30 @@ sbs = zipfile.ZipFile(io.BytesIO(H.side_by_side_zip(
     {"transcript": TRANSCRIPT, "marks": [{"start": 0, "end": 1, "text": Q1, "comment": "ANT-P", "author": "s", "codes": ["ANT-P"]}],
      "highlight_only": [], "respondent": ""}, rec, H.SOURCE_MODEL, "P01", "student", "en")))
 check("並排 zip 有兩個檔", len(sbs.namelist()), 2)
+
+print()
+print("=" * 70)
+print("測試 13：本文裡的括號標記（【註解：碼; 理由】）當成標記讀，讀完從逐字稿移除")
+print("=" * 70)
+_d13 = Document()
+_d13.add_paragraph("Interview transcript P02")
+_p13 = _d13.add_paragraph("[Respondent] We ran a baseline period of six months. 【註解：ANT-P; 先做基線】")
+_p13.add_run().add_break()
+_p13.add_run("Honestly we never asked residents until the complaints came in. [[ENG-N]] After that we changed the crossing times. 【RES-P; 改了】")
+_d13.add_paragraph("[Interviewer] (Chair) And afterwards? [Respondent]")
+_b13 = io.BytesIO(); _d13.save(_b13); _b13.seek(0)
+_r13 = H.read_marked_docx(_b13)
+check("三個括號都讀成標記", [m["codes"] for m in _r13["marks"]], [["ANT-P"], ["ENG-N"], ["RES-P"]])
+check("第一個標記涵蓋講者標籤之後、括號之前的那句", _r13["marks"][0]["text"], "We ran a baseline period of six months.")
+check("軟換行之後的第二個標記只涵蓋它那一行到括號", _r13["marks"][1]["text"], "Honestly we never asked residents until the complaints came in.")
+check("同一行第二個括號從上一個括號之後算起", _r13["marks"][2]["text"], "After that we changed the crossing times.")
+check("理由留在 comment 欄", _r13["marks"][0]["comment"], "ANT-P; 先做基線")
+check_true("括號已從逐字稿移除", "【" not in _r13["transcript"] and "[[" not in _r13["transcript"])
+check_true("講者標籤不是標記、也沒被移除", "[Interviewer] (Chair)" in _r13["transcript"] and "[Respondent]" in _r13["transcript"])
+check("標記位置對得上移除括號後的逐字稿", _r13["transcript"][_r13["marks"][1]["start"]:_r13["marks"][1]["end"]], _r13["marks"][1]["text"])
+check("軟換行成為換行", _r13["transcript"].count("\n") >= 3, True)
+_cmp13 = H.compare_marks(_r13["transcript"], _r13["marks"], _r13["marks"])
+check("括號標記可以直接進比對", (_cmp13["units"] > 0, _cmp13["pooled"][IRR.KAPPA]), (True, 1.0))
 
 print()
 print("=" * 70)

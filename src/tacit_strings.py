@@ -1289,11 +1289,15 @@ REVIEW_STRINGS = {
               "unmarked transcripts from the Export tab, have each coder select passages and "
               "add a **comment** holding the code or codes (for example `{example}`), and "
               "upload the files here. A passage may carry several codes and passages may "
-              "overlap. Highlighting is optional; codes are read from the comments. "
+              "overlap. Highlighting is optional; codes are read from the comments. A code written in the "
+              "text itself in brackets, such as 【ANT-P; reason】 or [[ANT-P]], is also read: it marks the "
+              "line it ends, from the previous bracket on, and the bracket is removed from the transcript. "
               "Agreement is computed on respondent turns, with the hand coding as the reference.",
         "zh": "把人在 Word 裡做的編碼，與目前載入的編碼做比較。先到匯出頁籤下載「未標記」的逐字稿，"
               "請編碼者選取段落、加上**註解**並在註解裡寫碼（例如 `{example}`），再把檔案上傳到這裡。"
               "一段話可以有好幾個碼，段落之間可以重疊。要不要畫螢光筆都可以，程式讀的是註解裡的碼。"
+              "直接寫在本文裡的括號（例如【ANT-P; 理由】或 [[ANT-P]]）也讀得到：它標的是括號所在那一行、"
+              "從上一個括號之後算起的那段話，讀完會把括號從逐字稿移除。"
               "一致性以受訪者的發言單元計算，人工編碼當參照。"},
     "ir.mk_upload": {"en": "Marked transcripts (.docx)", "zh": "標記過的逐字稿（.docx）"},
     "ir.mk_coder": {"en": "Coder name", "zh": "編碼者名稱"},

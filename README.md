@@ -407,9 +407,9 @@ environment active.
 
 | Article item | Command |
 |---|---|
-| Table 3 (segments, codes, precision, recall, κ, minutes per endpoint; median and range over the archived runs) and the per-run detail behind the Section 3 agreement paragraph | `python src/bench_models_summary.py` |
-| Table 4 (the demonstration corpus and its crosstabs) | `python src/make_demo_data.py` then `python run_tests.py demo` — the test prints and checks every row |
-| Table 5 (open coding of the twelve hearing transcripts, median and range over the archived runs) and the 24-transcript run (352 codes, 972 candidate merges, 167 after merging) | `python src/bench_open_summary.py` |
+| Table 4 (segments, codes, precision, recall, κ, minutes per endpoint; median and range over the archived runs) and the per-run detail behind the Section 3 agreement paragraph | `python src/bench_models_summary.py` |
+| Table 5 (the demonstration corpus and its crosstabs) | `python src/make_demo_data.py` then `python run_tests.py demo` — the test prints and checks every row |
+| Table 6 (open coding of the twelve hearing transcripts, median and range over the archived runs) and the 24-transcript run (352 codes, 972 candidate merges, 167 after merging) | `python src/bench_open_summary.py` |
 | Section 2.4, single pass against windowed coding (5 against 90 segments) | `bench_out/yield/yield.json` holds the archived runs; `python src/bench_yield.py --model qwen2.5:7b --num-ctx 32768 --max-chars 60000 --group ""` repeats them |
 | Section 3, one archived run on the reliability frame | `python src/bench_agreement.py bench_out/cloud_lite_run1/records/gemini-3.5-flash-lite/en` |
 | Figure 2, the context-window budget | `python paper/make_fig2.py` |
@@ -419,9 +419,9 @@ environment active.
 
 | Run | Command |
 |---|---|
-| Table 3, one local endpoint | `python src/bench_models.py --provider ollama --models llama3:8b --corpus en` |
-| Table 3, the cloud endpoint | `python src/bench_models.py --provider gemini --models gemini-3.5-flash-lite --corpus en` with the key in `TACIT_API_KEY` |
-| Table 5, one open-coding run on the twelve-transcript subset | `python src/bench_open_coding.py --corpus hearings --model llama3:8b --per-sector 3 --tag 12_run4` |
+| Table 4, one local endpoint | `python src/bench_models.py --provider ollama --models llama3:8b --corpus en` |
+| Table 4, the cloud endpoint | `python src/bench_models.py --provider gemini --models gemini-3.5-flash-lite --corpus en` with the key in `TACIT_API_KEY` |
+| Table 6, one open-coding run on the twelve-transcript subset | `python src/bench_open_coding.py --corpus hearings --model llama3:8b --per-sector 3 --tag 12_run4` |
 | The same with the cloud model | `python src/bench_open_coding.py --corpus hearings --provider gemini --model gemini-3.5-flash-lite --per-sector 3 --tag 12_run4` |
 
 Give each new run its own `--tag`; the archived open-coding runs are

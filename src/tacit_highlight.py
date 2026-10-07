@@ -27,6 +27,7 @@ tacit_highlight.py — 把編碼標回原始逐字稿，輸出螢光筆標記的
 
 不呼叫模型，只讀紀錄。
 """
+import bisect
 import difflib
 import io
 import re
@@ -476,6 +477,58 @@ def _run_highlight(run_el):
     return v if v and v != "none" else None
 
 
+_INLINE_TAG = re.compile(r"(【[^【】\n]{1,400}】|\[\[[^\[\]\n]{1,400}\]\]|\[[^\[\]\n]{1,400}\])")
+_INLINE_PREFIX = re.compile(r"\s*(?:註解|批註|備註|注解|註|comment|codes?)?\s*[:：]?\s*", re.IGNORECASE)
+_LABEL_AT_START = re.compile(r"\s*(?:\[[^\]\n]*\]|【[^】\n]*】)\s*(?:\([^)\n]*\))?\s*")
+
+
+def _inline_tags(full, cut, limit):
+    """
+    逐字稿本文裡用括號寫的碼，例如「【註解：ANT-P; 理由】」或「[[ENG-N]]」：
+    每個括號標的是從上一個括號（或該段發言的開頭，講者標籤除外）到括號
+    為止的那段話。認不出碼的括號不算標記，也不會被移除。
+    """
+    tags = []
+    for m in _INLINE_TAG.finditer(full, cut, limit):
+        raw_tag = m.group(0)
+        inner = raw_tag[2:-2] if raw_tag.startswith("[[") else raw_tag[1:-1]
+        inner = inner[_INLINE_PREFIX.match(inner).end():].strip()
+        codes = parse_codes(inner)
+        if not codes:
+            continue
+        p0 = max(full.rfind("\n", cut, m.start()) + 1, cut)
+        if tags and tags[-1]["tag_end"] > p0:
+            start = tags[-1]["tag_end"]
+        else:
+            lab = _LABEL_AT_START.match(full, p0, m.start())
+            start = lab.end() if lab else p0
+        raw = full[start:m.start()]
+        text = raw.strip()
+        a = start + (len(raw) - len(raw.lstrip()))
+        tags.append({"tag_start": m.start(), "tag_end": m.end(), "start": a, "end": a + len(text),
+                     "text": text, "comment": inner, "codes": codes})
+    return tags
+
+
+def _strip_spans(full, spans):
+    """把 spans（已排序、不重疊）從字串移除；回傳新字串與舊位置→新位置的函式。"""
+    out, ends, cum, last, total = [], [], [], 0, 0
+    for a, b in spans:
+        out.append(full[last:a])
+        total += b - a
+        ends.append(b)
+        cum.append(total)
+        last = b
+    out.append(full[last:])
+
+    def remap(pos):
+        i = bisect.bisect_right(ends, pos)
+        if i < len(spans) and pos > spans[i][0]:
+            pos = spans[i][0]
+        return pos - (cum[i - 1] if i else 0)
+    return "".join(out), remap
+
+
 def parse_codes(text):
     """
     註解文字裡出現的碼，依框架順序。認兩種寫法：碼的識別字（ANT-P，大小寫
@@ -541,11 +594,11 @@ def read_marked_docx(file):
             elif tag == _W + "r":
                 if _is_tag_run(el):
                     skipped.add(el)
-            elif tag in (_W + "t", _W + "tab", _W + "br"):
+            elif tag in (_W + "t", _W + "tab", _W + "br", _W + "cr"):
                 run = el.getparent()
                 if run in skipped:
                     continue
-                piece = (el.text or "") if tag == _W + "t" else ("\t" if tag == _W + "tab" else " ")
+                piece = (el.text or "") if tag == _W + "t" else ("\t" if tag == _W + "tab" else "\n")
                 if not piece:
                     continue
                 colour = _run_highlight(run)
@@ -566,6 +619,16 @@ def read_marked_docx(file):
         ranges.append((cid, start, pos))
 
     full = "".join(parts)
+    # 本文裡的括號標記：讀出來之後從逐字稿移除，讓文字與原稿一致
+    inline = _inline_tags(full, cut, stop if stop is not None else len(full))
+    if inline:
+        full, remap = _strip_spans(full, [(t["tag_start"], t["tag_end"]) for t in inline])
+        ranges = [(cid, remap(a), remap(b)) for cid, a, b in ranges]
+        lights = [(remap(a), remap(b), colour) for a, b, colour in lights]
+        cut = remap(cut)
+        stop = remap(stop) if stop is not None else None
+        for t in inline:
+            t["start"], t["end"] = remap(t["start"]), remap(t["end"])
     end = stop if stop is not None else len(full)
     transcript = full[cut:end].rstrip("\n")
     limit = cut + len(transcript)
@@ -583,6 +646,17 @@ def read_marked_docx(file):
         body, author = bodies.get(str(cid), ("", ""))
         marks.append({"start": a - cut, "end": a - cut + len(text), "text": text,
                       "comment": body, "author": author, "codes": parse_codes(body)})
+
+    for t in inline:                                   # 括號標記；與註解重複的不再收
+        if not t["text"]:
+            continue
+        a, b = t["start"], t["end"]
+        if any(m["start"] < b - cut and m["end"] > a - cut and set(m["codes"]) == set(t["codes"])
+               for m in marks):
+            continue
+        marks.append({"start": a - cut, "end": b - cut, "text": t["text"], "comment": t["comment"],
+                      "author": "", "codes": t["codes"], "inline": True})
+    marks.sort(key=lambda m: (m["start"], m["end"]))
 
     merged = []
     for a, b, colour in lights:
@@ -704,11 +778,23 @@ def match_record(parsed, records, file_name=""):
         name = str(rec.get(S.RESPONDENT) or "").strip()
         if not name:
             continue
-        head = name.split()[0]
-        if name.casefold() in hay or (len(head) >= 3 and re.search(
-                r"(?<![a-z0-9])" + re.escape(head.casefold()) + r"(?![a-z0-9])", hay)):
+        if name.casefold() in hay:
+            return i
+        words = [w.strip(".,;:()[]") for w in name.split()]
+        for w in words:
+            if len(w) >= 3 and w.casefold() not in _NAME_TITLES and re.search(
+                    r"(?<![a-z0-9])" + re.escape(w.casefold()) + r"(?![a-z0-9])", hay):
+                return i
+    # 檔名與紀錄的逐字稿開頭共有的識別碼（例如 CHRG-118shrg52785）
+    ids = {t for t in re.findall(r"[a-z0-9][a-z0-9-]{6,}", hay) if re.search(r"\d", t)}
+    for i, rec in enumerate(records):
+        head = (rec.get(S.TRANSCRIPT) or "")[:300].casefold()
+        if any(t in head for t in ids):
             return i
     return None
+
+
+_NAME_TITLES = {"mr", "mrs", "ms", "miss", "dr", "prof", "professor", "sir", "madam", "hon", "senator", "chairman"}
 
 
 # =====================================================================
