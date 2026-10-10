@@ -35,9 +35,9 @@ def run_dirs():
 def read_run(d, recompute=True):
     br = json.load(open(os.path.join(d, "bench_results.json"), encoding="utf-8"))
     res = br["results"][0]
-    en = res["coding"]["en"]
+    en = (res.get("coding") or {}).get("en")
     rec_dir = glob.glob(os.path.join(d, "records", "*", "en"))
-    if not rec_dir:
+    if not en or not rec_dir:                       # a run on another corpus is not part of this table
         return None
     if recompute:
         BA.main([rec_dir[0]])

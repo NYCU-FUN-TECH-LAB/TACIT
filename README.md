@@ -412,7 +412,6 @@ environment active.
 | Table 6 (open coding of the twelve hearing transcripts, median and range over the archived runs) and the 24-transcript run (352 codes, 972 candidate merges, 167 after merging) | `python src/bench_open_summary.py` |
 | Section 2.4, single pass against windowed coding (5 against 90 segments) | `bench_out/yield/yield.json` holds the archived runs; `python src/bench_yield.py --model qwen2.5:7b --num-ctx 32768 --max-chars 60000 --group ""` repeats them |
 | Section 3, one archived run on the reliability frame | `python src/bench_agreement.py bench_out/cloud_lite_run1/records/gemini-3.5-flash-lite/en` |
-| Figure 2, the context-window budget | `python paper/make_fig2.py` |
 | Figure 6, the three-level data structure | `python paper/make_fig6.py` |
 
 **Repeat a model run (writes a new folder under `bench_out/`):**

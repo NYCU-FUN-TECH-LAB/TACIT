@@ -35,6 +35,11 @@ HEARINGS = os.path.join("bench_out", "open_coding_hearings")
 # 同一組算中位數，會把程式之間的差異混進同一份程式的採樣變異裡。
 EXCLUDE = {
     "fake-smoke": "測試用的假模型輸出，不是量測",
+    "llama3_8b_sub12": "2026-09-21 之前的程式跑的（碼的標籤還沒經過 clean_label），和同組其他輪次不是同一份程式",
+    "llama3_8b_before_label_fix": "同上，clean_label 之前的程式",
+    "llama3_8b_recentmix": "提示詞保留最近建立的碼的實驗版本，量測後已回退，不是出貨的程式",
+    "llama3_8b_24_run1": "與 llama3_8b 是同一輪的重複封存（只有 recorded_at 不同）",
+    "gemini-3.6-flash": "另一個模型的單輪，三輪對照用的是 gemini-3.5-flash-lite",
 }
 
 
