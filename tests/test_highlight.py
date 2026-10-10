@@ -397,6 +397,35 @@ check("括號標記可以直接進比對", (_cmp13["units"] > 0, _cmp13["pooled"
 
 print()
 print("=" * 70)
+print("測試 14：只有逐字稿的版本，與編碼者自己的名字")
+print("=" * 70)
+rec = make_record()
+pl = H.build_docx(rec, H.SOURCE_MODEL, lang="zh", author="Hank", plain=True)
+pt = body_text(pl)
+check("沒有任何螢光筆", highlighted(pl), [])
+check_true("沒有圖例、說明、分隔線、段落後括號",
+           not any(x in pt for x in ("顏色圖例", "每段螢光筆", "標出", H.SEPARATOR, "[S00")), pt[:120])
+check("檔案的段落就是原稿的行，一行不多一行不少",
+      [p.text for p in Document(io.BytesIO(pl)).paragraphs], TRANSCRIPT.split(chr(10)))
+pd_ = Document(io.BytesIO(pl))
+check("註解作者是編碼者的名字", sorted({c.author for c in pd_.comments}), ["Hank"])
+check("註解縮寫", sorted({c.initials for c in pd_.comments}), ["H"])
+check("檔案屬性的作者與最後修改者", (pd_.core_properties.author, pd_.core_properties.last_modified_by), ("Hank", "Hank"))
+check("沒有指定名稱時維持 TACIT 的標示",
+      sorted({c.author for c in Document(io.BytesIO(H.build_docx(rec, H.SOURCE_MODEL, lang="zh"))).comments}),
+      ["TACIT (model draft)"])
+pback = H.read_marked_docx(io.BytesIO(pl))
+check("只有逐字稿的檔案讀得回來，文字與原稿相同", pback["transcript"], TRANSCRIPT)
+check("標記與有標題的版本相同", [(m["start"], m["end"], sorted(m["codes"])) for m in pback["marks"]],
+      [(m["start"], m["end"], sorted(m["codes"])) for m in back["marks"]])
+check_true("作者讀成 Hank", all(m["author"] == "Hank" for m in pback["marks"]))
+pz = zipfile.ZipFile(io.BytesIO(H.build_zip([rec], H.SOURCE_MODEL, lang="zh", author="Hank", plain=True)))
+check("檔名結尾用編碼者的名字", [n.endswith("_Hank.docx") for n in pz.namelist()], [True])
+bl = body_text(H.build_docx(rec, H.SOURCE_BLANK, lang="en", plain=True))
+check_true("未標記版不受 plain 影響，仍附說明與編碼簿", "Codebook" in bl)
+
+print()
+print("=" * 70)
 print(f"結果：{'全部通過 ✅' if not FAIL else '失敗項目 ' + str(FAIL)}")
 print("=" * 70)
 sys.exit(1 if FAIL else 0)

@@ -788,6 +788,13 @@ APP_STRINGS = {
                         "zh": "未標記：逐字稿＋編碼簿（供人工用註解編碼）"},
     "export.hl_list_unlocated": {"en": "List passages whose quote could not be located at the end of each file",
                                  "zh": "把引文對不回原文的段落列在每個檔案的最後"},
+    "export.hl_author": {"en": "Name on the Word comments and file properties",
+                         "zh": "Word 註解與檔案屬性上的名稱"},
+    "export.hl_author_help": {"en": "Leave empty to use TACIT's own label. A coder's name here keeps "
+                                       "that person's marks apart from TACIT's.",
+                              "zh": "留空就用 TACIT 自己的標示。填編碼者的名字，這份檔案的標記就和 TACIT 的分得開。"},
+    "export.hl_plain": {"en": "Comments only: no highlighting, heading, legend, notes or brackets after passages",
+                        "zh": "只有逐字稿與註解：不上螢光筆，不附標題、圖例、說明，段落後面也不加括號"},
     "export.hl_prepare": {"en": "Prepare the files", "zh": "產生檔案"},
     "export.hl_download": {"en": "Download highlighted transcripts", "zh": "下載螢光筆標記的逐字稿"},
     "export.hl_none": {"en": "None of the loaded records holds its transcript text, so there is "

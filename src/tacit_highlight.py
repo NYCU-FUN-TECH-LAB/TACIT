@@ -285,7 +285,7 @@ def _tag(mk):
     return "[" + " ".join(x for x in (str(mk["id"]), ", ".join(mk["codes"])) if x) + "]"
 
 
-def _write_line(par, line, offset, placed, colours, runs_of):
+def _write_line(par, line, offset, placed, colours, runs_of, tags=True, highlight=True):
     """
     把一行逐字稿寫成數個 run：有標記的部分上螢光筆，標記結束處接上括號。
     runs_of 收集每個段落涵蓋的 run，之後把註解掛在上面。
@@ -302,11 +302,11 @@ def _write_line(par, line, offset, placed, colours, runs_of):
             continue
         active = [mk for mk in placed if mk["start"] <= a and mk["end"] >= b]
         run = par.add_run(line[a - offset:b - offset])
-        if active:
+        if active and highlight:
             run.font.highlight_color = colours[_group_of(active[0]["codes"][0])]
         for mk in active:
             runs_of.setdefault(id(mk), []).append(run)
-        for mk in placed:
+        for mk in (placed if tags else []):
             if mk["end"] == b:
                 t = par.add_run(" " + _tag(mk))
                 t.font.size = Pt(8)
@@ -344,11 +344,18 @@ def _write_codebook(doc, fw, lang):
             q.add_run(" ".join(exc))
 
 
-def build_docx(rec, source=SOURCE_CURRENT, colours=None, lang=None, list_unlocated=False):
+def build_docx(rec, source=SOURCE_CURRENT, colours=None, lang=None, list_unlocated=False,
+               author=None, plain=False):
     """
     一份逐字稿的螢光筆標記版，回傳 .docx 的位元組。
     引文對不回原文的段落預設不列在文件裡（數量在介面上顯示）；
     list_unlocated=True 時附在文末。
+    author 是 Word 註解與檔案屬性裡的作者名稱，預設依來源是 TACIT 的某一種；
+    指定之後（例如編碼者的名字），這份檔案的標記就和 TACIT 自己的分得開。
+    plain=True：只有逐字稿本身加上 Word 註解，沒有螢光筆（兩個維度重疊的
+    段落畫不出來，碼都在註解裡），沒有標題、說明、圖例、分隔線，
+    也沒有段落後面的括號，檔案的文字和原稿完全一樣。
+    只對螢光筆版有效；未標記版一律附編碼簿與說明。
     """
     lang = lang or I.get_lang()
     lang = lang if lang in ("en", "zh") else "en"
@@ -357,21 +364,25 @@ def build_docx(rec, source=SOURCE_CURRENT, colours=None, lang=None, list_unlocat
     transcript = rec.get(S.TRANSCRIPT) or ""
 
     doc = Document()
+    who = (author or "").strip() or COMMENT_AUTHOR[source]
+    plain = bool(plain) and source != SOURCE_BLANK
     cp = doc.core_properties
-    cp.author = "TACIT"
+    cp.author = (author or "").strip() or "TACIT"
+    cp.last_modified_by = cp.author
     cp.comments = ""
     cp.title = str(rec.get(S.RESPONDENT, ""))
     doc.styles["Normal"].font.size = Pt(11)
 
-    doc.add_heading(str(rec.get(S.RESPONDENT, "")), level=1)
-    doc.add_paragraph(_tx(source, lang))
-    meta = rec.get(S.META) or {}
     fw = F.active()
-    info = [f"{_tx('framework', lang)}: {fw.name(lang) or fw.id}"]
-    if source == SOURCE_MODEL and meta.get("endpoint"):
-        info.append(f"{_tx('endpoint', lang)}: {meta.get('endpoint')}")
-    p = doc.add_paragraph("; ".join(info))
-    p.runs[0].font.size = Pt(9)
+    if not plain:
+        doc.add_heading(str(rec.get(S.RESPONDENT, "")), level=1)
+        doc.add_paragraph(_tx(source, lang))
+        meta = rec.get(S.META) or {}
+        info = [f"{_tx('framework', lang)}: {fw.name(lang) or fw.id}"]
+        if source == SOURCE_MODEL and meta.get("endpoint"):
+            info.append(f"{_tx('endpoint', lang)}: {meta.get('endpoint')}")
+        p = doc.add_paragraph("; ".join(info))
+        p.runs[0].font.size = Pt(9)
 
     if source == SOURCE_BLANK:
         example = "; ".join(fw.codes[:1] + fw.codes[2:3]) or "CODE"
@@ -387,22 +398,22 @@ def build_docx(rec, source=SOURCE_CURRENT, colours=None, lang=None, list_unlocat
         doc.save(buf)
         return buf.getvalue()
 
-    doc.add_heading(_tx("legend", lang), level=2)
-    used = {_group_of(c) for mk in placed for c in mk["codes"]}
-    shown = [g for g in colours if g in used or g in fw.dimensions]
-    for g in shown:
-        p = doc.add_paragraph()
-        r = p.add_run(f"  {_group_label(g)}  ")
-        r.font.highlight_color = colours[g]
-        codes = [c for c in fw.codes if _group_of(c) == g] or \
-            sorted({c for mk in placed for c in mk["codes"] if _group_of(c) == g})
-        if codes and codes != [g]:
-            p.add_run("  " + ", ".join(codes)).font.size = Pt(9)
-    doc.add_paragraph(_tx("tag_note", lang)).runs[0].font.size = Pt(9)
-    doc.add_paragraph(_tx("counts_ok" if not (missing and list_unlocated) else "counts", lang,
-                          n=len(placed), m=len(missing))).runs[0].font.size = Pt(9)
-
-    doc.add_paragraph(SEPARATOR)
+    if not plain:
+        doc.add_heading(_tx("legend", lang), level=2)
+        used = {_group_of(c) for mk in placed for c in mk["codes"]}
+        shown = [g for g in colours if g in used or g in fw.dimensions]
+        for g in shown:
+            p = doc.add_paragraph()
+            r = p.add_run(f"  {_group_label(g)}  ")
+            r.font.highlight_color = colours[g]
+            codes = [c for c in fw.codes if _group_of(c) == g] or \
+                sorted({c for mk in placed for c in mk["codes"] if _group_of(c) == g})
+            if codes and codes != [g]:
+                p.add_run("  " + ", ".join(codes)).font.size = Pt(9)
+        doc.add_paragraph(_tx("tag_note", lang)).runs[0].font.size = Pt(9)
+        doc.add_paragraph(_tx("counts_ok" if not (missing and list_unlocated) else "counts", lang,
+                              n=len(placed), m=len(missing))).runs[0].font.size = Pt(9)
+        doc.add_paragraph(SEPARATOR)
     runs_of = {}
     if not transcript.strip():
         doc.add_paragraph(_tx("no_transcript", lang))
@@ -410,14 +421,14 @@ def build_docx(rec, source=SOURCE_CURRENT, colours=None, lang=None, list_unlocat
     for line in transcript.split("\n"):
         par = doc.add_paragraph()
         if line:
-            _write_line(par, line, offset, placed, colours, runs_of)
+            _write_line(par, line, offset, placed, colours, runs_of, tags=not plain, highlight=not plain)
         offset += len(line) + 1
 
-    author = COMMENT_AUTHOR[source]
     for mk in placed:
         runs = runs_of.get(id(mk))
         if runs:
-            doc.add_comment(runs, text="; ".join(mk["codes"]), author=author, initials="T")
+            doc.add_comment(runs, text="; ".join(mk["codes"]), author=who,
+                            initials=(who[:1] or "T").upper())
 
     if missing and list_unlocated:
         doc.add_heading(_tx("missing", lang), level=2)
@@ -439,8 +450,9 @@ def _safe_name(text):
     return name[:80] or "transcript"
 
 
-def build_zip(records, source=SOURCE_CURRENT, lang=None, list_unlocated=False):
-    """每份逐字稿一個 .docx，打包成 zip；同一個維度在所有檔案裡同一色。"""
+def build_zip(records, source=SOURCE_CURRENT, lang=None, list_unlocated=False, author=None, plain=False):
+    """每份逐字稿一個 .docx，打包成 zip；同一個維度在所有檔案裡同一色。
+    指定 author 時，檔名結尾也用這個名字，不是來源。"""
     colours = colour_map(records, source)
     buf = io.BytesIO()
     seen = {}
@@ -450,7 +462,9 @@ def build_zip(records, source=SOURCE_CURRENT, lang=None, list_unlocated=False):
             seen[base] = seen.get(base, 0) + 1
             if seen[base] > 1:
                 base = f"{base}_{seen[base]}"
-            z.writestr(f"{base}_{source}.docx", build_docx(rec, source, colours, lang, list_unlocated))
+            tail = _safe_name(author) if (author or "").strip() else source
+            z.writestr(f"{base}_{tail}.docx",
+                       build_docx(rec, source, colours, lang, list_unlocated, author, plain))
     return buf.getvalue()
 
 

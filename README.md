@@ -389,7 +389,7 @@ sidebar states which case you are in.
 | Theme structure | Two-stage inductive theme induction with a model, or model-free grouping of the codes by co-occurrence or label similarity which you name yourself; Gioia data structure figure with SVG export |
 | Lexicon induction | Term discovery, log-odds feature induction, dictionary baseline for auditing the model |
 | Reliability | Sampling frame of respondent turns from records or from transcripts you upload, blind coding sheets, κ / PABAK / AC1 / Krippendorff α, confusion matrices, model precision and recall, and human codings turned back into analysable records |
-| Export | Excel, Word, JSON; each transcript as a Word file with the coded passages highlighted in place (current coding, the model's original draft, or unmarked with the colour key for hand highlighting) |
+| Export | Excel, Word, JSON; each transcript as a Word file with the codes in Word comments on the coded passages (current coding or the model's original draft), either as the bare transcript with comments only, or with highlighting, a legend and a bracket after each passage; the name on the comments can be set, so one coder's marks stay apart from another's; an unmarked copy carries the codebook for coding by hand |
 | Framework builder | Retrieve literature from OpenAlex, draft dimensions, approve them individually |
 
 ---

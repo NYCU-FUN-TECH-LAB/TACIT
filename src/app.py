@@ -4070,6 +4070,10 @@ with tab_export:
                                format_func=lambda k, _m=_hl_labels: _m[k],
                                key="hl_source")
             _hl_list = st.checkbox(t("export.hl_list_unlocated"), value=False, key="hl_list_unlocated")
+            _hl_author = st.text_input(t("export.hl_author"), value="", key="hl_author",
+                                       help=t("export.hl_author_help"))
+            _hl_plain = st.checkbox(t("export.hl_plain"), value=True, key="hl_plain",
+                                    disabled=(_hl_src == HL.SOURCE_BLANK))
             if st.button(t("export.hl_prepare"), key="btn_hl_prepare"):
                 _n = _m = 0
                 for _r in _hl_recs:
@@ -4077,7 +4081,8 @@ with tab_export:
                     _n, _m = _n + len(_p), _m + len(_x)
                 st.session_state["hl_export"] = {
                     "source": _hl_src, "files": len(_hl_recs), "n": _n, "m": _m,
-                    "data": HL.build_zip(_hl_recs, _hl_src, I.get_lang(), _hl_list)}
+                    "data": HL.build_zip(_hl_recs, _hl_src, I.get_lang(), _hl_list,
+                                         author=_hl_author, plain=_hl_plain)}
             _hl = st.session_state.get("hl_export")
             if _hl and _hl["source"] == _hl_src:
                 if _hl_src != HL.SOURCE_BLANK:
