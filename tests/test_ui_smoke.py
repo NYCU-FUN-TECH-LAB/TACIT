@@ -1097,6 +1097,55 @@ F.reset()
 
 print()
 print("=" * 70)
+print("測試 20：1.3.2 的介面修正（網址參數、開放編碼略過、信度來源、主題訊息、詞庫語言）")
+print("=" * 70)
+import glob as _glob20, json as _json20
+F.activate_by_id("ri_stilgoe_2013")
+_recs20 = [S.migrate_record(_json20.load(open(_p, encoding="utf-8")))
+           for _p in sorted(_glob20.glob(os.path.join("analyses", "demo_en_*.json")))[:3]]
+
+# 網址參數：側欄設定寫進去（金鑰不寫），新的 session 從網址帶回來
+_at = run_app({"ui_lang": "en", "records": []})
+_qp = dict(_at.query_params)
+ok("設定寫進網址參數", _qp.get("provider") in (["gemini"], "gemini")
+   and _qp.get("lang") in (["en"], "en"), str(_qp))
+ok("金鑰不進網址", not any("key" in k for k in _qp), str(list(_qp)))
+_at2 = AppTest.from_file(APP, default_timeout=300)
+_at2.query_params["provider"] = "ollama"
+_at2.query_params["lang"] = "zh"
+_at2.session_state["records"] = []
+_at2.run()
+ok("重新整理後從網址帶回供應者與介面語言",
+   not _at2.exception and _at2.session_state["llm_provider"] == "ollama"
+   and _at2.session_state["ui_lang"] == "zh",
+   repr((_at2.session_state["llm_provider"], _at2.session_state["ui_lang"]))
+   if not _at2.exception else str(_at2.exception[0].value)[:200])
+
+# 信度頁籤：還沒自己選過時，來源跟著有沒有載入紀錄走
+_at = run_app({"ui_lang": "en", "records": _recs20})
+ok("載入紀錄時抽樣框來源預設為已載入的分析",
+   not _at.exception and _at.session_state["irr_src"] == "records",
+   repr(_at.session_state["irr_src"]) if not _at.exception else "exception")
+_txt = " ".join(i.value for i in _at.info)
+ok("主題頁籤沒有主題時說要先建立，而不是說沒有資料",
+   I.t("th.no_themes_yet", "en") in _txt, _txt[:200])
+_cap = " ".join(c.value for c in _at.caption)
+ok("英文語料的詞庫語言判為英文", "Lexicon language: English" in _cap or
+   "Lexicon language: en" in _cap, [c.value for c in _at.caption
+                                    if "Lexicon language" in c.value][:1])
+ok("英文語料不顯示中文斷詞器警告",
+   I.t("lx.backend_fallback", "en") not in " ".join(w.value for w in _at.warning))
+
+# 開放編碼：已經編進目前碼簿的逐字稿要略過
+_ft = _recs20[0].get(S.TRANSCRIPT_FILE) or "01_P01_Project-director.docx"
+_at = run_app({"ui_lang": "en", "records": [], "coding_mode": "open",
+               "open_records": [{S.TRANSCRIPT_FILE: _ft, S.META: {}}]})
+ok("開放編碼模式啟動無例外", not _at.exception,
+   str(_at.exception[0].value)[:200] if _at.exception else "")
+F.reset()
+
+print()
+print("=" * 70)
 print(f"結果：{'全部通過 ✅' if not FAIL else '失敗項目 ' + str(FAIL)}")
 print("=" * 70)
 sys.exit(1 if FAIL else 0)

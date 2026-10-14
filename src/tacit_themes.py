@@ -468,13 +468,44 @@ def parse_stage2(text, provisional, issues=None):
     return themes, note
 
 
+def fit_chunk_size(items, chunk_size, room, estimate,
+                   analysis_lang=S.DEFAULT_ANALYSIS_LANG, smallest=5):
+    """
+    第一階段每批放幾個一階概念，才放得進模型的視窗。
+
+    room: 提示詞可用的 token 數（視窗減去輸出保留與餘裕）；None 表示不限
+    （雲端模型由服務端管理視窗）。estimate: callable(text) -> token 數。
+    回傳不超過 chunk_size 的最大批次大小；連 smallest 都放不下時回傳 None。
+
+    要防的失效：原生視窗只有 8k 的地端模型，在預設每批 60 個時每一批都被
+    視窗守門擋下，畫面上只有一個錯誤，使用者不知道該調的是批次大小。
+    """
+    if room is None or not items:
+        return chunk_size
+    size = int(chunk_size)
+    while size >= smallest:
+        if all(estimate(build_stage1_prompt(ch, analysis_lang)) <= room
+               for ch in _chunk(items, size)):
+            return size
+        size = size - 10 if size > 20 else size - 5
+    return None
+
+
 def induce_themes(items, generate, chunk_size=60, min_size=2, on_progress=None,
-                  analysis_lang=S.DEFAULT_ANALYSIS_LANG):
+                  analysis_lang=S.DEFAULT_ANALYSIS_LANG, done_batches=None,
+                  on_batch=None):
     """
     兩階段主題歸納。
 
     generate: callable(prompt:str) -> str，把 LLM 呼叫注入進來（便於測試與換模型）
     回傳 (themes, unassigned_note, debug)
+
+    done_batches: {批次序號: {"provisional": [...], "dropped": [...]}}，已經跑完的
+    第一階段批次（序號從 1 起，鍵可以是字串，JSON 讀回來就是字串）。續跑時
+    這些批次直接沿用，不再呼叫模型。
+    on_batch: callable(序號, provisional, dropped)，每跑完一個第一階段批次就呼叫
+    一次，讓呼叫端把進度寫進磁碟。第一階段是這一步最花時間的部分，地端模型
+    一批要一分鐘以上；頁面一重新整理，記在記憶體裡的進度就全部消失。
 
     語言由**原始一階概念**決定一次，兩階段共用。不讓第二階段去看第一階段的
     產出來猜語言——否則第一階段一旦失手，錯誤會沿著管線自我延續。
@@ -485,11 +516,19 @@ def induce_themes(items, generate, chunk_size=60, min_size=2, on_progress=None,
         f"{it.get(S.TITLE, '')} {it.get(S.QUOTE, '')}" for it in items[:40])
     provisional, dropped = [], []
     chunks = list(_chunk(items, chunk_size))
+    done = {str(k): v for k, v in (done_batches or {}).items()}
     for i, ch in enumerate(chunks, 1):
         if on_progress:
             on_progress("stage1", i - 1, len(chunks) + 1, len(ch))
-        prov, drp = parse_stage1(
-            generate(build_stage1_prompt(ch, analysis_lang)), valid_ids, min_size)
+        if str(i) in done:
+            prov = list(done[str(i)].get("provisional") or [])
+            drp = list(done[str(i)].get("dropped") or [])
+        else:
+            prov, drp = parse_stage1(
+                generate(build_stage1_prompt(ch, analysis_lang)), valid_ids,
+                min_size)
+            if on_batch:
+                on_batch(i, prov, drp)
         provisional.extend(prov)
         dropped.extend(drp)
 
@@ -635,15 +674,37 @@ def cluster_codes(dist, codes, k=None, max_distance=0.85, weights=None):
     return clusters
 
 
-def themes_from_clusters(clusters, items, names=None):
+def suggested_dimension(cluster):
+    """
+    一個群的成員碼若全都屬於同一個框架維度，回傳那個維度；否則回傳未歸屬。
+    只是預設值：歸到哪個聚合維度是研究者的判斷，介面讓他改。
+    """
+    dims = set()
+    for c in cluster[CLUSTER_MEMBER_CODES]:
+        try:
+            d, _ = S.split_code(c)
+        except Exception:                                 # noqa: BLE001
+            d = None
+        dims.add(d)
+    if len(dims) == 1:
+        d = next(iter(dims))
+        if d in F.active().dimensions:
+            return d
+    return S.UNASSIGNED
+
+
+def themes_from_clusters(clusters, items, names=None, dimensions=None):
     """
     把分群結果轉成主題結構，形狀與 parse_stage2 的輸出相同。
 
     names: {群序號(從 1 起): 研究者給的名字}。沒給名字的群，名字留空——
     介面應該要求研究者補上，而不是替他生一個。一個沒有名字的主題在報表上
     看得出來是未完成的；自動生成的名字看起來像完成了。
+    dimensions: {群序號: 聚合維度}。沒給的群歸未歸屬。不給這一項的話，
+    不用模型的這條路產生的主題全部落在未歸屬，資料結構圖畫不出任何維度。
     """
     names = names or {}
+    dimensions = dimensions or {}
     by_code = defaultdict(list)
     for it in items:
         for c in it.get(EXISTING_CODES) or []:
@@ -660,6 +721,7 @@ def themes_from_clusters(clusters, items, names=None):
         themes.append(S.migrate_theme({
             S.THEME_NAME: str(names.get(k, "") or "").strip(),
             S.THEME_DEFINITION: "",
+            S.AGG_DIMENSION: dimensions.get(k) or S.UNASSIGNED,
             S.MEMBER_IDS: ids,
             S.MERGED_FROM: list(g[CLUSTER_MEMBER_CODES]),
         }, len(themes) + 1))

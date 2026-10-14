@@ -34,16 +34,15 @@ import tacit_schema as S
 import tacit_framework as F
 
 # --- 選配的斷詞後端 -------------------------------------------------
-try:
-    from ckip_transformers.nlp import CkipWordSegmenter  # noqa
-    HAS_CKIP_TRANSFORMERS = True
-except Exception:
-    HAS_CKIP_TRANSFORMERS = False
-try:
-    from ckiptagger import WS, construct_dictionary       # noqa
-    HAS_CKIPTAGGER = True
-except Exception:
-    HAS_CKIPTAGGER = False
+# 只檢查套件在不在，不在載入模組時匯入。ckip-transformers 一匯入就會把
+# transformers 與 PyTorch 一起載進來，在一般筆電上要將近一分鐘；放在模組層
+# 的話，介面每次啟動的第一頁都要等這一分鐘，即使那份語料是英文、根本用不到
+# 中文斷詞。真正要斷中文時才在 Segmenter._lazy 裡匯入；匯入失敗由 cut 接住，
+# 退回統計式斷詞。
+import importlib.util as _ilu
+
+HAS_CKIP_TRANSFORMERS = _ilu.find_spec("ckip_transformers") is not None
+HAS_CKIPTAGGER = _ilu.find_spec("ckiptagger") is not None
 
 
 CJK = r'一-鿿㐀-䶿'
@@ -633,8 +632,10 @@ class Segmenter:
         if self._ws is not None:
             return
         if self.backend == "ckip-transformers":
+            from ckip_transformers.nlp import CkipWordSegmenter
             self._ws = CkipWordSegmenter(model="bert-base")
         elif self.backend == "ckiptagger":
+            from ckiptagger import WS
             self._ws = WS("./data")
 
     def cut(self, text):
@@ -651,6 +652,7 @@ class Segmenter:
             if self.backend == "ckip-transformers":
                 out = self._ws([text])[0]
             else:
+                from ckiptagger import construct_dictionary
                 d = construct_dictionary({w: 1 for w in self.force_words})
                 out = self._ws([text], coerce_dictionary=d)[0]
             return self._remerge(out)

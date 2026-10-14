@@ -18,6 +18,7 @@ Theory-driven qualitative coding with pluggable frameworks.
 """
 
 import copy
+import hashlib
 import io
 import json
 import os
@@ -71,6 +72,8 @@ SAVE_DIR = "analyses"                     # 目前版本的存檔位置
 # 是為了讓快取能隨專案一起交付，其他人不需金鑰即可重現檢索。
 OA_CACHE_DIR = "openalex_cache"
 THEMES_PATH = "themes.json"
+# 主題歸納第一階段的進度：每跑完一批就寫一次，整輪跑完才刪掉。
+THEMES_PROGRESS_PATH = "themes_progress.json"
 IRR_PATH = "irr_session.json"
 LEXICON_DIR = "."
 for _d in (SAVE_DIR_LEGACY, SAVE_DIR, F.FRAMEWORK_DIR):
@@ -200,6 +203,32 @@ def show_chunk_errors(meta):
                 if any(c in e for e in errs)]
         df = pd.DataFrame(errs)
         show_df(df[cols] if cols else df, hide_index=True)
+
+
+def render_run_items(items):
+    """
+    把上一輪編碼留下的訊息再畫一次。
+
+    批次跑完之後頁面會重新整理一次，側欄的存檔清單與載入人數才會是新的；
+    重新整理會把這一輪畫在畫面上的東西清掉，所以每份逐字稿的結果在跑的
+    當下就記下來，整理之後照原樣顯示。
+    """
+    for it in items or []:
+        kind = it.get("kind")
+        if kind == "subheader":
+            st.markdown(f"**{it['text']}**")
+        elif kind in ("success", "warning", "error", "info"):
+            getattr(st, kind)(it["text"])
+        elif kind == "caption":
+            st.caption(it["text"])
+        elif kind == "chunk_errors":
+            show_chunk_errors(it.get("meta"))
+        elif kind == "df":
+            with st.expander(it["title"]):
+                show_df(pd.DataFrame(it.get("rows") or []), hide_index=True)
+        elif kind == "code":
+            with st.expander(it["title"]):
+                st.code(it.get("text") or "-")
 
 
 def read_uploads(files):
@@ -433,6 +462,24 @@ def available_models(provider, api_key, base_url):
     names, note = LLM.list_models(provider, api_key, base_url)
     st.session_state._models_cache = {"key": ck, "models": names, "note": note}
     return names, note
+
+
+def localise_model_note(note):
+    """
+    供應者層回傳的模型清單說明是英文（引擎不碰介面語言），常見的幾句在這裡
+    換成介面語言；認不得的原樣顯示。
+    """
+    if not note:
+        return note
+    m = re.match(r"^(\d+) chat models installed locally\.$", note)
+    if m:
+        return t("llm.note_local_models", n=int(m.group(1)))
+    if note == "Enter an API key to list models.":
+        return t("llm.note_need_key")
+    m = re.match(r"^(\d+) models offered by (.+)\.$", note)
+    if m:
+        return t("llm.note_remote_models", n=int(m.group(1)), url=m.group(2))
+    return note
 
 
 def scan_saved():
@@ -701,6 +748,24 @@ def build_system_prompt(fw, analysis_lang, sample=""):
 # =====================================================================
 st.set_page_config(page_title="TACIT", layout="wide")
 
+# 側欄設定放進網址參數。
+#
+# 要防的失效：重新整理頁面會開一個新的 session，供應者回到 Gemini、模型與
+# 語言回到預設值，使用者每次都得重選一遍——而有幾個狀況只有重新整理才
+# 解得開。網址參數跟著頁面走，重新整理之後還在。金鑰一律不放進去。
+_QP_TO_STATE = {"provider": "_pref_provider", "model": "_pref_model",
+                "base_url": "_pref_base_url", "ctx": "_pref_num_ctx",
+                "lang": "ui_lang", "alang": "analysis_lang", "fw": "framework_id"}
+if not st.session_state.get("_qp_loaded"):
+    st.session_state["_qp_loaded"] = True
+    try:
+        _qp = {k: st.query_params.get(k) for k in _QP_TO_STATE}
+    except Exception:                                     # noqa: BLE001
+        _qp = {}
+    for _k, _sk in _QP_TO_STATE.items():
+        if _qp.get(_k):
+            st.session_state[_sk] = str(_qp[_k])
+
 if "records" not in st.session_state:
     st.session_state.records = []
 if "ui_lang" not in st.session_state:
@@ -834,7 +899,9 @@ with st.sidebar:
     # 才不會同時攤開兩組互相矛盾的欄位。
     # -----------------------------------------------------------------
     _env_ep = LLM.from_env()
-    _prov_default = _env_ep.provider if _env_ep else LLM.GEMINI
+    _prov_default = (st.session_state.get("_pref_provider")
+                     if st.session_state.get("_pref_provider") in LLM.PROVIDERS
+                     else (_env_ep.provider if _env_ep else LLM.GEMINI))
 
     def _provider_label(p):
         return t(f"llm.provider.{p}")
@@ -882,9 +949,11 @@ with st.sidebar:
         st.caption(t("app.api_hint"))
         base_url = ""
     else:
+        _pref_url = (st.session_state.get("_pref_base_url")
+                     if st.session_state.get("_pref_provider") == provider else None)
         base_url = st.text_input(
             t("llm.base_url"),
-            value=st.session_state.get("llm_base_url")
+            value=st.session_state.get("llm_base_url") or _pref_url
                   or (_env_ep.base_url if _env_ep else LLM.DEFAULT_BASE_URL[provider]),
             help=t("llm.base_url_help"), key="llm_base_url")
         # 非本機位址（雲端的 OpenAI 相容服務）才問金鑰。指向 localhost
@@ -927,8 +996,10 @@ with st.sidebar:
                     st.code(log[-3000:] or "(no output)")
 
     models, model_note = available_models(provider, api_key, base_url)
+    model_note = localise_model_note(model_note)
     if models:
-        _prev = st.session_state.get("_llm_model")
+        _prev = (st.session_state.get("_llm_model")
+                 or st.session_state.get("_pref_model"))
         # 預設挑第一顆對話模型：清單依字母排序時第一顆常是程式碼或嵌入模型，
         # 那種模型拿來編碼只會回傳空的或不合格式的結果。
         _default = LLM.default_model(models)
@@ -938,7 +1009,8 @@ with st.sidebar:
                                   key="_llm_model")
     else:
         model_name = st.text_input(t("app.model"),
-                                   value=st.session_state.get("_llm_model", ""),
+                                   value=(st.session_state.get("_llm_model")
+                                          or st.session_state.get("_pref_model", "")),
                                    key="_llm_model",
                                    placeholder=t("llm.model_placeholder"))
     if model_note:
@@ -950,9 +1022,14 @@ with st.sidebar:
         # Ollama 出廠是 4096——一份逐字稿放不下，超出的部分會被無聲
         # 截斷，而模型照樣回傳格式完整的 JSON。這是地端最危險的失效
         # 模式：結果看起來正常，實際上有一半資料從沒被讀過。
+        try:
+            _ctx0 = int(st.session_state.get("llm_num_ctx")
+                        or st.session_state.get("_pref_num_ctx")
+                        or LLM.DEFAULT_NUM_CTX)
+        except (TypeError, ValueError):
+            _ctx0 = LLM.DEFAULT_NUM_CTX
         num_ctx = st.number_input(t("llm.num_ctx"), 2048, 1048576,
-                                  int(st.session_state.get("llm_num_ctx",
-                                                           LLM.DEFAULT_NUM_CTX)),
+                                  min(max(_ctx0, 2048), 1048576),
                                   2048, help=t("llm.num_ctx_help"),
                                   key="llm_num_ctx")
         # 視窗預算要看得見。使用者調了 num_ctx 卻不知道有多少真的落到
@@ -988,6 +1065,25 @@ with st.sidebar:
                             api_key=api_key, base_url=base_url,
                             num_ctx=int(num_ctx), max_tokens=max_tokens)
 
+    # 目前的設定寫回網址參數，只在有變動時寫。金鑰不寫。
+    _want_qp = {"provider": provider, "model": model_name or "",
+                "lang": st.session_state.ui_lang,
+                "alang": st.session_state.analysis_lang,
+                "fw": st.session_state.framework_id}
+    if provider != LLM.GEMINI:
+        _want_qp["base_url"] = base_url or ""
+        _want_qp["ctx"] = str(int(num_ctx))
+    try:
+        for _k in _QP_TO_STATE:
+            _v = _want_qp.get(_k) or None
+            if st.query_params.get(_k) != _v:
+                if _v is None:
+                    del st.query_params[_k]
+                else:
+                    st.query_params[_k] = _v
+    except Exception:                                     # noqa: BLE001
+        pass
+
     # OpenAlex 金鑰放在這裡而不是框架建構頁籤裡：兩把金鑰都是憑證，
     # 集中在同一處，使用者只需要記住「金鑰都貼在側欄」這一件事。
     st.text_input(t("fw.api_key"), type="password", key="oa_key",
@@ -1008,6 +1104,9 @@ with st.sidebar:
     index = scan_saved()
     if not index:
         st.caption(t("app.no_saved"))
+        if st.button(t("app.refresh_list"), key="btn_rescan_empty", **WIDE):
+            st.session_state.pop("_saved_index", None)
+            st.rerun()
     else:
         pro_names = {x["respondent"] for x in index if x["tag"] == "pro"}
         keys = [x["key"] for x in index]
@@ -1132,6 +1231,14 @@ with tab_run:
     run_notice = st.empty()
     if st.session_state.pop("_run_active", False):
         st.warning(t("run.interrupted"))
+    _last_run = st.session_state.get("_last_run")
+    if _last_run:
+        with st.container(border=True):
+            st.markdown(f"##### {t('run.last_run')}")
+            render_run_items(_last_run.get("items"))
+            if st.button(t("run.last_run_dismiss"), key="btn_last_run_dismiss"):
+                st.session_state.pop("_last_run", None)
+                st.rerun()
 
     st.caption(t("run.transcript_hint"))
     files = st.file_uploader(t("run.upload"), type=["docx"],
@@ -1198,12 +1305,21 @@ with tab_run:
     # 已分析過的逐字稿，預設跳過。
     # API 配額中途用盡是常態，換一把金鑰再按一次「開始分析」時，
     # 不應該把前面已經跑完、已經付過錢的檔案重跑一遍。
-    already = analysed_transcript_files()
+    # 兩種模式「已經做過」的意思不同：框架驅動看的是用框架編過的紀錄；
+    # 開放編碼看的是**這一份碼簿**已經吃進去的逐字稿。拿框架紀錄去判斷開放
+    # 編碼，會說要略過、實際上卻全部重編，同一份逐字稿在碼簿裡算兩次。
+    if mode == MODE_FRAMEWORK:
+        already = analysed_transcript_files()
+    else:
+        already = {r.get(S.TRANSCRIPT_FILE)
+                   for r in st.session_state.open_records
+                   if r.get(S.TRANSCRIPT_FILE)}
     if files:
         pending = [f for f in files if f.name not in already]
         skipping = [f for f in files if f.name in already]
         if skipping:
-            st.info(t("run.will_skip", n=len(skipping), m=len(pending)))
+            st.info(t("run.will_skip" if mode == MODE_FRAMEWORK
+                      else "run.will_skip_open", n=len(skipping), m=len(pending)))
             with st.expander(t("run.skip_list", n=len(skipping))):
                 for f in skipping:
                     st.caption(f"• {f.name}")
@@ -1359,11 +1475,14 @@ with tab_run:
             ep = endpoint()
             # 記號在迴圈跑完才清掉：被介面互動中斷時它會留著，下一輪據此提醒。
             st.session_state["_run_active"] = True
+            st.session_state.pop("_last_run", None)
             run_notice.warning(t("run.in_progress"))
             prog = st.progress(0.0)
             n_ok, n_fail, stopped = 0, 0, False
+            rep = []          # 這一輪每份逐字稿的結果，整理頁面之後再顯示一次
             for i, file in enumerate(todo):
                 st.subheader(file.name)
+                rep.append({"kind": "subheader", "text": file.name})
                 status = st.empty()
                 raw = None
                 for attempt in range(3):
@@ -1459,27 +1578,43 @@ with tab_run:
                         n_multi = sum(1 for s in rec[S.SEGMENTS]
                                       if len(S.codes_of(s)) > 1)
                         if n_seg:
-                            status.success(t("run.done", n=n_seg, m=n_multi))
+                            _msg = t("run.done", n=n_seg, m=n_multi)
+                            status.success(_msg)
+                            rep.append({"kind": "success", "text": _msg})
                         else:
                             # 零段不是成功：紀錄存了，但裡面沒有東西。
                             status.warning(t("run.done_empty"))
+                            rep.append({"kind": "warning", "text": t("run.done_empty")})
                         # 失敗的窗口要說出來：紀錄已標為不完整，使用者要知道
                         # 哪幾段沒有被讀過。
                         show_chunk_errors(rec.get(S.META))
+                        _m = rec.get(S.META) or {}
+                        if _m.get("chunk_errors"):
+                            rep.append({"kind": "chunk_errors", "meta": {
+                                "chunk_errors": _m["chunk_errors"],
+                                "chunking": _m.get("chunking") or {}}})
                         # 產出量檢查。工具不知道正確答案是幾段——那是研究者
                         # 的判斷——但認得出幾種「不可能是真的」的形狀。沒有
                         # 這一層的話，使用者拿到 4 段，畫面上沒有任何
                         # 跡象顯示這份分析漏掉了大半份稿件。
+                        # 每一種形狀各說各的：只有產出量真的偏低時才說偏低。
+                        # 曾經任何一個旗標都印「產出量偏低」，結果每萬字 14 段、
+                        # 高於人工基準的稿件也被說成偏低，訊息自相矛盾。
                         yr = rec[S.META]["yield"]
-                        if yr["flags"]:
-                            st.warning(t("run.yield_low", n=yr["n_segments"],
-                                         chars=yr["chars"], d=yr["per_10k"],
-                                         ref=yr["human_reference_per_10k"]))
-                            if CH.FLAG_ONE_PER_DIMENSION in yr["flags"]:
-                                st.error(t("run.yield_template"))
-                            if yr["missing"]:
-                                st.caption(t("run.yield_missing", dims=", ".join(
-                                    I.dim(d) for d in yr["missing"])))
+                        if CH.FLAG_LOW_YIELD in yr["flags"]:
+                            _msg = t("run.yield_low", n=yr["n_segments"],
+                                     chars=yr["chars"], d=yr["per_10k"],
+                                     ref=yr["human_reference_per_10k"])
+                            st.warning(_msg)
+                            rep.append({"kind": "warning", "text": _msg})
+                        if CH.FLAG_ONE_PER_DIMENSION in yr["flags"]:
+                            st.error(t("run.yield_template"))
+                            rep.append({"kind": "error", "text": t("run.yield_template")})
+                        if yr["missing"]:
+                            _msg = t("run.yield_missing", dims=", ".join(
+                                I.dim(d) for d in yr["missing"]))
+                            st.caption(_msg)
+                            rep.append({"kind": "caption", "text": _msg})
                         # 以缺席為證據而被擋下的碼。數量大代表這顆模型在這
                         # 份稿件上經常憑「沒有出現 X」生碼——那是換模型或
                         # 收緊框架排除條件的訊號，不是可以忽略的雜訊。
@@ -1489,6 +1624,10 @@ with tab_run:
                             st.warning(t("run.absence_dropped", n=len(_absent)))
                             with st.expander(t("run.absence_detail")):
                                 show_df(pd.DataFrame(_absent), hide_index=True)
+                            rep.append({"kind": "warning",
+                                        "text": t("run.absence_dropped", n=len(_absent))})
+                            rep.append({"kind": "df", "title": t("run.absence_detail"),
+                                        "rows": _absent})
                         if delay:
                             time.sleep(delay)
                         break
@@ -1496,6 +1635,7 @@ with tab_run:
                         # 配額用盡就整批停下。繼續跑下去只會讓每一份都失敗，
                         # 畫面被錯誤訊息淹沒，也看不出到底做到哪裡。
                         status.error(t("run.quota"))
+                        rep.append({"kind": "error", "text": t("run.quota")})
                         stopped = True
                         break
                     except (LLM.ContextOverflow, LLM.NotConfigured, LLM.Timeout,
@@ -1504,6 +1644,7 @@ with tab_run:
                         # 才發現的截斷），服務沒開就是沒開，逾時與服務端滿載
                         # 已經在供應者層重試過。直接停下並把原因講清楚。
                         status.error(str(e))
+                        rep.append({"kind": "error", "text": str(e)})
                         stopped = True
                         break
                     except Exception as e:
@@ -1518,6 +1659,10 @@ with tab_run:
                                 # 伺服器最近一次回報的用量：讀了幾個 token、
                                 # 為什麼停。判斷截斷與空回覆要看這個。
                                 st.caption(str(ep.last_usage))
+                            rep.append({"kind": "error",
+                                        "text": t("run.failed", name=file.name)})
+                            rep.append({"kind": "code", "title": t("run.raw_output"),
+                                        "text": (raw or "-")[:4000]})
                 prog.progress((i + 1) / len(todo))
                 if stopped:
                     break
@@ -1528,8 +1673,18 @@ with tab_run:
             if stopped:
                 st.warning(t("run.stopped_summary", ok=n_ok, left=remaining))
                 st.info(t("run.resume_hint"))
+                rep.append({"kind": "warning",
+                            "text": t("run.stopped_summary", ok=n_ok, left=remaining)})
+                rep.append({"kind": "info", "text": t("run.resume_hint")})
             elif n_ok:
                 st.success(t("run.batch_done", ok=n_ok, fail=n_fail))
+                rep.append({"kind": "success",
+                            "text": t("run.batch_done", ok=n_ok, fail=n_fail)})
+            # 有存檔就整理一次頁面：側欄（清單、已載入人數）是在這一輪
+            # 編碼之前畫的，不整理的話它會一直說「還沒有任何分析」。
+            if n_ok:
+                st.session_state["_last_run"] = {"items": rep}
+                st.rerun()
 
     # -----------------------------------------------------------------
     # 開放編碼的批次
@@ -1543,13 +1698,18 @@ with tab_run:
     # -----------------------------------------------------------------
     if mode == MODE_OPEN and st.button(t("run.open_start"), type="primary",
                                        key="btn_open_run"):
+        open_todo = list(files or []) if redo else [f for f in (files or [])
+                                                    if f.name not in already]
         if not model_name:
             st.error(t("run.need_model"))
         elif provider == LLM.GEMINI and not api_key:
             st.error(t("run.need_key"))
         elif not files:
             st.warning(t("run.need_file"))
+        elif not open_todo:
+            st.success(t("run.all_done_open"))
         else:
+            files = open_todo
             ep = endpoint()
             cb = st.session_state.codebook or OP.new_codebook(
                 st.session_state.analysis_lang,
@@ -1557,11 +1717,14 @@ with tab_run:
                 or OP.DEFAULT_CORPUS_TERM)
             st.session_state.codebook = cb
             st.session_state["_run_active"] = True
+            st.session_state.pop("_last_run", None)
             run_notice.warning(t("run.in_progress"))
             prog = st.progress(0.0)
             n_ok = n_fail = 0
+            rep = []
             for i, file in enumerate(files):
                 st.subheader(file.name)
+                rep.append({"kind": "subheader", "text": file.name})
                 status = st.empty()
                 try:
                     transcript = texts[file.name]
@@ -1608,36 +1771,52 @@ with tab_run:
                     n_ok += 1
 
                     _st = [s for s in (rec[S.META].get("codes_per_chunk") or [])]
-                    status.success(t(
-                        "run.open_done",
-                        seg=len(rec[OP.OPEN_SEGMENTS]),
-                        new=sum(s.get("created", 0) for s in _st),
-                        reused=sum(s.get("reused", 0) for s in _st),
-                        total=len(cb[OP.CODES])))
+                    _msg = t("run.open_done",
+                             seg=len(rec[OP.OPEN_SEGMENTS]),
+                             new=sum(s.get("created", 0) for s in _st),
+                             reused=sum(s.get("reused", 0) for s in _st),
+                             total=len(cb[OP.CODES]))
+                    status.success(_msg)
+                    rep.append({"kind": "success", "text": _msg})
                     if rec[S.META].get("chunk_errors"):
-                        st.warning(t("run.open_chunk_errors",
-                                     n=len(rec[S.META]["chunk_errors"])))
+                        _msg = t("run.open_chunk_errors",
+                                 n=len(rec[S.META]["chunk_errors"]))
+                        st.warning(_msg)
                         show_chunk_errors(rec[S.META])
+                        rep.append({"kind": "warning", "text": _msg})
+                        rep.append({"kind": "chunk_errors", "meta": {
+                            "chunk_errors": rec[S.META]["chunk_errors"],
+                            "chunking": rec[S.META].get("chunking") or {}}})
                     if delay:
                         time.sleep(delay)
                 except LLM.RateLimited:
                     status.error(t("run.quota"))
+                    rep.append({"kind": "error", "text": t("run.quota")})
                     break
                 except (LLM.ContextOverflow, LLM.NotConfigured, LLM.Timeout,
                         LLM.Unavailable) as e:
                     status.error(str(e))
+                    rep.append({"kind": "error", "text": str(e)})
                     break
                 except Exception as e:                       # noqa: BLE001
                     n_fail += 1
-                    status.error(f"{t('run.failed', name=file.name)}: "
-                                 f"{type(e).__name__}: {e}")
+                    _msg = (f"{t('run.failed', name=file.name)}: "
+                            f"{type(e).__name__}: {e}")
+                    status.error(_msg)
+                    rep.append({"kind": "error", "text": _msg})
                 prog.progress((i + 1) / len(files))
             st.session_state["_run_active"] = False
             run_notice.empty()
             if n_ok:
-                st.success(t("run.open_batch_done", ok=n_ok, fail=n_fail,
-                             codes=len(cb[OP.CODES])))
+                _msg = t("run.open_batch_done", ok=n_ok, fail=n_fail,
+                         codes=len(cb[OP.CODES]))
+                st.success(_msg)
                 st.info(t("run.open_next_step"))
+                rep.append({"kind": "success", "text": _msg})
+                rep.append({"kind": "info", "text": t("run.open_next_step")})
+                # 側欄的碼簿碼數是在這一輪之前畫的，整理一次才會是新的。
+                st.session_state["_last_run"] = {"items": rep}
+                st.rerun()
 
     if st.session_state.records:
         st.divider()
@@ -1671,7 +1850,8 @@ with tab_codebook:
         m[0].metric(t("cb.n_codes"), stats["codes"])
         m[1].metric(t("cb.n_applications"), stats["applications"])
         m[2].metric(t("cb.n_singletons"), stats["singletons"])
-        m[3].metric(t("cb.n_undefined"), stats["undefined"])
+        m[3].metric(t("cb.n_undefined"), stats["undefined"],
+                    help=t("cb.n_undefined_help"))
         st.caption(t("cb.provenance", cb=cb[OP.CODEBOOK_ID],
                      created=cb.get(OP.CREATED, "—"),
                      docs=len(st.session_state.open_records)))
@@ -2192,8 +2372,8 @@ with tab_review:
 
             st.markdown(f"##### {t('rv.methods_sentence')}")
             facts = RV.methods_facts(recs)
-            st.code(I.methods_sentence(facts, "zh"), language=None)
-            st.code(I.methods_sentence(facts, "en"), language=None)
+            for _ml in [I.get_lang()] + [x for x in I.LANGS if x != I.get_lang()]:
+                st.code(I.methods_sentence(facts, _ml), language=None)
 
             st.markdown(f"##### {t('rv.code_changes')}")
             cdf = pd.DataFrame(RV.code_level_changes(recs))
@@ -2296,9 +2476,10 @@ with tab_cross:
                 # 它不是框架裡的碼，不能丟給 code_label 去查。
                 disp.columns = [t("cross.case_mixed") if c == A.CASE_MIXED
                                 else _col_label(c) for c in disp.columns]
-                heatmap(disp, f"{I.descriptor(dkey)} × {t('cross.unit')}")
+                heatmap(disp, f"{I.descriptor(dkey)} × {t(_unit_names[unit])}")
                 show_df(disp)
-                st.caption(t("cross.pct_note"))
+                if show_pct:
+                    st.caption(t("cross.pct_note"))
 
                 with st.expander(t("cross.chi_title")):
                     rep = A.chi_square_report(ct)
@@ -2493,6 +2674,10 @@ with tab_themes:
             if len(used) < 2:
                 st.info(t("th.nomodel_need"))
             else:
+                # 這條路把「碼」分群。框架驅動的編碼只有框架那幾個碼，
+                # 分出來只會是兩三群；它是為開放編碼長出來的幾十個碼設計的。
+                if len(used) < 12:
+                    st.info(t("th.nomodel_few", n=len(used)))
                 nb1, nb2, nb3 = st.columns([2, 2, 1])
                 basis = nb1.radio(
                     t("th.nomodel_basis"), ["cooccurrence", "labels"],
@@ -2558,20 +2743,32 @@ with tab_themes:
                     st.caption(t("th.cluster_distance_note"))
                     st.markdown(f"###### {t('th.name_groups')}")
                     st.caption(t("th.name_groups_note"))
-                    names = {}
+                    names, gdims = {}, {}
+                    _dim_opts = list(FW.agg_dimensions)
                     for k, g in enumerate(groups, 1):
-                        names[k] = st.text_input(
+                        gc1, gc2 = st.columns([3, 2])
+                        names[k] = gc1.text_input(
                             f"{k}. " + ", ".join(
                                 I.code_label(c)
                                 for c in g[RT.CLUSTER_MEMBER_CODES][:4]),
                             key=f"clname_{k}")
+                        # 歸到哪個聚合維度也是研究者的判斷。成員碼全屬同一個
+                        # 維度時預設那個維度，否則預設未歸屬；不給這一欄的話，
+                        # 這條路做出來的主題全部未歸屬，資料結構圖什麼維度都畫不出來。
+                        _sug = RT.suggested_dimension(g)
+                        gdims[k] = gc2.selectbox(
+                            t("th.group_dimension"), _dim_opts,
+                            index=_dim_opts.index(_sug) if _sug in _dim_opts else 0,
+                            format_func=I.dim, key=f"cldim_{k}")
                     if st.button(t("th.nomodel_build"), type="primary",
                                  key="btn_cluster_themes"):
                         unnamed = [k for k, v in names.items() if not v.strip()]
-                        built = RT.themes_from_clusters(groups, items, names)
+                        built = RT.themes_from_clusters(groups, items, names,
+                                                        dimensions=gdims)
                         st.session_state.themes = built
                         st.session_state.theme_note = ""
                         st.session_state.theme_debug = None
+                        st.session_state.theme_source = "cluster"
                         with open(THEMES_PATH, "w", encoding="utf-8") as f:
                             json.dump({"themes": built, "unassigned_note": "",
                                        "framework_id": FW.id,
@@ -2609,9 +2806,12 @@ with tab_themes:
         # 雲端看 "pro"，地端看參數量——70b 之於 8b 的差距，在這一步遠比在
         # 逐句編碼上明顯。
         if models:
+            # 沒有更大的模型可挑時，用側欄選的那一顆，而不是清單的第一顆：
+            # 清單第一顆常常不是使用者在用的，換到它還得把模型重新載入一次。
+            _side = models.index(model_name) if model_name in models else 0
             _big = next((i for i, m in enumerate(models)
                          if "pro" in m.lower()
-                         or re.search(r"\b(70|72|123|405)b\b", m.lower())), 0)
+                         or re.search(r"\b(70|72|123|405)b\b", m.lower())), _side)
             tmodel = cc3.selectbox(t("app.model"), models, index=_big,
                                    key="th_model")
         else:
@@ -2677,24 +2877,86 @@ with tab_themes:
                     _hit = _probed[_probe_key]
                     if _v != "ok":
                         st.rerun()
-                tcall = LLM.make_callable(endpoint(model=tmodel),
-                                          temperature=0.4)
+                _tep = endpoint(model=tmodel)
+                tcall = LLM.make_callable(_tep, temperature=0.4)
+
+                # 每批放幾個一階概念，要放得進這顆模型的視窗。原生視窗只有 8k
+                # 的模型在每批 60 個時每一批都會被守門擋下；與其讓使用者看著
+                # 錯誤自己去猜要調哪個數字，這裡直接縮到放得下的大小並說出來。
+                use_chunk = int(chunk)
+                if _tep.is_local:
+                    try:
+                        _room = (_tep.effective_num_ctx()
+                                 - _tep.effective_max_tokens() - 512)
+                    except Exception:                     # noqa: BLE001
+                        _room = None
+                    _fit = RT.fit_chunk_size(items, int(chunk), _room,
+                                             LLM.estimate_tokens,
+                                             st.session_state.analysis_lang)
+                    if _fit is None:
+                        st.error(t("th.chunk_no_fit"))
+                        use_chunk = None
+                    elif _fit < int(chunk):
+                        st.info(t("th.chunk_fitted", old=int(chunk), new=_fit))
+                        use_chunk = _fit
+
+            if (_go or _anyway) and tmodel and items \
+                    and not (provider == LLM.GEMINI and not api_key) and use_chunk:
+                # 第一階段每跑完一批就存檔。頁面一重新整理（或在跑的時候點到
+                # 別的東西），記憶體裡的進度就沒了；有存檔的話，同樣的設定
+                # 再按一次會從斷掉的地方接著跑。設定一變（模型、批次大小、
+                # 框架、資料）就是另一次執行，不沿用。
+                _ckey = hashlib.sha1(json.dumps(
+                    [FW.id, _tep.describe(), use_chunk, int(min_sz),
+                     st.session_state.analysis_lang,
+                     [(it[RT.GLOBAL_ID], it[S.TITLE]) for it in items]],
+                    ensure_ascii=False).encode("utf-8")).hexdigest()
+                _done = {}
+                try:
+                    with open(THEMES_PROGRESS_PATH, "r", encoding="utf-8") as f:
+                        _pd = json.load(f)
+                    if _pd.get("key") == _ckey:
+                        _done = dict(_pd.get("batches") or {})
+                except (OSError, ValueError):
+                    _done = {}
+                _nb = (len(items) + use_chunk - 1) // use_chunk
+                if _done:
+                    st.info(t("th.resuming", n=len(_done), total=_nb))
+
+                def _save_batch(i, prov, drp, _d=_done, _k=_ckey):
+                    _d[str(i)] = {"provisional": prov, "dropped": drp}
+                    try:
+                        with open(THEMES_PROGRESS_PATH, "w", encoding="utf-8") as f:
+                            json.dump({"key": _k, "batches": _d,
+                                       "saved": datetime.now().isoformat()},
+                                      f, ensure_ascii=False)
+                    except OSError:
+                        pass
+
+                st.warning(t("th.in_progress"))
                 bar, status = st.progress(0.0), st.empty()
 
                 def _prog(stage, done, total, n):
-                    status.info(f"{stage}  {done + 1}/{total}  (n={n})")
+                    status.info(t("th.progress_" + stage, i=done + 1,
+                                  total=total, n=n))
                     bar.progress(min(done / max(total, 1), 1.0))
 
                 try:
                     themes, note, dbg = RT.induce_themes(
                         items, tcall,
-                        chunk_size=int(chunk), min_size=int(min_sz),
+                        chunk_size=use_chunk, min_size=int(min_sz),
                         on_progress=_prog,
-                        analysis_lang=st.session_state.analysis_lang)
+                        analysis_lang=st.session_state.analysis_lang,
+                        done_batches=_done, on_batch=_save_batch)
                     bar.progress(1.0)
                     st.session_state.themes = themes
                     st.session_state.theme_note = note
                     st.session_state.theme_debug = dbg
+                    st.session_state.theme_source = "model"
+                    try:
+                        os.remove(THEMES_PROGRESS_PATH)
+                    except OSError:
+                        pass
                     # 診斷要跟結果一起存下來。
                     #
                     # 要防的失效：一次歸納跑出 9 個主題，其中 7 個是 unassigned，
@@ -2717,7 +2979,7 @@ with tab_themes:
                                    # 時，這個數字必須查得到出處。
                                    "output_contract": _hit},
                                   f, ensure_ascii=False, indent=2)
-                    status.success(f"{len(themes)}")
+                    status.success(t("th.done_n", n=len(themes)))
                 except Exception as e:
                     status.error(str(e))
 
@@ -2733,14 +2995,18 @@ with tab_themes:
                 # 這個問題在重新載入之後就再也答不出來了。
                 if d.get("diagnostics"):
                     st.session_state.theme_debug = d["diagnostics"]
+                st.session_state.theme_source = (
+                    "cluster" if str(d.get("source") or "").startswith("cluster")
+                    else "model")
                 if d.get("source"):
                     st.caption(f"`{d['source']}`  ·  {d.get('generated', '')}")
-                st.success(str(len(st.session_state.themes)))
+                st.success(t("th.loaded_n", n=len(st.session_state.themes)))
             except Exception as e:
                 st.warning(str(e))
         if cl2.button(t("th.clear"), key="btn_clear_themes"):
             st.session_state.pop("themes", None)
             st.session_state.pop("theme_note", None)
+            st.session_state.pop("theme_source", None)
 
         dbg = st.session_state.get("theme_debug")
         if dbg:
@@ -2763,7 +3029,7 @@ with tab_themes:
 
     with th2:
         if not themes:
-            st.info(t("app.no_data"))
+            st.info(t("th.no_themes_yet") if items else t("app.no_data"))
         else:
             cov = RT.coverage_report(themes, items)
             m1, m2, m3, m4 = st.columns(4)
@@ -2786,7 +3052,11 @@ with tab_themes:
             empty = [d for d in FW.dimensions
                      if not cov["themes_by_dimension"].get(d)]
             if empty:
-                st.warning(t("th.empty_dims",
+                # 不用模型的那條路沒有「模型漏看」這回事：維度是研究者在命名時
+                # 指派的，空著代表沒有任何一群被歸到那裡。
+                st.warning(t("th.empty_dims_cluster"
+                             if st.session_state.get("theme_source") == "cluster"
+                             else "th.empty_dims",
                              dims=", ".join(I.dim(d) for d in empty)))
 
             tdf = pd.DataFrame(RT.theme_table(themes, items))
@@ -2826,7 +3096,7 @@ with tab_themes:
 
     with th3:
         if not themes:
-            st.info(t("app.no_data"))
+            st.info(t("th.no_themes_yet") if items else t("app.no_data"))
         else:
             cf1, cf2 = st.columns(2)
             maxfo = cf1.slider(t("th.max_fo"), 2, 12, 5, key="th_maxfo")
@@ -2837,9 +3107,12 @@ with tab_themes:
                 dim_label=lambda d: I.dim(d),
                 relation_label=lambda r: I.relation(r))
             if HAS_COMPONENTS:
-                h = int(re.search(r'height="(\d+)"', svg).group(1)) + 30
-                components.html(f'<div style="background:#fff">{svg}</div>',
-                                height=min(h, 2400), scrolling=True)
+                # 圖縮放到版面寬度：照原尺寸畫的話，第三欄（聚合維度）在
+                # 一般寬度的視窗裡會被裁掉。下載的 SVG 不受影響。
+                _h = int(re.search(r'height="(\d+)"', svg).group(1))
+                _shown = svg.replace("<svg ", '<svg style="max-width:100%;height:auto" ', 1)
+                components.html(f'<div style="background:#fff">{_shown}</div>',
+                                height=min(_h + 40, 2400), scrolling=True)
             st.download_button(t("th.download_svg"), svg.encode("utf-8"),
                                file_name=f"data_structure_{datetime.now():%Y%m%d}.svg",
                                mime="image/svg+xml", **WIDE)
@@ -2847,7 +3120,7 @@ with tab_themes:
 
     with th4:
         if not themes:
-            st.info(t("app.no_data"))
+            st.info(t("th.no_themes_yet") if items else t("app.no_data"))
         else:
             tbuf = io.BytesIO()
             with pd.ExcelWriter(tbuf, engine="openpyxl") as xw:
@@ -2884,6 +3157,29 @@ with tab_themes:
 # =====================================================================
 # 10. 詞庫誘導
 # =====================================================================
+def lexicon_language():
+    """
+    詞庫用哪一種語言。
+
+    分析輸出語言選了特定語言就用它。選「跟逐字稿一致」時，看載入的紀錄是
+    哪一種文字：曾經一律當成繁體中文，英文語料一打開這個頁籤，先看到的是
+    「沒有中文斷詞器」的警告和一份 zh-Hant 詞庫，而且沒有地方可以改。
+    """
+    lang = st.session_state.analysis_lang
+    if lang != S.ANALYSIS_LANG_AUTO:
+        return lang
+    sample = " ".join(
+        (r.get(S.TRANSCRIPT) or " ".join(
+            f"{s.get(S.TITLE, '')} {s.get(S.QUOTE, '')}"
+            for s in (r.get(S.SEGMENTS) or [])))[:4000]
+        for r in (st.session_state.get("records") or [])[:20])
+    letters = sum(1 for ch in sample if ch.isalpha())
+    cjk = sum(1 for ch in sample if "一" <= ch <= "鿿")
+    if letters and cjk / letters < 0.3:
+        return "en"
+    return "zh-Hant"
+
+
 def lexicon_path():
     """
     詞庫是「框架 × 語言」相依的資源，檔名必須帶兩者。
@@ -2895,9 +3191,7 @@ def lexicon_path():
     空詞庫，接著任何一次「合併特徵詞」或「重新載入」都會把那份空的存回
     磁碟，於是 239 個概念詞與 17 個句式模板悄悄消失，詞典稽核整頁歸零。
     """
-    lang = st.session_state.analysis_lang
-    if lang == S.ANALYSIS_LANG_AUTO:
-        lang = "zh-Hant"
+    lang = lexicon_language()
     if FW.id == F.DEFAULT_FRAMEWORK_ID and str(lang).startswith("zh"):
         legacy = os.path.join(LEXICON_DIR, RL.DEFAULT_LEXICON_PATH)
         if os.path.exists(legacy):
@@ -2914,12 +3208,11 @@ with tab_lex:
         try:
             st.session_state.lexicon = RL.load_lexicon(lex_path)
         except Exception:
-            st.session_state.lexicon = RL.blank_lexicon(
-                st.session_state.analysis_lang
-                if st.session_state.analysis_lang != S.ANALYSIS_LANG_AUTO
-                else "zh-Hant")
+            st.session_state.lexicon = RL.blank_lexicon(lexicon_language())
             st.info(t("lx.not_found", path=os.path.basename(lex_path)))
     lex = st.session_state.lexicon
+    _lx_lang = lexicon_language()
+    st.caption(t("lx.language", language=S.ANALYSIS_LANGS.get(_lx_lang, _lx_lang)))
 
     # 詞庫的概念詞是按維度分層的，換了框架就對不上。不符時 migrate_lexicon
     # 會把認不得的維度整批丟掉，得到一份結構完整但內容全空的詞庫——
@@ -2937,8 +3230,11 @@ with tab_lex:
 
     # 斷詞後端決定了這整個頁籤的品質上限。後備演算法只靠統計，
     # 沒有語言知識，切錯是必然的——使用者必須知道自己在看什麼等級的結果。
+    # 斷詞器只跟中文有關；英文詞庫看到「沒有中文斷詞器」的警告只會困惑。
     _backend = RL.Segmenter().backend
-    if _backend == "ngram":
+    if not str(_lx_lang).startswith("zh"):
+        pass
+    elif _backend == "ngram":
         st.warning(t("lx.backend_fallback"))
         with st.expander(t("lx.backend_how")):
             st.markdown(t("lx.backend_install"))
@@ -2978,7 +3274,7 @@ with tab_lex:
                     if w not in lex[RL.FORCE_TERMS]:
                         lex[RL.FORCE_TERMS].append(w)
                 RL.save_lexicon(lex, lex_path)
-                st.success(str(len(lex[RL.FORCE_TERMS])))
+                st.success(t("lx.force_saved", n=len(lex[RL.FORCE_TERMS])))
         elif disc == []:
             st.info(t("lx.no_terms"))
 
@@ -3033,7 +3329,7 @@ with tab_lex:
                     added = RL.merge_into_lexicon(lex, ind, min_z=float(min_z),
                                                   max_per_code=15)
                     RL.save_lexicon(lex, lex_path)
-                    st.success(str(len(added)))
+                    st.success(t("lx.merged_n", n=len(added)))
                     st.rerun()
 
     with lx3:
@@ -3188,7 +3484,8 @@ with tab_irr:
                     _pl = _cmp["pooled"] or {}
                     _row.update({
                         t("ir.mk_col_units"): _cmp["units"],
-                        "κ": _pl.get(RIRR.KAPPA), "PABAK": _pl.get(RIRR.PABAK),
+                        "κ": _pl.get(RIRR.KAPPA), "α": _cmp.get("alpha"),
+                        "PABAK": _pl.get(RIRR.PABAK),
                         "AC1": _pl.get(RIRR.AC1),
                         t("ir.mk_col_precision"): _cmp["precision"],
                         t("ir.mk_col_recall"): _cmp["recall"],
@@ -3210,14 +3507,16 @@ with tab_irr:
                 _tp, _fn, _fp = _pl[RIRR.BOTH], _pl[RIRR.ONLY_A], _pl[RIRR.ONLY_B]
                 _rows5.append({
                     t("ir.mk_col_file"): t("ir.mk_pooled"), t("ir.mk_col_units"): len(_pu),
-                    "κ": _pl[RIRR.KAPPA], "PABAK": _pl[RIRR.PABAK], "AC1": _pl[RIRR.AC1],
+                    "κ": _pl[RIRR.KAPPA], "α": RIRR.pooled_alpha(_pa, _pb, _pu),
+                    "PABAK": _pl[RIRR.PABAK], "AC1": _pl[RIRR.AC1],
                     t("ir.mk_col_precision"): round(_tp / (_tp + _fp), 3) if _tp + _fp else None,
                     t("ir.mk_col_recall"): round(_tp / (_tp + _fn), 3) if _tp + _fn else None,
                     t("ir.mk_col_human_only"): _fn, t("ir.mk_col_model_only"): _fp})
             if _rows5:
                 _df5 = pd.DataFrame(_rows5)
                 _order5 = [t("ir.mk_col_file"), t("ir.mk_col_record"), t("ir.mk_col_units"),
-                           "κ", t("ir.mk_col_precision"), t("ir.mk_col_recall"), "PABAK", "AC1",
+                           "κ", "α", t("ir.mk_col_precision"), t("ir.mk_col_recall"),
+                           "PABAK", "AC1",
                            t("ir.mk_col_human_only"), t("ir.mk_col_model_only"),
                            t("ir.mk_col_comments"), t("ir.mk_col_unknown"), t("ir.mk_col_hl")]
                 show_df(_df5[[c for c in _order5 if c in _df5.columns]], hide_index=True)
@@ -3332,12 +3631,17 @@ with tab_irr:
         # 兩位人類編碼者之間的一致性完全不需要模型，也不需要先有分析結果。
         # 這個頁籤若要求先載入紀錄，等於逼一個只想做傳統雙人編碼信度的
         # 研究者先用模型編一遍——那跟這套工具的立場互相矛盾。
+        # 使用者還沒自己選過的話，這個選項跟著「側欄有沒有載入紀錄」走。
+        # 只在第一次畫的時候決定預設值，之後才載入紀錄的人會停在「上傳逐字稿」，
+        # 建立抽樣框的按鈕是灰的，看不出要先切到另一個選項。
+        if not st.session_state.get("_irr_src_touched"):
+            st.session_state["irr_src"] = "records" if recs else "files"
         src = st.radio(
             t("ir.source"), ["records", "files"], horizontal=True,
-            index=0 if recs else 1,
             format_func=lambda v: (t("ir.source_records") if v == "records"
                                    else t("ir.source_files")),
-            help=t("ir.source_help"), key="irr_src")
+            help=t("ir.source_help"), key="irr_src",
+            on_change=lambda: st.session_state.__setitem__("_irr_src_touched", True))
         human_only = src == "files"
         # 這三個名字一定要跟側邊欄的區域變數分開。app.py 是一支從頭跑到尾的
         # 指令稿，所有名字都在同一個模組命名空間裡：側邊欄的框架選單用
@@ -3438,7 +3742,7 @@ with tab_irr:
     with ir2:
         frame = st.session_state.get("irr_frame") or []
         if not frame:
-            st.info(t("app.no_data"))
+            st.info(t("ir.no_frame_yet"))
         else:
             # 抽樣框裡沒有任何模型標記時，分層就無從談起——這兩個參數是用來
             # 平衡各個碼與未標記單元的，全部未標記時設定它們只會誤導。
@@ -3470,13 +3774,18 @@ with tab_irr:
                     st.session_state.irr_session = sess
                     with open(IRR_PATH, "w", encoding="utf-8") as f:
                         json.dump(sess, f, ensure_ascii=False, indent=2)
-                    st.success(sess[S.SESSION_ID])
+                    st.success(t("ir.session_created", sid=sess[S.SESSION_ID],
+                                 n=len(sess[S.UNITS])))
+                    if len(sess[S.UNITS]) < int(n_samp):
+                        st.caption(t("ir.sample_capped", asked=int(n_samp),
+                                     n=len(sess[S.UNITS])))
 
             if st.button(t("ir.load_session"), key="btn_load_irr"):
                 try:
                     with open(IRR_PATH, "r", encoding="utf-8") as f:
                         st.session_state.irr_session = json.load(f)
-                    st.success(st.session_state.irr_session[S.SESSION_ID])
+                    st.success(t("ir.session_loaded",
+                                 sid=st.session_state.irr_session[S.SESSION_ID]))
                 except Exception as e:
                     st.warning(str(e))
 
@@ -3512,7 +3821,7 @@ with tab_irr:
     with ir3:
         sess = st.session_state.get("irr_session")
         if not sess:
-            st.info(t("app.no_data"))
+            st.info(t("ir.no_session_yet"))
         else:
             valid = {u[S.UNIT_ID] for u in sess[S.UNITS]}
             _note = st.session_state.pop("_irr_note", None)
@@ -3618,7 +3927,7 @@ with tab_irr:
     with ir4:
         sess = st.session_state.get("irr_session")
         if not sess:
-            st.info(t("app.no_data"))
+            st.info(t("ir.no_session_yet"))
         else:
             codings = {k: v for k, v in sess[S.HUMAN_CODINGS].items() if v}
             ai_coding = {u[S.UNIT_ID]: u.get(S.AI_CODES, []) for u in sess[S.UNITS]}
@@ -3633,6 +3942,14 @@ with tab_irr:
             if not codings:
                 st.info(t("ir.no_codings"))
             else:
+                # 編碼者名單一變（例如第二位的編碼表剛匯入），兩個選單重新
+                # 預設成前兩位人工編碼者。不重設的話，選單會停在只有一位
+                # 編碼者時的「人工 vs AI」，報表看起來像兩位編碼者的比較。
+                _seen = tuple(all_coders)
+                if st.session_state.get("_irr_coders_seen") != _seen:
+                    st.session_state["_irr_coders_seen"] = _seen
+                    st.session_state.pop("irr_a", None)
+                    st.session_state.pop("irr_b", None)
                 c1, c2 = st.columns(2)
                 na = c1.selectbox(t("ir.coder_a"), all_coders, 0, key="irr_a")
                 nb = c2.selectbox(t("ir.coder_b"), all_coders,
@@ -3648,11 +3965,13 @@ with tab_irr:
                     else:
                         st.caption(t("ir.common_units", n=len(uids)))
                         pk = RIRR.pooled_kappa(ca, cb, uids)
-                        m1, m2, m3, m4 = st.columns(4)
+                        p_alpha = RIRR.pooled_alpha(ca, cb, uids)
+                        m1, m2, m3, m4, m5 = st.columns(5)
                         m1.metric(t("stat.agreement"), pk[RIRR.AGREEMENT])
                         m2.metric(t("stat.kappa"), pk[RIRR.KAPPA])
-                        m3.metric(t("stat.pabak"), pk[RIRR.PABAK])
-                        m4.metric(t("stat.ac1"), pk[RIRR.AC1])
+                        m3.metric(t("stat.alpha"), p_alpha)
+                        m4.metric(t("stat.pabak"), pk[RIRR.PABAK])
+                        m5.metric(t("stat.ac1"), pk[RIRR.AC1])
                         v = RIRR.interpret(pk[RIRR.KAPPA], pk[RIRR.PABAK],
                                            pk[RIRR.AC1], pk[RIRR.PREVALENCE_INDEX])
                         if v["is_paradox"]:
@@ -3725,7 +4044,8 @@ with tab_irr:
                             pd.DataFrame([{S.SESSION_ID: sess[S.SESSION_ID],
                                            S.SEED: sess[S.SEED],
                                            "coder_a": na, "coder_b": nb,
-                                           "common_units": len(uids), **pk}]) \
+                                           "common_units": len(uids), **pk,
+                                           "krippendorff_alpha": p_alpha}]) \
                                 .to_excel(xw, sheet_name=t("sheet.overview"),
                                           index=False)
                             pcdf.to_excel(xw, sheet_name=t("sheet.agreement"),
@@ -4110,6 +4430,9 @@ def _oa_client():
 with tab_fw:
     lang = I.get_lang()
     st.info(t("fw.principle"))
+    _fw_flash = st.session_state.pop("_fw_flash", None)
+    if _fw_flash:
+        st.success(_fw_flash)
     fw1, fw2, fw3, fw4 = st.tabs([t("fw.tab1"), t("fw.tab2"),
                                   t("fw.tab3"), t("fw.tab4")])
 
@@ -4303,16 +4626,53 @@ with tab_fw:
             file_name=f"{FW.id}.json", mime="application/json", **WIDE)
 
         st.divider()
+        # 匯入要經過一個明確的動作，而且不默默覆寫：曾經只要檔案還留在
+        # 上傳框裡，每一次重繪都會再存一次，同名的框架（包括隨附的那四個）
+        # 被直接蓋掉，畫面上什麼訊息都沒有。
         up = st.file_uploader(t("fw.import"), type=["json"], key="fw_upload")
         if up is not None:
             try:
-                data = json.loads(up.read().decode("utf-8"))
+                data = json.loads(up.getvalue().decode("utf-8"))
                 imported = F.load_dict(data)
-                F.save(imported, os.path.join(F.FRAMEWORK_DIR,
-                                              f"{imported.id}.json"))
-                st.success(t("fw.import_ok", id=imported.id))
             except (F.FrameworkError, ValueError, json.JSONDecodeError) as e:
                 st.error(t("fw.import_bad", e=e))
+                imported = None
+            if imported is not None:
+                _target = os.path.join(F.FRAMEWORK_DIR, f"{imported.id}.json")
+                st.caption(t("fw.import_preview", id=imported.id,
+                             name=imported.name(lang), n=len(imported.dimensions),
+                             codes=len(imported.codes)))
+                _same = False
+                if os.path.exists(_target):
+                    try:
+                        with open(_target, "r", encoding="utf-8") as f:
+                            _same = F.load_dict(json.load(f)).to_dict() == imported.to_dict()
+                    except Exception:                     # noqa: BLE001
+                        _same = False
+                if _same:
+                    st.info(t("fw.import_same", id=imported.id))
+                elif os.path.exists(_target):
+                    st.warning(t("fw.import_exists", id=imported.id))
+                    _copy_id = F.copy_id(imported.id, f"{datetime.now():%y%m%d%H%M}")
+                    ic1, ic2 = st.columns(2)
+                    if ic1.button(t("fw.import_as_copy", id=_copy_id),
+                                  key="btn_fw_import_copy", **WIDE):
+                        _d = imported.to_dict()
+                        _d[F.FRAMEWORK_ID] = _copy_id
+                        F.save(F.load_dict(_d),
+                               os.path.join(F.FRAMEWORK_DIR, f"{_copy_id}.json"))
+                        st.session_state["_fw_flash"] = t("fw.import_ok", id=_copy_id)
+                        st.rerun()
+                    if ic2.button(t("fw.import_replace", id=imported.id),
+                                  key="btn_fw_import_replace", **WIDE):
+                        F.save(imported, _target)
+                        st.session_state["_fw_flash"] = t("fw.import_ok", id=imported.id)
+                        st.rerun()
+                elif st.button(t("fw.import_go", id=imported.id),
+                               type="primary", key="btn_fw_import"):
+                    F.save(imported, _target)
+                    st.session_state["_fw_flash"] = t("fw.import_ok", id=imported.id)
+                    st.rerun()
 
         st.divider()
         st.markdown(f"#### {t('fw.installed')}")
@@ -4401,12 +4761,17 @@ with tab_fw:
         for row in OA.review_rows(draft, lang):
             did = row["dimension_id"]
             cur = decisions.setdefault(did, {"decision": None, "note": ""})
+            # 標記取選項當下的值（widget 狀態），不取上一輪寫回的決定：
+            # 否則按了「核可」之後，標題上的符號要再互動一次才會變。
+            _now = st.session_state.get(f"dec_{did}", cur.get("decision"))
+            if _now not in dec_opts:
+                _now = cur.get("decision")
             mark = {None: "○", OA.DECISION_APPROVE: "✔",
                     OA.DECISION_EDIT: "✎",
-                    OA.DECISION_REJECT: "✘"}[cur.get("decision")]
+                    OA.DECISION_REJECT: "✘"}[_now]
             with st.expander(f"{mark}  {row['label']}  ·  `{row['short']}`  "
                              f"·  {row['n_grounding']}★ + {row['n_supporting']}",
-                             expanded=cur.get("decision") is None):
+                             expanded=_now is None):
                 st.write(row["definition"] or "—")
                 st.markdown(f"**{t('fw.grounding')}**")
                 for cite in row["grounding_citations"]:
@@ -4472,7 +4837,10 @@ with tab_fw:
                                                framework_id=new_id, note=note)
                     F.save(newfw, os.path.join(F.FRAMEWORK_DIR,
                                                f"{newfw.id}.json"))
-                    st.success(t("fw.saved", id=newfw.id))
                     st.session_state.oa_draft = None
+                    # 側欄的框架清單是在這之前畫的；整理一次頁面，新框架才會
+                    # 出現在清單裡。訊息留到整理之後顯示。
+                    st.session_state["_fw_flash"] = t("fw.saved", id=newfw.id)
+                    st.rerun()
                 except OA.DraftError as e:
                     st.error(str(e))

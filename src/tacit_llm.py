@@ -725,31 +725,49 @@ def _raise_transport(e, url, timeout):
     raise LLMError(f"{type(e).__name__}: {e} ({url})") from e
 
 
+def _ipv4_loopback(url):
+    """
+    把 localhost 換成 127.0.0.1，只用在實際連線，紀錄裡的端點描述不變。
+
+    要防的失效：Windows 上 localhost 先解析成 IPv6 的 ::1，而 Ollama 與多數地端
+    伺服器只聽 IPv4；每一次呼叫都要等 IPv6 連線失敗（約 2 秒）才改走 IPv4。
+    側欄每開一頁要問兩次（模型清單、原生視窗），編碼時每一個窗口再一次。
+    """
+    parts = urllib.parse.urlsplit(url)
+    if (parts.hostname or "").lower() != "localhost":
+        return url
+    netloc = parts.netloc.replace(parts.hostname, "127.0.0.1", 1)
+    return urllib.parse.urlunsplit(parts._replace(netloc=netloc))
+
+
+def _open_json(make_request, url, timeout):
+    """先走 IPv4 的 127.0.0.1；那邊拒絕連線（伺服器只聽 IPv6）才用原本的位址。"""
+    targets = list(dict.fromkeys([_ipv4_loopback(url), url]))
+    for i, target in enumerate(targets):
+        try:
+            with urllib.request.urlopen(make_request(target), timeout=timeout) as r:
+                return _decode_body(r.read(), url)
+        except urllib.error.HTTPError as e:
+            _raise_http(e, url)
+        except (urllib.error.URLError, socket.timeout, TimeoutError, ConnectionError,
+                http.client.HTTPException) as e:
+            refused = isinstance(getattr(e, "reason", e), ConnectionRefusedError)
+            if refused and i + 1 < len(targets):
+                continue
+            _raise_transport(e, url, timeout)
+
+
 def _post_json(url, payload, timeout, headers=None):
     data = json.dumps(payload).encode("utf-8")
     hdr = {"Content-Type": "application/json"}
     hdr.update(headers or {})
-    req = urllib.request.Request(url, data=data, headers=hdr, method="POST")
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return _decode_body(r.read(), url)
-    except urllib.error.HTTPError as e:
-        _raise_http(e, url)
-    except (urllib.error.URLError, socket.timeout, TimeoutError, ConnectionError,
-            http.client.HTTPException) as e:
-        _raise_transport(e, url, timeout)
+    return _open_json(lambda u: urllib.request.Request(u, data=data, headers=hdr,
+                                                       method="POST"), url, timeout)
 
 
 def _get_json(url, timeout, headers=None):
-    req = urllib.request.Request(url, headers=headers or {}, method="GET")
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return _decode_body(r.read(), url)
-    except urllib.error.HTTPError as e:
-        _raise_http(e, url)
-    except (urllib.error.URLError, socket.timeout, TimeoutError, ConnectionError,
-            http.client.HTTPException) as e:
-        _raise_transport(e, url, timeout)
+    return _open_json(lambda u: urllib.request.Request(u, headers=headers or {},
+                                                       method="GET"), url, timeout)
 
 
 def _unreachable_msg(url, e):

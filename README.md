@@ -157,6 +157,9 @@ tacit-qda
 frameworks, analyses and lexicons are read from and written there, and the four
 shipped frameworks are copied into `frameworks/` on first use. Arguments after
 the command go to `streamlit run` (for example `tacit-qda --server.port 8600`).
+The sidebar settings (provider, server address, model, context window, languages,
+framework) are kept in the page address, so reloading the page keeps them; API
+keys are never put there.
 The package carries the engines, the interface and the four frameworks. The
 demonstration corpora, the reference codings and the archived benchmark outputs
 are in this repository and in the Zenodo archive, not in the package, so
@@ -390,7 +393,7 @@ sidebar states which case you are in.
 | Data & descriptors | Edit respondent attributes; these drive every later comparison |
 | Code review | Confirm, revise, delete or add codes. Full audit trail |
 | Cross-analysis | Crosstabs, co-occurrence, cross-case matrix, polarity balance |
-| Theme structure | Two-stage inductive theme induction with a model, or model-free grouping of the codes by co-occurrence or label similarity which you name yourself; Gioia data structure figure with SVG export |
+| Theme structure | Two-stage inductive theme induction with a model (batch size fitted to the model's context window; an interrupted run continues from the last finished batch), or model-free grouping of the codes by co-occurrence or label similarity which you name and assign to aggregate dimensions yourself; Gioia data structure figure with SVG export |
 | Lexicon induction | Term discovery, log-odds feature induction, dictionary baseline for auditing the model |
 | Reliability | Sampling frame of respondent turns from records or from transcripts you upload, blind coding sheets, κ / PABAK / AC1 / Krippendorff α, confusion matrices, model precision and recall, and human codings turned back into analysable records |
 | Export | Excel, Word, JSON; each transcript as a Word file with the codes in Word comments on the coded passages (current coding or the model's original draft), either as the bare transcript with comments only, or with highlighting, a legend and a bracket after each passage; the name on the comments can be set, so one coder's marks stay apart from another's; an unmarked copy carries the codebook for coding by hand |

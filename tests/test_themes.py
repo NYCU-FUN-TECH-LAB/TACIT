@@ -671,6 +671,66 @@ check_true("這些主題吃得進既有的主題表", len(T.theme_table(_th, _it
 check_true("這些主題畫得出 Gioia 圖",
            T.render_data_structure_svg(_th, _items).startswith("<svg"))
 
+
+print()
+print("=" * 70)
+print("測試：批次大小配合視窗、第一階段續跑、分群的聚合維度")
+print("=" * 70)
+_F.reset()           # 前面的測試換過作用中框架；這一段用內建的負責任創新框架
+_fit_items = [{T.GLOBAL_ID: f"G{i:04d}", S.RESPONDENT: "P1", T.SOURCE_SEGMENT_ID: f"S{i}",
+               S.TITLE: f"concept {i} " + "x" * 40, S.QUOTE: "q" * 120, S.FULL_TEXT: "",
+               T.EXISTING_CODES: []} for i in range(1, 61)]
+_est = lambda txt: len(txt) // 4                                  # noqa: E731
+_full = _est(T.build_stage1_prompt(_fit_items))
+check("不限視窗時沿用設定的批次大小", T.fit_chunk_size(_fit_items, 60, None, _est), 60)
+check("放得下時不縮", T.fit_chunk_size(_fit_items, 60, _full + 10, _est), 60)
+_small = T.fit_chunk_size(_fit_items, 60, _full // 2, _est)
+check_true("放不下時縮小到放得下", _small is not None and _small < 60
+           and all(_est(T.build_stage1_prompt(c)) <= _full // 2
+                   for c in T._chunk(_fit_items, _small)), str(_small))
+check("連最小批次都放不下時回 None", T.fit_chunk_size(_fit_items, 60, 50, _est), None)
+
+_calls = []
+
+
+def _fake_generate(prompt):
+    _calls.append(prompt)
+    if "PROVISIONAL THEMES" in prompt:
+        return json.dumps({"themes": [{"name": "merged", "definition": "d",
+                                       "aggregate_dimension": "unassigned",
+                                       "merged_from": ["t"]}],
+                           "unassigned_note": ""})
+    ids = [ln.split(" | ")[0] for ln in prompt.splitlines() if ln.startswith("G")]
+    return json.dumps({"provisional_themes": [{"name": "t", "definition": "d",
+                                               "member_ids": ids[:3]}]})
+
+
+_saved = {}
+_th1, _n1, _d1 = T.induce_themes(_fit_items, _fake_generate, chunk_size=20,
+                                 on_batch=lambda i, p, d: _saved.__setitem__(str(i), {
+                                     "provisional": p, "dropped": d}))
+check("每個第一階段批次都回報給呼叫端", sorted(_saved), ["1", "2", "3"])
+_first_run_calls = len(_calls)
+_calls.clear()
+_done = {k: v for k, v in _saved.items() if k in ("1", "2")}
+_th2, _n2, _d2 = T.induce_themes(_fit_items, _fake_generate, chunk_size=20,
+                                 done_batches=_done)
+check("續跑時已完成的批次不再呼叫模型", len(_calls), _first_run_calls - 2)
+check("續跑的結果與一次跑完相同", _d2["provisional_count"], _d1["provisional_count"])
+
+_code_of = {S.split_code(c): c for c in S.CODES}             # (維度, 極性) → 碼的識別字
+_g_dim = [{T.CLUSTER_MEMBER_CODES: [_code_of[(S.ENGAGEMENT, "N")], _code_of[(S.ENGAGEMENT, "P")]],
+           T.CLUSTER_DISTANCE: 0.2},
+          {T.CLUSTER_MEMBER_CODES: [_code_of[(S.ENGAGEMENT, "N")], _code_of[(S.REFLEXIVITY, "N")]],
+           T.CLUSTER_DISTANCE: 0.5}]
+check("成員碼同屬一個維度時建議那個維度", T.suggested_dimension(_g_dim[0]), S.ENGAGEMENT)
+check("成員碼跨維度時建議未歸屬", T.suggested_dimension(_g_dim[1]), S.UNASSIGNED)
+_items_d = T.collect_first_order(RECORDS)
+_th_d = T.themes_from_clusters(_g_dim, _items_d, names={1: "a", 2: "b"},
+                               dimensions={1: S.ENGAGEMENT})
+check("分群主題帶研究者指派的聚合維度", [t[S.AGG_DIMENSION] for t in _th_d],
+      [S.ENGAGEMENT, S.UNASSIGNED][:len(_th_d)])
+
 print()
 print("=" * 70)
 print(f"結果：{'全部通過 ✅' if not FAIL else '失敗項目 ' + str(FAIL)}")

@@ -76,3 +76,10 @@ bench_out/**/fake-smoke/
 saved_analyses/*.json
 scratchpad/
 demo_data/hearings/_raw/
+
+# 主題歸納第一階段的進度檔（整輪跑完會自動刪除）
+themes_progress.json
+
+# local wheel builds
+build/
+*.egg-info/

@@ -525,6 +525,20 @@ def pooled_kappa(coding_a, coding_b, unit_ids):
     return binary_agreement(a, b)
 
 
+def pooled_alpha(coding_a, coding_b, unit_ids):
+    """
+    Krippendorff's α（名目尺度），在與 pooled_kappa 相同的「單元 × 碼」格上計算：
+    每一格是一個單元，兩位編碼者各給 1（標了這個碼）或 0。兩人都沒有遺漏值時，
+    它是 Scott's π 加上小樣本校正，數值與 κ 很接近。
+    """
+    values = {}
+    for u in unit_ids:
+        sa, sb = set(coding_a.get(u, [])), set(coding_b.get(u, []))
+        for c in S.CODES:
+            values[(u, c)] = [1 if c in sa else 0, 1 if c in sb else 0]
+    return krippendorff_alpha_nominal(values)
+
+
 def exact_set_agreement(coding_a, coding_b, unit_ids):
     """整組編碼完全相同的單元比例——最嚴格也最直觀的指標。"""
     if not unit_ids:

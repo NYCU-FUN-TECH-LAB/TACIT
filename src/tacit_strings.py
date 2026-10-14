@@ -858,9 +858,12 @@ APP_STRINGS = {
     "run.in_progress": {
         "en": "A coding run is in progress. Do not click anything until it "
               "finishes: any interaction restarts the page and aborts the run. "
-              "Each transcript is written to disk as soon as it completes.",
+              "Each transcript is written to disk as soon as it completes. "
+              "With a local model the first request can take a minute or more "
+              "while the model loads into memory.",
         "zh": "編碼正在執行。結束之前請不要點任何東西：任何操作都會重新載入頁面、"
-              "中止這次執行。每份逐字稿一完成就會寫進磁碟。"},
+              "中止這次執行。每份逐字稿一完成就會寫進磁碟。使用地端模型時，"
+              "第一次呼叫要先把模型載入記憶體，可能要一分鐘以上。"},
     "run.interrupted": {
         "en": "The previous coding run was interrupted by an interface action "
               "before it finished. Transcripts that had completed were saved; "
@@ -2077,3 +2080,108 @@ THEME_EMPTY_DIM_STRINGS = {
 
 I.register(CONTRACT_PROBE_STRINGS)
 I.register(THEME_EMPTY_DIM_STRINGS)
+
+
+# 1.3.2：重新整理後保留的訊息、略過已編碼的逐字稿、主題歸納續跑、匯入流程等。
+V132_STRINGS = {
+    "run.last_run": {"en": "Result of the last run", "zh": "上一次執行的結果"},
+    "run.last_run_dismiss": {"en": "Hide this result", "zh": "收起這個結果"},
+    "run.will_skip_open": {
+        "en": "{n} of these files are already in the current codebook and will be "
+              "skipped; {m} will be coded. Tick “Re-analyse files that were already "
+              "done” to code them again.",
+        "zh": "其中 {n} 份已經編進目前的碼簿，將自動略過；本次會編碼 {m} 份。"
+              "要重新編碼請勾選「重新分析已完成的檔案」。"},
+    "run.all_done_open": {
+        "en": "Every uploaded file is already in the current codebook. Tick "
+              "“Re-analyse files that were already done” to code them again.",
+        "zh": "上傳的檔案都已經編進目前的碼簿。要重新編碼請勾選「重新分析已完成的檔案」。"},
+    "cb.n_undefined_help": {
+        "en": "Codes that have no written definition yet. Open coding creates "
+              "labels; definitions are added by the researcher in the table below.",
+        "zh": "還沒有寫定義的碼。開放編碼只產生標籤，定義由研究者在下面的表格裡補上。"},
+    "llm.note_local_models": {"en": "{n} chat models installed locally.",
+                              "zh": "本機已安裝 {n} 個對話模型。"},
+    "llm.note_need_key": {"en": "Enter an API key to list models.",
+                          "zh": "輸入 API 金鑰後才能列出模型。"},
+    "llm.note_remote_models": {"en": "{n} models offered by {url}.",
+                               "zh": "{url} 提供 {n} 個模型。"},
+    "th.nomodel_few": {
+        "en": "Only {n} codes are in use. This route groups codes, so with a "
+              "framework's handful of codes it can return only a few groups; it is "
+              "meant for an open-coding codebook with dozens of codes.",
+        "zh": "目前只用到 {n} 個碼。這條路是把「碼」分群，框架驅動只有框架的那幾個碼，"
+              "分出來只會有少數幾群；它是為開放編碼長出來的幾十個碼設計的。"},
+    "th.group_dimension": {"en": "Aggregate dimension", "zh": "聚合維度"},
+    "th.empty_dims_cluster": {
+        "en": "No group was assigned to: **{dims}**. On this route the aggregate "
+              "dimension of each group is chosen by the researcher when naming the "
+              "groups; assign one there if a group belongs to it.",
+        "zh": "沒有任何一群被歸到：**{dims}**。這條路的聚合維度是研究者在命名時指派的；"
+              "如果有哪一群屬於它，請回到命名那裡指派。"},
+    "th.no_themes_yet": {
+        "en": "No themes yet. Build them on the “Induce themes” sub-tab.",
+        "zh": "還沒有主題。請到「執行歸納」子頁籤建立。"},
+    "th.chunk_fitted": {
+        "en": "{old} first-order concepts per batch do not fit this model's context "
+              "window; using {new} per batch instead.",
+        "zh": "每批 {old} 個一階概念放不進這顆模型的視窗，改為每批 {new} 個。"},
+    "th.chunk_no_fit": {
+        "en": "Even a batch of five first-order concepts does not fit this model's "
+              "context window. Raise the context window in the sidebar or choose a "
+              "model with a larger native window.",
+        "zh": "連每批 5 個一階概念都放不進這顆模型的視窗。請在側欄加大視窗，或換一顆原生視窗較大的模型。"},
+    "th.resuming": {
+        "en": "Resuming an interrupted run: {n} of {total} batches were already done "
+              "with these settings and are reused.",
+        "zh": "接續上次中斷的執行：同樣設定下已完成 {total} 批中的 {n} 批，直接沿用。"},
+    "th.in_progress": {
+        "en": "Theme induction is running. Do not click anything until it finishes. "
+              "Each finished batch is saved; if the page is interrupted, pressing the "
+              "button again with the same settings continues from there.",
+        "zh": "主題歸納正在執行，結束之前請不要點任何東西。每跑完一批就會存檔；"
+              "中途被打斷的話，用同樣的設定再按一次會從斷掉的地方接著跑。"},
+    "th.progress_stage1": {"en": "Stage 1: batch {i} of {total} (n = {n})",
+                           "zh": "第一階段：第 {i}/{total} 批（n = {n}）"},
+    "th.progress_stage2": {"en": "Stage 2: merging {n} provisional themes",
+                           "zh": "第二階段：合併 {n} 個暫定主題"},
+    "th.done_n": {"en": "Done: {n} themes.", "zh": "完成：{n} 個主題。"},
+    "th.loaded_n": {"en": "Loaded {n} themes.", "zh": "已載入 {n} 個主題。"},
+    "lx.language": {
+        "en": "Lexicon language: {language}. It follows “Analysis output language” in the "
+              "sidebar; under “Match the transcript” it is taken from the loaded records.",
+        "zh": "詞庫語言：{language}。它跟著側欄的「分析輸出語言」；選「跟逐字稿一致」時依載入的紀錄判斷。"},
+    "lx.force_saved": {"en": "Saved. {n} protected terms in the lexicon.",
+                       "zh": "已儲存。詞庫共有 {n} 個保護詞。"},
+    "lx.merged_n": {"en": "Added {n} terms to the lexicon.",
+                    "zh": "已加入 {n} 個詞到詞庫。"},
+    "ir.no_frame_yet": {
+        "en": "No sampling frame yet. Build one on the “Build sampling frame” sub-tab.",
+        "zh": "還沒有抽樣框。請先在「建立抽樣框」子頁籤建立。"},
+    "ir.no_session_yet": {
+        "en": "No coding session yet. Draw a sample on the “Sample & blind” sub-tab, "
+              "or load the saved session there.",
+        "zh": "還沒有編碼工作階段。請先在「抽樣與盲測」子頁籤抽樣，或在那裡載入已存的工作階段。"},
+    "ir.session_created": {
+        "en": "Blind session {sid} created with {n} units. Download the coding sheets below.",
+        "zh": "已建立盲測工作階段 {sid}，共 {n} 個單元。請在下面下載編碼表。"},
+    "ir.session_loaded": {"en": "Loaded session {sid}.", "zh": "已載入工作階段 {sid}。"},
+    "ir.sample_capped": {
+        "en": "{asked} units were requested; the frame has only {n}, so all of them were drawn.",
+        "zh": "要求抽 {asked} 個單元，抽樣框只有 {n} 個，所以全部抽入。"},
+    "fw.import_preview": {
+        "en": "File holds framework {id} ({name}): {n} dimensions, {codes} codes.",
+        "zh": "檔案裡是框架 {id}（{name}）：{n} 個維度、{codes} 個碼。"},
+    "fw.import_same": {
+        "en": "{id} is already installed with the same content; nothing to import.",
+        "zh": "{id} 已經安裝，內容相同，不需要匯入。"},
+    "fw.import_exists": {
+        "en": "A different framework file named {id} is already installed. Importing "
+              "would replace it; save the import as a copy unless you mean to replace it.",
+        "zh": "已經有一個內容不同、名為 {id} 的框架。直接匯入會取代它；除非確定要取代，請另存成一份新的。"},
+    "fw.import_as_copy": {"en": "Import as {id}", "zh": "匯入成 {id}"},
+    "fw.import_replace": {"en": "Replace {id}", "zh": "取代 {id}"},
+    "fw.import_go": {"en": "Import {id}", "zh": "匯入 {id}"},
+}
+
+I.register(V132_STRINGS)

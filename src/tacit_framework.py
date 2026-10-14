@@ -493,6 +493,24 @@ def save(fw, path=None):
     return path
 
 
+def copy_id(base, stamp, directory=None):
+    """
+    匯入同名但內容不同的框架時，另存副本用的識別碼。
+
+    識別碼最長 40 字元（_ID_RE）。直接在原識別碼後面接「_imported_時間」
+    會超過：utaut_venkatesh_2003 接上去是 45 字元，驗證不過、整頁變成例外。
+    所以先截短原識別碼，再接「_imp」與時間戳；同一分鐘內已有同名檔就加序號。
+    """
+    directory = directory or FRAMEWORK_DIR
+    for n in range(1, 100):
+        suffix = f"_imp{stamp}" + (f"_{n}" if n > 1 else "")
+        head = str(base)[:40 - len(suffix)].rstrip("_") or "framework"
+        cid = head + suffix
+        if not os.path.exists(os.path.join(directory, f"{cid}.json")):
+            return cid
+    raise FrameworkError(f"no free copy id for {base!r}")
+
+
 def _as_indicator_block(block):
     """保持原樣傳出：dict 維持 dict，list 複製一份，None 變空清單。"""
     if isinstance(block, dict):

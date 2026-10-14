@@ -769,6 +769,7 @@ def compare_marks(transcript, human_marks, model_marks, interviewers=None):
               for u in fh if a[u[S.UNIT_ID]] != b[u[S.UNIT_ID]]]
     return {
         "units": len(units), "a": a, "b": b, "unit_ids": units, "pooled": pooled,
+        "alpha": IRR.pooled_alpha(a, b, units) if units else None,
         "precision": round(tp / (tp + fp), 3) if tp + fp else None,
         "recall": round(tp / (tp + fn), 3) if tp + fn else None,
         "per_code": IRR.per_code_agreement(a, b, units) if units else [],
@@ -930,7 +931,8 @@ def comparison_workbook(results, label_a="hand", label_b="other"):
         summary.append({"file": name, "units": cmp["units"], "cells": pl.get("n"),
                         "both": pl.get(IRR.BOTH), f"{label_a} only": pl.get(IRR.ONLY_A),
                         f"{label_b} only": pl.get(IRR.ONLY_B),
-                        "kappa": pl.get(IRR.KAPPA), "PABAK": pl.get(IRR.PABAK), "AC1": pl.get(IRR.AC1),
+                        "kappa": pl.get(IRR.KAPPA), "alpha": cmp.get("alpha"),
+                        "PABAK": pl.get(IRR.PABAK), "AC1": pl.get(IRR.AC1),
                         "precision": cmp["precision"], "recall": cmp["recall"],
                         "dimension kappa": dim.get("kappa"),
                         f"{label_a} not placed": cmp["human_not_placed"],

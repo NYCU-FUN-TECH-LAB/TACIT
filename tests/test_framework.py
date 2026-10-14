@@ -432,6 +432,23 @@ check_true("空白框架 has_exclusions 為假", not _blank.has_exclusions())
 check("不存在的維度回空清單", _blank.exclusions("不存在", "en"), [])
 
 
+# 匯入同名框架另存副本：識別碼不能超過 40 字元，也不能撞到已有的檔案
+with tempfile.TemporaryDirectory() as _cd:
+    _long = "a" * 20 + "_venkatesh_2003_x"
+    _cid = F.copy_id(_long, "2610151200", _cd)
+    check_true("副本識別碼符合識別碼規則", F._ID_RE.match(_cid) is not None, _cid)
+    check_true("副本識別碼保留原識別碼開頭", _cid.startswith("aaaa"), _cid)
+    open(os.path.join(_cd, f"{_cid}.json"), "w").close()
+    _cid2 = F.copy_id(_long, "2610151200", _cd)
+    check_true("同一分鐘再匯入一次得到不同識別碼",
+               _cid2 != _cid and F._ID_RE.match(_cid2) is not None, _cid2)
+    check("短識別碼直接接時間戳", F.copy_id("ri_stilgoe_2013", "2610151200", _cd),
+          "ri_stilgoe_2013_imp2610151200")
+    _fw_u = F.load_file(os.path.join("frameworks", "utaut_venkatesh_2003.json"))
+    _d = _fw_u.to_dict()
+    _d[F.FRAMEWORK_ID] = F.copy_id(_fw_u.id, "2610151200", _cd)
+    check_true("出貨框架的副本可以通過驗證", F.load_dict(_d).id == _d[F.FRAMEWORK_ID])
+
 print()
 print("=" * 70)
 print(f"結果：{'全部通過 ✅' if not FAIL else '失敗項目 ' + str(FAIL)}")

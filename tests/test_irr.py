@@ -471,6 +471,21 @@ check("雙方全空時 κ 無定義", I.pooled_kappa(empty, empty, uids)[I.KAPPA
 check("雙方全空時一致率為 1", I.pooled_kappa(empty, empty, uids)[I.AGREEMENT], 1.0)
 check("無單元時完全一致率回 None", I.exact_set_agreement({}, {}, []), None)
 
+
+print()
+print("=" * 70)
+print("測試：pooled Krippendorff α")
+print("=" * 70)
+_ua = {"u1": ["ANT-P"], "u2": [], "u3": ["REF-N"], "u4": ["ANT-P", "RES-P"]}
+_ub = {"u1": ["ANT-P"], "u2": ["ENG-P"], "u3": ["REF-N"], "u4": ["ANT-P"]}
+_uu = ["u1", "u2", "u3", "u4"]
+check("兩組完全相同時 α = 1", I.pooled_alpha(_ua, _ua, _uu), 1.0)
+_al = I.pooled_alpha(_ua, _ub, _uu)
+_kp = I.pooled_kappa(_ua, _ub, _uu)[I.KAPPA]
+check_true("α 在 -1 到 1 之間，且與同一張表的 κ 很接近",
+           _al is not None and -1 <= _al <= 1 and abs(_al - _kp) < 0.05, f"α={_al} κ={_kp}")
+check("雙方全空時 α 無定義", I.pooled_alpha({"u1": []}, {"u1": []}, ["u1"]), None)
+
 print()
 print("=" * 70)
 print(f"結果：{'全部通過 ✅' if not FAIL else '失敗項目 ' + str(FAIL)}")
