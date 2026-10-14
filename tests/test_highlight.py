@@ -426,6 +426,29 @@ check_true("未標記版不受 plain 影響，仍附說明與編碼簿", "Codebo
 
 print()
 print("=" * 70)
+print("測試 15：紀錄裡有作用中框架沒有的碼時，螢光筆匯出照樣完成")
+print("=" * 70)
+_rec14 = copy.deepcopy(rec)
+_rec14[S.SEGMENTS][0][S.CODES_F] = [{S.DIMENSION: "zzz", S.POLARITY: "P"}]
+_rec14[S.SEGMENTS][0][S.REVIEW][S.ORIGINAL_CODES] = ["ZZZ-P"]
+try:
+    _out14 = H.build_docx(_rec14, H.SOURCE_CURRENT, lang="en")
+    check_true("框架外的碼也能匯出（不丟 KeyError）", len(_out14) > 1000)
+except KeyError as _e:
+    check_true("框架外的碼也能匯出（不丟 KeyError）", False, f"KeyError {_e}")
+_cmap = H.colour_map([rec], H.SOURCE_CURRENT)
+_c1 = H._colour_for(_cmap, "ZZZ-P"); _c2 = H._colour_for(_cmap, "ZZZ-P")
+check("框架外的碼分到顏色，而且前後一致", _c1 == _c2 and _c1 is not None, True)
+try:
+    _zip14 = H.side_by_side_zip(
+        {"transcript": TRANSCRIPT, "marks": [{"start": 0, "end": 1, "text": Q1, "comment": "ANT-P", "author": "s", "codes": ["ANT-P"]}],
+         "highlight_only": [], "respondent": ""}, _rec14, H.SOURCE_MODEL, "P01", "student", "en")
+    check("並排匯出在模型原案含框架外的碼時也完成", len(zipfile.ZipFile(io.BytesIO(_zip14)).namelist()), 2)
+except KeyError as _e:
+    check_true("並排匯出在模型原案含框架外的碼時也完成", False, f"KeyError {_e}")
+
+print()
+print("=" * 70)
 print(f"結果：{'全部通過 ✅' if not FAIL else '失敗項目 ' + str(FAIL)}")
 print("=" * 70)
 sys.exit(1 if FAIL else 0)

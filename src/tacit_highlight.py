@@ -285,6 +285,18 @@ def _tag(mk):
     return "[" + " ".join(x for x in (str(mk["id"]), ", ".join(mk["codes"])) if x) + "]"
 
 
+def _colour_for(colours, code):
+    """
+    一個碼的螢光筆顏色。碼不在顏色表裡（例如紀錄是在另一個框架下編的，
+    或作用中的框架在載入之後換過）就接在調色盤後面補一個，同一個碼之後
+    都用同一色，而不是中斷匯出。
+    """
+    g = _group_of(code)
+    if g not in colours:
+        colours[g] = PALETTE[len(colours) % len(PALETTE)]
+    return colours[g]
+
+
 def _write_line(par, line, offset, placed, colours, runs_of, tags=True, highlight=True):
     """
     把一行逐字稿寫成數個 run：有標記的部分上螢光筆，標記結束處接上括號。
@@ -303,7 +315,7 @@ def _write_line(par, line, offset, placed, colours, runs_of, tags=True, highligh
         active = [mk for mk in placed if mk["start"] <= a and mk["end"] >= b]
         run = par.add_run(line[a - offset:b - offset])
         if active and highlight:
-            run.font.highlight_color = colours[_group_of(active[0]["codes"][0])]
+            run.font.highlight_color = _colour_for(colours, active[0]["codes"][0])
         for mk in active:
             runs_of.setdefault(id(mk), []).append(run)
         for mk in (placed if tags else []):
@@ -943,7 +955,7 @@ def side_by_side_zip(parsed, rec, source, respondent, coder, lang=None):
     """同一份逐字稿的兩個螢光筆版本：人工標記的、與載入紀錄的，同一套顏色。"""
     hrec = record_from_marked(parsed, respondent, coder)
     view = dict(rec); view[S.TRANSCRIPT] = parsed["transcript"]
-    colours = colour_map([hrec, view], SOURCE_CURRENT)
+    colours = colour_map([hrec, view], SOURCE_BLANK)      # both sources: the hand coding and the model's draft
     buf = io.BytesIO()
     base = _safe_name(respondent)
     with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:

@@ -43,9 +43,12 @@ import demo_transcripts_zh as ZH          # noqa: E402
 import tacit_schema as S                  # noqa: E402
 import tacit_framework as F               # noqa: E402
 
-EN_DIR = os.path.join(ROOT, "demo_data", "en")
-ZH_DIR = os.path.join(ROOT, "demo_data", "zh")
-ANALYSES_DIR = os.path.join(ROOT, "analyses")
+# Output goes to the repository when run from a checkout (ROOT holds src/); from the installed
+# package it goes to the current working directory, which is the workspace tacit-qda uses.
+OUT_ROOT = ROOT if os.path.isdir(os.path.join(ROOT, "src")) else os.getcwd()
+EN_DIR = os.path.join(OUT_ROOT, "demo_data", "en")
+ZH_DIR = os.path.join(OUT_ROOT, "demo_data", "zh")
+ANALYSES_DIR = os.path.join(OUT_ROOT, "analyses")
 
 # 表格式版面的份數。兩種版面都要有，才能實測 .docx 匯入的兩條解析路徑；
 # 多數維持段落式，因為那才是研究者手上逐字稿的常見樣子。

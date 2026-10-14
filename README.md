@@ -160,7 +160,11 @@ the command go to `streamlit run` (for example `tacit-qda --server.port 8600`).
 The package carries the engines, the interface and the four frameworks. The
 demonstration corpora, the reference codings and the archived benchmark outputs
 are in this repository and in the Zenodo archive, not in the package, so
-reproducing the numbers below needs a clone or the archive. `pip install "tacit-qda[zh]"` adds the Traditional Chinese segmenter.
+reproducing the numbers below needs a clone or the archive. To try the interface
+without cloning, run `python -m tacit_qda.make_demo_data` in the workspace folder:
+it writes the English and Traditional Chinese demonstration transcripts
+(`demo_data/`) and their reference codings (`analyses/`) there, and the sidebar
+lists them on the next start. `pip install "tacit-qda[zh]"` adds the Traditional Chinese segmenter.
 
 The engines can also be used from a script:
 
@@ -480,10 +484,10 @@ If this tool contributes to published work, please cite it. See
 [CITATION.cff](CITATION.cff); machine-readable metadata is in
 [codemeta.json](codemeta.json).
 
-Every release is archived on Zenodo. Version 1.3.0 is
-[10.5281/zenodo.23224161](https://doi.org/10.5281/zenodo.23224161);
-[10.5281/zenodo.22882168](https://doi.org/10.5281/zenodo.22882168) always resolves to
-the latest version.
+Every release is archived on Zenodo. Version 1.3.1 is archived under the concept DOI
+[10.5281/zenodo.22882168](https://doi.org/10.5281/zenodo.22882168), which always resolves to
+the latest version; version 1.3.0 is
+[10.5281/zenodo.23224161](https://doi.org/10.5281/zenodo.23224161).
 
 The built-in frameworks rest on:
 
