@@ -484,10 +484,10 @@ If this tool contributes to published work, please cite it. See
 [CITATION.cff](CITATION.cff); machine-readable metadata is in
 [codemeta.json](codemeta.json).
 
-Every release is archived on Zenodo. Version 1.3.1 is archived under the concept DOI
-[10.5281/zenodo.22882168](https://doi.org/10.5281/zenodo.22882168), which always resolves to
-the latest version; version 1.3.0 is
-[10.5281/zenodo.23224161](https://doi.org/10.5281/zenodo.23224161).
+Every release is archived on Zenodo. Version 1.3.1 is
+[10.5281/zenodo.23377974](https://doi.org/10.5281/zenodo.23377974);
+[10.5281/zenodo.22882168](https://doi.org/10.5281/zenodo.22882168) always resolves to
+the latest version.
 
 The built-in frameworks rest on:
 
